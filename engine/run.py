@@ -119,7 +119,7 @@ def load_history():
 
 def settled_label(run, tip, now):
     if (tip - now).total_seconds() <= 30 * 60:
-        return "Lineup confirmed"
+        return "Near tip (lineups not checked)"
     return "Early" if run == "morning" else "Injury report out"
 
 
