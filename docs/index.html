@@ -7,7 +7,7 @@
 <style>
 :root{--bg:#0e1013;--card:#171a1f;--card2:#1e2229;--line:#2a2f37;--tx:#e8eaed;--mut:#9aa1ab;--acc:#4cc38a;--warn:#f0b429;--bad:#ef5d5d;--blue:#6ea8fe}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:180px}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:190px}
 header{padding:14px 16px 6px}
 h1{font-size:18px;margin:0}
 .meta{color:var(--mut);font-size:12.5px;margin-top:2px}
@@ -17,61 +17,78 @@ nav{display:flex;gap:6px;padding:8px 16px;position:sticky;top:0;background:var(-
 nav button{flex:1;padding:9px 0;border:1px solid var(--line);background:var(--card);color:var(--tx);border-radius:8px;font-size:14px}
 nav button.on{background:var(--acc);color:#04130b;border-color:var(--acc);font-weight:600}
 .game{margin:12px 16px 4px}
-.gh{display:flex;justify-content:space-between;align-items:baseline;font-weight:600}
-.gh small{color:var(--mut);font-weight:400;font-size:12px}
+.gh{display:flex;justify-content:space-between;align-items:baseline;font-weight:600;gap:8px}
+.gh small{color:var(--mut);font-weight:400;font-size:12px;text-align:right}
 .gnote{color:var(--warn);font-size:12.5px;margin:2px 0}
-.leg{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-top:6px;overflow:hidden}
-.row{display:flex;align-items:center;gap:8px;padding:10px}
-.row .who{flex:1;min-width:0}
+.p{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-top:6px;overflow:hidden}
+.row{display:flex;align-items:center;gap:8px;padding:10px;cursor:pointer}
+.who{flex:1;min-width:0}
 .who b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .who span{color:var(--mut);font-size:12.5px}
-.pct{font-weight:700;font-size:16px;text-align:right;min-width:48px}
-.bet{font-size:12px;color:var(--mut);text-align:right}
-.bet b{color:var(--tx);font-size:14px}
-.add{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--card2);color:var(--tx);font-size:20px;line-height:1}
-.add.on{background:var(--acc);color:#04130b;border-color:var(--acc)}
+.fair{text-align:right}
+.fair b{font-size:17px;display:block}
+.fair span{font-size:11.5px;color:var(--mut)}
 .det{display:none;padding:0 10px 10px;border-top:1px solid var(--line);font-size:13px}
-.leg.open .det{display:block}
+.p.open .det{display:block}
 table{width:100%;border-collapse:collapse;margin-top:8px;font-size:13px}
-th,td{padding:5px 4px;text-align:right;border-bottom:1px solid var(--line)}
-th:first-child,td:first-child{text-align:left}
-th{color:var(--mut);font-weight:500}
-tr.main td{color:var(--acc);font-weight:600}
+th,td{padding:6px 3px;text-align:center;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:500;font-size:12px}
+td.ln{font-weight:600;text-align:left}
+tr.f td.ln{color:var(--acc)}
+td.c{cursor:pointer}
+td.c b{display:block;font-size:14px}
+td.c span{color:var(--mut);font-size:11.5px}
+td.c.on{background:var(--acc);color:#04130b}td.c.on span{color:#04130b}
+td.c.good b{color:var(--acc)}
+td.c.on.good b{color:#04130b}
+td.blk{color:#5d636c;font-size:11.5px}
 .kv{color:var(--mut);margin-top:6px}
 .kv b{color:var(--tx);font-weight:500}
 .held{margin-top:6px;color:var(--mut);font-size:12.5px}
 .empty{color:var(--mut);margin:20px 16px}
+.hint{margin:4px 16px 0;color:var(--mut);font-size:12px}
 #bar{position:fixed;left:0;right:0;bottom:0;background:#12151a;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:none;z-index:9}
 #bar.show{display:block}
-#bar .legs{font-size:12.5px;color:var(--mut)}
+#bar .legs{font-size:12.5px;color:var(--mut);padding-right:50px}
 #bar .big{display:flex;justify-content:space-between;margin-top:6px}
 #bar .big div{text-align:center;flex:1}
 #bar .big b{display:block;font-size:17px}
 #bar .big span{font-size:11.5px;color:var(--mut)}
 .w{color:var(--warn);font-size:12.5px;margin-top:4px}
 .clr{float:right;background:none;border:0;color:var(--blue);font-size:13px}
-.hit{color:var(--acc)}.miss{color:var(--bad)}.void{color:var(--mut)}
+.over{color:var(--acc)}.under{color:var(--blue)}.void{color:var(--mut)}
 .sec{margin:14px 16px 4px;font-weight:600}
+.pad{margin:0 16px}
+.pad td,.pad th{text-align:right}.pad td:first-child,.pad th:first-child{text-align:left}
 </style>
 </head>
 <body>
 <header><h1>Prop Check NBA</h1><div class="meta" id="meta">Loading…</div></header>
 <div id="alerts"></div>
-<nav><button data-t="straight" class="on">Straight</button><button data-t="parlay">Parlay 75%+</button><button data-t="record">Record</button></nav>
+<nav><button data-t="slate" class="on">Tonight</button><button data-t="record">Record</button></nav>
 <main id="main"></main>
 <div id="bar"></div>
 <script>
 const $ = s => document.querySelector(s);
-let S = null, R = null, tab = 'straight', pick = [];
-const pct = p => Math.round(p * 100) + '%';
-const tpct = p => Math.floor(p * 100 + 1e-9) + '%'; // tool %: round down so 74.5 never reads as 75
+const NEED = 0.574;  // tool % needed to bet at -110 with the 5-pt cushion (backtest table)
+let S = null, R = null, tab = 'slate', pick = [];
+const tpct = p => Math.floor(p * 100 + 1e-9) + '%';   // round down so 57.3 never reads as 58
 const am = a => a > 0 ? '+' + a : '' + a;
 const dec = a => 1 + (a > 0 ? a / 100 : 100 / -a);
 const toAm = d => d >= 2 ? Math.round((d - 1) * 100) : Math.round(-100 / (d - 1));
 const probAm = p => { p = Math.min(Math.max(p, .01), .99); return p >= .5 ? Math.round(-100 * p / (1 - p)) : Math.round(100 * (1 - p) / p) };
-const key = l => l.espn_id;
-const main = l => l.rungs.find(r => r.off === 0);
+const cushion = p => p < .5 ? .04 : p < .65 ? .05 : p < .75 ? .06 : p < .85 ? .07 : .08;
+const betAt = p => probAm(p - cushion(p));
 const nyDate = () => new Date().toLocaleDateString('en-CA', {timeZone: 'America/New_York'});
+const fmtLine = l => l.toFixed(1);
+
+function probs(p, line) {
+  const i = S.lines.indexOf(line);
+  if (i < 0) return null;
+  const over = p.over[i];
+  return {over: Math.min(over, .85), under: Math.min(1 - over, .85)};
+}
+const blocked = (side, line) => side === 'over' ? line >= S.block_over_at : line <= S.block_under_at;
 
 async function load() {
   try { S = await (await fetch('slate.json?' + Date.now())).json(); } catch (e) { S = null; }
@@ -81,90 +98,104 @@ async function load() {
 
 function header() {
   if (!S) { $('#meta').textContent = 'No slate data found.'; return; }
-  const g = new Date(S.generated_et);
-  const hrs = (Date.now() - g.getTime()) / 36e5;
-  $('#meta').textContent = `${S.date} · ${S.run} run · ${g.toLocaleTimeString('en-US', {timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit'})} ET · ${S.n_legs} legs (${S.n_parlay} at 75%+)`;
+  const g = new Date(S.generated_et), hrs = (Date.now() - g.getTime()) / 36e5;
+  $('#meta').textContent = `${S.date} · ${S.run} run · ${g.toLocaleTimeString('en-US', {timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit'})} ET · ${S.n_players} players`;
   let a = '';
   if (S.date !== nyDate()) a += `<div class="alert">This slate is from ${S.date}, not today. Today's hasn't run yet.</div>`;
   else if (hrs > 5) a += `<div class="alert">Data is ${Math.floor(hrs)} hours old. Injury news may have changed.</div>`;
   $('#alerts').innerHTML = a + S.notes.map(n => `<div class="note">${n}</div>`).join('');
 }
 
-function legHTML(l, g) {
-  const m = main(l), on = pick.some(p => key(p.l) === key(l));
-  const rows = l.rungs.map(r => `<tr class="${r.off === 0 ? 'main' : ''}"><td>${r.rung}+</td><td>${tpct(r.tool)}</td><td>${am(r.bet_at)}</td><td>${pct(r.strip.L5)}</td><td>${pct(r.strip.L10)}</td><td>${pct(r.strip.L20)}</td><td>${pct(r.strip.S)}</td></tr>`).join('');
-  return `<div class="leg" id="L${l.espn_id}">
-   <div class="row">
-    <div class="who" onclick="this.closest('.leg').classList.toggle('open')"><b>${l.player}</b><span>${l.team} · ${m.rung}+ pts · ${l.l5min} min L5${l.status ? ' · ' + l.status : ''}</span></div>
-    <div onclick="this.closest('.leg').classList.toggle('open')"><div class="pct">${tpct(m.tool)}</div><div class="bet">bet at <b>${am(m.bet_at)}</b></div></div>
-    <button class="add ${on ? 'on' : ''}" onclick="tog('${l.espn_id}')">${on ? '✓' : '+'}</button>
+function cell(p, g, side, line, pr) {
+  if (blocked(side, line)) return `<td class="blk">—</td>`;
+  const id = `${p.espn_id}|${side}|${line}`, on = pick.some(x => x.id === id);
+  return `<td class="c ${on ? 'on' : ''} ${pr >= NEED ? 'good' : ''}" onclick="tog('${id}')"><b>${tpct(pr)}</b><span>${am(betAt(pr))}</span></td>`;
+}
+
+function playerHTML(p, g) {
+  let rows = '';
+  for (let d = -3; d <= 3; d++) {
+    const line = p.fair + d, pr = probs(p, line);
+    if (!pr || line < 0) continue;
+    rows += `<tr class="${d === 0 ? 'f' : ''}"><td class="ln">${fmtLine(line)}</td>${cell(p, g, 'over', line, pr.over)}${cell(p, g, 'under', line, pr.under)}</tr>`;
+  }
+  const st = p.strip;
+  return `<div class="p" id="P${p.espn_id}">
+   <div class="row" onclick="this.parentNode.classList.toggle('open')">
+    <div class="who"><b>${p.player}</b><span>${p.team} · ${p.l5min} min L5${p.status ? ' · ' + p.status : ''}</span></div>
+    <div class="fair"><b>${fmtLine(p.fair)}</b><span>fair line</span></div>
    </div>
    <div class="det">
-    <table><tr><th>Rung</th><th>Tool</th><th>Bet at</th><th>L5</th><th>L10</th><th>L20</th><th>Szn</th></tr>${rows}</table>
-    <div class="kv">Fair <b>${am(m.fair)}</b> · Adjusted rung <b>${m.adj}</b> (factor ${l.factor}: opp D ${l.def_ratio}, pace ${l.pace_ratio}${l.opp_b2b ? ', opp B2B' : ''})</div>
-    <div class="kv">Last 10: <b>${l.last10.join(', ')}</b></div>
-    <div class="kv">vs ${l.opp} (shown, not counted): <b>${l.h2h.length ? l.h2h.join(', ') : 'none'}</b></div>
-    <div class="kv">Sample: ${l.n_hist} clean games (${l.n_cur} this season${l.k ? ', blended with last season k=' + l.k : ''})${l.matched_last_season ? '' : ' · no last-season match'}</div>
+    <table><tr><th style="text-align:left">Line</th><th>Over · bet at</th><th>Under · bet at</th></tr>${rows}</table>
+    <div class="kv">Green = 57%+ (beats -110 after cushion). — = blocked (backtest: runs hot).</div>
+    <div class="kv">Over ${fmtLine(p.fair)}: L5 <b>${tpct(st.L5)}</b> · L10 <b>${tpct(st.L10)}</b> · L20 <b>${tpct(st.L20)}</b> · Season <b>${tpct(st.S)}</b></div>
+    <div class="kv">Last 10: <b>${p.last10.join(', ')}</b></div>
+    <div class="kv">vs ${p.opp} (shown, not counted): <b>${p.h2h.length ? p.h2h.join(', ') : 'none'}</b></div>
+    <div class="kv">Factor ${p.factor} (opp D ${p.def_ratio}, pace ${p.pace_ratio}${p.opp_b2b ? ', opp B2B' : ''}) · ${p.n_hist} clean games (${p.n_cur} this season${p.k ? ', last-season blend k=' + p.k : ''})${p.matched_last_season ? '' : ' · no last-season match'}</div>
    </div></div>`;
 }
 
-function slateHTML(onlyParlay) {
+function slateHTML() {
   if (!S) return '<div class="empty">No slate yet.</div>';
-  let h = '';
+  let h = '<div class="hint">Tap a player for over/under % by line. Tap a % to add it to a parlay.</div>';
   for (const g of S.games) {
-    const legs = g.legs.filter(l => !onlyParlay || l.parlay_ok);
     h += `<div class="game"><div class="gh">${g.game}<small>${g.tip_et}${g.spread != null ? ' · ' + g.spread_txt : ''}${g.settled ? ' · ' + g.settled : ''}</small></div>`;
     if (g.note) h += `<div class="gnote">${g.note}</div>`;
-    h += legs.map(l => legHTML(l, g)).join('') || (g.note ? '' : `<div class="held">No ${onlyParlay ? '75%+ ' : ''}legs pass.</div>`);
-    if (!onlyParlay && g.held && g.held.length) h += `<div class="held">Held: ${g.held.map(x => `${x.player} ${x.rung}+ (${x.why})`).join('; ')}</div>`;
+    h += g.players.map(p => playerHTML(p, g)).join('') || (g.note ? '' : '<div class="held">Nobody passes the gates.</div>');
+    if (g.held && g.held.length) h += `<div class="held">Held: ${g.held.map(x => `${x.player} (${x.why})`).join('; ')}</div>`;
     h += '</div>';
   }
   return h;
 }
 
 function recordHTML() {
-  if (!R || !R.rows.length) return '<div class="empty">No picks logged yet.</div>';
-  const g = R.rows.filter(r => r.result === 'hit' || r.result === 'miss');
-  const bands = [[.6, .65], [.65, .7], [.7, .75], [.75, .8], [.8, .86]];
-  let h = '<div class="sec">Paper record (last run of each day)</div><div style="margin:0 16px">' + (g.length ? '' : '<div class="kv">Nothing graded yet. Grading runs the next morning.</div>') + '<table' + (g.length ? '' : ' style="display:none"') + '><tr><th>Tool %</th><th>Legs</th><th>Says</th><th>Hit</th></tr>';
-  const line = (lab, xs) => xs.length ? `<tr><td>${lab}</td><td>${xs.length}</td><td>${pct(xs.reduce((a, r) => a + r.tool, 0) / xs.length)}</td><td>${pct(xs.filter(r => r.result === 'hit').length / xs.length)}</td></tr>` : '';
-  h += line('All', g) + bands.map(([a, b]) => line(`${a * 100}-${Math.min(b, .85) * 100}`, g.filter(r => r.tool >= a && r.tool < b))).join('');
-  h += line('25+ rungs', g.filter(r => r.rung >= 25));
-  const pr = R.rows.filter(r => r.hr_price != null);
-  h += `</table><div class="kv">Hard Rock price logged: <b>${pr.length}</b> of ${R.rows.length} legs · met target: <b>${pr.length ? pct(pr.filter(r => r.met).length / pr.length) : '—'}</b></div></div>`;
-  h += '<div class="sec">Legs</div><div style="margin:0 16px"><table><tr><th>Leg</th><th>Tool</th><th>Target</th><th>HR</th><th>Pts</th></tr>';
+  if (!R || !R.rows.length) return '<div class="empty">Nothing logged yet.</div>';
+  const g = R.rows.filter(r => r.result === 'over' || r.result === 'under');
+  let h = '<div class="sec">Fair line check</div><div class="pad">';
+  if (g.length) {
+    const ov = g.filter(r => r.result === 'over').length / g.length;
+    const mae = g.reduce((a, r) => a + Math.abs(r.pts - r.fair), 0) / g.length;
+    h += `<div class="kv">Graded: <b>${g.length}</b> · went over fair line: <b>${Math.round(ov * 100)}%</b> (should be ~50%) · avg miss: <b>${mae.toFixed(1)} pts</b> (backtest 5.8)</div>`;
+  } else h += '<div class="kv">Nothing graded yet. Grading runs the next morning.</div>';
+  h += '</div><div class="sec">Players</div><div class="pad"><table><tr><th>Player</th><th>Fair</th><th>Pts</th></tr>';
   let d = '';
   for (const r of R.rows) {
-    if (r.date !== d) { d = r.date; h += `<tr><td colspan="5" style="color:var(--mut);padding-top:10px">${d}</td></tr>`; }
-    h += `<tr><td>${r.player} ${r.rung}+</td><td>${tpct(r.tool)}</td><td>${am(r.bet_at)}</td><td>${r.hr_price != null ? am(r.hr_price) + (r.met ? ' ✓' : ' ✗') : '—'}</td><td class="${r.result}">${r.result ? (r.result === 'void' ? 'void' : r.pts) : '…'}</td></tr>`;
+    if (r.date !== d) { d = r.date; h += `<tr><td colspan="3" style="color:var(--mut);padding-top:10px">${d}</td></tr>`; }
+    h += `<tr><td>${r.player}</td><td>${fmtLine(r.fair)}</td><td class="${r.result}">${r.result ? (r.result === 'void' ? 'void' : r.pts) : '…'}</td></tr>`;
   }
   return h + '</table></div>';
 }
 
 function tog(id) {
-  const i = pick.findIndex(p => key(p.l) === id);
+  const i = pick.findIndex(x => x.id === id);
   if (i >= 0) pick.splice(i, 1);
   else {
-    if (pick.length >= 3) { alert3(); return; }
-    for (const g of S.games) for (const l of g.legs) if (l.espn_id === id) pick.push({l, g});
+    const [eid, side, line] = id.split('|');
+    const pi = pick.findIndex(x => x.p.espn_id === eid);
+    if (pi >= 0) pick.splice(pi, 1);          // one leg per player
+    else if (pick.length >= 3) { flash('Max 3 legs. Remove one first.'); return; }
+    for (const g of S.games) for (const p of g.players) if (p.espn_id === eid) {
+      const pr = probs(p, +line)[side];
+      pick.push({id, p, g, side, line: +line, pr});
+    }
   }
   render();
 }
-function alert3() { const b = $('#bar'); b.querySelector('.legs').textContent = 'Max 3 legs. Remove one first.'; }
+function flash(t) { const l = $('#bar .legs'); if (l) l.textContent = t; }
 
 function bar() {
   const b = $('#bar');
-  if (!pick.length || tab === 'record') { b.className = ''; return; }
+  if (!pick.length || tab !== 'slate') { b.className = ''; return; }
   b.className = 'show';
-  const p = pick.reduce((a, x) => a * main(x.l).tool, 1);
-  const d = pick.reduce((a, x) => a * dec(main(x.l).bet_at), 1);
+  const p = pick.reduce((a, x) => a * x.pr, 1);
+  const d = pick.reduce((a, x) => a * dec(betAt(x.pr)), 1);
   const warn = [];
   if (pick.length < 2) warn.push('Pick 2-3 legs.');
-  for (const x of pick) if (main(x.l).tool < .75) warn.push(`${x.l.player} is under 75% (not on the parlay list).`);
+  for (const x of pick) if (x.pr < NEED) warn.push(`${x.p.player} ${x.side} is under 57% (not a bet even at -110).`);
   const games = pick.map(x => x.g.id);
   if (new Set(games).size < games.length) warn.push('SGP: % is rough, Hard Rock reprices same-game.');
   b.innerHTML = `<button class="clr" onclick="pick=[];render()">Clear</button>
-   <div class="legs">${pick.map(x => `${x.l.player} ${main(x.l).rung}+`).join(' · ')}</div>
+   <div class="legs">${pick.map(x => `${x.p.player} ${x.side === 'over' ? 'O' : 'U'} ${fmtLine(x.line)} (${tpct(x.pr)})`).join(' · ')}</div>
    ${pick.length >= 2 ? `<div class="big"><div><b>${tpct(p)}</b><span>combined</span></div><div><b>${am(probAm(p))}</b><span>fair</span></div><div><b>${am(toAm(d))}</b><span>bet parlay at or better</span></div></div>` : ''}
    ${warn.map(w => `<div class="w">${w}</div>`).join('')}`;
 }
@@ -172,8 +203,8 @@ function bar() {
 function render() {
   header();
   document.querySelectorAll('nav button').forEach(b => b.classList.toggle('on', b.dataset.t === tab));
-  const open = [...document.querySelectorAll('.leg.open')].map(e => e.id);
-  $('#main').innerHTML = tab === 'record' ? recordHTML() : slateHTML(tab === 'parlay');
+  const open = [...document.querySelectorAll('.p.open')].map(e => e.id);
+  $('#main').innerHTML = tab === 'record' ? recordHTML() : slateHTML();
   open.forEach(id => { const e = document.getElementById(id); if (e) e.classList.add('open'); });
   bar();
 }

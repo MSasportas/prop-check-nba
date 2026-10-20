@@ -16,6 +16,8 @@ OK_STATUS = {"", "Active", "Probable"}
 PICK_COLS = ["date", "run", "run_ts", "game_id", "game", "tip_et", "espn_id", "player", "team", "opp", "rung",
              "rung_off", "tool", "fair", "bet_at", "list", "settled", "sgp_note"]
 RES_COLS = ["date", "espn_id", "game_id", "pts", "min", "graded_ts"]
+LOG_COLS = ["date", "run", "run_ts", "game_id", "game", "tip_et", "espn_id", "player", "team", "opp", "fair",
+            "l5min", "settled"]
 
 
 def now_et():
@@ -80,24 +82,25 @@ def ingest(state):
 
 # ---------------- grade ----------------
 def grade():
-    picks = read_csv(f"{D}/picks.csv")
-    if picks is None:
+    """Record points for every player on any slate (blank pts = DNP = void)."""
+    logs = [x for x in (read_csv(f"{D}/slate_log.csv"), read_csv(f"{D}/picks.csv")) if x is not None]
+    st = read_csv(f"{D}/season_teams.csv")
+    if not logs or st is None:
         return 0
+    allp = pd.concat([x[["date", "espn_id", "game_id"]] for x in logs]).drop_duplicates()
     res = read_csv(f"{D}/results.csv")
     done = set() if res is None else set(zip(res.date, res.espn_id))
     sp = read_csv(f"{D}/season_players.csv")
-    st = read_csv(f"{D}/season_teams.csv")
-    if st is None:
-        return 0
     played = set(st.gameId)
     box = {} if sp is None else {(r.gameId, r.pid[4:]): r for r in sp.itertuples()}
     rows, ts = [], now_et().isoformat(timespec="minutes")
-    for (date, eid, gid), _ in picks.groupby(["date", "espn_id", "game_id"]):
-        if (date, eid) in done or gid not in played:
+    for r0 in allp.itertuples():
+        if (r0.date, r0.espn_id) in done or r0.game_id not in played:
             continue
-        r = box.get((gid, eid))
-        rows.append(dict(date=date, espn_id=eid, game_id=gid, pts="" if r is None else int(r.pts),
-                         min="" if r is None else r.min, graded_ts=ts))   # blank pts = DNP = void
+        r = box.get((r0.game_id, r0.espn_id))
+        rows.append(dict(date=r0.date, espn_id=r0.espn_id, game_id=r0.game_id, pts="" if r is None else int(r.pts),
+                         min="" if r is None else r.min, graded_ts=ts))
+        done.add((r0.date, r0.espn_id))
     append_csv(f"{D}/results.csv", RES_COLS, rows)
     return len(rows)
 
@@ -129,16 +132,15 @@ def slate(run):
     margins = g[["gameId", "team", "margin"]]
     yday = espn.scoreboard((today - dt.timedelta(days=1)).strftime("%Y%m%d"))
     played_yday = {t for x in yday for t in (x["home"], x["away"])}
-    # last-season name index for matching ESPN players (same team only)
-    base = pl[pl.season == SEASON - 1].drop_duplicates(["pid", "team"])[["pid", "team", "name"]]
+    base = pl[pl.season == SEASON - 1].dropna(subset=["name"]).drop_duplicates(["pid", "team"])[["pid", "team", "name"]]
     base["key"] = base.name.map(espn.norm)
     idx = base.groupby(["team", "key"]).pid.agg(list).to_dict()
 
-    notes, out_games, picks = [], [], []
+    notes, out_games, log = [], [], []
     for gm in sorted(games, key=lambda x: x["date_utc"]):
         tip = dt.datetime.fromisoformat(gm["date_utc"].replace("Z", "+00:00")).astimezone(ET)
         label = f"{gm['away']} @ {gm['home']}"
-        gout = dict(id=gm["id"], game=label, tip_et=tip.strftime("%-I:%M %p"), legs=[], held=[], note="")
+        gout = dict(id=gm["id"], game=label, tip_et=tip.strftime("%-I:%M %p"), players=[], held=[], note="")
         if gm["state"] != "pre":
             gout["note"] = "Started or final, not shown"
             out_games.append(gout)
@@ -147,9 +149,9 @@ def slate(run):
         spr, spr_txt = espn.spread(summ)
         gout.update(spread=spr, spread_txt=spr_txt, settled=settled_label(run, tip, now))
         if spr is None:
-            gout["note"] = "No spread posted yet: all legs held (spread gate can't pass)"
+            gout["note"] = "No spread posted yet: everyone held (spread gate can't pass)."
         elif spr > core.MAX_SPREAD:
-            gout["note"] = f"Spread {spr} > 10: all legs fail spread gate"
+            gout["note"] = f"Spread {spr} is over 10: everyone held."
         for team, opp, tid in ((gm["away"], gm["home"], gm["away_id"]), (gm["home"], gm["away"], gm["home_id"])):
             if team not in ratings or opp not in ratings:
                 gout["note"] += f" Missing team ratings for {team}/{opp}."
@@ -163,82 +165,60 @@ def slate(run):
                 rows = pl[pl.pid.isin(pids) & (pl.date < today.isoformat())]
                 if rows.empty:
                     continue
-                hist = core.clean_history(rows, margins)
-                ev = core.evaluate(hist, team, opp, SEASON, fac)
-                if ev is None:
+                cv = core.line_curve(core.clean_history(rows, margins), team, opp, SEASON, fac)
+                if cv is None:
                     continue
-                m = next(r for r in ev["rungs"] if r["off"] == 0)
                 fails = []
                 if a["status"] not in OK_STATUS:
-                    fails.append(f"Injury: {a['status']}")
-                if ev["l5min"] < core.MIN_L5:
-                    fails.append(f"L5 min {ev['l5min']}")
-                if spr is None:
-                    fails.append("No spread")
-                elif spr > core.MAX_SPREAD:
-                    fails.append(f"Spread {spr}")
-                if m["tool"] < core.MIN_TOOL:
-                    fails.append(f"Tool {m['tool']:.0%}")
-                leg = dict(espn_id=eid, player=a["name"], team=team, opp=opp, status=a["status"],
-                           factor=round(fac, 3), def_ratio=round(dr, 3), pace_ratio=round(pr, 3), opp_b2b=opp_b2b,
-                           matched_last_season=len(cands) == 1, **ev)
+                    fails.append(a["status"])
+                if cv["l5min"] < core.MIN_L5:
+                    fails.append(f"{cv['l5min']} min L5")
+                if spr is None or spr > core.MAX_SPREAD:
+                    fails.append("spread")
                 if fails:
-                    # only list near-misses worth knowing about (would pass on tool, or close)
-                    if m["tool"] >= core.MIN_TOOL - 0.05:
-                        gout["held"].append(dict(player=a["name"], team=team, rung=m["rung"],
-                                                 tool=m["tool"], why=", ".join(fails)))
+                    if cv["l5min"] >= core.MIN_L5 - 4 or a["status"] not in OK_STATUS:
+                        gout["held"].append(dict(player=a["name"], team=team, fair=cv["fair"], why=", ".join(fails)))
                     continue
-                leg["parlay_ok"] = m["tool"] >= core.PARLAY_MIN
-                gout["legs"].append(leg)
-                picks.append(dict(date=today.isoformat(), run=run, run_ts=now.isoformat(timespec="minutes"),
-                                  game_id=gm["id"], game=label, tip_et=gout["tip_et"], espn_id=eid, player=a["name"],
-                                  team=team, opp=opp, rung=m["rung"], rung_off=0, tool=m["tool"], fair=m["fair"],
-                                  bet_at=m["bet_at"], list="parlay" if leg["parlay_ok"] else "straight",
-                                  settled=gout["settled"]))
-        gout["legs"].sort(key=lambda x: x["player"])
+                gout["players"].append(dict(espn_id=eid, player=a["name"], team=team, opp=opp, status=a["status"],
+                                            factor=round(fac, 3), def_ratio=round(dr, 3), pace_ratio=round(pr, 3),
+                                            opp_b2b=opp_b2b, matched_last_season=len(cands) == 1, **cv))
+                log.append(dict(date=today.isoformat(), run=run, run_ts=now.isoformat(timespec="minutes"),
+                                game_id=gm["id"], game=label, tip_et=gout["tip_et"], espn_id=eid, player=a["name"],
+                                team=team, opp=opp, fair=cv["fair"], l5min=cv["l5min"], settled=gout["settled"]))
+        gout["players"].sort(key=lambda x: -x["fair"])
         out_games.append(gout)
 
     n_cur = {t: r["gp"] for t, r in ratings.items()}
     if max(n_cur.values() or [0]) < 15:
         mx = max(n_cur.values())
-        notes.append("Early season: team ratings and hit rates lean on last season (blend until game 15; "
+        notes.append("Early season: numbers lean on last season (blend until game 15; "
                      + ("no games played yet)." if mx == 0 else f"teams have played {mx} or fewer games)."))
     notes.append("Rest spots: only caught if the team lists him on the injury report.")
     out = dict(generated_et=now.isoformat(timespec="minutes"), run=run, date=today.isoformat(), notes=notes,
-               games=out_games, n_legs=len(picks), n_parlay=sum(p["list"] == "parlay" for p in picks),
+               games=out_games, n_players=len(log), lines=core.LINES,
+               block_over_at=core.BLOCK_OVER_AT, block_under_at=core.BLOCK_UNDER_AT,
                ingested_through=load_state().get("ingested_through"))
     os.makedirs(DOCS, exist_ok=True)
     json.dump(out, open(f"{DOCS}/slate.json", "w"), separators=(",", ":"))
-    append_csv(f"{D}/picks.csv", PICK_COLS, picks)
+    append_csv(f"{D}/slate_log.csv", LOG_COLS, log)
     return out
 
 
 # ---------------- record view ----------------
 def build_record():
-    picks = read_csv(f"{D}/picks.csv")
-    if picks is None:
-        json.dump(dict(rows=[], summary=[]), open(f"{DOCS}/record.json", "w"))
-        return
-    # the record is the last run of the day for each leg
-    last = picks.sort_values("run_ts").groupby(["date", "espn_id"]).tail(1)
-    res, prc = read_csv(f"{D}/results.csv"), read_csv(f"{D}/prices.csv")
-    if res is not None:
-        last = last.merge(res[["date", "espn_id", "pts"]].assign(graded=1), on=["date", "espn_id"], how="left")
-    else:
-        last["pts"], last["graded"] = None, None
-    if prc is not None:
-        p = prc.sort_values("ts").groupby(["date", "espn_id"]).tail(1)[["date", "espn_id", "hr_price"]]
-        last = last.merge(p, on=["date", "espn_id"], how="left")
-    else:
-        last["hr_price"] = None
+    """Every player shown (last run of each day): fair line vs. actual points."""
+    lg, res = read_csv(f"{D}/slate_log.csv"), read_csv(f"{D}/results.csv")
     rows = []
-    for r in last.sort_values(["date", "game", "player"], ascending=[False, True, True]).itertuples():
-        result = "" if pd.isna(r.graded) else ("void" if pd.isna(r.pts) else ("hit" if r.pts >= r.rung else "miss"))
-        hr = None if pd.isna(r.hr_price) else int(r.hr_price)
-        met = None if hr is None else (dec(hr) >= dec(int(r.bet_at)))
-        rows.append(dict(date=r.date, game=r.game, player=r.player, rung=int(r.rung), tool=round(float(r.tool), 3),
-                         bet_at=int(r.bet_at), hr_price=hr, met=met, pts=None if pd.isna(r.pts) else int(r.pts),
-                         result=result, list=r.list, run=r.run))
+    if lg is not None:
+        last = lg.sort_values("run_ts").groupby(["date", "espn_id"]).tail(1)
+        if res is not None:
+            last = last.merge(res[["date", "espn_id", "pts"]].assign(graded=1), on=["date", "espn_id"], how="left")
+        else:
+            last["pts"], last["graded"] = None, None
+        for r in last.sort_values(["date", "game", "fair"], ascending=[False, True, False]).itertuples():
+            res_ = "" if pd.isna(r.graded) else ("void" if pd.isna(r.pts) else ("over" if r.pts > r.fair else "under"))
+            rows.append(dict(date=r.date, game=r.game, player=r.player, fair=float(r.fair),
+                             pts=None if pd.isna(r.pts) else int(r.pts), result=res_))
     json.dump(dict(rows=rows, generated_et=now_et().isoformat(timespec="minutes")), open(f"{DOCS}/record.json", "w"),
               separators=(",", ":"))
 
@@ -272,7 +252,7 @@ def auto():
         print("ingested games:", n, "graded:", grade())
     if games and (first is None or now < max(tips)):
         out = slate(due)
-        print(due, "legs:", out["n_legs"])
+        print(due, "players:", out["n_players"])
     done.append(due)
     s["runs"] = {k: v for k, v in s["runs"].items() if k >= (now.date() - dt.timedelta(days=7)).isoformat()}
     s["last_run"] = dict(label=due, ts=now.isoformat(timespec="minutes"))
@@ -292,7 +272,7 @@ if __name__ == "__main__":
         print("ingested", n, "graded", grade())
         o = slate(sys.argv[2] if len(sys.argv) > 2 else "manual")
         build_record()
-        print("legs", o["n_legs"], "parlay", o["n_parlay"])
+        print("players", o["n_players"])
     elif mode == "ingest":
         st = load_state(); print(ingest(st)); save_state(st)
     elif mode == "grade":

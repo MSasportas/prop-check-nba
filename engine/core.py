@@ -128,3 +128,42 @@ def evaluate(hist, team, opp, season, fac):
     return dict(main=main, rungs=rungs, l5min=round(float(prior['min'].values[-5:].mean()), 1),
                 last10=[int(x) for x in pa[-10:]][::-1], n_hist=int(len(prior)), n_cur=int(len(cur)), k=int(k),
                 h2h=[int(x) for x in vs.pts.values[-5:]][::-1])
+
+
+# ---------------- main-line (fair line) mode ----------------
+LINES = [x + 0.5 for x in range(0, 51)]        # 0.5 .. 50.5
+BLOCK_OVER_AT, BLOCK_UNDER_AT = 30.5, 14.5      # fair-line backtest: overs 30.5+ and unders 14.5- run hot
+
+
+def line_curve(hist, team, opp, season, fac):
+    """P(over) at every x.5 line, same math as the rungs: over x.5 = scores line+0.5 or more.
+    Under = 1 - over (as backtested). Returns dict or None."""
+    prior = hist[(hist.team == team) & (hist.season >= season - 1) & (hist.short == 0)]
+    if len(prior) < MIN_HIST:
+        return None
+    cur, last = prior[prior.season == season], prior[prior.season == season - 1]
+    pa, pc, pl_ = prior.pts.values, cur.pts.values, last.pts.values
+    k = max(0, BLEND_K - len(cur)) if len(last) >= 10 else 0
+    if len(cur) + k == 0:
+        return None
+
+    def season_rate(x):
+        rl = (pl_ >= x).mean() if len(pl_) else 0
+        return ((pc >= x).sum() + rl * k) / (len(cur) + k)
+
+    over = []
+    for line in LINES:
+        rung = line + 0.5
+        adj = rung / fac
+        blend = W_L10 * (pa[-10:] >= adj).mean() + W_L20 * (pa[-20:] >= adj).mean() + W_S * season_rate(adj)
+        over.append(round(float(calibrate(blend, rung)), 4))
+    fair = max([l for l, p in zip(LINES, over) if p >= 0.5], default=None)
+    if fair is None:
+        return None
+    r = fair + 0.5
+    vs = prior[prior.opp == opp]
+    return dict(over=over, fair=fair, l5min=round(float(prior['min'].values[-5:].mean()), 1),
+                strip=dict(L5=round(float((pa[-5:] >= r).mean()), 2), L10=round(float((pa[-10:] >= r).mean()), 2),
+                           L20=round(float((pa[-20:] >= r).mean()), 2), S=round(float(season_rate(r)), 2)),
+                last10=[int(x) for x in pa[-10:]][::-1], h2h=[int(x) for x in vs.pts.values[-5:]][::-1],
+                n_hist=int(len(prior)), n_cur=int(len(cur)), k=int(k))
