@@ -64,6 +64,7 @@ tr.main td{color:var(--acc);font-weight:600}
 const $ = s => document.querySelector(s);
 let S = null, R = null, tab = 'straight', pick = [];
 const pct = p => Math.round(p * 100) + '%';
+const tpct = p => Math.floor(p * 100 + 1e-9) + '%'; // tool %: round down so 74.5 never reads as 75
 const am = a => a > 0 ? '+' + a : '' + a;
 const dec = a => 1 + (a > 0 ? a / 100 : 100 / -a);
 const toAm = d => d >= 2 ? Math.round((d - 1) * 100) : Math.round(-100 / (d - 1));
@@ -91,11 +92,11 @@ function header() {
 
 function legHTML(l, g) {
   const m = main(l), on = pick.some(p => key(p.l) === key(l));
-  const rows = l.rungs.map(r => `<tr class="${r.off === 0 ? 'main' : ''}"><td>${r.rung}+</td><td>${pct(r.tool)}</td><td>${am(r.bet_at)}</td><td>${pct(r.strip.L5)}</td><td>${pct(r.strip.L10)}</td><td>${pct(r.strip.L20)}</td><td>${pct(r.strip.S)}</td></tr>`).join('');
+  const rows = l.rungs.map(r => `<tr class="${r.off === 0 ? 'main' : ''}"><td>${r.rung}+</td><td>${tpct(r.tool)}</td><td>${am(r.bet_at)}</td><td>${pct(r.strip.L5)}</td><td>${pct(r.strip.L10)}</td><td>${pct(r.strip.L20)}</td><td>${pct(r.strip.S)}</td></tr>`).join('');
   return `<div class="leg" id="L${l.espn_id}">
    <div class="row">
     <div class="who" onclick="this.closest('.leg').classList.toggle('open')"><b>${l.player}</b><span>${l.team} · ${m.rung}+ pts · ${l.l5min} min L5${l.status ? ' · ' + l.status : ''}</span></div>
-    <div onclick="this.closest('.leg').classList.toggle('open')"><div class="pct">${pct(m.tool)}</div><div class="bet">bet at <b>${am(m.bet_at)}</b></div></div>
+    <div onclick="this.closest('.leg').classList.toggle('open')"><div class="pct">${tpct(m.tool)}</div><div class="bet">bet at <b>${am(m.bet_at)}</b></div></div>
     <button class="add ${on ? 'on' : ''}" onclick="tog('${l.espn_id}')">${on ? '✓' : '+'}</button>
    </div>
    <div class="det">
@@ -125,7 +126,7 @@ function recordHTML() {
   if (!R || !R.rows.length) return '<div class="empty">No picks logged yet.</div>';
   const g = R.rows.filter(r => r.result === 'hit' || r.result === 'miss');
   const bands = [[.6, .65], [.65, .7], [.7, .75], [.75, .8], [.8, .86]];
-  let h = '<div class="sec">Paper record (last run of each day)</div><div style="margin:0 16px"><table><tr><th>Tool %</th><th>Legs</th><th>Says</th><th>Hit</th></tr>';
+  let h = '<div class="sec">Paper record (last run of each day)</div><div style="margin:0 16px">' + (g.length ? '' : '<div class="kv">Nothing graded yet. Grading runs the next morning.</div>') + '<table' + (g.length ? '' : ' style="display:none"') + '><tr><th>Tool %</th><th>Legs</th><th>Says</th><th>Hit</th></tr>';
   const line = (lab, xs) => xs.length ? `<tr><td>${lab}</td><td>${xs.length}</td><td>${pct(xs.reduce((a, r) => a + r.tool, 0) / xs.length)}</td><td>${pct(xs.filter(r => r.result === 'hit').length / xs.length)}</td></tr>` : '';
   h += line('All', g) + bands.map(([a, b]) => line(`${a * 100}-${Math.min(b, .85) * 100}`, g.filter(r => r.tool >= a && r.tool < b))).join('');
   h += line('25+ rungs', g.filter(r => r.rung >= 25));
@@ -135,7 +136,7 @@ function recordHTML() {
   let d = '';
   for (const r of R.rows) {
     if (r.date !== d) { d = r.date; h += `<tr><td colspan="5" style="color:var(--mut);padding-top:10px">${d}</td></tr>`; }
-    h += `<tr><td>${r.player} ${r.rung}+</td><td>${pct(r.tool)}</td><td>${am(r.bet_at)}</td><td>${r.hr_price != null ? am(r.hr_price) + (r.met ? ' ✓' : ' ✗') : '—'}</td><td class="${r.result}">${r.result ? (r.result === 'void' ? 'void' : r.pts) : '…'}</td></tr>`;
+    h += `<tr><td>${r.player} ${r.rung}+</td><td>${tpct(r.tool)}</td><td>${am(r.bet_at)}</td><td>${r.hr_price != null ? am(r.hr_price) + (r.met ? ' ✓' : ' ✗') : '—'}</td><td class="${r.result}">${r.result ? (r.result === 'void' ? 'void' : r.pts) : '…'}</td></tr>`;
   }
   return h + '</table></div>';
 }
@@ -164,7 +165,7 @@ function bar() {
   if (new Set(games).size < games.length) warn.push('SGP: % is rough, Hard Rock reprices same-game.');
   b.innerHTML = `<button class="clr" onclick="pick=[];render()">Clear</button>
    <div class="legs">${pick.map(x => `${x.l.player} ${main(x.l).rung}+`).join(' · ')}</div>
-   ${pick.length >= 2 ? `<div class="big"><div><b>${pct(p)}</b><span>combined</span></div><div><b>${am(probAm(p))}</b><span>fair</span></div><div><b>${am(toAm(d))}</b><span>bet parlay at or better</span></div></div>` : ''}
+   ${pick.length >= 2 ? `<div class="big"><div><b>${tpct(p)}</b><span>combined</span></div><div><b>${am(probAm(p))}</b><span>fair</span></div><div><b>${am(toAm(d))}</b><span>bet parlay at or better</span></div></div>` : ''}
    ${warn.map(w => `<div class="w">${w}</div>`).join('')}`;
 }
 
