@@ -58,6 +58,20 @@ td.blk{color:#5d636c;font-size:11.5px}
 .clr{float:right;background:none;border:0;color:var(--blue);font-size:13px}
 .over{color:var(--acc)}.under{color:var(--blue)}.void{color:var(--mut)}
 .sec{margin:14px 16px 4px;font-weight:600}
+.chk{margin-top:10px;padding:8px;background:var(--card2);border-radius:8px}
+.chk .t{font-size:12px;color:var(--mut);margin-bottom:6px}
+.ins{display:flex;gap:6px;align-items:flex-end}
+.ins label{flex:1;font-size:11px;color:var(--mut)}
+.ins .pr{display:flex}
+.ins input{width:100%;min-width:0;padding:8px 6px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--tx);font-size:16px}
+.sg{padding:0 8px;border:1px solid var(--line);border-right:0;border-radius:6px 0 0 6px;background:var(--card);color:var(--tx);font-size:16px}
+.pr input{border-radius:0 6px 6px 0}
+.vd{margin-top:8px;font-size:13px}
+.vd div{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-top:1px solid var(--line);gap:8px}
+.vd .tag{font-weight:700;padding:3px 8px;border-radius:5px;font-size:12.5px;white-space:nowrap}
+.tag.bet{background:var(--acc);color:#04130b}.tag.pass{background:#2d323a;color:var(--mut)}.tag.blk{background:#3a2020;color:#ff9b9b}
+.vd .add2{background:none;border:1px solid var(--line);color:var(--blue);border-radius:5px;padding:3px 6px;font-size:12px}
+.news{color:var(--warn);font-size:12.5px;margin-top:6px}
 .pad{margin:0 16px}
 .pad td,.pad th{text-align:right}.pad td:first-child,.pad th:first-child{text-align:left}
 </style>
@@ -89,6 +103,52 @@ function probs(p, line) {
   return {over: Math.min(over, .85), under: Math.min(1 - over, .85)};
 }
 const blocked = (side, line) => side === 'over' ? line >= S.block_over_at : line <= S.block_under_at;
+
+// ---------- check a line (nothing is saved) ----------
+const CK = {};
+function checkHTML(p) {
+  const c = CK[p.espn_id] || (CK[p.espn_id] = {line: '', op: '', up: '', os: '-', us: '-'});
+  const e = p.espn_id;
+  return `<div class="chk" onclick="event.stopPropagation()"><div class="t">Check Hard Rock's line</div>
+   <div class="ins">
+    <label>Line<input inputmode="decimal" value="${c.line}" placeholder="${fmtLine(p.fair)}" oninput="ck('${e}','line',this.value)"></label>
+    <label>Over price<div class="pr"><button class="sg" onclick="sg('${e}','os',this)">${c.os === '-' ? '−' : '+'}</button><input inputmode="numeric" value="${c.op}" placeholder="110" oninput="ck('${e}','op',this.value)"></div></label>
+    <label>Under price<div class="pr"><button class="sg" onclick="sg('${e}','us',this)">${c.us === '-' ? '−' : '+'}</button><input inputmode="numeric" value="${c.up}" placeholder="110" oninput="ck('${e}','up',this.value)"></div></label>
+   </div><div class="vd" id="V${e}">${verdictHTML(p)}</div></div>`;
+}
+function ck(e, k, v) { CK[e][k] = v; upd(e); }
+function sg(e, k, btn) { CK[e][k] = CK[e][k] === '-' ? '+' : '-'; btn.textContent = CK[e][k] === '-' ? '−' : '+'; upd(e); }
+function findP(e) { for (const g of S.games) for (const p of g.players) if (p.espn_id === e) return [p, g]; return [null, null]; }
+function upd(e) { const [p] = findP(e); const v = document.getElementById('V' + e); if (p && v) v.innerHTML = verdictHTML(p); }
+const implied = a => a < 0 ? -a / (-a + 100) : 100 / (a + 100);
+function sideProb(p, side, line) {
+  // whole-number line: over needs line+1, under needs line-1 (push ignored, slightly conservative)
+  const key = Number.isInteger(line) ? (side === 'over' ? line + 0.5 : line - 0.5) : line;
+  const pr = probs(p, key);
+  return pr ? pr[side] : null;
+}
+function verdictHTML(p) {
+  const c = CK[p.espn_id], line = parseFloat(c.line);
+  if (!(line >= 0)) return '<div style="border:0;color:var(--mut)">Enter the line and at least one price.</div>';
+  let h = '';
+  for (const [side, pk, sk] of [['over', 'op', 'os'], ['under', 'up', 'us']]) {
+    const raw = parseInt(c[pk]);
+    if (!(raw >= 100)) continue;
+    const price = c[sk] === '-' ? -raw : raw, pr = sideProb(p, side, line);
+    const lab = `${side === 'over' ? 'Over' : 'Under'} ${c.line} ${am(price)}`;
+    if (pr == null) { h += `<div><span>${lab}</span><span class="tag pass">No data</span></div>`; continue; }
+    if (blocked(side, Number.isInteger(line) ? line + (side === 'over' ? .5 : -.5) : line)) {
+      h += `<div><span>${lab}<br><small style="color:var(--mut)">Backtest: tool runs hot here</small></span><span class="tag blk">BLOCKED</span></div>`; continue;
+    }
+    const need = implied(price) + cushion(pr), bet = pr - cushion(pr) >= implied(price);
+    const id = `${p.espn_id}|${side}|${Number.isInteger(line) ? (side === 'over' ? line + .5 : line - .5) : line}`;
+    h += `<div><span>${lab}<br><small style="color:var(--mut)">Tool ${tpct(pr)} · need ${tpct(need)} · bet at ${am(betAt(pr))} or better</small></span>
+      <span>${bet ? `<button class="add2" onclick="tog('${id}')">+ parlay</button> ` : ''}<span class="tag ${bet ? 'bet' : 'pass'}">${bet ? 'BET' : 'PASS'}</span></span></div>`;
+  }
+  if (!h) h = '<div style="border:0;color:var(--mut)">Add a price (e.g. 110 with − for -110).</div>';
+  if (Math.abs(line - p.fair) >= 3) h += `<div class="news" style="border:0">Check news: Hard Rock is ${Math.abs(line - p.fair).toFixed(1)} pts off our fair line (${fmtLine(p.fair)}). That's usually injury or role news we can't see.</div>`;
+  return h;
+}
 
 async function load() {
   try { S = await (await fetch('slate.json?' + Date.now())).json(); } catch (e) { S = null; }
@@ -126,6 +186,7 @@ function playerHTML(p, g) {
     <div class="fair"><b>${fmtLine(p.fair)}</b><span>fair line</span></div>
    </div>
    <div class="det">
+    ${checkHTML(p)}
     <table><tr><th style="text-align:left">Line</th><th>Over · bet at</th><th>Under · bet at</th></tr>${rows}</table>
     <div class="kv">Green = 57%+ (beats -110 after cushion). — = blocked (backtest: runs hot).</div>
     <div class="kv">Over ${fmtLine(p.fair)}: L5 <b>${tpct(st.L5)}</b> · L10 <b>${tpct(st.L10)}</b> · L20 <b>${tpct(st.L20)}</b> · Season <b>${tpct(st.S)}</b></div>
