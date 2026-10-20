@@ -1,0 +1,15 @@
+name: samples
+on:
+  push:
+    paths: [scripts/fetch_samples.py]
+permissions:
+  contents: write
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/fetch_samples.py
+      - run: |
+          git config user.name "prop-check-bot" && git config user.email "bot@users.noreply.github.com"
+          git add samples && git commit -m "samples [skip ci]" && git push
