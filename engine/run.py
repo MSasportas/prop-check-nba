@@ -200,8 +200,9 @@ def slate(run):
 
     n_cur = {t: r["gp"] for t, r in ratings.items()}
     if max(n_cur.values() or [0]) < 15:
-        notes.append(f"Early season: team ratings and hit rates lean on last season (blend until game 15; "
-                     ("no games played yet)." if max(n_cur.values()) == 0 else f"teams have played {max(n_cur.values())} or fewer games).")
+        mx = max(n_cur.values())
+        notes.append("Early season: team ratings and hit rates lean on last season (blend until game 15; "
+                     + ("no games played yet)." if mx == 0 else f"teams have played {mx} or fewer games)."))
     notes.append("Rest spots: only caught if the team lists him on the injury report.")
     out = dict(generated_et=now.isoformat(timespec="minutes"), run=run, date=today.isoformat(), notes=notes,
                games=out_games, n_legs=len(picks), n_parlay=sum(p["list"] == "parlay" for p in picks),
