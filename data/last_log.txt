@@ -1,1 +1,1 @@
-afternoon players: 10
+pretip players: 10
