@@ -1,8 +1,8 @@
 {
  "ingested_through": "2026-10-21",
  "last_run": {
-  "label": "morning",
-  "ts": "2026-10-22T11:07-04:00"
+  "label": "afternoon",
+  "ts": "2026-10-22T15:25-04:00"
  },
  "runs": {
   "2026-10-20": [
@@ -15,7 +15,8 @@
    "afternoon"
   ],
   "2026-10-22": [
-   "morning"
+   "morning",
+   "afternoon"
   ]
  }
 }
