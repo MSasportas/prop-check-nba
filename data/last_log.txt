@@ -1,2 +1,1 @@
-ingested games: 12 graded: 45
-morning players: 15
+afternoon players: 15
