@@ -1,1 +1,2 @@
-pretip players: 14
+ingested games: 8 graded: 15
+morning players: 20
