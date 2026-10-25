@@ -22,7 +22,7 @@
   "last_read_at": null,
   "last_run": {
    "ok": true,
-   "at": "2026-10-25T18:50:00-04:00"
+   "at": "2026-10-25T18:50:13-04:00"
   }
  },
  "games": [
@@ -46,7 +46,7 @@
    "away": "IND",
    "home": "BKN",
    "state": "in",
-   "detail": "7:42 - 2nd",
+   "detail": "7:19 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -142,6 +142,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-25T18:50:00-04:00",
- "status_at": "2026-10-25T18:50:00-04:00"
+ "generated_at": "2026-10-25T18:50:13-04:00",
+ "status_at": "2026-10-25T18:50:13-04:00"
 }
