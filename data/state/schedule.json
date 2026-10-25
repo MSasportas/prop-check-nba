@@ -25,10 +25,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:00 - 1st",
+    "detail": "3:28 - 1st",
     "score": {
-     "IND": "9",
-     "BKN": "6"
+     "IND": "21",
+     "BKN": "18"
     }
    },
    {
