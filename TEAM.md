@@ -95,12 +95,12 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   the if-bet line), PRICE FINAL, ACTION NEEDED (keys refused / pool low, once a day each), a one-time hello. Never no-pick nights,
   heartbeats, grading or errors. Quiet 12:30-9:00 AM ET. Max 12 messages a day.
 - **Debug:** `python scripts/run.py --explain` lists every rebounds line on the latest reads and the first reason it did not pass.
-  Tests: `python -m unittest discover -s tests`. Env: `PC_NOW`, `PC_DATA_DIR`, `PC_ODDS_FIXTURE_DIR`, `PC_ESPN_FIXTURE_DIR`.
+  Tests: `python -m unittest discover -s tests` (30; `tests/world.py` = fake day from the real probe payloads; `tests/test_qa_failures.py` = QA's regressions). Env: `PC_NOW`, `PC_DATA_DIR`, `PC_ODDS_FIXTURE_DIR`, `PC_ESPN_FIXTURE_DIR`.
 
 ## 6. Reviews (scheduled tasks; each reads this file first and updates it last)
-- **Daily check, 2:07 PM ET:** chain alive, A read ran, failed steps, unmatched names, grading done for last night; fix what's broken; no
+- **Daily check, 2:07 PM ET** (scheduled task "Prop Check NBA daily check"): chain alive, A read ran, failed steps, unmatched names, grading done for last night; fix what's broken; no
   rule changes.
-- **Weekly team review, Mondays 11:13 AM ET:** Sharp, Data Scientist, UX, Builder, QA on the Record and the odds log; first one 2026-11-02.
+- **Weekly team review, Mondays 11:13 AM ET** (scheduled task "Prop Check NBA weekly team review"): Sharp, Data Scientist, UX, Builder, QA on the Record and the odds log; first one 2026-11-02.
 
 ## 7. Known gaps and risks
 1. **Edge vs the book is unproven.** Gap + Guard is a hypothesis carried over from NHL (live there since 2026-10-20, no verdict yet). NBA
@@ -114,11 +114,13 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
    player-games Dec-Apr, test line = his last-10 average as an x.5 line. 16 variants tried; chosen disp 1.15, opponent factor exp 1.0,
    no back-to-back cut, rpm half-life 20: log loss 0.6686 vs base 0.6877, bias -0.05 pt, calibrated in every 10-pt bucket. **Offset =
    0.0** (bias ~0). Not tested against book lines (no historical Hard Rock rebounds prices); refit only with a named sample.
-7. Official NBA injury report PDF not parsed (Rotowire mirrors it). Build only if Rotowire proves unreliable.
 4. Name matching: accents, Jr./III and dots are normalized; within the two teams playing only. Unmatched names are listed in
    status.json and skipped, never guessed.
 5. The ESPN tip time is used for lock (games often tip ~10 min later): conservative.
 6. Keys refill on the 1st (assumed, as NHL). The pool covers ~4 reads a game with 3 keys.
+7. Official NBA injury report PDF not parsed (Rotowire mirrors it). Build only if Rotowire proves unreliable.
+8. Not live-verified yet: Hard Rock rebounds in the feed, which of the 9 other books return NBA rebounds, Hard Rock bet-slip
+   links, Rotowire "confirmed" class. The first evening with keys answers all four (daily check reads them).
 
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
@@ -126,6 +128,13 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-25 ~12:20 PM (CEO): v1.0 shipped. Built from the NHL template (timer chain, Record + guard, key pool, Discord, page look copied;
+  engine rewritten for rebounds). DS fit the model guard (section 7 item 3). UX/Builder subagent built the page (checked at 380px in
+  Chromium, 8 states). QA (fresh): SHIP WITH FIXES, 8 findings (A-read retries could drain the pool; no pick from a read > 15 min old;
+  open picks of earlier slates / vanished / postponed games now lock and void; Rotowire layout change now said on the page; unmatched
+  Rotowire tags no longer read as healthy; empty-state wording; team codes on the Record; days left) all fixed, 30 tests pass. First live
+  run 12:12 PM: ESPN 23/23, Rotowire ok, 7 games, all steps ok; page says no keys yet. Daily check + weekly review scheduled.
+  Waiting on Matt: 3 odds keys (`ODDS_API_KEYS`) and `DISCORD_WEBHOOK`.
 - 2026-10-25 ~10:30 AM setup (CEO): interview done (rebounds only, main line, over+under, -200, parlays off, last hour before tip,
   regular season, new Discord channel). Old NBA build wiped (repo, secrets and Pages kept). Seed + source probe workflow pushed.
   Asked Matt for 3 new free odds keys and the Discord webhook.
