@@ -4,7 +4,7 @@
  "banners": [
   {
    "level": "stop",
-   "text": "No odds keys yet: Hard Rock prices can't be read, so there are no picks. The team has asked Matt for 3 free keys."
+   "text": "No odds keys yet: Hard Rock prices can't be read, so there are no picks."
   }
  ],
  "status": {
@@ -22,7 +22,7 @@
   "last_read_at": null,
   "last_run": {
    "ok": true,
-   "at": "2026-10-25T19:40:14-04:00"
+   "at": "2026-10-25T19:50:01-04:00"
   }
  },
  "games": [
@@ -46,7 +46,7 @@
    "away": "IND",
    "home": "BKN",
    "state": "in",
-   "detail": "8:14 - 3rd",
+   "detail": "4:18 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "ORL",
    "home": "NYK",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "6:36 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "TOR",
    "home": "MIN",
    "state": "in",
-   "detail": "1:08 - 1st",
+   "detail": "9:34 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "LAC",
    "home": "OKC",
    "state": "in",
-   "detail": "0.0 - 2nd",
+   "detail": "5:24 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -101,8 +101,8 @@
    "start": "2026-10-25T19:30:00-04:00",
    "away": "DET",
    "home": "PHI",
-   "state": "pre",
-   "detail": "10/25 - 7:30 PM EDT",
+   "state": "in",
+   "detail": "8:01 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -142,6 +142,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-25T19:40:14-04:00",
- "status_at": "2026-10-25T19:40:14-04:00"
+ "generated_at": "2026-10-25T19:50:01-04:00",
+ "status_at": "2026-10-25T19:50:01-04:00"
 }

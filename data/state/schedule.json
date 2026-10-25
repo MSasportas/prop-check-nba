@@ -25,10 +25,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:14 - 3rd",
+    "detail": "4:18 - 3rd",
     "score": {
-     "IND": "79",
-     "BKN": "65"
+     "IND": "92",
+     "BKN": "74"
     }
    },
    {
@@ -39,11 +39,11 @@
     "home": "NY",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:36 - 2nd",
     "score": {
-     "ORL": "21",
-     "NY": "28"
+     "ORL": "37",
+     "NY": "40"
     }
    },
    {
@@ -55,10 +55,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:08 - 1st",
+    "detail": "9:34 - 2nd",
     "score": {
-     "TOR": "19",
-     "MIN": "28"
+     "TOR": "24",
+     "MIN": "38"
     }
    },
    {
@@ -70,10 +70,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "0.0 - 2nd",
+    "detail": "5:24 - 2nd",
     "score": {
-     "LAC": "25",
-     "OKC": "25"
+     "LAC": "37",
+     "OKC": "32"
     }
    },
    {
@@ -82,13 +82,13 @@
     "start": "2026-10-25T19:30:00-04:00",
     "away": "DET",
     "home": "PHI",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/25 - 7:30 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:01 - 1st",
     "score": {
-     "DET": "0",
-     "PHI": "0"
+     "DET": "17",
+     "PHI": "4"
     }
    },
    {
