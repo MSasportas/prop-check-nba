@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T16:40:01-04:00",
+ "at": "2026-10-25T17:10:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -36,19 +36,19 @@
    "date": "2026-10-25T13:40Z",
    "note": "Head coach Jordi Fernandez said Brown (rest) will be held out of Sunday's game against the Pacers, Brian Lewis of the New York Post reports."
   },
+  "4395651": {
+   "status": "out",
+   "name": "Coby White",
+   "team": "CHA",
+   "date": "2026-10-25T20:59Z",
+   "note": "White (calf) is out for Monday's game against the Wizards."
+  },
   "4066218": {
    "status": "out",
    "name": "Grant Williams",
    "team": "CHA",
    "date": "2026-10-24T17:26Z",
    "note": "Williams (hamstring) has been ruled out for Saturday's game against the Heat."
-  },
-  "4395651": {
-   "status": "out",
-   "name": "Coby White",
-   "team": "CHA",
-   "date": "2026-10-24T17:23Z",
-   "note": "White (calf) has been ruled out for Saturday's game against Miami."
   },
   "5061575": {
    "status": "out",
@@ -558,8 +558,8 @@
    "status": "out",
    "name": "AJ Dybantsa",
    "team": "WSH",
-   "date": "2026-10-24T17:54Z",
-   "note": "Dybantsa (ankle) has been ruled out for Saturday's game against the Bulls."
+   "date": "2026-10-25T20:52Z",
+   "note": "Dybantsa (ankle) has been ruled out for Monday's game against the Hornets."
   },
   "4997537": {
    "status": "out",
