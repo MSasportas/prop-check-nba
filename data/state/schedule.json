@@ -9,11 +9,11 @@
     "home": "UTAH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:55 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "LAL": "64",
-     "UTAH": "68"
+     "LAL": "74",
+     "UTAH": "71"
     }
    },
    {
@@ -22,13 +22,13 @@
     "start": "2026-10-25T18:00:00-04:00",
     "away": "IND",
     "home": "BKN",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/25 - 6:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:00 - 1st",
     "score": {
-     "IND": "0",
-     "BKN": "0"
+     "IND": "9",
+     "BKN": "6"
     }
    },
    {

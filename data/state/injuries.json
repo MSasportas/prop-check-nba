@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T17:40:01-04:00",
+ "at": "2026-10-25T18:20:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -156,11 +156,11 @@
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
   "4684742": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Ausar Thompson",
    "team": "DET",
-   "date": "2026-10-25T15:48Z",
-   "note": "Thompson (ankle) did not participate in Sunday morning's shootaround, Coty M. Davis of The Detroit News reports."
+   "date": "2026-10-25T22:07Z",
+   "note": "Thompson (ankle) is out for Sunday's game against the 76ers, Hunter Patterson of The Athletic reports."
   },
   "4433621": {
    "status": "out",
@@ -504,6 +504,13 @@
    "team": "SA",
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
+  },
+  "6450": {
+   "status": "out",
+   "name": "Kawhi Leonard",
+   "team": "TOR",
+   "date": "2026-10-25T22:03Z",
+   "note": "Leonard is out for Sunday's game against the Timberwolves due to left knee swelling, Blake Murphy of Sportsnet.ca reports."
   },
   "4432586": {
    "status": "out",
