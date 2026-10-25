@@ -54,7 +54,7 @@
     "Day'Ron Sharpe"
    ],
    "status": {
-    "Tyler Bilodeau": "questionable",
+    "Tyler Bilodeau": "out",
     "Mikel Brown": "out"
    }
   },
@@ -169,12 +169,11 @@
     "Adem Bona"
    ],
    "status": {
-    "LeBron James": "questionable",
     "Ariel Hukporti": "out",
-    "Tacko Fall": "questionable",
-    "Jabari Walker": "questionable",
-    "Joel Embiid": "doubtful",
-    "Dominick Barlow": "out"
+    "Dominick Barlow": "out",
+    "Joel Embiid": "out",
+    "Tacko Fall": "out",
+    "Jabari Walker": "out"
    }
   },
   "MEM": {
@@ -209,5 +208,5 @@
    }
   }
  },
- "at": "2026-10-25T12:12:49-04:00"
+ "at": "2026-10-25T14:00:01-04:00"
 }
