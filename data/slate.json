@@ -22,7 +22,7 @@
   "last_read_at": null,
   "last_run": {
    "ok": true,
-   "at": "2026-10-25T19:20:00-04:00"
+   "at": "2026-10-25T19:30:01-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "LAL",
    "home": "UTA",
    "state": "in",
-   "detail": "6:21 - 4th",
+   "detail": "3:15 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -46,7 +46,7 @@
    "away": "IND",
    "home": "BKN",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "10:27 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "ORL",
    "home": "NYK",
    "state": "in",
-   "detail": "7:17 - 1st",
+   "detail": "3:18 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "TOR",
    "home": "MIN",
    "state": "in",
-   "detail": "8:15 - 1st",
+   "detail": "3:39 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "LAC",
    "home": "OKC",
    "state": "in",
-   "detail": "6:58 - 1st",
+   "detail": "2:37 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -142,6 +142,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-25T19:20:00-04:00",
- "status_at": "2026-10-25T19:20:00-04:00"
+ "generated_at": "2026-10-25T19:30:01-04:00",
+ "status_at": "2026-10-25T19:30:01-04:00"
 }
