@@ -120,7 +120,8 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 6. Keys refill on the 1st (assumed, as NHL). The pool covers ~4 reads a game with 3 keys.
 7. Official NBA injury report PDF not parsed (Rotowire mirrors it). Build only if Rotowire proves unreliable.
 8. Not live-verified yet: Hard Rock rebounds in the feed, which of the 9 other books return NBA rebounds, Hard Rock bet-slip
-   links, Rotowire "confirmed" class. The first evening with keys answers all four (daily check reads them).
+   links, Rotowire "confirmed" class. The first evening with keys answers all four (daily check reads them). Status 2026-10-25 2 PM:
+   keys and webhook still not set; nothing verified yet.
 
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
@@ -128,6 +129,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-25 2:10 PM (CEO, daily check): alive (chain run 33 in progress, last status 1:50 PM, all steps ok, ESPN ok, Rotowire read started 2 PM for the 5 PM tip, 7 games). Still no `ODDS_API_KEYS` and no `DISCORD_WEBHOOK` (no notified.json): no A read, no picks, nothing to grade, no `others` books seen yet. Rotowire all Expected so far (confirmed check moves to tomorrow's check). Unmatched Rotowire: Richie Saunders (MEM rookie, Out, not on the ESPN roster; harmless). 30 tests pass. No code changes. Reminded Matt once about keys + webhook.
 - 2026-10-25 ~12:20 PM (CEO): v1.0 shipped. Built from the NHL template (timer chain, Record + guard, key pool, Discord, page look copied;
   engine rewritten for rebounds). DS fit the model guard (section 7 item 3). UX/Builder subagent built the page (checked at 380px in
   Chromium, 8 states). QA (fresh): SHIP WITH FIXES, 8 findings (A-read retries could drain the pool; no pick from a read > 15 min old;
