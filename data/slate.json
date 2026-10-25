@@ -22,7 +22,7 @@
   "last_read_at": null,
   "last_run": {
    "ok": true,
-   "at": "2026-10-25T17:10:01-04:00"
+   "at": "2026-10-25T17:20:01-04:00"
   }
  },
  "games": [
@@ -31,8 +31,8 @@
    "start": "2026-10-25T17:00:00-04:00",
    "away": "LAL",
    "home": "UTA",
-   "state": "pre",
-   "detail": "10/25 - 5:00 PM EDT",
+   "state": "in",
+   "detail": "8:10 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -142,6 +142,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-25T16:40:01-04:00",
- "status_at": "2026-10-25T17:10:01-04:00"
+ "generated_at": "2026-10-25T17:20:01-04:00",
+ "status_at": "2026-10-25T17:20:01-04:00"
 }

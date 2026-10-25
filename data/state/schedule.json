@@ -7,13 +7,13 @@
     "start": "2026-10-25T17:00:00-04:00",
     "away": "LAL",
     "home": "UTAH",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/25 - 5:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:10 - 1st",
     "score": {
-     "LAL": "0",
-     "UTAH": "0"
+     "LAL": "4",
+     "UTAH": "12"
     }
    },
    {
