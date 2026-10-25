@@ -73,7 +73,7 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Anthony Edwards",
@@ -209,5 +209,5 @@
    }
   }
  },
- "at": "2026-10-25T18:40:00-04:00"
+ "at": "2026-10-25T18:50:00-04:00"
 }

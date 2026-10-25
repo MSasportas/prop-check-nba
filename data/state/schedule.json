@@ -10,10 +10,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:23 - 3rd",
+    "detail": "3:57 - 3rd",
     "score": {
-     "LAL": "88",
-     "UTAH": "82"
+     "LAL": "95",
+     "UTAH": "92"
     }
    },
    {
@@ -24,11 +24,11 @@
     "home": "BKN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:42 - 2nd",
     "score": {
-     "IND": "24",
-     "BKN": "26"
+     "IND": "38",
+     "BKN": "35"
     }
    },
    {

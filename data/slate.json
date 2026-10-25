@@ -22,7 +22,7 @@
   "last_read_at": null,
   "last_run": {
    "ok": true,
-   "at": "2026-10-25T18:40:00-04:00"
+   "at": "2026-10-25T18:50:00-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "LAL",
    "home": "UTA",
    "state": "in",
-   "detail": "7:23 - 3rd",
+   "detail": "3:57 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -46,7 +46,7 @@
    "away": "IND",
    "home": "BKN",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "7:42 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -77,7 +77,7 @@
    "detail": "10/25 - 7:00 PM EDT",
    "lineups": {
     "away": "confirmed",
-    "home": "expected"
+    "home": "confirmed"
    },
    "read_at": null,
    "picks": 0
@@ -142,6 +142,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-25T18:40:00-04:00",
- "status_at": "2026-10-25T18:40:00-04:00"
+ "generated_at": "2026-10-25T18:50:00-04:00",
+ "status_at": "2026-10-25T18:50:00-04:00"
 }
