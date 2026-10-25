@@ -1,28 +1,28 @@
 {
  "slate": "2026-10-25",
  "valid_until": "2026-10-26T05:00:00-04:00",
- "banners": [
-  {
-   "level": "stop",
-   "text": "No odds keys yet: Hard Rock prices can't be read, so there are no picks."
-  }
- ],
+ "banners": [],
  "status": {
   "odds": {
-   "keys": 0,
-   "pool_left": null,
+   "keys": 3,
+   "pool_left": 1499,
    "low": false,
    "refused": false,
-   "no_keys": true,
+   "no_keys": false,
    "days_left": 7,
-   "allowance": null,
-   "reads": null
+   "allowance": 28.846,
+   "reads": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ]
   },
-  "next_read_at": null,
-  "last_read_at": null,
+  "next_read_at": "2026-10-25T20:15:00-04:00",
+  "last_read_at": "2026-10-25T19:50:14-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-25T19:50:01-04:00"
+   "at": "2026-10-25T19:50:14-04:00"
   }
  },
  "games": [
@@ -46,7 +46,7 @@
    "away": "IND",
    "home": "BKN",
    "state": "in",
-   "detail": "4:18 - 3rd",
+   "detail": "4:03 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "LAC",
    "home": "OKC",
    "state": "in",
-   "detail": "5:24 - 2nd",
+   "detail": "5:01 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "DET",
    "home": "PHI",
    "state": "in",
-   "detail": "8:01 - 1st",
+   "detail": "7:37 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -121,18 +121,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-10-25T19:50:14-04:00",
    "picks": 0
   }
  ],
  "picks": [],
  "empty": {
   "text": "No picks yet today",
-  "why": "No Hard Rock prices can be read until odds keys are added.",
-  "next": null
+  "why": "16 lines read, none cleared both checks.",
+  "next": "2026-10-25T20:15:00-04:00"
  },
  "counts": {
-  "lines_read": 0,
+  "lines_read": 16,
   "passing": 0,
   "games": 7
  },
@@ -142,6 +142,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-25T19:50:01-04:00",
- "status_at": "2026-10-25T19:50:01-04:00"
+ "generated_at": "2026-10-25T19:50:14-04:00",
+ "status_at": "2026-10-25T19:50:14-04:00"
 }
