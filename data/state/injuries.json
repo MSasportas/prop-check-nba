@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T16:20:01-04:00",
+ "at": "2026-10-25T16:40:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -85,19 +85,26 @@
    "date": "2026-10-19T17:38Z",
    "note": "Claxton (hamstring) will be re-evaluated in two weeks, K.C. Johnson of Chicago Sports Network reports."
   },
-  "6442": {
-   "status": "day-to-day",
-   "name": "Kyrie Irving",
-   "team": "DAL",
-   "date": "2026-10-25T13:37Z",
-   "note": "Irving is out for Saturday's game against the Spurs due to rest, Christian Clark of The Athletic reports."
-  },
   "3138160": {
    "status": "out",
    "name": "Caleb Martin",
    "team": "DAL",
-   "date": "2026-10-24T18:29Z",
-   "note": "Martin (thumb) has been ruled out against San Antonio on Saturday."
+   "date": "2026-10-25T20:28Z",
+   "note": "Martin (thumb) is listed as doubtful for Monday's game against the Heat."
+  },
+  "5041939": {
+   "status": "out",
+   "name": "Cooper Flagg",
+   "team": "DAL",
+   "date": "2026-10-25T20:26Z",
+   "note": "Flagg (shoulder) is questionable to play Monday against the Heat."
+  },
+  "4278594": {
+   "status": "out",
+   "name": "Naji Marshall",
+   "team": "DAL",
+   "date": "2026-10-25T20:25Z",
+   "note": "Marshall (illness) has been ruled out for Monday's game against the Heat."
   },
   "5148538": {
    "status": "out",
@@ -112,13 +119,6 @@
    "team": "DAL",
    "date": "2026-10-24T18:18Z",
    "note": "Aldama (knee) has been ruled out for Saturday's game against the Spurs."
-  },
-  "5041939": {
-   "status": "out",
-   "name": "Cooper Flagg",
-   "team": "DAL",
-   "date": "2026-10-24T17:52Z",
-   "note": "The Mavericks diagnosed Flagg with a mild left shoulder sprain, and the second-year forward will be re-evaluated by medical staff next week, Brett Siegel of ClutchPoints.com reports."
   },
   "4683688": {
    "status": "out",

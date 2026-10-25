@@ -2,7 +2,7 @@
  "slate": "2026-10-25",
  "teams": {
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Austin Reaves",
@@ -16,7 +16,7 @@
    }
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
@@ -208,5 +208,5 @@
    }
   }
  },
- "at": "2026-10-25T16:30:00-04:00"
+ "at": "2026-10-25T16:40:01-04:00"
 }
