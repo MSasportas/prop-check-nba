@@ -1,23 +1,23 @@
 {
- "finished_at": "2026-10-25T12:12:49-04:00",
+ "finished_at": "2026-10-25T12:40:00-04:00",
  "slate": "2026-10-25",
  "ok": true,
  "steps": {
   "schedule": {
    "ok": true,
-   "sec": 0.8
+   "sec": 0.1
   },
   "rosters": {
    "ok": true,
-   "sec": 1.0
+   "sec": 0.0
   },
   "injuries": {
    "ok": true,
-   "sec": 0.1
+   "sec": 0.0
   },
   "lineups": {
    "ok": true,
-   "sec": 0.5
+   "sec": 0.0
   },
   "odds": {
    "ok": true,
@@ -42,11 +42,11 @@
  "graded_now": 0,
  "sources": {
   "espn": {
-   "ok": 23,
+   "ok": 2,
    "failed": 0
   },
   "rotowire": {
-   "ok": 1,
+   "ok": 0,
    "failed": 0
   },
   "odds": {
@@ -61,7 +61,7 @@
  "runner": {
   "event": "push",
   "run_id": "40210590015",
-  "iteration": 1,
+  "iteration": 4,
   "chain_link": 0,
   "chain_started_at": "2026-10-25T12:12:48-04:00",
   "run_started_at": "2026-10-25T12:12:48-04:00"
