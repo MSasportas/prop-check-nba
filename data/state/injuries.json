@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T13:20:00-04:00",
+ "at": "2026-10-25T13:30:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -414,26 +414,26 @@
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
-  "3059318": {
-   "status": "day-to-day",
-   "name": "Joel Embiid",
-   "team": "PHI",
-   "date": "2026-10-25T02:15Z",
-   "note": "Embiid produced 28 points (8-20 FG, 0-3 3Pt, 12-14 FT), 11 rebounds, 10 assists, one steal and four turnovers across 36 minutes in Saturday's 127-116 win over the Bucks."
-  },
-  "4432446": {
-   "status": "day-to-day",
-   "name": "Jabari Walker",
-   "team": "PHI",
-   "date": "2026-10-25T02:11Z",
-   "note": "Walker (ankle) exited Saturday's 127-116 win over the Bucks in the third quarter and did not return, finishing with six points (2-3 FG, 2-3 FT), three rebounds, one assist and one steal across 12 minu"
-  },
   "3904625": {
    "status": "out",
    "name": "Tacko Fall",
    "team": "PHI",
-   "date": "2026-10-23T21:10Z",
-   "note": "Fall (quadriceps) is out for Saturday's game against the Bucks."
+   "date": "2026-10-25T17:13Z",
+   "note": "Fall (quadriceps) has been ruled out for Sunday's game against Detroit."
+  },
+  "4432446": {
+   "status": "out",
+   "name": "Jabari Walker",
+   "team": "PHI",
+   "date": "2026-10-25T17:11Z",
+   "note": "Walker has been ruled out for Sunday's game against the Pistons due to left knee soreness."
+  },
+  "3059318": {
+   "status": "out",
+   "name": "Joel Embiid",
+   "team": "PHI",
+   "date": "2026-10-25T17:08Z",
+   "note": "Embiid has been ruled out for Sunday's game against Detroit due to right plantar fasciitis management."
   },
   "4870562": {
    "status": "out",
