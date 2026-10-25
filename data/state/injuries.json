@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T18:50:00-04:00",
+ "at": "2026-10-25T19:00:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -127,26 +127,26 @@
    "date": "2026-10-22T20:10Z",
    "note": "Lively (foot) has been ruled out for Friday's game against the Pacers."
   },
-  "4592427": {
-   "status": "out",
-   "name": "Spencer Jones",
+  "4065813": {
+   "status": "day-to-day",
+   "name": "Alpha Diallo",
    "team": "DEN",
-   "date": "2026-10-25T22:36Z",
-   "note": "Jones (hamstring) is out for Saturday's game against the Pelicans."
+   "date": "2026-10-25T22:43Z",
+   "note": "Diallo (wrist) is doubtful for Monday's game against the Warriors."
   },
   "3138196": {
    "status": "day-to-day",
    "name": "Cameron Johnson",
    "team": "DEN",
-   "date": "2026-10-25T13:38Z",
-   "note": "Head coach David Aldeman said that Johnson is \"day-to-day\" due to his sprained right ankle, Vinny Benedetto of The Denver Gazette reports."
+   "date": "2026-10-25T22:41Z",
+   "note": "Johnson (ankle) is doubtful to play Monday against the Warriors."
   },
-  "4065813": {
-   "status": "day-to-day",
-   "name": "Alpha Diallo",
+  "4592427": {
+   "status": "out",
+   "name": "Spencer Jones",
    "team": "DEN",
-   "date": "2026-10-25T13:38Z",
-   "note": "Diallo (wrist) won't play Saturday against the Pelicans."
+   "date": "2026-10-25T22:37Z",
+   "note": "Jones (hamstring) is out for Monday's matchup with the Warriors."
   },
   "4432181": {
    "status": "out",

@@ -10,10 +10,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:57 - 3rd",
+    "detail": "24.7 - 3rd",
     "score": {
-     "LAL": "95",
-     "UTAH": "92"
+     "LAL": "100",
+     "UTAH": "99"
     }
    },
    {
@@ -25,10 +25,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:19 - 2nd",
+    "detail": "5:05 - 2nd",
     "score": {
-     "IND": "38",
-     "BKN": "38"
+     "IND": "44",
+     "BKN": "43"
     }
    },
    {
