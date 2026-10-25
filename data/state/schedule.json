@@ -55,7 +55,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:17 - 1st",
+    "detail": "1:08 - 1st",
     "score": {
      "TOR": "19",
      "MIN": "28"
