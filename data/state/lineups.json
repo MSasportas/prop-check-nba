@@ -38,6 +38,7 @@
     "Ivica Zubac"
    ],
    "status": {
+    "Ivica Zubac": "questionable",
     "Johnny Furphy": "out",
     "T.J. McConnell": "out",
     "Ben Sheppard": "out"
@@ -58,11 +59,11 @@
    }
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Immanuel Quickley",
     "RJ Barrett",
-    "Allen Graves",
+    "Ja'Kobe Walter",
     "Scottie Barnes",
     "Jakob Poeltl"
    ],
@@ -85,12 +86,12 @@
    }
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Suggs",
+    "Jase Richardson",
     "Desmond Bane",
     "Franz Wagner",
-    "Tristan da Silva",
     "Wendell Carter"
    ],
    "status": {
@@ -101,7 +102,7 @@
    }
   },
   "NY": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Brunson",
     "Mikal Bridges",
@@ -114,7 +115,7 @@
    }
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Kris Dunn",
@@ -131,7 +132,7 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
     "Cason Wallace",
@@ -208,5 +209,5 @@
    }
   }
  },
- "at": "2026-10-25T18:30:00-04:00"
+ "at": "2026-10-25T18:40:00-04:00"
 }

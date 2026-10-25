@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T18:20:00-04:00",
+ "at": "2026-10-25T18:40:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -128,10 +128,10 @@
    "note": "Lively (foot) has been ruled out for Friday's game against the Pacers."
   },
   "4592427": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Spencer Jones",
    "team": "DEN",
-   "date": "2026-10-25T13:38Z",
+   "date": "2026-10-25T22:36Z",
    "note": "Jones (hamstring) is out for Saturday's game against the Pelicans."
   },
   "3138196": {
@@ -432,8 +432,8 @@
    "status": "day-to-day",
    "name": "Oso Ighodaro",
    "team": "PHX",
-   "date": "2026-10-25T13:39Z",
-   "note": "Ighodaro (oblique) has been ruled out for Saturday's game against the Warriors, Duane Rankin of The Arizona Republic reports."
+   "date": "2026-10-25T22:25Z",
+   "note": "Ighodaro (oblique) is doubtful for Monday's matchup with the Thunder, Duane Rankin of The Arizona Republic reports."
   },
   "4701232": {
    "status": "out",
