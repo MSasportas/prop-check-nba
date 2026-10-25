@@ -1,0 +1,292 @@
+{
+ "generated_at": "2026-10-25T18:42:00-04:00",
+ "status_at": "2026-10-25T18:42:00-04:00",
+ "slate": "2026-10-25",
+ "valid_until": "2026-10-26T06:00:00-04:00",
+ "fixture_now": "2026-10-25T18:45:00-04:00",
+ "banners": [
+  {
+   "level": "info",
+   "text": "Starting lineups come from a new source tonight. If it misses a team, its picks stay at Injury report clear."
+  }
+ ],
+ "status": {
+  "odds": {
+   "keys": 3,
+   "pool_left": 1430,
+   "low": false,
+   "refused": false,
+   "no_keys": false,
+   "days_left": 19
+  },
+  "next_read_at": "2026-10-25T19:10:00-04:00",
+  "last_read_at": "2026-10-25T18:40:00-04:00",
+  "last_run": {
+   "ok": true,
+   "at": "2026-10-25T18:42:00-04:00"
+  }
+ },
+ "games": [
+  {
+   "id": "401909801",
+   "start": "2026-10-25T15:30:00-04:00",
+   "away": "NYK",
+   "home": "BOS",
+   "state": "post",
+   "detail": "Final",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "read_at": "2026-10-25T15:10:00-04:00",
+   "picks": 1
+  },
+  {
+   "id": "401909802",
+   "start": "2026-10-25T18:00:00-04:00",
+   "away": "MIA",
+   "home": "CHA",
+   "state": "in",
+   "detail": "Q2 4:12",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "read_at": "2026-10-25T17:40:00-04:00",
+   "picks": 0
+  },
+  {
+   "id": "401909803",
+   "start": "2026-10-25T19:00:00-04:00",
+   "away": "DET",
+   "home": "ORL",
+   "state": "pre",
+   "detail": "7:00 PM",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "read_at": "2026-10-25T18:40:00-04:00",
+   "picks": 1
+  },
+  {
+   "id": "401909804",
+   "start": "2026-10-25T19:30:00-04:00",
+   "away": "MIL",
+   "home": "ATL",
+   "state": "pre",
+   "detail": "7:30 PM",
+   "lineups": {
+    "away": "expected",
+    "home": "confirmed"
+   },
+   "read_at": "2026-10-25T18:45:00-04:00",
+   "picks": 1
+  },
+  {
+   "id": "401909805",
+   "start": "2026-10-25T20:00:00-04:00",
+   "away": "OKC",
+   "home": "HOU",
+   "state": "pre",
+   "detail": "8:00 PM",
+   "lineups": {
+    "away": "none",
+    "home": "none"
+   },
+   "read_at": "2026-10-25T18:30:00-04:00",
+   "picks": 1
+  },
+  {
+   "id": "401909806",
+   "start": "2026-10-25T21:00:00-04:00",
+   "away": "LAL",
+   "home": "UTA",
+   "state": "pre",
+   "detail": "9:00 PM",
+   "lineups": {
+    "away": "none",
+    "home": "expected"
+   },
+   "read_at": "2026-10-25T17:30:00-04:00",
+   "picks": 1
+  }
+ ],
+ "picks": [
+  {
+   "id": "2026-10-25-401909803-duren",
+   "rank": 1,
+   "player": "Jalen Duren",
+   "team": "DET",
+   "opp": "ORL",
+   "home": false,
+   "game_id": "401909803",
+   "start": "2026-10-25T19:00:00-04:00",
+   "bet": "Over 10.5 rebounds",
+   "side": "over",
+   "line": 10.5,
+   "price": -112,
+   "price_at": "2026-10-25T18:40:00-04:00",
+   "read": "C",
+   "p": 0.566,
+   "p_pct": 56,
+   "breakeven": 0.5283,
+   "breakeven_pct": 53,
+   "market_fair": 0.552,
+   "n_books": 7,
+   "gap_ev": 0.045,
+   "final_ev": 0.071,
+   "model_p": 0.61,
+   "reason": "7 other books say 55.2%; Hard Rock's -112 only needs 52.8%. Our model agrees (61%). Orlando gives up the 4th-most offensive boards.",
+   "state": "starters",
+   "state_label": "Starters confirmed",
+   "price_final": true,
+   "link": "https://app.hardrock.bet/sport-leagues/basketball/691198679",
+   "pulled": null,
+   "result": null
+  },
+  {
+   "id": "2026-10-25-401909804-antetokounmpo",
+   "rank": 2,
+   "player": "Giannis Antetokounmpo",
+   "team": "MIL",
+   "opp": "ATL",
+   "home": false,
+   "game_id": "401909804",
+   "start": "2026-10-25T19:30:00-04:00",
+   "bet": "Under 12.5 rebounds",
+   "side": "under",
+   "line": 12.5,
+   "price": 105,
+   "price_at": "2026-10-25T18:45:00-04:00",
+   "read": "C",
+   "p": 0.531,
+   "p_pct": 53,
+   "breakeven": 0.4878,
+   "breakeven_pct": 49,
+   "market_fair": 0.52,
+   "n_books": 6,
+   "gap_ev": 0.066,
+   "final_ev": 0.089,
+   "model_p": 0.55,
+   "reason": "6 other books say 52.0% under; Hard Rock's +105 only needs 48.8%. Model agrees (55%).",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "link": null,
+   "pulled": null,
+   "result": null
+  },
+  {
+   "id": "2026-10-25-401909805-sengun",
+   "rank": 3,
+   "player": "Alperen Sengun",
+   "team": "HOU",
+   "opp": "OKC",
+   "home": true,
+   "game_id": "401909805",
+   "start": "2026-10-25T20:00:00-04:00",
+   "bet": "Over 11.5 rebounds",
+   "side": "over",
+   "line": 11.5,
+   "price": -125,
+   "price_at": "2026-10-25T18:30:00-04:00",
+   "read": "C",
+   "p": 0.578,
+   "p_pct": 57,
+   "breakeven": 0.5556,
+   "breakeven_pct": 56,
+   "market_fair": 0.571,
+   "n_books": 5,
+   "gap_ev": 0.028,
+   "final_ev": 0.04,
+   "model_p": 0.59,
+   "reason": "5 other books say 57.1%; Hard Rock's -125 needs 55.6%. Model agrees (59%). Steven Adams is questionable, which could change the minutes.",
+   "state": "early",
+   "state_label": "Early",
+   "price_final": false,
+   "link": null,
+   "pulled": null,
+   "result": null
+  },
+  {
+   "id": "2026-10-25-401909801-hart",
+   "rank": 3,
+   "player": "Josh Hart",
+   "team": "NYK",
+   "opp": "BOS",
+   "home": false,
+   "game_id": "401909801",
+   "start": "2026-10-25T15:30:00-04:00",
+   "bet": "Over 8.5 rebounds",
+   "side": "over",
+   "line": 8.5,
+   "price": -118,
+   "price_at": "2026-10-25T15:10:00-04:00",
+   "read": "C",
+   "p": 0.561,
+   "p_pct": 56,
+   "breakeven": 0.5413,
+   "breakeven_pct": 54,
+   "market_fair": 0.549,
+   "n_books": 6,
+   "gap_ev": 0.014,
+   "final_ev": 0.036,
+   "model_p": 0.58,
+   "reason": "6 other books say 54.9%; Hard Rock's -118 only needs 54.1%.",
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
+   "link": null,
+   "pulled": null,
+   "result": {
+    "result": "W",
+    "actual": "11 rebounds",
+    "units": 0.85
+   }
+  },
+  {
+   "id": "2026-10-25-401909806-kessler",
+   "rank": 4,
+   "player": "Walker Kessler",
+   "team": "UTA",
+   "opp": "LAL",
+   "home": true,
+   "game_id": "401909806",
+   "start": "2026-10-25T21:00:00-04:00",
+   "bet": "Over 9.5 rebounds",
+   "side": "over",
+   "line": 9.5,
+   "price": -115,
+   "price_at": "2026-10-25T17:30:00-04:00",
+   "read": "C",
+   "p": 0.561,
+   "p_pct": 56,
+   "breakeven": 0.5349,
+   "breakeven_pct": 53,
+   "market_fair": 0.548,
+   "n_books": 6,
+   "gap_ev": 0.025,
+   "final_ev": 0.049,
+   "model_p": 0.6,
+   "reason": "6 other books say 54.8%; Hard Rock's -115 only needs 53.5%.",
+   "state": "early",
+   "state_label": "Early",
+   "price_final": false,
+   "link": null,
+   "pulled": {
+    "at": "2026-10-25T18:31:00-04:00",
+    "reason": "Hard Rock moved it to -135",
+    "if_bet": "Got -115? Still a small plus. Too thin to bet now."
+   },
+   "result": null
+  }
+ ],
+ "empty": null,
+ "counts": {
+  "lines_read": 54,
+  "passing": 3,
+  "games": 6
+ },
+ "safety_paused": false
+}

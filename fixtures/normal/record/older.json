@@ -1,0 +1,50 @@
+{
+ "nights": [
+  {
+   "date": "2026-10-22",
+   "graded": true,
+   "w": 0,
+   "l": 1,
+   "units": -1.0,
+   "entries": [
+    {
+     "id": "2026-10-22-a",
+     "kind": "single",
+     "player": "Domantas Sabonis",
+     "bet": "Over 12.5 rebounds",
+     "market": "rebounds",
+     "team": "SAC",
+     "game": "SAC at PHX",
+     "price": -125,
+     "result": "L",
+     "actual": "10 rebounds",
+     "units": -1.0,
+     "pulled": null
+    }
+   ]
+  },
+  {
+   "date": "2026-10-21",
+   "graded": true,
+   "w": 1,
+   "l": 0,
+   "units": 1.05,
+   "entries": [
+    {
+     "id": "2026-10-21-a",
+     "kind": "single",
+     "player": "Evan Mobley",
+     "bet": "Over 9.5 rebounds",
+     "market": "rebounds",
+     "team": "CLE",
+     "game": "CLE at NYK",
+     "price": 105,
+     "result": "W",
+     "actual": "12 rebounds",
+     "units": 1.05,
+     "pulled": null
+    }
+   ]
+  }
+ ]
+}

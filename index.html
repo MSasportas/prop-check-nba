@@ -1,3 +1,882 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Prop Check NBA</title>
-<style>body{background:#0e1013;color:#e8eaed;font:16px/1.5 -apple-system,system-ui,sans-serif;margin:0;padding:24px 16px}h1{font-size:20px;margin:0 0 8px}p{color:#9aa1ab}</style></head>
-<body><h1>Prop Check NBA</h1><p>Being rebuilt today. No picks yet. This page fills in once the first prices are read.</p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1118">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Prop Check NBA">
+<title>Prop Check NBA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#0b1118; --surface:#121b25; --raise:#18232f; --line:#22303f;
+  --fg:#e7eef5; --muted:#8a9bad; --accent:#6cc4f0; --good:#6fcf97; --warn:#f0b95c; --bad:#f0897a;
+  --display:"Barlow Condensed","Roboto Condensed","Arial Narrow","Helvetica Neue",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --sab:env(safe-area-inset-bottom,0px); --sat:env(safe-area-inset-top,0px);
+}
+*{box-sizing:border-box}
+html{background:var(--bg);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 14px/20px var(--body);
+  font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;text-align:left;cursor:pointer;
+  font-variant-numeric:inherit;-webkit-appearance:none;appearance:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:520px;margin:0 auto;padding:var(--sat) 16px calc(52px + var(--sab) + 24px)}
+.mu{color:var(--muted)}
+
+/* header */
+.hdr{display:flex;align-items:center;gap:8px;min-height:48px}
+.hdr h1{font:600 22px/24px var(--display);letter-spacing:.02em;margin:0;flex:1;min-width:0;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hdr .date{font-size:12px;line-height:16px;color:var(--muted);white-space:nowrap}
+.ibtn{width:44px;height:44px;flex:none;display:flex;align-items:center;justify-content:center;margin-right:-10px;color:var(--muted)}
+.tag-test{font-size:11px;line-height:16px;padding:0 8px;border-bottom:1px dashed var(--warn);color:var(--warn);text-align:center}
+
+/* record strip + status */
+.rowbtn{display:flex;align-items:center;gap:8px;width:100%;min-height:44px;padding:4px 0}
+.rowbtn .grow{flex:1;min-width:0}
+.chev{flex:none;color:var(--muted);display:flex}
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.strip .grow{font:600 19px/22px var(--display);letter-spacing:.01em}
+.strip .lbl{font:400 12px/16px var(--body);color:var(--muted);margin-right:8px;letter-spacing:0}
+.pos{color:var(--good)} .neg{color:var(--bad)}
+.status{margin-top:8px;font-size:12px;line-height:17px;color:var(--muted)}
+.status div+div{margin-top:1px}
+.status .warn{color:var(--warn);font-weight:500} .status .bad{color:var(--bad);font-weight:500}
+
+/* banners */
+.banner{display:flex;gap:10px;padding:10px 12px;margin-top:10px;border-radius:10px;border:1px solid var(--warn);
+  background:rgba(240,185,92,.08);font-size:14px;line-height:20px}
+.banner .ic{flex:none;color:var(--warn);margin-top:1px;display:flex}
+.banner.stop{border-color:var(--bad);background:rgba(240,137,122,.08)} .banner.stop .ic{color:var(--bad)}
+.banner.info{border-color:var(--line);background:var(--surface)} .banner.info .ic{color:var(--accent)}
+.banner b{font-weight:500;color:var(--fg)}
+.banner .txt{min-width:0;flex:1;overflow-wrap:anywhere}
+.linkbtn{display:flex;align-items:center;gap:4px;min-height:44px;color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+
+/* sections */
+.sec{margin-top:18px}
+.sec-h{display:flex;align-items:baseline;gap:8px;margin:0 0 8px}
+.sec-h h2{font:600 20px/24px var(--display);letter-spacing:.02em;margin:0;flex:1}
+.sec-h .mu{font-size:12px;line-height:16px;white-space:nowrap}
+.stack>*+*{margin-top:8px}
+
+/* pick cards */
+.card{display:block;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;overflow:hidden}
+.card[role=button]{cursor:pointer}
+.card[aria-expanded="true"]{border-color:#35485c}
+.r1{display:flex;align-items:center;gap:8px;min-height:22px}
+.rank{font:600 18px/22px var(--display);color:var(--accent);flex:none;min-width:12px}
+.meta{font-size:13px;line-height:18px;color:var(--muted);flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.own{color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:0 4px;font-weight:600;letter-spacing:.02em}
+.soon{flex:none;font-size:12px;line-height:16px;color:var(--muted);white-space:nowrap}
+.soon.hot{color:var(--accent);font-weight:500}
+.name{font:600 18px/22px var(--display);letter-spacing:.01em;margin-top:4px;overflow-wrap:anywhere}
+.r2{display:flex;align-items:flex-end;gap:8px}
+.bet{font:600 26px/28px var(--display);letter-spacing:.01em;flex:1;min-width:0;overflow-wrap:anywhere}
+.price{font:600 30px/30px var(--display);text-align:right;flex:none;white-space:nowrap}
+.betat{font-size:13px;line-height:18px;color:var(--muted);margin-top:4px;overflow-wrap:anywhere}
+.betat b{color:var(--fg);font-weight:500}
+.chance{font-size:13px;line-height:18px;margin-top:8px}
+.chance b{font-weight:500}
+.bar{position:relative;height:6px;border-radius:3px;background:var(--line);margin-top:4px}
+.bar i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:rgba(108,196,240,.38)}
+.bar i.over{background:var(--accent);border-radius:0 3px 3px 0}
+.bar u{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--fg);border-radius:1px}
+.reason{font-size:14px;line-height:20px;margin-top:8px;overflow-wrap:anywhere}
+.clamp2{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.betlink{display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;margin-top:10px;border-radius:8px;background:var(--accent);
+  color:#06202e;font-weight:600;font-size:15px;text-decoration:none}
+.betlink:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 9px 0 7px;border-radius:12px;font-size:12px;line-height:16px;
+  background:var(--raise);border:1px solid var(--line);color:var(--fg);max-width:100%;white-space:nowrap}
+.chip svg{flex:none}
+.chip.ok{color:var(--good);border-color:rgba(111,207,151,.45)}
+.chip.early{color:var(--warn);border-color:rgba(240,185,92,.45)}
+.chip.lock{color:var(--muted)}
+.chip.hollow{background:none;border-color:var(--muted);padding:0 9px}
+.more{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:13px;line-height:19px}
+.more>div+div{margin-top:4px}
+.more .k{color:var(--muted)}
+.note{font-size:12px;line-height:17px;color:var(--muted);margin-top:8px}
+.result{display:flex;align-items:baseline;gap:2px;margin:0 0 6px;font-size:14px;line-height:20px;flex-wrap:wrap}
+.result .tg{font:600 18px/20px var(--display);letter-spacing:.03em}
+
+/* pulled */
+.pullbar{display:flex;gap:8px;align-items:flex-start;margin:-10px -12px 10px;padding:9px 12px;background:var(--raise);
+  border-bottom:1px solid var(--line);font-size:13px;line-height:18px}
+.pullbar .ic{flex:none;display:flex;color:var(--bad);margin-top:1px}
+.pullbar b{font-weight:500;letter-spacing:.04em}
+.pullbar .why{overflow-wrap:anywhere}
+.ifbet{font-size:15px;line-height:21px;font-weight:500;margin:0 0 8px;overflow-wrap:anywhere}
+.dim{opacity:.6}
+.dim .meta,.dim .note,.dim .mu,.dim .soon{color:var(--fg)}
+.dim .bet{font-size:21px;line-height:24px}
+.strike{text-decoration:line-through;text-decoration-thickness:2px}
+.shownat{flex:none;text-align:right;font-size:12px;line-height:16px;white-space:nowrap}
+.shownat span{font:600 20px/22px var(--display)}
+
+/* games */
+.list{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:2px 12px}
+.list .li{display:flex;gap:8px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:18px;min-height:44px}
+.list .li:last-child{border-bottom:0}
+.list .li .grow{flex:1;min-width:0;overflow-wrap:anywhere}
+.list .li .nm{font:600 17px/20px var(--display);letter-spacing:.01em}
+.list .li .nm .mu{font:400 13px/18px var(--body)}
+.list .li .r{flex:none;white-space:nowrap;color:var(--muted);text-align:right}
+.list .li .r b{font:600 16px/20px var(--display);color:var(--fg)}
+.list .st{display:block;font-size:12px;line-height:17px;color:var(--muted);margin-top:2px}
+.list .st .ok{color:var(--good)}
+.live{display:inline-block;font:600 12px/16px var(--display);letter-spacing:.06em;padding:0 5px;border-radius:3px;background:var(--bad);color:#2a0d08}
+.fin{font:600 13px/16px var(--display);letter-spacing:.05em;color:var(--muted)}
+
+/* empty + skeleton */
+.empty .t{font-size:16px;line-height:23px;font-weight:500}
+.empty .s{font-size:13px;line-height:19px;color:var(--muted);margin-top:4px}
+.skel{height:150px;border-radius:10px;background:var(--surface);border:1px solid var(--line);animation:pulse 1.4s ease-in-out infinite}
+.skel.sm{height:20px;width:60%;border-radius:6px}
+@keyframes pulse{50%{opacity:.55}}
+@media (prefers-reduced-motion:reduce){.skel{animation:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:10px;
+  border:1px solid var(--accent);color:var(--accent);font-weight:500;font-size:14px}
+.btn.wide{width:100%}
+
+/* footer */
+.foot{margin-top:28px;padding-top:6px;border-top:1px solid var(--line);font-size:12px;line-height:18px;color:var(--muted)}
+.foot p{margin:6px 0}
+
+/* bottom bar */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--bg);border-top:1px solid var(--line);padding-bottom:var(--sab)}
+.tabs .in{max-width:520px;margin:0 auto;display:flex;height:52px}
+.tab{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;height:52px;color:var(--muted);
+  font:600 18px/22px var(--display);letter-spacing:.03em;position:relative;text-align:center}
+.tab[aria-current="page"]{color:var(--fg)}
+.tab[aria-current="page"]::before{content:"";position:absolute;top:-1px;left:22%;right:22%;height:3px;background:var(--accent);border-radius:0 0 3px 3px}
+
+/* record */
+.hl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:8px}
+.hl>div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 10px;min-width:0}
+.hl .k{font-size:11px;line-height:15px;color:var(--muted)}
+.hl .v{font:600 30px/34px var(--display);white-space:nowrap}
+.hl .s{font-size:11px;line-height:15px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.subline{font-size:12px;line-height:17px;color:var(--muted);margin-top:6px}
+.tbl{margin-top:14px;font-size:13px;line-height:18px}
+.tr{display:grid;grid-template-columns:minmax(0,1fr) 46px 40px 44px 52px;column-gap:6px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line)}
+.tr.th{font-size:11px;line-height:15px;color:var(--muted);padding:0 0 4px}
+.tr>*{text-align:right;white-space:nowrap}
+.tr>:first-child{text-align:left;white-space:normal;overflow-wrap:anywhere}
+.tr .num{font:600 16px/18px var(--display)}
+.tr .lbl small{display:block;font-size:11px;line-height:15px;color:var(--muted)}
+.night{margin-top:18px}
+.night h3{font:600 17px/22px var(--display);letter-spacing:.02em;margin:0 0 2px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.night h3 .mu{font:400 12px/16px var(--body);letter-spacing:0}
+.ent{display:flex;gap:6px;padding:8px 0;border-bottom:1px solid var(--line);width:100%;min-height:44px;align-items:flex-start}
+.ent .tg{flex:none;width:44px;font:600 15px/20px var(--display);letter-spacing:.03em}
+.tg.W{color:var(--good)} .tg.L{color:var(--bad)} .tg.PUSH,.tg.VOID,.tg.none{color:var(--muted)}
+.ent .bd{flex:1;min-width:0}
+.ent .e1{font-size:14px;line-height:20px;overflow-wrap:anywhere}
+.ent .e1 .pn{font-weight:500}
+.ent .e2{font-size:12px;line-height:17px;color:var(--muted);overflow-wrap:anywhere}
+.ent .u{flex:none;font:600 15px/20px var(--display);white-space:nowrap;text-align:right;min-width:46px}
+.ptag{display:inline-block;font:600 12px/16px var(--display);letter-spacing:.05em;padding:0 5px;margin-right:6px;border:1px solid var(--muted);border-radius:3px;color:var(--fg);vertical-align:1px}
+
+/* sheet */
+.scrim{position:fixed;inset:0;z-index:10;background:rgba(3,7,11,.66);display:flex;align-items:flex-end;justify-content:center}
+.sheet{width:100%;max-width:520px;max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;background:var(--surface);
+  border:1px solid var(--line);border-bottom:0;border-radius:14px 14px 0 0}
+.sheet-h{display:flex;align-items:center;gap:8px;padding:6px 6px 6px 16px;border-bottom:1px solid var(--line);flex:none}
+.sheet-h h2{font:600 20px/24px var(--display);letter-spacing:.02em;margin:0;flex:1;min-width:0}
+.sheet-h .ibtn{margin:0}
+.sheet-b{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:12px 16px calc(20px + var(--sab));overscroll-behavior:contain}
+.fixed{padding:10px 12px;border-radius:10px;background:var(--raise);border:1px solid var(--line);font-size:13px;line-height:19px;font-weight:500}
+.rules{margin:12px 0 0;padding:0 0 0 22px}
+.rules li{margin:0 0 10px;padding-left:2px;line-height:20px;overflow-wrap:anywhere}
+.rules li::marker{color:var(--muted);font-family:var(--display);font-weight:600}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div id="app" class="wrap">
+  <div class="hdr"><h1>Prop Check NBA</h1></div>
+  <p class="mu" style="font-size:13px;margin:4px 0 14px">Loading tonight's picks</p>
+  <div class="stack"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
+</div>
+<nav id="tabs" class="tabs" aria-label="Views"></nav>
+<div id="sheetroot"></div>
+<noscript><p style="padding:16px">Prop Check NBA needs JavaScript turned on to show tonight's picks.</p></noscript>
+
+<script>
+(function () {
+'use strict';
+
+/* ---------- setup ---------- */
+var Q;
+try { Q = new URLSearchParams(location.search); } catch (e) { Q = { get: function () { return null; } }; }
+var FIX = String(Q.get('fixture') || '').replace(/[^A-Za-z0-9_-]/g, '');
+var BASE = FIX ? 'fixtures/' + FIX + '/' : 'data/';
+var NOW_Q = ms(String(Q.get('now') || '').replace(' ', '+'));
+var TZ = 'America/New_York';
+var STALE_MIN = 30, REFRESH_DEF = 120;
+var MARKET_LINE = 'Prices: Hard Rock only · No leg worse than -200 · Rebounds main line only';
+
+var S = {
+  slate: null, record: null, rules: null, recordErr: null,
+  loaded: false, loadErr: false, fetchFail: false, rulesErr: false, loadedAt: null, busy: false,
+  view: 'tonight', expanded: {},
+  older: [], olderIdx: 0, olderBusy: false, olderErr: false,
+  sheet: null, sheetFocus: null, key: '', scroll: { tonight: 0, record: 0 }
+};
+
+var app = document.getElementById('app');
+var tabsEl = document.getElementById('tabs');
+var sheetRoot = document.getElementById('sheetroot');
+
+/* ---------- tiny helpers ---------- */
+function ms(v) { if (v == null || v === '') return null; var t = Date.parse(v); return isNaN(t) ? null : t; }
+function isObj(v) { return v !== null && typeof v === 'object' && !Array.isArray(v); }
+function arr(v) { return Array.isArray(v) ? v : []; }
+function num(v) { return (typeof v === 'number' && isFinite(v)) ? v : null; }
+function str(v) { return (v == null) ? '' : String(v); }
+function now() {
+  if (NOW_Q != null) return NOW_Q;
+  if (FIX && S.slate) { var f = ms(S.slate.fixture_now); if (f != null) return f; }
+  return Date.now();
+}
+function h(tag, attrs) {
+  var e = document.createElement(tag), k, i, c;
+  if (attrs) for (k in attrs) {
+    if (!Object.prototype.hasOwnProperty.call(attrs, k) || attrs[k] == null || attrs[k] === false) continue;
+    if (k === 'class') e.className = attrs[k];
+    else if (k === 'text') e.textContent = str(attrs[k]);
+    else if (k === 'on') { for (var ev in attrs.on) e.addEventListener(ev, attrs.on[ev]); }
+    else e.setAttribute(k, attrs[k] === true ? '' : attrs[k]);
+  }
+  for (i = 2; i < arguments.length; i++) {
+    c = arguments[i];
+    if (c == null || c === false) continue;
+    if (Array.isArray(c)) { for (var j = 0; j < c.length; j++) if (c[j] != null && c[j] !== false) e.appendChild(node(c[j])); }
+    else e.appendChild(node(c));
+  }
+  return e;
+}
+function node(c) { return (typeof c === 'string' || typeof c === 'number') ? document.createTextNode(String(c)) : c; }
+function clear(e) { while (e.firstChild) e.removeChild(e.firstChild); }
+var SVGNS = 'http://www.w3.org/2000/svg';
+var ICONS = {
+  info: ['M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z', 'M12 11v5', 'M12 7.6v.4'],
+  warn: ['M12 4 2.8 20h18.4L12 4z', 'M12 10v4.5', 'M12 17.2v.3'],
+  stop: ['M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z', 'M8.8 8.8l6.4 6.4', 'M15.2 8.8l-6.4 6.4'],
+  check: ['M5 12.5l4.5 4.5L19 7.5'],
+  ring: ['M12 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14z'],
+  lock: ['M6.5 11h11v8.5h-11z', 'M9 11V8a3 3 0 0 1 6 0v3'],
+  right: ['M9 5l7 7-7 7'],
+  close: ['M6 6l12 12', 'M18 6 6 18']
+};
+function icon(name, size) {
+  var s = document.createElementNS(SVGNS, 'svg'), d = ICONS[name] || ICONS.info;
+  s.setAttribute('viewBox', '0 0 24 24'); s.setAttribute('width', size || 16); s.setAttribute('height', size || 16);
+  s.setAttribute('fill', 'none'); s.setAttribute('stroke', 'currentColor'); s.setAttribute('stroke-width', '2');
+  s.setAttribute('stroke-linecap', 'round'); s.setAttribute('stroke-linejoin', 'round'); s.setAttribute('aria-hidden', 'true');
+  for (var i = 0; i < d.length; i++) { var p = document.createElementNS(SVGNS, 'path'); p.setAttribute('d', d[i]); s.appendChild(p); }
+  return s;
+}
+
+/* ---------- formatting (always Eastern) ---------- */
+function dtf(opts) {
+  try { opts.timeZone = TZ; return new Intl.DateTimeFormat('en-US', opts); }
+  catch (e) { delete opts.timeZone; return new Intl.DateTimeFormat('en-US', opts); }
+}
+var F_TIME = dtf({ hour: 'numeric', minute: '2-digit', hour12: true });
+var F_PARTS = dtf({ weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+var F_HOUR = dtf({ hour: 'numeric', hourCycle: 'h23' });
+function tidy(s) { return s.replace(/[  ]/g, ' '); }
+function fTime(v) { var t = (typeof v === 'number') ? v : ms(v); return t == null ? null : tidy(F_TIME.format(new Date(t))); }
+function parts(t) {
+  var o = {}, p = F_PARTS.formatToParts(new Date(t));
+  for (var i = 0; i < p.length; i++) o[p[i].type] = p[i].value;
+  return o;
+}
+function etHour(t) { var x = parseInt(F_HOUR.format(new Date(t)), 10); return isNaN(x) ? 12 : x % 24; }
+function fMD(v) { var t = (typeof v === 'number') ? v : ms(v); if (t == null) return null; var p = parts(t); return p.month + ' ' + p.day; }
+function fDay(v) { var t = (typeof v === 'number') ? v : ms(v); if (t == null) return null; var p = parts(t); return p.weekday + ' ' + p.month + ' ' + p.day; }
+function dayKey(t) { var p = parts(t); return p.year + ' ' + p.month + ' ' + p.day; }
+var WD = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], MO = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+function plainDate(s) { /* "2026-10-25" with no clock: never shifted by a time zone */
+  var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(str(s)); if (!m) return null;
+  var d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+  if (isNaN(d.getTime())) return null;
+  return { wd: WD[d.getUTCDay()], mo: MO[d.getUTCMonth()], day: d.getUTCDate() };
+}
+function fDateLong(s) { var d = plainDate(s); if (d) return d.wd + ' ' + d.mo + ' ' + d.day; return fDay(s) || str(s); }
+function fDateShort(s) { var d = plainDate(s); if (d) return d.mo + ' ' + d.day; return fMD(s) || str(s); }
+/* time alone when it is today (Eastern), otherwise "Oct 24 at 11:42 PM" */
+function fStamp(v) {
+  var t = (typeof v === 'number') ? v : ms(v); if (t == null) return null;
+  return dayKey(t) === dayKey(now()) ? fTime(t) : fMD(t) + ' at ' + fTime(t);
+}
+function odds(v) { var n = num(v); if (n == null) return '—'; n = Math.round(n); return n > 0 ? '+' + n : (n < 0 ? '-' + Math.abs(n) : 'EV'); }
+function pctDown(v) { var n = num(v); return n == null ? null : Math.floor(n * 100 + 1e-6) + '%'; }
+function pctNear(v) { var n = num(v); return n == null ? null : Math.round(n * 100) + '%'; }
+function pctGiven(v) { var n = num(v); return n == null ? null : Math.round(n) + '%'; }
+function pctP(o) { return pctGiven(o.p_pct) || pctDown(o.p); }
+function pctB(o) { return pctGiven(o.breakeven_pct) || pctNear(o.breakeven); }
+function units(v, dp) {
+  var n = num(v); if (n == null) return null;
+  var s = Math.abs(n).toFixed(dp);
+  if (parseFloat(s) === 0) return s + 'u';
+  return (n > 0 ? '+' : '-') + s + 'u';
+}
+function signCls(v) { var n = num(v); return n == null || n === 0 ? '' : (n > 0 ? 'pos' : 'neg'); }
+function comma(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+/* "Over 9.5 rebounds" -> "OVER 9.5 reb" */
+function shortBet(p) {
+  var b = str(p.bet);
+  if (!b && p.side && num(p.line) != null) b = str(p.side) + ' ' + p.line + ' rebounds';
+  if (!b) return 'Bet not posted';
+  return b.replace(/^(over|under)\b/i, function (m) { return m.toUpperCase(); }).replace(/\brebounds?\b/i, 'reb');
+}
+
+/* ---------- data access ---------- */
+function refreshSec() {
+  var cands = [S.rules && isObj(S.rules.ui) ? S.rules.ui.refresh_sec : null, S.slate && isObj(S.slate.ui) ? S.slate.ui.refresh_sec : null];
+  for (var i = 0; i < cands.length; i++) { var n = num(cands[i]); if (n != null && n >= 15) return n; }
+  return REFRESH_DEF;
+}
+function isFixture() { return !!FIX || (S.slate && S.slate.fixture === true); }
+function expired() { var v = S.slate ? ms(S.slate.valid_until) : null; return v != null && now() > v; }
+function statusAt() { return S.slate ? (ms(S.slate.status_at) != null ? ms(S.slate.status_at) : ms(S.slate.generated_at)) : null; }
+/* updates are expected every ~10 min from 10 AM to 1 AM Eastern */
+function stale() {
+  if (!S.slate || expired()) return false;
+  var g = statusAt(); if (g == null) return false;
+  var hr = etHour(now());
+  if (!(hr >= 10 || hr < 1)) return false;
+  return now() - g > STALE_MIN * 60000;
+}
+function gameMap() {
+  var m = {}, g = arr(S.slate && S.slate.games);
+  for (var i = 0; i < g.length; i++) if (isObj(g[i]) && g[i].id != null) m[g[i].id] = g[i];
+  return m;
+}
+function pickStart(p, games) { return ms(p.start) != null ? ms(p.start) : (games[p.game_id] ? ms(games[p.game_id].start) : null); }
+function hasStarted(p, games) {
+  if (str(p.state) === 'locked' || isObj(p.result)) return true;
+  var g = games[p.game_id]; if (g && (g.state === 'in' || g.state === 'post')) return true;
+  var t = pickStart(p, games);
+  return t != null && now() >= t;
+}
+function split() {
+  var games = gameMap(), out = { games: games, open: [], started: [], pulled: [] };
+  var picks = arr(S.slate && S.slate.picks).filter(isObj), i, p;
+  for (i = 0; i < picks.length; i++) {
+    p = picks[i];
+    if (p.pulled) out.pulled.push(p); else if (hasStarted(p, games)) out.started.push(p); else out.open.push(p);
+  }
+  var byRank = function (a, b) { var x = num(a.rank), y = num(b.rank); return (x == null ? 1e9 : x) - (y == null ? 1e9 : y); };
+  out.open.sort(byRank); out.started.sort(byRank); out.pulled.sort(byRank);
+  return out;
+}
+/* "[LAL] @ UTA · 7:00 PM": his team first as a pill, then @ (away) or vs (home) */
+function muNodes(p, games) {
+  var g = games[p.game_id], own = str(p.team), opp = str(p.opp), home = p.home === true;
+  if (g && own && !opp) { if (own === str(g.home)) { opp = str(g.away); home = true; } else if (own === str(g.away)) opp = str(g.home); }
+  var out = [];
+  if (own && opp) out.push(h('span', { class: 'own', text: own }), (home ? ' vs ' : ' @ ') + opp);
+  else if (g) out.push(str(g.away) + ' @ ' + str(g.home));
+  var t = fTime(pickStart(p, games));
+  if (t) out.push((out.length ? ' · ' : '') + t);
+  return out.length ? out : ['Game time not posted'];
+}
+function startsIn(t) {
+  if (t == null) return null;
+  var m = Math.ceil((t - now()) / 60000);
+  if (m <= 0) return { t: 'tipping now', hot: true };
+  if (m < 60) return { t: 'starts in ' + m + ' min', hot: true };
+  var hr = Math.floor(m / 60), mm = m % 60;
+  return { t: 'starts in ' + hr + ' hr' + (mm ? ' ' + mm + ' min' : ''), hot: false };
+}
+
+/* ---------- fetch ---------- */
+function fileErr(m) { var e = new Error(m); e.kind = 'file'; return e; }
+function getJSON(path) {
+  var ctl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
+  var tm = ctl ? setTimeout(function () { ctl.abort(); }, 15000) : null;
+  var sep = path.indexOf('?') >= 0 ? '&' : '?';
+  return fetch(path + sep + 't=' + Date.now(), { cache: 'no-store', signal: ctl ? ctl.signal : undefined })
+    .then(function (r) {
+      if (!r.ok) throw fileErr('http ' + r.status);
+      return r.text().then(function (t) { try { return JSON.parse(t); } catch (e) { throw fileErr('parse'); } });
+    }, function () { var x = new Error('net'); x.kind = 'net'; throw x; })
+    .then(function (j) { if (tm) clearTimeout(tm); if (!isObj(j)) throw fileErr('shape'); return j; },
+          function (e) { if (tm) clearTimeout(tm); if (!e || !e.kind) { var x = new Error('net'); x.kind = 'net'; throw x; } throw e; });
+}
+function settle(p) { return p.then(function (v) { return { ok: true, v: v }; }, function (e) { return { ok: false, kind: (e && e.kind) || 'net' }; }); }
+function load() {
+  if (S.busy) return Promise.resolve();
+  S.busy = true;
+  return Promise.all([settle(getJSON(BASE + 'slate.json')), settle(getJSON(BASE + 'record.json')), settle(getJSON(BASE + 'rules.json'))])
+    .then(function (r) {
+      S.busy = false; S.loaded = true;
+      if (r[1].ok) { S.record = r[1].v; S.recordErr = null; } else if (!S.record) S.recordErr = r[1].kind;
+      if (r[2].ok) { S.rules = r[2].v; S.rulesErr = false; } else if (!S.rules) S.rulesErr = true;
+      if (r[0].ok) { S.slate = r[0].v; S.fetchFail = false; S.loadErr = false; S.loadedAt = Date.now(); }
+      else if (S.slate) S.fetchFail = r[0].kind;
+      else S.loadErr = r[0].kind;
+      maybeRender();
+    }, function () { S.busy = false; });
+}
+var timer = null;
+function schedule() {
+  if (timer) clearTimeout(timer);
+  var wait = (S.slate && !S.fetchFail) ? refreshSec() : Math.min(30, refreshSec());  /* retry sooner while something is failing */
+  timer = setTimeout(function () { if (!document.hidden) load().then(schedule); else schedule(); }, wait * 1000);
+}
+
+/* ---------- render control ---------- */
+function calcKey() {
+  var d = S.slate ? split() : null, mins = Math.floor(now() / 60000);
+  return JSON.stringify([S.loaded, S.loadErr, S.fetchFail, S.recordErr, S.rulesErr, S.slate && S.slate.generated_at, S.slate && S.slate.status_at,
+    S.record && S.record.generated_at, S.view, S.rules && S.rules.version, S.rules && S.rules.updated, S.slate && expired(), S.slate && stale(),
+    d ? [d.open.length, d.started.length] : 0, mins]);
+}
+function maybeRender() { var k = calcKey(); if (k !== S.key) render(); }
+function render() {
+  var y = window.scrollY || 0;
+  try {
+    S.key = calcKey();
+    clear(app);
+    if (S.view === 'record') renderRecord(); else renderTonight();
+    renderTabs();
+    if (S.sheet) fillSheet();
+  } catch (err) {
+    clear(app);
+    app.appendChild(header('Prop Check NBA', null));
+    app.appendChild(h('div', { class: 'card empty', style: 'margin-top:12px' },
+      h('div', { class: 't', text: "This page didn't load right." }),
+      h('div', { class: 's', text: 'Nothing is shown rather than something wrong.' }),
+      h('div', { style: 'margin-top:12px' }, h('button', { class: 'btn', type: 'button', text: 'Try again', on: { click: function () { location.reload(); } } }))));
+    if (window.console) console.warn('render failed', err);
+  }
+  window.scrollTo(0, y);
+}
+
+/* ---------- shared pieces ---------- */
+function header(title, dateText) {
+  var hd = h('header', { class: 'hdr' },
+    h('h1', { text: title }),
+    dateText ? h('span', { class: 'date', text: dateText }) : null,
+    h('button', { class: 'ibtn', type: 'button', 'aria-label': 'How picks are made', on: { click: function () { openSheet(); } } }, icon('info', 22)));
+  if (!isFixture()) return hd;
+  return h('div', null, h('div', { class: 'tag-test', text: 'Test data. Not real picks.' }), hd);
+}
+function banner(level, strong, rest, extra) {
+  var lv = level === 'stop' ? 'stop' : (level === 'info' ? 'info' : 'warn');
+  var t = h('div', { class: 'txt' }, strong ? h('b', { text: strong }) : null, (strong && rest) ? ' ' : null, rest || null, extra || null);
+  return h('div', { class: 'banner ' + lv, role: 'status' }, h('span', { class: 'ic' }, icon(lv === 'info' ? 'info' : (lv === 'stop' ? 'stop' : 'warn'), 18)), t);
+}
+/* engine banner: the first sentence (up to . or :) is bold */
+function engineBanner(b) {
+  var text = str(isObj(b) ? b.text : b); if (!text) return null;
+  var m = /^(.+?[.:])\s+(.+)$/.exec(text);
+  return banner(isObj(b) ? b.level : 'warn', m ? m[1] : text, m ? m[2] : '');
+}
+function chanceBar(p, b) {
+  var pn = num(p), bn = num(b); if (pn == null) return null;
+  var pw = Math.max(0, Math.min(100, pn * 100)), bar = h('div', { class: 'bar', 'aria-hidden': 'true' });
+  var fill = h('i'); fill.style.width = pw + '%'; bar.appendChild(fill);
+  if (bn != null) {
+    var bw = Math.max(0, Math.min(100, bn * 100));
+    if (pw > bw) { var ov = h('i', { class: 'over' }); ov.style.left = bw + '%'; ov.style.width = (pw - bw) + '%'; bar.appendChild(ov); }
+    var tick = h('u'); tick.style.left = bw + '%'; bar.appendChild(tick);
+  }
+  return bar;
+}
+var STATES = {
+  early: ['early', 'ring', 'Early'],
+  clear: ['ok', 'check', 'Injury report clear'],
+  starters: ['ok', 'check', 'Starters confirmed'],
+  locked: ['lock', 'lock', 'Locked']
+};
+function stateChip(p) {
+  var s = STATES[str(p.state)] || STATES.early;
+  var label = str(p.state_label) || s[2];
+  return h('span', { class: 'chip ' + s[0] }, icon(s[1], 13), label);
+}
+var RESULT = { W: ['Hit', 'W'], L: ['Miss', 'L'], PUSH: ['Push', 'PUSH'], VOID: ['Void', 'VOID'] };
+function resultLine(g) {
+  if (!isObj(g) || g.result == null) return null;
+  var r = RESULT[str(g.result)], word = r ? r[0] : str(g.result), u = units(g.units, 2);
+  return h('div', { class: 'result' }, h('span', { class: 'tg ' + (r ? r[1] : 'none'), text: word }),
+    g.actual ? h('span', { text: ' · ' + str(g.actual) }) : null,
+    u ? h('span', { class: signCls(g.units), text: ' · ' + u }) : null);
+}
+function toggleKeys(fn) {
+  return { click: fn, keydown: function (e) { if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') { e.preventDefault(); fn(e); } } };
+}
+var LINK_RE = /^https:\/\/[^\s<>"'\\\u0000-\u001f\u007f‎‏‪-‮⁦-⁩]{4,590}$/;
+
+/* ---------- pick card ---------- */
+function pickCard(p, d, opts) {
+  opts = opts || {};
+  var id = str(p.id || p.player), isOpen = !!S.expanded[id], started = !!opts.started;
+  var card = h('div', { class: 'card pick', role: 'button', tabindex: '0', 'aria-expanded': isOpen ? 'true' : 'false', 'data-id': id });
+  var ev = toggleKeys(function () { if (S.expanded[id]) delete S.expanded[id]; else S.expanded[id] = 1; render(); });
+  card.addEventListener('click', ev.click); card.addEventListener('keydown', ev.keydown);
+
+  var res = resultLine(p.result); if (res) card.appendChild(res);
+  var si = started ? null : startsIn(pickStart(p, d.games));
+  var g = d.games[p.game_id];
+  if (started && g && g.state === 'in' && !res) si = { t: 'live', hot: true };
+  card.appendChild(h('div', { class: 'r1' },
+    (!started && num(p.rank) != null) ? h('span', { class: 'rank', text: p.rank }) : null,
+    h('span', { class: 'meta' }, muNodes(p, d.games)),
+    si ? h('span', { class: 'soon' + (si.hot ? ' hot' : ''), text: si.t }) : null));
+  card.appendChild(h('div', { class: 'name', text: p.player || 'Player not named' }));
+  card.appendChild(h('div', { class: 'r2' }, h('div', { class: 'bet', text: shortBet(p) }), h('div', { class: 'price', text: odds(p.price) })));
+
+  var pa = fStamp(p.price_at);
+  if (!started) card.appendChild(h('div', { class: 'betat' }, 'Bet at ', h('b', { text: odds(p.price) + ' or better' }),
+    pa ? ' · ' + (stale() ? 'old price, read ' : 'read ') + pa : ''));
+
+  if (!started || isOpen) {
+    var pc = pctP(p), be = pctB(p);
+    card.appendChild(h('div', { class: 'chance' }, 'We say ', h('b', { text: pc || 'not posted' }), be ? ' · price needs ' + be : ''));
+    var bar = chanceBar(p.p, p.breakeven); if (bar) card.appendChild(bar);
+  }
+  card.appendChild(h('div', { class: 'chips' }, stateChip(started ? { state: 'locked', state_label: 'Locked' } : p),
+    (!started && p.price_final) ? h('span', { class: 'chip ok' }, icon('check', 13), 'Price final') : null));
+  if (p.reason && (!started || isOpen)) card.appendChild(h('div', { class: 'reason' + (isOpen ? '' : ' clamp2'), text: str(p.reason) }));
+
+  if (!started && !p.pulled && typeof p.link === 'string' && LINK_RE.test(p.link) && !stale()) {
+    card.appendChild(h('a', { class: 'betlink', href: p.link, target: '_blank', rel: 'noopener noreferrer', 'aria-label': 'Bet this on Hard Rock',
+      on: { click: function (e) { e.stopPropagation(); }, keydown: function (e) { e.stopPropagation(); } } }, 'Bet on Hard Rock ↗'));
+  }
+
+  if (isOpen) {
+    var more = h('div', { class: 'more' }), mf = num(p.market_fair), nb = num(p.n_books), mp = num(p.model_p), fe = num(p.final_ev);
+    if (mf != null) more.appendChild(h('div', null, h('span', { class: 'k', text: 'Other books' + (nb != null ? ' (' + nb + ')' : '') + ': ' }), (Math.round(mf * 1000) / 10) + '%'));
+    if (mp != null) more.appendChild(h('div', null, h('span', { class: 'k', text: 'Our model: ' }), Math.round(mp * 100) + '%'));
+    if (fe != null) more.appendChild(h('div', null, h('span', { class: 'k', text: 'Edge at this price: ' }), (fe >= 0 ? '+' : '') + (Math.round(fe * 1000) / 10) + '%'));
+    more.appendChild(h('div', { class: 'mu', text: 'Price ' + odds(p.price) + (pa ? ', read ' + pa : '') + '. It is frozen: this is the price graded on the Record.' }));
+    card.appendChild(more);
+  }
+  return card;
+}
+function pulledCard(p, d) {
+  var pl = isObj(p.pulled) ? p.pulled : {}, at = fTime(pl.at);
+  return h('div', { class: 'card', 'data-id': str(p.id) },
+    h('div', { class: 'pullbar' }, h('span', { class: 'ic' }, icon('stop', 16)),
+      h('div', { class: 'why' }, h('b', { text: 'Pulled' + (at ? ' ' + at : '') }), pl.reason ? ': ' + str(pl.reason) : '')),
+    pl.if_bet ? h('div', { class: 'ifbet', text: str(pl.if_bet) }) : null,
+    h('div', { class: 'dim' },
+      resultLine(p.result),
+      h('div', { class: 'r1' }, h('span', { class: 'meta' }, muNodes(p, d.games))),
+      h('div', { class: 'name', text: p.player || 'Player not named' }),
+      h('div', { class: 'r2' }, h('div', { class: 'bet strike', text: shortBet(p) }),
+        h('div', { class: 'shownat' }, 'Shown at ', h('span', { text: odds(p.price) }))),
+      h('div', { class: 'note', text: 'Still on the Record under Pulled, graded at ' + odds(p.price) + '.' })));
+}
+
+/* ---------- Tonight ---------- */
+function recordStrip() {
+  var hd = S.record && isObj(S.record.summary) && isObj(S.record.summary.headline) ? S.record.summary.headline : null;
+  var inner;
+  if (!S.record) inner = h('span', { class: 'grow mu', style: 'font:400 13px/18px var(--body)', text: S.recordErr ? "Record didn't load" : 'Record loading' });
+  else if (!hd || !((num(hd.w) || 0) + (num(hd.l) || 0))) inner = h('span', { class: 'grow' }, h('span', { class: 'lbl', text: 'Record' }), h('span', { class: 'mu', style: 'font:400 13px/18px var(--body)', text: 'No graded picks yet' }));
+  else inner = h('span', { class: 'grow' }, h('span', { class: 'lbl', text: 'Record' }), (num(hd.w) || 0) + '-' + (num(hd.l) || 0) + ' · ',
+    h('span', { class: signCls(hd.units), text: units(hd.units, 2) || '0.00u' }));
+  return h('button', { class: 'rowbtn strip', type: 'button', 'aria-label': 'Open the Record', on: { click: function () { go('record'); } } },
+    inner, h('span', { class: 'chev' }, icon('right', 16)));
+}
+function statusBlock(sl, exp) {
+  var st = isObj(sl.status) ? sl.status : {}, od = isObj(st.odds) ? st.odds : {}, out = h('div', { class: 'status' });
+  var l1 = [], up = fStamp(statusAt());
+  l1.push(up ? 'Updated ' + up : 'Update time not on file');
+  if (!exp && fStamp(st.next_read_at)) l1.push('Next price check ' + fStamp(st.next_read_at));
+  out.appendChild(h('div', { class: stale() ? 'bad' : null, text: l1.join(' · ') }));
+  var lr = isObj(st.last_run) ? st.last_run : null;
+  if (lr && lr.ok === false) out.appendChild(h('div', { class: 'bad', text: 'Last update failed' + (fStamp(lr.at) ? ' at ' + fStamp(lr.at) : '') + '.' }));
+  var pool = num(od.pool_left), days = num(od.days_left), cls = null, t;
+  if (od.no_keys) { t = 'Odds keys: none yet'; cls = 'bad'; }
+  else if (od.refused) { t = 'Odds keys refused: prices can’t be read'; cls = 'bad'; }
+  else {
+    t = (od.low ? 'Odds keys low: ' : 'Odds keys: ') + (pool != null ? comma(pool) + ' credits' : 'credits not reported');
+    if (days != null) t += ' · about ' + Math.max(0, Math.floor(days)) + (Math.floor(days) === 1 ? ' day' : ' days') + ' left';
+    if (od.low) cls = 'warn';
+  }
+  out.appendChild(h('div', { class: cls, text: t }));
+  return out;
+}
+function renderTonight() {
+  if (!S.loaded) {
+    app.appendChild(h('div', { class: 'hdr' }, h('h1', { text: 'Prop Check NBA' })));
+    app.appendChild(h('p', { class: 'mu', style: 'font-size:13px;margin:4px 0 14px', text: "Loading tonight's picks" }));
+    app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel' }), h('div', { class: 'skel' }), h('div', { class: 'skel' })));
+    return;
+  }
+  if (!S.slate) {
+    app.appendChild(header('Prop Check NBA', null));
+    app.appendChild(h('div', { class: 'card empty', style: 'margin-top:12px' },
+      h('div', { class: 't', text: S.loadErr === 'file' ? "The picks file couldn't be read." : "Can't load the picks. Check your connection." }),
+      h('div', { class: 's', text: 'No picks are shown rather than old ones. Trying again by itself.' }),
+      h('div', { style: 'margin-top:12px' }, h('button', { class: 'btn', type: 'button', text: 'Try again',
+        on: { click: function () { S.loaded = false; S.loadErr = false; render(); load().then(schedule); } } }))));
+    app.appendChild(footer());
+    return;
+  }
+  var sl = S.slate, exp = expired(), d = split();
+
+  app.appendChild(header('Prop Check NBA', exp ? fDay(now()) : (sl.slate ? fDateLong(sl.slate) : fDay(now()))));
+  app.appendChild(recordStrip());
+  app.appendChild(statusBlock(sl, exp));
+
+  /* the page's own clock truths first, then the engine's banners in order */
+  if (exp) {
+    app.appendChild(banner('warn', 'This slate is old' + (sl.slate ? ' (' + fDateShort(sl.slate) + ').' : '.'),
+      "Today's picks aren't in yet. Don't bet these.",
+      h('button', { class: 'linkbtn', type: 'button', on: { click: function () { go('record'); } } }, 'Results are in the Record', icon('right', 14))));
+  } else if (stale()) {
+    app.appendChild(banner('stop', 'Updates have stopped since ' + (fStamp(statusAt()) || 'earlier') + '.', 'Prices and picks below may be out of date.'));
+  }
+  if (S.fetchFail === 'file') app.appendChild(banner('warn', "The picks file couldn't be read.", 'Trying again. Showing what loaded at ' + (fTime(S.loadedAt) || 'an earlier time') + '.'));
+  else if (S.fetchFail) app.appendChild(banner('warn', "Can't reach the picks right now.", 'Showing what loaded at ' + (fTime(S.loadedAt) || 'an earlier time') + '.'));
+  var bl = arr(sl.banners);
+  bl.forEach(function (b) { var e = engineBanner(b); if (e) app.appendChild(e); });
+  if (sl.safety_paused && !bl.some(function (b) { return isObj(b) && b.level === 'stop'; }))
+    app.appendChild(banner('stop', 'New picks are stopped.', 'The Record is down 10 units or more. The team has to review first.'));
+  if (exp) { app.appendChild(footer()); return; }
+
+  /* Picks */
+  var cnt = isObj(sl.counts) ? sl.counts : {}, lr = num(cnt.lines_read);
+  var sec = h('section', { class: 'sec', id: 'picks' }, h('div', { class: 'sec-h' }, h('h2', { text: 'Picks (' + d.open.length + ')' }),
+    lr != null ? h('span', { class: 'mu', text: lr + ' lines read' }) : null));
+  if (!d.open.length) {
+    var emp = isObj(sl.empty) ? sl.empty : null, t, why = null, nx = null;
+    if (emp && emp.text) { t = str(emp.text); why = emp.why ? str(emp.why) : null; nx = fStamp(emp.next); }
+    else if (d.started.length) t = "No open picks right now. Tonight's earlier picks are under Started.";
+    else if (d.pulled.length) t = 'No open picks right now.';
+    else t = 'No picks posted.';
+    if (!nx && !(emp && emp.text) && fStamp(isObj(sl.status) ? sl.status.next_read_at : null)) nx = fStamp(sl.status.next_read_at);
+    sec.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: t }),
+      why ? h('div', { class: 's', text: why }) : null,
+      nx ? h('div', { class: 's', text: 'Next check ' + nx }) : null));
+  } else {
+    var stack = h('div', { class: 'stack' });
+    d.open.forEach(function (p) { stack.appendChild(pickCard(p, d)); });
+    sec.appendChild(stack);
+  }
+  app.appendChild(sec);
+
+  if (d.started.length) {
+    var sx = h('div', { class: 'stack' });
+    d.started.forEach(function (p) { sx.appendChild(pickCard(p, d, { started: true })); });
+    app.appendChild(h('section', { class: 'sec', id: 'started' }, h('div', { class: 'sec-h' }, h('h2', { text: 'Started (' + d.started.length + ')' })), sx));
+  }
+  if (d.pulled.length) {
+    var px = h('div', { class: 'stack' });
+    d.pulled.forEach(function (p) { px.appendChild(pulledCard(p, d)); });
+    app.appendChild(h('section', { class: 'sec', id: 'pulled' }, h('div', { class: 'sec-h' }, h('h2', { text: 'Pulled (' + d.pulled.length + ')' })), px));
+  }
+
+  /* Games */
+  var games = arr(sl.games).filter(isObj).slice().sort(function (a, b) { return (ms(a.start) || 0) - (ms(b.start) || 0); });
+  if (games.length) {
+    var gl = h('div', { class: 'list' });
+    games.forEach(function (g) { gl.appendChild(gameRow(g)); });
+    app.appendChild(h('section', { class: 'sec', id: 'games' }, h('div', { class: 'sec-h' }, h('h2', { text: 'Games (' + games.length + ')' })), gl));
+  }
+  app.appendChild(footer());
+}
+function gameRow(g) {
+  var n = num(g.picks), right;
+  if (g.state === 'in') right = h('span', { class: 'r' }, h('span', { class: 'live', text: 'LIVE' }), g.detail ? h('span', { style: 'display:block;font-size:12px', text: str(g.detail) }) : null);
+  else if (g.state === 'post') right = h('span', { class: 'r' }, h('span', { class: 'fin', text: 'FINAL' }));
+  else right = h('span', { class: 'r' }, n ? h('b', { text: n }) : null, n ? (n === 1 ? ' pick' : ' picks') : 'no picks');
+  if ((g.state === 'in' || g.state === 'post') && n) right.appendChild(h('span', { style: 'display:block;font-size:12px', text: n + (n === 1 ? ' pick' : ' picks') }));
+  var lx = isObj(g.lineups) ? g.lineups : {}, sub = null;
+  if (g.state !== 'in' && g.state !== 'post') {
+    var side = function (ab, k) {
+      return lx[k] === 'confirmed' ? [str(ab) + ' ', h('span', { class: 'ok', text: '✅ starters' })] : [str(ab) + ' expected'];
+    };
+    sub = h('span', { class: 'st' }, side(g.away, 'away'), ' · ', side(g.home, 'home'));
+  }
+  return h('div', { class: 'li' }, h('span', { class: 'grow' },
+    h('span', { class: 'nm' }, str(g.away) + ' @ ' + str(g.home), h('span', { class: 'mu', text: ' · ' + (fTime(g.start) || str(g.detail) || 'time not posted') })),
+    sub), right);
+}
+function footer() {
+  var v = S.rules ? S.rules.version : null;
+  return h('footer', { class: 'foot' },
+    h('button', { class: 'linkbtn', type: 'button', on: { click: function () { openSheet(); } } }, 'How picks are made'),
+    h('p', { text: (v != null ? 'Rules v' + v + '. ' : '') + 'All times Eastern. Checks for updates every ' + Math.round(refreshSec() / 60) + ' min while open.' }),
+    h('p', { text: 'For adults 21+. Picks are estimates, not guarantees. Bet only what you can afford to lose. Gambling problem? Call 1-888-ADMIT-IT.' }));
+}
+
+/* ---------- Record ---------- */
+function renderRecord() {
+  app.appendChild(header('The Record', null));
+  if (!S.loaded) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
+  if (!S.record) {
+    app.appendChild(h('div', { class: 'card empty', style: 'margin-top:12px' },
+      h('div', { class: 't', text: S.recordErr === 'file' ? "The Record file couldn't be read. Trying again." : "Can't load the Record. Check your connection." }),
+      h('div', { style: 'margin-top:12px' }, h('button', { class: 'btn', type: 'button', text: 'Try again', on: { click: function () { load().then(render); } } }))));
+    app.appendChild(footer()); return;
+  }
+  var sum = isObj(S.record.summary) ? S.record.summary : {}, hd = isObj(sum.headline) ? sum.headline : {};
+  var w = num(hd.w) || 0, l = num(hd.l) || 0, n = num(hd.n) != null ? hd.n : w + l;
+  if (!(w + l + (num(hd.push) || 0) + (num(hd.void) || 0))) {
+    app.appendChild(h('div', { class: 'card empty', style: 'margin-top:8px' },
+      h('div', { class: 't', text: 'No graded picks yet.' }), h('div', { class: 's', text: 'Results post once each game is final.' })));
+  } else {
+    var hr = pctNear(hd.hit_rate), nd = pctNear(hd.needed);
+    app.appendChild(h('div', { class: 'hl', role: 'table', 'aria-label': 'Record' },
+      h('div', { role: 'row' }, h('div', { class: 'k', text: 'W-L' }), h('div', { class: 'v', text: w + '-' + l }),
+        h('div', { class: 's', text: [num(hd.push) ? hd.push + ' push' : '', num(hd.void) ? hd.void + ' void' : ''].filter(Boolean).join(' · ') || n + ' graded' })),
+      h('div', { role: 'row' }, h('div', { class: 'k', text: 'Units' }), h('div', { class: 'v ' + signCls(hd.units), text: units(hd.units, 2) || '0.00u' }),
+        h('div', { class: 's', text: '1 unit each' })),
+      h('div', { role: 'row' }, h('div', { class: 'k', text: 'Hit rate' }), h('div', { class: 'v' + (num(hd.hit_rate) != null && num(hd.needed) != null ? (hd.hit_rate >= hd.needed ? ' pos' : ' neg') : ''), text: hr || '—' }),
+        h('div', { class: 's', text: nd ? 'needed ' + nd : 'needed —' }))));
+    var bar = chanceBar(hd.hit_rate, hd.needed); if (bar) { bar.style.marginTop = '10px'; app.appendChild(bar); }
+    app.appendChild(h('div', { class: 'subline', text: n + ' graded picks, at the posted Hard Rock price. Pulled picks are not counted here.' }));
+
+    var rows = arr(sum.rows).filter(function (r) { return isObj(r) && ((num(r.w) || 0) + (num(r.l) || 0) + (num(r.push) || 0) + (num(r.void) || 0)) > 0; });
+    if (rows.length) {
+      var tbl = h('div', { class: 'tbl', role: 'table', 'aria-label': 'Record by market' });
+      tbl.appendChild(h('div', { class: 'tr th', role: 'row' }, h('span', { text: '' }), h('span', { text: 'W-L' }), h('span', { text: 'Hit' }),
+        h('span', { text: 'Needed' }), h('span', { text: 'Units' })));
+      rows.forEach(function (r) {
+        var lab = r.key === 'pulled' ? h('span', { class: 'lbl' }, 'Pulled', h('small', { text: '(not counted above)' }))
+          : h('span', { class: 'lbl', text: r.label || str(r.key) || 'Other' });
+        var u = num(r.units);
+        tbl.appendChild(h('div', { class: 'tr', role: 'row' }, lab, h('span', { class: 'num', text: (num(r.w) || 0) + '-' + (num(r.l) || 0) }),
+          h('span', { text: pctNear(r.hit_rate) || '—' }), h('span', { text: pctNear(r.needed) || '—' }),
+          h('span', { class: 'num ' + signCls(u), text: u == null ? '—' : (units(u, 2) || '').replace(/u$/, '') })));
+      });
+      app.appendChild(tbl);
+    }
+    app.appendChild(h('p', { class: 'note', text: 'Push and void are 0 units and left out of hit rate. Nothing on the Record is ever edited or removed.' }));
+  }
+
+  var seen = {}, nights = [];
+  arr(S.record.nights).concat(S.older).forEach(function (nt) { if (isObj(nt) && !seen[nt.date]) { seen[nt.date] = 1; nights.push(nt); } });
+  nights.sort(function (a, b) { return str(a.date) < str(b.date) ? 1 : (str(a.date) > str(b.date) ? -1 : 0); });
+  var shown = 0;
+  nights.forEach(function (nt) {
+    var ents = arr(nt.entries).filter(isObj); if (!ents.length) return;
+    shown++;
+    var wl = (num(nt.w) || 0) + (num(nt.l) || 0), tail = null;
+    if (wl || nt.graded) tail = (num(nt.w) || 0) + '-' + (num(nt.l) || 0) + (units(nt.units, 2) ? ' · ' + units(nt.units, 2) : '') + (nt.graded ? '' : ' so far');
+    var sec = h('section', { class: 'night' }, h('h3', null, fDateLong(nt.date) + (tail ? ' · ' + tail : ''),
+      nt.graded ? null : h('span', { class: 'mu', text: ' · results post when games end' })));
+    ents.forEach(function (e) { sec.appendChild(entryRow(e)); });
+    app.appendChild(sec);
+  });
+  if (!shown) app.appendChild(h('p', { class: 'mu', style: 'margin-top:16px', text: 'No nights on the Record yet.' }));
+
+  var older = arr(S.record.older);
+  if (S.olderIdx < older.length) {
+    app.appendChild(h('button', { class: 'btn wide', type: 'button', style: 'margin-top:18px', text: S.olderBusy ? 'Loading' : 'Load older months', on: { click: loadOlder } }));
+    if (S.olderErr) app.appendChild(h('p', { class: 'note', style: 'color:var(--warn)', text: "Couldn't load older months. Try again." }));
+  }
+  app.appendChild(footer());
+}
+function entryRow(e) {
+  var res = e.result == null ? null : str(e.result), known = { W: 1, L: 1, PUSH: 1, VOID: 1 };
+  var tag = h('span', { class: 'tg ' + (res && known[res] ? res : 'none'), text: res || '–' });
+  if (!res) tag.setAttribute('aria-label', 'Awaiting result');
+  var l2 = [odds(e.price)];
+  if (e.game) l2.push(str(e.game));
+  if (e.pulled) l2.push('pulled' + (fTime(e.pulled.at) ? ' ' + fTime(e.pulled.at) : '') + (e.pulled.reason ? ': ' + str(e.pulled.reason) : ''));
+  if (!res) l2.push('awaiting result'); else if (e.actual) l2.push(str(e.actual));
+  var u = res ? units(e.units, 2) : null;
+  return h('div', { class: 'ent' }, tag,
+    h('div', { class: 'bd' }, h('div', { class: 'e1' }, e.pulled ? h('span', { class: 'ptag', text: 'PULLED' }) : null,
+      h('span', { class: 'pn', text: e.player || 'Player not named' }), ' ' + str(e.bet)), h('div', { class: 'e2', text: l2.join(' · ') })),
+    u ? h('span', { class: 'u ' + signCls(e.units), text: u }) : null);
+}
+function loadOlder() {
+  if (S.olderBusy || !S.record) return;
+  var list = arr(S.record.older), path = list[S.olderIdx]; if (!path) return;
+  path = str(path).replace(/^\/+/, '').replace(/\.\.\//g, '');
+  S.olderBusy = true; S.olderErr = false; render();
+  getJSON(BASE + path).then(function (j) {
+    S.olderBusy = false; S.olderIdx++; S.older = S.older.concat(arr(j.nights)); render();
+  }, function () { S.olderBusy = false; S.olderErr = true; render(); });
+}
+
+/* ---------- tabs + routing ---------- */
+function renderTabs() {
+  clear(tabsEl);
+  var mk = function (v, label) {
+    return h('button', { class: 'tab', type: 'button', 'aria-current': S.view === v ? 'page' : null, text: label, on: { click: function () { go(v); } } });
+  };
+  tabsEl.appendChild(h('div', { class: 'in' }, mk('tonight', 'Tonight'), mk('record', 'Record')));
+}
+function viewFromHash() { return location.hash === '#record' ? 'record' : 'tonight'; }
+function go(v) {
+  if (v === S.view) { window.scrollTo(0, 0); return; }
+  try { history.pushState(null, '', location.pathname + location.search + (v === 'record' ? '#record' : '')); }
+  catch (e) { location.hash = v === 'record' ? '#record' : ''; }
+  route();
+}
+function route() {
+  var v = viewFromHash();
+  if (v !== S.view) { S.scroll[S.view] = window.scrollY || 0; S.view = v; render(); window.scrollTo(0, S.scroll[v] || 0); }
+}
+
+/* ---------- rules sheet ---------- */
+function openSheet() {
+  S.sheetFocus = document.activeElement; S.sheet = 'rules';
+  try { history.pushState({ sheet: 'rules' }, '', location.href); } catch (e) { /* ignore */ }
+  fillSheet();
+  var c = sheetRoot.querySelector('.ibtn'); if (c) c.focus();
+}
+function closeSheet(fromPop) {
+  if (!S.sheet) return;
+  if (!fromPop && history.state && history.state.sheet) { history.back(); return; }
+  S.sheet = null; clear(sheetRoot); document.body.style.overflow = '';
+  if (S.sheetFocus && document.contains(S.sheetFocus) && S.sheetFocus.focus) S.sheetFocus.focus();
+}
+function fillSheet() {
+  var prev = 0, old = sheetRoot.querySelector('.sheet-b'); if (old) prev = old.scrollTop;
+  clear(sheetRoot);
+  var body = h('div', { class: 'sheet-b' });
+  var v = S.rules ? S.rules.version : null, up = S.rules ? S.rules.updated : null;
+  body.appendChild(h('div', { class: 'mu', style: 'font-size:12px;margin-bottom:8px', text: (v != null ? 'Rules v' + v : 'Rules') + (up ? ' · changed ' + fDateShort(up) : '') }));
+  body.appendChild(h('div', { class: 'fixed', text: MARKET_LINE }));
+  var lines = S.rules ? arr(S.rules.lines).map(str).filter(Boolean) : [];
+  if (lines.length) {
+    var ol = h('ol', { class: 'rules' });
+    lines.forEach(function (s) { ol.appendChild(h('li', { text: s })); });
+    body.appendChild(ol);
+  } else body.appendChild(h('p', { style: 'color:var(--warn)', text: S.rules ? 'No rules posted yet.' : "The rules didn't load. Trying again." }));
+  body.appendChild(h('p', { class: 'note', text: 'All times Eastern. Picks are estimates, not guarantees.' }));
+  var sheet = h('div', { class: 'sheet', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'How picks are made' },
+    h('div', { class: 'sheet-h' }, h('h2', { text: 'How picks are made' }),
+      h('button', { class: 'ibtn', type: 'button', 'aria-label': 'Close', on: { click: function () { closeSheet(false); } } }, icon('close', 22))), body);
+  var scrim = h('div', { class: 'scrim', on: { click: function (e) { if (e.target === scrim) closeSheet(false); } } }, sheet);
+  sheetRoot.appendChild(scrim); document.body.style.overflow = 'hidden'; body.scrollTop = prev;
+}
+
+/* ---------- wiring ---------- */
+window.addEventListener('popstate', function () { if (S.sheet) closeSheet(true); route(); });
+window.addEventListener('hashchange', route);
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && S.sheet) closeSheet(false); });
+document.addEventListener('visibilitychange', function () { if (!document.hidden) load().then(schedule); });
+setInterval(function () { if (S.loaded && !document.hidden) maybeRender(); }, 30000);  /* "starts in" and stale checks tick on */
+
+S.view = viewFromHash();
+renderTabs();
+load().then(schedule);
+})();
+</script>
+</body>
+</html>

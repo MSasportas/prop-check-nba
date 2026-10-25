@@ -1,0 +1,125 @@
+{
+ "version": "1.0",
+ "updated": "2026-10-25",
+ "_about": "EVERY rule value lives here (TEAM.md section 4). The engine reads this file; data/rules.json (what the page reads) is generated from it. One rule set: Gap + Guard. Probabilities 0-1, prices American integers, times Eastern.",
+ "customer": {
+  "_about": "Customer facts locked by Matt in the setup interview 2026-10-25. The team never changes these.",
+  "book": "hardrockbet",
+  "market": "rebounds",
+  "main_line_only": true,
+  "sides": [
+   "over",
+   "under"
+  ],
+  "worst_price": -200,
+  "parlays": false,
+  "regular_season_only": true
+ },
+ "gap_guard": {
+  "active": true,
+  "live_from": "2026-10-25",
+  "checkpoint": "2026-11-16",
+  "gap_ev": 0.03,
+  "books_min": 4,
+  "pin_required": true,
+  "pin_ev_min": 0.0,
+  "book_hold_max": 0.15,
+  "book_fresh_min": 60,
+  "max_price": 200,
+  "pull_ev": 0.015,
+  "market_weight": 0.8,
+  "model_weight": 0.2,
+  "offset": 0.0,
+  "final_ev": 0.02,
+  "flag_pulls": [
+   "B",
+   "C",
+   "D"
+  ],
+  "final_pull": "D",
+  "max_per_player": 1,
+  "flag_max_age_min": 15,
+  "void_after_hours": 36
+ },
+ "eligibility": {
+  "min_history": 10,
+  "minutes_drop_ratio": 0.6,
+  "minutes_drop_games": 3,
+  "rotation_size": 7,
+  "never_status": [
+   "out",
+   "doubtful"
+  ],
+  "wait_status": [
+   "questionable",
+   "day-to-day",
+   "gtd"
+  ]
+ },
+ "reads": {
+  "a_clock": "11:00",
+  "a_before_first_min": 180,
+  "b_min": 90,
+  "c_min": 45,
+  "d_min": 20,
+  "latest_min": 8,
+  "retry_min": 20,
+  "priority": [
+   "C",
+   "B",
+   "D",
+   "A"
+  ],
+  "stale_min": 60,
+  "hold_min": 0.02,
+  "hold_max": 0.12
+ },
+ "safety_pause": {
+  "units": -10,
+  "text": "New picks are stopped: the Record is down 10 units or more.",
+  "sub": "The team has to review before picks resume. Picks already shown are unaffected."
+ },
+ "ops": {
+  "rollover_hour": 5,
+  "heartbeat_min": 20,
+  "sport_key": "basketball_nba",
+  "odds_region": "us",
+  "bookmakers": [
+   "hardrockbet"
+  ],
+  "consensus_books": [
+   "draftkings",
+   "fanduel",
+   "betmgm",
+   "espnbet",
+   "pinnacle",
+   "betonlineag",
+   "betrivers",
+   "novig",
+   "prophetx"
+  ],
+  "event_match_hours": 6,
+  "pool_low_allowance": 2,
+  "cost_per_read": 1,
+  "injuries_every_min": 10,
+  "lineups_window_min": 180
+ },
+ "markets": {
+  "rebounds": {
+   "feed_key": "player_rebounds",
+   "noun": "rebounds",
+   "short": "reb",
+   "label": "Rebounds"
+  }
+ },
+ "ui": {
+  "stale_after_min": 30,
+  "refresh_sec": 120,
+  "record_nights": 7
+ },
+ "discord": {
+  "quiet_from": "00:30",
+  "quiet_to": "09:00",
+  "max_per_day": 12
+ }
+}

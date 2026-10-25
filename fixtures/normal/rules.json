@@ -1,0 +1,14 @@
+{
+ "version": "1.0",
+ "updated": "2026-10-25",
+ "lines": [
+  "We bet only Hard Rock player rebounds, main line only, over or under, priced between -200 and +200.",
+  "Step 1, the gap: at least 4 other books (Pinnacle must be one) price the same player and line. Hard Rock's price has to beat their middle chance by at least 3%.",
+  "Step 2, the guard: 80% the other books' chance plus 20% our model's chance must still beat the price by at least 2%. The model can only say no.",
+  "Prices are read 90, 45 and 20 minutes before each tip. The first read that passes makes the pick and freezes its price. That is the price graded on the Record, 1 unit each.",
+  "A player needs 10 games of history. Out or Doubtful: never. Questionable or game-time decision: no pick until he is cleared or confirmed starting.",
+  "A pick is pulled if he lands on the injury report, a key teammate is ruled out, or Hard Rock moves the price and the edge drops under 1.5%. Each pull says what it means if you already bet. Pulled picks stay on the Record.",
+  "After the 20 minute read a pick shows Price final: only an injury can pull it. No pulls after tip.",
+  "Graded from the ESPN box score once the game is final. Overtime counts. Did not play = void. New picks stop by themselves if the Record falls to -10 units."
+ ]
+}

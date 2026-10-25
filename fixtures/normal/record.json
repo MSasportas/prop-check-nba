@@ -1,0 +1,191 @@
+{
+ "generated_at": "2026-10-25T18:42:00-04:00",
+ "summary": {
+  "headline": {
+   "w": 5,
+   "l": 3,
+   "push": 0,
+   "void": 0,
+   "units": 1.39,
+   "hit_rate": 0.625,
+   "needed": 0.5328,
+   "n": 8
+  },
+  "rows": [
+   {
+    "key": "rebounds",
+    "label": "Rebounds",
+    "w": 5,
+    "l": 3,
+    "push": 0,
+    "void": 0,
+    "units": 1.39,
+    "hit_rate": 0.625,
+    "needed": 0.5328,
+    "n": 8
+   },
+   {
+    "key": "pulled",
+    "label": "Pulled (not counted above)",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "hit_rate": 0.0,
+    "needed": 0.5455,
+    "n": 1
+   }
+  ]
+ },
+ "nights": [
+  {
+   "date": "2026-10-25",
+   "graded": false,
+   "w": 1,
+   "l": 0,
+   "units": 0.85,
+   "entries": [
+    {
+     "id": "2026-10-25-hart",
+     "kind": "single",
+     "player": "Josh Hart",
+     "bet": "Over 8.5 rebounds",
+     "market": "rebounds",
+     "team": "NYK",
+     "game": "NYK at BOS",
+     "price": -118,
+     "result": "W",
+     "actual": "11 rebounds",
+     "units": 0.85,
+     "pulled": null
+    },
+    {
+     "id": "2026-10-25-kessler",
+     "kind": "single",
+     "player": "Walker Kessler",
+     "bet": "Over 9.5 rebounds",
+     "market": "rebounds",
+     "team": "UTA",
+     "game": "LAL at UTA",
+     "price": -115,
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-10-25T18:31:00-04:00",
+      "reason": "Hard Rock moved it to -135"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-10-24",
+   "graded": true,
+   "w": 2,
+   "l": 1,
+   "units": 0.58,
+   "entries": [
+    {
+     "id": "2026-10-24-a",
+     "kind": "single",
+     "player": "Rudy Gobert",
+     "bet": "Over 11.5 rebounds",
+     "market": "rebounds",
+     "team": "MIN",
+     "game": "DEN at MIN",
+     "price": -115,
+     "result": "W",
+     "actual": "14 rebounds",
+     "units": 0.87,
+     "pulled": null
+    },
+    {
+     "id": "2026-10-24-b",
+     "kind": "single",
+     "player": "Nikola Vucevic",
+     "bet": "Under 10.5 rebounds",
+     "market": "rebounds",
+     "team": "CHI",
+     "game": "CHI at IND",
+     "price": -110,
+     "result": "L",
+     "actual": "13 rebounds",
+     "units": -1.0,
+     "pulled": null
+    },
+    {
+     "id": "2026-10-24-c",
+     "kind": "single",
+     "player": "Ivica Zubac",
+     "bet": "Over 10.5 rebounds",
+     "market": "rebounds",
+     "team": "LAC",
+     "game": "LAC at SAS",
+     "price": -140,
+     "result": "W",
+     "actual": "12 rebounds",
+     "units": 0.71,
+     "pulled": null
+    },
+    {
+     "id": "2026-10-24-d",
+     "kind": "single",
+     "player": "Mitchell Robinson",
+     "bet": "Over 7.5 rebounds",
+     "market": "rebounds",
+     "team": "NYK",
+     "game": "WAS at NYK",
+     "price": -120,
+     "result": "L",
+     "actual": "5 rebounds",
+     "units": -1.0,
+     "pulled": {
+      "at": "2026-10-24T18:50:00-04:00",
+      "reason": "Listed questionable after the pick"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "graded": true,
+   "w": 1,
+   "l": 1,
+   "units": -0.09,
+   "entries": [
+    {
+     "id": "2026-10-23-a",
+     "kind": "single",
+     "player": "Jarrett Allen",
+     "bet": "Over 9.5 rebounds",
+     "market": "rebounds",
+     "team": "CLE",
+     "game": "CLE at DET",
+     "price": -110,
+     "result": "W",
+     "actual": "10 rebounds",
+     "units": 0.91,
+     "pulled": null
+    },
+    {
+     "id": "2026-10-23-b",
+     "kind": "single",
+     "player": "Paolo Banchero",
+     "bet": "Under 8.5 rebounds",
+     "market": "rebounds",
+     "team": "ORL",
+     "game": "MIA at ORL",
+     "price": -105,
+     "result": "L",
+     "actual": "9 rebounds",
+     "units": -1.0,
+     "pulled": null
+    }
+   ]
+  }
+ ],
+ "older": [
+  "record/older.json"
+ ]
+}
