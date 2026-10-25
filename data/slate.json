@@ -1,0 +1,147 @@
+{
+ "slate": "2026-10-25",
+ "valid_until": "2026-10-26T05:00:00-04:00",
+ "banners": [
+  {
+   "level": "stop",
+   "text": "No odds keys yet: Hard Rock prices can't be read, so there are no picks. The team has asked Matt for 3 free keys."
+  }
+ ],
+ "status": {
+  "odds": {
+   "keys": 0,
+   "pool_left": null,
+   "low": false,
+   "refused": false,
+   "no_keys": true,
+   "days_left": 7,
+   "allowance": null,
+   "reads": null
+  },
+  "next_read_at": null,
+  "last_read_at": null,
+  "last_run": {
+   "ok": true,
+   "at": "2026-10-25T12:12:49-04:00"
+  }
+ },
+ "games": [
+  {
+   "id": "401909861",
+   "start": "2026-10-25T17:00:00-04:00",
+   "away": "LAL",
+   "home": "UTA",
+   "state": "pre",
+   "detail": "10/25 - 5:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909862",
+   "start": "2026-10-25T18:00:00-04:00",
+   "away": "IND",
+   "home": "BKN",
+   "state": "pre",
+   "detail": "10/25 - 6:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909863",
+   "start": "2026-10-25T19:00:00-04:00",
+   "away": "ORL",
+   "home": "NYK",
+   "state": "pre",
+   "detail": "10/25 - 7:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909864",
+   "start": "2026-10-25T19:00:00-04:00",
+   "away": "TOR",
+   "home": "MIN",
+   "state": "pre",
+   "detail": "10/25 - 7:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909865",
+   "start": "2026-10-25T19:00:00-04:00",
+   "away": "LAC",
+   "home": "OKC",
+   "state": "pre",
+   "detail": "10/25 - 7:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909866",
+   "start": "2026-10-25T19:30:00-04:00",
+   "away": "DET",
+   "home": "PHI",
+   "state": "pre",
+   "detail": "10/25 - 7:30 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909867",
+   "start": "2026-10-25T21:00:00-04:00",
+   "away": "MEM",
+   "home": "SAC",
+   "state": "pre",
+   "detail": "10/25 - 9:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  }
+ ],
+ "picks": [],
+ "empty": {
+  "text": "No picks yet today",
+  "why": "No Hard Rock prices can be read until odds keys are added.",
+  "next": null
+ },
+ "counts": {
+  "lines_read": 0,
+  "passing": 0,
+  "games": 7
+ },
+ "safety_paused": false,
+ "ui": {
+  "stale_after_min": 30,
+  "refresh_sec": 120,
+  "record_nights": 7
+ },
+ "generated_at": "2026-10-25T12:12:49-04:00",
+ "status_at": "2026-10-25T12:12:49-04:00"
+}

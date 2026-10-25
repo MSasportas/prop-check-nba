@@ -1,0 +1,213 @@
+{
+ "slate": "2026-10-25",
+ "teams": {
+  "LAL": {
+   "state": "expected",
+   "starters": [
+    "Luka Doncic",
+    "Austin Reaves",
+    "Ziaire Williams",
+    "Matisse Thybulle",
+    "Walker Kessler"
+   ],
+   "status": {
+    "Cameron Carr": "out",
+    "Adou Thiero": "out"
+   }
+  },
+  "UTAH": {
+   "state": "expected",
+   "starters": [
+    "Keyonte George",
+    "Darryn Peterson",
+    "Ace Bailey",
+    "Lauri Markkanen",
+    "Jaren Jackson"
+   ],
+   "status": {
+    "Jusuf Nurkic": "out"
+   }
+  },
+  "IND": {
+   "state": "expected",
+   "starters": [
+    "Tyrese Haliburton",
+    "Andrew Nembhard",
+    "Aaron Nesmith",
+    "Pascal Siakam",
+    "Ivica Zubac"
+   ],
+   "status": {
+    "Aaron Nesmith": "probable",
+    "Johnny Furphy": "out",
+    "T.J. McConnell": "out",
+    "Ben Sheppard": "out"
+   }
+  },
+  "BKN": {
+   "state": "expected",
+   "starters": [
+    "Egor Demin",
+    "Keon Ellis",
+    "Michael Porter",
+    "Julius Randle",
+    "Day'Ron Sharpe"
+   ],
+   "status": {
+    "Tyler Bilodeau": "questionable",
+    "Mikel Brown": "out"
+   }
+  },
+  "TOR": {
+   "state": "expected",
+   "starters": [
+    "Immanuel Quickley",
+    "RJ Barrett",
+    "Kawhi Leonard",
+    "Scottie Barnes",
+    "Jakob Poeltl"
+   ],
+   "status": {
+    "Nate Bittle": "out"
+   }
+  },
+  "MIN": {
+   "state": "expected",
+   "starters": [
+    "LaMelo Ball",
+    "Anthony Edwards",
+    "Jonathan Kuminga",
+    "Jaden McDaniels",
+    "Rudy Gobert"
+   ],
+   "status": {
+    "Donte DiVincenzo": "out"
+   }
+  },
+  "ORL": {
+   "state": "expected",
+   "starters": [
+    "Jalen Suggs",
+    "Desmond Bane",
+    "Franz Wagner",
+    "Tristan da Silva",
+    "Wendell Carter"
+   ],
+   "status": {
+    "Anthony Black": "questionable",
+    "Paolo Banchero": "out",
+    "Jonathan Isaac": "out",
+    "Izaiyah Nelson": "out",
+    "Noah Penda": "out"
+   }
+  },
+  "NY": {
+   "state": "expected",
+   "starters": [
+    "Jalen Brunson",
+    "Mikal Bridges",
+    "Josh Hart",
+    "OG Anunoby",
+    "Karl-Anthony Towns"
+   ],
+   "status": {
+    "Jose Alvarado": "questionable"
+   }
+  },
+  "LAC": {
+   "state": "expected",
+   "starters": [
+    "Darius Garland",
+    "Kris Dunn",
+    "Rui Hachimura",
+    "Derrick Jones",
+    "Isaiah Jackson"
+   ],
+   "status": {
+    "Bradley Beal": "out",
+    "Brandon Ingram": "out",
+    "Jordan Miller": "out",
+    "Yanic Konan Niederhauser": "out",
+    "Max Strus": "out"
+   }
+  },
+  "OKC": {
+   "state": "expected",
+   "starters": [
+    "Shai Gilgeous-Alexander",
+    "Cason Wallace",
+    "Jalen Williams",
+    "Chet Holmgren",
+    "Isaiah Hartenstein"
+   ],
+   "status": {
+    "Thomas Sorber": "out",
+    "Nikola Topic": "out"
+   }
+  },
+  "DET": {
+   "state": "expected",
+   "starters": [
+    "Cade Cunningham",
+    "Duncan Robinson",
+    "Ausar Thompson",
+    "John Collins",
+    "Paul Reed"
+   ],
+   "status": {
+    "Ausar Thompson": "questionable",
+    "Jalen Duren": "out"
+   }
+  },
+  "PHI": {
+   "state": "expected",
+   "starters": [
+    "Tyrese Maxey",
+    "VJ Edgecombe",
+    "Jaylen Brown",
+    "LeBron James",
+    "Adem Bona"
+   ],
+   "status": {
+    "LeBron James": "questionable",
+    "Ariel Hukporti": "out",
+    "Tacko Fall": "questionable",
+    "Jabari Walker": "questionable",
+    "Joel Embiid": "doubtful",
+    "Dominick Barlow": "out"
+   }
+  },
+  "MEM": {
+   "state": "expected",
+   "starters": [
+    "Ty Jerome",
+    "Cedric Coward",
+    "Jaylen Wells",
+    "Cameron Boozer",
+    "Isaiah Stewart"
+   ],
+   "status": {
+    "Cedric Coward": "questionable",
+    "Zach Edey": "out",
+    "Richie Saunders": "out"
+   }
+  },
+  "SAC": {
+   "state": "expected",
+   "starters": [
+    "Darius Acuff",
+    "Zach LaVine",
+    "De'Andre Hunter",
+    "Keegan Murray",
+    "Domantas Sabonis"
+   ],
+   "status": {
+    "Keegan Murray": "questionable",
+    "Ben Simmons": "out",
+    "Dylan Cardwell": "out",
+    "Maxime Raynaud": "out"
+   }
+  }
+ },
+ "at": "2026-10-25T12:12:49-04:00"
+}
