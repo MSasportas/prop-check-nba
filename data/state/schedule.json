@@ -10,10 +10,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "24.7 - 3rd",
+    "detail": "8:35 - 4th",
     "score": {
-     "LAL": "100",
-     "UTAH": "99"
+     "LAL": "109",
+     "UTAH": "108"
     }
    },
    {
@@ -25,10 +25,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:05 - 2nd",
+    "detail": "1:44 - 2nd",
     "score": {
-     "IND": "44",
-     "BKN": "43"
+     "IND": "54",
+     "BKN": "52"
     }
    },
    {
@@ -37,10 +37,10 @@
     "start": "2026-10-25T19:00:00-04:00",
     "away": "ORL",
     "home": "NY",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/25 - 7:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:43 - 1st",
     "score": {
      "ORL": "0",
      "NY": "0"

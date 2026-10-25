@@ -160,18 +160,18 @@
    }
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
-    "VJ Edgecombe",
+    "Kentavious Caldwell-Pope",
     "Jaylen Brown",
     "LeBron James",
-    "Adem Bona"
+    "Dean Wade"
    ],
    "status": {
-    "VJ Edgecombe": "out",
     "Ariel Hukporti": "out",
     "Dominick Barlow": "out",
+    "VJ Edgecombe": "out",
     "Joel Embiid": "out",
     "Tacko Fall": "out",
     "Jabari Walker": "out"
@@ -203,11 +203,11 @@
    ],
    "status": {
     "Ben Simmons": "out",
-    "Keegan Murray": "doubtful",
     "Dylan Cardwell": "out",
+    "Keegan Murray": "out",
     "Maxime Raynaud": "out"
    }
   }
  },
- "at": "2026-10-25T19:00:01-04:00"
+ "at": "2026-10-25T19:10:00-04:00"
 }
