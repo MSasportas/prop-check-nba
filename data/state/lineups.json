@@ -29,7 +29,7 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Haliburton",
     "Andrew Nembhard",
@@ -44,7 +44,7 @@
    }
   },
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Egor Demin",
     "Keon Ellis",
@@ -93,7 +93,6 @@
     "Wendell Carter"
    ],
    "status": {
-    "Anthony Black": "questionable",
     "Paolo Banchero": "out",
     "Jonathan Isaac": "out",
     "Izaiyah Nelson": "out",
@@ -208,5 +207,5 @@
    }
   }
  },
- "at": "2026-10-25T17:30:01-04:00"
+ "at": "2026-10-25T17:40:01-04:00"
 }

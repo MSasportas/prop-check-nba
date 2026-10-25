@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T17:30:01-04:00",
+ "at": "2026-10-25T17:40:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -36,6 +36,13 @@
    "date": "2026-10-25T13:40Z",
    "note": "Head coach Jordi Fernandez said Brown (rest) will be held out of Sunday's game against the Pacers, Brian Lewis of the New York Post reports."
   },
+  "5061575": {
+   "status": "out",
+   "name": "Kon Knueppel",
+   "team": "CHA",
+   "date": "2026-10-25T21:20Z",
+   "note": "Knueppel (hamstring) has been ruled out for Monday's game against the Wizards."
+  },
   "4395651": {
    "status": "out",
    "name": "Coby White",
@@ -49,13 +56,6 @@
    "team": "CHA",
    "date": "2026-10-24T17:26Z",
    "note": "Williams (hamstring) has been ruled out for Saturday's game against the Heat."
-  },
-  "5061575": {
-   "status": "out",
-   "name": "Kon Knueppel",
-   "team": "CHA",
-   "date": "2026-10-24T17:09Z",
-   "note": "Knueppel (hamstring) has been ruled out for Saturday's game against the Heat."
   },
   "4684269": {
    "status": "out",
@@ -169,12 +169,19 @@
    "date": "2026-10-25T14:56Z",
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
   },
+  "4997536": {
+   "status": "day-to-day",
+   "name": "Gui Santos",
+   "team": "GS",
+   "date": "2026-10-25T21:22Z",
+   "note": "Santos is questionable for Monday's game against the Nuggets due to left knee tendinitis."
+  },
   "4397040": {
    "status": "day-to-day",
    "name": "Brandon Williams",
    "team": "GS",
-   "date": "2026-10-25T21:21Z",
-   "note": "Williams accumulated 20 points (5-10 FG, 2-3 3Pt, 8-11 FT), three rebounds, five assists and two steals over 24 minutes during Saturday's 131-122 loss to the Suns."
+   "date": "2026-10-25T21:20Z",
+   "note": "Williams is probable for Monday's game against the Nuggets due to left lower back soreness."
   },
   "4397886": {
    "status": "day-to-day",
@@ -182,13 +189,6 @@
    "team": "GS",
    "date": "2026-10-25T21:13Z",
    "note": "Bassey is probable for Monday's game against the Nuggets due to right patellar tendinopathy."
-  },
-  "4997536": {
-   "status": "day-to-day",
-   "name": "Gui Santos",
-   "team": "GS",
-   "date": "2026-10-25T04:58Z",
-   "note": "Santos exited Saturday's 131-122 loss to the Suns with an undisclosed injury and did not return, Anthony Slater of ESPN.com reports."
   },
   "3102531": {
    "status": "out",
@@ -211,33 +211,19 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
-  "2991230": {
-   "status": "day-to-day",
-   "name": "Fred VanVleet",
-   "team": "HOU",
-   "date": "2026-10-25T13:36Z",
-   "note": "VanVleet (knee) has been ruled out for Saturday's game against the Hawks."
-  },
   "2990992": {
    "status": "day-to-day",
    "name": "Marcus Smart",
    "team": "HOU",
-   "date": "2026-10-25T13:36Z",
-   "note": "Smart (forearm) has been ruled out for Saturday's game against the Hawks, Varun Shankar of the Houston Chronicle reports."
+   "date": "2026-10-25T21:26Z",
+   "note": "Smart (forearm) is listed as questionable for Monday's game against the Hawks."
   },
   "2991235": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Steven Adams",
    "team": "HOU",
-   "date": "2026-10-25T13:36Z",
-   "note": "Adams (ankle) has been ruled out for Saturday's game against the Hawks."
-  },
-  "4396909": {
-   "status": "day-to-day",
-   "name": "Aaron Nesmith",
-   "team": "IND",
-   "date": "2026-10-24T21:05Z",
-   "note": "Nesmith (hamstring) is listed as probable for Sunday's game against Brooklyn."
+   "date": "2026-10-25T21:24Z",
+   "note": "Adams has been ruled out for Monday's game against the Hawks due to a right soleus strain."
   },
   "2530530": {
    "status": "out",
@@ -348,8 +334,8 @@
    "status": "out",
    "name": "Jose Alvarado",
    "team": "NY",
-   "date": "2026-10-25T21:22Z",
-   "note": "Alvarado is questionable for Sunday's game against Orlando due to a left ankle sprain."
+   "date": "2026-10-25T21:25Z",
+   "note": "Alvarado (ankle) is out for Sunday's game against the Magic, James L. Edwards III of The Athletic reports."
   },
   "5106270": {
    "status": "out",
@@ -378,13 +364,6 @@
    "team": "ORL",
    "date": "2026-10-24T17:29Z",
    "note": "Isaac (knee) has been ruled out ahead of Sunday's game against the Knicks."
-  },
-  "4712849": {
-   "status": "day-to-day",
-   "name": "Anthony Black",
-   "team": "ORL",
-   "date": "2026-10-24T17:28Z",
-   "note": "Black (ankle) is listed as questionable for Sunday's game against the Knicks."
   },
   "4432573": {
    "status": "out",
