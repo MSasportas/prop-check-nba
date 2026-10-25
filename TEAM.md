@@ -118,8 +118,11 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 5. The ESPN tip time is used for lock (games often tip ~10 min later): conservative.
 6. Keys refill on the 1st (assumed, as NHL). The pool covers ~4 reads a game with 3 keys.
 7. Official NBA injury report PDF not parsed (Rotowire mirrors it). Build only if Rotowire proves unreliable.
-8. Not live-verified yet: Hard Rock rebounds in the feed, which of the 9 other books return NBA rebounds, Hard Rock bet-slip
-   links. The first evening with keys answers all three (daily check reads them). Status 2026-10-25 2 PM:
+8. **Verified live 2026-10-25 7:50 PM (first keyed read, MEM@SAC B):** Hard Rock posts rebounds (8 players, ~+105/-135, hold ~8%);
+   1 credit per read; **all 9 other books returned rebounds** (DK, FD, MGM, ESPN Bet, BetRivers, BetOnline 18 outcomes each; novig and
+   prophetx ~110 incl. alt lines; Pinnacle only 10 = 5 players); Hard Rock outcome links are real bet-slip deep links
+   (`app.hardrock.bet/?deep_link_value=betslip/<id>`). Discord hello delivered. **Pinnacle coverage is the volume limit**: 5 of 8 players
+   failed "Pinnacle not on this line". Do not loosen without a sample (DS names it at the first weekly review). Status 2026-10-25 2 PM:
    keys and webhook still not set; nothing verified yet.
 
 ## 8. Rule-change log
@@ -128,6 +131,8 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-25 7:55 PM (CEO): chain restarted with the keys (pool 1,499, allowance 28.8, all 4 reads on). First read: 16 sides, 0 passed
+  (gaps -1.7% to -9.4%; 5 players lacked Pinnacle). See section 7 item 8.
 - 2026-10-25 7:45 PM (CEO): Matt added `ODDS_API_KEYS` and `DISCORD_WEBHOOK`. Secrets load only when a run starts, so a push to
   scripts/ restarted the chain. Rotowire "confirmed" verified live. Watch: first reads on MEM@SAC (9 PM tip).
 - 2026-10-25 2:10 PM (CEO, daily check): alive (chain run 33 in progress, last status 1:50 PM, all steps ok, ESPN ok, Rotowire read started 2 PM for the 5 PM tip, 7 games). Still no `ODDS_API_KEYS` and no `DISCORD_WEBHOOK` (no notified.json): no A read, no picks, nothing to grade, no `others` books seen yet. Rotowire all Expected so far (confirmed check moves to tomorrow's check). Unmatched Rotowire: Richie Saunders (MEM rookie, Out, not on the ESPN roster; harmless). 30 tests pass. No code changes. Reminded Matt once about keys + webhook.
