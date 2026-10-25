@@ -10,10 +10,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:10 - 1st",
+    "detail": "5:10 - 1st",
     "score": {
-     "LAL": "4",
-     "UTAH": "12"
+     "LAL": "12",
+     "UTAH": "24"
     }
    },
    {

@@ -38,7 +38,6 @@
     "Ivica Zubac"
    ],
    "status": {
-    "Aaron Nesmith": "probable",
     "Johnny Furphy": "out",
     "T.J. McConnell": "out",
     "Ben Sheppard": "out"
@@ -111,7 +110,7 @@
     "Karl-Anthony Towns"
    ],
    "status": {
-    "Jose Alvarado": "questionable"
+    "Jose Alvarado": "out"
    }
   },
   "LAC": {
@@ -209,5 +208,5 @@
    }
   }
  },
- "at": "2026-10-25T17:20:01-04:00"
+ "at": "2026-10-25T17:30:01-04:00"
 }
