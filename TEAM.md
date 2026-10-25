@@ -108,8 +108,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
    CLV on every flagged gap and the graded Record. Stop rule: mean CLV <= 0 at >= 25 measured gaps, or units <= -8 -> the Sharp pauses
    new picks and logs it in section 8.
 2. **Starting lineups source = Rotowire** (scraped HTML; layout change or block = the chip stops at Injury report clear and the page
-   says so). "Confirmed" was not seen live yet (the probe ran at 10:49 AM, all Expected): verify `lineup__status is-confirmed` on the
-   first evening run.
+   says so). "Confirmed" verified live 2026-10-25 evening: 12 of 14 teams showed confirmed by 7:40 PM (MEM/SAC, 9 PM tip, still expected).
 3. **Model (guard only):** fitted by the DS 2026-10-25 on 2025-26 box scores, walk-forward (`research/calibrate.py`): 18,841
    player-games Dec-Apr, test line = his last-10 average as an x.5 line. 16 variants tried; chosen disp 1.15, opponent factor exp 1.0,
    no back-to-back cut, rpm half-life 20: log loss 0.6686 vs base 0.6877, bias -0.05 pt, calibrated in every 10-pt bucket. **Offset =
@@ -120,7 +119,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 6. Keys refill on the 1st (assumed, as NHL). The pool covers ~4 reads a game with 3 keys.
 7. Official NBA injury report PDF not parsed (Rotowire mirrors it). Build only if Rotowire proves unreliable.
 8. Not live-verified yet: Hard Rock rebounds in the feed, which of the 9 other books return NBA rebounds, Hard Rock bet-slip
-   links, Rotowire "confirmed" class. The first evening with keys answers all four (daily check reads them). Status 2026-10-25 2 PM:
+   links. The first evening with keys answers all three (daily check reads them). Status 2026-10-25 2 PM:
    keys and webhook still not set; nothing verified yet.
 
 ## 8. Rule-change log
@@ -129,6 +128,8 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-25 7:45 PM (CEO): Matt added `ODDS_API_KEYS` and `DISCORD_WEBHOOK`. Secrets load only when a run starts, so a push to
+  scripts/ restarted the chain. Rotowire "confirmed" verified live. Watch: first reads on MEM@SAC (9 PM tip).
 - 2026-10-25 2:10 PM (CEO, daily check): alive (chain run 33 in progress, last status 1:50 PM, all steps ok, ESPN ok, Rotowire read started 2 PM for the 5 PM tip, 7 games). Still no `ODDS_API_KEYS` and no `DISCORD_WEBHOOK` (no notified.json): no A read, no picks, nothing to grade, no `others` books seen yet. Rotowire all Expected so far (confirmed check moves to tomorrow's check). Unmatched Rotowire: Richie Saunders (MEM rookie, Out, not on the ESPN roster; harmless). 30 tests pass. No code changes. Reminded Matt once about keys + webhook.
 - 2026-10-25 ~12:20 PM (CEO): v1.0 shipped. Built from the NHL template (timer chain, Record + guard, key pool, Discord, page look copied;
   engine rewritten for rebounds). DS fit the model guard (section 7 item 3). UX/Builder subagent built the page (checked at 380px in

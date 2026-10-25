@@ -283,8 +283,7 @@ class Run:
         keys_n = len(o.get("keys") or [])
         refused = bool(o.get("refused"))
         if o.get("no_keys"):
-            banners.append({"level": "stop", "text": "No odds keys yet: Hard Rock prices can't be read, so there are no picks. "
-                                                     "The team has asked Matt for 3 free keys."})
+            banners.append({"level": "stop", "text": "No odds keys yet: Hard Rock prices can't be read, so there are no picks."})
         elif refused:
             banners.append({"level": "stop", "text": "Hard Rock prices are off: the odds keys were refused. New keys are needed."})
         elif o.get("all_used_up"):
