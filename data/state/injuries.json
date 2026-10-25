@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T15:00:00-04:00",
+ "at": "2026-10-25T16:20:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -322,6 +322,13 @@
    "team": "LAL",
    "date": "2026-10-24T23:07Z",
    "note": "Carr (oblique) is out for Sunday's game in Utah, Khobi Price of The California Post reports."
+  },
+  "5231919": {
+   "status": "day-to-day",
+   "name": "Karim Lopez",
+   "team": "MEM",
+   "date": "2026-10-25T20:02Z",
+   "note": "Lopez (knee) is listed as questionable for Sunday's game against the Kings."
   },
   "4903027": {
    "status": "day-to-day",
