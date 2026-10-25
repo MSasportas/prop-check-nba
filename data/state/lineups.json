@@ -146,11 +146,11 @@
    }
   },
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cade Cunningham",
+    "Daniss Jenkins",
     "Duncan Robinson",
-    "Isaiah Joe",
     "John Collins",
     "Paul Reed"
    ],
@@ -209,5 +209,5 @@
    }
   }
  },
- "at": "2026-10-25T19:10:00-04:00"
+ "at": "2026-10-25T19:20:00-04:00"
 }
