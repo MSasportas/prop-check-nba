@@ -62,12 +62,13 @@
    "starters": [
     "Immanuel Quickley",
     "RJ Barrett",
-    "Kawhi Leonard",
+    "Allen Graves",
     "Scottie Barnes",
     "Jakob Poeltl"
    ],
    "status": {
-    "Nate Bittle": "out"
+    "Nate Bittle": "out",
+    "Kawhi Leonard": "out"
    }
   },
   "MIN": {
@@ -148,13 +149,13 @@
    "starters": [
     "Cade Cunningham",
     "Duncan Robinson",
-    "Ausar Thompson",
+    "Isaiah Joe",
     "John Collins",
     "Paul Reed"
    ],
    "status": {
-    "Ausar Thompson": "questionable",
-    "Jalen Duren": "out"
+    "Jalen Duren": "out",
+    "Ausar Thompson": "out"
    }
   },
   "PHI": {
@@ -207,5 +208,5 @@
    }
   }
  },
- "at": "2026-10-25T18:00:13-04:00"
+ "at": "2026-10-25T18:10:00-04:00"
 }
