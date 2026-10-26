@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T13:10:01-04:00",
+ "at": "2026-10-26T13:30:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -92,19 +92,19 @@
    "date": "2026-10-19T17:38Z",
    "note": "Claxton (hamstring) will be re-evaluated in two weeks, K.C. Johnson of Chicago Sports Network reports."
   },
-  "5041939": {
-   "status": "day-to-day",
-   "name": "Cooper Flagg",
-   "team": "DAL",
-   "date": "2026-10-26T15:55Z",
-   "note": "Flagg (shoulder) was spotted going through Monday's morning shootaround, Grant Afseth of DallasHoopsJournal.com reports."
-  },
   "3138160": {
    "status": "out",
    "name": "Caleb Martin",
    "team": "DAL",
-   "date": "2026-10-25T20:28Z",
-   "note": "Martin (thumb) is listed as doubtful for Monday's game against the Heat."
+   "date": "2026-10-26T17:09Z",
+   "note": "Martin (thumb) is out for Monday's game against the Heat, Mike Curtis of The Dallas Morning News reports."
+  },
+  "5041939": {
+   "status": "day-to-day",
+   "name": "Cooper Flagg",
+   "team": "DAL",
+   "date": "2026-10-26T17:05Z",
+   "note": "Flagg (shoulder) has been upgraded to probable for Monday against the Heat, Mike Curtis of The Dallas Morning News reports."
   },
   "4278594": {
    "status": "out",
@@ -334,8 +334,8 @@
    "status": "day-to-day",
    "name": "Anthony Edwards",
    "team": "MIN",
-   "date": "2026-10-26T17:04Z",
-   "note": "Edwards produced 15 points (5-23 FG, 2-9 3Pt, 3-4 FT), four rebounds, four assists and four steals over 33 minutes during Friday's 115-93 victory over Orlando."
+   "date": "2026-10-26T17:06Z",
+   "note": "Edwards (knee) is questionable for Monday's game against Cleveland."
   },
   "3934673": {
    "status": "out",
