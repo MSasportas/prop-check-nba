@@ -40,7 +40,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "24.8 - 3rd",
+    "detail": "23.0 - 3rd",
     "score": {
      "ORL": "69",
      "NY": "75"
@@ -70,7 +70,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:56 - 4th",
+    "detail": "8:43 - 4th",
     "score": {
      "LAC": "85",
      "OKC": "86"
