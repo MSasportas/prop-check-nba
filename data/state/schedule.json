@@ -24,11 +24,11 @@
     "home": "BKN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:03 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "IND": "92",
-     "BKN": "74"
+     "IND": "102",
+     "BKN": "80"
     }
    },
    {
@@ -40,10 +40,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:36 - 2nd",
+    "detail": "3:41 - 2nd",
     "score": {
      "ORL": "37",
-     "NY": "40"
+     "NY": "44"
     }
    },
    {
@@ -55,10 +55,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:34 - 2nd",
+    "detail": "6:04 - 2nd",
     "score": {
-     "TOR": "24",
-     "MIN": "38"
+     "TOR": "29",
+     "MIN": "44"
     }
    },
    {
@@ -70,10 +70,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:01 - 2nd",
+    "detail": "1:48 - 2nd",
     "score": {
-     "LAC": "37",
-     "OKC": "32"
+     "LAC": "41",
+     "OKC": "38"
     }
    },
    {
@@ -85,10 +85,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:37 - 1st",
+    "detail": "3:46 - 1st",
     "score": {
-     "DET": "17",
-     "PHI": "4"
+     "DET": "27",
+     "PHI": "11"
     }
    },
    {
