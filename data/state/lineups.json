@@ -11,6 +11,7 @@
     "Rudy Gobert"
    ],
    "status": {
+    "Anthony Edwards": "questionable",
     "Donte DiVincenzo": "out"
    }
   },
@@ -53,7 +54,7 @@
     "Moussa Diabate"
    ],
    "status": {
-    "Kylan Boswell": "out",
+    "Naz Reid": "probable",
     "Kon Knueppel": "out",
     "Coby White": "out",
     "Grant Williams": "out"
@@ -97,12 +98,12 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Cooper Flagg": "questionable",
-    "Caleb Martin": "doubtful",
+    "Cooper Flagg": "probable",
     "Santi Aldama": "out",
     "Tarik Biberovic": "out",
     "Dereck Lively": "out",
-    "Naji Marshall": "out"
+    "Naji Marshall": "out",
+    "Caleb Martin": "out"
    }
   },
   "MIA": {
@@ -126,10 +127,12 @@
     "Jay Huff"
    ],
    "status": {
-    "Ivica Zubac": "doubtful",
+    "Andrew Nembhard": "questionable",
+    "Aaron Nesmith": "probable",
     "Johnny Furphy": "out",
     "T.J. McConnell": "out",
-    "Ben Sheppard": "out"
+    "Ben Sheppard": "out",
+    "Ivica Zubac": "out"
    }
   },
   "MIL": {
@@ -153,7 +156,7 @@
     "Khaman Maluach"
    ],
    "status": {
-    "Oso Ighodaro": "doubtful",
+    "Oso Ighodaro": "out",
     "Mark Williams": "out"
    }
   },
@@ -161,17 +164,17 @@
    "state": "expected",
    "starters": [
     "Shai Gilgeous-Alexander",
-    "Cason Wallace",
     "Jared McCain",
-    "Chet Holmgren",
+    "Alex Caruso",
+    "Kenrich Williams",
     "Isaiah Hartenstein"
    ],
    "status": {
-    "Cason Wallace": "questionable",
-    "Jalen Williams": "doubtful",
-    "Jaylin Williams": "questionable",
+    "Chet Holmgren": "out",
     "Thomas Sorber": "out",
-    "Nikola Topic": "out"
+    "Nikola Topic": "out",
+    "Cason Wallace": "out",
+    "Jalen Williams": "out"
    }
   },
   "ATL": {
@@ -198,8 +201,8 @@
     "Alperen Sengun"
    ],
    "status": {
-    "Marcus Smart": "questionable",
-    "Steven Adams": "out"
+    "Steven Adams": "out",
+    "Marcus Smart": "out"
    }
   },
   "MEM": {
@@ -212,8 +215,8 @@
     "Zach Edey"
    ],
    "status": {
-    "Zach Edey": "out",
-    "Karim Lopez": "out"
+    "Karim Lopez": "questionable",
+    "Isaiah Stewart": "questionable"
    }
   },
   "UTAH": {
@@ -226,6 +229,7 @@
     "Jaren Jackson"
    ],
    "status": {
+    "Jaxson Hayes": "questionable",
     "Jusuf Nurkic": "out"
    }
   },
@@ -235,13 +239,13 @@
     "Stephen Curry",
     "Brandin Podziemski",
     "Yaxel Lendeborg",
-    "Draymond Green",
-    "Graham Ike"
+    "Gui Santos",
+    "Draymond Green"
    ],
    "status": {
+    "Gui Santos": "questionable",
     "Charles Bassey": "probable",
     "Brandon Williams": "probable",
-    "Gui Santos": "questionable",
     "Jimmy Butler": "out",
     "Moses Moody": "out",
     "Kristaps Porzingis": "out"
@@ -252,17 +256,17 @@
    "starters": [
     "Jamal Murray",
     "Christian Braun",
-    "DeMar DeRozan",
+    "Bryce Hopkins",
     "Aaron Gordon",
     "Nikola Jokic"
    ],
    "status": {
-    "Alpha Diallo": "doubtful",
     "Cameron Johnson": "doubtful",
+    "Alpha Diallo": "out",
     "Spencer Jones": "out",
     "Julian Strawther": "out"
    }
   }
  },
- "at": "2026-10-26T05:00:01-04:00"
+ "at": "2026-10-26T16:00:00-04:00"
 }
