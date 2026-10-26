@@ -228,12 +228,148 @@
      "PHX": "131"
     }
    }
+  ],
+  "2026-10-26": [
+   {
+    "id": "401909868",
+    "date": "2026-10-26",
+    "start": "2026-10-26T19:00:00-04:00",
+    "away": "WSH",
+    "home": "CHA",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/26 - 7:00 PM EDT",
+    "score": {
+     "WSH": "0",
+     "CHA": "0"
+    }
+   },
+   {
+    "id": "401909869",
+    "date": "2026-10-26",
+    "start": "2026-10-26T19:00:00-04:00",
+    "away": "MIN",
+    "home": "CLE",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/26 - 7:00 PM EDT",
+    "score": {
+     "MIN": "0",
+     "CLE": "0"
+    }
+   },
+   {
+    "id": "401909870",
+    "date": "2026-10-26",
+    "start": "2026-10-26T19:30:00-04:00",
+    "away": "CHI",
+    "home": "BOS",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/26 - 7:30 PM EDT",
+    "score": {
+     "CHI": "0",
+     "BOS": "0"
+    }
+   },
+   {
+    "id": "401909871",
+    "date": "2026-10-26",
+    "start": "2026-10-26T19:30:00-04:00",
+    "away": "DAL",
+    "home": "MIA",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/26 - 7:30 PM EDT",
+    "score": {
+     "DAL": "0",
+     "MIA": "0"
+    }
+   },
+   {
+    "id": "401909872",
+    "date": "2026-10-26",
+    "start": "2026-10-26T20:00:00-04:00",
+    "away": "IND",
+    "home": "MIL",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/26 - 8:00 PM EDT",
+    "score": {
+     "IND": "0",
+     "MIL": "0"
+    }
+   },
+   {
+    "id": "401909873",
+    "date": "2026-10-26",
+    "start": "2026-10-26T20:00:00-04:00",
+    "away": "PHX",
+    "home": "OKC",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/26 - 8:00 PM EDT",
+    "score": {
+     "PHX": "0",
+     "OKC": "0"
+    }
+   },
+   {
+    "id": "401909874",
+    "date": "2026-10-26",
+    "start": "2026-10-26T20:30:00-04:00",
+    "away": "ATL",
+    "home": "HOU",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/26 - 8:30 PM EDT",
+    "score": {
+     "ATL": "0",
+     "HOU": "0"
+    }
+   },
+   {
+    "id": "401909875",
+    "date": "2026-10-26",
+    "start": "2026-10-26T21:00:00-04:00",
+    "away": "MEM",
+    "home": "UTAH",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/26 - 9:00 PM EDT",
+    "score": {
+     "MEM": "0",
+     "UTAH": "0"
+    }
+   },
+   {
+    "id": "401909876",
+    "date": "2026-10-26",
+    "start": "2026-10-26T22:00:00-04:00",
+    "away": "GS",
+    "home": "DEN",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/26 - 10:00 PM EDT",
+    "score": {
+     "GS": "0",
+     "DEN": "0"
+    }
+   }
   ]
  },
  "month": {
-  "made_for": "2026-10-25",
+  "made_for": "2026-10-26",
   "counts": {
-   "2026-10-25": 7,
    "2026-10-26": 9,
    "2026-10-27": 4,
    "2026-10-28": 12,

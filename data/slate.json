@@ -1,6 +1,6 @@
 {
- "slate": "2026-10-25",
- "valid_until": "2026-10-26T05:00:00-04:00",
+ "slate": "2026-10-26",
+ "valid_until": "2026-10-27T05:00:00-04:00",
  "banners": [],
  "status": {
   "odds": {
@@ -9,8 +9,8 @@
    "low": false,
    "refused": false,
    "no_keys": false,
-   "days_left": 7,
-   "allowance": 57.692,
+   "days_left": 6,
+   "allowance": 66.6,
    "reads": [
     "A",
     "B",
@@ -18,123 +18,151 @@
     "D"
    ]
   },
-  "next_read_at": null,
-  "last_read_at": "2026-10-25T20:40:00-04:00",
+  "next_read_at": "2026-10-26T11:00:00-04:00",
+  "last_read_at": null,
   "last_run": {
    "ok": true,
-   "at": "2026-10-26T04:30:01-04:00"
+   "at": "2026-10-26T05:00:01-04:00"
   }
  },
  "games": [
   {
-   "id": "401909861",
-   "start": "2026-10-25T17:00:00-04:00",
-   "away": "LAL",
-   "home": "UTA",
-   "state": "post",
-   "detail": "Final",
+   "id": "401909868",
+   "start": "2026-10-26T19:00:00-04:00",
+   "away": "WAS",
+   "home": "CHA",
+   "state": "pre",
+   "detail": "10/26 - 7:00 PM EDT",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
    "read_at": null,
    "picks": 0
   },
   {
-   "id": "401909862",
-   "start": "2026-10-25T18:00:00-04:00",
+   "id": "401909869",
+   "start": "2026-10-26T19:00:00-04:00",
+   "away": "MIN",
+   "home": "CLE",
+   "state": "pre",
+   "detail": "10/26 - 7:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909870",
+   "start": "2026-10-26T19:30:00-04:00",
+   "away": "CHI",
+   "home": "BOS",
+   "state": "pre",
+   "detail": "10/26 - 7:30 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909871",
+   "start": "2026-10-26T19:30:00-04:00",
+   "away": "DAL",
+   "home": "MIA",
+   "state": "pre",
+   "detail": "10/26 - 7:30 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909872",
+   "start": "2026-10-26T20:00:00-04:00",
    "away": "IND",
-   "home": "BKN",
-   "state": "post",
-   "detail": "Final",
+   "home": "MIL",
+   "state": "pre",
+   "detail": "10/26 - 8:00 PM EDT",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
    "read_at": null,
    "picks": 0
   },
   {
-   "id": "401909863",
-   "start": "2026-10-25T19:00:00-04:00",
-   "away": "ORL",
-   "home": "NYK",
-   "state": "post",
-   "detail": "Final",
-   "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
-   },
-   "read_at": null,
-   "picks": 0
-  },
-  {
-   "id": "401909864",
-   "start": "2026-10-25T19:00:00-04:00",
-   "away": "TOR",
-   "home": "MIN",
-   "state": "post",
-   "detail": "Final",
-   "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
-   },
-   "read_at": null,
-   "picks": 0
-  },
-  {
-   "id": "401909865",
-   "start": "2026-10-25T19:00:00-04:00",
-   "away": "LAC",
+   "id": "401909873",
+   "start": "2026-10-26T20:00:00-04:00",
+   "away": "PHX",
    "home": "OKC",
-   "state": "post",
-   "detail": "Final",
+   "state": "pre",
+   "detail": "10/26 - 8:00 PM EDT",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
    "read_at": null,
    "picks": 0
   },
   {
-   "id": "401909866",
-   "start": "2026-10-25T19:30:00-04:00",
-   "away": "DET",
-   "home": "PHI",
-   "state": "post",
-   "detail": "Final",
+   "id": "401909874",
+   "start": "2026-10-26T20:30:00-04:00",
+   "away": "ATL",
+   "home": "HOU",
+   "state": "pre",
+   "detail": "10/26 - 8:30 PM EDT",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
    "read_at": null,
    "picks": 0
   },
   {
-   "id": "401909867",
-   "start": "2026-10-25T21:00:00-04:00",
+   "id": "401909875",
+   "start": "2026-10-26T21:00:00-04:00",
    "away": "MEM",
-   "home": "SAC",
-   "state": "post",
-   "detail": "Final",
+   "home": "UTA",
+   "state": "pre",
+   "detail": "10/26 - 9:00 PM EDT",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": "2026-10-25T20:40:00-04:00",
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909876",
+   "start": "2026-10-26T22:00:00-04:00",
+   "away": "GSW",
+   "home": "DEN",
+   "state": "pre",
+   "detail": "10/26 - 10:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
    "picks": 0
   }
  ],
  "picks": [],
  "empty": {
-  "text": "No open picks right now",
-  "why": "Every game has started.",
-  "next": null
+  "text": "No picks yet today",
+  "why": "No prices read yet. The first close look is 90 minutes before each tip.",
+  "next": "2026-10-26T11:00:00-04:00"
  },
  "counts": {
-  "lines_read": 18,
+  "lines_read": 0,
   "passing": 0,
-  "games": 7
+  "games": 9
  },
  "safety_paused": false,
  "ui": {
@@ -142,6 +170,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-25T23:40:00-04:00",
- "status_at": "2026-10-26T04:30:01-04:00"
+ "generated_at": "2026-10-26T05:00:01-04:00",
+ "status_at": "2026-10-26T05:00:01-04:00"
 }
