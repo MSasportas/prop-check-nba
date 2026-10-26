@@ -40,10 +40,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:36 - 4th",
+    "detail": "3:22 - 4th",
     "score": {
-     "ORL": "91",
-     "NY": "89"
+     "ORL": "98",
+     "NY": "91"
     }
    },
    {
@@ -55,10 +55,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:56 - 4th",
+    "detail": "6:23 - 4th",
     "score": {
-     "TOR": "66",
-     "MIN": "90"
+     "TOR": "75",
+     "MIN": "103"
     }
    },
    {
@@ -70,10 +70,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:24 - 4th",
+    "detail": "1:14 - 4th",
     "score": {
-     "LAC": "93",
-     "OKC": "97"
+     "LAC": "99",
+     "OKC": "103"
     }
    },
    {
@@ -85,10 +85,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:47 - 3rd",
+    "detail": "5:19 - 3rd",
     "score": {
-     "DET": "58",
-     "PHI": "53"
+     "DET": "67",
+     "PHI": "60"
     }
    },
    {
@@ -97,13 +97,13 @@
     "start": "2026-10-25T21:00:00-04:00",
     "away": "MEM",
     "home": "SAC",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/25 - 9:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:25 - 1st",
     "score": {
-     "MEM": "0",
-     "SAC": "0"
+     "MEM": "13",
+     "SAC": "11"
     }
    }
   ],
