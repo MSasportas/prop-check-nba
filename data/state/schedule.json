@@ -236,13 +236,13 @@
     "start": "2026-10-26T19:00:00-04:00",
     "away": "WSH",
     "home": "CHA",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/26 - 7:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:59 - 1st",
     "score": {
-     "WSH": "0",
-     "CHA": "0"
+     "WSH": "6",
+     "CHA": "10"
     }
    },
    {
@@ -251,13 +251,13 @@
     "start": "2026-10-26T19:00:00-04:00",
     "away": "MIN",
     "home": "CLE",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/26 - 7:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:37 - 1st",
     "score": {
-     "MIN": "0",
-     "CLE": "0"
+     "MIN": "12",
+     "CLE": "7"
     }
    },
    {

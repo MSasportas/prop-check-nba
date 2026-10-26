@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2925,
+   "pool_left": 2919,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-26T19:15:00-04:00",
-  "last_read_at": "2026-10-26T19:10:00-04:00",
+  "next_read_at": "2026-10-26T19:30:00-04:00",
+  "last_read_at": "2026-10-26T19:20:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-26T19:10:00-04:00"
+   "at": "2026-10-26T19:20:00-04:00"
   }
  },
  "games": [
@@ -31,8 +31,8 @@
    "start": "2026-10-26T19:00:00-04:00",
    "away": "WAS",
    "home": "CHA",
-   "state": "pre",
-   "detail": "10/26 - 7:00 PM EDT",
+   "state": "in",
+   "detail": "6:59 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -45,8 +45,8 @@
    "start": "2026-10-26T19:00:00-04:00",
    "away": "MIN",
    "home": "CLE",
-   "state": "pre",
-   "detail": "10/26 - 7:00 PM EDT",
+   "state": "in",
+   "detail": "7:37 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -93,7 +93,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-26T18:30:00-04:00",
+   "read_at": "2026-10-26T19:20:00-04:00",
    "picks": 0
   },
   {
@@ -107,7 +107,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-26T18:30:00-04:00",
+   "read_at": "2026-10-26T19:20:00-04:00",
    "picks": 0
   },
   {
@@ -156,11 +156,11 @@
  "picks": [],
  "empty": {
   "text": "No picks yet today",
-  "why": "598 lines read, none cleared both checks.",
-  "next": "2026-10-26T19:15:00-04:00"
+  "why": "600 lines read, none cleared both checks.",
+  "next": "2026-10-26T19:30:00-04:00"
  },
  "counts": {
-  "lines_read": 598,
+  "lines_read": 600,
   "passing": 0,
   "games": 9
  },
@@ -170,6 +170,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-26T19:10:00-04:00",
- "status_at": "2026-10-26T19:10:00-04:00"
+ "generated_at": "2026-10-26T19:20:00-04:00",
+ "status_at": "2026-10-26T19:20:00-04:00"
 }
