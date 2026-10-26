@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T19:10:00-04:00",
+ "at": "2026-10-26T19:30:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -218,6 +218,13 @@
    "date": "2026-10-26T16:20Z",
    "note": "Smart (arm) is out for Monday's game against the Hawks."
   },
+  "4433076": {
+   "status": "out",
+   "name": "Ben Sheppard",
+   "team": "IND",
+   "date": "2026-10-26T23:09Z",
+   "note": "Sheppard is scheduled for surgery to repair a torn meniscus in his left knee Wednesday, Dustin Dopirak of The Indianapolis Star reports."
+  },
   "4395712": {
    "status": "out",
    "name": "Andrew Nembhard",
@@ -238,13 +245,6 @@
    "team": "IND",
    "date": "2026-10-26T18:20Z",
    "note": "Zubac (ankle) is out for Monday's game against the Bucks."
-  },
-  "4433076": {
-   "status": "out",
-   "name": "Ben Sheppard",
-   "team": "IND",
-   "date": "2026-10-23T22:53Z",
-   "note": "Sheppard has been diagnosed with a torn meniscus in his left knee and is without a timetable for a return to game action, Scott Agness of FieldhouseFiles.com reports."
   },
   "5157066": {
    "status": "out",
