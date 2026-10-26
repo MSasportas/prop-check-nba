@@ -63,7 +63,8 @@ def box(summary):
             pr.append({"pid": str(ath.get("id")), "name": ath.get("displayName"), "team": tm, "opp": other.get(tm),
                        "home": int(tm == ab["home"]), "starter": bool(a.get("starter")), "dnp": dnp,
                        "reason": a.get("reason") if dnp else None, "pos": (ath.get("position") or {}).get("abbreviation"),
-                       "min": mn, "reb": num(d.get("REB")), "oreb": num(d.get("OREB")), "dreb": num(d.get("DREB"))})
+                       "min": mn, "reb": num(d.get("REB")), "oreb": num(d.get("OREB")), "dreb": num(d.get("DREB")),
+                       "pts": num(d.get("PTS")), "ast": num(d.get("AST"))})
     for t in summary.get("boxscore", {}).get("teams", []) or []:
         tm = t["team"]["abbreviation"]
         s = {x.get("name"): x.get("displayValue") for x in t.get("statistics", []) or []}
@@ -78,7 +79,7 @@ def box(summary):
                    "dreb": num(s.get("defensiveRebounds")), "fgm": pair("fieldGoalsMade-fieldGoalsAttempted", 0),
                    "fga": pair("fieldGoalsMade-fieldGoalsAttempted", 1),
                    "fta": pair("freeThrowsMade-freeThrowsAttempted", 1),
-                   "tov": num(s.get("totalTurnovers") or s.get("turnovers")),
+                   "tov": num(s.get("totalTurnovers") or s.get("turnovers")), "ast": num(s.get("assists")),
                    "pts": num(comp["home" if tm == ab["home"] else "away"].get("score"))})
     return when, pr, tr
 

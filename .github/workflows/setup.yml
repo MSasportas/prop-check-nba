@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: repo-writer
+  group: setup
   cancel-in-progress: false
 jobs:
   setup:
@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python scripts/seed_probe.py probe seed
+      - run: python scripts/seed_probe.py seed
       - run: |
           git config user.name "prop-check-bot" && git config user.email "bot@users.noreply.github.com"
           git add data/seed probe
