@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T21:30:00-04:00",
+ "at": "2026-10-25T21:40:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -344,6 +344,13 @@
    "date": "2026-10-25T21:25Z",
    "note": "Alvarado (ankle) is out for Sunday's game against the Magic, James L. Edwards III of The Athletic reports."
   },
+  "4593803": {
+   "status": "day-to-day",
+   "name": "Jalen Williams",
+   "team": "OKC",
+   "date": "2026-10-26T01:28Z",
+   "note": "Williams was stretchered off the floor during Sunday's game against the Clippers due to an apparent left ankle injury, NBA writer Justin Russo reports."
+  },
   "4432823": {
    "status": "day-to-day",
    "name": "Jaylin Williams",
@@ -378,6 +385,13 @@
    "team": "OKC",
    "date": "2026-10-21T22:08Z",
    "note": "Sorber (knee) is listed as out for Thursday's game against Denver."
+  },
+  "4432165": {
+   "status": "day-to-day",
+   "name": "Jalen Suggs",
+   "team": "ORL",
+   "date": "2026-10-26T01:36Z",
+   "note": "Suggs racked up six points (2-8 FG, 0-2 3Pt, 2-2 FT), three rebounds, five assists and two steals over 32 minutes during Wednesday's 132-125 loss to the Hawks."
   },
   "4065654": {
    "status": "out",

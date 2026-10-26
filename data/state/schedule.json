@@ -39,11 +39,11 @@
     "home": "NY",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:21 - 4th",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 4th",
     "score": {
-     "ORL": "104",
-     "NY": "94"
+     "ORL": "111",
+     "NY": "102"
     }
    },
    {
@@ -52,13 +52,13 @@
     "start": "2026-10-25T19:00:00-04:00",
     "away": "TOR",
     "home": "MIN",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:25 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "TOR": "85",
-     "MIN": "113"
+     "TOR": "94",
+     "MIN": "117"
     }
    },
    {
@@ -85,10 +85,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:43 - 3rd",
+    "detail": "11:19 - 4th",
     "score": {
-     "DET": "74",
-     "PHI": "64"
+     "DET": "79",
+     "PHI": "71"
     }
    },
    {
@@ -100,10 +100,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:52 - 1st",
+    "detail": "0.0 - 2nd",
     "score": {
-     "MEM": "19",
-     "SAC": "21"
+     "MEM": "27",
+     "SAC": "28"
     }
    }
   ],
