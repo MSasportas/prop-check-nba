@@ -100,10 +100,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:43 - 3rd",
+    "detail": "2:25 - 3rd",
     "score": {
-     "MEM": "85",
-     "SAC": "78"
+     "MEM": "90",
+     "SAC": "84"
     }
    }
   ],
