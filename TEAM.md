@@ -91,7 +91,8 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   free. Need: 4 reads x 3 credits x ~225 games a month ≈ 2,700. **6 keys (3,000 a month): Matt added 3 on 2026-10-25 7:44 PM and 3 more
   at 8:22 PM.** With fewer than ~12 credits a game the plan drops reads in the order A, D, B (C last).
 - **Other books asked (9, same credit):** draftkings, fanduel, betmgm, espnbet, pinnacle, betonlineag, betrivers, novig, prophetx.
-  Which return NBA rebounds is unverified until the first read; a silent book costs nothing; swap per NHL item 24 (quality sharp books).
+  Verified 2026-10-25/26: all 9 return rebounds, points and assists (10-26 A read: 7 books on 9/9 games; BetRivers 8/9; Pinnacle
+  9/9 games but misses some lines). A silent book costs nothing; swap per NHL item 24 (quality sharp books).
 - **Discord:** `scripts/notify.py`, secret `DISCORD_WEBHOOK`. Sends NEW PICKS (batched), PULLED (only picks already sent, before tip, with
   the if-bet line), PRICE FINAL, ACTION NEEDED (keys refused / pool low, once a day each), a one-time hello. Never no-pick nights,
   heartbeats, grading or errors. Quiet 12:30-9:00 AM ET. Max 12 messages a day.
@@ -137,6 +138,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-26 2:10 PM (CEO, daily check): alive (chain link 37, status 1:50 PM, all steps ok, Actions all green, pool 2,970). A read ran 11 AM (9 games x 3 credits); 594 lines, 0 passing; next read 5:30 PM. 10-25: 0 picks, so nothing to grade (no events.jsonl yet, expected); all 7 finals added to the box store (196 rows). Rotowire showed all 14 teams **confirmed** by the 9 PM read on 10-25. Unmatched Rotowire: Khalifa Diop, Nae'Qwan Tomlin (CLE, Out, deep bench; harmless). No unknown teams, no odds errors. Tests pass. No code changes.
 - 2026-10-26 11:30 AM (CEO, weekly review #1): alive (chain link 34, status 11:20 AM, all steps ok, pool 2,970). DS: 0 graded legs, 0 flagged gaps, so no CLV, calibration or units yet; 12 reads (3 B/C/D on 10-25 MEM@SAC rebounds-only, 9 A today), 30 credits = 1 a market a read as planned. All 9 other books return all 3 markets (BetRivers 8/9 games, Pinnacle 8/9 games); Pinnacle has the player's line on 56% of today's A rows (334/594), 35% on 10-25. Gap failures dominate (334), then no-Pinnacle (208). Best near-misses: 10-25 SAC reb 13.5 u +105 gap -1.7% (B/C, passed the guard); today's A: two +2.8-2.9% gaps blocked by no Pinnacle / 2 books (A is baseline only). Samples far too small: Sharp makes no rule change; 11-16 checkpoint not due. UX: odds line said "about 6 days left" (read as the pool running out); now "refills in 6 days". QA (fresh, Chromium 380px, 8 states): SHIP; 40 tests pass.
 - 2026-10-25 9:35 PM (CEO): Matt: judge all 3 markets together, bucket them on the Record. Rule text updated (section 7 item 1);
   the Record already shows the combined headline plus a row per market. No code change.
