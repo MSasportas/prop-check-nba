@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-25T20:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-25T22:20:01-04:00"
+   "at": "2026-10-25T22:30:00-04:00"
   }
  },
  "games": [
@@ -116,7 +116,7 @@
    "away": "MEM",
    "home": "SAC",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "10:01 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -142,6 +142,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-25T22:20:01-04:00",
- "status_at": "2026-10-25T22:20:01-04:00"
+ "generated_at": "2026-10-25T22:30:00-04:00",
+ "status_at": "2026-10-25T22:30:00-04:00"
 }

@@ -99,11 +99,11 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:01 - 3rd",
     "score": {
-     "MEM": "67",
-     "SAC": "59"
+     "MEM": "74",
+     "SAC": "64"
     }
    }
   ],
