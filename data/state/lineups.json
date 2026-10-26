@@ -189,9 +189,8 @@
     "Isaiah Stewart"
    ],
    "status": {
-    "Cedric Coward": "questionable",
-    "Karim Lopez": "questionable",
-    "Zach Edey": "out"
+    "Zach Edey": "out",
+    "Karim Lopez": "out"
    }
   },
   "SAC": {
@@ -211,5 +210,5 @@
    }
   }
  },
- "at": "2026-10-25T20:10:00-04:00"
+ "at": "2026-10-25T20:20:00-04:00"
 }

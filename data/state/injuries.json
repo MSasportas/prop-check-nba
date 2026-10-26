@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T19:50:14-04:00",
+ "at": "2026-10-25T20:20:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -155,6 +155,13 @@
    "date": "2026-10-17T00:52Z",
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
+  "4395702": {
+   "status": "day-to-day",
+   "name": "Isaiah Joe",
+   "team": "DET",
+   "date": "2026-10-26T00:08Z",
+   "note": "Joe went back to the locker room due to an apparent tailbone injury, Hunter Patterson of The Athletic reports."
+  },
   "4684742": {
    "status": "out",
    "name": "Ausar Thompson",
@@ -303,18 +310,11 @@
    "note": "Carr (oblique) is out for Sunday's game in Utah, Khobi Price of The California Post reports."
   },
   "5231919": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Karim Lopez",
    "team": "MEM",
-   "date": "2026-10-25T20:02Z",
+   "date": "2026-10-26T00:16Z",
    "note": "Lopez (knee) is listed as questionable for Sunday's game against the Kings."
-  },
-  "4903027": {
-   "status": "day-to-day",
-   "name": "Cedric Coward",
-   "team": "MEM",
-   "date": "2026-10-25T00:12Z",
-   "note": "Coward (wrist) is questionable for Sunday's game in Sacramento."
   },
   "4600663": {
    "status": "out",

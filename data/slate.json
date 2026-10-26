@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 3,
-   "pool_left": 1499,
+   "pool_left": 1498,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-25T20:15:00-04:00",
-  "last_read_at": "2026-10-25T19:50:14-04:00",
+  "next_read_at": "2026-10-25T20:40:00-04:00",
+  "last_read_at": "2026-10-25T20:20:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-25T20:10:00-04:00"
+   "at": "2026-10-25T20:20:00-04:00"
   }
  },
  "games": [
@@ -46,7 +46,7 @@
    "away": "IND",
    "home": "BKN",
    "state": "in",
-   "detail": "9:05 - 4th",
+   "detail": "6:29 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "TOR",
    "home": "MIN",
    "state": "in",
-   "detail": "2:22 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "LAC",
    "home": "OKC",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "12:00 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "DET",
    "home": "PHI",
    "state": "in",
-   "detail": "29.6 - 1st",
+   "detail": "9:23 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -121,18 +121,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-25T19:50:14-04:00",
+   "read_at": "2026-10-25T20:20:00-04:00",
    "picks": 0
   }
  ],
  "picks": [],
  "empty": {
   "text": "No picks yet today",
-  "why": "16 lines read, none cleared both checks.",
-  "next": "2026-10-25T20:15:00-04:00"
+  "why": "18 lines read, none cleared both checks.",
+  "next": "2026-10-25T20:40:00-04:00"
  },
  "counts": {
-  "lines_read": 16,
+  "lines_read": 18,
   "passing": 0,
   "games": 7
  },
@@ -142,6 +142,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-25T20:10:00-04:00",
- "status_at": "2026-10-25T20:10:00-04:00"
+ "generated_at": "2026-10-25T20:20:00-04:00",
+ "status_at": "2026-10-25T20:20:00-04:00"
 }
