@@ -609,7 +609,7 @@ function statusBlock(sl, exp) {
   else if (od.refused) { t = 'Odds keys refused: prices can’t be read'; cls = 'bad'; }
   else {
     t = (od.low ? 'Odds keys low: ' : 'Odds keys: ') + (pool != null ? comma(pool) + ' credits' : 'credits not reported');
-    if (days != null) t += ' · about ' + Math.max(0, Math.floor(days)) + (Math.floor(days) === 1 ? ' day' : ' days') + ' left';
+    if (days != null) t += (Math.floor(days) <= 1 ? ' · refills tomorrow' : ' · refills in ' + Math.floor(days) + ' days');
     if (od.low) cls = 'warn';
   }
   out.appendChild(h('div', { class: cls, text: t }));

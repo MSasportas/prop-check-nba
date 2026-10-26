@@ -101,7 +101,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 ## 6. Reviews (scheduled tasks; each reads this file first and updates it last)
 - **Daily check, 2:07 PM ET** (scheduled task "Prop Check NBA daily check"): chain alive, A read ran, failed steps, unmatched names, grading done for last night; fix what's broken; no
   rule changes.
-- **Weekly team review, Mondays 11:13 AM ET** (scheduled task "Prop Check NBA weekly team review"): Sharp, Data Scientist, UX, Builder, QA on the Record and the odds log; first one 2026-11-02.
+- **Weekly team review, Mondays 11:13 AM ET** (scheduled task "Prop Check NBA weekly team review"): Sharp, Data Scientist, UX, Builder, QA on the Record and the odds log; first one ran 2026-10-26.
 
 ## 7. Known gaps and risks
 1. **Edge vs the book is unproven.** Gap + Guard is a hypothesis carried over from NHL (live there since 2026-10-20, no verdict yet). NBA
@@ -137,6 +137,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-26 11:30 AM (CEO, weekly review #1): alive (chain link 34, status 11:20 AM, all steps ok, pool 2,970). DS: 0 graded legs, 0 flagged gaps, so no CLV, calibration or units yet; 12 reads (3 B/C/D on 10-25 MEM@SAC rebounds-only, 9 A today), 30 credits = 1 a market a read as planned. All 9 other books return all 3 markets (BetRivers 8/9 games, Pinnacle 8/9 games); Pinnacle has the player's line on 56% of today's A rows (334/594), 35% on 10-25. Gap failures dominate (334), then no-Pinnacle (208). Best near-misses: 10-25 SAC reb 13.5 u +105 gap -1.7% (B/C, passed the guard); today's A: two +2.8-2.9% gaps blocked by no Pinnacle / 2 books (A is baseline only). Samples far too small: Sharp makes no rule change; 11-16 checkpoint not due. UX: odds line said "about 6 days left" (read as the pool running out); now "refills in 6 days". QA (fresh, Chromium 380px, 8 states): SHIP; 40 tests pass.
 - 2026-10-25 9:35 PM (CEO): Matt: judge all 3 markets together, bucket them on the Record. Rule text updated (section 7 item 1);
   the Record already shows the combined headline plus a row per market. No code change.
 - 2026-10-25 ~8:50 PM (CEO): v1.1 points + assists (Matt added 3 more keys, 6 total). Re-seeded box scores with pts/ast, DS fit two
