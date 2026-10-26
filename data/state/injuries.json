@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T15:10:15-04:00",
+ "at": "2026-10-26T15:20:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -135,11 +135,11 @@
    "note": "Lively (foot) has been ruled out for Friday's game against the Pacers."
   },
   "4065813": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Alpha Diallo",
    "team": "DEN",
-   "date": "2026-10-25T22:43Z",
-   "note": "Diallo (wrist) is doubtful for Monday's game against the Warriors."
+   "date": "2026-10-26T19:03Z",
+   "note": "Diallo (wrist) is out for Monday's game against the Warriors."
   },
   "3138196": {
    "status": "day-to-day",
@@ -336,13 +336,6 @@
    "team": "MEM",
    "date": "2026-10-26T14:06Z",
    "note": "Lopez (knee) is out for Sunday's game in Sacramento."
-  },
-  "4600663": {
-   "status": "day-to-day",
-   "name": "Zach Edey",
-   "team": "MEM",
-   "date": "2026-10-26T14:05Z",
-   "note": "Edey has been ruled out for Sunday's game against Sacramento due to left ankle injury management."
   },
   "4594268": {
    "status": "day-to-day",
@@ -567,6 +560,13 @@
    "team": "TOR",
    "date": "2026-10-20T18:05Z",
    "note": "Bittle (foot) is out for Wednesday's season opener against the Bulls."
+  },
+  "4397077": {
+   "status": "day-to-day",
+   "name": "Jaxson Hayes",
+   "team": "UTAH",
+   "date": "2026-10-26T19:05Z",
+   "note": "Hayes is listed as questionable for Monday's game against the Grizzlies due to right shoulder soreness, Shreyas Laddha of The Salt Lake Tribune reports."
   },
   "4433268": {
    "status": "out",
