@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T18:40:01-04:00",
+ "at": "2026-10-26T18:50:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -40,8 +40,15 @@
    "status": "out",
    "name": "Kon Knueppel",
    "team": "CHA",
-   "date": "2026-10-25T21:20Z",
-   "note": "Knueppel (hamstring) has been ruled out for Monday's game against the Wizards."
+   "date": "2026-10-26T22:35Z",
+   "note": "Knueppel (hamstring) is without a timetable for a return, Rod Boone of The Charlotte Observer reports."
+  },
+  "4066218": {
+   "status": "out",
+   "name": "Grant Williams",
+   "team": "CHA",
+   "date": "2026-10-26T22:34Z",
+   "note": "Williams (hamstring) will be re-evaluated following Charlotte's upcoming two-game road trip, Rod Boone reports."
   },
   "4395651": {
    "status": "out",
@@ -49,13 +56,6 @@
    "team": "CHA",
    "date": "2026-10-25T20:59Z",
    "note": "White (calf) is out for Monday's game against the Wizards."
-  },
-  "4066218": {
-   "status": "out",
-   "name": "Grant Williams",
-   "team": "CHA",
-   "date": "2026-10-24T17:26Z",
-   "note": "Williams (hamstring) has been ruled out for Saturday's game against the Heat."
   },
   "4684269": {
    "status": "out",

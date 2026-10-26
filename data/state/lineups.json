@@ -44,7 +44,7 @@
    }
   },
   "CHA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Dennis Schroder",
     "Sion James",
@@ -123,7 +123,6 @@
     "Jay Huff"
    ],
    "status": {
-    "Aaron Nesmith": "probable",
     "Johnny Furphy": "out",
     "T.J. McConnell": "out",
     "Andrew Nembhard": "out",
@@ -264,5 +263,5 @@
    }
   }
  },
- "at": "2026-10-26T18:40:01-04:00"
+ "at": "2026-10-26T18:50:00-04:00"
 }
