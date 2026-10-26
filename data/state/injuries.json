@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T18:20:00-04:00",
+ "at": "2026-10-26T18:40:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -64,6 +64,13 @@
    "date": "2026-10-20T20:55Z",
    "note": "Boswell (knee) is out for Wednesday's season opener against the Nets."
   },
+  "4278067": {
+   "status": "out",
+   "name": "Nic Claxton",
+   "team": "CHI",
+   "date": "2026-10-26T22:20Z",
+   "note": "Claxton (hamstring) participated in individual drills Monday morning and hopes to join the team for practice next week, Joe Cowley of the Chicago Sun-Times reports."
+  },
   "4431687": {
    "status": "out",
    "name": "Patrick Williams",
@@ -71,26 +78,12 @@
    "date": "2026-10-26T21:33Z",
    "note": "Williams (groin) has been ruled out for Monday's game against the Celtics."
   },
-  "4278067": {
-   "status": "out",
-   "name": "Nic Claxton",
-   "team": "CHI",
-   "date": "2026-10-19T17:38Z",
-   "note": "Claxton (hamstring) will be re-evaluated in two weeks, K.C. Johnson of Chicago Sports Network reports."
-  },
   "3138160": {
    "status": "out",
    "name": "Caleb Martin",
    "team": "DAL",
    "date": "2026-10-26T17:09Z",
    "note": "Martin (thumb) is out for Monday's game against the Heat, Mike Curtis of The Dallas Morning News reports."
-  },
-  "5041939": {
-   "status": "day-to-day",
-   "name": "Cooper Flagg",
-   "team": "DAL",
-   "date": "2026-10-26T17:05Z",
-   "note": "Flagg (shoulder) has been upgraded to probable for Monday against the Heat, Mike Curtis of The Dallas Morning News reports."
   },
   "4278594": {
    "status": "out",

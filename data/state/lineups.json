@@ -2,7 +2,7 @@
  "slate": "2026-10-26",
  "teams": {
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Anthony Edwards",
@@ -29,7 +29,7 @@
    }
   },
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
@@ -95,7 +95,6 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Cooper Flagg": "probable",
     "Santi Aldama": "out",
     "Tarik Biberovic": "out",
     "Dereck Lively": "out",
@@ -118,16 +117,16 @@
    "state": "expected",
    "starters": [
     "Tyrese Haliburton",
-    "Andrew Nembhard",
+    "Kelly Oubre",
     "Aaron Nesmith",
     "Pascal Siakam",
     "Jay Huff"
    ],
    "status": {
-    "Andrew Nembhard": "questionable",
     "Aaron Nesmith": "probable",
     "Johnny Furphy": "out",
     "T.J. McConnell": "out",
+    "Andrew Nembhard": "out",
     "Ben Sheppard": "out",
     "Ivica Zubac": "out"
    }
@@ -265,5 +264,5 @@
    }
   }
  },
- "at": "2026-10-26T18:30:21-04:00"
+ "at": "2026-10-26T18:40:01-04:00"
 }
