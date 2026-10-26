@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T13:30:00-04:00",
+ "at": "2026-10-26T14:30:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -240,10 +240,10 @@
    "note": "Adams has been ruled out for Monday's game against the Hawks due to a right soleus strain."
   },
   "4017837": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Ivica Zubac",
    "team": "IND",
-   "date": "2026-10-26T01:03Z",
+   "date": "2026-10-26T18:21Z",
    "note": "Head coach Rick Carlisle said that X-rays on Zubac's sprained left ankle came back negative, but he's got some swelling and is unlikely to play Monday in Milwaukee, Scott Agness of FieldhouseFiles.com"
   },
   "2530530": {
@@ -358,6 +358,20 @@
    "date": "2026-10-26T14:01Z",
    "note": "Alvarado (ankle) is out for Sunday's game against the Magic, James L. Edwards III of The Athletic reports."
   },
+  "4683692": {
+   "status": "out",
+   "name": "Cason Wallace",
+   "team": "OKC",
+   "date": "2026-10-26T18:24Z",
+   "note": "Wallace (shoulder) will not return to Sunday's game against the Clippers, Rylan Stiles of SI.com  reports."
+  },
+  "4433255": {
+   "status": "out",
+   "name": "Chet Holmgren",
+   "team": "OKC",
+   "date": "2026-10-26T18:22Z",
+   "note": "Holmgren totaled 12 points (5-9 FG, 0-1 3Pt, 2-2 FT), 17 rebounds, two assists, four blocks and one steal over 28 minutes during Thursday's 96-84 win over the Nuggets."
+  },
   "4593803": {
    "status": "out",
    "name": "Jalen Williams",
@@ -371,13 +385,6 @@
    "team": "OKC",
    "date": "2026-10-26T01:06Z",
    "note": "Williams won't return to Sunday's game against the Clippers due to right wrist soreness, Nick Crain of SLAM reports."
-  },
-  "4683692": {
-   "status": "day-to-day",
-   "name": "Cason Wallace",
-   "team": "OKC",
-   "date": "2026-10-26T00:19Z",
-   "note": "Wallace (shoulder) will not return to Sunday's game against the Clippers, Rylan Stiles of SI.com  reports."
   },
   "5106270": {
    "status": "out",
