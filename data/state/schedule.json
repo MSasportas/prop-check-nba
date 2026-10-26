@@ -238,11 +238,11 @@
     "home": "CHA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:47 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "WSH": "15",
-     "CHA": "15"
+     "WSH": "21",
+     "CHA": "19"
     }
    },
    {
@@ -254,10 +254,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:01 - 1st",
+    "detail": "10:51 - 2nd",
     "score": {
-     "MIN": "23",
-     "CLE": "13"
+     "MIN": "35",
+     "CLE": "26"
     }
    },
    {

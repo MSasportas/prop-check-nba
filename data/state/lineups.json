@@ -114,7 +114,7 @@
    "status": {}
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Haliburton",
     "Kelly Oubre",
@@ -131,7 +131,7 @@
    }
   },
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ryan Rollins",
     "Tyler Herro",
@@ -142,7 +142,7 @@
    "status": {}
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -156,11 +156,11 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
     "Jared McCain",
-    "Alex Caruso",
+    "Ajay Mitchell",
     "Kenrich Williams",
     "Isaiah Hartenstein"
    ],
@@ -263,5 +263,5 @@
    }
   }
  },
- "at": "2026-10-26T19:30:01-04:00"
+ "at": "2026-10-26T19:40:00-04:00"
 }
