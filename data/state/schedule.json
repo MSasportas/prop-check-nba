@@ -25,7 +25,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:16 - 4th",
+    "detail": "2:12 - 4th",
     "score": {
      "IND": "131",
      "BKN": "104"
@@ -40,7 +40,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:40 - 3rd",
+    "detail": "7:27 - 3rd",
     "score": {
      "ORL": "53",
      "NY": "61"

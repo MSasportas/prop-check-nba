@@ -1,5 +1,5 @@
 {
- "finished_at": "2026-10-25T20:30:01-04:00",
+ "finished_at": "2026-10-25T20:30:13-04:00",
  "slate": "2026-10-25",
  "ok": true,
  "steps": {
@@ -13,15 +13,15 @@
   },
   "injuries": {
    "ok": true,
-   "sec": 0.3
+   "sec": 0.2
   },
   "lineups": {
    "ok": true,
-   "sec": 0.7
+   "sec": 0.4
   },
   "odds": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.6
   },
   "engine": {
    "ok": true,
@@ -47,23 +47,38 @@
    "n": 3,
    "left": 500,
    "status": "ok"
+  },
+  {
+   "n": 4,
+   "left": 500,
+   "status": "ok"
+  },
+  {
+   "n": 5,
+   "left": 500,
+   "status": "ok"
+  },
+  {
+   "n": 6,
+   "left": 500,
+   "status": "ok"
   }
  ],
- "pool_left": 1498,
+ "pool_left": 2998,
  "plan": {
-  "allowance": 28.846,
+  "allowance": 57.692,
   "reads": [
    "A",
    "B",
    "C",
    "D"
   ],
-  "budget_today": 201,
-  "pool_at_plan": 1500,
+  "budget_today": 403,
+  "pool_at_plan": 3000,
   "games_left": 52,
   "games_today": 7,
-  "key_count": 3,
-  "made_at": "2026-10-25T19:50:14-04:00"
+  "key_count": 6,
+  "made_at": "2026-10-25T20:30:13-04:00"
  },
  "spent_today": 2,
  "odds_note": "no read due",
@@ -80,7 +95,7 @@
    "failed": 0
   },
   "odds": {
-   "ok": 0,
+   "ok": 6,
    "failed": 0
   }
  },
@@ -88,10 +103,10 @@
  "unmatched": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "40246519502",
-  "iteration": 5,
-  "chain_link": 10,
+  "run_id": "40249662036",
+  "iteration": 1,
+  "chain_link": 11,
   "chain_started_at": "2026-10-25T12:12:48-04:00",
-  "run_started_at": "2026-10-25T19:50:14-04:00"
+  "run_started_at": "2026-10-25T20:30:12-04:00"
  }
 }

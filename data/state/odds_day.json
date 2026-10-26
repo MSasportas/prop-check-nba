@@ -1,19 +1,19 @@
 {
  "date": "2026-10-25",
  "plan": {
-  "allowance": 28.846,
+  "allowance": 57.692,
   "reads": [
    "A",
    "B",
    "C",
    "D"
   ],
-  "budget_today": 201,
-  "pool_at_plan": 1500,
+  "budget_today": 403,
+  "pool_at_plan": 3000,
   "games_left": 52,
   "games_today": 7,
-  "key_count": 3,
-  "made_at": "2026-10-25T19:50:14-04:00"
+  "key_count": 6,
+  "made_at": "2026-10-25T20:30:13-04:00"
  },
  "events": {
   "401909861": "9c460fd677a660d1bc7cfea0aa1826c1",
@@ -24,7 +24,7 @@
   "401909866": "252f3af49fb5271bb040e95e0119f207",
   "401909867": "dcc4a1c7f0427d8e1b2ee7d3f1d48e8a"
  },
- "events_at": "2026-10-25T19:50:14-04:00",
+ "events_at": "2026-10-25T20:30:13-04:00",
  "unknown_teams": [],
- "key_count": 3
+ "key_count": 6
 }
