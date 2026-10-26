@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T14:30:01-04:00",
+ "at": "2026-10-26T14:40:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -239,19 +239,33 @@
    "date": "2026-10-25T21:24Z",
    "note": "Adams has been ruled out for Monday's game against the Hawks due to a right soleus strain."
   },
-  "4017837": {
-   "status": "out",
-   "name": "Ivica Zubac",
+  "4395712": {
+   "status": "day-to-day",
+   "name": "Andrew Nembhard",
    "team": "IND",
-   "date": "2026-10-26T18:21Z",
-   "note": "Head coach Rick Carlisle said that X-rays on Zubac's sprained left ankle came back negative, but he's got some swelling and is unlikely to play Monday in Milwaukee, Scott Agness of FieldhouseFiles.com"
+   "date": "2026-10-26T18:34Z",
+   "note": "Nembhard (neck) is questionable for Monday's game against the Bucks."
   },
   "2530530": {
    "status": "out",
    "name": "T.J. McConnell",
    "team": "IND",
-   "date": "2026-10-24T21:03Z",
-   "note": "McConnell (hamstring) is out for Sunday's game against the Nets."
+   "date": "2026-10-26T18:26Z",
+   "note": "McConnell (hamstring) is out for Monday's game against the Bucks."
+  },
+  "4396909": {
+   "status": "day-to-day",
+   "name": "Aaron Nesmith",
+   "team": "IND",
+   "date": "2026-10-26T18:22Z",
+   "note": "Nesmith (hamstring) is probable for Monday's game against the Bucks."
+  },
+  "4017837": {
+   "status": "out",
+   "name": "Ivica Zubac",
+   "team": "IND",
+   "date": "2026-10-26T18:20Z",
+   "note": "Zubac (ankle) is out for Monday's game against the Bucks."
   },
   "4433076": {
    "status": "out",
@@ -485,11 +499,11 @@
    "note": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN."
   },
   "4601023": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Oso Ighodaro",
    "team": "PHX",
-   "date": "2026-10-25T22:25Z",
-   "note": "Ighodaro (oblique) is doubtful for Monday's matchup with the Thunder, Duane Rankin of The Arizona Republic reports."
+   "date": "2026-10-26T18:30Z",
+   "note": "Ighodaro (oblique) is out for Monday's matchup with the Thunder."
   },
   "4701232": {
    "status": "out",
