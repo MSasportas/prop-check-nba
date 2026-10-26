@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T12:30:01-04:00",
+ "at": "2026-10-26T13:10:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -329,6 +329,13 @@
    "team": "MEM",
    "date": "2026-10-26T14:05Z",
    "note": "Edey has been ruled out for Sunday's game against Sacramento due to left ankle injury management."
+  },
+  "4594268": {
+   "status": "day-to-day",
+   "name": "Anthony Edwards",
+   "team": "MIN",
+   "date": "2026-10-26T17:04Z",
+   "note": "Edwards produced 15 points (5-23 FG, 2-9 3Pt, 3-4 FT), four rebounds, four assists and four steals over 33 minutes during Friday's 115-93 victory over Orlando."
   },
   "3934673": {
    "status": "out",
