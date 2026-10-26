@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T15:20:01-04:00",
+ "at": "2026-10-26T15:30:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -364,6 +364,20 @@
    "team": "NY",
    "date": "2026-10-26T14:01Z",
    "note": "Alvarado (ankle) is out for Sunday's game against the Magic, James L. Edwards III of The Athletic reports."
+  },
+  "5159925": {
+   "status": "out",
+   "name": "Nikola Topic",
+   "team": "OKC",
+   "date": "2026-10-26T19:24Z",
+   "note": "Topic (back) won't play in Monday's game against the Suns, Andrew Schlecht of The Athletic reports."
+  },
+  "5061603": {
+   "status": "out",
+   "name": "Thomas Sorber",
+   "team": "OKC",
+   "date": "2026-10-26T19:23Z",
+   "note": "Sorber (knee) is out for Monday's game versus the Suns, per Andrew Schlecht of The Athletic."
   },
   "4683692": {
    "status": "out",
