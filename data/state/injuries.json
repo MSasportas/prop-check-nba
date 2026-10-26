@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T10:30:01-04:00",
+ "at": "2026-10-26T11:30:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -35,6 +35,13 @@
    "team": "BKN",
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
+  },
+  "4396971": {
+   "status": "day-to-day",
+   "name": "Naz Reid",
+   "team": "CHA",
+   "date": "2026-10-26T15:18Z",
+   "note": "Reid is listed as probable for Monday's game against Washington, according to the NBA's official injury report."
   },
   "5061575": {
    "status": "out",
