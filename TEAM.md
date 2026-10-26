@@ -8,7 +8,7 @@ Sister company of Prop Check NHL (MSasportas/prop-check-nhl): own CEO, team, rep
 template and is READ ONLY from here. Never push to it.
 
 ## 1. The product
-Every NBA game day: every rebounds leg that qualifies at a real Hard Rock (`hardrockbet`) price, ranked best first, each with
+Every NBA game day: every rebounds, points and assists leg that qualifies at a real Hard Rock (`hardrockbet`) price, ranked best first, each with
 the price, our chance vs the price's break-even and a one-line plain reason. The page updates through the day; each pick shows how
 settled it is (Early / Injury report clear / Starters confirmed, then Locked) and pulled picks stay visible with the reason and what it
 means if Matt already bet. Dark, phone first (~380px). The Record is the scoreboard. Parlays are not offered (Matt, setup).
@@ -17,7 +17,7 @@ means if Matt already bet. Dark, phone first (~380px). The Record is the scorebo
 | Fact | Locked value |
 |---|---|
 | Book | Hard Rock Florida only. A pick needs a real Hard Rock number |
-| Market | **Player rebounds only. Main line only (no alt ladders). Over and under.** Everything else is out |
+| Markets | **Player rebounds, points and assists (points + assists added 2026-10-25 8:22 PM, Matt). Main line only (no alt ladders). Over and under.** Everything else is out |
 | Price | No single leg worse than -200. Plus money is fine |
 | Parlays | **Off** |
 | When Matt bets | **The last hour before tip** (the page must be sharpest then) |
@@ -48,7 +48,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 
 | Area | Rule |
 |---|---|
-| Market | Hard Rock `player_rebounds` (the main line the feed lists, one per player), over and under. Alt lines are never read |
+| Markets | Hard Rock `player_rebounds`, `player_points`, `player_assists`: the main line per player (the two-sided pair closest to even), over and under. Alt lines are never used |
 | Step 1: the gap | All of: Hard Rock EV vs the market fair >= **+3.0%**; >= **4 other books** priced the same player, same line, both sides, fresh, hold 0-15%; **market fair = median** of the books' proportionally de-vigged chance (even count: mean of the middle two); **Pinnacle present** with both sides and Pinnacle-fair EV on Hard Rock's price >= 0.0%; Hard Rock price **-200 to +200** |
 | Step 2: the guard | final = 0.8 x market fair + 0.2 x (model chance + offset). Passes iff final EV >= **+2.0%**. No model for the player = no pick. Offset frozen (section 7 item 3) |
 | Which reads can pick | B (90 min), C (45 min) and D (20 min before tip) reads that carry other books. The morning A read is a baseline only |
@@ -56,10 +56,10 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | Eligibility | >= 10 games of history (2025-26 + 2026-27 box scores); listed **Out or Doubtful -> never**; **Questionable / Day-to-day / GTD -> no new pick** until he drops off the report or is in a confirmed starting five; missed his team's last game -> waits for confirmed starters (and must start); minutes last 3 games < 60% of his recent average -> no pick (role or restriction changed) |
 | Settled chip | **Early** (he or someone in his team's top 7 by recent minutes is Doubtful / Questionable / GTD) -> **Injury report clear** (none of them is; Out and Probable are settled) -> **Starters confirmed** (Rotowire shows both teams' starting fives as confirmed) -> **Locked** at tip |
 | Pulls | Later reads only PULL: Hard Rock's price changed and step-1 EV < **+1.5%**; fewer than 4 books; Pinnacle gone or sign flipped; step 2 fails; line removed; player listed Out, Doubtful, Questionable or GTD after the pick, unless he is in a confirmed starting five (every run). Teammate news does not pull by itself: the next read re-prices it. Pulled picks stay on the page and in the Record, graded at the frozen price, counted under "Pulled". **Every pull says what happened and what it means if Matt already bet.** No pulls after tip. Once the D read is done only an injury pull can happen ("Price final") |
-| Caps | 1 side per player. No per-game or nightly cap (NHL v3.1 rule, Matt's preference: every qualifying leg is shown, ranked by final EV) |
+| Caps | **None per game or per night (Matt, 2026-10-25: "no limit per game or anything")**: every qualifying leg is shown, ranked by final EV. Only 1 side per player per market (both sides of one line can't both be bets); one player can have a rebounds, a points and an assists pick |
 | Parlays | Off (customer fact) |
 | Grading | When ESPN marks the game final. Overtime counts. Did not play = void. Graded at the frozen price, flat 1 unit |
-| Odds reads | A 11 AM (or 3h before the first tip), B 90 min, C 45 min, D 20 min before each game. Rebounds only = 1 credit a read. Priority when credits are short: C, B, D, A |
+| Odds reads | A 11 AM (or 3h before the first tip), B 90 min, C 45 min, D 20 min before each game. 3 markets = 3 credits a read (`ops.cost_per_read`). Reads a game = allowance / 3, at most 4; priority when credits are short: C, B, D, A |
 | Safety | New picks stop by themselves if the Record reaches **-10 units** (`safety_pause`), with the reason on the page. Never silent |
 
 ## 5. How it runs
@@ -85,16 +85,17 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   `data/record/`. No chat ever edits it. A reset needs Matt's explicit order and a byte-exact archive (`data/record/resets.json`).
 - **Odds keys:** GitHub secret `ODDS_API_KEYS` (comma-separated), optional `ODDS_API_KEYS_2` (added after the first set). NBA-only pool,
   never shared with NHL. Never in the repo, page or logs. A used-up or refused key is skipped; the ledger (`data/state/credits.json`) knows
-  keys only by number. Page warns when the pool is low (allowance < 2 credits a game) or when every key is refused.
+  keys only by number. Page warns when the pool is low (fewer than 2 reads a game affordable) or when every key is refused.
 - **Feed limits (checked 2026-10-25):** The Odds API free Starter plan = 500 credits a month per key. Event odds cost markets x regions;
-  up to 10 bookmakers in `bookmakers=` bill as one region, so Hard Rock + 9 other books for rebounds = 1 credit a read. The events list is
-  free. Need: ~4 reads x ~225 games a month ≈ 900, plus menu and retries ≈ 1,000. **Matt was asked for 3 keys (1,500 a month).**
+  up to 10 bookmakers in `bookmakers=` bill as one region, so Hard Rock + 9 other books = 1 credit per MARKET a read (3 markets = 3). The events list is
+  free. Need: 4 reads x 3 credits x ~225 games a month ≈ 2,700. **6 keys (3,000 a month): Matt added 3 on 2026-10-25 7:44 PM and 3 more
+  at 8:22 PM.** With fewer than ~12 credits a game the plan drops reads in the order A, D, B (C last).
 - **Other books asked (9, same credit):** draftkings, fanduel, betmgm, espnbet, pinnacle, betonlineag, betrivers, novig, prophetx.
   Which return NBA rebounds is unverified until the first read; a silent book costs nothing; swap per NHL item 24 (quality sharp books).
 - **Discord:** `scripts/notify.py`, secret `DISCORD_WEBHOOK`. Sends NEW PICKS (batched), PULLED (only picks already sent, before tip, with
   the if-bet line), PRICE FINAL, ACTION NEEDED (keys refused / pool low, once a day each), a one-time hello. Never no-pick nights,
   heartbeats, grading or errors. Quiet 12:30-9:00 AM ET. Max 12 messages a day.
-- **Debug:** `python scripts/run.py --explain` lists every rebounds line on the latest reads and the first reason it did not pass.
+- **Debug:** `python scripts/run.py --explain` lists every line (all markets) on the latest reads and the first reason it did not pass.
   Tests: `python -m unittest discover -s tests` (30; `tests/world.py` = fake day from the real probe payloads; `tests/test_qa_failures.py` = QA's regressions). Env: `PC_NOW`, `PC_DATA_DIR`, `PC_ODDS_FIXTURE_DIR`, `PC_ESPN_FIXTURE_DIR`.
 
 ## 6. Reviews (scheduled tasks; each reads this file first and updates it last)
@@ -109,28 +110,33 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
    new picks and logs it in section 8.
 2. **Starting lineups source = Rotowire** (scraped HTML; layout change or block = the chip stops at Injury report clear and the page
    says so). "Confirmed" verified live 2026-10-25 evening: 12 of 14 teams showed confirmed by 7:40 PM (MEM/SAC, 9 PM tip, still expected).
-3. **Model (guard only):** fitted by the DS 2026-10-25 on 2025-26 box scores, walk-forward (`research/calibrate.py`): 18,841
-   player-games Dec-Apr, test line = his last-10 average as an x.5 line. 16 variants tried; chosen disp 1.15, opponent factor exp 1.0,
-   no back-to-back cut, rpm half-life 20: log loss 0.6686 vs base 0.6877, bias -0.05 pt, calibrated in every 10-pt bucket. **Offset =
-   0.0** (bias ~0). Not tested against book lines (no historical Hard Rock rebounds prices); refit only with a named sample.
+3. **Model (guard only), one per stat:** fitted by the DS 2026-10-25 on 2025-26 box scores, walk-forward (`research/calibrate.py
+   reb|pts|ast [grid]`): 18,841 player-games Dec-Apr each, test line = his last-10 average as an x.5 line. Rebounds: disp 1.15, rpm
+   half-life 20, log loss 0.6686 vs base 0.6877. Points: disp 1.6, half-life 10, 0.6771 vs 0.6908, bias +0.9 pt -> **offset +0.009**.
+   Assists: Poisson (disp 1.0), half-life 10, 0.6660 vs 0.6844. Opponent factor exp 1.0, no back-to-back cut for all three. 16-20 variants
+   tried per stat. Offsets in `gap_guard.offsets`. Not tested against book lines (no historical Hard Rock prices); refit only with a
+   named sample.
 4. Name matching: accents, Jr./III and dots are normalized; within the two teams playing only. Unmatched names are listed in
    status.json and skipped, never guessed.
 5. The ESPN tip time is used for lock (games often tip ~10 min later): conservative.
-6. Keys refill on the 1st (assumed, as NHL). The pool covers ~4 reads a game with 3 keys.
+6. Keys refill on the 1st (assumed, as NHL). 6 keys cover 4 reads x 3 markets a game (~2,700 of 3,000 a month).
 7. Official NBA injury report PDF not parsed (Rotowire mirrors it). Build only if Rotowire proves unreliable.
 8. **Verified live 2026-10-25 7:50 PM (first keyed read, MEM@SAC B):** Hard Rock posts rebounds (8 players, ~+105/-135, hold ~8%);
    1 credit per read; **all 9 other books returned rebounds** (DK, FD, MGM, ESPN Bet, BetRivers, BetOnline 18 outcomes each; novig and
    prophetx ~110 incl. alt lines; Pinnacle only 10 = 5 players); Hard Rock outcome links are real bet-slip deep links
    (`app.hardrock.bet/?deep_link_value=betslip/<id>`). Discord hello delivered. **Pinnacle coverage is the volume limit**: 5 of 8 players
-   failed "Pinnacle not on this line". Do not loosen without a sample (DS names it at the first weekly review). Status 2026-10-25 2 PM:
-   keys and webhook still not set; nothing verified yet.
+   failed "Pinnacle not on this line". Do not loosen without a sample (DS names it at the first weekly review).
 
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
 |---|---|---|---|
+| 2026-10-25 8:45 PM (CEO, Matt's order; Builder, QA) | **v1.1: points and assists added** (customer fact), same Gap + Guard thresholds, own model per stat (section 7 item 3), 1 side per player per market, no game or night caps (confirmed with Matt), reads cost 3 credits | Matt: "If we expand to points and assists..." then added 3 more keys (6 total) | None yet; judged with rebounds at the 2026-11-16 checkpoint, per market |
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-25 ~8:50 PM (CEO): v1.1 points + assists (Matt added 3 more keys, 6 total). Re-seeded box scores with pts/ast, DS fit two
+  models, engine/grading/page/Discord made multi-market, live box cache cleared to rebuild with pts/ast. QA (fresh): SHIP WITH
+  FIXES, no blockers; low-pool warning now counts reads, reason says when the model is lower; 40 tests pass.
 - 2026-10-25 7:55 PM (CEO): chain restarted with the keys (pool 1,499, allowance 28.8, all 4 reads on). First read: 16 sides, 0 passed
   (gaps -1.7% to -9.4%; 5 players lacked Pinnacle). See section 7 item 8.
 - 2026-10-25 7:45 PM (CEO): Matt added `ODDS_API_KEYS` and `DISCORD_WEBHOOK`. Secrets load only when a run starts, so a push to

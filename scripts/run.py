@@ -221,6 +221,8 @@ class Run:
                                 "units": 0.0, "note": name or "no final %d hours after tip" % age_h})
                 continue
             res, actual, units = engine.grade_one(it, boxes[gid], self.cfg)
+            if res is None:
+                continue
             new.append({"t": "graded", "id": it["id"], "at": common.iso(self.now), "result": res, "actual": None,
                         "actual_text": actual, "price": it["shown"]["price"], "units": units})
         if new:
@@ -288,7 +290,7 @@ class Run:
             banners.append({"level": "stop", "text": "Hard Rock prices are off: the odds keys were refused. New keys are needed."})
         elif o.get("all_used_up"):
             banners.append({"level": "stop", "text": "Odds keys are used up for this month: no new prices until they refill on the 1st."})
-        elif plan and plan.get("allowance") is not None and plan["allowance"] < cfg["ops"]["pool_low_allowance"]:
+        elif plan and plan.get("allowance") is not None and plan["allowance"] < cfg["ops"]["pool_low_allowance"] * cfg["ops"].get("cost_per_read", 1):
             banners.append({"level": "warn", "text": "Odds keys are running low: fewer price checks per game until they refill "
                                                      "on the 1st. More keys would fix it."})
         if self.summ_paused():
@@ -370,10 +372,11 @@ class Run:
 def rules_doc(cfg):
     g, r, c, el = cfg["gap_guard"], cfg["reads"], cfg["customer"], cfg["eligibility"]
     return {"version": cfg["version"], "updated": cfg["updated"], "ui": cfg["ui"], "lines": [
-        "Hard Rock (Florida) prices only, player rebounds, the main line, over or under. No leg worse than %d." % c["worst_price"],
+        "Hard Rock (Florida) prices only: player rebounds, points and assists, the main line, over or under. No leg worse than %d."
+        % c["worst_price"],
         "Step 1, the gap: Hard Rock's price must be at least %d%% better than the middle of %d+ other books on the same line, "
         "and Pinnacle (the sharpest book) must not disagree." % (round(100 * g["gap_ev"]), g["books_min"]),
-        "Step 2, the guard: our own rebounds model gets a %d%% say. If the blend falls under +%d%% value, no pick. "
+        "Step 2, the guard: our own model for that stat gets a %d%% say. If the blend falls under +%d%% value, no pick. "
         "The model can block a pick, never create one." % (round(100 * g["model_weight"]), round(100 * g["final_ev"])),
         "Prices are checked about %d, %d and %d minutes before each tip (plus a morning look). The price shown is frozen "
         "and is the one graded." % (r["b_min"], r["c_min"], r["d_min"]),
@@ -383,7 +386,8 @@ def rules_doc(cfg):
         "Starters confirmed = both teams' starting fives are posted.",
         "If a later check finds the edge gone, the pick is pulled and says what that means if you already bet it. "
         "Pulled picks stay on the Record.",
-        "One side per player. No cap on picks a night: every leg that clears both checks is shown, best first. No parlays.",
+        "One side per player per market. No cap per game or per night: every leg that clears both checks is shown, best first. "
+        "No parlays.",
         "Graded after the game at the shown price, 1 unit flat. Overtime counts. Did not play = void.",
         "New picks stop by themselves if the Record falls to %d units." % cfg["safety_pause"]["units"],
     ]}

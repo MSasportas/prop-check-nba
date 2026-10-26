@@ -1,4 +1,4 @@
-"""engine.py: Gap + Guard for Hard Rock rebounds (TEAM.md section 4). Evaluates every price read, shows picks, pulls them,
+"""engine.py: Gap + Guard for Hard Rock rebounds, points and assists (TEAM.md section 4). Evaluates every price read, shows picks, pulls them,
 locks them at tip, grades them, and builds slate.json for the page. The Record (record.py) is written only through here.
 
 A shown pick is never silently removed: it stays, is pulled with a reason, or locks at tip. Its price is FROZEN at the read
@@ -24,8 +24,8 @@ def fmt_line(x):
     return "%g" % x
 
 
-def pick_id(slate, game_id, pid, line, side):
-    return "%s:%s:%s:rebounds:%s:%s" % (slate, game_id, pid, fmt_line(line), side)
+def pick_id(slate, game_id, pid, line, side, market="rebounds"):
+    return "%s:%s:%s:%s:%s:%s" % (slate, game_id, pid, market, fmt_line(line), side)
 
 
 def pct_floor(x):
@@ -134,12 +134,12 @@ class Context:
 
 
 # ---------------------------------------------------------------- one read -> every side, judged
-def book_pairs(fetch, read_at, cfg):
-    """Other books' two-sided, fresh, sane-hold prices: {book: {(pid, line): (over, under)}}."""
+def book_pairs(fetch, read_at, cfg, market="rebounds"):
+    """Other books' two-sided, fresh, sane-hold prices for one market: {book: {(pid, line): (over, under)}}."""
     gg = common.gap_guard(cfg)
     out = {}
     for book, mk in (fetch.get("others") or {}).items():
-        m = mk.get("rebounds")
+        m = mk.get(market)
         if not m or odds.is_stale(m.get("last_update"), read_at, gg["book_fresh_min"]):
             continue
         bp = {}
@@ -168,26 +168,36 @@ def main_lines(hr_pairs):
 
 
 def evaluate(fetch, ctx):
-    """Judge every Hard Rock rebounds side on one read. Returns rows (dicts), each with `why` = None when it passes both checks."""
+    """Judge every Hard Rock side, every locked market, on one read. Returns rows (dicts), each with `market` and `why` = None when
+    it passes both checks."""
+    rows = []
+    for market in ctx.cfg["markets"]:
+        rows += evaluate_market(fetch, ctx, market)
+    return rows
+
+
+def evaluate_market(fetch, ctx, market):
     cfg = ctx.cfg
     gg, rd = common.gap_guard(cfg), cfg["reads"]
     at = common.parse_iso(fetch["at"])
     g = ctx.games.get(fetch["game_id"])
-    hr = (fetch.get("markets") or {}).get("rebounds")
+    hr = (fetch.get("markets") or {}).get(market)
     if not g or not hr:
         return []
+    stat = cfg["markets"][market]["stat"]
     hr_stale = odds.is_stale(hr.get("last_update"), at, rd["stale_min"])
-    others = book_pairs(fetch, at, cfg)
+    others = book_pairs(fetch, at, cfg, market)
     rows = []
     for pid, (line, p) in main_lines(odds.pairs(hr.get("outcomes"))).items():
         team = p.get("team") or (ctx.people.get(pid) or {}).get("team")
         opp = g["home"] if team == g["away"] else g["away"]
         hold = odds.hold(p["over"], p["under"])
-        mp, minfo = model.chance(ctx.store, pid, team, opp, ctx.slate, line, ctx.season_start)
+        mp, minfo = model.chance(ctx.store, pid, team, opp, ctx.slate, line, ctx.season_start, stat)
         for side in ("over", "under"):
             price = p[side]
             other = p["under" if side == "over" else "over"]
             r = {"pid": pid, "name": p["name"], "team": team, "opp": opp, "home": team == g["home"], "game_id": g["id"],
+                 "market": market,
                  "line": line, "side": side, "price": price, "other_price": other, "read": fetch["read"], "at": fetch["at"],
                  "link": p.get("link_" + side), "hold": round(hold, 4)}
             fairs, pin = [], None
@@ -206,7 +216,8 @@ def evaluate(fetch, ctx):
             r["pin_ev"] = odds.ev(pin, price) if pin is not None else None
             ms = None
             if mp is not None:
-                ms = mp + gg["offset"] if side == "over" else 1.0 - (mp + gg["offset"])
+                off = (gg.get("offsets") or {}).get(market, 0.0)
+                ms = mp + off if side == "over" else 1.0 - (mp + off)
                 ms = min(0.999, max(0.001, ms))
             r["model_p"] = ms
             r["mean"] = round(minfo["mean"], 2) if isinstance(minfo, dict) else None
@@ -251,12 +262,13 @@ def reason_text(r):
     need = odds.break_even(r["price"])
     s = "%d other books say %.1f%%; Hard Rock's %s only needs %.1f%%." % (
         r["n_books"], 100 * r["market_fair"], common.fmt_price(r["price"]), 100 * need)
-    s += " Our model agrees (%d%%)." % pct_round(r["model_p"])
+    s += (" Our model agrees (%d%%)." if r["model_p"] >= need else " Our model is lower (%d%%), but the blend still clears.") \
+        % pct_round(r["model_p"])
     return s
 
 
-def bet_text(side, line):
-    return "%s %s rebounds" % ("Over" if side == "over" else "Under", fmt_line(line))
+def bet_text(side, line, noun="rebounds"):
+    return "%s %s %s" % ("Over" if side == "over" else "Under", fmt_line(line), noun)
 
 
 # ---------------------------------------------------------------- pull advice (copied from NHL v3.2)
@@ -291,7 +303,8 @@ def advice(code, row_now, shown_price, cfg):
 def pull_check(shown, rows_now, cfg):
     """A shown, open pick against a LATER read of its game. Returns (code, row_now) or (None, row_now)."""
     gg = common.gap_guard(cfg)
-    same = [r for r in rows_now if r["pid"] == shown["pid"] and r["side"] == shown["side"]]
+    same = [r for r in rows_now if r["pid"] == shown["pid"] and r["side"] == shown["side"]
+            and r.get("market", "rebounds") == shown.get("market", "rebounds")]
     row = next((r for r in same if r["line"] == shown["line"]), None)
     if row is None:
         return "line_gone", same[0] if same else None
@@ -313,10 +326,10 @@ def pull_check(shown, rows_now, cfg):
 
 # ---------------------------------------------------------------- the step
 def latest_fetches(odds_doc):
-    """{game_id: [fetches with Hard Rock rebounds, oldest first]}"""
+    """{game_id: [fetches with any Hard Rock market, oldest first]}"""
     out = {}
     for f in (odds_doc or {}).get("fetches", []):
-        if (f.get("markets") or {}).get("rebounds"):
+        if f.get("markets"):
             out.setdefault(f["game_id"], []).append(f)
     return out
 
@@ -363,22 +376,22 @@ def step(ctx, odds_doc):
                 if r["why"] is None:
                     cands.append(r)
         cands.sort(key=lambda r: (-round(r["final_ev"], 4), r["pid"], r["side"]))
-        taken = {(it["shown"]["pid"]) for it in mine.values()}
+        taken = {(it["shown"]["pid"], it["shown"].get("market", "rebounds")) for it in mine.values()}
         for r in cands:
-            if r["pid"] in taken:
-                continue                                   # one side per player, and never a second pick on him tonight
-            taken.add(r["pid"])
+            if (r["pid"], r["market"]) in taken:
+                continue                                   # one side per player per market, never a second pick on it tonight
+            taken.add((r["pid"], r["market"]))
             g = ctx.games[r["game_id"]]
             state = ctx.settled(r["pid"], r["team"], g)
             body = {"player": r["name"], "pid": r["pid"], "team": r["team"], "opp": r["opp"], "home": r["home"],
-                    "game_id": r["game_id"], "start": g["start"], "market": "rebounds", "line": r["line"], "side": r["side"],
-                    "bet": bet_text(r["side"], r["line"]), "price": r["price"], "price_at": r["at"], "read": r["read"],
+                    "game_id": r["game_id"], "start": g["start"], "market": r["market"], "line": r["line"], "side": r["side"],
+                    "bet": bet_text(r["side"], r["line"], cfg["markets"][r["market"]]["noun"]), "price": r["price"], "price_at": r["at"], "read": r["read"],
                     "p": round(r["final"], 4), "p_pct": pct_floor(r["final"]),
                     "breakeven": round(odds.break_even(r["price"]), 4), "breakeven_pct": pct_round(odds.break_even(r["price"])),
                     "market_fair": round(r["market_fair"], 4), "n_books": r["n_books"], "pin_fair": round(r["pin_fair"], 4),
                     "model_p": round(r["model_p"], 4), "gap_ev": round(r["gap_ev"], 4), "final_ev": round(r["final_ev"], 4),
                     "reason": reason_text(r), "state": state, "link": r.get("link")}
-            pid_ = pick_id(slate, r["game_id"], r["pid"], r["line"], r["side"])
+            pid_ = pick_id(slate, r["game_id"], r["pid"], r["line"], r["side"], r["market"])
             if pid_ in items:
                 continue
             new.append({"t": "shown", "id": pid_, "at": common.iso(now), "slate": slate, "kind": "single", "pick": body})
@@ -401,7 +414,9 @@ def step(ctx, odds_doc):
             new.append({"t": "pulled", "id": i, "at": common.iso(now), "code": "status",
                         "reason": "Now listed %s" % st, "if_bet": OUT_IF_BET})
             continue
-        later = [(f, rows) for f, rows in evals.get(sh["game_id"], []) if f["at"] > sh["price_at"]]
+        mk = sh.get("market", "rebounds")
+        later = [(f, rows) for f, rows in evals.get(sh["game_id"], [])
+                 if f["at"] > sh["price_at"] and mk in (f.get("markets") or {})]   # a read without this market says nothing
         if later:
             code, row = pull_check(sh, later[-1][1], cfg)
             if code:
@@ -425,11 +440,14 @@ def grade_one(it, box_rows, cfg):
     row = next((r for r in box_rows if r["pid"] == sh["pid"]), None)
     if row is None or row["dnp"] or not row["min"]:
         return "VOID", "did not play", 0.0
-    reb = row["reb"] or 0
-    if abs(reb - sh["line"]) < EPS:
+    m = cfg["markets"][sh.get("market", "rebounds")]
+    if row.get(m["stat"]) is None:
+        return None, None, None                            # the box score lacks this stat: wait, never guess
+    x = row[m["stat"]]
+    if abs(x - sh["line"]) < EPS:
         res = "PUSH"
-    elif (reb > sh["line"]) == (sh["side"] == "over"):
+    elif (x > sh["line"]) == (sh["side"] == "over"):
         res = "W"
     else:
         res = "L"
-    return res, "%d rebounds" % reb, record.single_units(res, sh["price"])
+    return res, "%d %s" % (x, m["noun"]), record.single_units(res, sh["price"])

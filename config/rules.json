@@ -1,11 +1,10 @@
 {
- "version": "1.0",
+ "version": "1.1",
  "updated": "2026-10-25",
  "_about": "EVERY rule value lives here (TEAM.md section 4). The engine reads this file; data/rules.json (what the page reads) is generated from it. One rule set: Gap + Guard. Probabilities 0-1, prices American integers, times Eastern.",
  "customer": {
-  "_about": "Customer facts locked by Matt in the setup interview 2026-10-25. The team never changes these.",
+  "_about": "Customer facts locked by Matt (setup interview 2026-10-25; points and assists added 2026-10-25 8:22 PM). The team never changes these.",
   "book": "hardrockbet",
-  "market": "rebounds",
   "main_line_only": true,
   "sides": [
    "over",
@@ -13,7 +12,12 @@
   ],
   "worst_price": -200,
   "parlays": false,
-  "regular_season_only": true
+  "regular_season_only": true,
+  "markets": [
+   "rebounds",
+   "points",
+   "assists"
+  ]
  },
  "gap_guard": {
   "active": true,
@@ -29,7 +33,6 @@
   "pull_ev": 0.015,
   "market_weight": 0.8,
   "model_weight": 0.2,
-  "offset": 0.0,
   "final_ev": 0.02,
   "flag_pulls": [
    "B",
@@ -39,7 +42,12 @@
   "final_pull": "D",
   "max_per_player": 1,
   "flag_max_age_min": 15,
-  "void_after_hours": 36
+  "void_after_hours": 36,
+  "offsets": {
+   "rebounds": 0.0,
+   "points": 0.009,
+   "assists": 0.0
+  }
  },
  "eligibility": {
   "min_history": 10,
@@ -100,16 +108,31 @@
   ],
   "event_match_hours": 6,
   "pool_low_allowance": 2,
-  "cost_per_read": 1,
+  "cost_per_read": 3,
   "injuries_every_min": 10,
   "lineups_window_min": 180
  },
  "markets": {
   "rebounds": {
    "feed_key": "player_rebounds",
+   "stat": "reb",
    "noun": "rebounds",
    "short": "reb",
    "label": "Rebounds"
+  },
+  "points": {
+   "feed_key": "player_points",
+   "stat": "pts",
+   "noun": "points",
+   "short": "pts",
+   "label": "Points"
+  },
+  "assists": {
+   "feed_key": "player_assists",
+   "stat": "ast",
+   "noun": "assists",
+   "short": "ast",
+   "label": "Assists"
   }
  },
  "ui": {

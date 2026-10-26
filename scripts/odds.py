@@ -1,4 +1,4 @@
-"""odds.py: Hard Rock rebounds prices from the-odds-api (bookmaker `hardrockbet`), with 9 other books beside it.
+"""odds.py: Hard Rock rebounds / points / assists prices from the-odds-api (bookmaker `hardrockbet`), with 9 other books beside it.
 
 keys    env ODDS_API_KEYS (then ODDS_API_KEYS_2) only. Never printed, never written. Used-up or refused keys are skipped.
 ledger  data/state/credits.json: credits left per key NUMBER (never the key) and every credit spent.
@@ -291,8 +291,9 @@ def days_to_reset(slate):
 
 
 def reads_per_game(allowance, cfg):
-    """How many reads each game gets: one per whole credit of allowance, at most 4, at least 1 (C only)."""
-    n = int(math.floor(allowance + 1e-9))
+    """How many reads each game gets: one per whole read's cost (ops.cost_per_read = markets asked, 1 credit each) in the
+    allowance, at most 4, at least 1 (C only)."""
+    n = int(math.floor(allowance / float(cfg["ops"].get("cost_per_read", 1)) + 1e-9))
     return max(1, min(len(READS), n))
 
 
@@ -503,9 +504,10 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
             day["key_count"] = pool.count()
     old = day.get("plan")
     if pool.known() and (old is None or old.get("key_count") != pool.count() or
+                         old.get("cost_per_read", 1) != cfg["ops"].get("cost_per_read", 1) or
                          (old.get("pool_at_plan", 0) == 0 and pool.total_left() > 0)):
         plan = make_plan(pool.total_left() + pool.spent_on(slate), games_left_month, len(games), cfg)
-        plan.update(key_count=pool.count(), made_at=common.iso(now))
+        plan.update(key_count=pool.count(), made_at=common.iso(now), cost_per_read=cfg["ops"].get("cost_per_read", 1))
         day["plan"] = plan
     plan = day.get("plan")
     res["plan"] = plan
@@ -523,7 +525,8 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
         if dry_run:
             continue
         # C (the 45-minute read) may use tomorrow's share if today's is spent: it is the read that protects live picks
-        if (pool.spent_on(slate) >= plan["budget_today"] and d["read"] not in ("C", "D")) or pool.total_left() < 1:
+        cost = cfg["ops"].get("cost_per_read", 1)
+        if (pool.spent_on(slate) + cost > plan["budget_today"] and d["read"] not in ("C", "D")) or pool.total_left() < cost:
             no_budget.append(g["id"])
             continue
         ev = day["events"].get(str(g["id"]))

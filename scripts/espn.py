@@ -132,7 +132,8 @@ def box(summary):
                        "home": int(tm == ab["home"]), "starter": bool(a.get("starter")), "dnp": dnp,
                        "reason": a.get("reason") if dnp else None, "pos": (ath.get("position") or {}).get("abbreviation"),
                        "min": _num(d.get("MIN")), "reb": _num(d.get("REB")), "oreb": _num(d.get("OREB")),
-                       "dreb": _num(d.get("DREB")), "game": gid, "date": date})
+                       "dreb": _num(d.get("DREB")), "pts": _num(d.get("PTS")), "ast": _num(d.get("AST")),
+                       "game": gid, "date": date})
     for t in summary.get("boxscore", {}).get("teams", []) or []:
         tm = teams.code(t["team"]["abbreviation"])
         s = {x.get("name"): x.get("displayValue") for x in t.get("statistics", []) or []}
@@ -144,7 +145,7 @@ def box(summary):
                 return None
         tr.append({"team": tm, "opp": other.get(tm), "home": int(tm == ab["home"]), "ot": ot,
                    "reb": _num(s.get("totalRebounds")), "oreb": _num(s.get("offensiveRebounds")),
-                   "dreb": _num(s.get("defensiveRebounds")), "fgm": pair("fieldGoalsMade-fieldGoalsAttempted", 0),
+                   "dreb": _num(s.get("defensiveRebounds")), "ast": _num(s.get("assists")), "fgm": pair("fieldGoalsMade-fieldGoalsAttempted", 0),
                    "fga": pair("fieldGoalsMade-fieldGoalsAttempted", 1), "fta": pair("freeThrowsMade-freeThrowsAttempted", 1),
                    "tov": _num(s.get("totalTurnovers") or s.get("turnovers")),
                    "pts": _num(comp["home" if tm == ab["home"] else "away"].get("score")), "game": gid, "date": date})

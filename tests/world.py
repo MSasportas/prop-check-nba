@@ -25,8 +25,8 @@ def outcome(name, side, line, price):
     return {"name": side.capitalize(), "description": name, "point": line, "price": price}
 
 
-def book(key, rows, at, link=False):
-    """rows: [(player, line, over, under)]"""
+def book(key, rows, at, link=False, feed_key="player_rebounds", extra=None):
+    """rows: [(player, line, over, under)]; extra: {feed_key: rows} for more markets from the same book"""
     outs = []
     for nm, line, o, u in rows:
         a, b = outcome(nm, "over", line, o), outcome(nm, "under", line, u)
@@ -35,7 +35,8 @@ def book(key, rows, at, link=False):
             b["link"] = "https://app.hardrock.bet/slip?o=%s-under" % nm.split()[-1].lower()
         outs += [a, b]
     return {"key": key, "title": key, "last_update": at,
-            "markets": [{"key": "player_rebounds", "last_update": at, "outcomes": outs}]}
+            "markets": [{"key": feed_key, "last_update": at, "outcomes": outs}] +
+            [book(key, r, at, link, fk)["markets"][0] for fk, r in (extra or {}).items()]}
 
 
 class World:
@@ -63,9 +64,10 @@ class World:
         with open(os.path.join(self.odds, name), "w") as f:
             json.dump(obj, f)
 
-    def lal_utah(self, at, hr, others, extra_books=None):
-        """hr / others: [(player, line, over, under)] for Hard Rock and for every other book."""
-        bms = [book("hardrockbet", hr, at, link=True)] + [book(b, others, at) for b in (extra_books or BOOKS)]
+    def lal_utah(self, at, hr, others, extra_books=None, hr_extra=None, others_extra=None):
+        """hr / others: [(player, line, over, under)] rebounds for Hard Rock and for every other book; *_extra: {feed_key: rows}."""
+        bms = [book("hardrockbet", hr, at, link=True, extra=hr_extra)] + \
+              [book(b, others, at, extra=others_extra) for b in (extra_books or BOOKS)]
         self.write_odds("odds_lal_utah.json", {"id": "ev401909861", "bookmakers": bms})
 
     def run(self, now, *args, env=None):

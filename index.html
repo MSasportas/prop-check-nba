@@ -225,7 +225,7 @@ var BASE = FIX ? 'fixtures/' + FIX + '/' : 'data/';
 var NOW_Q = ms(String(Q.get('now') || '').replace(' ', '+'));
 var TZ = 'America/New_York';
 var STALE_MIN = 30, REFRESH_DEF = 120;
-var MARKET_LINE = 'Prices: Hard Rock only · No leg worse than -200 · Rebounds main line only';
+var MARKET_LINE = 'Prices: Hard Rock only · No leg worse than -200 · Rebounds, points, assists · Main line only';
 
 var S = {
   slate: null, record: null, rules: null, recordErr: null,
@@ -339,9 +339,9 @@ function comma(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g
 /* "Over 9.5 rebounds" -> "OVER 9.5 reb" */
 function shortBet(p) {
   var b = str(p.bet);
-  if (!b && p.side && num(p.line) != null) b = str(p.side) + ' ' + p.line + ' rebounds';
+  if (!b && p.side && num(p.line) != null) b = str(p.side) + ' ' + p.line + ' ' + ({points: 'points', assists: 'assists'}[p.market] || 'rebounds');
   if (!b) return 'Bet not posted';
-  return b.replace(/^(over|under)\b/i, function (m) { return m.toUpperCase(); }).replace(/\brebounds?\b/i, 'reb');
+  return b.replace(/^(over|under)\b/i, function (m) { return m.toUpperCase(); }).replace(/\brebounds?\b/i, 'reb').replace(/\bpoints?\b/i, 'pts').replace(/\bassists?\b/i, 'ast');
 }
 
 /* ---------- data access ---------- */

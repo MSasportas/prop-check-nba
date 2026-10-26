@@ -37,9 +37,10 @@ class TestPrices(unittest.TestCase):
         self.assertAlmostEqual(odds.fair_two_sided(-110, -110), 0.5)
 
     def test_plan_reads(self):
-        self.assertEqual(odds.active_reads(6.7, CFG), {"A", "B", "C", "D"})
-        self.assertEqual(odds.active_reads(2.4, CFG), {"C", "B"})
-        self.assertEqual(odds.active_reads(0.3, CFG), {"C"})
+        # 3 markets = 3 credits a read
+        self.assertEqual(odds.active_reads(12.1, CFG), {"A", "B", "C", "D"})
+        self.assertEqual(odds.active_reads(6.7, CFG), {"C", "B"})
+        self.assertEqual(odds.active_reads(2.4, CFG), {"C"})
 
     def test_due_reads_latest_type(self):
         g = {"id": "1", "start": "2026-10-25T19:00:00-04:00", "away": "LAL", "home": "UTAH"}
@@ -201,6 +202,31 @@ class TestEndToEnd(unittest.TestCase):
         self.assertEqual(self.w.events(), [])
         doc = self.w.read("odds", "2026-10-25.json")
         self.assertEqual({f["read"] for f in doc["fetches"]}, {"A"})
+
+    def test_points_and_assists_picks(self):
+        # Doncic points: Hard Rock -135/+105 on 36.5 vs the market +105/-125 -> the under is a gap; assists line has no gap
+        hr_x = {"player_points": [("Luka Doncic", 36.5, -135, 105)], "player_assists": [("Luka Doncic", 8.5, -110, -110)]}
+        ot_x = {"player_points": [("Luka Doncic", 36.5, 105, -125)], "player_assists": [("Luka Doncic", 8.5, -110, -110)]}
+        self.w.lal_utah("2026-10-25T19:30:00Z", HR_GOOD, MKT, hr_extra=hr_x, others_extra=ot_x)
+        self.w.run("2026-10-25T15:31:00-04:00")
+        ids = sorted(e["id"] for e in self.w.events() if e["t"] == "shown")
+        self.assertIn(PICK_ID, ids)                                        # rebounds and points on the same player: both shown
+        pts = [i for i in ids if ":points:" in i]
+        self.assertEqual(len(pts), 1)
+        sh = next(e for e in self.w.events() if e["id"] == pts[0])["pick"]
+        self.assertEqual((sh["market"], sh["bet"]), ("points", "Under 36.5 points"))
+        # a later read with rebounds only says nothing about the points pick (never pulled as "line removed")
+        self.w.lal_utah("2026-10-25T20:15:00Z", HR_GOOD, MKT)
+        self.w.run("2026-10-25T16:16:00-04:00")
+        self.assertFalse([e for e in self.w.events() if e["t"] == "pulled"])
+        doc = self.w.read("odds", "2026-10-25.json")
+        self.assertEqual(doc["fetches"][0]["cost"], 3)
+
+    def test_grade_points(self):
+        it = {"shown": {"pid": "9", "line": 28.5, "side": "under", "price": 105, "market": "points"}}
+        self.assertEqual(engine.grade_one(it, [{"pid": "9", "dnp": False, "min": 30, "reb": 9, "pts": 25}], CFG)[:2],
+                         ("W", "25 points"))
+        self.assertEqual(engine.grade_one(it, [{"pid": "9", "dnp": False, "min": 30, "reb": 9}], CFG)[0], None)
 
     def test_rules_doc(self):
         self.w.run("2026-10-25T09:31:00-04:00")
