@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2910,
+   "pool_left": 2907,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-26T19:45:00-04:00",
-  "last_read_at": "2026-10-26T19:40:00-04:00",
+  "next_read_at": "2026-10-26T20:10:00-04:00",
+  "last_read_at": "2026-10-26T19:50:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-26T19:40:00-04:00"
+   "at": "2026-10-26T19:50:00-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "WAS",
    "home": "CHA",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "7:52 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -46,7 +46,7 @@
    "away": "MIN",
    "home": "CLE",
    "state": "in",
-   "detail": "10:51 - 2nd",
+   "detail": "7:05 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -59,8 +59,8 @@
    "start": "2026-10-26T19:30:00-04:00",
    "away": "CHI",
    "home": "BOS",
-   "state": "pre",
-   "detail": "10/26 - 7:30 PM EDT",
+   "state": "in",
+   "detail": "8:12 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -73,8 +73,8 @@
    "start": "2026-10-26T19:30:00-04:00",
    "away": "DAL",
    "home": "MIA",
-   "state": "pre",
-   "detail": "10/26 - 7:30 PM EDT",
+   "state": "in",
+   "detail": "6:15 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -121,7 +121,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-26T19:00:00-04:00",
+   "read_at": "2026-10-26T19:50:00-04:00",
    "picks": 0
   },
   {
@@ -157,7 +157,7 @@
  "empty": {
   "text": "No picks yet today",
   "why": "604 lines read, none cleared both checks.",
-  "next": "2026-10-26T19:45:00-04:00"
+  "next": "2026-10-26T20:10:00-04:00"
  },
  "counts": {
   "lines_read": 604,
@@ -170,6 +170,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-26T19:40:00-04:00",
- "status_at": "2026-10-26T19:40:00-04:00"
+ "generated_at": "2026-10-26T19:50:00-04:00",
+ "status_at": "2026-10-26T19:50:00-04:00"
 }
