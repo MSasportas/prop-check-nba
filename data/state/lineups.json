@@ -59,7 +59,7 @@
    }
   },
   "CHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Josh Giddey",
     "Norman Powell",
@@ -73,7 +73,7 @@
    }
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Derrick White",
     "Paul George",
@@ -86,7 +86,7 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
     "Max Christie",
@@ -103,7 +103,7 @@
    }
   },
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
@@ -263,5 +263,5 @@
    }
   }
  },
- "at": "2026-10-26T19:00:00-04:00"
+ "at": "2026-10-26T19:10:00-04:00"
 }
