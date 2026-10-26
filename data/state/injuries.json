@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T17:40:20-04:00",
+ "at": "2026-10-26T17:50:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -72,18 +72,11 @@
    "note": "Boswell (knee) is out for Wednesday's season opener against the Nets."
   },
   "4431687": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Patrick Williams",
    "team": "CHI",
-   "date": "2026-10-25T17:52Z",
-   "note": "Williams (groin) is listed as questionable for Monday's game against Boston."
-  },
-  "5242496": {
-   "status": "day-to-day",
-   "name": "Noa Essengue",
-   "team": "CHI",
-   "date": "2026-10-25T17:50Z",
-   "note": "Essengue (head) is listed as questionable for Monday's game against Boston."
+   "date": "2026-10-26T21:33Z",
+   "note": "Williams (groin) has been ruled out for Monday's game against the Celtics."
   },
   "4278067": {
    "status": "out",
@@ -343,13 +336,6 @@
    "team": "MEM",
    "date": "2026-10-26T19:16Z",
    "note": "Lopez (knee) is questionable for Monday's game in Utah."
-  },
-  "4594268": {
-   "status": "day-to-day",
-   "name": "Anthony Edwards",
-   "team": "MIN",
-   "date": "2026-10-26T17:06Z",
-   "note": "Edwards (knee) is questionable for Monday's game against Cleveland."
   },
   "3934673": {
    "status": "out",
