@@ -181,7 +181,7 @@
    }
   },
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ty Jerome",
     "Cedric Coward",
@@ -195,7 +195,7 @@
    }
   },
   "SAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Acuff",
     "Zach LaVine",
@@ -211,5 +211,5 @@
    }
   }
  },
- "at": "2026-10-25T20:30:13-04:00"
+ "at": "2026-10-25T20:40:00-04:00"
 }
