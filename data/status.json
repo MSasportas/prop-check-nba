@@ -1,11 +1,11 @@
 {
- "finished_at": "2026-10-25T21:20:00-04:00",
+ "finished_at": "2026-10-25T21:30:00-04:00",
  "slate": "2026-10-25",
  "ok": true,
  "steps": {
   "schedule": {
    "ok": true,
-   "sec": 0.2
+   "sec": 0.3
   },
   "rosters": {
    "ok": true,
@@ -29,7 +29,7 @@
   },
   "grade": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.2
   }
  },
  "keys": [
@@ -88,7 +88,7 @@
  "graded_now": 0,
  "sources": {
   "espn": {
-   "ok": 2,
+   "ok": 3,
    "failed": 0
   },
   "rotowire": {
@@ -105,7 +105,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "40251249774",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 12,
   "chain_started_at": "2026-10-25T12:12:48-04:00",
   "run_started_at": "2026-10-25T20:50:11-04:00"
