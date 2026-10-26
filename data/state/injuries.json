@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T18:10:00-04:00",
+ "at": "2026-10-26T18:20:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -35,13 +35,6 @@
    "team": "BKN",
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
-  },
-  "4396971": {
-   "status": "day-to-day",
-   "name": "Naz Reid",
-   "team": "CHA",
-   "date": "2026-10-26T15:18Z",
-   "note": "Reid is listed as probable for Monday's game against Washington, according to the NBA's official injury report."
   },
   "5061575": {
    "status": "out",
@@ -358,6 +351,20 @@
    "date": "2026-10-26T20:50Z",
    "note": "Alvarado (ankle) is out for Tuesday's game against the Pistons."
   },
+  "4593803": {
+   "status": "out",
+   "name": "Jalen Williams",
+   "team": "OKC",
+   "date": "2026-10-26T22:07Z",
+   "note": "Williams has been diagnosed with a dislocated left ankle and fractured fibula, which will require surgery, Shams Charania of ESPN reports."
+  },
+  "4683692": {
+   "status": "out",
+   "name": "Cason Wallace",
+   "team": "OKC",
+   "date": "2026-10-26T22:05Z",
+   "note": "Wallace has been diagnosed with a torn labrum in his left shoulder and will require surgery, Shams Charania of ESPN reports."
+  },
   "5159925": {
    "status": "out",
    "name": "Nikola Topic",
@@ -372,26 +379,12 @@
    "date": "2026-10-26T19:23Z",
    "note": "Sorber (knee) is out for Monday's game versus the Suns, per Andrew Schlecht of The Athletic."
   },
-  "4683692": {
-   "status": "out",
-   "name": "Cason Wallace",
-   "team": "OKC",
-   "date": "2026-10-26T18:24Z",
-   "note": "Wallace (shoulder) is out for Monday's game versus the Suns."
-  },
   "4433255": {
    "status": "out",
    "name": "Chet Holmgren",
    "team": "OKC",
    "date": "2026-10-26T18:22Z",
    "note": "Holmgren (knee) is out for Monday's game versus the Suns."
-  },
-  "4593803": {
-   "status": "out",
-   "name": "Jalen Williams",
-   "team": "OKC",
-   "date": "2026-10-26T14:03Z",
-   "note": "Williams was stretchered off the floor during Sunday's game against the Clippers due to an apparent left ankle injury, NBA writer Justin Russo reports."
   },
   "5106270": {
    "status": "out",
@@ -512,12 +505,26 @@
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
+  "4433174": {
+   "status": "out",
+   "name": "Dylan Cardwell",
+   "team": "SAC",
+   "date": "2026-10-26T22:09Z",
+   "note": "Cardwell (calf) will be re-evaluated in one week, Brenden Nunes of KHTK Sactown Sports 1140 reports."
+  },
+  "4898371": {
+   "status": "out",
+   "name": "Maxime Raynaud",
+   "team": "SAC",
+   "date": "2026-10-26T22:07Z",
+   "note": "Raynaud (knee) is progressing in his rehabilitation and will be re-evaluated in approximately two weeks, Brenden Nunes of KHTK Sactown Sports 1140 reports."
+  },
   "4594327": {
    "status": "out",
    "name": "Keegan Murray",
    "team": "SAC",
-   "date": "2026-10-26T21:58Z",
-   "note": "Murray (ankle) has been ruled out for Sunday's game against the Grizzlies."
+   "date": "2026-10-26T22:01Z",
+   "note": "Murray (ankle) will be re-evaluated in 10-to-14 days, NBA reporter Marc Stein reports."
   },
   "3907387": {
    "status": "out",
@@ -525,20 +532,6 @@
    "team": "SAC",
    "date": "2026-10-21T04:22Z",
    "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
-  },
-  "4433174": {
-   "status": "out",
-   "name": "Dylan Cardwell",
-   "team": "SAC",
-   "date": "2026-10-15T14:40Z",
-   "note": "Cardwell (calf) is expected to miss at least the first five or six games of the regular season, with a longer absence possible, Frankie Cartoscelli of KHTK Sactown Sports 1140 reports."
-  },
-  "4898371": {
-   "status": "out",
-   "name": "Maxime Raynaud",
-   "team": "SAC",
-   "date": "2026-10-15T14:36Z",
-   "note": "Raynaud (knee) is expected to miss at least the first five or six games of the regular season, and potentially longer, Frankie Cartoscelli of KHTK Sactown Sports 1140 reports."
   },
   "6440": {
    "status": "out",

@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2958,
+   "pool_left": 2952,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-26T18:15:00-04:00",
-  "last_read_at": "2026-10-26T18:00:00-04:00",
+  "next_read_at": "2026-10-26T18:30:00-04:00",
+  "last_read_at": "2026-10-26T18:20:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-26T18:00:00-04:00"
+   "at": "2026-10-26T18:20:00-04:00"
   }
  },
  "games": [
@@ -37,7 +37,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-26T17:30:00-04:00",
+   "read_at": "2026-10-26T18:20:00-04:00",
    "picks": 0
   },
   {
@@ -49,9 +49,9 @@
    "detail": "10/26 - 7:00 PM EDT",
    "lineups": {
     "away": "expected",
-    "home": "expected"
+    "home": "confirmed"
    },
-   "read_at": "2026-10-26T17:30:00-04:00",
+   "read_at": "2026-10-26T18:20:00-04:00",
    "picks": 0
   },
   {
@@ -156,11 +156,11 @@
  "picks": [],
  "empty": {
   "text": "No picks yet today",
-  "why": "598 lines read, none cleared both checks.",
-  "next": "2026-10-26T18:15:00-04:00"
+  "why": "594 lines read, none cleared both checks.",
+  "next": "2026-10-26T18:30:00-04:00"
  },
  "counts": {
-  "lines_read": 598,
+  "lines_read": 594,
   "passing": 0,
   "games": 9
  },
@@ -170,6 +170,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-26T18:00:00-04:00",
- "status_at": "2026-10-26T18:00:00-04:00"
+ "generated_at": "2026-10-26T18:20:00-04:00",
+ "status_at": "2026-10-26T18:20:00-04:00"
 }
