@@ -70,9 +70,8 @@
     "Jalen Smith"
    ],
    "status": {
-    "Noa Essengue": "questionable",
-    "Patrick Williams": "questionable",
-    "Nic Claxton": "out"
+    "Nic Claxton": "out",
+    "Patrick Williams": "out"
    }
   },
   "BOS": {
@@ -268,5 +267,5 @@
    }
   }
  },
- "at": "2026-10-26T17:30:00-04:00"
+ "at": "2026-10-26T17:40:00-04:00"
 }
