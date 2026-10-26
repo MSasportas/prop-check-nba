@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T17:00:01-04:00",
+ "at": "2026-10-26T17:10:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -162,19 +162,19 @@
    "date": "2026-10-17T00:52Z",
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
-  "4684742": {
-   "status": "day-to-day",
-   "name": "Ausar Thompson",
-   "team": "DET",
-   "date": "2026-10-26T14:04Z",
-   "note": "Thompson (ankle) is out for Sunday's game against the 76ers, Hunter Patterson of The Athletic reports."
-  },
   "4395702": {
    "status": "day-to-day",
    "name": "Isaiah Joe",
    "team": "DET",
-   "date": "2026-10-26T00:58Z",
-   "note": "Joe (hip) will not return to Sunday's game against the 76ers, Hunter Patterson of The Athletic reports."
+   "date": "2026-10-26T20:54Z",
+   "note": "Joe (hip) is questionable for Tuesday's game against the Knicks."
+  },
+  "4684742": {
+   "status": "day-to-day",
+   "name": "Ausar Thompson",
+   "team": "DET",
+   "date": "2026-10-26T20:50Z",
+   "note": "Thompson (ankle) is listed as questionable for Tuesday's game against New York."
   },
   "4433621": {
    "status": "out",
@@ -369,8 +369,8 @@
    "status": "out",
    "name": "Jose Alvarado",
    "team": "NY",
-   "date": "2026-10-26T20:47Z",
-   "note": "Alvarado (ankle) is out for Sunday's game against the Magic, James L. Edwards III of The Athletic reports."
+   "date": "2026-10-26T20:50Z",
+   "note": "Alvarado (ankle) is out for Tuesday's game against the Pistons."
   },
   "5159925": {
    "status": "out",
