@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T15:30:00-04:00",
+ "at": "2026-10-26T15:40:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -330,12 +330,19 @@
    "date": "2026-10-24T23:07Z",
    "note": "Carr (oblique) is out for Sunday's game in Utah, Khobi Price of The California Post reports."
   },
+  "4432810": {
+   "status": "day-to-day",
+   "name": "Isaiah Stewart",
+   "team": "MEM",
+   "date": "2026-10-26T19:17Z",
+   "note": "Stewart is listed as questionable for Monday's game against the Jazz due to left ankle injury management."
+  },
   "5231919": {
    "status": "day-to-day",
    "name": "Karim Lopez",
    "team": "MEM",
-   "date": "2026-10-26T14:06Z",
-   "note": "Lopez (knee) is out for Sunday's game in Sacramento."
+   "date": "2026-10-26T19:16Z",
+   "note": "Lopez (knee) is questionable for Monday's game in Utah."
   },
   "4594268": {
    "status": "day-to-day",
