@@ -85,10 +85,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:20 - 4th",
+    "detail": "1:03 - 4th",
     "score": {
-     "DET": "96",
-     "PHI": "87"
+     "DET": "104",
+     "PHI": "93"
     }
    },
    {
@@ -99,11 +99,11 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:12 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "MEM": "57",
-     "SAC": "49"
+     "MEM": "67",
+     "SAC": "59"
     }
    }
   ],
