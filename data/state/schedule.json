@@ -99,11 +99,11 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:39 - 4th",
     "score": {
-     "MEM": "96",
-     "SAC": "88"
+     "MEM": "102",
+     "SAC": "101"
     }
    }
   ],
