@@ -13,7 +13,8 @@
   "games_left": 52,
   "games_today": 7,
   "key_count": 6,
-  "made_at": "2026-10-25T20:30:13-04:00"
+  "made_at": "2026-10-25T20:50:00-04:00",
+  "cost_per_read": 3
  },
  "events": {
   "401909861": "9c460fd677a660d1bc7cfea0aa1826c1",
