@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T21:10:01-04:00",
+ "at": "2026-10-26T21:20:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -127,19 +127,19 @@
    "date": "2026-10-22T20:10Z",
    "note": "Lively (foot) has been ruled out for Friday's game against the Pacers."
   },
+  "3138196": {
+   "status": "out",
+   "name": "Cameron Johnson",
+   "team": "DEN",
+   "date": "2026-10-27T01:13Z",
+   "note": "Johnson (ankle) is doubtful to play Monday against the Warriors."
+  },
   "4065813": {
    "status": "out",
    "name": "Alpha Diallo",
    "team": "DEN",
    "date": "2026-10-26T19:03Z",
    "note": "Diallo (wrist) is out for Monday's game against the Warriors."
-  },
-  "3138196": {
-   "status": "day-to-day",
-   "name": "Cameron Johnson",
-   "team": "DEN",
-   "date": "2026-10-25T22:41Z",
-   "note": "Johnson (ankle) is doubtful to play Monday against the Warriors."
   },
   "4592427": {
    "status": "out",
@@ -315,6 +315,13 @@
    "team": "NY",
    "date": "2026-10-26T20:50Z",
    "note": "Alvarado (ankle) is out for Tuesday's game against the Pistons."
+  },
+  "2991350": {
+   "status": "day-to-day",
+   "name": "Alex Caruso",
+   "team": "OKC",
+   "date": "2026-10-27T01:09Z",
+   "note": "Caruso exited to the locker room in the second quarter of Monday's game against the Suns due to an apparent right ankle injury, Rylan Stiles of SI.com reports."
   },
   "4593803": {
    "status": "out",
