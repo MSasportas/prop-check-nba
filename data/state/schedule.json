@@ -296,10 +296,10 @@
     "start": "2026-10-26T20:00:00-04:00",
     "away": "IND",
     "home": "MIL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "18.4 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "IND": "102",
      "MIL": "110"
@@ -329,10 +329,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:57 - 4th",
+    "detail": "6:42 - 4th",
     "score": {
      "ATL": "93",
-     "HOU": "98"
+     "HOU": "109"
     }
    },
    {
@@ -344,10 +344,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:36 - 3rd",
+    "detail": "6:58 - 3rd",
     "score": {
-     "MEM": "58",
-     "UTAH": "54"
+     "MEM": "70",
+     "UTAH": "65"
     }
    },
    {
@@ -358,11 +358,11 @@
     "home": "DEN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:38 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "GS": "18",
-     "DEN": "24"
+     "GS": "28",
+     "DEN": "32"
     }
    }
   ]
