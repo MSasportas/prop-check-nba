@@ -1,5 +1,5 @@
 {
- "at": "2026-10-27T16:10:01-04:00",
+ "at": "2026-10-27T16:20:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -288,12 +288,19 @@
    "date": "2026-10-27T00:08Z",
    "note": "Thiero (knee) is out for Tuesday's game against Portland."
   },
+  "4601025": {
+   "status": "day-to-day",
+   "name": "Pelle Larsson",
+   "team": "MIA",
+   "date": "2026-10-27T20:04Z",
+   "note": "Larsson is listed as probable for Wednesday's game at Atlanta due to a right ankle sprain."
+  },
   "3899664": {
    "status": "day-to-day",
    "name": "Simone Fontecchio",
    "team": "MIA",
-   "date": "2026-10-27T20:02Z",
-   "note": "Fontecchio is not listed in the starting lineup for Wednesday's preseason game against Brooklyn."
+   "date": "2026-10-27T20:03Z",
+   "note": "Fontecchio is doubtful for Wednesday's game in Atlanta due to an illness, per Tim Reynolds of Associated Press."
   },
   "3934673": {
    "status": "out",
@@ -470,13 +477,6 @@
    "date": "2026-10-27T04:58Z",
    "note": "Youngblood (ankle/two-way player) is out for Tuesday's game against the Lakers."
   },
-  "4592435": {
-   "status": "day-to-day",
-   "name": "Branden Carlson",
-   "team": "POR",
-   "date": "2026-10-27T00:04Z",
-   "note": "Carlson (concussion) is listed as questionable for Tuesday's game against the Lakers."
-  },
   "4683678": {
    "status": "day-to-day",
    "name": "Scoot Henderson",
@@ -547,6 +547,13 @@
    "date": "2026-10-27T15:31Z",
    "note": "Leonard (knee) is expected to miss multiple weeks due to swelling in his left knee, Shams Charania of ESPN reports."
   },
+  "4066336": {
+   "status": "day-to-day",
+   "name": "Lauri Markkanen",
+   "team": "UTAH",
+   "date": "2026-10-27T20:10Z",
+   "note": "Markkanen is day-to-day with a right wrist sprain, per NBA reporter Marc Stein."
+  },
   "4277961": {
    "status": "out",
    "name": "Jaren Jackson Jr.",
@@ -560,13 +567,6 @@
    "team": "UTAH",
    "date": "2026-10-27T04:28Z",
    "note": "Hayes (shoulder) is out for Monday's game against the Grizzlies."
-  },
-  "4066336": {
-   "status": "day-to-day",
-   "name": "Lauri Markkanen",
-   "team": "UTAH",
-   "date": "2026-10-27T02:13Z",
-   "note": "Markkanen (wrist) won't return to Monday's game against Memphis."
   },
   "4433268": {
    "status": "out",
