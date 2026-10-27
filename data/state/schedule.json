@@ -326,13 +326,13 @@
     "start": "2026-10-26T20:30:00-04:00",
     "away": "ATL",
     "home": "HOU",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:15 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "ATL": "103",
-     "HOU": "117"
+     "ATL": "110",
+     "HOU": "120"
     }
    },
    {
@@ -343,11 +343,11 @@
     "home": "UTAH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:51 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "MEM": "76",
-     "UTAH": "68"
+     "MEM": "89",
+     "UTAH": "76"
     }
    },
    {
@@ -359,10 +359,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:50 - 2nd",
+    "detail": "3:35 - 2nd",
     "score": {
-     "GS": "41",
-     "DEN": "40"
+     "GS": "52",
+     "DEN": "52"
     }
    }
   ]
