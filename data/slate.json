@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-26T21:40:01-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-26T21:50:00-04:00"
+   "at": "2026-10-26T22:00:00-04:00"
   }
  },
  "games": [
@@ -46,7 +46,7 @@
    "away": "MIN",
    "home": "CLE",
    "state": "in",
-   "detail": "34.0 - OT",
+   "detail": "9.0 - OT",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "CHI",
    "home": "BOS",
    "state": "in",
-   "detail": "4:01 - 4th",
+   "detail": "End of 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "DAL",
    "home": "MIA",
    "state": "in",
-   "detail": "4:52 - 4th",
+   "detail": "20.4 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "IND",
    "home": "MIL",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "8:27 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "PHX",
    "home": "OKC",
    "state": "in",
-   "detail": "37.2 - 3rd",
+   "detail": "9:44 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,7 +116,7 @@
    "away": "ATL",
    "home": "HOU",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "7:13 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -130,7 +130,7 @@
    "away": "MEM",
    "home": "UTA",
    "state": "in",
-   "detail": "10:17 - 2nd",
+   "detail": "5:55 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -155,8 +155,8 @@
  ],
  "picks": [],
  "empty": {
-  "text": "No picks yet today",
-  "why": "612 lines read, none cleared both checks.",
+  "text": "No open picks right now",
+  "why": "Every game has started.",
   "next": null
  },
  "counts": {
@@ -170,6 +170,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-26T21:50:00-04:00",
- "status_at": "2026-10-26T21:50:00-04:00"
+ "generated_at": "2026-10-26T22:00:00-04:00",
+ "status_at": "2026-10-26T22:00:00-04:00"
 }

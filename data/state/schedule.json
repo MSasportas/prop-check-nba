@@ -254,10 +254,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "34.0 - OT",
+    "detail": "9.0 - OT",
     "score": {
-     "MIN": "121",
-     "CLE": "123"
+     "MIN": "122",
+     "CLE": "125"
     }
    },
    {
@@ -268,11 +268,11 @@
     "home": "BOS",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:01 - 4th",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 4th",
     "score": {
-     "CHI": "89",
-     "BOS": "127"
+     "CHI": "99",
+     "BOS": "134"
     }
    },
    {
@@ -284,10 +284,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:52 - 4th",
+    "detail": "20.4 - 4th",
     "score": {
-     "DAL": "104",
-     "MIA": "97"
+     "DAL": "111",
+     "MIA": "109"
     }
    },
    {
@@ -298,11 +298,11 @@
     "home": "MIL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:27 - 4th",
     "score": {
-     "IND": "85",
-     "MIL": "84"
+     "IND": "86",
+     "MIL": "89"
     }
    },
    {
@@ -314,10 +314,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "37.2 - 3rd",
+    "detail": "9:44 - 4th",
     "score": {
-     "PHX": "85",
-     "OKC": "95"
+     "PHX": "91",
+     "OKC": "104"
     }
    },
    {
@@ -328,11 +328,11 @@
     "home": "HOU",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:13 - 3rd",
     "score": {
-     "ATL": "66",
-     "HOU": "63"
+     "ATL": "74",
+     "HOU": "73"
     }
    },
    {
@@ -344,10 +344,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:17 - 2nd",
+    "detail": "5:55 - 2nd",
     "score": {
-     "MEM": "37",
-     "UTAH": "25"
+     "MEM": "45",
+     "UTAH": "36"
     }
    },
    {
