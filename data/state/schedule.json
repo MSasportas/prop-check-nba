@@ -359,10 +359,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:44 - 4th",
+    "detail": "7:26 - 4th",
     "score": {
-     "GS": "100",
-     "DEN": "86"
+     "GS": "111",
+     "DEN": "93"
     }
    }
   ]

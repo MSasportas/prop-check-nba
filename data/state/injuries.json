@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T22:30:01-04:00",
+ "at": "2026-10-27T00:10:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -64,6 +64,13 @@
    "date": "2026-10-20T20:55Z",
    "note": "Boswell (knee) is out for Wednesday's season opener against the Nets."
   },
+  "4431687": {
+   "status": "day-to-day",
+   "name": "Patrick Williams",
+   "team": "CHI",
+   "date": "2026-10-27T03:54Z",
+   "note": "Williams (groin) has been ruled out for Monday's game against the Celtics."
+  },
   "4278067": {
    "status": "out",
    "name": "Nic Claxton",
@@ -71,12 +78,12 @@
    "date": "2026-10-26T22:20Z",
    "note": "Claxton (hamstring) participated in individual drills Monday morning and hopes to join the team for practice next week, Joe Cowley of the Chicago Sun-Times reports."
   },
-  "4431687": {
-   "status": "out",
-   "name": "Patrick Williams",
-   "team": "CHI",
-   "date": "2026-10-26T21:33Z",
-   "note": "Williams (groin) has been ruled out for Monday's game against the Celtics."
+  "4278594": {
+   "status": "day-to-day",
+   "name": "Naji Marshall",
+   "team": "DAL",
+   "date": "2026-10-27T03:55Z",
+   "note": "Marshall (illness) has been ruled out for Monday's game against the Heat."
   },
   "5279129": {
    "status": "day-to-day",
@@ -91,13 +98,6 @@
    "team": "DAL",
    "date": "2026-10-26T17:09Z",
    "note": "Martin (thumb) is out for Monday's game against the Heat, Mike Curtis of The Dallas Morning News reports."
-  },
-  "4278594": {
-   "status": "out",
-   "name": "Naji Marshall",
-   "team": "DAL",
-   "date": "2026-10-25T20:25Z",
-   "note": "Marshall (illness) has been ruled out for Monday's game against the Heat."
   },
   "5148538": {
    "status": "out",
