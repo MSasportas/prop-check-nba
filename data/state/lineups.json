@@ -230,13 +230,13 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Stephen Curry",
     "Brandin Podziemski",
     "Yaxel Lendeborg",
-    "Draymond Green",
-    "Graham Ike"
+    "Gui Santos",
+    "Draymond Green"
    ],
    "status": {
     "Jimmy Butler": "out",
@@ -245,7 +245,7 @@
    }
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -261,5 +261,5 @@
    }
   }
  },
- "at": "2026-10-26T21:30:01-04:00"
+ "at": "2026-10-26T21:40:01-04:00"
 }

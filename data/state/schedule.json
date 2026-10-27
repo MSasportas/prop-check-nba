@@ -254,10 +254,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "25.8 - 4th",
+    "detail": "5:00 - OT",
     "score": {
-     "MIN": "112",
-     "CLE": "111"
+     "MIN": "113",
+     "CLE": "116"
     }
    },
    {
@@ -269,10 +269,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:35 - 4th",
+    "detail": "6:53 - 4th",
     "score": {
-     "CHI": "75",
-     "BOS": "107"
+     "CHI": "85",
+     "BOS": "116"
     }
    },
    {
@@ -283,11 +283,11 @@
     "home": "MIA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:13 - 4th",
     "score": {
-     "DAL": "83",
-     "MIA": "84"
+     "DAL": "95",
+     "MIA": "93"
     }
    },
    {
@@ -299,10 +299,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:34 - 3rd",
+    "detail": "3:48 - 3rd",
     "score": {
-     "IND": "71",
-     "MIL": "63"
+     "IND": "75",
+     "MIL": "75"
     }
    },
    {
@@ -314,10 +314,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:11 - 3rd",
+    "detail": "4:14 - 3rd",
     "score": {
-     "PHX": "66",
-     "OKC": "75"
+     "PHX": "69",
+     "OKC": "86"
     }
    },
    {
@@ -328,11 +328,11 @@
     "home": "HOU",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:33 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "ATL": "55",
-     "HOU": "52"
+     "ATL": "66",
+     "HOU": "63"
     }
    },
    {
@@ -344,10 +344,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:53 - 1st",
+    "detail": "1.3 - 1st",
     "score": {
-     "MEM": "12",
-     "UTAH": "15"
+     "MEM": "29",
+     "UTAH": "21"
     }
    },
    {

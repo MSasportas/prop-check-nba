@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T21:30:01-04:00",
+ "at": "2026-10-26T21:40:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -82,8 +82,8 @@
    "status": "day-to-day",
    "name": "Sergio de Larrea",
    "team": "DAL",
-   "date": "2026-10-27T00:51Z",
-   "note": "De Larrea is doubtful to return to Monday's game against the Heat due to a right knee strain."
+   "date": "2026-10-27T01:25Z",
+   "note": "De Larrea (knee) won't return to Monday's game against the Heat. He'll finish with zero points (0-1 FG) and one rebound across six minutes."
   },
   "3138160": {
    "status": "out",
@@ -125,7 +125,7 @@
    "name": "Cameron Johnson",
    "team": "DEN",
    "date": "2026-10-27T01:13Z",
-   "note": "Johnson (ankle) is doubtful to play Monday against the Warriors."
+   "note": "Johnson (ankle) has been ruled out for Monday's game against Golden State."
   },
   "4065813": {
    "status": "out",
@@ -532,6 +532,13 @@
    "team": "TOR",
    "date": "2026-10-20T18:05Z",
    "note": "Bittle (foot) is out for Wednesday's season opener against the Bulls."
+  },
+  "4066336": {
+   "status": "day-to-day",
+   "name": "Lauri Markkanen",
+   "team": "UTAH",
+   "date": "2026-10-27T01:31Z",
+   "note": "Markkanen went to the locker room during the first quarter of Monday's game against the Grizzlies due to an apparent hand injury, Shreyas Laddha of The Salt Lake Tribune reports."
   },
   "4397077": {
    "status": "out",
