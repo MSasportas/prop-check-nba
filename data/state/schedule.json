@@ -344,10 +344,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:19 - 4th",
+    "detail": "11.6 - 4th",
     "score": {
-     "MEM": "102",
-     "UTAH": "101"
+     "MEM": "110",
+     "UTAH": "105"
     }
    },
    {
@@ -358,11 +358,11 @@
     "home": "DEN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:03 - 3rd",
     "score": {
-     "GS": "60",
-     "DEN": "56"
+     "GS": "69",
+     "DEN": "60"
     }
    }
   ]
