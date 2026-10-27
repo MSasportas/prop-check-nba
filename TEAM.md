@@ -93,11 +93,13 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 - **Other books asked (9, same credit):** draftkings, fanduel, betmgm, espnbet, pinnacle, betonlineag, betrivers, novig, prophetx.
   Verified 2026-10-25/26: all 9 return rebounds, points and assists (10-26 A read: 7 books on 9/9 games; BetRivers 8/9; Pinnacle
   9/9 games but misses some lines). A silent book costs nothing; swap per NHL item 24 (quality sharp books).
+  2026-10-27 A read: all 9 also return threes (BetMGM 3/4 games, the rest 4/4). **Hard Rock returned nothing** at the 11 AM A read
+  (all 4 games; it had all markets at 11 AM on 10-26): its NBA props can post after 11 AM. B/C/D retry by design; the page now says so.
 - **Discord:** `scripts/notify.py`, secret `DISCORD_WEBHOOK`. Sends NEW PICKS (batched), PULLED (only picks already sent, before tip, with
   the if-bet line), PRICE FINAL, ACTION NEEDED (keys refused / pool low, once a day each), a one-time hello. Never no-pick nights,
   heartbeats, grading or errors. Quiet 12:30-9:00 AM ET. Max 12 messages a day.
 - **Debug:** `python scripts/run.py --explain` lists every line (all markets) on the latest reads and the first reason it did not pass.
-  Tests: `python -m unittest discover -s tests` (30; `tests/world.py` = fake day from the real probe payloads; `tests/test_qa_failures.py` = QA's regressions). Env: `PC_NOW`, `PC_DATA_DIR`, `PC_ODDS_FIXTURE_DIR`, `PC_ESPN_FIXTURE_DIR`.
+  Tests: `python -m unittest discover -s tests` (50; `tests/world.py` = fake day from the real probe payloads; `tests/test_qa_failures.py` = QA's regressions). Env: `PC_NOW`, `PC_DATA_DIR`, `PC_ODDS_FIXTURE_DIR`, `PC_ESPN_FIXTURE_DIR`.
 
 ## 6. Reviews (scheduled tasks; each reads this file first and updates it last)
 - **Daily check, 2:07 PM ET** (scheduled task "Prop Check NBA daily check"): chain alive, A read ran, failed steps, unmatched names, grading done for last night; fix what's broken; no
@@ -141,6 +143,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-27 2:15 PM (CEO, daily check): alive (chain link 73, status 1:50 PM, all steps ok, Actions green, pool 2,855). A read ran 11 AM (4 games x 4 credits) but Hard Rock had not posted any NBA props (other 9 books had all 4 markets incl. threes); B read 6 PM. 10-26: 0 picks, nothing to grade (no events.jsonl yet). Rotowire showed confirmed starters last night (18 confirmed states). No unmatched, no unknown teams. Fix: empty state said "No prices read yet" after a read with no Hard Rock; now says Hard Rock hasn't posted yet (Builder). QA (fresh, 380px Chromium): SHIP, 1 low fix applied; regression test added, 50 tests pass.
 - 2026-10-26 11:40 PM (CEO): v1.2 threes (Matt). Re-seeded with fg3m, DS fit, engine/page/Discord, box cache cleared. QA (fresh): SHIP WITH
   FIXES, all low (market field to Discord, 'threes' instead of '3PM' which read like a clock time, doc numbers); fixed, 49 tests pass.
 - 2026-10-26 8:45 PM (CEO, Matt strongly concerned Hard Rock prices NBA far more carefully than NHL): measured. NBA Oct 26: 695 main

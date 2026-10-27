@@ -212,3 +212,35 @@ class TestQAOldRead(unittest.TestCase):
             self.assertTrue(b, "no B read for the 5 PM game; %d A reads were billed first" % spent_a)
         finally:
             w.close()
+
+
+class TestQAHardRockNotPosted(unittest.TestCase):
+    def test_reads_without_hard_rock_say_so(self):
+        """2026-10-27: the 11 AM read came back with other books but no Hard Rock for every game.
+        The empty state must say Hard Rock hasn't posted, not 'No prices read yet'."""
+        import teams
+        w = World()
+        try:
+            def write(hr):
+                for gid, (a, h, t) in GAMES.items():
+                    bms = ([book("hardrockbet", HR, "2026-10-25T15:00:00Z", link=True)] if hr else []) + \
+                          [book(b, MKT, "2026-10-25T15:00:00Z") for b in BOOKS]
+                    w.write_odds("odds_%s_%s.json" % (teams.code(a).lower(), teams.code(h).lower()),
+                                 {"id": "ev" + gid, "bookmakers": bms})
+            write(False)
+            w.run("2026-10-25T10:00:00-04:00")
+            self.assertFalse(os.path.exists(os.path.join(w.data, "odds", "2026-10-25.json")))   # no odds file at all
+            self.assertIn("No prices read yet", w.read("slate.json")["empty"]["why"])
+            w.run("2026-10-25T11:01:00-04:00")
+            fs = w.read("odds", "2026-10-25.json")["fetches"]
+            self.assertTrue(fs and not any(f["markets"] for f in fs))
+            why = w.read("slate.json")["empty"]["why"]
+            self.assertIn("Hard Rock hasn't posted NBA player props yet (last checked 11:01 AM)", why)
+            write(True)
+            w.run("2026-10-25T15:31:00-04:00")
+            s = w.read("slate.json")
+            if s["empty"]:
+                self.assertIn("lines read", s["empty"]["why"])
+            self.assertGreater(s["counts"]["lines_read"], 0)
+        finally:
+            w.close()

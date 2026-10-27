@@ -317,6 +317,12 @@ class Run:
             elif o.get("no_keys") or refused:
                 empty = {"text": "No picks yet today", "why": "No Hard Rock prices can be read until odds keys are added.",
                          "next": None}
+            elif not lines_read and self.hr_missing_at():
+                empty = {"text": "No picks yet today",
+                         "why": "Hard Rock hasn't posted NBA player props yet (last checked %s).%s "
+                                "We look again before each tip." % (common.fmt_time(self.hr_missing_at()),
+                                " Other books have." if any(f.get("others") for f in self.odds_doc.get("fetches", []))
+                                else ""), "next": nxt}
             elif not lines_read:
                 empty = {"text": "No picks yet today", "why": "No prices read yet. The first close look is 90 minutes before each tip.",
                          "next": nxt}
@@ -346,6 +352,13 @@ class Run:
             common.write_json(common.dpath("slate.json"), body)
             self.write_status()
         self.slate_doc = body if (changed or stale) else old
+
+    def hr_missing_at(self):
+        """Latest read time today when reads came back but none carried Hard Rock (book not posted yet); else None."""
+        fs = (getattr(self, "odds_doc", None) or {}).get("fetches", [])
+        if not fs or any(f.get("markets") for f in fs):
+            return None
+        return max(common.parse_iso(f["at"]) for f in fs)
 
     def summ_paused(self):
         return bool(getattr(self, "summ", {}) and self.summ.get("paused"))
