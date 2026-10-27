@@ -1,5 +1,5 @@
 {
- "at": "2026-10-27T00:30:00-04:00",
+ "at": "2026-10-27T00:40:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -113,6 +113,13 @@
    "date": "2026-10-22T20:10Z",
    "note": "Lively (foot) has been ruled out for Friday's game against the Pacers."
   },
+  "4592427": {
+   "status": "out",
+   "name": "Spencer Jones",
+   "team": "DEN",
+   "date": "2026-10-27T04:20Z",
+   "note": "Jones (hamstring) is progressing in his recovery and could be back with the team within the next three games, Vinny Benedetto of The Denver Gazette reports."
+  },
   "3138196": {
    "status": "out",
    "name": "Cameron Johnson",
@@ -126,13 +133,6 @@
    "team": "DEN",
    "date": "2026-10-26T19:03Z",
    "note": "Diallo (wrist) is out for Monday's game against the Warriors."
-  },
-  "4592427": {
-   "status": "out",
-   "name": "Spencer Jones",
-   "team": "DEN",
-   "date": "2026-10-25T22:37Z",
-   "note": "Jones (hamstring) is out for Monday's matchup with the Warriors."
   },
   "4432181": {
    "status": "out",
@@ -422,10 +422,10 @@
    "note": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN."
   },
   "4601023": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Oso Ighodaro",
    "team": "PHX",
-   "date": "2026-10-26T18:30Z",
+   "date": "2026-10-27T04:24Z",
    "note": "Ighodaro (oblique) is out for Monday's matchup with the Thunder."
   },
   "4701232": {
@@ -519,6 +519,13 @@
    "date": "2026-10-20T18:05Z",
    "note": "Bittle (foot) is out for Wednesday's season opener against the Bulls."
   },
+  "4397077": {
+   "status": "day-to-day",
+   "name": "Jaxson Hayes",
+   "team": "UTAH",
+   "date": "2026-10-27T04:28Z",
+   "note": "Hayes (shoulder) is out for Monday's game against the Grizzlies."
+  },
   "4066336": {
    "status": "day-to-day",
    "name": "Lauri Markkanen",
@@ -532,13 +539,6 @@
    "team": "UTAH",
    "date": "2026-10-27T02:06Z",
    "note": "Jackson has been ruled out for the rest of Monday's game against the Grizzlies due to a right knee injury."
-  },
-  "4397077": {
-   "status": "out",
-   "name": "Jaxson Hayes",
-   "team": "UTAH",
-   "date": "2026-10-27T00:11Z",
-   "note": "Hayes (shoulder) is out for Monday's game against the Grizzlies."
   },
   "4433268": {
    "status": "out",

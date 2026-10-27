@@ -356,13 +356,13 @@
     "start": "2026-10-26T22:00:00-04:00",
     "away": "GS",
     "home": "DEN",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "30.7 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "GS": "134",
-     "DEN": "112"
+     "DEN": "114"
     }
    }
   ]
