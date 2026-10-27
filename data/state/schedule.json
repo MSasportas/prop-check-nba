@@ -284,9 +284,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:37 - 3rd",
+    "detail": "7:32 - 3rd",
     "score": {
-     "DAL": "62",
+     "DAL": "64",
      "MIA": "70"
     }
    },
