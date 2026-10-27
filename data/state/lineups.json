@@ -35,9 +35,8 @@
     "Paul Reed"
    ],
    "status": {
-    "Ausar Thompson": "questionable",
-    "Isaiah Joe": "questionable",
-    "Jalen Duren": "out"
+    "Jalen Duren": "out",
+    "Isaiah Joe": "out"
    }
   },
   "NY": {
@@ -111,5 +110,5 @@
    }
   }
  },
- "at": "2026-10-27T19:10:00-04:00"
+ "at": "2026-10-27T19:20:00-04:00"
 }
