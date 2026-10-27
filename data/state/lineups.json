@@ -96,6 +96,7 @@
     "Daniel Gafford"
    ],
    "status": {
+    "Daniel Gafford": "questionable",
     "Sergio de Larrea": "doubtful",
     "Santi Aldama": "out",
     "Tarik Biberovic": "out",
@@ -167,6 +168,7 @@
     "Isaiah Hartenstein"
    ],
    "status": {
+    "Alex Caruso": "questionable",
     "Chet Holmgren": "out",
     "Thomas Sorber": "out",
     "Nikola Topic": "out",
@@ -259,5 +261,5 @@
    }
   }
  },
- "at": "2026-10-26T21:00:00-04:00"
+ "at": "2026-10-26T21:10:01-04:00"
 }
