@@ -1,5 +1,5 @@
 {
- "at": "2026-10-27T17:20:00-04:00",
+ "at": "2026-10-27T17:30:00-04:00",
  "list": {
   "4397183": {
    "status": "day-to-day",
@@ -75,8 +75,15 @@
    "status": "day-to-day",
    "name": "Patrick Williams",
    "team": "CHI",
-   "date": "2026-10-27T03:54Z",
-   "note": "Williams (groin) has been ruled out for Monday's game against the Celtics."
+   "date": "2026-10-27T21:23Z",
+   "note": "Williams (groin) is questionable for Wednesday's game against the Knicks."
+  },
+  "5105555": {
+   "status": "day-to-day",
+   "name": "Tobe Awaka",
+   "team": "CHI",
+   "date": "2026-10-27T21:19Z",
+   "note": "Awaka (ankle) is questionable for Wednesday's game against the Knicks."
   },
   "4278067": {
    "status": "out",
@@ -225,19 +232,47 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
-  "4017837": {
-   "status": "out",
-   "name": "Ivica Zubac",
-   "team": "IND",
-   "date": "2026-10-27T21:12Z",
-   "note": "The Pacers don't have a timetable for Zubac's return after he suffered a left ankle injury Sunday against Brooklyn, but he was able to walk without a boot Monday, Dustin Dopirak of The Indianapolis St"
-  },
   "4395712": {
    "status": "day-to-day",
    "name": "Andrew Nembhard",
    "team": "IND",
-   "date": "2026-10-27T04:22Z",
-   "note": "Nembhard (neck/back) has been ruled out for Monday's game against Milwaukee, Dustin Dopirak of The Indianapolis Star reports."
+   "date": "2026-10-27T21:21Z",
+   "note": "Nembhard (neck) is listed as questionable for Wednesday's game against Philadelphia."
+  },
+  "4396993": {
+   "status": "day-to-day",
+   "name": "Tyrese Haliburton",
+   "team": "IND",
+   "date": "2026-10-27T21:19Z",
+   "note": "Haliburton is listed as questionable for Wednesday's game against the 76ers due to left hamstring tightness."
+  },
+  "4278355": {
+   "status": "day-to-day",
+   "name": "Obi Toppin",
+   "team": "IND",
+   "date": "2026-10-27T21:17Z",
+   "note": "Toppin is probable to play Wednesday against the 76ers due to a left hand sprain."
+  },
+  "4396909": {
+   "status": "day-to-day",
+   "name": "Aaron Nesmith",
+   "team": "IND",
+   "date": "2026-10-27T21:15Z",
+   "note": "Nesmith (hamstring) is probable for Wednesday's game against the 76ers."
+  },
+  "2530530": {
+   "status": "out",
+   "name": "T.J. McConnell",
+   "team": "IND",
+   "date": "2026-10-27T21:15Z",
+   "note": "McConnell (hamstring) is out for Wednesday's game against the 76ers."
+  },
+  "4017837": {
+   "status": "out",
+   "name": "Ivica Zubac",
+   "team": "IND",
+   "date": "2026-10-27T21:13Z",
+   "note": "Zubac (ankle) is out for Wednesday's game against the 76ers."
   },
   "4433076": {
    "status": "out",
@@ -245,13 +280,6 @@
    "team": "IND",
    "date": "2026-10-26T23:09Z",
    "note": "Sheppard is scheduled for surgery to repair a torn meniscus in his left knee Wednesday, Dustin Dopirak of The Indianapolis Star reports."
-  },
-  "2530530": {
-   "status": "out",
-   "name": "T.J. McConnell",
-   "team": "IND",
-   "date": "2026-10-26T18:26Z",
-   "note": "McConnell (hamstring) is out for Monday's game against the Bucks."
   },
   "5157066": {
    "status": "out",
