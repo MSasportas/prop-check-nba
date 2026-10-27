@@ -269,7 +269,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:33 - 2nd",
+    "detail": "6:25 - 2nd",
     "score": {
      "CHI": "38",
      "BOS": "44"
@@ -299,10 +299,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:44 - 1st",
+    "detail": "7:43 - 1st",
     "score": {
      "IND": "6",
-     "MIL": "11"
+     "MIL": "12"
     }
    },
    {
