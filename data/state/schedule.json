@@ -341,10 +341,10 @@
     "start": "2026-10-26T21:00:00-04:00",
     "away": "MEM",
     "home": "UTAH",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11.6 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "MEM": "110",
      "UTAH": "105"
@@ -359,10 +359,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:57 - 3rd",
+    "detail": "5:57 - 3rd",
     "score": {
-     "GS": "69",
-     "DEN": "60"
+     "GS": "80",
+     "DEN": "70"
     }
    }
   ]

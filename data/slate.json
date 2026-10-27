@@ -10,7 +10,7 @@
    "refused": false,
    "no_keys": false,
    "days_left": 6,
-   "allowance": 66.6,
+   "allowance": 66.2,
    "reads": [
     "A",
     "B",
@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-26T21:40:01-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-26T23:30:16-04:00"
+   "at": "2026-10-26T23:40:01-04:00"
   }
  },
  "games": [
@@ -129,8 +129,8 @@
    "start": "2026-10-26T21:00:00-04:00",
    "away": "MEM",
    "home": "UTA",
-   "state": "in",
-   "detail": "11.6 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -144,7 +144,7 @@
    "away": "GSW",
    "home": "DEN",
    "state": "in",
-   "detail": "9:57 - 3rd",
+   "detail": "5:57 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -170,6 +170,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-26T23:30:16-04:00",
- "status_at": "2026-10-26T23:30:16-04:00"
+ "generated_at": "2026-10-26T23:40:01-04:00",
+ "status_at": "2026-10-26T23:40:01-04:00"
 }

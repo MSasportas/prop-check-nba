@@ -1,20 +1,20 @@
 {
  "date": "2026-10-26",
  "plan": {
-  "allowance": 66.6,
+  "allowance": 66.2,
   "reads": [
    "A",
    "B",
    "C",
    "D"
   ],
-  "budget_today": 599,
-  "pool_at_plan": 2997,
+  "budget_today": 595,
+  "pool_at_plan": 2979,
   "games_left": 45,
   "games_today": 9,
   "key_count": 6,
-  "made_at": "2026-10-26T05:00:01-04:00",
-  "cost_per_read": 3
+  "made_at": "2026-10-26T23:40:01-04:00",
+  "cost_per_read": 4
  },
  "events": {
   "401909868": "3354649681943139cafc0049d42d9c8c",
