@@ -1,5 +1,5 @@
 {
- "at": "2026-10-27T10:20:00-04:00",
+ "at": "2026-10-27T11:00:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -71,6 +71,13 @@
    "date": "2026-10-26T22:20Z",
    "note": "Claxton (hamstring) participated in individual drills Monday morning and hopes to join the team for practice next week, Joe Cowley of the Chicago Sun-Times reports."
   },
+  "4593125": {
+   "status": "out",
+   "name": "Santi Aldama",
+   "team": "DAL",
+   "date": "2026-10-27T14:43Z",
+   "note": "The Mavericks assigned Aldama (knee) to the G League's Texas Legends on Tuesday, Marc Stein of The Stein Line reports."
+  },
   "4278594": {
    "status": "day-to-day",
    "name": "Naji Marshall",
@@ -98,13 +105,6 @@
    "team": "DAL",
    "date": "2026-10-24T18:21Z",
    "note": "Biberovic (heel) has been ruled out for Saturday's game against San Antonio."
-  },
-  "4593125": {
-   "status": "out",
-   "name": "Santi Aldama",
-   "team": "DAL",
-   "date": "2026-10-24T18:18Z",
-   "note": "Aldama (knee) has been ruled out for Saturday's game against the Spurs."
   },
   "4683688": {
    "status": "out",
