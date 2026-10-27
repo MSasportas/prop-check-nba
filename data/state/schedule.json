@@ -299,10 +299,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:15 - 4th",
+    "detail": "18.4 - 4th",
     "score": {
-     "IND": "100",
-     "MIL": "108"
+     "IND": "102",
+     "MIL": "110"
     }
    },
    {
@@ -311,13 +311,13 @@
     "start": "2026-10-26T20:00:00-04:00",
     "away": "PHX",
     "home": "OKC",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:58 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "PHX": "104",
-     "OKC": "119"
+     "PHX": "114",
+     "OKC": "125"
     }
    },
    {
@@ -329,10 +329,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:08 - 3rd",
+    "detail": "8:57 - 4th",
     "score": {
-     "ATL": "85",
-     "HOU": "89"
+     "ATL": "93",
+     "HOU": "98"
     }
    },
    {
@@ -343,11 +343,11 @@
     "home": "UTAH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:36 - 3rd",
     "score": {
      "MEM": "58",
-     "UTAH": "52"
+     "UTAH": "54"
     }
    },
    {
@@ -359,10 +359,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:58 - 1st",
+    "detail": "3:38 - 1st",
     "score": {
-     "GS": "13",
-     "DEN": "10"
+     "GS": "18",
+     "DEN": "24"
     }
    }
   ]
