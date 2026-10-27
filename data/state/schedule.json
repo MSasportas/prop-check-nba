@@ -373,13 +373,13 @@
     "start": "2026-10-27T19:30:00-04:00",
     "away": "BKN",
     "home": "BOS",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/27 - 7:30 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:38 - 1st",
     "score": {
-     "BKN": "0",
-     "BOS": "0"
+     "BKN": "12",
+     "BOS": "8"
     }
    },
    {
