@@ -1,5 +1,5 @@
 {
- "at": "2026-10-27T13:10:01-04:00",
+ "at": "2026-10-27T13:20:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -386,6 +386,20 @@
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
+  "3904625": {
+   "status": "out",
+   "name": "Tacko Fall",
+   "team": "PHI",
+   "date": "2026-10-27T17:04Z",
+   "note": "Fall (quadriceps) was able to practice on Tuesday, Keith Pompey of The Philadelphia Inquirer reports."
+  },
+  "5124612": {
+   "status": "day-to-day",
+   "name": "VJ Edgecombe",
+   "team": "PHI",
+   "date": "2026-10-27T17:03Z",
+   "note": "Edgecombe (abdomen) practiced in full Tuesday, Keith Pompey of The Philadelphia Inquirer reports."
+  },
   "4432446": {
    "status": "day-to-day",
    "name": "Jabari Walker",
@@ -393,26 +407,12 @@
    "date": "2026-10-26T14:05Z",
    "note": "Walker has been ruled out for Sunday's game against the Pistons due to left knee soreness."
   },
-  "5124612": {
-   "status": "day-to-day",
-   "name": "VJ Edgecombe",
-   "team": "PHI",
-   "date": "2026-10-26T14:05Z",
-   "note": "Edgecombe (abdomen) is out for Sunday's game against the Pistons, Adam Aaronson of PhillyVoice.com reports."
-  },
   "3059318": {
    "status": "day-to-day",
    "name": "Joel Embiid",
    "team": "PHI",
    "date": "2026-10-26T14:04Z",
    "note": "Embiid has been ruled out for Sunday's game against Detroit due to right plantar fasciitis management."
-  },
-  "3904625": {
-   "status": "out",
-   "name": "Tacko Fall",
-   "team": "PHI",
-   "date": "2026-10-25T17:13Z",
-   "note": "Fall (quadriceps) has been ruled out for Sunday's game against Detroit."
   },
   "4870562": {
    "status": "out",
