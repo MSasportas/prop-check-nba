@@ -191,7 +191,7 @@ class TestQAOldRead(unittest.TestCase):
         from datetime import datetime, timedelta
         w = World()
         try:
-            w.write_odds("pool.json", {"keys": [110, 110, 110]})
+            w.write_odds("pool.json", {"keys": [170, 170, 170]})   # v1.2: 4 credits a read -> C and B
 
             def write(hr):
                 for gid, (a, h, t) in GAMES.items():

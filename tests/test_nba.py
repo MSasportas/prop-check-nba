@@ -37,9 +37,10 @@ class TestPrices(unittest.TestCase):
         self.assertAlmostEqual(odds.fair_two_sided(-110, -110), 0.5)
 
     def test_plan_reads(self):
-        # 3 markets = 3 credits a read
-        self.assertEqual(odds.active_reads(12.1, CFG), {"A", "B", "C", "D"})
-        self.assertEqual(odds.active_reads(6.7, CFG), {"C", "B"})
+        # 4 markets = 4 credits a read; 6 keys over ~225 games a month = 13.3 a game -> C, B, D (the morning A read drops)
+        self.assertEqual(odds.active_reads(16.1, CFG), {"A", "B", "C", "D"})
+        self.assertEqual(odds.active_reads(13.3, CFG), {"C", "B", "D"})
+        self.assertEqual(odds.active_reads(8.1, CFG), {"C", "B"})
         self.assertEqual(odds.active_reads(2.4, CFG), {"C"})
 
     def test_due_reads_latest_type(self):
@@ -227,6 +228,21 @@ class TestEndToEnd(unittest.TestCase):
         self.assertEqual(engine.grade_one(it, [{"pid": "9", "dnp": False, "min": 30, "reb": 9, "pts": 25}], CFG)[:2],
                          ("W", "25 points"))
         self.assertEqual(engine.grade_one(it, [{"pid": "9", "dnp": False, "min": 30, "reb": 9}], CFG)[0], None)
+
+    def test_grade_threes(self):
+        it = {"shown": {"pid": "9", "line": 2.5, "side": "over", "price": 120, "market": "threes"}}
+        self.assertEqual(engine.grade_one(it, [{"pid": "9", "dnp": False, "min": 30, "fg3m": 3.0}], CFG)[:2], ("W", "3 threes"))
+        self.assertEqual(engine.grade_one(it, [{"pid": "9", "dnp": False, "min": 30, "fg3m": 2.0}], CFG)[0], "L")
+
+    def test_threes_pick(self):
+        hr_x = {"player_threes": [("Luka Doncic", 1.5, -135, 105)]}
+        ot_x = {"player_threes": [("Luka Doncic", 1.5, 105, -125)]}
+        self.w.lal_utah("2026-10-25T19:30:00Z", HR_GOOD, MKT, hr_extra=hr_x, others_extra=ot_x)
+        self.w.run("2026-10-25T15:31:00-04:00")
+        ids = [e["id"] for e in self.w.events() if e["t"] == "shown"]
+        # the model may veto this line (end-to-end threes pick: tests/test_qa_v12.py); here the read must parse threes
+        doc = self.w.read("odds", "2026-10-25.json")
+        self.assertIn("threes", doc["fetches"][0]["markets"])
 
     def test_rules_doc(self):
         self.w.run("2026-10-25T09:31:00-04:00")

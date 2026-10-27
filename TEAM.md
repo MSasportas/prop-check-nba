@@ -8,7 +8,7 @@ Sister company of Prop Check NHL (MSasportas/prop-check-nhl): own CEO, team, rep
 template and is READ ONLY from here. Never push to it.
 
 ## 1. The product
-Every NBA game day: every rebounds, points and assists leg that qualifies at a real Hard Rock (`hardrockbet`) price, ranked best first, each with
+Every NBA game day: every rebounds, points, assists and 3-pointers-made leg that qualifies at a real Hard Rock (`hardrockbet`) price, ranked best first, each with
 the price, our chance vs the price's break-even and a one-line plain reason. The page updates through the day; each pick shows how
 settled it is (Early / Injury report clear / Starters confirmed, then Locked) and pulled picks stay visible with the reason and what it
 means if Matt already bet. Dark, phone first (~380px). The Record is the scoreboard. Parlays are not offered (Matt, setup).
@@ -17,7 +17,7 @@ means if Matt already bet. Dark, phone first (~380px). The Record is the scorebo
 | Fact | Locked value |
 |---|---|
 | Book | Hard Rock Florida only. A pick needs a real Hard Rock number |
-| Markets | **Player rebounds, points and assists (points + assists added 2026-10-25 8:22 PM, Matt). Main line only (no alt ladders). Over and under.** Everything else is out |
+| Markets | **Player rebounds, points, assists and 3-pointers made (points + assists added 2026-10-25 8:22 PM; threes 2026-10-26 11:21 PM, Matt). Main line only (no alt ladders). Over and under.** Everything else is out |
 | Price | No single leg worse than -200. Plus money is fine |
 | Parlays | **Off** |
 | When Matt bets | **The last hour before tip** (the page must be sharpest then) |
@@ -48,7 +48,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 
 | Area | Rule |
 |---|---|
-| Markets | Hard Rock `player_rebounds`, `player_points`, `player_assists`: the main line per player (the two-sided pair closest to even), over and under. Alt lines are never used |
+| Markets | Hard Rock `player_rebounds`, `player_points`, `player_assists`, `player_threes`: the main line per player (the two-sided pair closest to even), over and under. Alt lines are never used |
 | Step 1: the gap | All of: Hard Rock EV vs the market fair >= **+3.0%**; >= **4 other books** priced the same player, same line, both sides, fresh, hold 0-15%; **market fair = median** of the books' proportionally de-vigged chance (even count: mean of the middle two); **Pinnacle present** with both sides and Pinnacle-fair EV on Hard Rock's price >= 0.0%; Hard Rock price **-200 to +200** |
 | Step 2: the guard | final = 0.8 x market fair + 0.2 x (model chance + offset). Passes iff final EV >= **+2.0%**. No model for the player = no pick. Offset frozen (section 7 item 3) |
 | Which reads can pick | B (90 min), C (45 min) and D (20 min before tip) reads that carry other books. The morning A read is a baseline only |
@@ -56,10 +56,10 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | Eligibility | >= 10 games of history (2025-26 + 2026-27 box scores); listed **Out or Doubtful -> never**; **Questionable / Day-to-day / GTD -> no new pick** until he drops off the report or is in a confirmed starting five; missed his team's last game -> waits for confirmed starters (and must start); minutes last 3 games < 60% of his recent average -> no pick (role or restriction changed) |
 | Settled chip | **Early** (he or someone in his team's top 7 by recent minutes is Doubtful / Questionable / GTD) -> **Injury report clear** (none of them is; Out and Probable are settled) -> **Starters confirmed** (Rotowire shows both teams' starting fives as confirmed) -> **Locked** at tip |
 | Pulls | Later reads only PULL: Hard Rock's price changed and step-1 EV < **+1.5%**; fewer than 4 books; Pinnacle gone or sign flipped; step 2 fails; line removed; player listed Out, Doubtful, Questionable or GTD after the pick, unless he is in a confirmed starting five (every run). Teammate news does not pull by itself: the next read re-prices it. Pulled picks stay on the page and in the Record, graded at the frozen price, counted under "Pulled". **Every pull says what happened and what it means if Matt already bet.** No pulls after tip. Once the D read is done only an injury pull can happen ("Price final") |
-| Caps | **None per game or per night (Matt, 2026-10-25: "no limit per game or anything")**: every qualifying leg is shown, ranked by final EV. Only 1 side per player per market (both sides of one line can't both be bets); one player can have a rebounds, a points and an assists pick |
+| Caps | **None per game or per night (Matt, 2026-10-25: "no limit per game or anything")**: every qualifying leg is shown, ranked by final EV. Only 1 side per player per market (both sides of one line can't both be bets); one player can have a rebounds, a points, an assists and a threes pick |
 | Parlays | Off (customer fact) |
 | Grading | When ESPN marks the game final. Overtime counts. Did not play = void. Graded at the frozen price, flat 1 unit |
-| Odds reads | A 11 AM (or 3h before the first tip), B 90 min, C 45 min, D 20 min before each game. 3 markets = 3 credits a read (`ops.cost_per_read`). Reads a game = allowance / 3, at most 4; priority when credits are short: C, B, D, A |
+| Odds reads | A 11 AM (or 3h before the first tip), B 90 min, C 45 min, D 20 min before each game. 4 markets = 4 credits a read (`ops.cost_per_read`). Reads a game = allowance / 4, at most 4; priority when credits are short: C, B, D, A |
 | Safety | New picks stop by themselves if the Record reaches **-10 units** (`safety_pause`), with the reason on the page. Never silent |
 
 ## 5. How it runs
@@ -87,9 +87,9 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   never shared with NHL. Never in the repo, page or logs. A used-up or refused key is skipped; the ledger (`data/state/credits.json`) knows
   keys only by number. Page warns when the pool is low (fewer than 2 reads a game affordable) or when every key is refused.
 - **Feed limits (checked 2026-10-25):** The Odds API free Starter plan = 500 credits a month per key. Event odds cost markets x regions;
-  up to 10 bookmakers in `bookmakers=` bill as one region, so Hard Rock + 9 other books = 1 credit per MARKET a read (3 markets = 3). The events list is
-  free. Need: 4 reads x 3 credits x ~225 games a month ≈ 2,700. **6 keys (3,000 a month): Matt added 3 on 2026-10-25 7:44 PM and 3 more
-  at 8:22 PM.** With fewer than ~12 credits a game the plan drops reads in the order A, D, B (C last).
+  up to 10 bookmakers in `bookmakers=` bill as one region, so Hard Rock + 9 other books = 1 credit per MARKET a read (4 markets = 4). The events list is
+  free. Need: 4 reads x 4 credits x ~225 games a month ≈ 3,600; 6 keys (3,000) = 3 reads (B, C, D). **6 keys (3,000 a month): Matt added 3 on 2026-10-25 7:44 PM and 3 more
+  at 8:22 PM.** With fewer than ~16 credits a game the plan drops reads in the order A, D, B (C last).
 - **Other books asked (9, same credit):** draftkings, fanduel, betmgm, espnbet, pinnacle, betonlineag, betrivers, novig, prophetx.
   Verified 2026-10-25/26: all 9 return rebounds, points and assists (10-26 A read: 7 books on 9/9 games; BetRivers 8/9; Pinnacle
   9/9 games but misses some lines). A silent book costs nothing; swap per NHL item 24 (quality sharp books).
@@ -109,21 +109,23 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
    rebounds props have more books and sharper pricing than NHL shots, so expect thin nights. Checkpoint 2026-11-16 (3 weeks): the DS reads
    CLV on every flagged gap and the graded Record. Stop rule: mean CLV <= 0 at >= 25 measured gaps, or units <= -8 -> the Sharp pauses
    new picks and logs it in section 8.
-   **All three markets are ONE test (Matt, 2026-10-25 9:33 PM):** the checkpoint, stop rule and safety pause use rebounds + points +
-   assists combined. The Record also shows a bucket per market (Rebounds / Points / Assists rows under the headline) so Matt can see
+   **All markets are ONE test (Matt, 2026-10-25 9:33 PM):** the checkpoint, stop rule and safety pause use every market
+   combined (threes joined 2026-10-26). The Record also shows a bucket per market (Rebounds / Points / Assists / 3-pointers made rows under the headline) so Matt can see
    if one does better; a bucket never switches a market off by itself. Dropping or keeping a market is Matt's call (customer fact).
 2. **Starting lineups source = Rotowire** (scraped HTML; layout change or block = the chip stops at Injury report clear and the page
    says so). "Confirmed" verified live 2026-10-25 evening: 12 of 14 teams showed confirmed by 7:40 PM (MEM/SAC, 9 PM tip, still expected).
 3. **Model (guard only), one per stat:** fitted by the DS 2026-10-25 on 2025-26 box scores, walk-forward (`research/calibrate.py
    reb|pts|ast [grid]`): 18,841 player-games Dec-Apr each, test line = his last-10 average as an x.5 line. Rebounds: disp 1.15, rpm
    half-life 20, log loss 0.6686 vs base 0.6877. Points: disp 1.6, half-life 10, 0.6771 vs 0.6908, bias +0.9 pt -> **offset +0.009**.
-   Assists: Poisson (disp 1.0), half-life 10, 0.6660 vs 0.6844. Opponent factor exp 1.0, no back-to-back cut for all three. 16-20 variants
+   Assists: Poisson (disp 1.0), half-life 10, 0.6660 vs 0.6844. Threes (fit 2026-10-26): disp 1.15, half-life 20, 0.6113 vs 0.6569, bias
+   +0.4 pt -> offset 0. Opponent factor exp 1.0, no back-to-back cut for all four. 16-20 variants
    tried per stat. Offsets in `gap_guard.offsets`. Not tested against book lines (no historical Hard Rock prices); refit only with a
    named sample.
 4. Name matching: accents, Jr./III and dots are normalized; within the two teams playing only. Unmatched names are listed in
    status.json and skipped, never guessed.
 5. The ESPN tip time is used for lock (games often tip ~10 min later): conservative.
-6. Keys refill on the 1st (assumed, as NHL). 6 keys cover 4 reads x 3 markets a game (~2,700 of 3,000 a month).
+6. Keys refill on the 1st (assumed, as NHL). With 4 markets, 6 keys (3,000) over ~225 games = 13.3 credits a game = 3 reads (B, C, D);
+   the 11 AM A read (never picks) drops in a full month. All 4 reads would need ~3,600 a month (8 keys).
 7. Official NBA injury report PDF not parsed (Rotowire mirrors it). Build only if Rotowire proves unreliable.
 8. **Verified live 2026-10-25 7:50 PM (first keyed read, MEM@SAC B):** Hard Rock posts rebounds (8 players, ~+105/-135, hold ~8%);
    1 credit per read; **all 9 other books returned rebounds** (DK, FD, MGM, ESPN Bet, BetRivers, BetOnline 18 outcomes each; novig and
@@ -134,10 +136,13 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
 |---|---|---|---|
+| 2026-10-26 11:40 PM (CEO, Matt's order; Builder, QA) | **v1.2: 3-pointers made added** (customer fact), same Gap + Guard, own model (section 7 item 3), reads cost 4 credits; in a full month the morning A read drops (C, B, D kept) | Matt: "include 3 pointers, those odds are typically a little better"; NBA main lines showed 0 gaps on Oct 26 | None yet; judged with the other markets |
 | 2026-10-25 8:45 PM (CEO, Matt's order; Builder, QA) | **v1.1: points and assists added** (customer fact), same Gap + Guard thresholds, own model per stat (section 7 item 3), 1 side per player per market, no game or night caps (confirmed with Matt), reads cost 3 credits | Matt: "If we expand to points and assists..." then added 3 more keys (6 total) | None yet; all three judged TOGETHER at the 2026-11-16 checkpoint (Matt, 9:33 PM: "group all 3 together"); per-market buckets are for viewing only |
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-26 11:40 PM (CEO): v1.2 threes (Matt). Re-seeded with fg3m, DS fit, engine/page/Discord, box cache cleared. QA (fresh): SHIP WITH
+  FIXES, all low (market field to Discord, 'threes' instead of '3PM' which read like a clock time, doc numbers); fixed, 49 tests pass.
 - 2026-10-26 8:45 PM (CEO, Matt strongly concerned Hard Rock prices NBA far more carefully than NHL): measured. NBA Oct 26: 695 main
   lines with >= 4 books, median |HR fair - market fair| 0.7 pts, 0 lines off by >= 3 pts, 0 of 1,412 sides at +3%. NHL shots same rule:
   1-9 gaps >= 3% a night (Oct 20-26), HR off the market ~1-2.5 pts median. Concern supported by data. Plan told to Matt: run to the

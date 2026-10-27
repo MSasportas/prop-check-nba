@@ -249,7 +249,7 @@ class Run:
         for it in sorted([x for x in items.values() if x["slate"] == self.slate and x["kind"] == "single"],
                          key=lambda x: (-(x["shown"].get("final_ev") or 0), x["id"])):
             sh, gr = it["shown"], it["graded"]
-            p = {k: sh.get(k) for k in ("player", "pid", "team", "opp", "home", "game_id", "start", "bet", "side", "line",
+            p = {k: sh.get(k) for k in ("player", "pid", "team", "opp", "home", "game_id", "start", "bet", "market", "side", "line",
                                         "price", "price_at", "read", "p", "p_pct", "breakeven", "breakeven_pct",
                                         "market_fair", "n_books", "gap_ev", "final_ev", "model_p", "reason", "link")}
             p["id"] = it["id"]
@@ -372,7 +372,7 @@ class Run:
 def rules_doc(cfg):
     g, r, c, el = cfg["gap_guard"], cfg["reads"], cfg["customer"], cfg["eligibility"]
     return {"version": cfg["version"], "updated": cfg["updated"], "ui": cfg["ui"], "lines": [
-        "Hard Rock (Florida) prices only: player rebounds, points and assists, the main line, over or under. No leg worse than %d."
+        "Hard Rock (Florida) prices only: player rebounds, points, assists and 3-pointers made, the main line, over or under. No leg worse than %d."
         % c["worst_price"],
         "Step 1, the gap: Hard Rock's price must be at least %d%% better than the middle of %d+ other books on the same line, "
         "and Pinnacle (the sharpest book) must not disagree." % (round(100 * g["gap_ev"]), g["books_min"]),

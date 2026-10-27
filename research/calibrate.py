@@ -22,7 +22,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 P = json.load(gzip.open(os.path.join(ROOT, "data/seed/players_2025-26.json.gz"), "rt"))
 T = json.load(gzip.open(os.path.join(ROOT, "data/seed/teams_2025-26.json.gz"), "rt"))
 SEASON = "2025-10-01"
-STAT = next((a for a in sys.argv[1:] if a in ("reb", "pts", "ast")), "reb")
+STAT = next((a for a in sys.argv[1:] if a in ("reb", "pts", "ast", "fg3m")), "reb")
 FROM = "2025-12-01"
 
 T.sort(key=lambda r: (r["date"], r["game"]))

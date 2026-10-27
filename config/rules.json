@@ -1,9 +1,9 @@
 {
- "version": "1.1",
- "updated": "2026-10-25",
+ "version": "1.2",
+ "updated": "2026-10-26",
  "_about": "EVERY rule value lives here (TEAM.md section 4). The engine reads this file; data/rules.json (what the page reads) is generated from it. One rule set: Gap + Guard. Probabilities 0-1, prices American integers, times Eastern.",
  "customer": {
-  "_about": "Customer facts locked by Matt (setup interview 2026-10-25; points and assists added 2026-10-25 8:22 PM). The team never changes these.",
+  "_about": "Customer facts locked by Matt (setup interview 2026-10-25; points and assists added 2026-10-25 8:22 PM; 3-pointers made added 2026-10-26 11:21 PM). The team never changes these.",
   "book": "hardrockbet",
   "main_line_only": true,
   "sides": [
@@ -16,7 +16,8 @@
   "markets": [
    "rebounds",
    "points",
-   "assists"
+   "assists",
+   "threes"
   ]
  },
  "gap_guard": {
@@ -46,7 +47,8 @@
   "offsets": {
    "rebounds": 0.0,
    "points": 0.009,
-   "assists": 0.0
+   "assists": 0.0,
+   "threes": 0.0
   }
  },
  "eligibility": {
@@ -108,7 +110,7 @@
   ],
   "event_match_hours": 6,
   "pool_low_allowance": 2,
-  "cost_per_read": 3,
+  "cost_per_read": 4,
   "injuries_every_min": 10,
   "lineups_window_min": 180
  },
@@ -133,6 +135,13 @@
    "noun": "assists",
    "short": "ast",
    "label": "Assists"
+  },
+  "threes": {
+   "feed_key": "player_threes",
+   "stat": "fg3m",
+   "noun": "threes",
+   "short": "threes",
+   "label": "3-pointers made"
   }
  },
  "ui": {

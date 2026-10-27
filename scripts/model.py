@@ -21,6 +21,7 @@ PARAMS_BY = {
     "reb": dict(BASE),
     "pts": dict(BASE, disp=1.6, rpm_half=10.0),          # DS fit 2026-10-25: log loss 0.6771 vs base 0.6908, bias +0.9 pt
     "ast": dict(BASE, disp=1.0, rpm_half=10.0),          # DS fit 2026-10-25: log loss 0.6660 vs base 0.6844, bias +0.1 pt
+    "fg3m": dict(BASE, disp=1.15),                       # DS fit 2026-10-26: log loss 0.6113 vs base 0.6569, bias +0.4 pt
 }
 PARAMS = PARAMS_BY["reb"]
 

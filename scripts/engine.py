@@ -450,4 +450,5 @@ def grade_one(it, box_rows, cfg):
         res = "W"
     else:
         res = "L"
-    return res, "%d %s" % (x, m["noun"]), record.single_units(res, sh["price"])
+    noun = m["noun"] if x != 1 else {"threes": "three"}.get(m["noun"], m["noun"].rstrip("s"))
+    return res, "%d %s" % (x, noun), record.single_units(res, sh["price"])
