@@ -138,6 +138,11 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-26 8:45 PM (CEO, Matt strongly concerned Hard Rock prices NBA far more carefully than NHL): measured. NBA Oct 26: 695 main
+  lines with >= 4 books, median |HR fair - market fair| 0.7 pts, 0 lines off by >= 3 pts, 0 of 1,412 sides at +3%. NHL shots same rule:
+  1-9 gaps >= 3% a night (Oct 20-26), HR off the market ~1-2.5 pts median. Concern supported by data. Plan told to Matt: run to the
+  Nov 2 review unchanged; the DS reports the nightly gap distribution; if still ~0 gaps, the honest call (Matt's) is that main-line
+  Gap + Guard has no NBA edge at Hard Rock. Only untested angle: injury-news lag (HR slow after late scratches), needs faster reads.
 - 2026-10-26 8:15 PM (CEO, Matt: check alt ladders at Hard Rock and every book): one-time `research/alt_probe.py` (workflow alt-probe,
   18 credits) on ATL@HOU, MEM@UTA, GSW@DEN, main + alternate pts/reb/ast, HR + 9 books. Alt ladders are OVER-ONLY at every sportsbook
   (HR 966 rungs); two-sided prices at ladder lines come only from novig/prophetx (Pinnacle posts no alts). HR rung lines: 76-80% quoted
