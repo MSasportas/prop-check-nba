@@ -329,9 +329,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:25 - 4th",
+    "detail": "3:15 - 4th",
     "score": {
-     "ATL": "101",
+     "ATL": "103",
      "HOU": "117"
     }
    },
@@ -359,10 +359,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:56 - 2nd",
+    "detail": "7:50 - 2nd",
     "score": {
      "GS": "41",
-     "DEN": "38"
+     "DEN": "40"
     }
    }
   ]
