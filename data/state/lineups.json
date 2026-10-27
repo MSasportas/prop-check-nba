@@ -96,6 +96,7 @@
     "Daniel Gafford"
    ],
    "status": {
+    "Sergio de Larrea": "questionable",
     "Santi Aldama": "out",
     "Tarik Biberovic": "out",
     "Dereck Lively": "out",
@@ -210,10 +211,7 @@
     "Cameron Boozer",
     "Zach Edey"
    ],
-   "status": {
-    "Karim Lopez": "questionable",
-    "Isaiah Stewart": "questionable"
-   }
+   "status": {}
   },
   "UTAH": {
    "state": "expected",
@@ -264,5 +262,5 @@
    }
   }
  },
- "at": "2026-10-26T20:20:15-04:00"
+ "at": "2026-10-26T20:30:00-04:00"
 }
