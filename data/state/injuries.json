@@ -1,5 +1,5 @@
 {
- "at": "2026-10-27T01:10:01-04:00",
+ "at": "2026-10-27T01:20:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -435,6 +435,13 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
+  "4706557": {
+   "status": "out",
+   "name": "Chris Youngblood",
+   "team": "POR",
+   "date": "2026-10-27T04:58Z",
+   "note": "Youngblood (ankle/two-way player) is out for Tuesday's game against the Lakers."
+  },
   "4592435": {
    "status": "day-to-day",
    "name": "Branden Carlson",
@@ -448,13 +455,6 @@
    "team": "POR",
    "date": "2026-10-27T00:04Z",
    "note": "Henderson is questionable for Tuesday's game against the Lakers due to left ankle soreness."
-  },
-  "4706557": {
-   "status": "out",
-   "name": "Chris Youngblood",
-   "team": "POR",
-   "date": "2026-10-27T00:01Z",
-   "note": "Youngblood (ankle) is out for Friday's game against the Kings."
   },
   "4914336": {
    "status": "out",
