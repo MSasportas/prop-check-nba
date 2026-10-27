@@ -1,5 +1,5 @@
 {
- "at": "2026-10-27T01:20:01-04:00",
+ "at": "2026-10-27T10:20:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -295,6 +295,13 @@
    "date": "2026-10-26T20:50Z",
    "note": "Alvarado (ankle) is out for Tuesday's game against the Pistons."
   },
+  "4433255": {
+   "status": "day-to-day",
+   "name": "Chet Holmgren",
+   "team": "OKC",
+   "date": "2026-10-27T14:03Z",
+   "note": "Holmgren (knee) is out for Monday's game versus the Suns."
+  },
   "2991350": {
    "status": "day-to-day",
    "name": "Alex Caruso",
@@ -329,13 +336,6 @@
    "team": "OKC",
    "date": "2026-10-26T19:23Z",
    "note": "Sorber (knee) is out for Monday's game versus the Suns, per Andrew Schlecht of The Athletic."
-  },
-  "4433255": {
-   "status": "out",
-   "name": "Chet Holmgren",
-   "team": "OKC",
-   "date": "2026-10-26T18:22Z",
-   "note": "Holmgren (knee) is out for Monday's game versus the Suns."
   },
   "5106270": {
    "status": "out",
