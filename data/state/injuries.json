@@ -1,5 +1,5 @@
 {
- "at": "2026-10-27T00:20:00-04:00",
+ "at": "2026-10-27T00:30:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -197,6 +197,20 @@
    "date": "2026-10-26T16:20Z",
    "note": "Smart (arm) is out for Monday's game against the Hawks."
   },
+  "4017837": {
+   "status": "day-to-day",
+   "name": "Ivica Zubac",
+   "team": "IND",
+   "date": "2026-10-27T04:23Z",
+   "note": "Zubac (ankle) is out for Monday's game against the Bucks."
+  },
+  "4395712": {
+   "status": "day-to-day",
+   "name": "Andrew Nembhard",
+   "team": "IND",
+   "date": "2026-10-27T04:22Z",
+   "note": "Nembhard (neck/back) has been ruled out for Monday's game against Milwaukee, Dustin Dopirak of The Indianapolis Star reports."
+  },
   "4433076": {
    "status": "out",
    "name": "Ben Sheppard",
@@ -204,26 +218,12 @@
    "date": "2026-10-26T23:09Z",
    "note": "Sheppard is scheduled for surgery to repair a torn meniscus in his left knee Wednesday, Dustin Dopirak of The Indianapolis Star reports."
   },
-  "4395712": {
-   "status": "out",
-   "name": "Andrew Nembhard",
-   "team": "IND",
-   "date": "2026-10-26T22:42Z",
-   "note": "Nembhard (neck/back) has been ruled out for Monday's game against Milwaukee, Dustin Dopirak of The Indianapolis Star reports."
-  },
   "2530530": {
    "status": "out",
    "name": "T.J. McConnell",
    "team": "IND",
    "date": "2026-10-26T18:26Z",
    "note": "McConnell (hamstring) is out for Monday's game against the Bucks."
-  },
-  "4017837": {
-   "status": "out",
-   "name": "Ivica Zubac",
-   "team": "IND",
-   "date": "2026-10-26T18:20Z",
-   "note": "Zubac (ankle) is out for Monday's game against the Bucks."
   },
   "5157066": {
    "status": "out",
