@@ -174,7 +174,7 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "CJ McCollum",
     "Nickeil Alexander-Walker",
@@ -188,7 +188,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
@@ -264,5 +264,5 @@
    }
   }
  },
- "at": "2026-10-26T20:00:00-04:00"
+ "at": "2026-10-26T20:10:01-04:00"
 }
