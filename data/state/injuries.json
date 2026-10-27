@@ -1,6 +1,13 @@
 {
- "at": "2026-10-27T17:10:01-04:00",
+ "at": "2026-10-27T17:20:00-04:00",
  "list": {
+  "4397183": {
+   "status": "day-to-day",
+   "name": "Aaron Wiggins",
+   "team": "ATL",
+   "date": "2026-10-27T21:07Z",
+   "note": "Wiggins is questionable for Wednesday's game against the Heat due to a left knee contusion."
+  },
   "4712863": {
    "status": "out",
    "name": "Mouhamed Gueye",
@@ -219,10 +226,10 @@
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
   "4017837": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Ivica Zubac",
    "team": "IND",
-   "date": "2026-10-27T04:41Z",
+   "date": "2026-10-27T21:12Z",
    "note": "The Pacers don't have a timetable for Zubac's return after he suffered a left ankle injury Sunday against Brooklyn, but he was able to walk without a boot Monday, Dustin Dopirak of The Indianapolis St"
   },
   "4395712": {
@@ -432,29 +439,15 @@
    "status": "out",
    "name": "Tacko Fall",
    "team": "PHI",
-   "date": "2026-10-27T17:04Z",
-   "note": "Fall (quadriceps) was able to practice on Tuesday, Keith Pompey of The Philadelphia Inquirer reports."
-  },
-  "5124612": {
-   "status": "day-to-day",
-   "name": "VJ Edgecombe",
-   "team": "PHI",
-   "date": "2026-10-27T17:03Z",
-   "note": "Edgecombe (abdomen) practiced in full Tuesday, Keith Pompey of The Philadelphia Inquirer reports."
+   "date": "2026-10-27T21:10Z",
+   "note": "Fall (quadriceps) is out for Wednesday's game in Indiana."
   },
   "4432446": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jabari Walker",
    "team": "PHI",
-   "date": "2026-10-26T14:05Z",
-   "note": "Walker has been ruled out for Sunday's game against the Pistons due to left knee soreness."
-  },
-  "3059318": {
-   "status": "day-to-day",
-   "name": "Joel Embiid",
-   "team": "PHI",
-   "date": "2026-10-26T14:04Z",
-   "note": "Embiid has been ruled out for Sunday's game against Detroit due to right plantar fasciitis management."
+   "date": "2026-10-27T21:08Z",
+   "note": "Walker (knee) has been ruled out for Wednesday's game against the Pacers."
   },
   "4870562": {
    "status": "out",
