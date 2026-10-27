@@ -40,6 +40,14 @@ def _num(x):
         return None
 
 
+def _made(x):
+    """'3-7' -> 3.0 (made of made-attempted), None when unreadable."""
+    try:
+        return float(str(x).split("-")[0])
+    except (TypeError, ValueError):
+        return None
+
+
 def scoreboard(date):
     """date 'YYYY-MM-DD' -> list of games, regular season only, or None when ESPN did not answer.
     game: id, start (ISO, Eastern), away, home (ESPN codes), state (pre / in / post), completed, detail."""
@@ -133,6 +141,7 @@ def box(summary):
                        "reason": a.get("reason") if dnp else None, "pos": (ath.get("position") or {}).get("abbreviation"),
                        "min": _num(d.get("MIN")), "reb": _num(d.get("REB")), "oreb": _num(d.get("OREB")),
                        "dreb": _num(d.get("DREB")), "pts": _num(d.get("PTS")), "ast": _num(d.get("AST")),
+                       "fg3m": _made(d.get("3PT")),
                        "game": gid, "date": date})
     for t in summary.get("boxscore", {}).get("teams", []) or []:
         tm = teams.code(t["team"]["abbreviation"])
@@ -145,7 +154,8 @@ def box(summary):
                 return None
         tr.append({"team": tm, "opp": other.get(tm), "home": int(tm == ab["home"]), "ot": ot,
                    "reb": _num(s.get("totalRebounds")), "oreb": _num(s.get("offensiveRebounds")),
-                   "dreb": _num(s.get("defensiveRebounds")), "ast": _num(s.get("assists")), "fgm": pair("fieldGoalsMade-fieldGoalsAttempted", 0),
+                   "dreb": _num(s.get("defensiveRebounds")), "ast": _num(s.get("assists")),
+                   "fg3m": pair("threePointFieldGoalsMade-threePointFieldGoalsAttempted", 0), "fgm": pair("fieldGoalsMade-fieldGoalsAttempted", 0),
                    "fga": pair("fieldGoalsMade-fieldGoalsAttempted", 1), "fta": pair("freeThrowsMade-freeThrowsAttempted", 1),
                    "tov": _num(s.get("totalTurnovers") or s.get("turnovers")),
                    "pts": _num(comp["home" if tm == ab["home"] else "away"].get("score")), "game": gid, "date": date})

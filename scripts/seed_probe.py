@@ -41,6 +41,14 @@ def num(x):
         return None
 
 
+def made(x):
+    """'3-7' -> 3.0 (made of made-attempted), None when unreadable."""
+    try:
+        return float(str(x).split("-")[0])
+    except (TypeError, ValueError):
+        return None
+
+
 def box(summary):
     """ESPN summary -> (player rows, team rows). Regular season final games only."""
     hdr = summary["header"]["competitions"][0]
@@ -64,7 +72,7 @@ def box(summary):
                        "home": int(tm == ab["home"]), "starter": bool(a.get("starter")), "dnp": dnp,
                        "reason": a.get("reason") if dnp else None, "pos": (ath.get("position") or {}).get("abbreviation"),
                        "min": mn, "reb": num(d.get("REB")), "oreb": num(d.get("OREB")), "dreb": num(d.get("DREB")),
-                       "pts": num(d.get("PTS")), "ast": num(d.get("AST"))})
+                       "pts": num(d.get("PTS")), "ast": num(d.get("AST")), "fg3m": made(d.get("3PT"))})
     for t in summary.get("boxscore", {}).get("teams", []) or []:
         tm = t["team"]["abbreviation"]
         s = {x.get("name"): x.get("displayValue") for x in t.get("statistics", []) or []}
@@ -80,6 +88,7 @@ def box(summary):
                    "fga": pair("fieldGoalsMade-fieldGoalsAttempted", 1),
                    "fta": pair("freeThrowsMade-freeThrowsAttempted", 1),
                    "tov": num(s.get("totalTurnovers") or s.get("turnovers")), "ast": num(s.get("assists")),
+                   "fg3m": pair("threePointFieldGoalsMade-threePointFieldGoalsAttempted", 0),
                    "pts": num(comp["home" if tm == ab["home"] else "away"].get("score"))})
     return when, pr, tr
 
