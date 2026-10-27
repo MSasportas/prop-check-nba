@@ -299,10 +299,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:27 - 4th",
+    "detail": "1:15 - 4th",
     "score": {
-     "IND": "96",
-     "MIL": "101"
+     "IND": "100",
+     "MIL": "108"
     }
    },
    {
@@ -314,10 +314,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:16 - 4th",
+    "detail": "3:58 - 4th",
     "score": {
-     "PHX": "95",
-     "OKC": "113"
+     "PHX": "104",
+     "OKC": "119"
     }
    },
    {
@@ -329,10 +329,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:44 - 3rd",
+    "detail": "1:08 - 3rd",
     "score": {
-     "ATL": "76",
-     "HOU": "84"
+     "ATL": "85",
+     "HOU": "89"
     }
    },
    {
@@ -343,11 +343,11 @@
     "home": "UTAH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:03 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
      "MEM": "58",
-     "UTAH": "46"
+     "UTAH": "52"
     }
    },
    {
@@ -356,13 +356,13 @@
     "start": "2026-10-26T22:00:00-04:00",
     "away": "GS",
     "home": "DEN",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/26 - 10:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:58 - 1st",
     "score": {
-     "GS": "0",
-     "DEN": "0"
+     "GS": "13",
+     "DEN": "10"
     }
    }
   ]
