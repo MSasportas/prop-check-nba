@@ -251,13 +251,13 @@
     "start": "2026-10-26T19:00:00-04:00",
     "away": "MIN",
     "home": "CLE",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3.9 - OT",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final/OT",
     "score": {
-     "MIN": "122",
-     "CLE": "125"
+     "MIN": "125",
+     "CLE": "127"
     }
    },
    {
@@ -266,10 +266,10 @@
     "start": "2026-10-26T19:30:00-04:00",
     "away": "CHI",
     "home": "BOS",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "CHI": "99",
      "BOS": "134"
@@ -281,12 +281,12 @@
     "start": "2026-10-26T19:30:00-04:00",
     "away": "DAL",
     "home": "MIA",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "20.4 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "DAL": "111",
+     "DAL": "113",
      "MIA": "109"
     }
    },
@@ -299,10 +299,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:27 - 4th",
+    "detail": "4:27 - 4th",
     "score": {
-     "IND": "86",
-     "MIL": "89"
+     "IND": "96",
+     "MIL": "101"
     }
    },
    {
@@ -314,10 +314,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:22 - 4th",
+    "detail": "6:16 - 4th",
     "score": {
-     "PHX": "93",
-     "OKC": "104"
+     "PHX": "95",
+     "OKC": "113"
     }
    },
    {
@@ -329,10 +329,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:00 - 3rd",
+    "detail": "3:44 - 3rd",
     "score": {
-     "ATL": "74",
-     "HOU": "75"
+     "ATL": "76",
+     "HOU": "84"
     }
    },
    {
@@ -344,10 +344,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:54 - 2nd",
+    "detail": "2:03 - 2nd",
     "score": {
-     "MEM": "45",
-     "UTAH": "38"
+     "MEM": "58",
+     "UTAH": "46"
     }
    },
    {
