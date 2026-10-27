@@ -138,6 +138,12 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-26 8:15 PM (CEO, Matt: check alt ladders at Hard Rock and every book): one-time `research/alt_probe.py` (workflow alt-probe,
+  18 credits) on ATL@HOU, MEM@UTA, GSW@DEN, main + alternate pts/reb/ast, HR + 9 books. Alt ladders are OVER-ONLY at every sportsbook
+  (HR 966 rungs); two-sided prices at ladder lines come only from novig/prophetx (Pinnacle posts no alts). HR rung lines: 76-80% quoted
+  by >= 1 other sportsbook, 53% by >= 4. vs two-sided fair (-200..+200): main median -7.9% best -0.3%; ALT median -11.4% best -2.6%; 0
+  >= 0. vs other sportsbooks same rung: HR cheaper than the median on 94 of 222, best of all on 15. Longshots > +200: median -21%, 1-3
+  'positive' rungs are thin exchange quotes on 6-10% chances (noise). Conclusion: alt ladders carry more vig than main lines; no change.
 - 2026-10-26 8:10 PM (CEO, Matt asked why no picks on a 9-game night; his idea: books post different main lines): 30 reads, 1,412
   sides on B/C/D, 0 passed. Best gap all day +0.9% (needs +3.0%); median -6.2%; 0.3% of sides >= 0. Lines: other books quote Hard Rock's
   exact line for 87% of player-books (others are +/-1 off), Pinnacle only 59% (160 of 272) -> 460 sides failed "Pinnacle not on this line".
