@@ -1,5 +1,5 @@
 {
- "at": "2026-10-27T15:10:00-04:00",
+ "at": "2026-10-27T15:30:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -288,6 +288,13 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4277956": {
+   "status": "day-to-day",
+   "name": "Jordan Poole",
+   "team": "NO",
+   "date": "2026-10-27T19:18Z",
+   "note": "Poole (illness) is listed as probable for Wednesday's game against Denver."
+  },
   "5061589": {
    "status": "out",
    "name": "Yves Missi",
@@ -526,6 +533,13 @@
    "date": "2026-10-20T18:05Z",
    "note": "Bittle (foot) is out for Wednesday's season opener against the Bulls."
   },
+  "4277961": {
+   "status": "out",
+   "name": "Jaren Jackson Jr.",
+   "team": "UTAH",
+   "date": "2026-10-27T19:25Z",
+   "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
+  },
   "4397077": {
    "status": "day-to-day",
    "name": "Jaxson Hayes",
@@ -539,13 +553,6 @@
    "team": "UTAH",
    "date": "2026-10-27T02:13Z",
    "note": "Markkanen (wrist) won't return to Monday's game against Memphis."
-  },
-  "4277961": {
-   "status": "day-to-day",
-   "name": "Jaren Jackson Jr.",
-   "team": "UTAH",
-   "date": "2026-10-27T02:06Z",
-   "note": "Jackson has been ruled out for the rest of Monday's game against the Grizzlies due to a right knee injury."
   },
   "4433268": {
    "status": "out",
