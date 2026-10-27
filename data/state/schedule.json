@@ -257,7 +257,7 @@
     "detail": "25.4 - 2nd",
     "score": {
      "MIN": "59",
-     "CLE": "49"
+     "CLE": "50"
     }
    },
    {
@@ -269,10 +269,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:31 - 2nd",
+    "detail": "9:48 - 2nd",
     "score": {
      "CHI": "28",
-     "BOS": "37"
+     "BOS": "40"
     }
    },
    {
@@ -284,9 +284,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "12:00 - 2nd",
+    "detail": "11:31 - 2nd",
     "score": {
-     "DAL": "23",
+     "DAL": "26",
      "MIA": "27"
     }
    },
@@ -296,10 +296,10 @@
     "start": "2026-10-26T20:00:00-04:00",
     "away": "IND",
     "home": "MIL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/26 - 8:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:47 - 1st",
     "score": {
      "IND": "0",
      "MIL": "0"
@@ -311,10 +311,10 @@
     "start": "2026-10-26T20:00:00-04:00",
     "away": "PHX",
     "home": "OKC",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/26 - 8:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:32 - 1st",
     "score": {
      "PHX": "0",
      "OKC": "0"
