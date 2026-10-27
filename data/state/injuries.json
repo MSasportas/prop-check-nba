@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T20:00:00-04:00",
+ "at": "2026-10-26T20:20:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -470,19 +470,26 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
-  "4706557": {
-   "status": "day-to-day",
-   "name": "Chris Youngblood",
-   "team": "POR",
-   "date": "2026-10-24T13:46Z",
-   "note": "Youngblood (ankle) is out for Friday's game against the Kings."
-  },
   "4592435": {
    "status": "day-to-day",
    "name": "Branden Carlson",
    "team": "POR",
-   "date": "2026-10-24T13:46Z",
-   "note": "Carlson (concussion) has been ruled out for Friday's game against Sacramento."
+   "date": "2026-10-27T00:04Z",
+   "note": "Carlson (concussion) is listed as questionable for Tuesday's game against the Lakers."
+  },
+  "4683678": {
+   "status": "day-to-day",
+   "name": "Scoot Henderson",
+   "team": "POR",
+   "date": "2026-10-27T00:04Z",
+   "note": "Henderson is questionable for Tuesday's game against the Lakers due to left ankle soreness."
+  },
+  "4706557": {
+   "status": "out",
+   "name": "Chris Youngblood",
+   "team": "POR",
+   "date": "2026-10-27T00:01Z",
+   "note": "Youngblood (ankle) is out for Friday's game against the Kings."
   },
   "4914336": {
    "status": "out",
@@ -572,8 +579,8 @@
    "status": "day-to-day",
    "name": "Justin Champagnie",
    "team": "WSH",
-   "date": "2026-10-26T23:45Z",
-   "note": "Champagnie went to the locker room during the first quarter of Monday's game against the Hornets with an apparent ankle injury, Greg Finberg of Wizards Central reports."
+   "date": "2026-10-27T00:01Z",
+   "note": "Champagnie has been ruled out for the remainder of Monday's game against Charlotte due to a right foot injury, Josh Robbins of The Athletic reports. He'll finish with two points (1-1 FG) and two rebou"
   },
   "5142718": {
    "status": "out",
