@@ -344,10 +344,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:32 - 4th",
+    "detail": "3:19 - 4th",
     "score": {
-     "MEM": "98",
-     "UTAH": "91"
+     "MEM": "102",
+     "UTAH": "101"
     }
    },
    {
