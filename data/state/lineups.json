@@ -2,10 +2,10 @@
  "slate": "2026-10-27",
  "teams": {
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Egor Demin",
-    "Keon Ellis",
+    "Nolan Traore",
     "Michael Porter",
     "Julius Randle",
     "Day'Ron Sharpe"
@@ -13,7 +13,7 @@
    "status": {}
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Derrick White",
     "Paul George",
@@ -111,5 +111,5 @@
    }
   }
  },
- "at": "2026-10-27T19:00:00-04:00"
+ "at": "2026-10-27T19:10:00-04:00"
 }
