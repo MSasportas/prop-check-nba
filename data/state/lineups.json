@@ -82,7 +82,6 @@
     "Paul Reed"
    ],
    "status": {
-    "Ausar Thompson": "probable",
     "Jalen Duren": "out",
     "Isaiah Joe": "out"
    }
@@ -113,7 +112,6 @@
     "Jay Huff"
    ],
    "status": {
-    "Obi Toppin": "probable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "T.J. McConnell": "out",
@@ -245,6 +243,7 @@
     "Draymond Green"
    ],
    "status": {
+    "Gui Santos": "out",
     "Jimmy Butler": "out",
     "Moses Moody": "out",
     "Kristaps Porzingis": "out"
@@ -367,5 +366,5 @@
    }
   }
  },
- "at": "2026-10-28T18:50:33-04:00"
+ "at": "2026-10-28T19:00:00-04:00"
 }

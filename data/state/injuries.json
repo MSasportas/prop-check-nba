@@ -1,5 +1,5 @@
 {
- "at": "2026-10-28T18:50:01-04:00",
+ "at": "2026-10-28T19:00:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -183,6 +183,13 @@
    "date": "2026-10-25T14:56Z",
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
   },
+  "4997536": {
+   "status": "out",
+   "name": "Gui Santos",
+   "team": "GS",
+   "date": "2026-10-28T22:58Z",
+   "note": "Santos has been ruled out for Wednesday's game against the Timberwolves due to left knee tendinitis."
+  },
   "3102531": {
    "status": "out",
    "name": "Kristaps Porzingis",
@@ -224,13 +231,6 @@
    "team": "HOU",
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
-  },
-  "4278355": {
-   "status": "day-to-day",
-   "name": "Obi Toppin",
-   "team": "IND",
-   "date": "2026-10-28T22:04Z",
-   "note": "Toppin (hand) is active for Wednesday's game against Philadelphia."
   },
   "2530530": {
    "status": "out",
