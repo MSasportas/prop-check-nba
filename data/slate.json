@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-27T22:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-27T22:50:01-04:00"
+   "at": "2026-10-27T23:00:01-04:00"
   }
  },
  "games": [
@@ -45,8 +45,8 @@
    "start": "2026-10-27T20:00:00-04:00",
    "away": "DET",
    "home": "NYK",
-   "state": "in",
-   "detail": "28.7 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -85,8 +85,8 @@
  ],
  "picks": [],
  "empty": {
-  "text": "No picks yet today",
-  "why": "372 lines read, none cleared both checks.",
+  "text": "No open picks right now",
+  "why": "Every game has started.",
   "next": null
  },
  "counts": {
@@ -100,6 +100,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-27T22:50:01-04:00",
- "status_at": "2026-10-27T22:50:01-04:00"
+ "generated_at": "2026-10-27T23:00:01-04:00",
+ "status_at": "2026-10-27T23:00:01-04:00"
 }
