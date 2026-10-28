@@ -174,9 +174,6 @@ def pick_line(p):
     else:
         nums = "%s, we say %s%%, price needs %s%%" % (gap_txt, p["p_pct"], p["breakeven_pct"])
     lines = ["**%s %s  %s**" % (p["player"], _bet(p), common.fmt_price(p["price"])), when, nums]
-    link = p.get("link")
-    if odds.safe_link(link):
-        lines.append("Bet slip: <%s>" % link)               # <> keeps Discord from unfurling a preview
     return "\n".join(lines)
 
 

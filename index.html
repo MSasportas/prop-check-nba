@@ -99,9 +99,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .pin .nw{white-space:nowrap}
 .reason{font-size:14px;line-height:20px;margin-top:8px;overflow-wrap:anywhere}
 .clamp2{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
-.betlink{display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;margin-top:10px;border-radius:8px;background:var(--accent);
-  color:#06202e;font-weight:600;font-size:15px;text-decoration:none}
-.betlink:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .chip{display:inline-flex;align-items:center;gap:5px;height:24px;padding:0 9px 0 7px;border-radius:12px;font-size:12px;line-height:16px;
   background:var(--raise);border:1px solid var(--line);color:var(--fg);max-width:100%;white-space:nowrap}
@@ -571,7 +568,6 @@ function resultLine(g) {
 function toggleKeys(fn) {
   return { click: fn, keydown: function (e) { if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') { e.preventDefault(); fn(e); } } };
 }
-var LINK_RE = /^https:\/\/[^\s<>"'\\\u0000-\u001f\u007f‎‏‪-‮⁦-⁩]{4,590}$/;
 
 /* ---------- pick card ---------- */
 function pickCard(p, d, opts) {
@@ -606,11 +602,6 @@ function pickCard(p, d, opts) {
   card.appendChild(h('div', { class: 'chips' }, stateChip(started ? { state: 'locked', state_label: 'Locked' } : p),
     (!started && p.price_final) ? h('span', { class: 'chip ok' }, icon('check', 13), 'Price final') : null));
   if (p.reason && (!started || isOpen)) card.appendChild(h('div', { class: 'reason' + (isOpen ? '' : ' clamp2'), text: str(p.reason) }));
-
-  if (!started && !p.pulled && typeof p.link === 'string' && LINK_RE.test(p.link) && !stale()) {
-    card.appendChild(h('a', { class: 'betlink', href: p.link, target: '_blank', rel: 'noopener noreferrer', 'aria-label': 'Bet this on Hard Rock',
-      on: { click: function (e) { e.stopPropagation(); }, keydown: function (e) { e.stopPropagation(); } } }, 'Bet on Hard Rock ↗'));
-  }
 
   if (isOpen && pin) {
     card.appendChild(h('div', { class: 'more' },
