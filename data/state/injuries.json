@@ -1,5 +1,5 @@
 {
- "at": "2026-10-28T14:20:02-04:00",
+ "at": "2026-10-28T14:30:01-04:00",
  "list": {
   "4397183": {
    "status": "day-to-day",
@@ -386,6 +386,13 @@
    "date": "2026-10-28T05:12Z",
    "note": "Alvarado (ankle) is out for Tuesday's game against the Pistons."
   },
+  "2991350": {
+   "status": "out",
+   "name": "Alex Caruso",
+   "team": "OKC",
+   "date": "2026-10-28T18:06Z",
+   "note": "Caruso (ankle) is expected to miss time due to an ankle sprain, Clemente Almanza of USA Today reports."
+  },
   "5061603": {
    "status": "out",
    "name": "Thomas Sorber",
@@ -413,13 +420,6 @@
    "team": "OKC",
    "date": "2026-10-27T21:35Z",
    "note": "Mitchell (ankle) is questionable for Wednesday's game against Dallas."
-  },
-  "2991350": {
-   "status": "out",
-   "name": "Alex Caruso",
-   "team": "OKC",
-   "date": "2026-10-27T21:35Z",
-   "note": "Caruso (ankle) won't play Wednesday in Dallas."
   },
   "4593803": {
    "status": "out",
