@@ -373,10 +373,10 @@
     "start": "2026-10-27T19:30:00-04:00",
     "away": "BKN",
     "home": "BOS",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of OT",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final/OT",
     "score": {
      "BKN": "124",
      "BOS": "125"
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:29 - 4th",
+    "detail": "3:43 - 4th",
     "score": {
-     "DET": "74",
-     "NY": "95"
+     "DET": "86",
+     "NY": "101"
     }
    },
    {
