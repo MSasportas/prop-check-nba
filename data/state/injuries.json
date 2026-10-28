@@ -1,5 +1,5 @@
 {
- "at": "2026-10-28T18:10:00-04:00",
+ "at": "2026-10-28T18:10:16-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -187,8 +187,8 @@
    "status": "day-to-day",
    "name": "Yaxel Lendeborg",
    "team": "GS",
-   "date": "2026-10-28T21:55Z",
-   "note": "Lendeborg (foot) is trending toward playing Wednesday against the Timberwolves, Anthony Slater of ESPN.com reports."
+   "date": "2026-10-28T17:16Z",
+   "note": "Lendeborg (foot) went through Wednesday's morning shootaround, per Nick Friedell of The Athletic."
   },
   "3102531": {
    "status": "out",
@@ -259,6 +259,13 @@
    "team": "IND",
    "date": "2026-10-28T21:30Z",
    "note": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports."
+  },
+  "4278355": {
+   "status": "day-to-day",
+   "name": "Obi Toppin",
+   "team": "IND",
+   "date": "2026-10-27T21:17Z",
+   "note": "Toppin is probable to play Wednesday against the 76ers due to a left hand sprain."
   },
   "4017837": {
    "status": "out",
