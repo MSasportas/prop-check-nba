@@ -42,7 +42,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     },
     {
      "id": "2026-10-28:401909881:4066261:assists:3.5:under",
@@ -65,7 +66,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     },
     {
      "id": "2026-10-28:401909882:3908809:assists:4.5:over",
@@ -88,7 +90,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     },
     {
      "id": "2026-10-28:401909882:3992:rebounds:4.5:under",
@@ -111,7 +114,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     },
     {
      "id": "2026-10-28:401909882:4277905:rebounds:2.5:under",
@@ -134,7 +138,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     },
     {
      "id": "2026-10-28:401909882:6583:assists:2.5:under",
@@ -157,7 +162,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     },
     {
      "id": "2026-10-28:401909883:4433249:points:8.5:under",
@@ -180,7 +186,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     },
     {
      "id": "2026-10-28:401909884:3917376:points:21.5:over",
@@ -203,7 +210,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     },
     {
      "id": "2026-10-28:401909884:4431678:points:24.5:under",
@@ -226,7 +234,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     },
     {
      "id": "2026-10-28:401909884:4431678:threes:2.5:over",
@@ -249,7 +258,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     },
     {
      "id": "2026-10-28:401909885:4066320:threes:2.5:over",
@@ -272,7 +282,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     }
    ]
   }
