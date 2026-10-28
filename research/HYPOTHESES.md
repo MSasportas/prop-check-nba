@@ -12,7 +12,16 @@
 - F1 Model disagreement: bet the side where our stat model's chance exceeds the market fair by >= X pts (X = 4, 6, 8), price
   -200..+200, at the C read. Metric: ROI at HR price, CLV. Prior from NHL: model-only rules lost (NHL TEAM.md item 20).
 - F2 Pinnacle-only market: R2 rule (HR EV >= +3% vs Pinnacle fair, same line), C or D read. Metric: ROI, CLV vs D-read median.
+  F2b same at >= +2% (Run 2 discovery: 6 distinct sides Oct 25-27, all unders, 5 points + 1 assists, graded 5-1; noise-size).
 - F3 Injury-news reaction: when a top-7 rotation player is newly listed Out between two reads, teammates' lines on Hard Rock vs
   the other books at the next read (does HR move later than the median?). Metric: gap EV at the first read after news.
 - F4 Opening read: the 11 AM A read vs the market (Run 1's best side was at A). Metric: gap distribution at A, forward.
 - F5 Plus-money unders, -100..+120, best gap side per player (Run 1's least-bad band). Metric: ROI, CLV.
+
+## Run 2 (2026-10-28 ~10:20 AM, CEO; Matt: compare books before any model)
+- R4 Each single book as the only judge (latest B/C/D read, same line, -200..+200): every book median -6.1% to -6.5%; sides >= +3%:
+  DraftKings 7 (0.8%), BetRivers 7, Novig 6, BetMGM 4, ProphetX 3, BetOnline 2, FanDuel 0, ESPN Bet 0, Pinnacle 0 (at the latest
+  read). STATUS: done (one book's own errors, not Hard Rock's).
+- F6 Pinnacle-move lag: between consecutive reads Pinnacle's fair moves >= 2 pts toward a side and Hard Rock's price does not move;
+  bet that side at Hard Rock if EV vs the new Pinnacle fair >= +2%. Discovery: 9 of 1,360 pairs moved this way, 1 >= +2% (W).
+  STATUS: forward from 2026-10-28.
