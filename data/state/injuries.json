@@ -1,5 +1,5 @@
 {
- "at": "2026-10-28T11:00:01-04:00",
+ "at": "2026-10-28T11:20:00-04:00",
  "list": {
   "4397183": {
    "status": "day-to-day",
@@ -344,19 +344,19 @@
    "date": "2026-10-27T00:08Z",
    "note": "Thiero (knee) is out for Tuesday's game against Portland."
   },
+  "3899664": {
+   "status": "out",
+   "name": "Simone Fontecchio",
+   "team": "MIA",
+   "date": "2026-10-28T15:04Z",
+   "note": "Fontecchio (illness) is out for Wednesday's game against the Hawks."
+  },
   "4601025": {
    "status": "day-to-day",
    "name": "Pelle Larsson",
    "team": "MIA",
    "date": "2026-10-27T20:04Z",
    "note": "Larsson is listed as probable for Wednesday's game at Atlanta due to a right ankle sprain."
-  },
-  "3899664": {
-   "status": "day-to-day",
-   "name": "Simone Fontecchio",
-   "team": "MIA",
-   "date": "2026-10-27T20:03Z",
-   "note": "Fontecchio is doubtful for Wednesday's game in Atlanta due to an illness, per Tim Reynolds of Associated Press."
   },
   "4594268": {
    "status": "out",
