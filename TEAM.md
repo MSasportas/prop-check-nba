@@ -124,8 +124,8 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   rule changes.
 - **Weekly team review, Mondays 11:13 AM ET** (scheduled task "Prop Check NBA weekly team review"): Sharp, Data Scientist, UX, Builder, QA on the Record and the odds log; first one ran 2026-10-26.
 
-- **Researcher, daily 8:23 AM ET:** NOT scheduled yet (2026-10-28: creating the scheduled task was blocked by a permission check;
-  Matt asked to approve). Until then the CEO runs research when asked.
+- **Researcher: PAUSED (Matt, 2026-10-28 12:21 PM: "keep the research paused").** No scheduled task. Forward ideas in
+  research/HYPOTHESES.md stay registered; the shadow log keeps collecting. Resume only when Matt asks.
 
 ## 7. Known gaps and risks
 1. **Edge vs the book is unproven.** Gap + Guard is a hypothesis carried over from NHL (live there since 2026-10-20, no verdict yet). NBA
@@ -166,6 +166,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-28 12:21 PM (Matt): research paused. No Researcher schedule; data keeps collecting for later.
 - 2026-10-28 ~11:55 AM (CEO): v2.1 (Matt): others may move < 2 pts. Engine replay Oct 25-27: 29 picks 22-7 +11.75u. Tests pass.
 - 2026-10-28 ~11:30 AM (CEO): v2.0 shipped. Research runs 1-6 (research/LOG.md), each book as judge (only Pinnacle +), Matt chose
   Pinnacle-moves-alone live + Pinnacle price judge behind the scenes. UX: pin_solo card + Backstage tab (380px checked). QA (fresh): SHIP
