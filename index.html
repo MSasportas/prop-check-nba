@@ -193,6 +193,26 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .ent .e1 .pn{font-weight:500}
 .ent .e2{font-size:12px;line-height:17px;color:var(--muted);overflow-wrap:anywhere}
 .ent .u{flex:none;font:600 15px/20px var(--display);white-space:nowrap;text-align:right;min-width:46px}
+/* combined strategy strip + replay */
+.combo{margin-top:8px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px 2px}
+.combo .ck{font-size:12px;line-height:16px;color:var(--muted)}
+.combo .cv{font:600 30px/34px var(--display);white-space:nowrap}
+.combo .cr{display:flex;align-items:center;gap:8px;min-height:36px;padding:6px 0;border-top:1px solid var(--line);font-size:13px;line-height:18px}
+.combo .cv+.cr{margin-top:8px}
+.combo .cl{flex:1;min-width:0;overflow-wrap:anywhere}
+.combo .cn{flex:none;font:600 17px/20px var(--display);white-space:nowrap;text-align:right}
+.combo .cr.rp,.combo .cr.rp .cn{color:var(--muted)}
+.combo .cn .mu{font:400 12px/16px var(--body)}
+.combo .c1{display:block;font-size:14px;line-height:20px}
+.combo .c2{display:block;font-size:12px;line-height:16px;color:var(--muted)}
+.e2 .sg{white-space:nowrap}
+.combo .linkbtn{border-top:1px solid var(--line);width:100%;font-size:13px}
+.otag{display:inline-block;font:600 12px/16px var(--display);letter-spacing:.05em;padding:0 5px;margin-left:6px;border:1px solid var(--good);border-radius:3px;color:var(--good);vertical-align:1px}
+.rtag{display:inline-block;font:600 12px/16px var(--display);letter-spacing:.05em;padding:0 5px;margin-right:6px;border:1px solid var(--line);border-radius:3px;color:var(--muted);vertical-align:2px}
+.sec-h .sub{font-size:12px;line-height:16px;color:var(--muted)}
+.rp-note{font-size:13px;line-height:19px;color:var(--muted);margin:0;overflow-wrap:anywhere}
+.rp-tot{margin-top:8px;font-size:13px;line-height:18px;color:var(--muted)}
+.rp-tot b{font:600 19px/22px var(--display);color:var(--fg);margin-right:2px}
 .ptag{display:inline-block;font:600 12px/16px var(--display);letter-spacing:.05em;padding:0 5px;margin-right:6px;border:1px solid var(--muted);border-radius:3px;color:var(--fg);vertical-align:1px}
 
 /* backstage */
@@ -242,7 +262,7 @@ var STALE_MIN = 30, REFRESH_DEF = 120;
 var MARKET_LINE = 'Prices: Hard Rock only · No leg worse than -200 · Rebounds, points, assists, 3-pointers · Main line only';
 
 var S = {
-  slate: null, record: null, rules: null, recordErr: null,
+  slate: null, record: null, rules: null, recordErr: null, replay: null,
   loaded: false, loadErr: false, fetchFail: false, rulesErr: false, loadedAt: null, busy: false,
   view: 'tonight', expanded: {},
   older: [], olderIdx: 0, olderBusy: false, olderErr: false,
@@ -437,9 +457,12 @@ function settle(p) { return p.then(function (v) { return { ok: true, v: v }; }, 
 function load() {
   if (S.busy) return Promise.resolve();
   S.busy = true;
-  return Promise.all([settle(getJSON(BASE + 'slate.json')), settle(getJSON(BASE + 'record.json')), settle(getJSON(BASE + 'rules.json'))])
+  return Promise.all([settle(getJSON(BASE + 'slate.json')), settle(getJSON(BASE + 'record.json')), settle(getJSON(BASE + 'rules.json')),
+    settle(getJSON(BASE + 'replay/pin_solo.json'))])
     .then(function (r) {
       S.busy = false; S.loaded = true;
+      /* replay is optional: a missing or bad file just leaves it out (never an error card) */
+      if (r[3].ok && isObj(r[3].v.total) && Array.isArray(r[3].v.nights)) S.replay = r[3].v;
       if (r[1].ok) { S.record = r[1].v; S.recordErr = null; } else if (!S.record) S.recordErr = r[1].kind;
       if (r[2].ok) { S.rules = r[2].v; S.rulesErr = false; } else if (!S.rules) S.rulesErr = true;
       if (r[0].ok) { S.slate = r[0].v; S.fetchFail = false; S.loadErr = false; S.loadedAt = Date.now(); }
@@ -471,7 +494,8 @@ function calcKey() {
   var d = S.slate ? split() : null, mins = Math.floor(now() / 60000);
   return JSON.stringify([S.loaded, S.loadErr, S.fetchFail, S.recordErr, S.rulesErr, S.slate && S.slate.generated_at, S.slate && S.slate.status_at,
     S.record && S.record.generated_at, S.view, S.rules && S.rules.version, S.rules && S.rules.updated, S.slate && expired(), S.slate && stale(),
-    d ? [d.open.length, d.started.length] : 0, mins, S.judgeLoaded, S.judgeErr, S.judge && S.judge.updated_at]);
+    d ? [d.open.length, d.started.length] : 0, mins, S.judgeLoaded, S.judgeErr, S.judge && S.judge.updated_at,
+    S.replay && [S.replay.version, S.replay.to, S.replay.total.w, S.replay.total.l, S.replay.total.units, S.replay.nights.length]]);
 }
 function maybeRender() { var k = calcKey(); if (k !== S.key) render(); }
 function render() {
@@ -776,6 +800,12 @@ function renderRecord() {
   }
   var sum = isObj(S.record.summary) ? S.record.summary : {}, hd = isObj(sum.headline) ? sum.headline : {};
   var w = num(hd.w) || 0, l = num(hd.l) || 0, n = num(hd.n) != null ? hd.n : w + l;
+  var rp = S.replay;
+  if (rp) {
+    try { app.appendChild(comboStrip(rp, hd)); } catch (err) { rp = null; if (window.console) console.warn('replay strip failed', err); }
+    if (rp) app.appendChild(h('div', { class: 'sec-h', style: 'margin:18px 0 0' }, h('h2', { text: 'Live Record' }),
+      h('span', { class: 'sub', text: 'official' + (launchDate(rp) ? ' · since ' + fDateShort(launchDate(rp)) : '') })));
+  }
   if (!(w + l + (num(hd.push) || 0) + (num(hd.void) || 0))) {
     app.appendChild(h('div', { class: 'card empty', style: 'margin-top:8px' },
       h('div', { class: 't', text: 'No graded picks yet.' }), h('div', { class: 's', text: 'Results post once each game is final.' })));
@@ -830,7 +860,76 @@ function renderRecord() {
     app.appendChild(h('button', { class: 'btn wide', type: 'button', style: 'margin-top:18px', text: S.olderBusy ? 'Loading' : 'Load older months', on: { click: loadOlder } }));
     if (S.olderErr) app.appendChild(h('p', { class: 'note', style: 'color:var(--warn)', text: "Couldn't load older months. Try again." }));
   }
+  if (rp) {
+    try { replaySection(rp); } catch (err) { if (window.console) console.warn('replay failed', err); }
+  }
   app.appendChild(footer());
+}
+/* replay (never on the Record): the live rule run on saved price checks before launch */
+function launchDate(rp) {
+  var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(str(rp.to)); if (!m) return null;
+  var d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3] + 1));
+  return isNaN(d.getTime()) ? null : d.toISOString().slice(0, 10);
+}
+function rangeText(rp) {
+  var a = plainDate(rp.from), b = plainDate(rp.to);
+  if (!a || !b) return '';
+  if (a.mo === b.mo && a.day === b.day) return a.mo + ' ' + a.day;
+  return a.mo === b.mo ? a.mo + ' ' + a.day + '-' + b.day : a.mo + ' ' + a.day + ' - ' + b.mo + ' ' + b.day;
+}
+function wlu(w, l, u) { return [w + '-' + l + ' · ', h('span', { class: signCls(u), text: units(u, 2) || '0.00u' })]; }
+function comboStrip(rp, hd) {
+  var t = rp.total, rw = num(t.w) || 0, rl = num(t.l) || 0, ru = num(t.units) || 0;
+  var lw = num(hd.w) || 0, ll = num(hd.l) || 0, lu = num(hd.units) || 0;
+  var liveAny = lw + ll + (num(hd.push) || 0) + (num(hd.void) || 0) > 0;
+  var ld = launchDate(rp);
+  return h('div', { class: 'combo', role: 'group', 'aria-label': 'Pinnacle strategy, all results' },
+    h('div', { class: 'ck', text: 'Pinnacle strategy, all results' }),
+    h('div', { class: 'cv' }, wlu(rw + lw, rl + ll, ru + lu)),
+    h('div', { class: 'cr' }, h('span', { class: 'cl' }, h('span', { class: 'c1' }, 'Live', h('span', { class: 'otag', text: 'ON THE RECORD' })),
+        h('span', { class: 'c2', text: 'official' + (ld ? ' · since ' + fDateShort(ld) : '') })),
+      h('span', { class: 'cn' }, liveAny ? wlu(lw, ll, lu) : h('span', { class: 'mu', text: 'no graded picks yet' }))),
+    h('div', { class: 'cr rp' }, h('span', { class: 'cl' }, h('span', { class: 'c1', text: 'Replay before launch' }),
+        h('span', { class: 'c2', text: (rangeText(rp) ? rangeText(rp) + ' · ' : '') + 'not on the Record' })),
+      h('span', { class: 'cn', text: rw + '-' + rl + ' · ' + (units(ru, 2) || '0.00u') })),
+    h('button', { class: 'linkbtn', type: 'button', on: { click: function () { var e = document.getElementById('replay'); if (e) e.scrollIntoView({ behavior: 'smooth', block: 'start' }); } } },
+      'See the replay bets', icon('right', 14)));
+}
+function replaySection(rp) {
+  var t = rp.total, rng = rangeText(rp);
+  var nights = arr(rp.nights).filter(function (nt) { return isObj(nt) && arr(nt.bets).filter(isObj).length; });
+  var sec = h('section', { class: 'sec', id: 'replay', style: 'margin-top:28px;padding-top:14px;border-top:2px solid var(--line);scroll-margin-top:8px' },
+    h('div', { class: 'sec-h' }, h('h2', { text: 'Replay: before the strategy went live' + (rng ? ' (' + rng + ')' : '') })));
+  if (rp.note) sec.appendChild(h('p', { class: 'rp-note', text: str(rp.note) }));
+  var w = num(t.w) || 0, l = num(t.l) || 0, extra = [];
+  if (pctNear(t.hit_rate) && (w + l)) extra.push(pctNear(t.hit_rate) + ' hit');
+  if (num(t.push)) extra.push(t.push + ' push');
+  if (num(t.void)) extra.push(t.void + ' void');
+  if (num(t.pending)) extra.push(t.pending + ' pending');
+  sec.appendChild(h('div', { class: 'rp-tot' }, h('b', null, wlu(w, l, num(t.units) || 0)), extra.length ? ' · ' + extra.join(' · ') : '', ' · not on the Record'));
+  nights.slice().sort(function (a, b) { return str(a.date) < str(b.date) ? 1 : (str(a.date) > str(b.date) ? -1 : 0); }).forEach(function (nt) {
+    var bets = arr(nt.bets).filter(isObj), open = bets.some(function (b) { return b.result == null; });
+    var tail = (num(nt.w) || 0) + '-' + (num(nt.l) || 0) + (units(nt.units, 2) ? ' · ' + units(nt.units, 2) : '') + (open ? ' so far' : '');
+    var ns = h('section', { class: 'night' }, h('h3', null, h('span', { class: 'rtag', text: 'REPLAY' }), fDateLong(nt.date) + ' · ' + tail));
+    bets.forEach(function (b) { ns.appendChild(replayRow(b)); });
+    sec.appendChild(ns);
+  });
+  if (!nights.length) sec.appendChild(h('p', { class: 'mu', text: 'No replay bets.' }));
+  app.appendChild(sec);
+}
+function replayRow(b) {
+  var res = b.result == null ? null : str(b.result), known = { W: 1, L: 1, PUSH: 1, VOID: 1 };
+  var tag = h('span', { class: 'tg ' + (res && known[res] ? res : 'none'), text: res || '–' });
+  if (!res) tag.setAttribute('aria-label', 'Pending');
+  var l2 = ['Hard Rock ' + odds(b.price)];
+  if (num(b.pin_price_before) != null || num(b.pin_price_after) != null) l2.push('Pinnacle ' + odds(b.pin_price_before) + ' → ' + odds(b.pin_price_after));
+  if (res && b.actual) l2.push(str(b.actual));
+  var u = res ? units(b.units, 2) : null, e2 = h('div', { class: 'e2' });
+  /* each part stays whole; a wrap falls after a dot, never before it */
+  l2.forEach(function (s, i) { e2.appendChild(h('span', { class: 'sg', text: s + (i < l2.length - 1 ? ' ·' : '') })); if (i < l2.length - 1) e2.appendChild(node(' ')); });
+  return h('div', { class: 'ent' }, tag,
+    h('div', { class: 'bd' }, h('div', { class: 'e1' }, h('span', { class: 'pn', text: b.player || 'Player not named' }), ' ' + shortBet(b)), e2),
+    res ? (u ? h('span', { class: 'u ' + signCls(b.units), text: u }) : null) : h('span', { class: 'u pend', text: 'pending' }));
 }
 function entryRow(e) {
   var res = e.result == null ? null : str(e.result), known = { W: 1, L: 1, PUSH: 1, VOID: 1 };

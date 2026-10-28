@@ -166,6 +166,9 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-28 ~12:50 PM (CEO, Matt: show the new strategy's history together): `scripts/replay.py` -> data/replay/pin_solo.json (same
+  code path, Oct 25-27, injuries not replayed): 29 bets 22-7 +11.75u. Record tab: combined card (live Record + replay, live marked
+  official) and a Replay section. The Record itself is untouched (append-only, live picks only). Checked at 380px.
 - 2026-10-28 12:21 PM (Matt): research paused. No Researcher schedule; data keeps collecting for later.
 - 2026-10-28 ~11:55 AM (CEO): v2.1 (Matt): others may move < 2 pts. Engine replay Oct 25-27: 29 picks 22-7 +11.75u. Tests pass.
 - 2026-10-28 ~11:30 AM (CEO): v2.0 shipped. Research runs 1-6 (research/LOG.md), each book as judge (only Pinnacle +), Matt chose
