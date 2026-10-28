@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-27T19:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-27T20:10:00-04:00"
+   "at": "2026-10-27T20:10:17-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "BKN",
    "home": "BOS",
    "state": "in",
-   "detail": "11:14 - 2nd",
+   "detail": "11:00 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -100,6 +100,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-27T20:10:00-04:00",
- "status_at": "2026-10-27T20:10:00-04:00"
+ "generated_at": "2026-10-27T20:10:17-04:00",
+ "status_at": "2026-10-27T20:10:17-04:00"
 }
