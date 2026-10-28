@@ -31,3 +31,6 @@
   median moves < 1 pt that way; bet that side at Hard Rock's price on the later read (no EV filter). Discovery Oct 25-27: 46 Pinnacle
   moves >= 2 pts, 16 alone, graded 11-5, +4.45u at HR prices; 0 of 16 were +2% vs Pinnacle's new number at HR's price.
   STATUS: forward from 2026-10-28 (discovery nights don't count). Code: research/code/run3_pin_alone.py.
+- F7b Follow Pinnacle's solo LINE move (its main line changes, <= 1/3 of the other books' lines change): bet the direction it moved at
+  Hard Rock's main line. Discovery: Pinnacle moved its line on only 1.7% of checks (19 times; HR 6.9%, DraftKings 12.9%); 7 solo,
+  graded 3-4, -1.66u. F7 (price-only moves, same line) is the main idea. STATUS: forward from 2026-10-28.
