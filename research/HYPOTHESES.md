@@ -34,3 +34,11 @@
 - F7b Follow Pinnacle's solo LINE move (its main line changes, <= 1/3 of the other books' lines change): bet the direction it moved at
   Hard Rock's main line. Discovery: Pinnacle moved its line on only 1.7% of checks (19 times; HR 6.9%, DraftKings 12.9%); 7 solo,
   graded 3-4, -1.66u. F7 (price-only moves, same line) is the main idea. STATUS: forward from 2026-10-28.
+
+## Run 4 (2026-10-28 ~10:45 AM, CEO; Matt: other books move the line, Hard Rock keeps its line - bet that direction?)
+- F8 Follow a line move Hard Rock didn't make: between consecutive reads >= 2 of the 7 sportsbooks move their main line the same way,
+  none the other way, Hard Rock keeps its line; bet the move's direction (over if lines went up) at HR's line and later price, first
+  time per player/market/night. Discovery Oct 25-27: 50 bets, 19-31, -14.63u; HR odds unchanged 8-19, HR odds juiced 11-12; EV vs the
+  fair at HR's line median -5.5%, 0 of 49 >= +3%. STATUS: failed in discovery (kept forward only as the mirror of F8b).
+- F8b FADE that move (the opposite side at HR's line and price, same moments): discovery 31-19, +6.51u on 50. Post-hoc (found by
+  flipping a loser after ~20 slices tried today), so treat as a lead only. STATUS: forward from 2026-10-28.
