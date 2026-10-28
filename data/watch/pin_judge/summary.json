@@ -1,0 +1,18 @@
+{
+ "track": "pin_judge",
+ "label": "Pinnacle as the price judge",
+ "about": "Behind the scenes (Matt, 2026-10-28): Hard Rock's main-line price is min_ev or better against Pinnacle's de-vigged chance on the same line. Research only: Backstage tab, never the Record or Discord. Discovery Oct 25-27 at +2%: 6 bets 5-1 +3.18u.",
+ "from_slate": "2026-10-28",
+ "min_ev": 0.02,
+ "updated_at": "2026-10-28T11:30:02-04:00",
+ "total": {
+  "w": 0,
+  "l": 0,
+  "push": 0,
+  "void": 0,
+  "units": 0.0,
+  "pending": 0,
+  "hit_rate": null
+ },
+ "nights": []
+}

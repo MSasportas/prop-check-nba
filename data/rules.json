@@ -1,6 +1,6 @@
 {
- "version": "1.2",
- "updated": "2026-10-26",
+ "version": "2.0",
+ "updated": "2026-10-28",
  "ui": {
   "stale_after_min": 30,
   "refresh_sec": 120,
@@ -8,14 +8,15 @@
  },
  "lines": [
   "Hard Rock (Florida) prices only: player rebounds, points, assists and 3-pointers made, the main line, over or under. No leg worse than -200.",
-  "Step 1, the gap: Hard Rock's price must be at least 3% better than the middle of 4+ other books on the same line, and Pinnacle (the sharpest book) must not disagree.",
-  "Step 2, the guard: our own model for that stat gets a 20% say. If the blend falls under +2% value, no pick. The model can block a pick, never create one.",
-  "Prices are checked about 90, 45 and 20 minutes before each tip (plus a morning look). The price shown is frozen and is the one graded.",
+  "The rule: Pinnacle (the sharpest book) moves its odds on a line by 2+ points of chance between two of our price checks, while the other books on that same line stay put. We bet the side Pinnacle moved toward, at Hard Rock's price.",
+  "Prices are checked about 90, 45 and 20 minutes before each tip (plus a morning look). A pick can come from the 90, 45 or 20 minute check. The price shown is frozen and is the one graded.",
+  "This is a signal, not a price gap: Hard Rock's price is not always better than Pinnacle's new number. It is being proven on the Record (started 2026-10-28; judged at about 150 bets).",
   "A player listed Out or Doubtful is never picked. Questionable or game-time decision waits until he is cleared or confirmed starting. Needs 10+ games of history.",
   "Early = injury news still open. Injury report clear = he and his team's main rotation are cleared. Starters confirmed = both teams' starting fives are posted.",
-  "If a later check finds the edge gone, the pick is pulled and says what that means if you already bet it. Pulled picks stay on the Record.",
-  "One side per player per market. No cap per game or per night: every leg that clears both checks is shown, best first. No parlays.",
+  "A pick is pulled if he is ruled out or doubtful, or Hard Rock takes the line down. Pulled picks stay on the Record.",
+  "One pick per player per market a night. No cap per game or per night. No parlays.",
   "Graded after the game at the shown price, 1 unit flat. Overtime counts. Did not play = void.",
+  "Behind the scenes (Backstage tab, not the Record or Discord): Pinnacle as the price judge, Hard Rock 2%+ better than Pinnacle's price on the same line.",
   "New picks stop by themselves if the Record falls to -10 units."
  ]
 }
