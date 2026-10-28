@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:57 - 2nd",
+    "detail": "9:43 - 2nd",
     "score": {
      "MIA": "36",
-     "ATL": "32"
+     "ATL": "34"
     }
    },
    {
@@ -333,7 +333,7 @@
     "status_name": "STATUS_IN_PROGRESS",
     "detail": "1.4 - 1st",
     "score": {
-     "WSH": "40",
+     "WSH": "41",
      "CLE": "34"
     }
    },
@@ -346,7 +346,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:32 - 1st",
+    "detail": "1:13 - 1st",
     "score": {
      "CHA": "19",
      "DET": "19"
@@ -361,7 +361,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:40 - 1st",
+    "detail": "1:28 - 1st",
     "score": {
      "PHI": "22",
      "IND": "20"
