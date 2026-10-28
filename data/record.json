@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T19:20:00-04:00",
+ "generated_at": "2026-10-28T19:30:00-04:00",
  "summary": {
   "headline": {
    "w": 0,
@@ -704,6 +704,30 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min"
+    },
+    {
+     "id": "2026-10-28:401909890:4066259:points:15.5:under",
+     "kind": "single",
+     "player": "De'Aaron Fox",
+     "bet": "Under 15.5 points",
+     "market": "points",
+     "team": "SAS",
+     "game": "SAS at UTA",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-10-28T19:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
     }
    ]
   }
