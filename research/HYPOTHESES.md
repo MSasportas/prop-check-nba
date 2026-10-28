@@ -25,3 +25,9 @@
 - F6 Pinnacle-move lag: between consecutive reads Pinnacle's fair moves >= 2 pts toward a side and Hard Rock's price does not move;
   bet that side at Hard Rock if EV vs the new Pinnacle fair >= +2%. Discovery: 9 of 1,360 pairs moved this way, 1 >= +2% (W).
   STATUS: forward from 2026-10-28.
+
+## Run 3 (2026-10-28 ~10:30 AM, CEO; Matt: how many 'Pinnacle moves alone' examples?)
+- F7 Follow Pinnacle's solo move: between two consecutive reads Pinnacle's fair moves >= 2 pts toward a side while the other books'
+  median moves < 1 pt that way; bet that side at Hard Rock's price on the later read (no EV filter). Discovery Oct 25-27: 46 Pinnacle
+  moves >= 2 pts, 16 alone, graded 11-5, +4.45u at HR prices; 0 of 16 were +2% vs Pinnacle's new number at HR's price.
+  STATUS: forward from 2026-10-28 (discovery nights don't count). Code: research/code/run3_pin_alone.py.

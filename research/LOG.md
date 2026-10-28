@@ -1,5 +1,9 @@
 # LOG.md (NBA research, newest first)
 
+## 2026-10-28 ~10:30 AM, Run 3 (CEO)
+- Pinnacle moved >= 2 pts between reads 46 times in 3 nights; 16 of those the other books didn't follow (median < 1 pt). Betting the
+  side Pinnacle moved toward, at Hard Rock: 11-5, +4.45u. 16 bets = could easily be luck (11-5 vs ~50% is p ~0.1). Registered F7 forward.
+
 ## 2026-10-28 ~10:20 AM, Run 2 (CEO; Matt: find it by comparing books before any model)
 - Pinnacle alone: 6 distinct sides >= +2% in 3 nights (only 1 >= +3%, Reaves U23.5 pts -120, lost), all unders, graded 5-1.
   Against the 8-9 book median the same sides were -0.6% to -4.4%: Pinnacle was the outlier, not Hard Rock.
