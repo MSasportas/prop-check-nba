@@ -418,13 +418,13 @@
     "start": "2026-10-27T23:00:00-04:00",
     "away": "POR",
     "home": "LAL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/27 - 11:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:27 - 1st",
     "score": {
-     "POR": "0",
-     "LAL": "0"
+     "POR": "7",
+     "LAL": "14"
     }
    }
   ]
