@@ -375,10 +375,10 @@
     "home": "BOS",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3.4 - 4th",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 4th",
     "score": {
-     "BKN": "113",
+     "BKN": "117",
      "BOS": "117"
     }
    },
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:42 - 3rd",
+    "detail": "1:27 - 3rd",
     "score": {
-     "DET": "56",
-     "NY": "69"
+     "DET": "63",
+     "NY": "84"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:51 - 4th",
+    "detail": "7:01 - 4th",
     "score": {
-     "SAC": "80",
-     "SA": "107"
+     "SAC": "92",
+     "SA": "114"
     }
    },
    {
