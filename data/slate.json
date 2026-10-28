@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-28T19:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-28T19:40:23-04:00"
+   "at": "2026-10-28T19:50:01-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "MIA",
    "home": "ATL",
    "state": "in",
-   "detail": "9:43 - 2nd",
+   "detail": "7:03 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -46,7 +46,7 @@
    "away": "WAS",
    "home": "CLE",
    "state": "in",
-   "detail": "1.4 - 1st",
+   "detail": "9:13 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "CHA",
    "home": "DET",
    "state": "in",
-   "detail": "1:13 - 1st",
+   "detail": "9:53 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "PHI",
    "home": "IND",
    "state": "in",
-   "detail": "1:28 - 1st",
+   "detail": "0.0 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -87,8 +87,8 @@
    "start": "2026-10-28T19:30:00-04:00",
    "away": "ORL",
    "home": "TOR",
-   "state": "pre",
-   "detail": "10/28 - 7:30 PM EDT",
+   "state": "in",
+   "detail": "8:25 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -104,8 +104,8 @@
    "state": "pre",
    "detail": "10/28 - 8:00 PM EDT",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
    "read_at": "2026-10-28T19:40:00-04:00",
    "picks": 3
@@ -146,8 +146,8 @@
    "state": "pre",
    "detail": "10/28 - 8:00 PM EDT",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
    "read_at": "2026-10-28T19:40:00-04:00",
    "picks": 1
@@ -321,8 +321,8 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0447,
    "id": "2026-10-28:401909886:4871145:rebounds:6.5:over",
-   "state": "clear",
-   "state_label": "Injury report clear",
+   "state": "starters",
+   "state_label": "Starters confirmed",
    "price_final": true,
    "pulled": null,
    "result": null,
@@ -629,8 +629,8 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0216,
    "id": "2026-10-28:401909886:3062679:points:11.5:under",
-   "state": "clear",
-   "state_label": "Injury report clear",
+   "state": "starters",
+   "state_label": "Starters confirmed",
    "price_final": true,
    "pulled": null,
    "result": null,
@@ -937,8 +937,8 @@
    "window": "90 \u2192 45 min",
    "gap_vs_pin": 0.0233,
    "id": "2026-10-28:401909886:3147657:rebounds:3.5:under",
-   "state": "clear",
-   "state_label": "Injury report clear",
+   "state": "starters",
+   "state_label": "Starters confirmed",
    "price_final": true,
    "pulled": null,
    "result": null,
@@ -1113,8 +1113,8 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0447,
    "id": "2026-10-28:401909889:3907497:points:17.5:under",
-   "state": "clear",
-   "state_label": "Injury report clear",
+   "state": "starters",
+   "state_label": "Starters confirmed",
    "price_final": true,
    "pulled": null,
    "result": null,
@@ -1357,6 +1357,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-28T19:40:23-04:00",
- "status_at": "2026-10-28T19:40:23-04:00"
+ "generated_at": "2026-10-28T19:50:01-04:00",
+ "status_at": "2026-10-28T19:50:01-04:00"
 }

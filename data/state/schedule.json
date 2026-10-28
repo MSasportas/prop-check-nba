@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:43 - 2nd",
+    "detail": "7:03 - 2nd",
     "score": {
-     "MIA": "36",
-     "ATL": "34"
+     "MIA": "49",
+     "ATL": "40"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1.4 - 1st",
+    "detail": "9:13 - 2nd",
     "score": {
-     "WSH": "41",
-     "CLE": "34"
+     "WSH": "48",
+     "CLE": "41"
     }
    },
    {
@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:13 - 1st",
+    "detail": "9:53 - 2nd",
     "score": {
-     "CHA": "19",
-     "DET": "19"
+     "CHA": "28",
+     "DET": "22"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:28 - 1st",
+    "detail": "0.0 - 2nd",
     "score": {
-     "PHI": "22",
-     "IND": "20"
+     "PHI": "25",
+     "IND": "25"
     }
    },
    {
@@ -373,13 +373,13 @@
     "start": "2026-10-28T19:30:00-04:00",
     "away": "ORL",
     "home": "TOR",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/28 - 7:30 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:25 - 1st",
     "score": {
-     "ORL": "0",
-     "TOR": "0"
+     "ORL": "10",
+     "TOR": "7"
     }
    },
    {

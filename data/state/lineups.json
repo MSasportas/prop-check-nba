@@ -151,11 +151,11 @@
    }
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
-    "Bryce Hopkins",
+    "Trevon Brazile",
     "Aaron Gordon",
     "Nikola Jokic"
    ],
@@ -167,7 +167,7 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Dejounte Murray",
     "Jeremiah Fears",
@@ -180,7 +180,7 @@
    }
   },
   "NY": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Brunson",
     "Mikal Bridges",
@@ -193,7 +193,7 @@
    }
   },
   "CHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Josh Giddey",
     "Norman Powell",
@@ -322,13 +322,11 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Kyrie Irving": "questionable",
-    "Caleb Martin": "questionable",
-    "Naji Marshall": "doubtful",
     "Santi Aldama": "out",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
-    "Dereck Lively": "out"
+    "Dereck Lively": "out",
+    "Naji Marshall": "out"
    }
   },
   "LAL": {
@@ -366,5 +364,5 @@
    }
   }
  },
- "at": "2026-10-28T19:40:23-04:00"
+ "at": "2026-10-28T19:50:01-04:00"
 }
