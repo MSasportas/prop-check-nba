@@ -11,8 +11,7 @@
     "Bam Adebayo"
    ],
    "status": {
-    "Pelle Larsson": "probable",
-    "Simone Fontecchio": "doubtful"
+    "Simone Fontecchio": "out"
    }
   },
   "ATL": {
@@ -26,7 +25,7 @@
    ],
    "status": {
     "Henri Veesaar": "out",
-    "Aaron Wiggins": "questionable",
+    "Aaron Wiggins": "probable",
     "Mouhamed Gueye": "out"
    }
   },
@@ -40,7 +39,6 @@
     "Alex Sarr"
    ],
    "status": {
-    "AJ Dybantsa": "questionable",
     "Justin Champagnie": "out",
     "Tristan Vukcevic": "out",
     "Jamir Watkins": "out"
@@ -56,7 +54,6 @@
     "Jarrett Allen"
    ],
    "status": {
-    "Khalifa Diop": "out",
     "Nae'Qwan Tomlin": "out"
    }
   },
@@ -85,8 +82,9 @@
     "Paul Reed"
    ],
    "status": {
-    "Isaiah Joe": "questionable",
-    "Jalen Duren": "out"
+    "Ausar Thompson": "probable",
+    "Jalen Duren": "out",
+    "Isaiah Joe": "out"
    }
   },
   "PHI": {
@@ -108,18 +106,18 @@
   "IND": {
    "state": "expected",
    "starters": [
-    "Tyrese Haliburton",
     "Andrew Nembhard",
+    "Kelly Oubre",
     "Aaron Nesmith",
     "Pascal Siakam",
     "Jay Huff"
    ],
    "status": {
-    "Tyrese Haliburton": "questionable",
     "Andrew Nembhard": "questionable",
     "Aaron Nesmith": "probable",
     "Obi Toppin": "probable",
     "Johnny Furphy": "out",
+    "Tyrese Haliburton": "out",
     "T.J. McConnell": "out",
     "Ben Sheppard": "out",
     "Ivica Zubac": "out"
@@ -135,6 +133,7 @@
     "Wendell Carter"
    ],
    "status": {
+    "Anthony Black": "questionable",
     "Paolo Banchero": "out",
     "Jonathan Isaac": "out",
     "Izaiyah Nelson": "out",
@@ -182,7 +181,6 @@
     "DeAndre Jordan"
    ],
    "status": {
-    "Jordan Poole": "probable",
     "Yves Missi": "out"
    }
   },
@@ -196,7 +194,7 @@
     "Karl-Anthony Towns"
    ],
    "status": {
-    "Jose Alvarado": "questionable"
+    "Jose Alvarado": "out"
    }
   },
   "CHI": {
@@ -224,9 +222,9 @@
     "Jabari Smith"
    ],
    "status": {
-    "Marcus Smart": "questionable",
     "Steven Adams": "out",
-    "Alperen Sengun": "out"
+    "Alperen Sengun": "out",
+    "Marcus Smart": "out"
    }
   },
   "MIL": {
@@ -280,7 +278,7 @@
     "Victor Wembanyama"
    ],
    "status": {
-    "Tobias Harris": "questionable",
+    "Tobias Harris": "out",
     "Jayden Quaintance": "out"
    }
   },
@@ -330,10 +328,10 @@
    ],
    "status": {
     "Kyrie Irving": "questionable",
-    "Naji Marshall": "questionable",
     "Caleb Martin": "questionable",
-    "Santi Aldama": "doubtful",
-    "Tarik Biberovic": "doubtful",
+    "Naji Marshall": "doubtful",
+    "Santi Aldama": "out",
+    "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Dereck Lively": "out"
    }
@@ -348,8 +346,7 @@
     "Walker Kessler"
    ],
    "status": {
-    "Cameron Carr": "out",
-    "Adou Thiero": "out"
+    "Adou Thiero": "doubtful"
    }
   },
   "LAC": {
@@ -371,5 +368,5 @@
    }
   }
  },
- "at": "2026-10-28T05:00:01-04:00"
+ "at": "2026-10-28T16:00:01-04:00"
 }
