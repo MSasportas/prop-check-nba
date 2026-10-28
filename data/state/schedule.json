@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:40 - 4th",
+    "detail": "1:22 - 4th",
     "score": {
      "BKN": "109",
-     "BOS": "110"
+     "BOS": "111"
     }
    },
    {
@@ -406,7 +406,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:51 - 3rd",
+    "detail": "2:26 - 3rd",
     "score": {
      "SAC": "76",
      "SA": "101"
