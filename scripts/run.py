@@ -260,7 +260,7 @@ class Run:
                                         "price", "price_at", "read", "p", "p_pct", "breakeven", "breakeven_pct",
                                         "market_fair", "n_books", "gap_ev", "final_ev", "model_p", "reason", "link", "rule",
                                         "pin_before", "pin_after", "pin_price_before", "pin_price_after", "others_move",
-                                        "n_others", "ev_vs_pin", "window")}
+                                        "n_others", "ev_vs_pin", "window", "gap_vs_pin")}
             p["id"] = it["id"]
             p["window"] = record.window_of(sh)
             p["team"], p["opp"] = teams.show(sh["team"]), teams.show(sh["opp"])
@@ -403,8 +403,9 @@ def rules_doc(cfg):
         "Hard Rock (Florida) prices only: player rebounds, points, assists and 3-pointers made, the main line, over or under. "
         "No leg worse than %d." % c["worst_price"],
         "The rule: Pinnacle (the sharpest book) moves its odds on a line by %d+ points of chance between two of our price checks, "
-        "while the other books on that same line move less than %d points that way. We bet the side Pinnacle moved toward, at "
-        "Hard Rock's price." % (round(100 * ps["min_move"]), round(100 * ps["others_max"])),
+        "while the other books on that same line move less than %d points that way, AND Hard Rock's price is still %d+ points "
+        "better than Pinnacle's new price (about 10 cents). We bet the side Pinnacle moved toward, at Hard Rock's price."
+        % (round(100 * ps["min_move"]), round(100 * ps["others_max"]), round(100 * ps["min_gap_vs_pin"])),
         "Prices are checked about %d, %d and %d minutes before each tip (plus a morning look). A pick can come from the 90, 45 or "
         "20 minute check. The price shown is frozen and is the one graded." % (r["b_min"], r["c_min"], r["d_min"]),
         "This is a signal, not a price gap: Hard Rock's price is not always better than Pinnacle's new number. It is being proven "

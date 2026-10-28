@@ -64,6 +64,7 @@ def build(cfg, first, last, store):
                          "read": r["read"], "at": r["at"], "pin_before": r["pin_before"], "pin_after": r["pin_after"],
                          "pin_price_before": r["pin_price_before"], "pin_price_after": r["pin_price_after"],
                          "others_move": r["others_move"], "n_others": r["n_others"], "window": r["window"],
+                         "gap_vs_pin": r["gap_vs_pin"],
                          "result": res, "actual": actual,
                          "units": units})
     return bets

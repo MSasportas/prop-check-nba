@@ -381,12 +381,17 @@ def solo_moves(a, b, ctx):
                  "pin_price_before": (pa.get(k) or {}).get(side), "pin_price_after": (pb.get(k) or {}).get(side),
                  "others_move": round(statistics.median(mv), 4) if mv else None, "n_others": len(mv),
                  "ev_vs_pin": round(odds.ev(pin_b, price), 4)}
+            pp = (pb.get(k) or {}).get(side)
+            r["gap_vs_pin"] = round(odds.break_even(pp) - odds.break_even(price), 4) if pp is not None else None
             if hr_stale:
                 r["why"] = "Hard Rock price is stale"
             elif len(mv) < ps["others_min"]:
                 r["why"] = "only %d other books on this line" % len(mv)
             elif statistics.median(mv) >= ps["others_max"] - EPS:
                 r["why"] = "the other books moved too (%+.1f pts)" % (100 * statistics.median(mv))
+            elif r["gap_vs_pin"] is None or r["gap_vs_pin"] < ps.get("min_gap_vs_pin", -1.0) - EPS:
+                r["why"] = "Hard Rock not %g+ pts better than Pinnacle's price (%s)" % (
+                    100 * ps.get("min_gap_vs_pin", 0), "no Pinnacle price" if r["gap_vs_pin"] is None else "%+.1f" % (100 * r["gap_vs_pin"]))
             elif price < cfg["customer"]["worst_price"]:
                 r["why"] = "price worse than %d" % cfg["customer"]["worst_price"]
             elif price > ps["max_price"]:
@@ -415,7 +420,12 @@ def solo_reason(r):
     s = "Pinnacle moved the %s from %s to %s (%.0f%% to %.0f%%); %d other books %s." % (
         r["side"], common.fmt_price(pb) if pb is not None else "?", common.fmt_price(pa) if pa is not None else "?",
         100 * r["pin_before"], 100 * r["pin_after"], r["n_others"], held)
-    s += " Hard Rock price: %s." % common.fmt_price(r["price"])
+    s += " Hard Rock price: %s" % common.fmt_price(r["price"])
+    if r.get("gap_vs_pin") is not None:
+        s += ", %.1f pts better than Pinnacle's." % (100 * r["gap_vs_pin"]) if r["gap_vs_pin"] >= 0 else \
+            ", %.1f pts worse than Pinnacle's." % (-100 * r["gap_vs_pin"])
+    else:
+        s += "."
     return s
 
 
@@ -495,7 +505,8 @@ def step(ctx, odds_doc):
                     "breakeven": round(be, 4), "breakeven_pct": pct_round(be), "pin_before": r["pin_before"],
                     "pin_after": r["pin_after"], "pin_price_before": r["pin_price_before"], "pin_price_after": r["pin_price_after"],
                     "others_move": r["others_move"], "n_others": r["n_others"], "n_books": r["n_others"],
-                    "ev_vs_pin": r["ev_vs_pin"], "final_ev": round(abs(r["pin_after"] - r["pin_before"]), 4),
+                    "ev_vs_pin": r["ev_vs_pin"], "gap_vs_pin": r["gap_vs_pin"],
+                    "final_ev": round(abs(r["pin_after"] - r["pin_before"]), 4),
                     "reason": solo_reason(r), "state": ctx.settled(r["pid"], r["team"], g), "link": r.get("link"),
                     "window": r["window"]}
             pid_ = pick_id(slate, r["game_id"], r["pid"], r["line"], r["side"], r["market"])
