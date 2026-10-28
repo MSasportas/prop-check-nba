@@ -562,6 +562,16 @@ def step(ctx, odds_doc):
         if started(g, now):
             new.append({"t": "locked", "id": i, "at": common.iso(now), "state": "locked"})
             continue
+        if sh.get("rule") == "pin_solo" and it["slate"] == slate and ps.get("min_gap_vs_pin") is not None:
+            # a rule change mid-night (v2.2, Matt 2026-10-28): an open pick that no longer meets the gap at its own shown prices is
+            # taken down (Record: pulled, code rule_change; never deleted); the Tonight list and Discord drop it
+            pp = sh.get("pin_price_after")
+            gap = (odds.break_even(pp) - odds.break_even(sh["price"])) if pp is not None else None
+            if gap is None or gap < ps["min_gap_vs_pin"] - EPS:
+                new.append({"t": "pulled", "id": i, "at": common.iso(now), "code": "rule_change",
+                            "reason": "Rule change: Hard Rock was not %g+ pts better than Pinnacle's price" % (100 * ps["min_gap_vs_pin"]),
+                            "if_bet": "Already bet? It stays a normal bet; it just no longer meets the rule."})
+                continue
         st = ctx.status(sh["pid"])
         if st in cfg["eligibility"]["never_status"] or (st in cfg["eligibility"]["wait_status"]
                                                          and not ctx.confirmed_starter(sh["pid"], sh["team"])):

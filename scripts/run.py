@@ -255,6 +255,8 @@ class Run:
         picks = []
         for it in sorted([x for x in items.values() if x["slate"] == self.slate and x["kind"] == "single"],
                          key=lambda x: (-(x["shown"].get("final_ev") or 0), x["id"])):
+            if it["pulled"] and it["pulled"].get("code") == "rule_change":
+                continue                                   # taken down by a rule change: on the Record (pulled), not on Tonight
             sh, gr = it["shown"], it["graded"]
             p = {k: sh.get(k) for k in ("player", "pid", "team", "opp", "home", "game_id", "start", "bet", "market", "side", "line",
                                         "price", "price_at", "read", "p", "p_pct", "breakeven", "breakeven_pct",

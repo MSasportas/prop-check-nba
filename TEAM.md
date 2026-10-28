@@ -169,6 +169,9 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-28 ~6:25 PM (CEO, Matt: re-send the new list, take the old one off the site): open pin_solo picks that fail the v2.2 gap
+  at their own shown prices are pulled by the timer (code rule_change; on the Record as pulled, hidden from Tonight and Discord).
+  Tonight's Discord sent-list reset in data/state/notified.json so the next run sends one NEW PICKS message with the v2.2 list.
 - 2026-10-28 ~6:15 PM (CEO): v2.2 gap gate (Matt). Replay regenerated: 14 bets 10-4 +4.87u. Tests 61 pass.
 - 2026-10-28 ~6:15 PM (CEO, Matt): every Pinnacle pick tagged with its window (11 AM → 90 / 90 → 45 / 45 → 20 min); Record rows per
   window + combined card table per window (live, replay, all). Picks shown before the tag get it from their flag read (log untouched).

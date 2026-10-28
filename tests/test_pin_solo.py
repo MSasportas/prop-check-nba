@@ -79,6 +79,24 @@ class TestPinSolo(unittest.TestCase):
         self.w.run("2026-10-25T16:16:00-04:00")
         self.assertEqual(self.shown(), [])
 
+    def test_rule_change_takes_down_open_pick(self):
+        # a pick shown under v2.1 (no gap gate) that fails the 2-pt gap is pulled (rule_change) and leaves the Tonight list
+        cfg = json.load(open(self.w.config))
+        cfg["pin_solo"].pop("min_gap_vs_pin", None)
+        json.dump(cfg, open(self.w.config, "w"))
+        write(self.w, "2026-10-25T19:30:00Z", (115, -150), (-102, -118), (-105, -115))
+        self.w.run("2026-10-25T15:31:00-04:00")
+        write(self.w, "2026-10-25T20:15:00Z", (115, -150), (112, -149), (-105, -115))
+        self.w.run("2026-10-25T16:16:00-04:00")
+        self.assertEqual(len(self.shown()), 1)
+        cfg["pin_solo"]["min_gap_vs_pin"] = 0.02
+        json.dump(cfg, open(self.w.config, "w"))
+        self.w.run("2026-10-25T16:20:00-04:00")
+        pulled = [e for e in self.w.events() if e["t"] == "pulled"]
+        self.assertEqual([e["code"] for e in pulled], ["rule_change"])
+        self.assertEqual(self.w.read("slate.json")["picks"], [])
+        self.assertTrue(any(e["pulled"] for n in self.w.read("record.json")["nights"] for e in n["entries"]))
+
     def test_too_few_other_books_no_pick(self):
         write(self.w, "2026-10-25T19:30:00Z", (-110, -120), (-102, -118), (-105, -115), n_others=3)
         self.w.run("2026-10-25T15:31:00-04:00")
