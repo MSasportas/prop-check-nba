@@ -594,7 +594,7 @@ function pickCard(p, d, opts) {
 
   var pa = fStamp(p.price_at);
   if (!started) card.appendChild(h('div', { class: 'betat' }, 'Bet at ', h('b', { text: odds(p.price) + ' or better' }),
-    pa ? ' · ' + (stale() ? 'old price, read ' : 'read ') + pa : ''));
+    ' · worse? skip it', pa ? ' · ' + (stale() ? 'old price, read ' : 'read ') + pa : ''));
 
   var pin = str(p.rule) === 'pin_solo';
   if (pin && (!started || isOpen)) card.appendChild(pinRow(p));
