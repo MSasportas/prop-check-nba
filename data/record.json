@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T18:00:00-04:00",
+ "generated_at": "2026-10-28T18:20:01-04:00",
  "summary": {
   "headline": {
    "w": 0,
@@ -89,7 +89,10 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-10-28T18:20:01-04:00",
+      "reason": "Hard Rock took the line down"
+     },
      "legs": [],
      "window": "11 AM \u2192 90 min"
     },
