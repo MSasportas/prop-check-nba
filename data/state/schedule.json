@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:32 - 3rd",
+    "detail": "4:20 - 3rd",
     "score": {
-     "POR": "80",
-     "LAL": "84"
+     "POR": "88",
+     "LAL": "97"
     }
    }
   ]
