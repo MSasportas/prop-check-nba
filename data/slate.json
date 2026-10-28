@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2707,
+   "pool_left": 2691,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-28T18:40:00-04:00",
-  "last_read_at": "2026-10-28T18:30:00-04:00",
+  "next_read_at": "2026-10-28T18:45:00-04:00",
+  "last_read_at": "2026-10-28T18:40:01-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-28T18:30:00-04:00"
+   "at": "2026-10-28T18:40:01-04:00"
   }
  },
  "games": [
@@ -34,10 +34,10 @@
    "state": "pre",
    "detail": "10/28 - 7:00 PM EDT",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-10-28T18:20:01-04:00",
+   "read_at": "2026-10-28T18:40:01-04:00",
    "picks": 2
   },
   {
@@ -51,8 +51,8 @@
     "away": "confirmed",
     "home": "confirmed"
    },
-   "read_at": "2026-10-28T18:20:01-04:00",
-   "picks": 3
+   "read_at": "2026-10-28T18:40:01-04:00",
+   "picks": 4
   },
   {
    "id": "401909883",
@@ -62,10 +62,10 @@
    "state": "pre",
    "detail": "10/28 - 7:00 PM EDT",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "expected"
    },
-   "read_at": "2026-10-28T18:20:01-04:00",
+   "read_at": "2026-10-28T18:40:01-04:00",
    "picks": 1
   },
   {
@@ -76,11 +76,11 @@
    "state": "pre",
    "detail": "10/28 - 7:00 PM EDT",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "expected"
    },
-   "read_at": "2026-10-28T18:20:01-04:00",
-   "picks": 1
+   "read_at": "2026-10-28T18:40:01-04:00",
+   "picks": 2
   },
   {
    "id": "401909885",
@@ -279,10 +279,54 @@
    "id": "2026-10-28:401909882:4277905:rebounds:2.5:under",
    "state": "starters",
    "state_label": "Starters confirmed",
-   "price_final": false,
+   "price_final": true,
    "pulled": null,
    "result": null,
    "rank": 2
+  },
+  {
+   "player": "Peyton Watson",
+   "pid": "4576087",
+   "team": "CLE",
+   "opp": "WAS",
+   "home": true,
+   "game_id": "401909882",
+   "start": "2026-10-28T19:00:00-04:00",
+   "bet": "Over 13.5 points",
+   "market": "points",
+   "side": "over",
+   "line": 13.5,
+   "price": -120,
+   "price_at": "2026-10-28T18:40:01-04:00",
+   "read": "D",
+   "p": 0.5492,
+   "p_pct": 55,
+   "breakeven": 0.5455,
+   "breakeven_pct": 55,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0492,
+   "model_p": null,
+   "reason": "Pinnacle moved the over from -115 to -143 (50% to 55%); 8 other books moved 1 pt. Hard Rock price: -120, 4.3 pts better than Pinnacle's.",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4714601546887856525",
+   "rule": "pin_solo",
+   "pin_before": 0.5,
+   "pin_after": 0.5492,
+   "pin_price_before": -115,
+   "pin_price_after": -143,
+   "others_move": 0.0112,
+   "n_others": 8,
+   "ev_vs_pin": 0.0068,
+   "window": "45 \u2192 20 min",
+   "gap_vs_pin": 0.043,
+   "id": "2026-10-28:401909882:4576087:points:13.5:over",
+   "state": "starters",
+   "state_label": "Starters confirmed",
+   "price_final": true,
+   "pulled": null,
+   "result": null,
+   "rank": 3
   },
   {
    "player": "Moussa Diabate",
@@ -323,10 +367,10 @@
    "id": "2026-10-28:401909883:4433249:points:8.5:under",
    "state": "clear",
    "state_label": "Injury report clear",
-   "price_final": false,
+   "price_final": true,
    "pulled": null,
    "result": null,
-   "rank": 3
+   "rank": 4
   },
   {
    "player": "James Harden",
@@ -367,10 +411,10 @@
    "id": "2026-10-28:401909882:3992:rebounds:4.5:under",
    "state": "starters",
    "state_label": "Starters confirmed",
-   "price_final": false,
+   "price_final": true,
    "pulled": null,
    "result": null,
-   "rank": 4
+   "rank": 5
   },
   {
    "player": "Bam Adebayo",
@@ -409,12 +453,12 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": null,
    "id": "2026-10-28:401909881:4066261:assists:3.5:under",
-   "state": "clear",
-   "state_label": "Injury report clear",
-   "price_final": false,
+   "state": "starters",
+   "state_label": "Starters confirmed",
+   "price_final": true,
    "pulled": null,
    "result": null,
-   "rank": 5
+   "rank": 6
   },
   {
    "player": "Josh Hart",
@@ -458,7 +502,7 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 6
+   "rank": 7
   },
   {
    "player": "Amen Thompson",
@@ -502,7 +546,7 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 7
+   "rank": 8
   },
   {
    "player": "Anthony Davis",
@@ -543,10 +587,54 @@
    "id": "2026-10-28:401909882:6583:assists:2.5:under",
    "state": "starters",
    "state_label": "Starters confirmed",
-   "price_final": false,
+   "price_final": true,
    "pulled": null,
    "result": null,
-   "rank": 8
+   "rank": 9
+  },
+  {
+   "player": "LeBron James",
+   "pid": "1966",
+   "team": "PHI",
+   "opp": "IND",
+   "home": false,
+   "game_id": "401909884",
+   "start": "2026-10-28T19:00:00-04:00",
+   "bet": "Over 6.5 rebounds",
+   "market": "rebounds",
+   "side": "over",
+   "line": 6.5,
+   "price": -110,
+   "price_at": "2026-10-28T18:40:01-04:00",
+   "read": "D",
+   "p": 0.5131,
+   "p_pct": 51,
+   "breakeven": 0.5238,
+   "breakeven_pct": 52,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0343,
+   "model_p": null,
+   "reason": "Pinnacle moved the over from -105 to -122 (48% to 51%); 8 other books held. Hard Rock price: -110, 2.6 pts better than Pinnacle's.",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/8775212567254663576",
+   "rule": "pin_solo",
+   "pin_before": 0.4788,
+   "pin_after": 0.5131,
+   "pin_price_before": -105,
+   "pin_price_after": -122,
+   "others_move": 0.0045,
+   "n_others": 8,
+   "ev_vs_pin": -0.0205,
+   "window": "45 \u2192 20 min",
+   "gap_vs_pin": 0.0257,
+   "id": "2026-10-28:401909884:1966:rebounds:6.5:over",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": true,
+   "pulled": null,
+   "result": null,
+   "rank": 10
   },
   {
    "player": "Rudy Gobert",
@@ -590,7 +678,7 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 9
+   "rank": 11
   },
   {
    "player": "Ayo Dosunmu",
@@ -634,7 +722,7 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 10
+   "rank": 12
   },
   {
    "player": "Tyrese Maxey",
@@ -675,10 +763,10 @@
    "id": "2026-10-28:401909884:4431678:threes:2.5:over",
    "state": "clear",
    "state_label": "Injury report clear",
-   "price_final": false,
+   "price_final": true,
    "pulled": null,
    "result": null,
-   "rank": 11
+   "rank": 13
   },
   {
    "player": "Dejounte Murray",
@@ -722,7 +810,7 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 12
+   "rank": 14
   },
   {
    "player": "C.J. McCollum",
@@ -761,12 +849,12 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": null,
    "id": "2026-10-28:401909881:2490149:assists:3.5:under",
-   "state": "clear",
-   "state_label": "Injury report clear",
-   "price_final": false,
+   "state": "starters",
+   "state_label": "Starters confirmed",
+   "price_final": true,
    "pulled": null,
    "result": null,
-   "rank": 13
+   "rank": 15
   },
   {
    "player": "Ryan Rollins",
@@ -810,7 +898,7 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 14
+   "rank": 16
   },
   {
    "player": "Donovan Mitchell",
@@ -851,7 +939,7 @@
    "id": "2026-10-28:401909882:3908809:assists:4.5:over",
    "state": "clear",
    "state_label": "Injury report clear",
-   "price_final": false,
+   "price_final": true,
    "pulled": {
     "at": "2026-10-28T18:20:01-04:00",
     "reason": "Hard Rock took the line down",
@@ -864,7 +952,7 @@
  "empty": null,
  "counts": {
   "lines_read": 986,
-  "passing": 14,
+  "passing": 16,
   "games": 12
  },
  "safety_paused": false,
@@ -873,6 +961,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-28T18:30:00-04:00",
- "status_at": "2026-10-28T18:30:00-04:00"
+ "generated_at": "2026-10-28T18:40:01-04:00",
+ "status_at": "2026-10-28T18:40:01-04:00"
 }

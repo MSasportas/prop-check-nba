@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T18:30:00-04:00",
+ "generated_at": "2026-10-28T18:40:01-04:00",
  "summary": {
   "headline": {
    "w": 0,
@@ -464,6 +464,54 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min"
+    },
+    {
+     "id": "2026-10-28:401909882:4576087:points:13.5:over",
+     "kind": "single",
+     "player": "Peyton Watson",
+     "bet": "Over 13.5 points",
+     "market": "points",
+     "team": "CLE",
+     "game": "WAS at CLE",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-10-28T18:40:01-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "45 \u2192 20 min"
+    },
+    {
+     "id": "2026-10-28:401909884:1966:rebounds:6.5:over",
+     "kind": "single",
+     "player": "LeBron James",
+     "bet": "Over 6.5 rebounds",
+     "market": "rebounds",
+     "team": "PHI",
+     "game": "PHI at IND",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-10-28T18:40:01-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "45 \u2192 20 min"
     }
    ]
   }

@@ -2,7 +2,7 @@
  "slate": "2026-10-28",
  "teams": {
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
@@ -15,7 +15,7 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "CJ McCollum",
     "Nickeil Alexander-Walker",
@@ -58,7 +58,7 @@
    }
   },
   "CHA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Dennis Schroder",
     "Sion James",
@@ -88,7 +88,7 @@
    }
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
@@ -367,5 +367,5 @@
    }
   }
  },
- "at": "2026-10-28T18:30:32-04:00"
+ "at": "2026-10-28T18:40:01-04:00"
 }
