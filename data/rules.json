@@ -1,5 +1,5 @@
 {
- "version": "2.0",
+ "version": "2.1",
  "updated": "2026-10-28",
  "ui": {
   "stale_after_min": 30,
@@ -8,7 +8,7 @@
  },
  "lines": [
   "Hard Rock (Florida) prices only: player rebounds, points, assists and 3-pointers made, the main line, over or under. No leg worse than -200.",
-  "The rule: Pinnacle (the sharpest book) moves its odds on a line by 2+ points of chance between two of our price checks, while the other books on that same line stay put. We bet the side Pinnacle moved toward, at Hard Rock's price.",
+  "The rule: Pinnacle (the sharpest book) moves its odds on a line by 2+ points of chance between two of our price checks, while the other books on that same line move less than 2 points that way. We bet the side Pinnacle moved toward, at Hard Rock's price.",
   "Prices are checked about 90, 45 and 20 minutes before each tip (plus a morning look). A pick can come from the 90, 45 or 20 minute check. The price shown is frozen and is the one graded.",
   "This is a signal, not a price gap: Hard Rock's price is not always better than Pinnacle's new number. It is being proven on the Record (started 2026-10-28; judged at about 150 bets).",
   "A player listed Out or Doubtful is never picked. Questionable or game-time decision waits until he is cleared or confirmed starting. Needs 10+ games of history.",
