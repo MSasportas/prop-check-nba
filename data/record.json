@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T18:40:01-04:00",
+ "generated_at": "2026-10-28T18:50:01-04:00",
  "summary": {
   "headline": {
    "w": 0,
@@ -512,6 +512,30 @@
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min"
+    },
+    {
+     "id": "2026-10-28:401909885:4712849:assists:3.5:under",
+     "kind": "single",
+     "player": "Anthony Black",
+     "bet": "Under 3.5 assists",
+     "market": "assists",
+     "team": "ORL",
+     "game": "ORL at TOR",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-10-28T18:50:01-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min"
     }
    ]
   }

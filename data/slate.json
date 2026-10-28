@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2691,
+   "pool_left": 2687,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-28T18:45:00-04:00",
-  "last_read_at": "2026-10-28T18:40:01-04:00",
+  "next_read_at": "2026-10-28T19:10:00-04:00",
+  "last_read_at": "2026-10-28T18:50:01-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-28T18:40:01-04:00"
+   "at": "2026-10-28T18:50:01-04:00"
   }
  },
  "games": [
@@ -63,7 +63,7 @@
    "detail": "10/28 - 7:00 PM EDT",
    "lineups": {
     "away": "confirmed",
-    "home": "expected"
+    "home": "confirmed"
    },
    "read_at": "2026-10-28T18:40:01-04:00",
    "picks": 1
@@ -77,7 +77,7 @@
    "detail": "10/28 - 7:00 PM EDT",
    "lineups": {
     "away": "confirmed",
-    "home": "expected"
+    "home": "confirmed"
    },
    "read_at": "2026-10-28T18:40:01-04:00",
    "picks": 2
@@ -93,8 +93,8 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-28T18:00:00-04:00",
-   "picks": 0
+   "read_at": "2026-10-28T18:50:01-04:00",
+   "picks": 1
   },
   {
    "id": "401909886",
@@ -365,8 +365,8 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": null,
    "id": "2026-10-28:401909883:4433249:points:8.5:under",
-   "state": "clear",
-   "state_label": "Injury report clear",
+   "state": "starters",
+   "state_label": "Starters confirmed",
    "price_final": true,
    "pulled": null,
    "result": null,
@@ -629,8 +629,8 @@
    "window": "45 \u2192 20 min",
    "gap_vs_pin": 0.0257,
    "id": "2026-10-28:401909884:1966:rebounds:6.5:over",
-   "state": "clear",
-   "state_label": "Injury report clear",
+   "state": "starters",
+   "state_label": "Starters confirmed",
    "price_final": true,
    "pulled": null,
    "result": null,
@@ -681,6 +681,50 @@
    "rank": 11
   },
   {
+   "player": "Anthony Black",
+   "pid": "4712849",
+   "team": "ORL",
+   "opp": "TOR",
+   "home": false,
+   "game_id": "401909885",
+   "start": "2026-10-28T19:30:00-04:00",
+   "bet": "Under 3.5 assists",
+   "market": "assists",
+   "side": "under",
+   "line": 3.5,
+   "price": 120,
+   "price_at": "2026-10-28T18:50:01-04:00",
+   "read": "C",
+   "p": 0.4562,
+   "p_pct": 46,
+   "breakeven": 0.4545,
+   "breakeven_pct": 45,
+   "market_fair": null,
+   "n_books": 4,
+   "gap_ev": null,
+   "final_ev": 0.0314,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from +120 to +105 (42% to 46%); 4 other books held. Hard Rock price: +120, 3.3 pts better than Pinnacle's.",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/3636629716972208551",
+   "rule": "pin_solo",
+   "pin_before": 0.4248,
+   "pin_after": 0.4562,
+   "pin_price_before": 120,
+   "pin_price_after": 105,
+   "others_move": 0.0093,
+   "n_others": 4,
+   "ev_vs_pin": 0.0035,
+   "window": "90 \u2192 45 min",
+   "gap_vs_pin": 0.0333,
+   "id": "2026-10-28:401909885:4712849:assists:3.5:under",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "result": null,
+   "rank": 12
+  },
+  {
    "player": "Ayo Dosunmu",
    "pid": "4397002",
    "team": "MIN",
@@ -722,7 +766,7 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 12
+   "rank": 13
   },
   {
    "player": "Tyrese Maxey",
@@ -761,12 +805,12 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": null,
    "id": "2026-10-28:401909884:4431678:threes:2.5:over",
-   "state": "clear",
-   "state_label": "Injury report clear",
+   "state": "starters",
+   "state_label": "Starters confirmed",
    "price_final": true,
    "pulled": null,
    "result": null,
-   "rank": 13
+   "rank": 14
   },
   {
    "player": "Dejounte Murray",
@@ -810,7 +854,7 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 14
+   "rank": 15
   },
   {
    "player": "C.J. McCollum",
@@ -854,7 +898,7 @@
    "price_final": true,
    "pulled": null,
    "result": null,
-   "rank": 15
+   "rank": 16
   },
   {
    "player": "Ryan Rollins",
@@ -898,7 +942,7 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 16
+   "rank": 17
   },
   {
    "player": "Donovan Mitchell",
@@ -951,8 +995,8 @@
  ],
  "empty": null,
  "counts": {
-  "lines_read": 986,
-  "passing": 16,
+  "lines_read": 994,
+  "passing": 17,
   "games": 12
  },
  "safety_paused": false,
@@ -961,6 +1005,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-28T18:40:01-04:00",
- "status_at": "2026-10-28T18:40:01-04:00"
+ "generated_at": "2026-10-28T18:50:01-04:00",
+ "status_at": "2026-10-28T18:50:01-04:00"
 }

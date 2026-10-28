@@ -73,7 +73,7 @@
    }
   },
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cade Cunningham",
     "Duncan Robinson",
@@ -104,7 +104,7 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Andrew Nembhard",
     "Kelly Oubre",
@@ -367,5 +367,5 @@
    }
   }
  },
- "at": "2026-10-28T18:40:01-04:00"
+ "at": "2026-10-28T18:50:01-04:00"
 }
