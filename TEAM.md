@@ -113,6 +113,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   9/9 games but misses some lines). A silent book costs nothing; swap per NHL item 24 (quality sharp books).
   2026-10-27 A read: all 9 also return threes (BetMGM 3/4 games, the rest 4/4). **Hard Rock returned nothing** at the 11 AM A read
   (all 4 games; it had all markets at 11 AM on 10-26): its NBA props can post after 11 AM. B/C/D retry by design; the page now says so.
+  2026-10-28 A read: all 9 other books returned all 4 markets on 12/12 games; Hard Rock posted all 4 at 11 AM this time.
 - **Discord:** `scripts/notify.py`, secret `DISCORD_WEBHOOK`. Sends NEW PICKS (batched), PULLED (only picks already sent, before tip, with
   the if-bet line), PRICE FINAL, ACTION NEEDED (keys refused / pool low, once a day each), a one-time hello. Never no-pick nights,
   heartbeats, grading or errors. Quiet 12:30-9:00 AM ET. Max 12 messages a day.
@@ -166,6 +167,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-28 2:10 PM (CEO, daily check): alive (chain link 108, status 2:00 PM, all steps ok, Actions green, pool 2,759, all 4 reads planned for 12 games). A read ran 11 AM (12 games x 4 credits, Hard Rock + all 9 books on every game). 10-27: 0 live picks (Gap + Guard), nothing to grade (no events.jsonl yet); v2.1 Pinnacle rule's first live B/C/D reads are tonight. Rotowire showed confirmed starters last night (8 confirmed states). Unmatched Rotowire: Diop, Tomlin (CLE bench, harmless); no unmatched odds names, no unknown teams. 60 tests pass. No code changes.
 - 2026-10-28 ~12:50 PM (CEO, Matt: show the new strategy's history together): `scripts/replay.py` -> data/replay/pin_solo.json (same
   code path, Oct 25-27, injuries not replayed): 29 bets 22-7 +11.75u. Record tab: combined card (live Record + replay, live marked
   official) and a Replay section. The Record itself is untouched (append-only, live picks only). Checked at 380px.
