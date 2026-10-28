@@ -63,7 +63,8 @@ def build(cfg, first, last, store):
                          "bet": engine.bet_text(r["side"], r["line"], cfg["markets"][r["market"]]["noun"]), "price": r["price"],
                          "read": r["read"], "at": r["at"], "pin_before": r["pin_before"], "pin_after": r["pin_after"],
                          "pin_price_before": r["pin_price_before"], "pin_price_after": r["pin_price_after"],
-                         "others_move": r["others_move"], "n_others": r["n_others"], "result": res, "actual": actual,
+                         "others_move": r["others_move"], "n_others": r["n_others"], "window": r["window"],
+                         "result": res, "actual": actual,
                          "units": units})
     return bets
 
@@ -94,7 +95,10 @@ def main(argv):
     doc = {"rule": "pin_solo", "version": cfg["version"], "from": first, "to": last,
            "note": "Replay: the live rule run on price checks made before it went live (%s). These bets were never shown live and "
                    "are not on the Record. Injury status at the time is not replayed." % cfg["pin_solo"]["live_from"],
-           "total": summarize(bets), "nights": nights}
+           "total": summarize(bets),
+           "windows": [dict(summarize([b for b in bets if b["window"] == w]), window=w)
+                       for w in engine.WINDOW_ORDER if any(b["window"] == w for b in bets)],
+           "nights": nights}
     common.write_json(common.dpath("replay", "pin_solo.json"), doc)
     t = doc["total"]
     print("replay %s..%s: %d bets %d-%d %+.2fu, pending %d" % (first, last, len(bets), t["w"], t["l"], t["units"], t["pending"]))

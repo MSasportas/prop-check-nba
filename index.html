@@ -202,7 +202,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .combo .cn .mu{font:400 12px/16px var(--body)}
 .combo .c1{display:block;font-size:14px;line-height:20px}
 .combo .c2{display:block;font-size:12px;line-height:16px;color:var(--muted)}
-.e2 .sg{white-space:nowrap}
+.e2 .sg,.rp-win .sg,.e2 .nw{white-space:nowrap}
 .combo .linkbtn{border-top:1px solid var(--line);width:100%;font-size:13px}
 .otag{display:inline-block;font:600 12px/16px var(--display);letter-spacing:.05em;padding:0 5px;margin-left:6px;border:1px solid var(--good);border-radius:3px;color:var(--good);vertical-align:1px}
 .rtag{display:inline-block;font:600 12px/16px var(--display);letter-spacing:.05em;padding:0 5px;margin-right:6px;border:1px solid var(--line);border-radius:3px;color:var(--muted);vertical-align:2px}
@@ -210,6 +210,22 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .rp-note{font-size:13px;line-height:19px;color:var(--muted);margin:0;overflow-wrap:anywhere}
 .rp-tot{margin-top:8px;font-size:13px;line-height:18px;color:var(--muted)}
 .rp-tot b{font:600 19px/22px var(--display);color:var(--fg);margin-right:2px}
+.chip.win{background:none;color:var(--muted);border-color:var(--line);padding:0 9px}
+.wtab{margin-top:2px;padding:6px 0 4px;border-top:1px solid var(--line);font-size:12px;line-height:16px}
+.wr{display:grid;grid-template-columns:minmax(0,1fr) 30px 40px 108px;column-gap:8px;align-items:baseline;padding:4px 0}
+.wr>*{text-align:right;white-space:nowrap}
+.wr>:first-child{text-align:left;white-space:normal;overflow-wrap:anywhere}
+.wr.th{color:var(--muted);font-size:11px;line-height:15px;padding:0 0 2px}
+.wr.th>:first-child{color:var(--fg);font-weight:500;font-size:12px}
+.wr .n{font:600 15px/18px var(--display)}
+.wr .n.z{color:var(--muted)}
+.wr.tot{border-top:1px solid var(--line);margin-top:2px;padding-top:6px}
+.wr.tot>:first-child{font-weight:500}
+.wr.un>:first-child{color:var(--muted)}
+.wnote{font-size:11px;line-height:15px;color:var(--muted);margin:4px 0 6px}
+.tbl .gh{font-size:12px;line-height:16px;color:var(--fg);font-weight:500}
+.rp-win{margin-top:4px;font-size:12px;line-height:18px;color:var(--muted)}
+.rp-win b{font-weight:500;color:var(--fg)}
 .ptag{display:inline-block;font:600 12px/16px var(--display);letter-spacing:.05em;padding:0 5px;margin-right:6px;border:1px solid var(--muted);border-radius:3px;color:var(--fg);vertical-align:1px}
 
 /* backstage */
@@ -375,6 +391,15 @@ function shortBet(p) {
   if (!b) return 'Bet not posted';
   return b.replace(/^(over|under)\b/i, function (m) { return m.toUpperCase(); }).replace(/\brebounds?\b/i, 'reb').replace(/\bpoints?\b/i, 'pts').replace(/\bassists?\b/i, 'ast');
 }
+/* price-check windows: the three known ones first, anything else (a retry label) after, A-Z */
+var WIN_ORDER = ['11 AM → 90 min', '90 → 45 min', '45 → 20 min'];
+function winCmp(a, b) {
+  var x = WIN_ORDER.indexOf(a), y = WIN_ORDER.indexOf(b);
+  x = x < 0 ? 99 : x; y = y < 0 ? 99 : y;
+  return x !== y ? x - y : (a < b ? -1 : (a > b ? 1 : 0));
+}
+function winOf(o) { return isObj(o) && typeof o.window === 'string' ? o.window.trim() : ''; }
+function round2(n) { return Math.round(n * 100) / 100; }
 
 /* ---------- data access ---------- */
 function refreshSec() {
@@ -492,7 +517,7 @@ function calcKey() {
   return JSON.stringify([S.loaded, S.loadErr, S.fetchFail, S.recordErr, S.rulesErr, S.slate && S.slate.generated_at, S.slate && S.slate.status_at,
     S.record && S.record.generated_at, S.view, S.rules && S.rules.version, S.rules && S.rules.updated, S.slate && expired(), S.slate && stale(),
     d ? [d.open.length, d.started.length] : 0, mins, S.judgeLoaded, S.judgeErr, S.judge && S.judge.updated_at,
-    S.replay && [S.replay.version, S.replay.to, S.replay.total.w, S.replay.total.l, S.replay.total.units, S.replay.nights.length]]);
+    S.replay && [S.replay.version, S.replay.to, S.replay.total.w, S.replay.total.l, S.replay.total.units, S.replay.nights.length, arr(S.replay.windows).length]]);
 }
 function maybeRender() { var k = calcKey(); if (k !== S.key) render(); }
 function render() {
@@ -600,7 +625,8 @@ function pickCard(p, d, opts) {
     var bar = chanceBar(p.p, p.breakeven); if (bar) card.appendChild(bar);
   }
   card.appendChild(h('div', { class: 'chips' }, stateChip(started ? { state: 'locked', state_label: 'Locked' } : p),
-    (!started && p.price_final) ? h('span', { class: 'chip ok' }, icon('check', 13), 'Price final') : null));
+    (!started && p.price_final) ? h('span', { class: 'chip ok' }, icon('check', 13), 'Price final') : null,
+    winOf(p) ? h('span', { class: 'chip win', text: 'Trigger: ' + winOf(p) }) : null));
   if (p.reason && (!started || isOpen)) card.appendChild(h('div', { class: 'reason' + (isOpen ? '' : ' clamp2'), text: str(p.reason) }));
 
   if (isOpen && pin) {
@@ -641,6 +667,7 @@ function pulledCard(p, d) {
       h('div', { class: 'name', text: p.player || 'Player not named' }),
       h('div', { class: 'r2' }, h('div', { class: 'bet strike', text: shortBet(p) }),
         h('div', { class: 'shownat' }, 'Shown at ', h('span', { text: odds(p.price) }))),
+      winOf(p) ? h('div', { class: 'chips' }, h('span', { class: 'chip win', text: 'Trigger: ' + winOf(p) })) : null,
       h('div', { class: 'note', text: 'Still on the Record under Pulled, graded at ' + odds(p.price) + '.' })));
 }
 
@@ -793,7 +820,7 @@ function renderRecord() {
   var w = num(hd.w) || 0, l = num(hd.l) || 0, n = num(hd.n) != null ? hd.n : w + l;
   var rp = S.replay;
   if (rp) {
-    try { app.appendChild(comboStrip(rp, hd)); } catch (err) { rp = null; if (window.console) console.warn('replay strip failed', err); }
+    try { app.appendChild(comboStrip(rp, hd, sum)); } catch (err) { rp = null; if (window.console) console.warn('replay strip failed', err); }
     if (rp) app.appendChild(h('div', { class: 'sec-h', style: 'margin:18px 0 0' }, h('h2', { text: 'Live Record' }),
       h('span', { class: 'sub', text: 'official' + (launchDate(rp) ? ' · since ' + fDateShort(launchDate(rp)) : '') })));
   }
@@ -813,20 +840,29 @@ function renderRecord() {
     app.appendChild(h('div', { class: 'subline', text: n + ' graded picks, at the posted Hard Rock price. Pulled picks are not counted here.' }));
 
     var rows = arr(sum.rows).filter(function (r) { return isObj(r) && ((num(r.w) || 0) + (num(r.l) || 0) + (num(r.push) || 0) + (num(r.void) || 0)) > 0; });
-    if (rows.length) {
-      var tbl = h('div', { class: 'tbl', role: 'table', 'aria-label': 'Record by market' });
-      tbl.appendChild(h('div', { class: 'tr th', role: 'row' }, h('span', { text: '' }), h('span', { text: 'W-L' }), h('span', { text: 'Hit' }),
+    /* market rows first; "window:<label>" rows go in their own small table under "By window" */
+    var isWin = function (r) { return str(r.key).indexOf('window:') === 0; };
+    var mrows = rows.filter(function (r) { return !isWin(r); });
+    var wrows = rows.filter(isWin).sort(function (a, b) { return winCmp(str(a.key).slice(7), str(b.key).slice(7)); });
+    var rowTable = function (list, aria, first, labOf) {
+      var tbl = h('div', { class: 'tbl', role: 'table', 'aria-label': aria });
+      tbl.appendChild(h('div', { class: 'tr th', role: 'row' }, first, h('span', { text: 'W-L' }), h('span', { text: 'Hit' }),
         h('span', { text: 'Needed' }), h('span', { text: 'Units' })));
-      rows.forEach(function (r) {
-        var lab = r.key === 'pulled' ? h('span', { class: 'lbl' }, 'Pulled', h('small', { text: '(not counted above)' }))
-          : h('span', { class: 'lbl', text: r.label || str(r.key) || 'Other' });
+      list.forEach(function (r) {
         var u = num(r.units);
-        tbl.appendChild(h('div', { class: 'tr', role: 'row' }, lab, h('span', { class: 'num', text: (num(r.w) || 0) + '-' + (num(r.l) || 0) }),
+        tbl.appendChild(h('div', { class: 'tr', role: 'row' }, labOf(r), h('span', { class: 'num', text: (num(r.w) || 0) + '-' + (num(r.l) || 0) }),
           h('span', { text: pctNear(r.hit_rate) || '—' }), h('span', { text: pctNear(r.needed) || '—' }),
           h('span', { class: 'num ' + signCls(u), text: u == null ? '—' : (units(u, 2) || '').replace(/u$/, '') })));
       });
-      app.appendChild(tbl);
-    }
+      return tbl;
+    };
+    if (mrows.length) app.appendChild(rowTable(mrows, 'Record by market', h('span', { text: '' }), function (r) {
+      return r.key === 'pulled' ? h('span', { class: 'lbl' }, 'Pulled', h('small', { text: '(not counted above)' }))
+        : h('span', { class: 'lbl', text: r.label || str(r.key) || 'Other' });
+    }));
+    if (wrows.length) app.appendChild(rowTable(wrows, 'Record by price-check window', h('span', { class: 'gh', text: 'By window' }), function (r) {
+      return h('span', { class: 'lbl', text: str(r.key).slice(7) || r.label || 'Other' });
+    }));
     app.appendChild(h('p', { class: 'note', text: 'Push and void are 0 units and left out of hit rate. Nothing on the Record is ever edited or removed.' }));
   }
 
@@ -869,11 +905,46 @@ function rangeText(rp) {
   return a.mo === b.mo ? a.mo + ' ' + a.day + '-' + b.day : a.mo + ' ' + a.day + ' - ' + b.mo + ' ' + b.day;
 }
 function wlu(w, l, u) { return [w + '-' + l + ' · ', h('span', { class: signCls(u), text: units(u, 2) || '0.00u' })]; }
-function comboStrip(rp, hd) {
+/* per-window table inside the combined card: Live (record rows "window:<label>") + Replay (rp.windows) = All.
+   The last row is the card's own total, so it always equals the big number; picks with no window show as "No window". */
+function winTable(rp, sum, tot) {
+  var live = {}, rep = {}, labs = [];
+  var add = function (k) { if (k && labs.indexOf(k) < 0) labs.push(k); };
+  arr(sum && sum.rows).forEach(function (r) { if (isObj(r) && str(r.key).indexOf('window:') === 0) { var k = str(r.key).slice(7).trim(); live[k] = r; add(k); } });
+  arr(rp.windows).forEach(function (x) { var k = winOf(x); if (k) { rep[k] = x; add(k); } });
+  if (!labs.length) return null;
+  labs.sort(winCmp);
+  var wl = function (o) { return (num(o && o.w) || 0) + '-' + (num(o && o.l) || 0); };
+  var cell = function (o) { var z = !((num(o && o.w) || 0) + (num(o && o.l) || 0)); return h('span', { class: 'n' + (z ? ' z' : ''), text: wl(o) }); };
+  var allCell = function (w, l, u) { return h('span', { class: 'n' }, w + '-' + l + ' · ', h('span', { class: signCls(u), text: units(u, 2) || '0.00u' })); };
+  var box = h('div', { class: 'wtab', role: 'table', 'aria-label': 'Pinnacle strategy by price-check window' },
+    h('div', { class: 'wr th', role: 'row' }, h('span', { text: 'By window' }), h('span', { text: 'Live' }), h('span', { text: 'Replay' }), h('span', { text: 'All' })));
+  var sw = 0, sl = 0, su = 0;
+  labs.forEach(function (k) {
+    var a = live[k], b = rep[k];
+    var w = (num(a && a.w) || 0) + (num(b && b.w) || 0), l = (num(a && a.l) || 0) + (num(b && b.l) || 0);
+    var u = round2((num(a && a.units) || 0) + (num(b && b.units) || 0));
+    sw += w; sl += l; su += u;
+    box.appendChild(h('div', { class: 'wr', role: 'row' }, h('span', { text: k }), cell(a), cell(b), allCell(w, l, u)));
+  });
+  var dw = tot.w - sw, dl = tot.l - sl, du = round2(tot.u - su);
+  if (dw || dl || du) {
+    var lv = { w: tot.lw, l: tot.ll }, rv = { w: tot.rw, l: tot.rl };
+    labs.forEach(function (k) { lv.w -= num(live[k] && live[k].w) || 0; lv.l -= num(live[k] && live[k].l) || 0; rv.w -= num(rep[k] && rep[k].w) || 0; rv.l -= num(rep[k] && rep[k].l) || 0; });
+    box.appendChild(h('div', { class: 'wr un', role: 'row' }, h('span', { text: 'No window' }), cell(lv), cell(rv), allCell(dw, dl, du)));
+  }
+  box.appendChild(h('div', { class: 'wr tot', role: 'row' }, h('span', { text: 'All windows' }),
+    cell({ w: tot.lw, l: tot.ll }), cell({ w: tot.rw, l: tot.rl }), allCell(tot.w, tot.l, tot.u)));
+  box.appendChild(h('div', { class: 'wnote', text: 'Window: the two price checks (minutes before tip) the Pinnacle move showed up between.' }));
+  return box;
+}
+function comboStrip(rp, hd, sum) {
   var t = rp.total, rw = num(t.w) || 0, rl = num(t.l) || 0, ru = num(t.units) || 0;
   var lw = num(hd.w) || 0, ll = num(hd.l) || 0, lu = num(hd.units) || 0;
   var liveAny = lw + ll + (num(hd.push) || 0) + (num(hd.void) || 0) > 0;
-  var ld = launchDate(rp);
+  var ld = launchDate(rp), wt = null;
+  try { wt = winTable(rp, sum, { w: rw + lw, l: rl + ll, u: round2(ru + lu), lw: lw, ll: ll, rw: rw, rl: rl }); }
+  catch (err) { wt = null; if (window.console) console.warn('window table failed', err); }
   return h('div', { class: 'combo', role: 'group', 'aria-label': 'Pinnacle strategy, all results' },
     h('div', { class: 'ck', text: 'Pinnacle strategy, all results' }),
     h('div', { class: 'cv' }, wlu(rw + lw, rl + ll, ru + lu)),
@@ -883,6 +954,7 @@ function comboStrip(rp, hd) {
     h('div', { class: 'cr rp' }, h('span', { class: 'cl' }, h('span', { class: 'c1', text: 'Replay before launch' }),
         h('span', { class: 'c2', text: (rangeText(rp) ? rangeText(rp) + ' · ' : '') + 'not on the Record' })),
       h('span', { class: 'cn', text: rw + '-' + rl + ' · ' + (units(ru, 2) || '0.00u') })),
+    wt,
     h('button', { class: 'linkbtn', type: 'button', on: { click: function () { var e = document.getElementById('replay'); if (e) e.scrollIntoView({ behavior: 'smooth', block: 'start' }); } } },
       'See the replay bets', icon('right', 14)));
 }
@@ -898,6 +970,17 @@ function replaySection(rp) {
   if (num(t.void)) extra.push(t.void + ' void');
   if (num(t.pending)) extra.push(t.pending + ' pending');
   sec.appendChild(h('div', { class: 'rp-tot' }, h('b', null, wlu(w, l, num(t.units) || 0)), extra.length ? ' · ' + extra.join(' · ') : '', ' · not on the Record'));
+  var wins = arr(rp.windows).filter(function (x) { return winOf(x); }).sort(function (a, b) { return winCmp(winOf(a), winOf(b)); });
+  if (wins.length) {
+    var wline = h('div', { class: 'rp-win' }, 'By window: ');
+    wins.forEach(function (x, i) {
+      var u = num(x.units) || 0;
+      wline.appendChild(h('span', { class: 'sg' }, winOf(x) + ' ', h('b', { text: (num(x.w) || 0) + '-' + (num(x.l) || 0) }), ' ',
+        h('span', { class: signCls(u), text: units(u, 2) || '0.00u' }), i < wins.length - 1 ? ' ·' : ''));
+      if (i < wins.length - 1) wline.appendChild(node(' '));
+    });
+    sec.appendChild(wline);
+  }
   nights.slice().sort(function (a, b) { return str(a.date) < str(b.date) ? 1 : (str(a.date) > str(b.date) ? -1 : 0); }).forEach(function (nt) {
     var bets = arr(nt.bets).filter(isObj), open = bets.some(function (b) { return b.result == null; });
     var tail = (num(nt.w) || 0) + '-' + (num(nt.l) || 0) + (units(nt.units, 2) ? ' · ' + units(nt.units, 2) : '') + (open ? ' so far' : '');
@@ -914,6 +997,7 @@ function replayRow(b) {
   if (!res) tag.setAttribute('aria-label', 'Pending');
   var l2 = ['Hard Rock ' + odds(b.price)];
   if (num(b.pin_price_before) != null || num(b.pin_price_after) != null) l2.push('Pinnacle ' + odds(b.pin_price_before) + ' → ' + odds(b.pin_price_after));
+  if (winOf(b)) l2.push('Trigger: ' + winOf(b));
   if (res && b.actual) l2.push(str(b.actual));
   var u = res ? units(b.units, 2) : null, e2 = h('div', { class: 'e2' });
   /* each part stays whole; a wrap falls after a dot, never before it */
@@ -928,12 +1012,17 @@ function entryRow(e) {
   if (!res) tag.setAttribute('aria-label', 'Awaiting result');
   var l2 = [odds(e.price)];
   if (e.game) l2.push(str(e.game));
+  var wn = winOf(e);
   if (e.pulled) l2.push('pulled' + (fTime(e.pulled.at) ? ' ' + fTime(e.pulled.at) : '') + (e.pulled.reason ? ': ' + str(e.pulled.reason) : ''));
   if (!res) l2.push('awaiting result'); else if (e.actual) l2.push(str(e.actual));
   var u = res ? units(e.units, 2) : null;
+  /* the window label stays whole on one line */
+  var e2 = h('div', { class: 'e2' }, l2.slice(0, e.game ? 2 : 1).join(' · '));
+  if (wn) e2.appendChild(h('span', null, ' · ', h('span', { class: 'nw', text: 'Trigger: ' + wn })));
+  var rest = l2.slice(e.game ? 2 : 1); if (rest.length) e2.appendChild(node(' · ' + rest.join(' · ')));
   return h('div', { class: 'ent' }, tag,
     h('div', { class: 'bd' }, h('div', { class: 'e1' }, e.pulled ? h('span', { class: 'ptag', text: 'PULLED' }) : null,
-      h('span', { class: 'pn', text: e.player || 'Player not named' }), ' ' + str(e.bet)), h('div', { class: 'e2', text: l2.join(' · ') })),
+      h('span', { class: 'pn', text: e.player || 'Player not named' }), ' ' + str(e.bet)), e2),
     u ? h('span', { class: 'u ' + signCls(e.units), text: u }) : null);
 }
 function loadOlder() {

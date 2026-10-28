@@ -43,6 +43,7 @@ class TestPinSolo(unittest.TestCase):
         self.assertEqual((p["rule"], p["side"], p["price"], p["read"]), ("pin_solo", "under", -120, "C"))
         self.assertGreater(p["pin_after"], p["pin_before"] + 0.02)
         self.assertIn("Pinnacle moved the under", p["reason"])
+        self.assertEqual(p["window"], "90 → 45 min")                    # B read -> C read
         s = self.w.read("slate.json")
         self.assertEqual(s["picks"][0]["rule"], "pin_solo")
         self.assertIn("Pinnacle moved alone", notify.pick_line(dict(s["picks"][0], start=s["picks"][0]["start"])))

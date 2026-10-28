@@ -375,7 +375,8 @@ def solo_moves(a, b, ctx):
             pin_b = fb if side == "over" else 1 - fb
             r = {"rule": "pin_solo", "pid": pid, "name": p["name"], "team": team, "opp": g["home"] if team == g["away"] else g["away"],
                  "home": team == g["home"], "game_id": g["id"], "market": market, "line": line, "side": side, "price": price,
-                 "read": b["read"], "at": b["at"], "prev_at": a["at"], "link": p.get("link_" + side),
+                 "read": b["read"], "at": b["at"], "prev_at": a["at"], "prev_read": a["read"],
+                 "window": window_label(a["read"], b["read"]), "link": p.get("link_" + side),
                  "pin_before": round(pin_a, 4), "pin_after": round(pin_b, 4),
                  "pin_price_before": (pa.get(k) or {}).get(side), "pin_price_after": (pb.get(k) or {}).get(side),
                  "others_move": round(statistics.median(mv), 4) if mv else None, "n_others": len(mv),
@@ -394,6 +395,18 @@ def solo_moves(a, b, ctx):
                 r["why"] = ctx.eligible(pid, team, g)
             rows.append(r)
     return rows
+
+
+READ_LABEL = {"A": "11 AM", "B": "90 min", "C": "45 min", "D": "20 min"}
+WINDOW_ORDER = ["11 AM → 90 min", "90 → 45 min", "45 → 20 min"]
+
+
+def window_label(prev_read, read):
+    """'11 AM → 90 min', '90 → 45 min', '45 → 20 min' (the price checks a Pinnacle move was seen between)."""
+    a, b = READ_LABEL.get(prev_read, prev_read), READ_LABEL.get(read, read)
+    if a.endswith(" min") and b.endswith(" min"):
+        a = a[:-4]
+    return "%s → %s" % (a, b)
 
 
 def solo_reason(r):
@@ -483,7 +496,8 @@ def step(ctx, odds_doc):
                     "pin_after": r["pin_after"], "pin_price_before": r["pin_price_before"], "pin_price_after": r["pin_price_after"],
                     "others_move": r["others_move"], "n_others": r["n_others"], "n_books": r["n_others"],
                     "ev_vs_pin": r["ev_vs_pin"], "final_ev": round(abs(r["pin_after"] - r["pin_before"]), 4),
-                    "reason": solo_reason(r), "state": ctx.settled(r["pid"], r["team"], g), "link": r.get("link")}
+                    "reason": solo_reason(r), "state": ctx.settled(r["pid"], r["team"], g), "link": r.get("link"),
+                    "window": r["window"]}
             pid_ = pick_id(slate, r["game_id"], r["pid"], r["line"], r["side"], r["market"])
             if pid_ in items:
                 continue

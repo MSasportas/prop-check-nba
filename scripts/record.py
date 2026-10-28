@@ -198,7 +198,19 @@ def _entry(it, items):
             "first_price": first_price(it), "last_price": last_price(it),
             "prices": [{"price": p["price"], "at": p["at"]} for p in it["prices"]],
             "result": (g or {}).get("result"), "actual": (g or {}).get("actual_text"),
-            "units": (g or {}).get("units"), "pulled": _pulled(it), "legs": []}
+            "units": (g or {}).get("units"), "pulled": _pulled(it), "legs": [], "window": window_of(sh)}
+
+
+_WIN = ["11 AM → 90 min", "90 → 45 min", "45 → 20 min"]
+_WIN_BY_READ = {"B": _WIN[0], "C": _WIN[1], "D": _WIN[2]}
+
+
+def window_of(sh):
+    """The price-check window of a Pinnacle pick. Picks shown before the window was stored (2026-10-28 evening) get it from
+    their flag read (B / C / D after the read before it); the log itself is never edited."""
+    if sh.get("window"):
+        return sh["window"]
+    return _WIN_BY_READ.get(sh.get("read")) if sh.get("rule") == "pin_solo" else None
 
 
 def _pulled(it):
@@ -241,6 +253,11 @@ def build_views(events, cfg):
         sub = [e for e in singles if e.get("market") == key]
         if any(e["result"] for e in sub):
             rows.append(_row(key, labels[key], sub, need))
+    wins = sorted({e["window"] for e in singles if e.get("window")}, key=lambda w: (_WIN.index(w) if w in _WIN else 9, w))
+    for w in wins:
+        sub = [e for e in singles if e.get("window") == w]
+        if any(e["result"] for e in sub):
+            rows.append(_row("window:" + w, "Window " + w, sub, need))
     par = [e for e in every if e["kind"] == "parlay" and not e["pulled"]]
     if any(e["result"] for e in par):
         rows.append(_row("parlays", "Parlays", par, need))

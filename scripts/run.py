@@ -260,8 +260,9 @@ class Run:
                                         "price", "price_at", "read", "p", "p_pct", "breakeven", "breakeven_pct",
                                         "market_fair", "n_books", "gap_ev", "final_ev", "model_p", "reason", "link", "rule",
                                         "pin_before", "pin_after", "pin_price_before", "pin_price_after", "others_move",
-                                        "n_others", "ev_vs_pin")}
+                                        "n_others", "ev_vs_pin", "window")}
             p["id"] = it["id"]
+            p["window"] = record.window_of(sh)
             p["team"], p["opp"] = teams.show(sh["team"]), teams.show(sh["opp"])
             st = "locked" if it["locked_at"] else it["state"]
             p["state"], p["state_label"] = st, engine.STATE_LABEL.get(st, "Early")

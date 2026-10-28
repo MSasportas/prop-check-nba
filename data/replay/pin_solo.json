@@ -13,6 +13,38 @@
   "units": 11.75,
   "hit_rate": 0.7586
  },
+ "windows": [
+  {
+   "w": 15,
+   "l": 6,
+   "push": 0,
+   "void": 0,
+   "pending": 0,
+   "units": 6.91,
+   "hit_rate": 0.7143,
+   "window": "11 AM \u2192 90 min"
+  },
+  {
+   "w": 4,
+   "l": 0,
+   "push": 0,
+   "void": 0,
+   "pending": 0,
+   "units": 3.34,
+   "hit_rate": 1.0,
+   "window": "90 \u2192 45 min"
+  },
+  {
+   "w": 3,
+   "l": 1,
+   "push": 0,
+   "void": 0,
+   "pending": 0,
+   "units": 1.5,
+   "hit_rate": 0.75,
+   "window": "45 \u2192 20 min"
+  }
+ ],
  "nights": [
   {
    "w": 3,
@@ -43,6 +75,7 @@
      "pin_price_after": -137,
      "others_move": 0.0161,
      "n_others": 5,
+     "window": "45 \u2192 20 min",
      "result": "W",
      "actual": "11 points",
      "units": 0.8
@@ -66,6 +99,7 @@
      "pin_price_after": -149,
      "others_move": 0.0103,
      "n_others": 5,
+     "window": "45 \u2192 20 min",
      "result": "W",
      "actual": "2 points",
      "units": 0.8333
@@ -89,6 +123,7 @@
      "pin_price_after": -106,
      "others_move": 0.0014,
      "n_others": 6,
+     "window": "45 \u2192 20 min",
      "result": "W",
      "actual": "26 points",
      "units": 0.8696
@@ -124,6 +159,7 @@
      "pin_price_after": -135,
      "others_move": 0.0116,
      "n_others": 8,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "10 rebounds",
      "units": 0.8
@@ -147,6 +183,7 @@
      "pin_price_after": -119,
      "others_move": -0.005,
      "n_others": 8,
+     "window": "11 AM \u2192 90 min",
      "result": "L",
      "actual": "12 rebounds",
      "units": -1.0
@@ -170,6 +207,7 @@
      "pin_price_after": -145,
      "others_move": -0.0025,
      "n_others": 6,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "10 rebounds",
      "units": 0.6897
@@ -193,6 +231,7 @@
      "pin_price_after": -146,
      "others_move": 0.0199,
      "n_others": 8,
+     "window": "11 AM \u2192 90 min",
      "result": "L",
      "actual": "14 rebounds",
      "units": -1.0
@@ -216,6 +255,7 @@
      "pin_price_after": -103,
      "others_move": 0.0153,
      "n_others": 8,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "6 assists",
      "units": 0.9524
@@ -239,6 +279,7 @@
      "pin_price_after": -135,
      "others_move": 0.0178,
      "n_others": 5,
+     "window": "11 AM \u2192 90 min",
      "result": "L",
      "actual": "20 points",
      "units": -1.0
@@ -262,6 +303,7 @@
      "pin_price_after": -146,
      "others_move": -0.0,
      "n_others": 7,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "5 rebounds",
      "units": 0.8
@@ -285,6 +327,7 @@
      "pin_price_after": -114,
      "others_move": 0.0078,
      "n_others": 7,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "7 rebounds",
      "units": 1.0
@@ -308,6 +351,7 @@
      "pin_price_after": -129,
      "others_move": 0.0102,
      "n_others": 8,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "4 assists",
      "units": 0.8
@@ -331,6 +375,7 @@
      "pin_price_after": -134,
      "others_move": 0.0092,
      "n_others": 8,
+     "window": "90 \u2192 45 min",
      "result": "W",
      "actual": "2 points",
      "units": 0.9091
@@ -354,6 +399,7 @@
      "pin_price_after": -132,
      "others_move": 0.0146,
      "n_others": 5,
+     "window": "90 \u2192 45 min",
      "result": "W",
      "actual": "9 points",
      "units": 0.8696
@@ -377,6 +423,7 @@
      "pin_price_after": -130,
      "others_move": 0.0155,
      "n_others": 8,
+     "window": "90 \u2192 45 min",
      "result": "W",
      "actual": "0 rebounds",
      "units": 0.8696
@@ -400,6 +447,7 @@
      "pin_price_after": -150,
      "others_move": 0.0092,
      "n_others": 7,
+     "window": "90 \u2192 45 min",
      "result": "W",
      "actual": "6 assists",
      "units": 0.6897
@@ -423,6 +471,7 @@
      "pin_price_after": -130,
      "others_move": 0.0077,
      "n_others": 8,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "20 points",
      "units": 0.8333
@@ -446,6 +495,7 @@
      "pin_price_after": -129,
      "others_move": 0.0075,
      "n_others": 7,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "3 points",
      "units": 0.8696
@@ -469,6 +519,7 @@
      "pin_price_after": -129,
      "others_move": 0.0051,
      "n_others": 8,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "19 points",
      "units": 0.8333
@@ -492,6 +543,7 @@
      "pin_price_after": -121,
      "others_move": 0.0122,
      "n_others": 6,
+     "window": "11 AM \u2192 90 min",
      "result": "L",
      "actual": "22 points",
      "units": -1.0
@@ -515,6 +567,7 @@
      "pin_price_after": -112,
      "others_move": -0.0011,
      "n_others": 7,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "20 points",
      "units": 0.9091
@@ -538,6 +591,7 @@
      "pin_price_after": -113,
      "others_move": 0.0136,
      "n_others": 5,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "8 points",
      "units": 0.9524
@@ -561,6 +615,7 @@
      "pin_price_after": -130,
      "others_move": 0.0129,
      "n_others": 7,
+     "window": "11 AM \u2192 90 min",
      "result": "L",
      "actual": "6 points",
      "units": -1.0
@@ -584,6 +639,7 @@
      "pin_price_after": -137,
      "others_move": 0.0176,
      "n_others": 7,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "11 assists",
      "units": 0.7143
@@ -607,6 +663,7 @@
      "pin_price_after": -105,
      "others_move": -0.0169,
      "n_others": 7,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "3 rebounds",
      "units": 1.05
@@ -630,6 +687,7 @@
      "pin_price_after": -128,
      "others_move": 0.0122,
      "n_others": 8,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "4 rebounds",
      "units": 0.8333
@@ -653,6 +711,7 @@
      "pin_price_after": -138,
      "others_move": 0.0133,
      "n_others": 6,
+     "window": "11 AM \u2192 90 min",
      "result": "W",
      "actual": "19 points",
      "units": 0.8696
@@ -676,6 +735,7 @@
      "pin_price_after": -118,
      "others_move": 0.0046,
      "n_others": 8,
+     "window": "11 AM \u2192 90 min",
      "result": "L",
      "actual": "12 rebounds",
      "units": -1.0
@@ -699,6 +759,7 @@
      "pin_price_after": -140,
      "others_move": -0.0,
      "n_others": 8,
+     "window": "45 \u2192 20 min",
      "result": "L",
      "actual": "7 points",
      "units": -1.0

@@ -3,13 +3,13 @@
  "summary": {
   "headline": {
    "w": 1,
-   "l": 0,
+   "l": 1,
    "push": 0,
    "void": 0,
-   "units": 0.87,
-   "hit_rate": 1.0,
-   "needed": 0.5349,
-   "n": 1
+   "units": -0.13,
+   "hit_rate": 0.5,
+   "needed": 0.5113,
+   "n": 2
   },
   "rows": [
    {
@@ -23,6 +23,42 @@
     "hit_rate": 1.0,
     "needed": 0.5349,
     "n": 1
+   },
+   {
+    "key": "threes",
+    "label": "3-pointers made",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "hit_rate": 0.0,
+    "needed": 0.4878,
+    "n": 1
+   },
+   {
+    "key": "window:11 AM → 90 min",
+    "label": "Window 11 AM → 90 min",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0.87,
+    "hit_rate": 1.0,
+    "needed": 0.5349,
+    "n": 1
+   },
+   {
+    "key": "window:90 → 90 min",
+    "label": "Window 90 → 90 min",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "hit_rate": 0.0,
+    "needed": 0.4878,
+    "n": 1
    }
   ]
  },
@@ -31,8 +67,8 @@
    "date": "2026-10-28",
    "graded": false,
    "w": 1,
-   "l": 0,
-   "units": 0.87,
+   "l": 1,
+   "units": -0.13,
    "entries": [
     {
      "id": "2026-10-28:401910001:3195:rebounds:11.5:over",
@@ -55,7 +91,32 @@
      "actual": "14 rebounds",
      "units": 0.87,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "11 AM → 90 min"
+    },
+    {
+     "id": "2026-10-28:401910001:3936299:threes:2.5:under",
+     "kind": "single",
+     "player": "Jamal Murray",
+     "bet": "Under 2.5 threes",
+     "market": "threes",
+     "team": "DEN",
+     "game": "DEN at MIN",
+     "price": 105,
+     "first_price": 105,
+     "last_price": 105,
+     "prices": [
+      {
+       "price": 105,
+       "at": "2026-10-28T18:40:00-04:00"
+      }
+     ],
+     "result": "L",
+     "actual": "4 threes",
+     "units": -1.0,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 90 min"
     },
     {
      "id": "2026-10-28:401910003:3945274:rebounds:7.5:under",
@@ -78,7 +139,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "90 → 45 min"
     },
     {
      "id": "2026-10-28:401910004:4279888:assists:6.5:over",
@@ -101,7 +163,8 @@
      "actual": null,
      "units": null,
      "pulled": null,
-     "legs": []
+     "legs": [],
+     "window": "45 → 20 min"
     },
     {
      "id": "2026-10-28:401910004:4433134:rebounds:5.5:over",
@@ -127,7 +190,8 @@
       "at": "2026-10-28T21:40:00-04:00",
       "reason": "Hard Rock took the line down"
      },
-     "legs": []
+     "legs": [],
+     "window": "90 → 45 min"
     }
    ]
   }

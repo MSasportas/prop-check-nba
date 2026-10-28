@@ -167,6 +167,10 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-28 ~6:15 PM (CEO, Matt): every Pinnacle pick tagged with its window (11 AM → 90 / 90 → 45 / 45 → 20 min); Record rows per
+  window + combined card table per window (live, replay, all). Picks shown before the tag get it from their flag read (log untouched).
+  First live night: 10 picks at the 90-min checks by 5:50 PM. Replay by window: 15-6 / 4-0 / 3-1. Single 11 AM→20 min comparison
+  (asked by Matt): 19 bets 14-5 +7.56u; 11 AM→45: 23 bets 19-4 (more slices = more luck; not adopted).
 - 2026-10-28 ~5:45 PM (CEO, Matt: the bet link doesn't add the bet to the slip, remove it): removed the "Bet on Hard Rock" button from the page and the "Bet slip" line from Discord picks. Slate data still carries `link` (unused). Section 7 item 8's note on deep links no longer applies to the UI. 60 tests pass.
 - 2026-10-28 2:10 PM (CEO, daily check): alive (chain link 108, status 2:00 PM, all steps ok, Actions green, pool 2,759, all 4 reads planned for 12 games). A read ran 11 AM (12 games x 4 credits, Hard Rock + all 9 books on every game). 10-27: 0 live picks (Gap + Guard), nothing to grade (no events.jsonl yet); v2.1 Pinnacle rule's first live B/C/D reads are tonight. Rotowire showed confirmed starters last night (8 confirmed states). Unmatched Rotowire: Diop, Tomlin (CLE bench, harmless); no unmatched odds names, no unknown teams. 60 tests pass. No code changes.
 - 2026-10-28 ~12:50 PM (CEO, Matt: show the new strategy's history together): `scripts/replay.py` -> data/replay/pin_solo.json (same
