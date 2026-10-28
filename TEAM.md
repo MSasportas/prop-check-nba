@@ -35,7 +35,8 @@ Nothing edited or dropped. It is the only reporting Matt wants.
 4. Readable on a phone in seconds.
 
 ## 3. The team (subagents run by the CEO; any chat in the project is the CEO)
-Sharp (betting method, final call) · Data Scientist (data, model, samples, judging the Record) · UX (page) · Builder (all code) ·
+Sharp (betting method, final call) · Data Scientist (data, model, samples, judging the Record) · **Researcher (2026-10-28, Matt: find
+an honest way to get winning bets; rules in research/RESEARCH.md; writes research/ only)** · UX (page) · Builder (all code) ·
 QA (tests every change before it goes live, real browser at 380px, hasn't seen the build).
 Rule changes: the Data Scientist names the sample first; the Sharp decides; log it in section 8. Customer facts (section 1) never change
 without Matt.
@@ -106,6 +107,9 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   rule changes.
 - **Weekly team review, Mondays 11:13 AM ET** (scheduled task "Prop Check NBA weekly team review"): Sharp, Data Scientist, UX, Builder, QA on the Record and the odds log; first one ran 2026-10-26.
 
+- **Researcher, daily 8:23 AM ET:** NOT scheduled yet (2026-10-28: creating the scheduled task was blocked by a permission check;
+  Matt asked to approve). Until then the CEO runs research when asked.
+
 ## 7. Known gaps and risks
 1. **Edge vs the book is unproven.** Gap + Guard is a hypothesis carried over from NHL (live there since 2026-10-20, no verdict yet). NBA
    rebounds props have more books and sharper pricing than NHL shots, so expect thin nights. Checkpoint 2026-11-16 (3 weeks): the DS reads
@@ -143,6 +147,9 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-28 10:30 AM (CEO, Matt: 0 bets in 2+ nights, does NBA have a Researcher?): Researcher role created (research/RESEARCH.md,
+  HYPOTHESES.md, LOG.md). Run 1 on Oct 25-27: 3,318 sides, median -6.2% vs market, best +2.9%, 0 qualify; Hard Rock re-prices with
+  the market (1 stale event in 2,198). F1-F5 registered forward. Paid historical props option sized for Matt (100K plan $59/mo).
 - 2026-10-27 2:15 PM (CEO, daily check): alive (chain link 73, status 1:50 PM, all steps ok, Actions green, pool 2,855). A read ran 11 AM (4 games x 4 credits) but Hard Rock had not posted any NBA props (other 9 books had all 4 markets incl. threes); B read 6 PM. 10-26: 0 picks, nothing to grade (no events.jsonl yet). Rotowire showed confirmed starters last night (18 confirmed states). No unmatched, no unknown teams. Fix: empty state said "No prices read yet" after a read with no Hard Rock; now says Hard Rock hasn't posted yet (Builder). QA (fresh, 380px Chromium): SHIP, 1 low fix applied; regression test added, 50 tests pass.
 - 2026-10-26 11:40 PM (CEO): v1.2 threes (Matt). Re-seeded with fg3m, DS fit, engine/page/Discord, box cache cleared. QA (fresh): SHIP WITH
   FIXES, all low (market field to Discord, 'threes' instead of '3PM' which read like a clock time, doc numbers); fixed, 49 tests pass.
