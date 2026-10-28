@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T18:20:01-04:00",
+ "generated_at": "2026-10-28T18:30:00-04:00",
  "summary": {
   "headline": {
    "w": 0,
@@ -212,7 +212,10 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-10-28T18:30:00-04:00",
+      "reason": "Rule change: Hard Rock was not 2+ pts better than Pinnacle's price"
+     },
      "legs": [],
      "window": "11 AM \u2192 90 min"
     },
@@ -236,7 +239,10 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-10-28T18:30:00-04:00",
+      "reason": "Rule change: Hard Rock was not 2+ pts better than Pinnacle's price"
+     },
      "legs": [],
      "window": "11 AM \u2192 90 min"
     },
@@ -279,6 +285,177 @@
       {
        "price": -140,
        "at": "2026-10-28T18:00:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-10-28T18:30:00-04:00",
+      "reason": "Rule change: Hard Rock was not 2+ pts better than Pinnacle's price"
+     },
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
+    },
+    {
+     "id": "2026-10-28:401909886:3062679:points:11.5:under",
+     "kind": "single",
+     "player": "Josh Hart",
+     "bet": "Under 11.5 points",
+     "market": "points",
+     "team": "NYK",
+     "game": "NYK at CHI",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-10-28T18:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
+    },
+    {
+     "id": "2026-10-28:401909886:4871145:rebounds:6.5:over",
+     "kind": "single",
+     "player": "Josh Giddey",
+     "bet": "Over 6.5 rebounds",
+     "market": "rebounds",
+     "team": "CHI",
+     "game": "NYK at CHI",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-10-28T18:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
+    },
+    {
+     "id": "2026-10-28:401909887:4591725:assists:4.5:under",
+     "kind": "single",
+     "player": "Ryan Rollins",
+     "bet": "Under 4.5 assists",
+     "market": "assists",
+     "team": "MIL",
+     "game": "HOU at MIL",
+     "price": -145,
+     "first_price": -145,
+     "last_price": -145,
+     "prices": [
+      {
+       "price": -145,
+       "at": "2026-10-28T18:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
+    },
+    {
+     "id": "2026-10-28:401909887:4684740:rebounds:8.5:under",
+     "kind": "single",
+     "player": "Amen Thompson",
+     "bet": "Under 8.5 rebounds",
+     "market": "rebounds",
+     "team": "HOU",
+     "game": "HOU at MIL",
+     "price": -135,
+     "first_price": -135,
+     "last_price": -135,
+     "prices": [
+      {
+       "price": -135,
+       "at": "2026-10-28T18:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
+    },
+    {
+     "id": "2026-10-28:401909888:3032976:points:10.5:over",
+     "kind": "single",
+     "player": "Rudy Gobert",
+     "bet": "Over 10.5 points",
+     "market": "points",
+     "team": "MIN",
+     "game": "GSW at MIN",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-10-28T18:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
+    },
+    {
+     "id": "2026-10-28:401909888:4397002:rebounds:4.5:under",
+     "kind": "single",
+     "player": "Ayo Dosunmu",
+     "bet": "Under 4.5 rebounds",
+     "market": "rebounds",
+     "team": "MIN",
+     "game": "GSW at MIN",
+     "price": -145,
+     "first_price": -145,
+     "last_price": -145,
+     "prices": [
+      {
+       "price": -145,
+       "at": "2026-10-28T18:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
+    },
+    {
+     "id": "2026-10-28:401909889:3907497:points:17.5:under",
+     "kind": "single",
+     "player": "Dejounte Murray",
+     "bet": "Under 17.5 points",
+     "market": "points",
+     "team": "NOP",
+     "game": "DEN at NOP",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-10-28T18:30:00-04:00"
       }
      ],
      "result": null,

@@ -1,5 +1,5 @@
 {
- "at": "2026-10-28T18:20:01-04:00",
+ "at": "2026-10-28T18:30:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -182,13 +182,6 @@
    "team": "DET",
    "date": "2026-10-25T14:56Z",
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
-  },
-  "5175737": {
-   "status": "day-to-day",
-   "name": "Yaxel Lendeborg",
-   "team": "GS",
-   "date": "2026-10-28T21:55Z",
-   "note": "Lendeborg (foot) is trending toward playing Wednesday against the Timberwolves, Anthony Slater of ESPN.com reports."
   },
   "3102531": {
    "status": "out",
@@ -616,6 +609,13 @@
    "team": "UTAH",
    "date": "2026-10-07T23:07Z",
    "note": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports."
+  },
+  "5238230": {
+   "status": "out",
+   "name": "Tre Johnson",
+   "team": "WSH",
+   "date": "2026-10-28T22:25Z",
+   "note": "Johnson racked up 20 points (7-14 FG, 4-8 3Pt, 2-2 FT), two rebounds and one steal across 26 minutes during Friday's 112-102 loss to Toronto."
   },
   "4432907": {
    "status": "out",
