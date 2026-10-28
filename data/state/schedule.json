@@ -313,13 +313,13 @@
     "start": "2026-10-28T19:00:00-04:00",
     "away": "MIA",
     "home": "ATL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/28 - 7:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:07 - 1st",
     "score": {
-     "MIA": "0",
-     "ATL": "0"
+     "MIA": "12",
+     "ATL": "12"
     }
    },
    {
@@ -328,13 +328,13 @@
     "start": "2026-10-28T19:00:00-04:00",
     "away": "WSH",
     "home": "CLE",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/28 - 7:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:31 - 1st",
     "score": {
-     "WSH": "0",
-     "CLE": "0"
+     "WSH": "11",
+     "CLE": "6"
     }
    },
    {
@@ -343,13 +343,13 @@
     "start": "2026-10-28T19:00:00-04:00",
     "away": "CHA",
     "home": "DET",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/28 - 7:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:55 - 1st",
     "score": {
-     "CHA": "0",
-     "DET": "0"
+     "CHA": "13",
+     "DET": "6"
     }
    },
    {
@@ -358,13 +358,13 @@
     "start": "2026-10-28T19:00:00-04:00",
     "away": "PHI",
     "home": "IND",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/28 - 7:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:38 - 1st",
     "score": {
-     "PHI": "0",
-     "IND": "0"
+     "PHI": "8",
+     "IND": "10"
     }
    },
    {

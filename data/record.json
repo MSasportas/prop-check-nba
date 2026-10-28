@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T19:10:01-04:00",
+ "generated_at": "2026-10-28T19:20:00-04:00",
  "summary": {
   "headline": {
    "w": 0,
@@ -528,6 +528,174 @@
       {
        "price": 120,
        "at": "2026-10-28T18:50:01-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min"
+    },
+    {
+     "id": "2026-10-28:401909886:3147657:rebounds:3.5:under",
+     "kind": "single",
+     "player": "Mikal Bridges",
+     "bet": "Under 3.5 rebounds",
+     "market": "rebounds",
+     "team": "NYK",
+     "game": "NYK at CHI",
+     "price": -130,
+     "first_price": -130,
+     "last_price": -130,
+     "prices": [
+      {
+       "price": -130,
+       "at": "2026-10-28T19:20:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min"
+    },
+    {
+     "id": "2026-10-28:401909887:3133628:rebounds:5.5:under",
+     "kind": "single",
+     "player": "Myles Turner",
+     "bet": "Under 5.5 rebounds",
+     "market": "rebounds",
+     "team": "MIL",
+     "game": "HOU at MIL",
+     "price": -140,
+     "first_price": -140,
+     "last_price": -140,
+     "prices": [
+      {
+       "price": -140,
+       "at": "2026-10-28T19:20:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min"
+    },
+    {
+     "id": "2026-10-28:401909887:4432639:points:15.5:over",
+     "kind": "single",
+     "player": "Jabari Smith Jr",
+     "bet": "Over 15.5 points",
+     "market": "points",
+     "team": "HOU",
+     "game": "HOU at MIL",
+     "price": -130,
+     "first_price": -130,
+     "last_price": -130,
+     "prices": [
+      {
+       "price": -130,
+       "at": "2026-10-28T19:20:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min"
+    },
+    {
+     "id": "2026-10-28:401909887:4432848:points:14.5:under",
+     "kind": "single",
+     "player": "Jaime Jaquez Jr",
+     "bet": "Under 14.5 points",
+     "market": "points",
+     "team": "MIL",
+     "game": "HOU at MIL",
+     "price": -125,
+     "first_price": -125,
+     "last_price": -125,
+     "prices": [
+      {
+       "price": -125,
+       "at": "2026-10-28T19:20:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min"
+    },
+    {
+     "id": "2026-10-28:401909888:4432816:points:22.5:under",
+     "kind": "single",
+     "player": "LaMelo Ball",
+     "bet": "Under 22.5 points",
+     "market": "points",
+     "team": "MIN",
+     "game": "GSW at MIN",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-10-28T19:20:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min"
+    },
+    {
+     "id": "2026-10-28:401909888:6589:rebounds:5.5:under",
+     "kind": "single",
+     "player": "Draymond Green",
+     "bet": "Under 5.5 rebounds",
+     "market": "rebounds",
+     "team": "GSW",
+     "game": "GSW at MIN",
+     "price": -140,
+     "first_price": -140,
+     "last_price": -140,
+     "prices": [
+      {
+       "price": -140,
+       "at": "2026-10-28T19:20:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min"
+    },
+    {
+     "id": "2026-10-28:401909888:6589:threes:1.5:under",
+     "kind": "single",
+     "player": "Draymond Green",
+     "bet": "Under 1.5 threes",
+     "market": "threes",
+     "team": "GSW",
+     "game": "GSW at MIN",
+     "price": -195,
+     "first_price": -195,
+     "last_price": -195,
+     "prices": [
+      {
+       "price": -195,
+       "at": "2026-10-28T19:20:00-04:00"
       }
      ],
      "result": null,
