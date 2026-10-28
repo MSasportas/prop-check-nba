@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:38 - 1st",
+    "detail": "2:53 - 1st",
     "score": {
-     "BKN": "12",
-     "BOS": "8"
+     "BKN": "21",
+     "BOS": "22"
     }
    },
    {
