@@ -339,14 +339,16 @@
   "LAL": {
    "state": "expected",
    "starters": [
-    "Luka Doncic",
     "Austin Reaves",
-    "Ziaire Williams",
+    "Quentin Grimes",
     "Matisse Thybulle",
+    "Sandro Mamukelashvili",
     "Walker Kessler"
    ],
    "status": {
-    "Adou Thiero": "doubtful"
+    "Luka Doncic": "out",
+    "Adou Thiero": "out",
+    "Ziaire Williams": "out"
    }
   },
   "LAC": {
@@ -368,5 +370,5 @@
    }
   }
  },
- "at": "2026-10-28T16:00:01-04:00"
+ "at": "2026-10-28T16:10:00-04:00"
 }
