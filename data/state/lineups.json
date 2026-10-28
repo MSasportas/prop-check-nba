@@ -208,7 +208,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
@@ -223,7 +223,7 @@
    }
   },
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ryan Rollins",
     "Tyler Herro",
@@ -234,13 +234,13 @@
    "status": {}
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Stephen Curry",
     "Brandin Podziemski",
+    "Georges Niang",
     "Yaxel Lendeborg",
-    "Draymond Green",
-    "Graham Ike"
+    "Draymond Green"
    ],
    "status": {
     "Jimmy Butler": "out",
@@ -250,7 +250,7 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -366,5 +366,5 @@
    }
   }
  },
- "at": "2026-10-28T19:30:00-04:00"
+ "at": "2026-10-28T19:40:00-04:00"
 }
