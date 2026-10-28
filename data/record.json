@@ -1,5 +1,5 @@
 {
- "generated_at": null,
+ "generated_at": "2026-10-28T17:30:00-04:00",
  "summary": {
   "headline": {
    "w": 0,
@@ -13,6 +13,246 @@
   },
   "rows": []
  },
- "nights": [],
+ "nights": [
+  {
+   "date": "2026-10-28",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-10-28:401909881:2490149:assists:3.5:under",
+     "kind": "single",
+     "player": "C.J. McCollum",
+     "bet": "Under 3.5 assists",
+     "market": "assists",
+     "team": "ATL",
+     "game": "MIA at ATL",
+     "price": -140,
+     "first_price": -140,
+     "last_price": -140,
+     "prices": [
+      {
+       "price": -140,
+       "at": "2026-10-28T17:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401909881:4066261:assists:3.5:under",
+     "kind": "single",
+     "player": "Bam Adebayo",
+     "bet": "Under 3.5 assists",
+     "market": "assists",
+     "team": "MIA",
+     "game": "MIA at ATL",
+     "price": -130,
+     "first_price": -130,
+     "last_price": -130,
+     "prices": [
+      {
+       "price": -130,
+       "at": "2026-10-28T17:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401909882:3908809:assists:4.5:over",
+     "kind": "single",
+     "player": "Donovan Mitchell",
+     "bet": "Over 4.5 assists",
+     "market": "assists",
+     "team": "CLE",
+     "game": "WAS at CLE",
+     "price": -155,
+     "first_price": -155,
+     "last_price": -155,
+     "prices": [
+      {
+       "price": -155,
+       "at": "2026-10-28T17:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401909882:3992:rebounds:4.5:under",
+     "kind": "single",
+     "player": "James Harden",
+     "bet": "Under 4.5 rebounds",
+     "market": "rebounds",
+     "team": "CLE",
+     "game": "WAS at CLE",
+     "price": -105,
+     "first_price": -105,
+     "last_price": -105,
+     "prices": [
+      {
+       "price": -105,
+       "at": "2026-10-28T17:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401909882:4277905:rebounds:2.5:under",
+     "kind": "single",
+     "player": "Trae Young",
+     "bet": "Under 2.5 rebounds",
+     "market": "rebounds",
+     "team": "WAS",
+     "game": "WAS at CLE",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-10-28T17:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401909882:6583:assists:2.5:under",
+     "kind": "single",
+     "player": "Anthony Davis",
+     "bet": "Under 2.5 assists",
+     "market": "assists",
+     "team": "WAS",
+     "game": "WAS at CLE",
+     "price": -150,
+     "first_price": -150,
+     "last_price": -150,
+     "prices": [
+      {
+       "price": -150,
+       "at": "2026-10-28T17:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401909883:4433249:points:8.5:under",
+     "kind": "single",
+     "player": "Moussa Diabate",
+     "bet": "Under 8.5 points",
+     "market": "points",
+     "team": "CHA",
+     "game": "CHA at DET",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [
+      {
+       "price": -115,
+       "at": "2026-10-28T17:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401909884:3917376:points:21.5:over",
+     "kind": "single",
+     "player": "Jaylen Brown",
+     "bet": "Over 21.5 points",
+     "market": "points",
+     "team": "PHI",
+     "game": "PHI at IND",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-10-28T17:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401909884:4431678:points:24.5:under",
+     "kind": "single",
+     "player": "Tyrese Maxey",
+     "bet": "Under 24.5 points",
+     "market": "points",
+     "team": "PHI",
+     "game": "PHI at IND",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [
+      {
+       "price": -115,
+       "at": "2026-10-28T17:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401909884:4431678:threes:2.5:over",
+     "kind": "single",
+     "player": "Tyrese Maxey",
+     "bet": "Over 2.5 threes",
+     "market": "threes",
+     "team": "PHI",
+     "game": "PHI at IND",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-10-28T17:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  }
+ ],
  "older": []
 }
