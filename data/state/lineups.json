@@ -120,12 +120,12 @@
    }
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
+    "Jase Richardson",
     "Anthony Black",
     "Desmond Bane",
     "Franz Wagner",
-    "Tristan da Silva",
     "Wendell Carter"
    ],
    "status": {
@@ -137,7 +137,7 @@
    }
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Immanuel Quickley",
     "RJ Barrett",
@@ -160,8 +160,8 @@
     "Nikola Jokic"
    ],
    "status": {
-    "Cameron Johnson": "doubtful",
     "Alpha Diallo": "out",
+    "Cameron Johnson": "out",
     "Spencer Jones": "out",
     "Julian Strawther": "out"
    }
@@ -239,14 +239,14 @@
     "Stephen Curry",
     "Brandin Podziemski",
     "Yaxel Lendeborg",
-    "Gui Santos",
-    "Draymond Green"
+    "Draymond Green",
+    "Graham Ike"
    ],
    "status": {
-    "Gui Santos": "out",
     "Jimmy Butler": "out",
     "Moses Moody": "out",
-    "Kristaps Porzingis": "out"
+    "Kristaps Porzingis": "out",
+    "Gui Santos": "out"
    }
   },
   "MIN": {
@@ -366,5 +366,5 @@
    }
   }
  },
- "at": "2026-10-28T19:00:00-04:00"
+ "at": "2026-10-28T19:10:01-04:00"
 }
