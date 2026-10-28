@@ -1,31 +1,31 @@
 {
- "finished_at": "2026-10-28T04:30:00-04:00",
- "slate": "2026-10-27",
+ "finished_at": "2026-10-28T05:00:01-04:00",
+ "slate": "2026-10-28",
  "ok": true,
  "steps": {
   "schedule": {
    "ok": true,
-   "sec": 0.2
+   "sec": 1.1
   },
   "rosters": {
    "ok": true,
-   "sec": 0.0
+   "sec": 5.0
   },
   "injuries": {
    "ok": true,
-   "sec": 0.1
+   "sec": 0.2
   },
   "lineups": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.6
   },
   "odds": {
    "ok": true,
-   "sec": 0.0
+   "sec": 1.6
   },
   "engine": {
    "ok": true,
-   "sec": 0.3
+   "sec": 0.0
   },
   "grade": {
    "ok": true,
@@ -66,48 +66,51 @@
  ],
  "pool_left": 2807,
  "plan": {
-  "allowance": 79.75,
+  "allowance": 87.719,
   "reads": [
    "A",
    "B",
    "C",
    "D"
   ],
-  "budget_today": 319,
-  "pool_at_plan": 2871,
-  "games_left": 36,
-  "games_today": 4,
+  "budget_today": 1052,
+  "pool_at_plan": 2807,
+  "games_left": 32,
+  "games_today": 12,
   "key_count": 6,
-  "made_at": "2026-10-27T05:00:00-04:00",
+  "made_at": "2026-10-28T05:00:01-04:00",
   "cost_per_read": 4
  },
- "spent_today": 64,
+ "spent_today": 0,
  "odds_note": "no read due",
  "odds_errors": [],
  "unknown_teams": [],
  "graded_now": 0,
  "sources": {
   "espn": {
-   "ok": 2,
+   "ok": 29,
    "failed": 0
   },
   "rotowire": {
-   "ok": 0,
+   "ok": 1,
    "failed": 0
   },
   "odds": {
-   "ok": 0,
+   "ok": 6,
    "failed": 0
   }
  },
- "unmatched_rotowire": [],
+ "unmatched_rotowire": [
+  "Khalifa Diop",
+  "Nae'Qwan Tomlin"
+ ],
  "unmatched": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "40653701926",
+  "run_id": "40657227694",
   "iteration": 2,
-  "chain_link": 92,
+  "chain_link": 93,
   "chain_started_at": "2026-10-25T12:12:48-04:00",
-  "run_started_at": "2026-10-28T04:00:15-04:00"
+  "run_started_at": "2026-10-28T04:30:14-04:00"
  }
 }
