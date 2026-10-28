@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-27T19:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-27T20:50:01-04:00"
+   "at": "2026-10-27T21:00:01-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "BKN",
    "home": "BOS",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "9:07 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -46,7 +46,7 @@
    "away": "DET",
    "home": "NYK",
    "state": "in",
-   "detail": "9:57 - 2nd",
+   "detail": "7:05 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "SAC",
    "home": "SAS",
    "state": "in",
-   "detail": "6:43 - 2nd",
+   "detail": "3:56 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -100,6 +100,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-27T20:50:01-04:00",
- "status_at": "2026-10-27T20:50:01-04:00"
+ "generated_at": "2026-10-27T21:00:01-04:00",
+ "status_at": "2026-10-27T21:00:01-04:00"
 }
