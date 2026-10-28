@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2743,
+   "pool_left": 2739,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-28T18:00:00-04:00",
-  "last_read_at": "2026-10-28T17:30:00-04:00",
+  "next_read_at": "2026-10-28T18:15:00-04:00",
+  "last_read_at": "2026-10-28T18:00:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-28T17:50:01-04:00"
+   "at": "2026-10-28T18:00:00-04:00"
   }
  },
  "games": [
@@ -93,8 +93,8 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-28T11:00:01-04:00",
-   "picks": 0
+   "read_at": "2026-10-28T18:00:00-04:00",
+   "picks": 1
   },
   {
    "id": "401909886",
@@ -575,6 +575,48 @@
    "rank": 9
   },
   {
+   "player": "Desmond Bane",
+   "pid": "4066320",
+   "team": "ORL",
+   "opp": "TOR",
+   "home": false,
+   "game_id": "401909885",
+   "start": "2026-10-28T19:30:00-04:00",
+   "bet": "Over 2.5 threes",
+   "market": "threes",
+   "side": "over",
+   "line": 2.5,
+   "price": -140,
+   "price_at": "2026-10-28T18:00:00-04:00",
+   "read": "B",
+   "p": 0.5351,
+   "p_pct": 54,
+   "breakeven": 0.5833,
+   "breakeven_pct": 58,
+   "market_fair": null,
+   "n_books": 7,
+   "gap_ev": null,
+   "final_ev": 0.0209,
+   "model_p": null,
+   "reason": "Pinnacle moved the over from -122 to -134 (51% to 54%); 7 other books held. Hard Rock price: -140.",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/3557683012571365777",
+   "rule": "pin_solo",
+   "pin_before": 0.5142,
+   "pin_after": 0.5351,
+   "pin_price_before": -122,
+   "pin_price_after": -134,
+   "others_move": 0.0087,
+   "n_others": 7,
+   "ev_vs_pin": -0.0827,
+   "id": "2026-10-28:401909885:4066320:threes:2.5:over",
+   "state": "early",
+   "state_label": "Early",
+   "price_final": false,
+   "pulled": null,
+   "result": null,
+   "rank": 10
+  },
+  {
    "player": "Tyrese Maxey",
    "pid": "4431678",
    "team": "PHI",
@@ -614,13 +656,13 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 10
+   "rank": 11
   }
  ],
  "empty": null,
  "counts": {
-  "lines_read": 934,
-  "passing": 10,
+  "lines_read": 944,
+  "passing": 11,
   "games": 12
  },
  "safety_paused": false,
@@ -629,6 +671,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-28T17:30:00-04:00",
- "status_at": "2026-10-28T17:50:01-04:00"
+ "generated_at": "2026-10-28T18:00:00-04:00",
+ "status_at": "2026-10-28T18:00:00-04:00"
 }
