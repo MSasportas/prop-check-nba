@@ -40,8 +40,20 @@ def book(key, rows, at, link=False, feed_key="player_rebounds", extra=None):
 
 
 class World:
-    def __init__(self):
+    def __init__(self, rule="gap_guard"):
+        """rule: which live pick rule the fake world runs. "gap_guard" (v1.x, the rule most older tests were written for) runs a
+        config copy with gap_guard on and pin_solo off; "pin_solo" runs the real config (v2.0)."""
         self.tmp = tempfile.mkdtemp(prefix="pcnba_")
+        cfg = json.load(open(os.path.join(ROOT, "config", "rules.json")))
+        if rule == "gap_guard":
+            cfg["gap_guard"]["active"] = True
+            cfg["pin_solo"]["active"] = False
+            cfg["gap_guard"]["live_from"] = "2026-10-25"
+        else:
+            cfg["pin_solo"]["live_from"] = "2026-10-25"
+            cfg["watch"]["pin_judge"]["from_slate"] = "2026-10-25"
+        self.config = os.path.join(self.tmp, "rules.json")
+        json.dump(cfg, open(self.config, "w"))
         self.data = os.path.join(self.tmp, "data")
         self.espn = os.path.join(self.tmp, "espn")
         self.odds = os.path.join(self.tmp, "odds")
@@ -72,7 +84,7 @@ class World:
 
     def run(self, now, *args, env=None):
         e = dict(os.environ, PC_NOW=now, PC_DATA_DIR=self.data, PC_ESPN_FIXTURE_DIR=self.espn,
-                 PC_ODDS_FIXTURE_DIR=self.odds, ODDS_API_KEYS="k1,k2,k3")
+                 PC_ODDS_FIXTURE_DIR=self.odds, PC_CONFIG=self.config, ODDS_API_KEYS="k1,k2,k3")
         e.pop("DISCORD_WEBHOOK_URL", None)
         e.update(env or {})
         p = subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "run.py")] + list(args), env=e,

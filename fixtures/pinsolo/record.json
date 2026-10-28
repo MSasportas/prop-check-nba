@@ -1,0 +1,136 @@
+{
+ "generated_at": "2026-10-28T21:42:00-04:00",
+ "summary": {
+  "headline": {
+   "w": 1,
+   "l": 0,
+   "push": 0,
+   "void": 0,
+   "units": 0.87,
+   "hit_rate": 1.0,
+   "needed": 0.5349,
+   "n": 1
+  },
+  "rows": [
+   {
+    "key": "rebounds",
+    "label": "Rebounds",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0.87,
+    "hit_rate": 1.0,
+    "needed": 0.5349,
+    "n": 1
+   }
+  ]
+ },
+ "nights": [
+  {
+   "date": "2026-10-28",
+   "graded": false,
+   "w": 1,
+   "l": 0,
+   "units": 0.87,
+   "entries": [
+    {
+     "id": "2026-10-28:401910001:3195:rebounds:11.5:over",
+     "kind": "single",
+     "player": "Rudy Gobert",
+     "bet": "Over 11.5 rebounds",
+     "market": "rebounds",
+     "team": "MIN",
+     "game": "DEN at MIN",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [
+      {
+       "price": -115,
+       "at": "2026-10-28T18:40:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "14 rebounds",
+     "units": 0.87,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401910003:3945274:rebounds:7.5:under",
+     "kind": "single",
+     "player": "Luka Doncic",
+     "bet": "Under 7.5 rebounds",
+     "market": "rebounds",
+     "team": "LAL",
+     "game": "LAL at SAC",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-10-28T21:40:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401910004:4279888:assists:6.5:over",
+     "kind": "single",
+     "player": "Ja Morant",
+     "bet": "Over 6.5 assists",
+     "market": "assists",
+     "team": "MEM",
+     "game": "MEM at POR",
+     "price": 104,
+     "first_price": 104,
+     "last_price": 104,
+     "prices": [
+      {
+       "price": 104,
+       "at": "2026-10-28T21:40:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-28:401910004:4433134:rebounds:5.5:over",
+     "kind": "single",
+     "player": "Jaren Jackson Jr.",
+     "bet": "Over 5.5 rebounds",
+     "market": "rebounds",
+     "team": "MEM",
+     "game": "MEM at POR",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-10-28T20:55:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-10-28T21:40:00-04:00",
+      "reason": "Hard Rock took the line down"
+     },
+     "legs": []
+    }
+   ]
+  }
+ ],
+ "older": []
+}

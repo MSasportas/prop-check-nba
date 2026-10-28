@@ -90,6 +90,13 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .bar i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:rgba(108,196,240,.38)}
 .bar i.over{background:var(--accent);border-radius:0 3px 3px 0}
 .bar u{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--fg);border-radius:1px}
+.pin{margin-top:8px;padding:7px 10px;border-radius:8px;background:var(--raise);border:1px solid var(--line);font-size:13px;line-height:18px}
+.pin .p1{overflow-wrap:anywhere}
+.pin .p1 b{font-weight:500}
+.pin .p1 .arr{color:var(--accent);font-weight:600}
+.pin .p2{color:var(--muted);margin-top:2px;overflow-wrap:anywhere}
+.pin .p2 b{color:var(--fg);font-weight:500}
+.pin .nw{white-space:nowrap}
 .reason{font-size:14px;line-height:20px;margin-top:8px;overflow-wrap:anywhere}
 .clamp2{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
 .betlink{display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;margin-top:10px;border-radius:8px;background:var(--accent);
@@ -188,6 +195,13 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .ent .u{flex:none;font:600 15px/20px var(--display);white-space:nowrap;text-align:right;min-width:46px}
 .ptag{display:inline-block;font:600 12px/16px var(--display);letter-spacing:.05em;padding:0 5px;margin-right:6px;border:1px solid var(--muted);border-radius:3px;color:var(--fg);vertical-align:1px}
 
+/* backstage */
+.bs-intro{font-size:13px;line-height:19px;color:var(--muted);margin:2px 0 0}
+.track{margin-top:12px;padding:10px 12px;border-radius:10px;background:var(--surface);border:1px solid var(--line)}
+.track .tn{font:600 19px/22px var(--display);letter-spacing:.01em}
+.track .td{font-size:13px;line-height:19px;color:var(--muted);margin-top:2px;overflow-wrap:anywhere}
+.ent .u.pend{font:400 12px/20px var(--body);color:var(--muted)}
+
 /* sheet */
 .scrim{position:fixed;inset:0;z-index:10;background:rgba(3,7,11,.66);display:flex;align-items:flex-end;justify-content:center}
 .sheet{width:100%;max-width:520px;max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;background:var(--surface);
@@ -232,7 +246,8 @@ var S = {
   loaded: false, loadErr: false, fetchFail: false, rulesErr: false, loadedAt: null, busy: false,
   view: 'tonight', expanded: {},
   older: [], olderIdx: 0, olderBusy: false, olderErr: false,
-  sheet: null, sheetFocus: null, key: '', scroll: { tonight: 0, record: 0 }
+  judge: null, judgeErr: null, judgeLoaded: false, judgeBusy: false,
+  sheet: null, sheetFocus: null, key: '', scroll: { tonight: 0, record: 0, backstage: 0 }
 };
 
 var app = document.getElementById('app');
@@ -431,7 +446,18 @@ function load() {
       else if (S.slate) S.fetchFail = r[0].kind;
       else S.loadErr = r[0].kind;
       maybeRender();
+      if (S.view === 'backstage') loadJudge();
     }, function () { S.busy = false; });
+}
+/* Backstage file: only fetched while that tab is open; a failure here never touches the other tabs */
+function loadJudge() {
+  if (S.judgeBusy) return;
+  S.judgeBusy = true;
+  settle(getJSON(BASE + 'watch/pin_judge/summary.json')).then(function (r) {
+    S.judgeBusy = false; S.judgeLoaded = true;
+    if (r.ok) { S.judge = r.v; S.judgeErr = null; } else if (!S.judge) S.judgeErr = r.kind;
+    maybeRender();
+  });
 }
 var timer = null;
 function schedule() {
@@ -445,7 +471,7 @@ function calcKey() {
   var d = S.slate ? split() : null, mins = Math.floor(now() / 60000);
   return JSON.stringify([S.loaded, S.loadErr, S.fetchFail, S.recordErr, S.rulesErr, S.slate && S.slate.generated_at, S.slate && S.slate.status_at,
     S.record && S.record.generated_at, S.view, S.rules && S.rules.version, S.rules && S.rules.updated, S.slate && expired(), S.slate && stale(),
-    d ? [d.open.length, d.started.length] : 0, mins]);
+    d ? [d.open.length, d.started.length] : 0, mins, S.judgeLoaded, S.judgeErr, S.judge && S.judge.updated_at]);
 }
 function maybeRender() { var k = calcKey(); if (k !== S.key) render(); }
 function render() {
@@ -453,7 +479,7 @@ function render() {
   try {
     S.key = calcKey();
     clear(app);
-    if (S.view === 'record') renderRecord(); else renderTonight();
+    if (S.view === 'record') renderRecord(); else if (S.view === 'backstage') renderBackstage(); else renderTonight();
     renderTabs();
     if (S.sheet) fillSheet();
   } catch (err) {
@@ -546,7 +572,9 @@ function pickCard(p, d, opts) {
   if (!started) card.appendChild(h('div', { class: 'betat' }, 'Bet at ', h('b', { text: odds(p.price) + ' or better' }),
     pa ? ' · ' + (stale() ? 'old price, read ' : 'read ') + pa : ''));
 
-  if (!started || isOpen) {
+  var pin = str(p.rule) === 'pin_solo';
+  if (pin && (!started || isOpen)) card.appendChild(pinRow(p));
+  else if (!started || isOpen) {
     var pc = pctP(p), be = pctB(p);
     card.appendChild(h('div', { class: 'chance' }, 'We say ', h('b', { text: pc || 'not posted' }), be ? ' · price needs ' + be : ''));
     var bar = chanceBar(p.p, p.breakeven); if (bar) card.appendChild(bar);
@@ -560,7 +588,11 @@ function pickCard(p, d, opts) {
       on: { click: function (e) { e.stopPropagation(); }, keydown: function (e) { e.stopPropagation(); } } }, 'Bet on Hard Rock ↗'));
   }
 
-  if (isOpen) {
+  if (isOpen && pin) {
+    card.appendChild(h('div', { class: 'more' },
+      h('div', { class: 'mu', text: "Signal pick: it follows Pinnacle's move; the price is frozen at the read shown." }),
+      h('div', { class: 'mu', text: 'Graded on the Record at ' + odds(p.price) + (pa ? ', read ' + pa : '') + '.' })));
+  } else if (isOpen) {
     var more = h('div', { class: 'more' }), mf = num(p.market_fair), nb = num(p.n_books), mp = num(p.model_p), fe = num(p.final_ev);
     if (mf != null) more.appendChild(h('div', null, h('span', { class: 'k', text: 'Other books' + (nb != null ? ' (' + nb + ')' : '') + ': ' }), (Math.round(mf * 1000) / 10) + '%'));
     if (mp != null) more.appendChild(h('div', null, h('span', { class: 'k', text: 'Our model: ' }), Math.round(mp * 100) + '%'));
@@ -569,6 +601,18 @@ function pickCard(p, d, opts) {
     card.appendChild(more);
   }
   return card;
+}
+/* rule pin_solo: "Pinnacle: -118 → -149 (52% → 56%) · 6 books held" / "Hard Rock -120 needs 55%" */
+function pinRow(p) {
+  var pb = num(p.pin_price_before), pa2 = num(p.pin_price_after), cb = pctNear(p.pin_before), ca = pctNear(p.pin_after), no = num(p.n_others);
+  var hasP = pb != null || pa2 != null, l1 = [h('b', { text: 'Pinnacle' }), ' '];
+  if (hasP) l1.push(h('span', { class: 'nw' }, odds(pb), h('span', { class: 'arr', text: ' → ' }), odds(pa2)));
+  if (cb || ca) l1.push(' ', h('span', { class: 'nw', text: (hasP ? '(' : '') + (cb || '—') + ' → ' + (ca || '—') + (hasP ? ')' : '') }));
+  if (l1.length === 2) l1.push('moved alone');
+  var be = pctB(p);
+  return h('div', { class: 'pin' }, h('div', { class: 'p1' }, l1),
+    no != null ? h('div', { class: 'p2', text: no + (no === 1 ? ' other book held' : ' other books held') }) : null,
+    h('div', { class: 'p2' }, 'Hard Rock ', h('b', { text: odds(p.price) }), be ? ' needs ' + be : ''));
 }
 function pulledCard(p, d) {
   var pl = isObj(p.pulled) ? p.pulled : {}, at = fTime(pl.at);
@@ -812,24 +856,93 @@ function loadOlder() {
   }, function () { S.olderBusy = false; S.olderErr = true; render(); });
 }
 
+/* ---------- Backstage (tracked only: never the Record, never Discord) ---------- */
+function renderBackstage() {
+  app.appendChild(header('Behind the scenes', null));
+  app.appendChild(h('p', { class: 'bs-intro', text: 'Tracked only. Not on the Record, not sent to Discord.' }));
+  try { backstageBody(); }
+  catch (err) {
+    app.appendChild(h('div', { class: 'card empty', style: 'margin-top:12px' }, h('div', { class: 't', text: "Backstage didn't load right." }),
+      h('div', { class: 's', text: 'Tonight and the Record are not affected.' })));
+    if (window.console) console.warn('backstage failed', err);
+  }
+  app.appendChild(footer());
+}
+function backstageBody() {
+  var j = S.judge;
+  if (!j && (!S.judgeLoaded || S.judgeBusy) && !S.judgeErr) { app.appendChild(h('div', { class: 'stack', style: 'margin-top:12px' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
+  if (!j && S.judgeErr === 'net') {
+    app.appendChild(h('div', { class: 'card empty', style: 'margin-top:12px' }, h('div', { class: 't', text: "Can't load Backstage. Check your connection." }),
+      h('div', { style: 'margin-top:12px' }, h('button', { class: 'btn', type: 'button', text: 'Try again', on: { click: function () { S.judgeErr = null; S.judgeLoaded = false; render(); loadJudge(); } } }))));
+    return;
+  }
+  j = isObj(j) ? j : {};
+  var me = num(j.min_ev), pctTxt = me != null ? (Math.round(me * 1000) / 10) + '%+' : '2%+';
+  app.appendChild(h('div', { class: 'track' }, h('div', { class: 'tn', text: str(j.label) || 'Pinnacle as the price judge' }),
+    h('div', { class: 'td', text: 'Hard Rock ' + pctTxt + " better than Pinnacle's price on the same line." })));
+
+  var nights = arr(j.nights).filter(function (n) { return isObj(n) && arr(n.bets).filter(isObj).length; });
+  if (!nights.length) {
+    var fs = j.from_slate ? fDateLong(j.from_slate) : null;
+    app.appendChild(h('div', { class: 'card empty', style: 'margin-top:12px' }, h('div', { class: 't', text: 'Nothing tracked yet.' + (fs ? ' First night: ' + fs + '.' : '') })));
+    return;
+  }
+  var t = isObj(j.total) ? j.total : {}, w = num(t.w) || 0, l = num(t.l) || 0, pend = num(t.pending) || 0;
+  var sub = [num(t.push) ? t.push + ' push' : '', num(t.void) ? t.void + ' void' : '', pctNear(t.hit_rate) && (w + l) ? pctNear(t.hit_rate) + ' hit' : ''].filter(Boolean).join(' · ');
+  app.appendChild(h('div', { class: 'hl', role: 'table', 'aria-label': 'Backstage totals' },
+    h('div', { role: 'row' }, h('div', { class: 'k', text: 'W-L' }), h('div', { class: 'v', text: w + '-' + l }), h('div', { class: 's', text: sub || (w + l) + ' graded' })),
+    h('div', { role: 'row' }, h('div', { class: 'k', text: 'Units' }), h('div', { class: 'v ' + signCls(t.units), text: units(t.units, 2) || '0.00u' }), h('div', { class: 's', text: '1 unit each' })),
+    h('div', { role: 'row' }, h('div', { class: 'k', text: 'Pending' }), h('div', { class: 'v', text: pend }), h('div', { class: 's', text: pend === 1 ? 'bet to grade' : 'bets to grade' }))));
+  var meta = [];
+  if (j.from_slate) meta.push('Tracking since ' + fDateShort(j.from_slate));
+  if (fStamp(j.updated_at)) meta.push('updated ' + fStamp(j.updated_at));
+  if (meta.length) app.appendChild(h('div', { class: 'subline', text: meta.join(' · ') + '.' }));
+
+  nights.slice().sort(function (a, b) { return str(a.date) < str(b.date) ? 1 : (str(a.date) > str(b.date) ? -1 : 0); }).forEach(function (nt) {
+    var bets = arr(nt.bets).filter(isObj), graded = bets.some(function (b) { return b.result != null; }), open = bets.some(function (b) { return b.result == null; });
+    var tail = graded ? (num(nt.w) || 0) + '-' + (num(nt.l) || 0) + (units(nt.units, 2) ? ' · ' + units(nt.units, 2) : '') + (open ? ' so far' : '') : null;
+    var sec = h('section', { class: 'night' }, h('h3', null, fDateLong(nt.date) + (tail ? ' · ' + tail : ''),
+      graded ? null : h('span', { class: 'mu', text: ' · pending' })));
+    bets.forEach(function (b) { sec.appendChild(judgeRow(b)); });
+    app.appendChild(sec);
+  });
+}
+function judgeRow(b) {
+  var res = b.result == null ? null : str(b.result), known = { W: 1, L: 1, PUSH: 1, VOID: 1 };
+  var tag = h('span', { class: 'tg ' + (res && known[res] ? res : 'none'), text: res || '–' });
+  if (!res) tag.setAttribute('aria-label', 'Pending');
+  var ev = num(b.pin_ev), l2 = [odds(b.price)];
+  if (ev != null) l2.push((ev >= 0 ? '+' : '') + (Math.round(ev * 1000) / 10).toFixed(1) + '% vs Pinnacle');
+  if (res && b.actual) l2.push(str(b.actual));
+  var u = res ? units(b.units, 2) : null;
+  return h('div', { class: 'ent' }, tag,
+    h('div', { class: 'bd' }, h('div', { class: 'e1' }, h('span', { class: 'pn', text: b.player || 'Player not named' }), ' ' + shortBet(b)),
+      h('div', { class: 'e2', text: l2.join(' · ') })),
+    res ? (u ? h('span', { class: 'u ' + signCls(b.units), text: u }) : null) : h('span', { class: 'u pend', text: 'pending' }));
+}
+
 /* ---------- tabs + routing ---------- */
 function renderTabs() {
   clear(tabsEl);
   var mk = function (v, label) {
     return h('button', { class: 'tab', type: 'button', 'aria-current': S.view === v ? 'page' : null, text: label, on: { click: function () { go(v); } } });
   };
-  tabsEl.appendChild(h('div', { class: 'in' }, mk('tonight', 'Tonight'), mk('record', 'Record')));
+  tabsEl.appendChild(h('div', { class: 'in' }, mk('tonight', 'Tonight'), mk('record', 'Record'), mk('backstage', 'Backstage')));
 }
-function viewFromHash() { return location.hash === '#record' ? 'record' : 'tonight'; }
+function viewFromHash() { return location.hash === '#record' ? 'record' : (location.hash === '#backstage' ? 'backstage' : 'tonight'); }
 function go(v) {
   if (v === S.view) { window.scrollTo(0, 0); return; }
-  try { history.pushState(null, '', location.pathname + location.search + (v === 'record' ? '#record' : '')); }
-  catch (e) { location.hash = v === 'record' ? '#record' : ''; }
+  var hs = v === 'tonight' ? '' : '#' + v;
+  try { history.pushState(null, '', location.pathname + location.search + hs); }
+  catch (e) { location.hash = hs; }
   route();
 }
 function route() {
   var v = viewFromHash();
-  if (v !== S.view) { S.scroll[S.view] = window.scrollY || 0; S.view = v; render(); window.scrollTo(0, S.scroll[v] || 0); }
+  if (v !== S.view) {
+    S.scroll[S.view] = window.scrollY || 0; S.view = v; render(); window.scrollTo(0, S.scroll[v] || 0);
+    if (v === 'backstage') loadJudge();
+  }
 }
 
 /* ---------- rules sheet ---------- */

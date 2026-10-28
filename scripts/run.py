@@ -29,6 +29,7 @@ import odds  # noqa: E402
 import record  # noqa: E402
 import stats  # noqa: E402
 import teams  # noqa: E402
+import watch  # noqa: E402
 
 SEASON_START = "2026-10-01"
 
@@ -187,7 +188,13 @@ class Run:
                 shadow["reads"].append({"game_id": gid, "read": f["read"], "at": f["at"],
                                         "rows": [{k: (round(v, 4) if isinstance(v, float) else v) for k, v in r.items()
                                                   if k not in ("link", "name")} for r in rows]})
+        shadow["solo"] = [{k: v for k, v in r.items() if k not in ("link", "name")}
+                          for rows in (summ.get("solo_rows") or {}).values() for r in rows]
         common.write_json(common.dpath("shadow", "%s.json" % self.slate), shadow, pretty=False)
+        try:
+            self.watch_added = watch.flag(self.ctx, evals)
+        except Exception as e:                              # behind the scenes only: never fails the run
+            self.steps["watch"] = {"ok": False, "soft": True, "error": common.short_err(e)}
 
     # ------------------------------------------------------------ grading and the stats store
     def grade(self):
@@ -251,7 +258,9 @@ class Run:
             sh, gr = it["shown"], it["graded"]
             p = {k: sh.get(k) for k in ("player", "pid", "team", "opp", "home", "game_id", "start", "bet", "market", "side", "line",
                                         "price", "price_at", "read", "p", "p_pct", "breakeven", "breakeven_pct",
-                                        "market_fair", "n_books", "gap_ev", "final_ev", "model_p", "reason", "link")}
+                                        "market_fair", "n_books", "gap_ev", "final_ev", "model_p", "reason", "link", "rule",
+                                        "pin_before", "pin_after", "pin_price_before", "pin_price_after", "others_move",
+                                        "n_others", "ev_vs_pin")}
             p["id"] = it["id"]
             p["team"], p["opp"] = teams.show(sh["team"]), teams.show(sh["opp"])
             st = "locked" if it["locked_at"] else it["state"]
@@ -271,8 +280,12 @@ class Run:
             else:
                 p["rank"] = None
         lines_read = sum(len(rows) for pairs in getattr(self, "evals", {}).values() for _, rows in pairs[-1:])
-        passing = sum(1 for pairs in getattr(self, "evals", {}).values() for _, rows in pairs[-1:] for r in rows
-                      if r["why"] is None)
+        solo = [r for rows in ((getattr(self, "summ", None) or {}).get("solo_rows") or {}).values() for r in rows]
+        passing = sum(1 for r in solo if r["why"] is None)
+        try:
+            watch.summary(stats.load(), self.cfg)
+        except Exception as e:                              # behind the scenes only: never fails the page
+            self.steps["watch"] = {"ok": False, "soft": True, "error": common.short_err(e)}
         lu = self.lineup_state.get("teams") or {}
         glist = []
         for g in games:
@@ -328,7 +341,8 @@ class Run:
                          "next": nxt}
             else:
                 empty = {"text": "No picks yet today",
-                         "why": "%d lines read, none cleared both checks." % lines_read, "next": nxt}
+                         "why": "%d lines read. Pinnacle moved alone on %d, none of them bettable yet." % (lines_read, len(solo))
+                         if solo else "%d lines read. Pinnacle hasn't moved alone on any of them yet." % lines_read, "next": nxt}
         tomorrow = datetime.fromisoformat(self.slate) + timedelta(days=1)
         valid_until = common.iso(tomorrow.replace(hour=cfg["ops"]["rollover_hour"], tzinfo=common.ET))
         last_reads = [f["at"] for f in (getattr(self, "odds_doc", None) or {}).get("fetches", [])]
@@ -383,25 +397,26 @@ class Run:
 
 
 def rules_doc(cfg):
-    g, r, c, el = cfg["gap_guard"], cfg["reads"], cfg["customer"], cfg["eligibility"]
+    ps, r, c, el, w = cfg["pin_solo"], cfg["reads"], cfg["customer"], cfg["eligibility"], cfg["watch"]["pin_judge"]
     return {"version": cfg["version"], "updated": cfg["updated"], "ui": cfg["ui"], "lines": [
-        "Hard Rock (Florida) prices only: player rebounds, points, assists and 3-pointers made, the main line, over or under. No leg worse than %d."
-        % c["worst_price"],
-        "Step 1, the gap: Hard Rock's price must be at least %d%% better than the middle of %d+ other books on the same line, "
-        "and Pinnacle (the sharpest book) must not disagree." % (round(100 * g["gap_ev"]), g["books_min"]),
-        "Step 2, the guard: our own model for that stat gets a %d%% say. If the blend falls under +%d%% value, no pick. "
-        "The model can block a pick, never create one." % (round(100 * g["model_weight"]), round(100 * g["final_ev"])),
-        "Prices are checked about %d, %d and %d minutes before each tip (plus a morning look). The price shown is frozen "
-        "and is the one graded." % (r["b_min"], r["c_min"], r["d_min"]),
+        "Hard Rock (Florida) prices only: player rebounds, points, assists and 3-pointers made, the main line, over or under. "
+        "No leg worse than %d." % c["worst_price"],
+        "The rule: Pinnacle (the sharpest book) moves its odds on a line by %d+ points of chance between two of our price checks, "
+        "while the other books on that same line stay put. We bet the side Pinnacle moved toward, at Hard Rock's price."
+        % round(100 * ps["min_move"]),
+        "Prices are checked about %d, %d and %d minutes before each tip (plus a morning look). A pick can come from the 90, 45 or "
+        "20 minute check. The price shown is frozen and is the one graded." % (r["b_min"], r["c_min"], r["d_min"]),
+        "This is a signal, not a price gap: Hard Rock's price is not always better than Pinnacle's new number. It is being proven "
+        "on the Record (started 2026-10-28; judged at about 150 bets).",
         "A player listed Out or Doubtful is never picked. Questionable or game-time decision waits until he is cleared or "
         "confirmed starting. Needs %d+ games of history." % el["min_history"],
         "Early = injury news still open. Injury report clear = he and his team's main rotation are cleared. "
         "Starters confirmed = both teams' starting fives are posted.",
-        "If a later check finds the edge gone, the pick is pulled and says what that means if you already bet it. "
-        "Pulled picks stay on the Record.",
-        "One side per player per market. No cap per game or per night: every leg that clears both checks is shown, best first. "
-        "No parlays.",
+        "A pick is pulled if he is ruled out or doubtful, or Hard Rock takes the line down. Pulled picks stay on the Record.",
+        "One pick per player per market a night. No cap per game or per night. No parlays.",
         "Graded after the game at the shown price, 1 unit flat. Overtime counts. Did not play = void.",
+        "Behind the scenes (Backstage tab, not the Record or Discord): %s, Hard Rock %d%%+ better than Pinnacle's price on the same line."
+        % (w["label"], round(100 * w["min_ev"])),
         "New picks stop by themselves if the Record falls to %d units." % cfg["safety_pause"]["units"],
     ]}
 

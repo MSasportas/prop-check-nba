@@ -324,6 +324,93 @@ def pull_check(shown, rows_now, cfg):
     return None, row
 
 
+# ---------------------------------------------------------------- THE live rule since v2.0: Pinnacle moves alone
+def _fair_over(q, hold_max):
+    if not q or not q.get("over") or not q.get("under"):
+        return None
+    h = odds.hold(q["over"], q["under"])
+    return odds.fair_two_sided(q["over"], q["under"]) if 0 <= h <= hold_max else None
+
+
+def solo_moves(a, b, ctx):
+    """Pinnacle-solo-move sides between two consecutive reads a -> b of one game (config pin_solo, TEAM.md section 4).
+    For each Hard Rock main line: Pinnacle quotes that same line on both reads and its de-vigged chance moves >= min_move toward
+    a side, while the median move of the other books (same line, both reads, >= others_min of them) toward that side is under
+    others_max. The pick is that side at Hard Rock's price on read b. Every row is returned with `why` (None = qualifies)."""
+    cfg = ctx.cfg
+    ps = cfg["pin_solo"]
+    g = ctx.games.get(b["game_id"])
+    if not g:
+        return []
+    rows = []
+    for market in cfg["markets"]:
+        hb = (b.get("markets") or {}).get(market)
+        if not hb:
+            continue
+
+        def book(f, name):
+            return odds.pairs(((((f.get("others") or {}).get(name)) or {}).get(market) or {}).get("outcomes"))
+        pa, pb = book(a, "pinnacle"), book(b, "pinnacle")
+        ha = odds.pairs(((a.get("markets") or {}).get(market) or {}).get("outcomes"))    # Hard Rock's line on the earlier read
+        hr_stale = odds.is_stale(hb.get("last_update"), common.parse_iso(b["at"]), cfg["reads"]["stale_min"])
+        for pid, (line, p) in main_lines(odds.pairs(hb.get("outcomes"))).items():
+            k = (pid, line)
+            if k not in ha:
+                continue                                   # Hard Rock must quote this same line on both reads (QA 2026-10-28)
+            fa, fb = _fair_over(pa.get(k), ps["hold_max"]), _fair_over(pb.get(k), ps["hold_max"])
+            if fa is None or fb is None or abs(fb - fa) < ps["min_move"] - EPS:
+                continue
+            side = "over" if fb > fa else "under"
+            sgn = 1.0 if side == "over" else -1.0
+            mv = []
+            for name in (b.get("others") or {}):
+                if name == "pinnacle":
+                    continue
+                x, y = _fair_over(book(a, name).get(k), ps["hold_max"]), _fair_over(book(b, name).get(k), ps["hold_max"])
+                if x is not None and y is not None:
+                    mv.append(sgn * (y - x))
+            team = p.get("team") or (ctx.people.get(pid) or {}).get("team")
+            price = p[side]
+            pin_a = fa if side == "over" else 1 - fa
+            pin_b = fb if side == "over" else 1 - fb
+            r = {"rule": "pin_solo", "pid": pid, "name": p["name"], "team": team, "opp": g["home"] if team == g["away"] else g["away"],
+                 "home": team == g["home"], "game_id": g["id"], "market": market, "line": line, "side": side, "price": price,
+                 "read": b["read"], "at": b["at"], "prev_at": a["at"], "link": p.get("link_" + side),
+                 "pin_before": round(pin_a, 4), "pin_after": round(pin_b, 4),
+                 "pin_price_before": (pa.get(k) or {}).get(side), "pin_price_after": (pb.get(k) or {}).get(side),
+                 "others_move": round(statistics.median(mv), 4) if mv else None, "n_others": len(mv),
+                 "ev_vs_pin": round(odds.ev(pin_b, price), 4)}
+            if hr_stale:
+                r["why"] = "Hard Rock price is stale"
+            elif len(mv) < ps["others_min"]:
+                r["why"] = "only %d other books on this line" % len(mv)
+            elif statistics.median(mv) >= ps["others_max"] - EPS:
+                r["why"] = "the other books moved too (%+.1f pts)" % (100 * statistics.median(mv))
+            elif price < cfg["customer"]["worst_price"]:
+                r["why"] = "price worse than %d" % cfg["customer"]["worst_price"]
+            elif price > ps["max_price"]:
+                r["why"] = "price above +%d" % ps["max_price"]
+            else:
+                r["why"] = ctx.eligible(pid, team, g)
+            rows.append(r)
+    return rows
+
+
+def solo_reason(r):
+    pb, pa = r.get("pin_price_before"), r.get("pin_price_after")
+    s = "Pinnacle moved the %s from %s to %s (%.0f%% to %.0f%%); %d other books held." % (
+        r["side"], common.fmt_price(pb) if pb is not None else "?", common.fmt_price(pa) if pa is not None else "?",
+        100 * r["pin_before"], 100 * r["pin_after"], r["n_others"])
+    s += " Hard Rock price: %s." % common.fmt_price(r["price"])
+    return s
+
+
+def solo_pairs(fs):
+    """Consecutive read pairs of one game, oldest first."""
+    fs = sorted(fs, key=lambda f: f["at"])
+    return list(zip(fs, fs[1:]))
+
+
 # ---------------------------------------------------------------- the step
 def latest_fetches(odds_doc):
     """{game_id: [fetches with any Hard Rock market, oldest first]}"""
@@ -359,8 +446,49 @@ def step(ctx, odds_doc):
     open_any = {i: it for i, it in items.items() if it["kind"] == "single" and record.is_open(it)}   # any slate
     paused, _ = safety_paused(items, cfg)
     active = common.gap_guard_active(cfg, slate)
+    ps = cfg.get("pin_solo") or {}
+    solo_on = bool(ps.get("active")) and slate >= ps.get("live_from", "9999")
+    solo_rows = {}
+    for gid, fs in by_game.items():
+        rows_ = []
+        for a, b in solo_pairs(fs):
+            rows_ += solo_moves(a, b, ctx)
+        solo_rows[gid] = rows_
 
-    # 1. new picks: from the newest flag read of each unstarted game
+    # 1a. new picks, the live rule since v2.0: Pinnacle moved alone on the newest pair of reads of an unstarted game
+    if solo_on and not paused:
+        cands = []
+        for gid, fs in by_game.items():
+            g = ctx.games.get(gid)
+            if not g or started(g, now) or len(fs) < 2:
+                continue
+            b = sorted(fs, key=lambda f: f["at"])[-1]
+            if b["read"] not in ps["flag_reads"] or (now - common.parse_iso(b["at"])).total_seconds() > ps["max_age_min"] * 60:
+                continue                                   # never a new pick from an old read
+            cands += [r for r in solo_rows.get(gid, []) if r["at"] == b["at"] and r["why"] is None]
+        cands.sort(key=lambda r: (-abs(r["pin_after"] - r["pin_before"]), r["pid"], r["market"]))
+        taken = {(it["shown"]["pid"], it["shown"].get("market", "rebounds")) for it in mine.values()}
+        for r in cands:
+            if (r["pid"], r["market"]) in taken:
+                continue                                   # one pick per player per market a night
+            taken.add((r["pid"], r["market"]))
+            g = ctx.games[r["game_id"]]
+            be = odds.break_even(r["price"])
+            body = {"rule": "pin_solo", "player": r["name"], "pid": r["pid"], "team": r["team"], "opp": r["opp"], "home": r["home"],
+                    "game_id": r["game_id"], "start": g["start"], "market": r["market"], "line": r["line"], "side": r["side"],
+                    "bet": bet_text(r["side"], r["line"], cfg["markets"][r["market"]]["noun"]), "price": r["price"],
+                    "price_at": r["at"], "read": r["read"], "p": r["pin_after"], "p_pct": pct_round(r["pin_after"]),
+                    "breakeven": round(be, 4), "breakeven_pct": pct_round(be), "pin_before": r["pin_before"],
+                    "pin_after": r["pin_after"], "pin_price_before": r["pin_price_before"], "pin_price_after": r["pin_price_after"],
+                    "others_move": r["others_move"], "n_others": r["n_others"], "n_books": r["n_others"],
+                    "ev_vs_pin": r["ev_vs_pin"], "final_ev": round(abs(r["pin_after"] - r["pin_before"]), 4),
+                    "reason": solo_reason(r), "state": ctx.settled(r["pid"], r["team"], g), "link": r.get("link")}
+            pid_ = pick_id(slate, r["game_id"], r["pid"], r["line"], r["side"], r["market"])
+            if pid_ in items:
+                continue
+            new.append({"t": "shown", "id": pid_, "at": common.iso(now), "slate": slate, "kind": "single", "pick": body})
+
+    # 1b. Gap + Guard (v1.x), off since v2.0 (gap_guard.active false): kept for its research rows
     if active and not paused:
         cands = []
         for gid, pairs in evals.items():
@@ -417,7 +545,15 @@ def step(ctx, odds_doc):
         mk = sh.get("market", "rebounds")
         later = [(f, rows) for f, rows in evals.get(sh["game_id"], [])
                  if f["at"] > sh["price_at"] and mk in (f.get("markets") or {})]   # a read without this market says nothing
-        if later:
+        if later and sh.get("rule") == "pin_solo":
+            # a Pinnacle-solo pick is a signal, not a price gap: it is pulled only if Hard Rock takes the line down
+            hp = odds.pairs(later[-1][0]["markets"][mk].get("outcomes"))
+            q = hp.get((sh["pid"], sh["line"]))
+            if not q or q.get(sh["side"]) is None:
+                what, if_bet = advice("line_gone", None, sh["price"], cfg)
+                new.append({"t": "pulled", "id": i, "at": common.iso(now), "code": "line_gone", "reason": what, "if_bet": if_bet})
+                continue
+        elif later:
             code, row = pull_check(sh, later[-1][1], cfg)
             if code:
                 what, if_bet = advice(code, row, sh["price"], cfg)
@@ -431,7 +567,7 @@ def step(ctx, odds_doc):
         events += new
         items = record.fold(events)
     return evals, items, {"new": [e for e in new if e["t"] == "shown"], "pulled": [e for e in new if e["t"] == "pulled"],
-                          "paused": paused}
+                          "paused": paused, "solo_rows": solo_rows}
 
 
 def grade_one(it, box_rows, cfg):

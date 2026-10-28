@@ -166,8 +166,14 @@ def pick_line(p):
     when = " · ".join(x for x in (_game(p), _t(p["start"]), _state_label(p), "✅ Price final" if p.get("price_final") else "") if x)
     gap = 100 * p["gap_ev"] if isinstance(p.get("gap_ev"), (int, float)) else None
     gap_txt = ("Gap %+.1f%% vs market" % gap) if isinstance(gap, (int, float)) else "Gap vs market"
-    lines = ["**%s %s  %s**" % (p["player"], _bet(p), common.fmt_price(p["price"])), when,
-             "%s, we say %s%%, price needs %s%%" % (gap_txt, p["p_pct"], p["breakeven_pct"])]
+    if p.get("rule") == "pin_solo":
+        nums = "Pinnacle moved alone: %d%% → %d%% (%s → %s), price needs %s%%" % (
+            round(100 * p["pin_before"]), round(100 * p["pin_after"]),
+            common.fmt_price(p["pin_price_before"]) if p.get("pin_price_before") is not None else "?",
+            common.fmt_price(p["pin_price_after"]) if p.get("pin_price_after") is not None else "?", p["breakeven_pct"])
+    else:
+        nums = "%s, we say %s%%, price needs %s%%" % (gap_txt, p["p_pct"], p["breakeven_pct"])
+    lines = ["**%s %s  %s**" % (p["player"], _bet(p), common.fmt_price(p["price"])), when, nums]
     link = p.get("link")
     if odds.safe_link(link):
         lines.append("Bet slip: <%s>" % link)               # <> keeps Discord from unfurling a preview
