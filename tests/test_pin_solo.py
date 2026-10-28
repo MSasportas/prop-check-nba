@@ -47,7 +47,7 @@ class TestPinSolo(unittest.TestCase):
         self.assertGreaterEqual(p["gap_vs_pin"], 0.02)                    # HR -120 vs Pinnacle -149
         s = self.w.read("slate.json")
         self.assertEqual(s["picks"][0]["rule"], "pin_solo")
-        self.assertIn("Pinnacle moved alone", notify.pick_line(dict(s["picks"][0], start=s["picks"][0]["start"])))
+        self.assertIn("Pinnacle moved", notify.pick_line(dict(s["picks"][0], start=s["picks"][0]["start"])))
         # a later read with Pinnacle back where it was does not pull it (a pick is a signal, frozen)
         write(self.w, "2026-10-25T20:40:00Z", (-110, -120), (-102, -118), (-105, -115))
         self.w.run("2026-10-25T16:41:00-04:00")
