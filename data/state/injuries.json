@@ -1,5 +1,5 @@
 {
- "at": "2026-10-28T13:40:01-04:00",
+ "at": "2026-10-28T13:50:01-04:00",
  "list": {
   "4397183": {
    "status": "day-to-day",
@@ -219,11 +219,11 @@
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
   "2990992": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Marcus Smart",
    "team": "HOU",
-   "date": "2026-10-27T20:22Z",
-   "note": "Smart (forearm) is questionable for Wednesday's game versus the Bucks."
+   "date": "2026-10-28T17:34Z",
+   "note": "Smart (forearm) is out for Wednesday's game against the Bucks."
   },
   "4871144": {
    "status": "out",
@@ -239,19 +239,19 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
+  "4396993": {
+   "status": "day-to-day",
+   "name": "Tyrese Haliburton",
+   "team": "IND",
+   "date": "2026-10-28T17:40Z",
+   "note": "Haliburton (hamstring) will miss time, though his timetable has yet to be announced, Shams Charania of ESPN reports."
+  },
   "4395712": {
    "status": "day-to-day",
    "name": "Andrew Nembhard",
    "team": "IND",
    "date": "2026-10-27T21:21Z",
    "note": "Nembhard (neck) is listed as questionable for Wednesday's game against Philadelphia."
-  },
-  "4396993": {
-   "status": "day-to-day",
-   "name": "Tyrese Haliburton",
-   "team": "IND",
-   "date": "2026-10-27T21:19Z",
-   "note": "Haliburton is listed as questionable for Wednesday's game against the 76ers due to left hamstring tightness."
   },
   "4278355": {
    "status": "day-to-day",
@@ -371,13 +371,6 @@
    "team": "MIN",
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
-  },
-  "4277956": {
-   "status": "day-to-day",
-   "name": "Jordan Poole",
-   "team": "NO",
-   "date": "2026-10-27T19:18Z",
-   "note": "Poole (illness) is listed as probable for Wednesday's game against Denver."
   },
   "5061589": {
    "status": "out",
