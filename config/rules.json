@@ -1,5 +1,5 @@
 {
- "version": "2.0",
+ "version": "2.1",
  "updated": "2026-10-28",
  "_about": "EVERY rule value lives here (TEAM.md section 4). The engine reads this file; data/rules.json (what the page reads) is generated from it. Live rule since v2.0: pin_solo (Pinnacle moves alone). gap_guard is off (kept for its research rows). Probabilities 0-1, prices American integers, times Eastern.",
  "customer": {
@@ -155,12 +155,12 @@
   "max_per_day": 12
  },
  "pin_solo": {
-  "_about": "THE live rule since v2.0 (Matt, 2026-10-28): between two consecutive reads Pinnacle's de-vigged chance on Hard Rock's main line moves >= min_move toward a side while the median move of the other books (same line, both reads, >= others_min books) toward that side is < others_max; bet that side at Hard Rock's price on the later read (flag_reads only, read <= max_age_min old). Discovery Oct 25-27: 16 bets 11-5 +4.45u (research F7).",
+  "_about": "THE live rule since v2.0, widened v2.1 (Matt, 2026-10-28 11:52 AM): between two consecutive reads Pinnacle's de-vigged chance on Hard Rock's main line (same line on both reads at Hard Rock and Pinnacle) moves >= min_move toward a side while the median move of the other books (same line, both reads, >= others_min books) toward that side is < others_max (2 pts); bet that side at Hard Rock's price on the later read (flag_reads only, read <= max_age_min old). Discovery Oct 25-27: 31 bets 22-9 +9.74u (16 alone 11-5 + 15 with others 1-2 pts 11-4).",
   "active": true,
   "live_from": "2026-10-28",
   "checkpoint": "2026-11-25",
   "min_move": 0.02,
-  "others_max": 0.01,
+  "others_max": 0.02,
   "others_min": 4,
   "hold_max": 0.15,
   "max_price": 200,

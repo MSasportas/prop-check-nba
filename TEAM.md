@@ -41,15 +41,16 @@ QA (tests every change before it goes live, real browser at 380px, hasn't seen t
 Rule changes: the Data Scientist names the sample first; the Sharp decides; log it in section 8. Customer facts (section 1) never change
 without Matt.
 
-## 4. Current rules (v2.0, 2026-10-28). Source of truth: `config/rules.json` (`pin_solo`, `watch.pin_judge`)
-**Live rule: Pinnacle moves alone** (Matt, 2026-10-28, after research runs 1-6: Hard Rock's NBA main lines sit ~6% under the market
+## 4. Current rules (v2.1, 2026-10-28). Source of truth: `config/rules.json` (`pin_solo`, `watch.pin_judge`)
+**Live rule: Pinnacle moves, the other books move less than 2 pts** (Matt, 2026-10-28; widened from "alone" < 1 pt at 11:52 AM, after research runs 1-6: Hard Rock's NBA main lines sit ~6% under the market
 and Gap + Guard found 0 bets in 3,318 sides). `engine.solo_moves`: between two consecutive reads of a game, on Hard Rock's main line
 (Hard Rock quotes that same line on BOTH reads), Pinnacle quotes the same line on both reads and its de-vigged chance moves >= 2 pts
 (`min_move` 0.02) toward a side, while the median move toward that side of the other books (same line, both reads, >= 4 books,
-hold 0-15%) is < 1 pt (`others_max` 0.01). Pick = that side at Hard Rock's price on the later read: B/C/D reads only, read <= 15 min old,
+hold 0-15%) is < 2 pts (`others_max` 0.02; was < 1 pt in v2.0). Pick = that side at Hard Rock's price on the later read: B/C/D reads only, read <= 15 min old,
 price -200..+200, eligibility as below, one pick per player per market a night, price frozen, graded like before. It is a SIGNAL, not a
 price gap (Hard Rock's price is usually not +EV vs Pinnacle's new number). Pulls: injury status (as below) or Hard Rock removes the line;
-no price-based pulls. Discovery Oct 25-27 (research F7): 16 bets 11-5 +4.45u, 15 of them on Oct 26; one-per-player trims that to 14 (11-3).
+no price-based pulls. Discovery Oct 25-27 (research F7): others < 2 pts = 31 bets 22-9 +9.74u (alone 16 11-5, 1-2 pts 15 11-4); engine
+replay with one pick per player/market a night = 29 picks 22-7 +11.75u, 26 of them on Oct 26.
 Checkpoint 2026-11-25 (~150 bets). Stop rule: units <= -8, or after 75 bets ROI <= 0 -> the Sharp pauses new picks, logs it in section 8.
 **Behind the scenes: Pinnacle as the price judge** (`watch.pin_judge`, `scripts/watch.py`): newest B/C/D read, Hard Rock EV >= +2% vs
 Pinnacle's fair on the same line, -200..+200, eligible; first flag per player/market/night; graded; `data/watch/pin_judge/` and the
@@ -158,12 +159,14 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
 |---|---|---|---|
+| 2026-10-28 11:55 AM (CEO, Matt's order) | **v2.1: `pin_solo.others_max` 0.01 -> 0.02** (other books may move up to 2 pts the same way). Reason text says how far they moved | Matt: "pinnacle moves 2+ points and the other books move 2 or less" | Discovery: 31 bets 22-9 +9.74u (engine replay 29, 22-7 +11.75u); 26 of 29 on Oct 26 |
 | 2026-10-28 11:30 AM (CEO, Matt's order; Builder, UX, QA) | **v2.0: live rule = Pinnacle moves alone (`pin_solo`); Gap + Guard off; Pinnacle as the price judge behind the scenes (Backstage tab)** | Matt: "shift the main process to pinnacle moves the odds alone... a behind the scenes tracking pinnacle as the price judge". Gap + Guard: 0 bets in 3 nights; Hard Rock NBA ~6% under market | Discovery only (Oct 25-27): F7 16 bets 11-5 +4.45u; F2b 6 bets 5-1 +3.18u. Book-by-book judges: only Pinnacle positive (research run 6) |
 | 2026-10-26 11:40 PM (CEO, Matt's order; Builder, QA) | **v1.2: 3-pointers made added** (customer fact), same Gap + Guard, own model (section 7 item 3), reads cost 4 credits; in a full month the morning A read drops (C, B, D kept) | Matt: "include 3 pointers, those odds are typically a little better"; NBA main lines showed 0 gaps on Oct 26 | None yet; judged with the other markets |
 | 2026-10-25 8:45 PM (CEO, Matt's order; Builder, QA) | **v1.1: points and assists added** (customer fact), same Gap + Guard thresholds, own model per stat (section 7 item 3), 1 side per player per market, no game or night caps (confirmed with Matt), reads cost 3 credits | Matt: "If we expand to points and assists..." then added 3 more keys (6 total) | None yet; all three judged TOGETHER at the 2026-11-16 checkpoint (Matt, 9:33 PM: "group all 3 together"); per-market buckets are for viewing only |
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-28 ~11:55 AM (CEO): v2.1 (Matt): others may move < 2 pts. Engine replay Oct 25-27: 29 picks 22-7 +11.75u. Tests pass.
 - 2026-10-28 ~11:30 AM (CEO): v2.0 shipped. Research runs 1-6 (research/LOG.md), each book as judge (only Pinnacle +), Matt chose
   Pinnacle-moves-alone live + Pinnacle price judge behind the scenes. UX: pin_solo card + Backstage tab (380px checked). QA (fresh): SHIP
   WITH FIXES, blocker fixed (Hard Rock must quote the same line on both reads, replay now = the 16 research bets), reason wording, watch

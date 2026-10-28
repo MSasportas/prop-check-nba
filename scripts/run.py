@@ -402,8 +402,8 @@ def rules_doc(cfg):
         "Hard Rock (Florida) prices only: player rebounds, points, assists and 3-pointers made, the main line, over or under. "
         "No leg worse than %d." % c["worst_price"],
         "The rule: Pinnacle (the sharpest book) moves its odds on a line by %d+ points of chance between two of our price checks, "
-        "while the other books on that same line stay put. We bet the side Pinnacle moved toward, at Hard Rock's price."
-        % round(100 * ps["min_move"]),
+        "while the other books on that same line move less than %d points that way. We bet the side Pinnacle moved toward, at "
+        "Hard Rock's price." % (round(100 * ps["min_move"]), round(100 * ps["others_max"])),
         "Prices are checked about %d, %d and %d minutes before each tip (plus a morning look). A pick can come from the 90, 45 or "
         "20 minute check. The price shown is frozen and is the one graded." % (r["b_min"], r["c_min"], r["d_min"]),
         "This is a signal, not a price gap: Hard Rock's price is not always better than Pinnacle's new number. It is being proven "

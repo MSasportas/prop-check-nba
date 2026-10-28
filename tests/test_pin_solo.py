@@ -58,6 +58,17 @@ class TestPinSolo(unittest.TestCase):
         self.w.run("2026-10-25T16:16:00-04:00")
         self.assertEqual(self.shown(), [])
 
+    def test_others_moved_a_little_still_a_pick(self):
+        # v2.1 (Matt): the other books may move up to 2 pts the same way; here ~1.2 pts
+        write(self.w, "2026-10-25T19:30:00Z", (-110, -120), (-102, -118), (-105, -115))
+        self.w.run("2026-10-25T15:31:00-04:00")
+        write(self.w, "2026-10-25T20:15:00Z", (-110, -120), (112, -149), (-102, -120))
+        self.w.run("2026-10-25T16:16:00-04:00")
+        sh = self.shown()
+        self.assertEqual(len(sh), 1)
+        self.assertGreater(sh[0]["pick"]["others_move"], 0.005)
+        self.assertLess(sh[0]["pick"]["others_move"], 0.02)
+
     def test_too_few_other_books_no_pick(self):
         write(self.w, "2026-10-25T19:30:00Z", (-110, -120), (-102, -118), (-105, -115), n_others=3)
         self.w.run("2026-10-25T15:31:00-04:00")

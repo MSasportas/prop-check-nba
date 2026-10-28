@@ -398,9 +398,10 @@ def solo_moves(a, b, ctx):
 
 def solo_reason(r):
     pb, pa = r.get("pin_price_before"), r.get("pin_price_after")
-    s = "Pinnacle moved the %s from %s to %s (%.0f%% to %.0f%%); %d other books held." % (
+    held = "held" if (r.get("others_move") or 0) < 0.01 else "moved %.0f pt" % (100 * r["others_move"])
+    s = "Pinnacle moved the %s from %s to %s (%.0f%% to %.0f%%); %d other books %s." % (
         r["side"], common.fmt_price(pb) if pb is not None else "?", common.fmt_price(pa) if pa is not None else "?",
-        100 * r["pin_before"], 100 * r["pin_after"], r["n_others"])
+        100 * r["pin_before"], 100 * r["pin_after"], r["n_others"], held)
     s += " Hard Rock price: %s." % common.fmt_price(r["price"])
     return s
 
