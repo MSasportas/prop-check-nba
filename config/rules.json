@@ -1,6 +1,6 @@
 {
- "version": "2.2",
- "updated": "2026-10-28",
+ "version": "2.3",
+ "updated": "2026-10-29",
  "_about": "EVERY rule value lives here (TEAM.md section 4). The engine reads this file; data/rules.json (what the page reads) is generated from it. Live rule since v2.0: pin_solo (Pinnacle moves alone). gap_guard is off (kept for its research rows). Probabilities 0-1, prices American integers, times Eastern.",
  "customer": {
   "_about": "Customer facts locked by Matt (setup interview 2026-10-25; points and assists added 2026-10-25 8:22 PM; 3-pointers made added 2026-10-26 11:21 PM). The team never changes these.",
@@ -155,7 +155,7 @@
   "max_per_day": 12
  },
  "pin_solo": {
-  "_about": "THE live rule since v2.0, widened v2.1 (Matt, 2026-10-28 11:52 AM): between two consecutive reads Pinnacle's de-vigged chance on Hard Rock's main line (same line on both reads at Hard Rock and Pinnacle) moves >= min_move toward a side while the median move of the other books (same line, both reads, >= others_min books) toward that side is < others_max (2 pts); bet that side at Hard Rock's price on the later read (flag_reads only, read <= max_age_min old). Discovery Oct 25-27: 31 bets 22-9 +9.74u (16 alone 11-5 + 15 with others 1-2 pts 11-4). v2.2 (Matt, 2026-10-28 6:10 PM): Hard Rock's price on that side must also be >= min_gap_vs_pin (2 pts of break-even, ~10 cents) better than Pinnacle's new posted price (Bane O2.5 threes: HR -140 vs Pinnacle -134). Replay at 2 pts: 13 bets 10-3 +5.87u.",
+  "_about": "THE live rule since v2.0, widened v2.1 (Matt, 2026-10-28 11:52 AM): between two consecutive reads Pinnacle's de-vigged chance on Hard Rock's main line (same line on both reads at Hard Rock and Pinnacle) moves >= min_move toward a side while the median move of the other books (same line, both reads, >= others_min books) toward that side is < others_max (2 pts); bet that side at Hard Rock's price on the later read (flag_reads only, read <= max_age_min old). Discovery Oct 25-27: 31 bets 22-9 +9.74u (16 alone 11-5 + 15 with others 1-2 pts 11-4). v2.2 (Matt, 2026-10-28 6:10 PM): Hard Rock's price on that side must also be >= min_gap_vs_pin (2 pts of break-even, ~10 cents) better than Pinnacle's new posted price (Bane O2.5 threes: HR -140 vs Pinnacle -134). Replay at 2 pts: 13 bets 10-3 +5.87u. v2.3 (Matt, 2026-10-29 8:00 AM): the gap gate is REPLACED by min_ev_vs_pin 0.0: Hard Rock's price must be at or better than Pinnacle's FAIR price on that side (its new chance, Pinnacle's own margin removed; EV vs Pinnacle >= 0%). Research Run 7 discovery Oct 25-28: 16 bets 12-4 +7.12u vs the rest 28 bets 16-12 +1.33u.",
   "active": true,
   "live_from": "2026-10-28",
   "checkpoint": "2026-11-25",
@@ -170,7 +170,7 @@
    "D"
   ],
   "max_age_min": 15,
-  "min_gap_vs_pin": 0.02
+  "min_ev_vs_pin": 0.0
  },
  "watch": {
   "pin_judge": {

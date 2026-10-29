@@ -171,7 +171,9 @@ def pick_line(p):
             common.fmt_price(p["pin_price_before"]) if p.get("pin_price_before") is not None else "?",
             common.fmt_price(p["pin_price_after"]) if p.get("pin_price_after") is not None else "?",
             round(100 * p["pin_before"]), round(100 * p["pin_after"]), common.fmt_price(p["price"]), p["breakeven_pct"])
-        if isinstance(p.get("gap_vs_pin"), (int, float)):
+        if isinstance(p.get("ev_vs_pin"), (int, float)):
+            nums += ", %+.1f%% vs Pinnacle's fair price" % (100 * p["ev_vs_pin"])
+        elif isinstance(p.get("gap_vs_pin"), (int, float)):
             nums += ", %.1f pts better than Pinnacle" % (100 * p["gap_vs_pin"])
     else:
         nums = "%s, we say %s%%, price needs %s%%" % (gap_txt, p["p_pct"], p["breakeven_pct"])

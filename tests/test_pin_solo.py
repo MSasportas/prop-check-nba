@@ -44,7 +44,7 @@ class TestPinSolo(unittest.TestCase):
         self.assertGreater(p["pin_after"], p["pin_before"] + 0.02)
         self.assertIn("Pinnacle moved the under", p["reason"])
         self.assertEqual(p["window"], "90 → 45 min")                    # B read -> C read
-        self.assertGreaterEqual(p["gap_vs_pin"], 0.02)                    # HR -120 vs Pinnacle -149
+        self.assertGreaterEqual(p["ev_vs_pin"], 0.0)                      # HR -120 vs Pinnacle's fair price (Pinnacle -149)
         s = self.w.read("slate.json")
         self.assertEqual(s["picks"][0]["rule"], "pin_solo")
         self.assertIn("Pinnacle moved", notify.pick_line(dict(s["picks"][0], start=s["picks"][0]["start"])))
@@ -71,8 +71,17 @@ class TestPinSolo(unittest.TestCase):
         self.assertGreater(sh[0]["pick"]["others_move"], 0.005)
         self.assertLess(sh[0]["pick"]["others_move"], 0.02)
 
-    def test_hard_rock_not_2pts_better_than_pinnacle_no_pick(self):
-        # v2.2 (Matt): Pinnacle moved the under to -149 alone, but Hard Rock's under is -150 (worse than Pinnacle) -> no pick
+    def test_better_than_pinnacle_posted_but_under_fair_no_pick(self):
+        # v2.3 (Matt): HR -135 beats Pinnacle's posted -149 by 2+ pts, but Pinnacle's FAIR price on the under is about -127
+        # (its margin removed), so HR is still worse than fair -> no pick
+        write(self.w, "2026-10-25T19:30:00Z", (105, -135), (-102, -118), (-105, -115))
+        self.w.run("2026-10-25T15:31:00-04:00")
+        write(self.w, "2026-10-25T20:15:00Z", (105, -135), (112, -149), (-105, -115))
+        self.w.run("2026-10-25T16:16:00-04:00")
+        self.assertEqual(self.shown(), [])
+
+    def test_hard_rock_worse_than_pinnacle_no_pick(self):
+        # Pinnacle moved the under to -149 alone, but Hard Rock's under is -150 (worse than Pinnacle) -> no pick
         write(self.w, "2026-10-25T19:30:00Z", (115, -150), (-102, -118), (-105, -115))
         self.w.run("2026-10-25T15:31:00-04:00")
         write(self.w, "2026-10-25T20:15:00Z", (115, -150), (112, -149), (-105, -115))
@@ -83,6 +92,7 @@ class TestPinSolo(unittest.TestCase):
         # a pick shown under v2.1 (no gap gate) that fails the 2-pt gap is pulled (rule_change) and leaves the Tonight list
         cfg = json.load(open(self.w.config))
         cfg["pin_solo"].pop("min_gap_vs_pin", None)
+        cfg["pin_solo"].pop("min_ev_vs_pin", None)
         json.dump(cfg, open(self.w.config, "w"))
         write(self.w, "2026-10-25T19:30:00Z", (115, -150), (-102, -118), (-105, -115))
         self.w.run("2026-10-25T15:31:00-04:00")

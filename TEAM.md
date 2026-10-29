@@ -41,15 +41,14 @@ QA (tests every change before it goes live, real browser at 380px, hasn't seen t
 Rule changes: the Data Scientist names the sample first; the Sharp decides; log it in section 8. Customer facts (section 1) never change
 without Matt.
 
-## 4. Current rules (v2.2, 2026-10-28). Source of truth: `config/rules.json` (`pin_solo`, `watch.pin_judge`)
-**Live rule: Pinnacle moves, the other books move less than 2 pts** (Matt, 2026-10-28; widened from "alone" < 1 pt at 11:52 AM, after research runs 1-6: Hard Rock's NBA main lines sit ~6% under the market
+## 4. Current rules (v2.3, 2026-10-29). Source of truth: `config/rules.json` (`pin_solo`, `watch.pin_judge`)
+**Live rule: Pinnacle moves, the other books move less than 2 pts, and Hard Rock is at or better than Pinnacle's FAIR price** (Matt, 2026-10-28; widened from "alone" < 1 pt at 11:52 AM, after research runs 1-6: Hard Rock's NBA main lines sit ~6% under the market
 and Gap + Guard found 0 bets in 3,318 sides). `engine.solo_moves`: between two consecutive reads of a game, on Hard Rock's main line
 (Hard Rock quotes that same line on BOTH reads), Pinnacle quotes the same line on both reads and its de-vigged chance moves >= 2 pts
 (`min_move` 0.02) toward a side, while the median move toward that side of the other books (same line, both reads, >= 4 books,
-hold 0-15%) is < 2 pts (`others_max` 0.02; was < 1 pt in v2.0). **AND (v2.2) Hard Rock's price on that side is >= 2 pts of break-even better
-than Pinnacle's new posted price** (`min_gap_vs_pin` 0.02, about 10 cents; e.g. Pinnacle -134 needs 57.3%, Hard Rock must need <= 55.3%). Pick = that side at Hard Rock's price on the later read: B/C/D reads only, read <= 15 min old,
-price -200..+200, eligibility as below, one pick per player per market a night, price frozen, graded like before. It is a SIGNAL, not a
-price gap (Hard Rock's price is usually not +EV vs Pinnacle's new number). Pulls: injury status (as below) or Hard Rock removes the line;
+hold 0-15%) is < 2 pts (`others_max` 0.02; was < 1 pt in v2.0). **AND (v2.3, Matt 2026-10-29) Hard Rock's price on that side is at or better than Pinnacle's FAIR price** (`min_ev_vs_pin` 0.0: Pinnacle's new de-vigged chance x Hard Rock's payout - 1 >= 0; Pinnacle's own margin is taken out, so this is stricter than v2.2's "2 pts better than Pinnacle's posted price", which only got near fair; e.g. Pinnacle -140 is fair about -120, Hard Rock must be -120 or better). Pick = that side at Hard Rock's price on the later read: B/C/D reads only, read <= 15 min old,
+price -200..+200, eligibility as below, one pick per player per market a night, price frozen, graded like before. It is a SIGNAL that now also
+has to clear fair price (Run 7: the picks priced under Pinnacle's fair win only if the move keeps running). Pulls: injury status (as below) or Hard Rock removes the line;
 no price-based pulls. Discovery Oct 25-27 (research F7): others < 2 pts = 31 bets 22-9 +9.74u (alone 16 11-5, 1-2 pts 15 11-4); engine
 replay with one pick per player/market a night = 29 picks 22-7 +11.75u, 26 of them on Oct 26.
 Checkpoint 2026-11-25 (~150 bets). Stop rule: units <= -8, or after 75 bets ROI <= 0 -> the Sharp pauses new picks, logs it in section 8.
@@ -119,7 +118,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   the if-bet line), PRICE FINAL, ACTION NEEDED (keys refused / pool low, once a day each), a one-time hello. Never no-pick nights,
   heartbeats, grading or errors. Quiet 12:30-9:00 AM ET. Max 12 messages a day.
 - **Debug:** `python scripts/run.py --explain` lists every line (all markets) on the latest reads and the first reason it did not pass.
-  Tests: `python -m unittest discover -s tests` (50; `tests/world.py` = fake day from the real probe payloads; `tests/test_qa_failures.py` = QA's regressions). Env: `PC_NOW`, `PC_DATA_DIR`, `PC_ODDS_FIXTURE_DIR`, `PC_ESPN_FIXTURE_DIR`.
+  Tests: `python -m unittest discover -s tests` (63; `tests/world.py` = fake day from the real probe payloads; `tests/test_qa_failures.py` = QA's regressions). Env: `PC_NOW`, `PC_DATA_DIR`, `PC_ODDS_FIXTURE_DIR`, `PC_ESPN_FIXTURE_DIR`.
 
 ## 6. Reviews (scheduled tasks; each reads this file first and updates it last)
 - **Daily check, 2:07 PM ET** (scheduled task "Prop Check NBA daily check"): chain alive, A read ran, failed steps, unmatched names, grading done for last night; fix what's broken; no
@@ -161,6 +160,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
 |---|---|---|---|
+| 2026-10-29 8:00 AM (CEO, Matt's order; Builder) | **v2.3: fair-price gate REPLACES the v2.2 gap gate** (`pin_solo.min_ev_vs_pin` 0.0; `min_gap_vs_pin` removed). Hard Rock's price must be at or better than Pinnacle's fair price on the side (EV vs Pinnacle >= 0%). Reason text, Discord and rules text now say "better than Pinnacle's fair price". Nothing was open to pull (no picks yet today); Oct 28's picks stay on the Record as shown | Matt: Run 7 showed v2.2 only reaches about fair; "integrate the fair price instead, I like the volume" (about 13 picks a busy night, 1-2 a quiet one) | Research Run 7 discovery Oct 25-28: at-or-better-than-fair 16 bets 12-4 +7.12u vs the rest 28 bets 16-12 +1.33u (Oct 28 alone 13 bets 9-4 +4.51u vs 17 bets 9-8 -0.93u). One lead, ~22 looks at 4 nights: judged forward on the live Record |
 | 2026-10-28 6:15 PM (CEO, Matt's order) | **v2.2: Hard Rock must be 2+ pts better than Pinnacle's new price** (`pin_solo.min_gap_vs_pin` 0.02). Reason text shows the gap. Picks already shown tonight stay | Matt: Bane O2.5 threes was sent at HR -140 while Pinnacle was -134 (Pinnacle was catching up to the other books, not leading); "Hard Rock needs to still be better than Pinnacle" with a required gap | Replay Oct 25-27 by gap: 0+ 26 bets 19-7; 1+ 21 15-6; 2+ 13 10-3; engine replay v2.2 14 bets 10-4 +4.87u. Tonight 7 of 11 picks would pass |
 | 2026-10-28 11:55 AM (CEO, Matt's order) | **v2.1: `pin_solo.others_max` 0.01 -> 0.02** (other books may move up to 2 pts the same way). Reason text says how far they moved | Matt: "pinnacle moves 2+ points and the other books move 2 or less" | Discovery: 31 bets 22-9 +9.74u (engine replay 29, 22-7 +11.75u); 26 of 29 on Oct 26 |
 | 2026-10-28 11:30 AM (CEO, Matt's order; Builder, UX, QA) | **v2.0: live rule = Pinnacle moves alone (`pin_solo`); Gap + Guard off; Pinnacle as the price judge behind the scenes (Backstage tab)** | Matt: "shift the main process to pinnacle moves the odds alone... a behind the scenes tracking pinnacle as the price judge". Gap + Guard: 0 bets in 3 nights; Hard Rock NBA ~6% under market | Discovery only (Oct 25-27): F7 16 bets 11-5 +4.45u; F2b 6 bets 5-1 +3.18u. Book-by-book judges: only Pinnacle positive (research run 6) |
@@ -169,6 +169,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-29 ~8:30 AM (CEO, Matt: replace the gap gate with the fair price): v2.3 shipped. engine `solo_moves` gate `min_ev_vs_pin`, reason/Discord/page-rules text, tests (63 pass, new test: better than Pinnacle's posted price but under fair -> no pick), replay regenerated (Oct 25-27: 3 bets 3-0 +2.61u; the Oct 28 live picks stay as shown under v2.2). The mid-night rule-change pull still exists for `min_gap_vs_pin` only; it was not needed (no picks open today).
 - 2026-10-29 ~8:10 AM (CEO as Researcher, Matt: cut the daily pick count by a calculated method, no hard limits like max per night/game/player): Run 7, discovery Oct 25-28 (74 bets, 40 on the live rule). No candidate, no product change. One lead: only keep picks where Hard Rock's price is at or better than Pinnacle's NEW fair (EV vs Pinnacle >= 0): 16 bets 12-4 +44.5% vs the rest +0.7% (p 0.05, ~22 looks, 13 of 16 on one night); leaves 1-2 picks on quiet nights, ~13 on busy ones. Scores on move strength, track record, overlap and a composite did not select. Registered forward as F9 (no code needed). Matt declined a model tag (earlier today: model gate cut winners as often as losers). research/LOG.md, HYPOTHESES.md, code/run7_reduce.py.
 - 2026-10-28 ~6:25 PM (CEO, Matt: re-send the new list, take the old one off the site): open pin_solo picks that fail the v2.2 gap
   at their own shown prices are pulled by the timer (code rule_change; on the Record as pulled, hidden from Tonight and Discord).

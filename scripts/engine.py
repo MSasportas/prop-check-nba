@@ -389,7 +389,12 @@ def solo_moves(a, b, ctx):
                 r["why"] = "only %d other books on this line" % len(mv)
             elif statistics.median(mv) >= ps["others_max"] - EPS:
                 r["why"] = "the other books moved too (%+.1f pts)" % (100 * statistics.median(mv))
-            elif r["gap_vs_pin"] is None or r["gap_vs_pin"] < ps.get("min_gap_vs_pin", -1.0) - EPS:
+            elif ps.get("min_ev_vs_pin") is not None and r["ev_vs_pin"] < ps["min_ev_vs_pin"] - EPS:
+                # v2.3 (Matt, 2026-10-29): Hard Rock's price must be at or better than Pinnacle's FAIR price (its new chance with
+                # Pinnacle's own margin taken out), not just better than Pinnacle's posted price
+                r["why"] = "Hard Rock price is worse than Pinnacle's fair price (%+.1f%%, needs %+.1f%%)" % (
+                    100 * r["ev_vs_pin"], 100 * ps["min_ev_vs_pin"])
+            elif ps.get("min_gap_vs_pin") is not None and (r["gap_vs_pin"] is None or r["gap_vs_pin"] < ps["min_gap_vs_pin"] - EPS):
                 r["why"] = "Hard Rock not %g+ pts better than Pinnacle's price (%s)" % (
                     100 * ps.get("min_gap_vs_pin", 0), "no Pinnacle price" if r["gap_vs_pin"] is None else "%+.1f" % (100 * r["gap_vs_pin"]))
             elif price < cfg["customer"]["worst_price"]:
@@ -421,7 +426,10 @@ def solo_reason(r):
         r["side"], common.fmt_price(pb) if pb is not None else "?", common.fmt_price(pa) if pa is not None else "?",
         100 * r["pin_before"], 100 * r["pin_after"], r["n_others"], held)
     s += " Hard Rock price: %s" % common.fmt_price(r["price"])
-    if r.get("gap_vs_pin") is not None:
+    if r.get("ev_vs_pin") is not None:
+        s += (", %.1f%% better than Pinnacle's fair price." if r["ev_vs_pin"] >= 0 else ", %.1f%% worse than Pinnacle's fair price.") \
+            % abs(100 * r["ev_vs_pin"])
+    elif r.get("gap_vs_pin") is not None:
         s += ", %.1f pts better than Pinnacle's." % (100 * r["gap_vs_pin"]) if r["gap_vs_pin"] >= 0 else \
             ", %.1f pts worse than Pinnacle's." % (-100 * r["gap_vs_pin"])
     else:
