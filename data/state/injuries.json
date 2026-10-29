@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T17:50:00-04:00",
+ "at": "2026-10-29T18:10:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -113,19 +113,26 @@
    "date": "2026-10-29T17:05Z",
    "note": "Tyson (neck) is questionable for Thursday's game against the Hawks."
   },
+  "4593125": {
+   "status": "out",
+   "name": "Santi Aldama",
+   "team": "DAL",
+   "date": "2026-10-29T22:07Z",
+   "note": "Aldama (knee) is listed as doubtful for Friday's game against Houston."
+  },
   "5279129": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Sergio de Larrea",
    "team": "DAL",
-   "date": "2026-10-29T04:40Z",
-   "note": "De Larrea (knee) has been ruled out for Wednesday's game against the Thunder."
+   "date": "2026-10-29T22:06Z",
+   "note": "De Larrea (knee) is out for Friday's game against the Rockets."
   },
   "4278594": {
    "status": "day-to-day",
    "name": "Naji Marshall",
    "team": "DAL",
-   "date": "2026-10-29T04:39Z",
-   "note": "Marshall (illness) won't play in Wednesday's game against Oklahoma City."
+   "date": "2026-10-29T22:03Z",
+   "note": "Marshall is questionable for Friday's game against the Rockets with an illness."
   },
   "5148538": {
    "status": "out",
@@ -133,13 +140,6 @@
    "team": "DAL",
    "date": "2026-10-28T18:21Z",
    "note": "Biberovic (knee) is out for Wednesday's game against the Thunder."
-  },
-  "4593125": {
-   "status": "out",
-   "name": "Santi Aldama",
-   "team": "DAL",
-   "date": "2026-10-28T18:19Z",
-   "note": "Aldama (knee) is out for Wednesday's game against the Thunder."
   },
   "4683688": {
    "status": "out",
