@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T00:50:01-04:00",
+ "at": "2026-10-29T01:00:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -65,10 +65,10 @@
    "note": "Boswell (knee) is out for Wednesday's season opener against the Nets."
   },
   "5105555": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Tobe Awaka",
    "team": "CHI",
-   "date": "2026-10-28T22:24Z",
+   "date": "2026-10-29T04:36Z",
    "note": "Awaka (ankle) is out for Wednesday's game against the Knicks, Joel Lorenzi of The Athletic reports."
   },
   "4431687": {
@@ -85,11 +85,18 @@
    "date": "2026-10-26T22:20Z",
    "note": "Claxton (hamstring) participated in individual drills Monday morning and hopes to join the team for practice next week, Joe Cowley of the Chicago Sun-Times reports."
   },
+  "5279129": {
+   "status": "day-to-day",
+   "name": "Sergio de Larrea",
+   "team": "DAL",
+   "date": "2026-10-29T04:40Z",
+   "note": "De Larrea (knee) has been ruled out for Wednesday's game against the Thunder."
+  },
   "4278594": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Naji Marshall",
    "team": "DAL",
-   "date": "2026-10-28T23:52Z",
+   "date": "2026-10-29T04:39Z",
    "note": "Marshall (illness) won't play in Wednesday's game against Oklahoma City."
   },
   "5148538": {
@@ -105,13 +112,6 @@
    "team": "DAL",
    "date": "2026-10-28T18:19Z",
    "note": "Aldama (knee) is out for Wednesday's game against the Thunder."
-  },
-  "5279129": {
-   "status": "out",
-   "name": "Sergio de Larrea",
-   "team": "DAL",
-   "date": "2026-10-27T22:09Z",
-   "note": "De Larrea (knee) has been ruled out for Wednesday's game against the Thunder."
   },
   "4683688": {
    "status": "out",
@@ -163,10 +163,10 @@
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
   },
   "4997536": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Gui Santos",
    "team": "GS",
-   "date": "2026-10-28T22:58Z",
+   "date": "2026-10-29T04:38Z",
    "note": "Santos has been ruled out for Wednesday's game against the Timberwolves due to left knee tendinitis."
   },
   "3102531": {
@@ -190,19 +190,19 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "4871144": {
+   "status": "day-to-day",
+   "name": "Alperen Sengun",
+   "team": "HOU",
+   "date": "2026-10-29T04:38Z",
+   "note": "Sengun (back) has been ruled out for Wednesday's game against the Bucks."
+  },
   "2990992": {
    "status": "out",
    "name": "Marcus Smart",
    "team": "HOU",
    "date": "2026-10-28T17:34Z",
    "note": "Smart (forearm) is out for Wednesday's game against the Bucks."
-  },
-  "4871144": {
-   "status": "out",
-   "name": "Alperen Sengun",
-   "team": "HOU",
-   "date": "2026-10-27T20:19Z",
-   "note": "Sengun (back) has been ruled out for Wednesday's game against the Bucks."
   },
   "2991235": {
    "status": "out",
@@ -358,6 +358,13 @@
    "date": "2026-10-28T18:19Z",
    "note": "Alvarado (ankle) is out for Wednesday's game against the Bulls."
   },
+  "4433255": {
+   "status": "day-to-day",
+   "name": "Chet Holmgren",
+   "team": "OKC",
+   "date": "2026-10-29T04:41Z",
+   "note": "Holmgren (knee) has been ruled out for Wednesday's game against the Mavericks."
+  },
   "4593803": {
    "status": "out",
    "name": "Jalen Williams",
@@ -378,13 +385,6 @@
    "team": "OKC",
    "date": "2026-10-27T21:43Z",
    "note": "Sorber (knee) has been ruled out for Wednesday's game against the Mavericks."
-  },
-  "4433255": {
-   "status": "out",
-   "name": "Chet Holmgren",
-   "team": "OKC",
-   "date": "2026-10-27T21:41Z",
-   "note": "Holmgren (knee) has been ruled out for Wednesday's game against the Mavericks."
   },
   "5159925": {
    "status": "out",
@@ -548,10 +548,10 @@
    "note": "Leonard (knee) is expected to miss multiple weeks due to swelling in his left knee, Shams Charania of ESPN reports."
   },
   "4066336": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Lauri Markkanen",
    "team": "UTAH",
-   "date": "2026-10-29T00:14Z",
+   "date": "2026-10-29T04:39Z",
    "note": "Markkanen (wrist) is out for Wednesday's tilt against the Spurs."
   },
   "4277961": {
