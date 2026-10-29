@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T13:10:00-04:00",
+ "at": "2026-10-29T13:20:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -26,8 +26,8 @@
    "status": "out",
    "name": "Egor Demin",
    "team": "BKN",
-   "date": "2026-10-29T16:40Z",
-   "note": "Demin has been diagnosed with a right leg bone bruise and will be reevaluated in one week, Ian Begley of SportsNet New York reports Thursday. The injury occurred during Tuesday's game against Boston."
+   "date": "2026-10-29T17:09Z",
+   "note": "The Nets exercised Demin's third-year team option for the 2027-28 season, Sharif Phillips-Keaton of USA Today reports Thursday."
   },
   "5105626": {
    "status": "out",
@@ -84,6 +84,20 @@
    "team": "CHI",
    "date": "2026-10-26T22:20Z",
    "note": "Claxton (hamstring) participated in individual drills Monday morning and hopes to join the team for practice next week, Joe Cowley of the Chicago Sun-Times reports."
+  },
+  "5041951": {
+   "status": "day-to-day",
+   "name": "Meleek Thomas",
+   "team": "CLE",
+   "date": "2026-10-29T17:06Z",
+   "note": "Thomas (foot) is questionable for Thursday's game in Atlanta."
+  },
+  "4683747": {
+   "status": "day-to-day",
+   "name": "Jaylon Tyson",
+   "team": "CLE",
+   "date": "2026-10-29T17:05Z",
+   "note": "Tyson (neck) is questionable for Thursday's game against the Hawks."
   },
   "5279129": {
    "status": "day-to-day",
