@@ -1,5 +1,5 @@
 {
- "finished_at": "2026-10-29T18:50:01-04:00",
+ "finished_at": "2026-10-29T19:10:01-04:00",
  "slate": "2026-10-29",
  "ok": true,
  "steps": {
@@ -17,7 +17,7 @@
   },
   "lineups": {
    "ok": true,
-   "sec": 0.9
+   "sec": 1.2
   },
   "odds": {
    "ok": true,
@@ -107,7 +107,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "40966335023",
-  "iteration": 3,
+  "iteration": 5,
   "chain_link": 151,
   "chain_started_at": "2026-10-25T12:12:48-04:00",
   "run_started_at": "2026-10-29T18:30:15-04:00"
