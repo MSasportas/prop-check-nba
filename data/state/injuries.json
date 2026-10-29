@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T17:40:15-04:00",
+ "at": "2026-10-29T17:50:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -35,6 +35,13 @@
    "team": "BKN",
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
+  },
+  "3032979": {
+   "status": "day-to-day",
+   "name": "Dennis Schroder",
+   "team": "CHA",
+   "date": "2026-10-29T21:37Z",
+   "note": "Schroder (foot) is questionable for Friday's game against the Wizards."
   },
   "5061575": {
    "status": "out",
@@ -478,11 +485,18 @@
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
   "4432446": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jabari Walker",
    "team": "PHI",
-   "date": "2026-10-29T04:33Z",
-   "note": "Walker (knee) has been ruled out for Wednesday's game against the Pacers."
+   "date": "2026-10-29T21:34Z",
+   "note": "Walker (knee) has been ruled out for Friday's game versus New York."
+  },
+  "3917376": {
+   "status": "day-to-day",
+   "name": "Jaylen Brown",
+   "team": "PHI",
+   "date": "2026-10-29T21:34Z",
+   "note": "Brown (knee) is questionable for Friday's game against the Knicks."
   },
   "3904625": {
    "status": "out",
