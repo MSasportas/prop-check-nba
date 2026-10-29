@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T01:20:01-04:00",
+ "at": "2026-10-29T01:30:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -246,6 +246,13 @@
    "date": "2026-02-09T21:43Z",
    "note": "Furphy was diagnosed with a torn right ACL on Monday and will miss the remainder of the season, Michael Scotto of USA Today reports."
   },
+  "4066648": {
+   "status": "day-to-day",
+   "name": "Rui Hachimura",
+   "team": "LAC",
+   "date": "2026-10-29T05:06Z",
+   "note": "Hachimura (quadriceps) has been ruled out for Wednesday's game against the Lakers, Joey Linn of SI.com reports."
+  },
   "5108024": {
    "status": "out",
    "name": "Yanic Konan Niederhauser",
@@ -266,13 +273,6 @@
    "team": "LAC",
    "date": "2026-10-29T01:00Z",
    "note": "Ingram (Achilles) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports."
-  },
-  "4066648": {
-   "status": "out",
-   "name": "Rui Hachimura",
-   "team": "LAC",
-   "date": "2026-10-27T19:47Z",
-   "note": "Hachimura (quadriceps) has been ruled out for Wednesday's game against the Lakers, Joey Linn of SI.com reports."
   },
   "6580": {
    "status": "out",
