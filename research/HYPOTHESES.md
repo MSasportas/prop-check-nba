@@ -70,3 +70,13 @@ Metric per score and bar: kept n, W-L, ROI at the posted price, share of picks c
 group or the score is not selecting). Plus a shuffle placebo (same count cut at random, 2,000 draws) and the leave-night-out result.
 Forward: scored from the night of 2026-10-29. Pass bar as RESEARCH.md rule 4 (n >= 150 graded, kept-group ROI > 0, 90% game-clustered
 bootstrap lower bound > 0, and kept ROI above the cut-group ROI).
+
+### Run 7 results (2026-10-29 ~8:10 AM, discovery Oct 25-28, 74 bets; full write-up in LOG.md)
+- S1 >= 0%: kept 16 12-4 +44.5%, cut 58 32-26 +0.7% (placebo p 0.05; live subset 0.16). STATUS: forward (F9). S1 >= +2%: 4 bets, too few.
+- S2: keeps 0 of 74 (Hard Rock's price is worse than Pinnacle's new fair on nearly every pick). STATUS: done, informative only.
+- S3, S5: no selection (cut groups as good or better). STATUS: failed in discovery. S4/S4b/S7: inverse. STATUS: failed.
+- S6: kept 47 14.0% vs cut 3.5% on all, 31.5% vs 20.9% on live (p 0.35). STATUS: open lead, research only (no live tag, Matt 10-29).
+- F9 (forward from 2026-10-29): the picks the live rule makes with ev_vs_pin >= 0 vs the rest, from the shadow `solo` rows
+  (`ev_vs_pin`, graded from box scores). Metric: ROI at the posted price for each group, CLV (frozen price vs the D-read Pinnacle
+  fair), games-clustered 90% bootstrap, shuffle placebo. Pass bar: RESEARCH.md rule 4 on the S1 >= 0 group AND its ROI above the
+  rest. At ~4 bets a night that group reaches 150 bets in about 5 weeks (early Dec); the 2026-11-25 checkpoint gets a first read.
