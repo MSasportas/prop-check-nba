@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2627,
+   "pool_left": 2623,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-28T21:10:00-04:00",
-  "last_read_at": "2026-10-28T21:00:00-04:00",
+  "next_read_at": "2026-10-28T21:45:00-04:00",
+  "last_read_at": "2026-10-28T21:10:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-28T21:00:00-04:00"
+   "at": "2026-10-28T21:10:00-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "MIA",
    "home": "ATL",
    "state": "in",
-   "detail": "8:05 - 4th",
+   "detail": "4:24 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -46,7 +46,7 @@
    "away": "WAS",
    "home": "CLE",
    "state": "in",
-   "detail": "10:55 - 4th",
+   "detail": "6:53 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "CHA",
    "home": "DET",
    "state": "in",
-   "detail": "14.5 - 3rd",
+   "detail": "9:51 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "PHI",
    "home": "IND",
    "state": "in",
-   "detail": "2:46 - 3rd",
+   "detail": "14.8 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "ORL",
    "home": "TOR",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "8:44 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "NYK",
    "home": "CHI",
    "state": "in",
-   "detail": "4:54 - 2nd",
+   "detail": "1:39 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,7 +116,7 @@
    "away": "HOU",
    "home": "MIL",
    "state": "in",
-   "detail": "2:19 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -130,7 +130,7 @@
    "away": "GSW",
    "home": "MIN",
    "state": "in",
-   "detail": "5:24 - 2nd",
+   "detail": "2:00 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -144,7 +144,7 @@
    "away": "DEN",
    "home": "NOP",
    "state": "in",
-   "detail": "3:29 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -177,7 +177,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-28T20:50:00-04:00",
+   "read_at": "2026-10-28T21:10:00-04:00",
    "picks": 1
   },
   {
@@ -851,7 +851,7 @@
    "id": "2026-10-28:401909891:4683778:threes:2.5:under",
    "state": "clear",
    "state_label": "Injury report clear",
-   "price_final": false,
+   "price_final": true,
    "pulled": null,
    "result": null,
    "rank": 1
@@ -1391,7 +1391,7 @@
  ],
  "empty": null,
  "counts": {
-  "lines_read": 1044,
+  "lines_read": 1058,
   "passing": 27,
   "games": 12
  },
@@ -1401,6 +1401,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-28T21:00:00-04:00",
- "status_at": "2026-10-28T21:00:00-04:00"
+ "generated_at": "2026-10-28T21:10:00-04:00",
+ "status_at": "2026-10-28T21:10:00-04:00"
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-10-28T20:50:00-04:00",
+ "at": "2026-10-28T21:10:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -246,6 +246,20 @@
    "date": "2026-02-09T21:43Z",
    "note": "Furphy was diagnosed with a torn right ACL on Monday and will miss the remainder of the season, Michael Scotto of USA Today reports."
   },
+  "4065778": {
+   "status": "out",
+   "name": "Max Strus",
+   "team": "LAC",
+   "date": "2026-10-29T01:03Z",
+   "note": "Strus (foot) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports."
+  },
+  "3913176": {
+   "status": "out",
+   "name": "Brandon Ingram",
+   "team": "LAC",
+   "date": "2026-10-29T01:00Z",
+   "note": "Ingram (Achilles) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports."
+  },
   "4066648": {
    "status": "out",
    "name": "Rui Hachimura",
@@ -260,26 +274,12 @@
    "date": "2026-10-15T01:03Z",
    "note": "Beal (knee) will not be ready for the start of the regular season, NBA writer Justin Russo reports."
   },
-  "4065778": {
-   "status": "out",
-   "name": "Max Strus",
-   "team": "LAC",
-   "date": "2026-10-05T22:21Z",
-   "note": "Strus has been diagnosed with a partially torn plantar fascia in his right foot and he will be re-evaluated in four weeks, Ohm Youngmisuk of ESPN.com reports."
-  },
   "5108024": {
    "status": "out",
    "name": "Yanic Konan Niederhauser",
    "team": "LAC",
    "date": "2026-09-28T18:07Z",
    "note": "Niederhauser (foot) won't be ready for the start of the season, Law Murray of The Athletic reports."
-  },
-  "3913176": {
-   "status": "out",
-   "name": "Brandon Ingram",
-   "team": "LAC",
-   "date": "2026-09-28T18:01Z",
-   "note": "Ingram won't be ready for the start of the season due to a partially torn Achilles, per Joey Linn of SI.com."
   },
   "4396818": {
    "status": "out",
@@ -343,6 +343,13 @@
    "team": "NO",
    "date": "2026-10-24T22:17Z",
    "note": "Missi has been diagnosed with a left knee bone bruise and he will miss an extended period of time, Brett Siegel of ClutchPoints.com reports."
+  },
+  "3914044": {
+   "status": "day-to-day",
+   "name": "Landry Shamet",
+   "team": "NY",
+   "date": "2026-10-29T00:55Z",
+   "note": "Shamet (ankle) exited Wednesday's game against the Bulls, Brett Siegel of ClutchPoints.com reports."
   },
   "4277869": {
    "status": "out",
