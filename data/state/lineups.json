@@ -2,7 +2,7 @@
  "slate": "2026-10-29",
  "teams": {
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
@@ -11,8 +11,8 @@
     "Jarrett Allen"
    ],
    "status": {
-    "Meleek Thomas": "questionable",
     "Jaylon Tyson": "questionable",
+    "Meleek Thomas": "out",
     "Nae'Qwan Tomlin": "out"
    }
   },
@@ -87,5 +87,5 @@
    }
   }
  },
- "at": "2026-10-29T19:20:17-04:00"
+ "at": "2026-10-29T19:30:01-04:00"
 }
