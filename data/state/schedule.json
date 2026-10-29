@@ -391,7 +391,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:16 - 4th",
+    "detail": "8:04 - 4th",
     "score": {
      "NY": "104",
      "CHI": "104"
@@ -423,7 +423,7 @@
     "status_name": "STATUS_IN_PROGRESS",
     "detail": "0.0 - 4th",
     "score": {
-     "GS": "96",
+     "GS": "97",
      "MIN": "81"
     }
    },
