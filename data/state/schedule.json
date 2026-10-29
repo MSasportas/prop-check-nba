@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:06 - 4th",
+    "detail": "2:48 - OT",
     "score": {
-     "SA": "105",
-     "UTAH": "100"
+     "SA": "107",
+     "UTAH": "108"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:55 - 3rd",
+    "detail": "2:02 - 3rd",
     "score": {
-     "OKC": "71",
-     "DAL": "78"
+     "OKC": "77",
+     "DAL": "87"
     }
    },
    {
@@ -481,9 +481,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:26 - 2nd",
+    "detail": "4:42 - 2nd",
     "score": {
-     "LAL": "34",
+     "LAL": "42",
      "LAC": "31"
     }
    }
