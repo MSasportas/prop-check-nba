@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2631,
+   "pool_left": 2627,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-28T21:00:00-04:00",
-  "last_read_at": "2026-10-28T20:50:00-04:00",
+  "next_read_at": "2026-10-28T21:10:00-04:00",
+  "last_read_at": "2026-10-28T21:00:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-28T20:50:00-04:00"
+   "at": "2026-10-28T21:00:00-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "MIA",
    "home": "ATL",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "8:05 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -46,7 +46,7 @@
    "away": "WAS",
    "home": "CLE",
    "state": "in",
-   "detail": "33.8 - 3rd",
+   "detail": "10:55 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "CHA",
    "home": "DET",
    "state": "in",
-   "detail": "4:11 - 3rd",
+   "detail": "14.5 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "PHI",
    "home": "IND",
    "state": "in",
-   "detail": "7:11 - 3rd",
+   "detail": "2:46 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "NYK",
    "home": "CHI",
    "state": "in",
-   "detail": "8:25 - 2nd",
+   "detail": "4:54 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,7 +116,7 @@
    "away": "HOU",
    "home": "MIL",
    "state": "in",
-   "detail": "7:54 - 2nd",
+   "detail": "2:19 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -130,7 +130,7 @@
    "away": "GSW",
    "home": "MIN",
    "state": "in",
-   "detail": "9:07 - 2nd",
+   "detail": "5:24 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -144,7 +144,7 @@
    "away": "DEN",
    "home": "NOP",
    "state": "in",
-   "detail": "6:22 - 2nd",
+   "detail": "3:29 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -191,7 +191,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-28T11:00:01-04:00",
+   "read_at": "2026-10-28T21:00:00-04:00",
    "picks": 0
   }
  ],
@@ -925,7 +925,7 @@
    "final_ev": 0.0313,
    "model_p": null,
    "reason": "Pinnacle moved the under from -105 to -120 (48% to 51%); 7 other books held. Hard Rock price: -110, 2.2 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7518855297612513704",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.4788,
    "pin_after": 0.5101,
@@ -937,12 +937,12 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0216,
    "id": "2026-10-28:401909890:4066259:points:15.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 2
+   "rank": null
   },
   {
    "player": "Mikal Bridges",
@@ -1391,7 +1391,7 @@
  ],
  "empty": null,
  "counts": {
-  "lines_read": 1034,
+  "lines_read": 1044,
   "passing": 27,
   "games": 12
  },
@@ -1401,6 +1401,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-28T20:50:00-04:00",
- "status_at": "2026-10-28T20:50:00-04:00"
+ "generated_at": "2026-10-28T21:00:00-04:00",
+ "status_at": "2026-10-28T21:00:00-04:00"
 }
