@@ -42,3 +42,31 @@
   fair at HR's line median -5.5%, 0 of 49 >= +3%. STATUS: failed in discovery (kept forward only as the mirror of F8b).
 - F8b FADE that move (the opposite side at HR's line and price, same moments): discovery 31-19, +6.51u on 50. Post-hoc (found by
   flipping a loser after ~20 slices tried today), so treat as a lead only. STATUS: forward from 2026-10-28.
+
+## Run 7 (2026-10-29 ~7:45 AM, CEO as Researcher; Matt: fewer picks a day by a CALCULATED method, no hard caps)
+Matt's constraint: NO fixed limits (no max per night, per game or per player). A pick is cut only because a computed score says it
+is a worse bet over the long run; a big night stays big if every pick scores well, a thin night stays thin. The goal is the same
+as the judging rule: picks that hit at the posted price. Fewer is fine, worse is not.
+Population: every Pinnacle >= 2 pt move at a B/C/D flag read that passed the live v2.1 base (Hard Rock same line both reads, others
+< 2 pts, >= 4 other books, price -200..+200), one per player/market/night, BEFORE the v2.2 gap gate, nights Oct 25-28 (discovery
+only: nothing here can pass). The live picks are the subset that also passed the v2.2 gap. Result = W/L at Hard Rock's frozen price.
+Each score below is a number computed from data available at the read; the cut is "score >= bar" where the bar comes from a formula
+or from the OTHER nights (leave-one-night-out), never from looking at the night being judged.
+- S1 Price edge vs Pinnacle: EV of Hard Rock's price at Pinnacle's NEW fair chance (`ev_vs_pin`). Bar: >= 0%, then >= +2% (the
+  break-even bars), plus the leave-night-out best bar.
+- S2 Net Pinnacle edge after noise: Pinnacle's new fair minus Hard Rock's break-even, minus one standard error of a de-vigged
+  two-sided price (1.5 pts, set from how much Pinnacle's fair jumps between consecutive reads when nothing happens). Keep if > 0.
+- S3 Move strength: Pinnacle's move size in pts divided by the move size the other books made (bigger lead over the crowd, same
+  direction). Bar by leave-night-out.
+- S4 Cell track record: hit rate minus break-even of the pick's cell (market x side) on the OTHER nights, shrunk to zero with
+  k = 20 bets (Bayesian shrinkage). Keep if the shrunk edge > 0. Also tested: price band (plus money / -100..-130 / -131..-200).
+- S5 Overlap discount: picks in one game that ride the same game script (same team's players all overs, or both teams' unders) are one
+  bet, not many. Score = S1 divided by sqrt(number of overlapping picks in that game and direction). A calculated discount, not a cap:
+  a lone strong pick is untouched.
+- S6 Model agreement (research only, NOT a product change; Matt said no live tag): our stat model's chance for the side is not
+  below Pinnacle's new fair by more than 5 pts. Registered because the 5-pt version looked good in discovery on 43 bets; it is a lead.
+- S7 Composite = the sum of the standardized S1, S3 and S4 (equal weights, no fitting). Keep the top group above the bar.
+Metric per score and bar: kept n, W-L, ROI at the posted price, share of picks cut, ROI of the CUT group (must be lower than the kept
+group or the score is not selecting). Plus a shuffle placebo (same count cut at random, 2,000 draws) and the leave-night-out result.
+Forward: scored from the night of 2026-10-29. Pass bar as RESEARCH.md rule 4 (n >= 150 graded, kept-group ROI > 0, 90% game-clustered
+bootstrap lower bound > 0, and kept ROI above the cut-group ROI).
