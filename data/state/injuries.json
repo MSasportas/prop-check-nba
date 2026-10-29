@@ -1,5 +1,5 @@
 {
- "at": "2026-10-28T20:00:00-04:00",
+ "at": "2026-10-28T20:10:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -86,11 +86,11 @@
    "note": "Claxton (hamstring) participated in individual drills Monday morning and hopes to join the team for practice next week, Joe Cowley of the Chicago Sun-Times reports."
   },
   "4278594": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Naji Marshall",
    "team": "DAL",
-   "date": "2026-10-28T18:22Z",
-   "note": "Marshall (illness) is now doubtful for Wednesday against the Thunder."
+   "date": "2026-10-28T23:52Z",
+   "note": "Marshall (illness) won't play in Wednesday's game against Oklahoma City."
   },
   "5148538": {
    "status": "out",
@@ -112,13 +112,6 @@
    "team": "DAL",
    "date": "2026-10-27T22:09Z",
    "note": "De Larrea (knee) has been ruled out for Wednesday's game against the Thunder."
-  },
-  "3138160": {
-   "status": "out",
-   "name": "Caleb Martin",
-   "team": "DAL",
-   "date": "2026-10-27T22:07Z",
-   "note": "Martin (thumb) is questionable for Wednesday's game against the Thunder."
   },
   "4683688": {
    "status": "out",
