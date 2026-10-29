@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T01:00:00-04:00",
+ "at": "2026-10-29T01:20:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -288,6 +288,20 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
+  "4433137": {
+   "status": "day-to-day",
+   "name": "Ziaire Williams",
+   "team": "LAL",
+   "date": "2026-10-29T05:05Z",
+   "note": "Williams (foot) is out for Wednesday's game against the Clippers."
+  },
+  "3945274": {
+   "status": "day-to-day",
+   "name": "Luka Doncic",
+   "team": "LAL",
+   "date": "2026-10-29T05:05Z",
+   "note": "Doncic (back) is out for Wednesday's game against the Clippers."
+  },
   "5113969": {
    "status": "out",
    "name": "Cameron Carr",
@@ -301,20 +315,6 @@
    "team": "LAL",
    "date": "2026-10-28T20:10Z",
    "note": "Thiero (knee) is out for Wednesday's game against the Clippers."
-  },
-  "4433137": {
-   "status": "out",
-   "name": "Ziaire Williams",
-   "team": "LAL",
-   "date": "2026-10-28T20:06Z",
-   "note": "Williams (foot) is out for Wednesday's game against the Clippers."
-  },
-  "3945274": {
-   "status": "out",
-   "name": "Luka Doncic",
-   "team": "LAL",
-   "date": "2026-10-28T20:05Z",
-   "note": "Doncic (back) is out for Wednesday's game against the Clippers."
   },
   "3899664": {
    "status": "day-to-day",
