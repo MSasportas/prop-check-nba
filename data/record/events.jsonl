@@ -99,3 +99,9 @@
 {"actual":null,"actual_text":"5 rebounds","at":"2026-10-28T22:00:00-04:00","id":"2026-10-28:401909884:1966:rebounds:6.5:over","price":-110,"result":"L","t":"graded","units":-1.0}
 {"actual":null,"actual_text":"2 threes","at":"2026-10-28T22:10:00-04:00","id":"2026-10-28:401909885:4066320:threes:2.5:over","price":-140,"result":"L","t":"graded","units":-1.0}
 {"actual":null,"actual_text":"1 assist","at":"2026-10-28T22:10:00-04:00","id":"2026-10-28:401909885:4712849:assists:3.5:under","price":120,"result":"W","t":"graded","units":1.2}
+{"actual":null,"actual_text":"4 rebounds","at":"2026-10-28T22:30:01-04:00","id":"2026-10-28:401909887:4684740:rebounds:8.5:under","price":-135,"result":"W","t":"graded","units":0.7407}
+{"actual":null,"actual_text":"10 points","at":"2026-10-28T22:30:01-04:00","id":"2026-10-28:401909889:3907497:points:17.5:under","price":-120,"result":"W","t":"graded","units":0.8333}
+{"actual":null,"actual_text":"5 assists","at":"2026-10-28T22:30:01-04:00","id":"2026-10-28:401909887:4591725:assists:4.5:under","price":-145,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"2 rebounds","at":"2026-10-28T22:30:01-04:00","id":"2026-10-28:401909887:3133628:rebounds:5.5:under","price":-140,"result":"W","t":"graded","units":0.7143}
+{"actual":null,"actual_text":"14 points","at":"2026-10-28T22:30:01-04:00","id":"2026-10-28:401909887:4432639:points:15.5:over","price":-130,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"19 points","at":"2026-10-28T22:30:01-04:00","id":"2026-10-28:401909887:4432848:points:14.5:under","price":-125,"result":"L","t":"graded","units":-1.0}
