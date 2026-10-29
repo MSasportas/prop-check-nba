@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:41 - 4th",
+    "detail": "30.8 - 4th",
     "score": {
-     "PHI": "101",
-     "IND": "98"
+     "PHI": "112",
+     "IND": "107"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:49 - 4th",
+    "detail": "4:53 - 4th",
     "score": {
-     "ORL": "85",
-     "TOR": "109"
+     "ORL": "91",
+     "TOR": "118"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:03 - 3rd",
+    "detail": "2:49 - 3rd",
     "score": {
-     "NY": "68",
-     "CHI": "81"
+     "NY": "77",
+     "CHI": "89"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:34 - 3rd",
+    "detail": "1:58 - 3rd",
     "score": {
-     "HOU": "76",
-     "MIL": "58"
+     "HOU": "91",
+     "MIL": "65"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:01 - 3rd",
+    "detail": "5:02 - 3rd",
     "score": {
-     "GS": "73",
-     "MIN": "50"
+     "GS": "80",
+     "MIN": "61"
     }
    },
    {
@@ -435,11 +435,11 @@
     "home": "NO",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:08 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "DEN": "75",
-     "NO": "62"
+     "DEN": "79",
+     "NO": "73"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:58 - 2nd",
+    "detail": "7:56 - 2nd",
     "score": {
-     "SA": "22",
-     "UTAH": "32"
+     "SA": "30",
+     "UTAH": "38"
     }
    },
    {
@@ -463,13 +463,13 @@
     "start": "2026-10-28T21:30:00-04:00",
     "away": "OKC",
     "home": "DAL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/28 - 9:30 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:27 - 1st",
     "score": {
-     "OKC": "0",
-     "DAL": "0"
+     "OKC": "2",
+     "DAL": "2"
     }
    },
    {
