@@ -126,7 +126,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   rule changes.
 - **Weekly team review, Mondays 11:13 AM ET** (scheduled task "Prop Check NBA weekly team review"): Sharp, Data Scientist, UX, Builder, QA on the Record and the odds log; first one ran 2026-10-26.
 
-- **Researcher: PAUSED (Matt, 2026-10-28 12:21 PM: "keep the research paused").** No scheduled task. Forward ideas in
+- **Researcher: PAUSED (Matt, 2026-10-28 12:21 PM: "keep the research paused"); one run on Matt's ask 2026-10-29 (Run 7, cutting pick counts).** No scheduled task. Forward ideas in
   research/HYPOTHESES.md stay registered; the shadow log keeps collecting. Resume only when Matt asks.
 
 ## 7. Known gaps and risks
@@ -169,6 +169,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-10-29 ~8:10 AM (CEO as Researcher, Matt: cut the daily pick count by a calculated method, no hard limits like max per night/game/player): Run 7, discovery Oct 25-28 (74 bets, 40 on the live rule). No candidate, no product change. One lead: only keep picks where Hard Rock's price is at or better than Pinnacle's NEW fair (EV vs Pinnacle >= 0): 16 bets 12-4 +44.5% vs the rest +0.7% (p 0.05, ~22 looks, 13 of 16 on one night); leaves 1-2 picks on quiet nights, ~13 on busy ones. Scores on move strength, track record, overlap and a composite did not select. Registered forward as F9 (no code needed). Matt declined a model tag (earlier today: model gate cut winners as often as losers). research/LOG.md, HYPOTHESES.md, code/run7_reduce.py.
 - 2026-10-28 ~6:25 PM (CEO, Matt: re-send the new list, take the old one off the site): open pin_solo picks that fail the v2.2 gap
   at their own shown prices are pulled by the timer (code rule_change; on the Record as pulled, hidden from Tonight and Discord).
   Tonight's Discord sent-list reset in data/state/notified.json so the next run sends one NEW PICKS message with the v2.2 list.
