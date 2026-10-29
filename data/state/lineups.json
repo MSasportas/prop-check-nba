@@ -11,6 +11,8 @@
     "Jarrett Allen"
    ],
    "status": {
+    "Meleek Thomas": "questionable",
+    "Jaylon Tyson": "questionable",
     "Nae'Qwan Tomlin": "out"
    }
   },
@@ -54,7 +56,7 @@
     "DeAndre Jordan"
    ],
    "status": {
-    "Jordan Poole": "questionable",
+    "Jordan Poole": "doubtful",
     "Yves Missi": "out"
    }
   },
@@ -79,9 +81,10 @@
     "Donovan Clingan"
    ],
    "status": {
+    "Robert Williams": "doubtful",
     "Shaedon Sharpe": "out"
    }
   }
  },
- "at": "2026-10-29T05:00:00-04:00"
+ "at": "2026-10-29T17:00:01-04:00"
 }
