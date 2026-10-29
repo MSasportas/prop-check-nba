@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T00:00:00-04:00",
+ "at": "2026-10-29T00:40:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -149,10 +149,10 @@
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
   "4395702": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Isaiah Joe",
    "team": "DET",
-   "date": "2026-10-28T16:54Z",
+   "date": "2026-10-29T04:32Z",
    "note": "Joe (hip) is out for Wednesday's game against the Hornets."
   },
   "4433621": {
@@ -211,6 +211,13 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
+  "4017837": {
+   "status": "day-to-day",
+   "name": "Ivica Zubac",
+   "team": "IND",
+   "date": "2026-10-29T04:33Z",
+   "note": "Zubac (ankle) is out for Wednesday's game against the 76ers."
+  },
   "2530530": {
    "status": "out",
    "name": "T.J. McConnell",
@@ -231,13 +238,6 @@
    "team": "IND",
    "date": "2026-10-28T21:30Z",
    "note": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports."
-  },
-  "4017837": {
-   "status": "out",
-   "name": "Ivica Zubac",
-   "team": "IND",
-   "date": "2026-10-27T21:13Z",
-   "note": "Zubac (ankle) is out for Wednesday's game against the 76ers."
   },
   "5157066": {
    "status": "out",
@@ -435,19 +435,19 @@
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
+  "4432446": {
+   "status": "day-to-day",
+   "name": "Jabari Walker",
+   "team": "PHI",
+   "date": "2026-10-29T04:33Z",
+   "note": "Walker (knee) has been ruled out for Wednesday's game against the Pacers."
+  },
   "3904625": {
    "status": "out",
    "name": "Tacko Fall",
    "team": "PHI",
    "date": "2026-10-27T21:10Z",
    "note": "Fall (quadriceps) is out for Wednesday's game in Indiana."
-  },
-  "4432446": {
-   "status": "out",
-   "name": "Jabari Walker",
-   "team": "PHI",
-   "date": "2026-10-27T21:08Z",
-   "note": "Walker (knee) has been ruled out for Wednesday's game against the Pacers."
   },
   "4870562": {
    "status": "out",
@@ -576,10 +576,10 @@
    "note": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports."
   },
   "5238230": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Tre Johnson",
    "team": "WSH",
-   "date": "2026-10-28T22:28Z",
+   "date": "2026-10-29T04:33Z",
    "note": "Johnson has been ruled out for Wednesday's game against the Cavaliers due to right Achilles soreness."
   },
   "4432907": {
