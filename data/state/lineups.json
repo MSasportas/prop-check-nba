@@ -282,14 +282,13 @@
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
+    "Brice Sensabaugh",
     "Ace Bailey",
-    "Lauri Markkanen",
     "Jaxson Hayes"
    ],
    "status": {
-    "Lauri Markkanen": "questionable",
-    "Jaxson Hayes": "questionable",
     "Jaren Jackson": "out",
+    "Lauri Markkanen": "out",
     "Jusuf Nurkic": "out"
    }
   },
@@ -303,7 +302,6 @@
     "Isaiah Hartenstein"
    ],
    "status": {
-    "Ajay Mitchell": "questionable",
     "Alex Caruso": "out",
     "Chet Holmgren": "out",
     "Thomas Sorber": "out",
@@ -364,5 +362,5 @@
    }
   }
  },
- "at": "2026-10-28T20:10:01-04:00"
+ "at": "2026-10-28T20:20:01-04:00"
 }
