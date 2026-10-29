@@ -1,5 +1,5 @@
 {
- "slate": "2026-10-28",
+ "slate": "2026-10-29",
  "teams": {
   "ATL": [
    {
@@ -119,254 +119,12 @@
     "name": "Aaron Wiggins",
     "team": "ATL",
     "pos": "G",
-    "injury": "Day-To-Day"
+    "injury": null
    },
    {
     "pid": "4431714",
     "name": "Jalen Wilson",
     "team": "ATL",
-    "pos": "F",
-    "injury": null
-   }
-  ],
-  "CHA": [
-   {
-    "pid": "3135045",
-    "name": "Grayson Allen",
-    "team": "CHA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5060701",
-    "name": "Christian Anderson",
-    "team": "CHA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4684269",
-    "name": "Kylan Boswell",
-    "team": "CHA",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "4433249",
-    "name": "Moussa Diabate",
-    "team": "CHA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4701225",
-    "name": "PJ Hall",
-    "team": "CHA",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4602025",
-    "name": "Sion James",
-    "team": "CHA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4576060",
-    "name": "Ryan Kalkbrenner",
-    "team": "CHA",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "5061575",
-    "name": "Kon Knueppel",
-    "team": "CHA",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "5239590",
-    "name": "Liam McNeeley",
-    "team": "CHA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4433287",
-    "name": "Brandon Miller",
-    "team": "CHA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "2583632",
-    "name": "Royce O'Neale",
-    "team": "CHA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4396971",
-    "name": "Naz Reid",
-    "team": "CHA",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "5211176",
-    "name": "Tidjane Salaun",
-    "team": "CHA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3032979",
-    "name": "Dennis Schroder",
-    "team": "CHA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5281370",
-    "name": "Hannes Steinbach",
-    "team": "CHA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4395651",
-    "name": "Coby White",
-    "team": "CHA",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "4066218",
-    "name": "Grant Williams",
-    "team": "CHA",
-    "pos": "F",
-    "injury": "Out"
-   }
-  ],
-  "CHI": [
-   {
-    "pid": "5105555",
-    "name": "Tobe Awaka",
-    "team": "CHI",
-    "pos": "F",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "4711294",
-    "name": "Matas Buzelis",
-    "team": "CHI",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4278067",
-    "name": "Nic Claxton",
-    "team": "CHI",
-    "pos": "C",
-    "injury": "Out"
-   },
-   {
-    "pid": "4066650",
-    "name": "Zach Collins",
-    "team": "CHI",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5242496",
-    "name": "Noa Essengue",
-    "team": "CHI",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4871145",
-    "name": "Josh Giddey",
-    "team": "CHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4683750",
-    "name": "Jordan Hawkins",
-    "team": "CHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "2990984",
-    "name": "Buddy Hield",
-    "team": "CHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4395626",
-    "name": "Tre Jones",
-    "team": "CHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5044385",
-    "name": "Leonard Miller",
-    "team": "CHI",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4432822",
-    "name": "Isaac Okoro",
-    "team": "CHI",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "2595516",
-    "name": "Norman Powell",
-    "team": "CHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4898010",
-    "name": "Jaylin Sellers",
-    "team": "CHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4397189",
-    "name": "Jalen Smith",
-    "team": "CHI",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4848625",
-    "name": "Dailyn Swain",
-    "team": "CHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4431687",
-    "name": "Patrick Williams",
-    "team": "CHI",
-    "pos": "F",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "5095151",
-    "name": "Caleb Wilson",
-    "team": "CHI",
     "pos": "F",
     "injury": null
    }
@@ -471,1376 +229,131 @@
     "injury": null
    }
   ],
-  "DAL": [
+  "MEM": [
    {
-    "pid": "4593125",
-    "name": "Santi Aldama",
-    "team": "DAL",
+    "pid": "5041935",
+    "name": "Cameron Boozer",
+    "team": "MEM",
     "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "5148538",
-    "name": "Tarik Biberovic",
-    "team": "DAL",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "4432582",
-    "name": "Max Christie",
-    "team": "DAL",
-    "pos": "G",
     "injury": null
    },
    {
-    "pid": "4701208",
-    "name": "Moussa Cisse",
-    "team": "DAL",
+    "pid": "5105817",
+    "name": "Carson Cooper",
+    "team": "MEM",
     "pos": "C",
     "injury": null
    },
    {
-    "pid": "4896372",
-    "name": "Walter Clayton Jr.",
-    "team": "DAL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5279129",
-    "name": "Sergio de Larrea",
-    "team": "DAL",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "5041939",
-    "name": "Cooper Flagg",
-    "team": "DAL",
+    "pid": "4903027",
+    "name": "Cedric Coward",
+    "team": "MEM",
     "pos": "F",
     "injury": null
    },
    {
-    "pid": "4278049",
-    "name": "Daniel Gafford",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5105806",
-    "name": "Jett Howard",
-    "team": "DAL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "6442",
-    "name": "Kyrie Irving",
-    "team": "DAL",
-    "pos": "G",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "4873153",
-    "name": "Morez Johnson Jr.",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5106040",
-    "name": "Tobi Lawal",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4683688",
-    "name": "Dereck Lively II",
-    "team": "DAL",
-    "pos": "C",
-    "injury": "Out"
-   },
-   {
-    "pid": "4278594",
-    "name": "Naji Marshall",
-    "team": "DAL",
-    "pos": "F",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "3138160",
-    "name": "Caleb Martin",
-    "team": "DAL",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "5211175",
-    "name": "Zaccharie Risacher",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4432107",
-    "name": "Marcus Sasser",
-    "team": "DAL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4278078",
-    "name": "P.J. Washington",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null
-   }
-  ],
-  "DEN": [
-   {
-    "pid": "4277848",
-    "name": "Marvin Bagley III",
-    "team": "DEN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4431767",
-    "name": "Christian Braun",
-    "team": "DEN",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4698719",
-    "name": "Trevon Brazile",
-    "team": "DEN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3978",
-    "name": "DeMar DeRozan",
-    "team": "DEN",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4065813",
-    "name": "Alpha Diallo",
-    "team": "DEN",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "3064290",
-    "name": "Aaron Gordon",
-    "team": "DEN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4433607",
-    "name": "DaRon Holmes II",
-    "team": "DEN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4565698",
-    "name": "Bryce Hopkins",
-    "team": "DEN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3138196",
-    "name": "Cameron Johnson",
-    "team": "DEN",
-    "pos": "F",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "3112335",
-    "name": "Nikola Jokic",
-    "team": "DEN",
+    "pid": "4600663",
+    "name": "Zach Edey",
+    "team": "MEM",
     "pos": "C",
     "injury": null
    },
    {
-    "pid": "4592427",
-    "name": "Spencer Jones",
-    "team": "DEN",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "3135046",
-    "name": "Tyus Jones",
-    "team": "DEN",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3936299",
-    "name": "Jamal Murray",
-    "team": "DEN",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4433629",
-    "name": "Ryan Nembhard",
-    "team": "DEN",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4431690",
-    "name": "Zeke Nnaji",
-    "team": "DEN",
+    "pid": "2991070",
+    "name": "Jerami Grant",
+    "team": "MEM",
     "pos": "F",
     "injury": null
    },
    {
-    "pid": "4432181",
-    "name": "Julian Strawther",
-    "team": "DEN",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "5105592",
-    "name": "Cam Whitmore",
-    "team": "DEN",
-    "pos": "F",
-    "injury": null
-   }
-  ],
-  "DET": [
-   {
-    "pid": "3908845",
-    "name": "John Collins",
-    "team": "DET",
+    "pid": "4684806",
+    "name": "Taylor Hendricks",
+    "team": "MEM",
     "pos": "F",
     "injury": null
    },
    {
-    "pid": "4432166",
-    "name": "Cade Cunningham",
-    "team": "DET",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4433621",
-    "name": "Jalen Duren",
-    "team": "DET",
-    "pos": "C",
-    "injury": "Out"
-   },
-   {
-    "pid": "2596112",
-    "name": "Javonte Green",
-    "team": "DET",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4397449",
-    "name": "Elijah Harkless",
-    "team": "DET",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4683771",
-    "name": "Ronald Holland II",
-    "team": "DET",
+    "pid": "5105550",
+    "name": "GG Jackson",
+    "team": "MEM",
     "pos": "F",
     "injury": null
    },
    {
-    "pid": "4066372",
-    "name": "Kevin Huerter",
-    "team": "DET",
+    "pid": "4065733",
+    "name": "Ty Jerome",
+    "team": "MEM",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "5107199",
-    "name": "Daniss Jenkins",
-    "team": "DET",
+    "pid": "5231919",
+    "name": "Karim Lopez",
+    "team": "MEM",
+    "pos": "F",
+    "injury": null
+   },
+   {
+    "pid": "4683934",
+    "name": "Jahmai Mashack",
+    "team": "MEM",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "4395702",
-    "name": "Isaiah Joe",
-    "team": "DET",
-    "pos": "G",
-    "injury": "Day-To-Day"
+    "pid": "4594326",
+    "name": "Kris Murray",
+    "team": "MEM",
+    "pos": "F",
+    "injury": null
    },
    {
-    "pid": "5107818",
-    "name": "Isaac Jones",
-    "team": "DET",
+    "pid": "4431785",
+    "name": "Scotty Pippen Jr.",
+    "team": "MEM",
+    "pos": "G",
+    "injury": null
+   },
+   {
+    "pid": "4593016",
+    "name": "Quinten Post",
+    "team": "MEM",
     "pos": "C",
     "injury": null
    },
    {
-    "pid": "4700852",
-    "name": "Chaz Lanier",
-    "team": "DET",
+    "pid": "4595400",
+    "name": "Olivier-Maxence Prosper",
+    "team": "MEM",
+    "pos": "F",
+    "injury": null
+   },
+   {
+    "pid": "4781746",
+    "name": "Javon Small",
+    "team": "MEM",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "5258459",
-    "name": "Ebuka Okorie",
-    "team": "DET",
+    "pid": "4433083",
+    "name": "Cam Spencer",
+    "team": "MEM",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "5037878",
-    "name": "Ugonna Onyenso",
-    "team": "DET",
+    "pid": "4432810",
+    "name": "Isaiah Stewart",
+    "team": "MEM",
     "pos": "C",
     "injury": null
    },
    {
-    "pid": "2990962",
-    "name": "Taurean Prince",
-    "team": "DET",
+    "pid": "5112087",
+    "name": "Jaylen Wells",
+    "team": "MEM",
     "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4278562",
-    "name": "Paul Reed",
-    "team": "DET",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3157465",
-    "name": "Duncan Robinson",
-    "team": "DET",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4397882",
-    "name": "Tolu Smith",
-    "team": "DET",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4684742",
-    "name": "Ausar Thompson",
-    "team": "DET",
-    "pos": "G",
-    "injury": null
-   }
-  ],
-  "GS": [
-   {
-    "pid": "4397886",
-    "name": "Charles Bassey",
-    "team": "GS",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "6430",
-    "name": "Jimmy Butler III",
-    "team": "GS",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "4433149",
-    "name": "LJ Cryer",
-    "team": "GS",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3975",
-    "name": "Stephen Curry",
-    "team": "GS",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "6589",
-    "name": "Draymond Green",
-    "team": "GS",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3213",
-    "name": "Al Horford",
-    "team": "GS",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4703396",
-    "name": "Graham Ike",
-    "team": "GS",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5175737",
-    "name": "Yaxel Lendeborg",
-    "team": "GS",
-    "pos": "F",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "4897449",
-    "name": "Malevy Leons",
-    "team": "GS",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4066436",
-    "name": "De'Anthony Melton",
-    "team": "GS",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4432171",
-    "name": "Moses Moody",
-    "team": "GS",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "2990969",
-    "name": "Georges Niang",
-    "team": "GS",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3134903",
-    "name": "Gary Payton II",
-    "team": "GS",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4709138",
-    "name": "Brandin Podziemski",
-    "team": "GS",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3102531",
-    "name": "Kristaps Porzingis",
-    "team": "GS",
-    "pos": "C",
-    "injury": "Out"
-   },
-   {
-    "pid": "4897262",
-    "name": "Will Richard",
-    "team": "GS",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4997536",
-    "name": "Gui Santos",
-    "team": "GS",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4397040",
-    "name": "Brandon Williams",
-    "team": "GS",
-    "pos": "G",
-    "injury": null
-   }
-  ],
-  "HOU": [
-   {
-    "pid": "2991235",
-    "name": "Steven Adams",
-    "team": "HOU",
-    "pos": "C",
-    "injury": "Out"
-   },
-   {
-    "pid": "3037789",
-    "name": "Bogdan Bogdanovic",
-    "team": "HOU",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3102529",
-    "name": "Clint Capela",
-    "team": "HOU",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4683860",
-    "name": "Quadir Copeland",
-    "team": "HOU",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4592857",
-    "name": "Isaiah Crawford",
-    "team": "HOU",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3202",
-    "name": "Kevin Durant",
-    "team": "HOU",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4433192",
-    "name": "Tari Eason",
-    "team": "HOU",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5105553",
-    "name": "Julian Phillips",
-    "team": "HOU",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4871144",
-    "name": "Alperen Sengun",
-    "team": "HOU",
-    "pos": "C",
-    "injury": "Out"
-   },
-   {
-    "pid": "4711272",
-    "name": "Reed Sheppard",
-    "team": "HOU",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "2990992",
-    "name": "Marcus Smart",
-    "team": "HOU",
-    "pos": "G",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "4432639",
-    "name": "Jabari Smith Jr.",
-    "team": "HOU",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3136777",
-    "name": "Jae'Sean Tate",
-    "team": "HOU",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4684740",
-    "name": "Amen Thompson",
-    "team": "HOU",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5105837",
-    "name": "Bruce Thornton",
-    "team": "HOU",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4432827",
-    "name": "Oscar Tshiebwe",
-    "team": "HOU",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "2991230",
-    "name": "Fred VanVleet",
-    "team": "HOU",
-    "pos": "G",
-    "injury": null
-   }
-  ],
-  "IND": [
-   {
-    "pid": "4431752",
-    "name": "Kobe Brown",
-    "team": "IND",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5157066",
-    "name": "Johnny Furphy",
-    "team": "IND",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4396993",
-    "name": "Tyrese Haliburton",
-    "team": "IND",
-    "pos": "G",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "4065731",
-    "name": "Jay Huff",
-    "team": "IND",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4592829",
-    "name": "Quenton Jackson",
-    "team": "IND",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "2530530",
-    "name": "T.J. McConnell",
-    "team": "IND",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "2580365",
-    "name": "Larry Nance Jr.",
-    "team": "IND",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4395712",
-    "name": "Andrew Nembhard",
-    "team": "IND",
-    "pos": "G",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "4396909",
-    "name": "Aaron Nesmith",
-    "team": "IND",
-    "pos": "G",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "3133603",
-    "name": "Kelly Oubre Jr.",
-    "team": "IND",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4433076",
-    "name": "Ben Sheppard",
-    "team": "IND",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "3149673",
-    "name": "Pascal Siakam",
-    "team": "IND",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4398207",
-    "name": "Jalen Slawson",
-    "team": "IND",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5105854",
-    "name": "Braden Smith",
-    "team": "IND",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4278355",
-    "name": "Obi Toppin",
-    "team": "IND",
-    "pos": "F",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "5106060",
-    "name": "Jarace Walker",
-    "team": "IND",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4017837",
-    "name": "Ivica Zubac",
-    "team": "IND",
-    "pos": "C",
-    "injury": "Out"
-   }
-  ],
-  "LAC": [
-   {
-    "pid": "6580",
-    "name": "Bradley Beal",
-    "team": "LAC",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "4845363",
-    "name": "Cam Christie",
-    "team": "LAC",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5106258",
-    "name": "Gradey Dick",
-    "team": "LAC",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "2991139",
-    "name": "Kris Dunn",
-    "team": "LAC",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4396907",
-    "name": "Darius Garland",
-    "team": "LAC",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4066648",
-    "name": "Rui Hachimura",
-    "team": "LAC",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "3913176",
-    "name": "Brandon Ingram",
-    "team": "LAC",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "4432170",
-    "name": "Isaiah Jackson",
-    "team": "LAC",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3936099",
-    "name": "Derrick Jones Jr.",
-    "team": "LAC",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3448",
-    "name": "Brook Lopez",
-    "team": "LAC",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "5105832",
-    "name": "Nick Martinelli",
-    "team": "LAC",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5075626",
-    "name": "Baba Miller",
-    "team": "LAC",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4396818",
-    "name": "Jordan Miller",
-    "team": "LAC",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "5108024",
-    "name": "Yanic Konan Niederhauser",
-    "team": "LAC",
-    "pos": "C",
-    "injury": "Out"
-   },
-   {
-    "pid": "4398390",
-    "name": "Jalen Pickett",
-    "team": "LAC",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4702352",
-    "name": "Kobe Sanders",
-    "team": "LAC",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4065778",
-    "name": "Max Strus",
-    "team": "LAC",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "5254165",
-    "name": "Keaton Wagler",
-    "team": "LAC",
-    "pos": "G",
-    "injury": null
-   }
-  ],
-  "LAL": [
-   {
-    "pid": "5113969",
-    "name": "Cameron Carr",
-    "team": "LAL",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "3945274",
-    "name": "Luka Doncic",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4397014",
-    "name": "Quentin Grimes",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4868423",
-    "name": "Jaden Hardy",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4683774",
-    "name": "Bronny James",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4433599",
-    "name": "Arthur Kaluma",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4433136",
-    "name": "Walker Kessler",
-    "team": "LAL",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4592691",
-    "name": "Jake LaRavia",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3155535",
-    "name": "Kevon Looney",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4278580",
-    "name": "Sandro Mamukelashvili",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4702972",
-    "name": "Chris Manon",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5114350",
-    "name": "AK Okereke",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4066457",
-    "name": "Austin Reaves",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4277811",
-    "name": "Collin Sexton",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5060631",
-    "name": "Adou Thiero",
-    "team": "LAL",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "3907498",
-    "name": "Matisse Thybulle",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4278077",
-    "name": "Jarred Vanderbilt",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4433137",
-    "name": "Ziaire Williams",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null
-   }
-  ],
-  "MIA": [
-   {
-    "pid": "4066261",
-    "name": "Bam Adebayo",
-    "team": "MIA",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "3032977",
-    "name": "Giannis Antetokounmpo",
-    "team": "MIA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5107157",
-    "name": "Ryan Conwell",
-    "team": "MIA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4837356",
-    "name": "Tre Donaldson",
-    "team": "MIA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3899664",
-    "name": "Simone Fontecchio",
-    "team": "MIA",
-    "pos": "F",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "4431772",
-    "name": "Myron Gardner",
-    "team": "MIA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4700818",
-    "name": "Vladislav Goldin",
-    "team": "MIA",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "2528210",
-    "name": "Tim Hardaway Jr.",
-    "team": "MIA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4431786",
-    "name": "Keshad Johnson",
-    "team": "MIA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4997528",
-    "name": "Nikola Jovic",
-    "team": "MIA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4601025",
-    "name": "Pelle Larsson",
-    "team": "MIA",
-    "pos": "G",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "4278053",
-    "name": "Davion Mitchell",
-    "team": "MIA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3064482",
-    "name": "Bobby Portis",
-    "team": "MIA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4278076",
-    "name": "Nick Richards",
-    "team": "MIA",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4066993",
-    "name": "Dru Smith",
-    "team": "MIA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "6475",
-    "name": "Klay Thompson",
-    "team": "MIA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3059319",
-    "name": "Andrew Wiggins",
-    "team": "MIA",
-    "pos": "F",
-    "injury": null
-   }
-  ],
-  "MIL": [
-   {
-    "pid": "5164559",
-    "name": "Nate Ament",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5082206",
-    "name": "Brayden Burries",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4997526",
-    "name": "Ousmane Dieng",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4397475",
-    "name": "AJ Green",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4395725",
-    "name": "Tyler Herro",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5214640",
-    "name": "Kasparas Jakucionis",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4432848",
-    "name": "Jaime Jaquez Jr.",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4697268",
-    "name": "Kam Jones",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3134907",
-    "name": "Kyle Kuzma",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "2991043",
-    "name": "Caris LeVert",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5214989",
-    "name": "Bogoljub Markovic",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4397233",
-    "name": "Pete Nance",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4591725",
-    "name": "Ryan Rollins",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4397114",
-    "name": "Cormac Ryan",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4277922",
-    "name": "Jericho Sims",
-    "team": "MIL",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4277843",
-    "name": "Gary Trent Jr.",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3133628",
-    "name": "Myles Turner",
-    "team": "MIL",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "5105623",
-    "name": "Kel'el Ware",
-    "team": "MIL",
-    "pos": "C",
-    "injury": null
-   }
-  ],
-  "MIN": [
-   {
-    "pid": "4432816",
-    "name": "LaMelo Ball",
-    "team": "MIN",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5279133",
-    "name": "Joan Beringer",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4432247",
-    "name": "Jaylen Clark",
-    "team": "MIN",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3934673",
-    "name": "Donte DiVincenzo",
-    "team": "MIN",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "4397002",
-    "name": "Ayo Dosunmu",
-    "team": "MIN",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4594268",
-    "name": "Anthony Edwards",
-    "team": "MIN",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "5061585",
-    "name": "Isaiah Evans",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4592699",
-    "name": "Enrique Freeman",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3032976",
-    "name": "Rudy Gobert",
-    "team": "MIN",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4592492",
-    "name": "Bones Hyland",
-    "team": "MIN",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4433247",
-    "name": "Jonathan Kuminga",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3136196",
-    "name": "Trey Lyles",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4431671",
-    "name": "Jaden McDaniels",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4592979",
-    "name": "Zyon Pullin",
-    "team": "MIN",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4432847",
-    "name": "Terrence Shannon Jr.",
-    "team": "MIN",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4895758",
-    "name": "Cody Williams",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5157587",
-    "name": "Rocco Zikarsky",
-    "team": "MIN",
-    "pos": "C",
     "injury": null
    }
   ],
@@ -1972,986 +485,246 @@
     "injury": null
    }
   ],
-  "NY": [
+  "POR": [
    {
-    "pid": "4683730",
-    "name": "Jaden Akins",
-    "team": "NY",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4277869",
-    "name": "Jose Alvarado",
-    "team": "NY",
-    "pos": "G",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "3934719",
-    "name": "OG Anunoby",
-    "team": "NY",
+    "pid": "4683021",
+    "name": "Deni Avdija",
+    "team": "POR",
     "pos": "F",
     "injury": null
    },
    {
-    "pid": "3147657",
-    "name": "Mikal Bridges",
-    "team": "NY",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3934672",
-    "name": "Jalen Brunson",
-    "team": "NY",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "2528426",
-    "name": "Jordan Clarkson",
-    "team": "NY",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5211983",
-    "name": "Pacome Dadiet",
-    "team": "NY",
+    "pid": "4431736",
+    "name": "Toumani Camara",
+    "team": "POR",
     "pos": "F",
     "injury": null
    },
    {
-    "pid": "5289900",
-    "name": "Mohamed Diawara",
-    "team": "NY",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "6585",
-    "name": "Andre Drummond",
-    "team": "NY",
+    "pid": "4592435",
+    "name": "Branden Carlson",
+    "team": "POR",
     "pos": "C",
     "injury": null
    },
    {
-    "pid": "3062679",
-    "name": "Josh Hart",
-    "team": "NY",
+    "pid": "5081727",
+    "name": "Sidy Cissoko",
+    "team": "POR",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "4897943",
-    "name": "Dalton Knecht",
-    "team": "NY",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4433225",
-    "name": "Tyler Kolek",
-    "team": "NY",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4431823",
-    "name": "Miles McBride",
-    "team": "NY",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4838721",
-    "name": "Tyler Nickel",
-    "team": "NY",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3914044",
-    "name": "Landry Shamet",
-    "team": "NY",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3136195",
-    "name": "Karl-Anthony Towns",
-    "team": "NY",
+    "pid": "5105565",
+    "name": "Donovan Clingan",
+    "team": "POR",
     "pos": "C",
     "injury": null
    },
    {
-    "pid": "4432808",
-    "name": "James Wiseman",
-    "team": "NY",
-    "pos": "C",
-    "injury": null
-   }
-  ],
-  "OKC": [
-   {
-    "pid": "4684208",
-    "name": "Brooks Barnhizer",
-    "team": "OKC",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "2991350",
-    "name": "Alex Caruso",
-    "team": "OKC",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "5105800",
-    "name": "Josh Dix",
-    "team": "OKC",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4278073",
-    "name": "Shai Gilgeous-Alexander",
-    "team": "OKC",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4222252",
-    "name": "Isaiah Hartenstein",
-    "team": "OKC",
+    "pid": "5217746",
+    "name": "Yang Hansen",
+    "team": "POR",
     "pos": "C",
     "injury": null
    },
    {
-    "pid": "4433255",
-    "name": "Chet Holmgren",
-    "team": "OKC",
-    "pos": "C",
-    "injury": "Out"
-   },
-   {
-    "pid": "5174983",
-    "name": "Aday Mara",
-    "team": "OKC",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4683778",
-    "name": "Jared McCain",
-    "team": "OKC",
+    "pid": "4683678",
+    "name": "Scoot Henderson",
+    "team": "POR",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "4900671",
-    "name": "Ajay Mitchell",
-    "team": "OKC",
-    "pos": "G",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "5106270",
-    "name": "Otega Oweh",
-    "team": "OKC",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "4432185",
-    "name": "Micah Peavy",
-    "team": "OKC",
+    "pid": "3995",
+    "name": "Jrue Holiday",
+    "team": "POR",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "5061603",
-    "name": "Thomas Sorber",
-    "team": "OKC",
-    "pos": "C",
-    "injury": "Out"
-   },
-   {
-    "pid": "5241364",
-    "name": "Bennett Stirtz",
-    "team": "OKC",
+    "pid": "4703889",
+    "name": "Jayson Kent",
+    "team": "POR",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "5159925",
-    "name": "Nikola Topic",
-    "team": "OKC",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "4683692",
-    "name": "Cason Wallace",
-    "team": "OKC",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "4593803",
-    "name": "Jalen Williams",
-    "team": "OKC",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "4432823",
-    "name": "Jaylin Williams",
-    "team": "OKC",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3133626",
-    "name": "Kenrich Williams",
-    "team": "OKC",
-    "pos": "G",
-    "injury": null
-   }
-  ],
-  "ORL": [
-   {
-    "pid": "4432573",
-    "name": "Paolo Banchero",
-    "team": "ORL",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "4066320",
-    "name": "Desmond Bane",
-    "team": "ORL",
+    "pid": "4578893",
+    "name": "Vit Krejci",
+    "team": "POR",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "4348700",
-    "name": "Goga Bitadze",
-    "team": "ORL",
+    "pid": "6606",
+    "name": "Damian Lillard",
+    "team": "POR",
+    "pos": "G",
+    "injury": null
+   },
+   {
+    "pid": "4279888",
+    "name": "Ja Morant",
+    "team": "POR",
+    "pos": "G",
+    "injury": null
+   },
+   {
+    "pid": "4066399",
+    "name": "Micah Potter",
+    "team": "POR",
     "pos": "C",
     "injury": null
    },
    {
-    "pid": "4712849",
-    "name": "Anthony Black",
-    "team": "ORL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4278572",
-    "name": "Jamal Cain",
-    "team": "ORL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3133635",
-    "name": "Jevon Carter",
-    "team": "ORL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4277847",
-    "name": "Wendell Carter Jr.",
-    "team": "ORL",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4397204",
-    "name": "Colin Castleton",
-    "team": "ORL",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4702382",
-    "name": "Tristan da Silva",
-    "team": "ORL",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4065654",
-    "name": "Jonathan Isaac",
-    "team": "ORL",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "4593034",
-    "name": "Alex Morales",
-    "team": "ORL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5107251",
-    "name": "Izaiyah Nelson",
-    "team": "ORL",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "5214637",
-    "name": "Noah Penda",
-    "team": "ORL",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "5239561",
-    "name": "Jase Richardson",
-    "team": "ORL",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4432165",
-    "name": "Jalen Suggs",
-    "team": "ORL",
+    "pid": "4914336",
+    "name": "Shaedon Sharpe",
+    "team": "POR",
     "pos": "G",
     "injury": "Out"
    },
    {
-    "pid": "6478",
-    "name": "Nikola Vucevic",
-    "team": "ORL",
+    "pid": "4593043",
+    "name": "John Tonje",
+    "team": "POR",
+    "pos": "F",
+    "injury": null
+   },
+   {
+    "pid": "4066211",
+    "name": "Robert Williams III",
+    "team": "POR",
     "pos": "C",
     "injury": null
    },
    {
-    "pid": "4566434",
-    "name": "Franz Wagner",
-    "team": "ORL",
-    "pos": "F",
-    "injury": null
-   }
-  ],
-  "PHI": [
-   {
-    "pid": "4870562",
-    "name": "Dominick Barlow",
-    "team": "PHI",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "5105637",
-    "name": "Adem Bona",
-    "team": "PHI",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "3917376",
-    "name": "Jaylen Brown",
-    "team": "PHI",
+    "pid": "4706557",
+    "name": "Chris Youngblood",
+    "team": "POR",
     "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "2581018",
-    "name": "Kentavious Caldwell-Pope",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5124612",
-    "name": "VJ Edgecombe",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4711297",
-    "name": "Justin Edwards",
-    "team": "PHI",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3059318",
-    "name": "Joel Embiid",
-    "team": "PHI",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "3904625",
-    "name": "Tacko Fall",
-    "team": "PHI",
-    "pos": "C",
-    "injury": "Out"
-   },
-   {
-    "pid": "4871141",
-    "name": "Ariel Hukporti",
-    "team": "PHI",
-    "pos": "C",
-    "injury": "Out"
-   },
-   {
-    "pid": "1966",
-    "name": "LeBron James",
-    "team": "PHI",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4433144",
-    "name": "Caleb Love",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4431678",
-    "name": "Tyrese Maxey",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4873090",
-    "name": "Labaron Philon Jr.",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5099752",
-    "name": "Rayan Rupert",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4351851",
-    "name": "Anfernee Simons",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "3912848",
-    "name": "Dean Wade",
-    "team": "PHI",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4432446",
-    "name": "Jabari Walker",
-    "team": "PHI",
-    "pos": "F",
     "injury": "Out"
    }
   ],
-  "SA": [
+  "SAC": [
    {
-    "pid": "6578",
-    "name": "Harrison Barnes",
-    "team": "SA",
+    "pid": "4431679",
+    "name": "Precious Achiuwa",
+    "team": "SAC",
     "pos": "F",
     "injury": null
    },
    {
-    "pid": "5105337",
-    "name": "Maliq Brown",
-    "team": "SA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5061568",
-    "name": "Carter Bryant",
-    "team": "SA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4845367",
-    "name": "Stephon Castle",
-    "team": "SA",
+    "pid": "5142620",
+    "name": "Darius Acuff Jr.",
+    "team": "SAC",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "4592479",
-    "name": "Julian Champagnie",
-    "team": "SA",
+    "pid": "4395650",
+    "name": "Leaky Black",
+    "team": "SAC",
     "pos": "F",
     "injury": null
    },
    {
-    "pid": "4066259",
-    "name": "De'Aaron Fox",
-    "team": "SA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5107968",
-    "name": "Ja'Kobi Gillespie",
-    "team": "SA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5037871",
-    "name": "Dylan Harper",
-    "team": "SA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "6440",
-    "name": "Tobias Harris",
-    "team": "SA",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "4395723",
-    "name": "Keldon Johnson",
-    "team": "SA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4713010",
-    "name": "David Jones Garcia",
-    "team": "SA",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "3064560",
-    "name": "Luke Kornet",
-    "team": "SA",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "3134916",
-    "name": "Jordan McLaughlin",
-    "team": "SA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5101845",
-    "name": "Jayden Quaintance",
-    "team": "SA",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "5105809",
-    "name": "Tarris Reed Jr.",
-    "team": "SA",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4395630",
-    "name": "Devin Vassell",
-    "team": "SA",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5104157",
-    "name": "Victor Wembanyama",
-    "team": "SA",
-    "pos": "F",
-    "injury": null
-   }
-  ],
-  "TOR": [
-   {
-    "pid": "2993874",
-    "name": "Kyle Anderson",
-    "team": "TOR",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4433134",
-    "name": "Scottie Barnes",
-    "team": "TOR",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4395625",
-    "name": "RJ Barrett",
-    "team": "TOR",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4431893",
-    "name": "Jamison Battle",
-    "team": "TOR",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4432586",
-    "name": "Nate Bittle",
-    "team": "TOR",
+    "pid": "4433174",
+    "name": "Dylan Cardwell",
+    "team": "SAC",
     "pos": "C",
     "injury": "Out"
    },
    {
-    "pid": "4432737",
-    "name": "Jaden Bradley",
-    "team": "TOR",
+    "pid": "4702384",
+    "name": "Nique Clifford",
+    "team": "SAC",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "5149115",
-    "name": "Allen Graves",
-    "team": "TOR",
+    "pid": "4065732",
+    "name": "De'Andre Hunter",
+    "team": "SAC",
     "pos": "F",
     "injury": null
    },
    {
-    "pid": "4431684",
-    "name": "Trayce Jackson-Davis",
-    "team": "TOR",
+    "pid": "4917149",
+    "name": "Alex Karaban",
+    "team": "SAC",
     "pos": "F",
     "injury": null
    },
    {
-    "pid": "6450",
-    "name": "Kawhi Leonard",
-    "team": "TOR",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "4702656",
-    "name": "Alijah Martin",
-    "team": "TOR",
+    "pid": "3064440",
+    "name": "Zach LaVine",
+    "team": "SAC",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "5093267",
-    "name": "Collin Murray-Boyles",
-    "team": "TOR",
+    "pid": "5107897",
+    "name": "Jonathan Mogbo",
+    "team": "SAC",
     "pos": "F",
     "injury": null
    },
    {
-    "pid": "3134908",
-    "name": "Jakob Poeltl",
-    "team": "TOR",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4395724",
-    "name": "Immanuel Quickley",
-    "team": "TOR",
+    "pid": "4066262",
+    "name": "Malik Monk",
+    "team": "SAC",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "4432241",
-    "name": "Jamal Shead",
-    "team": "TOR",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4397784",
-    "name": "Malachi Smith",
-    "team": "TOR",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4684272",
-    "name": "Ja'Kobe Walter",
-    "team": "TOR",
-    "pos": "G",
-    "injury": null
-   }
-  ],
-  "UTAH": [
-   {
-    "pid": "4433268",
-    "name": "Trey Alexander",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": "Out"
-   },
-   {
-    "pid": "4873138",
-    "name": "Ace Bailey",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4277919",
-    "name": "Mo Bamba",
-    "team": "UTAH",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4065673",
-    "name": "Tony Bradley",
-    "team": "UTAH",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4683766",
-    "name": "Isaiah Collier",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4684793",
-    "name": "Kyle Filipowski",
-    "team": "UTAH",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4433627",
-    "name": "Keyonte George",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4432811",
-    "name": "Josh Green",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4397077",
-    "name": "Jaxson Hayes",
-    "team": "UTAH",
-    "pos": "C",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "4396963",
-    "name": "Blake Hinson",
-    "team": "UTAH",
+    "pid": "4594327",
+    "name": "Keegan Murray",
+    "team": "SAC",
     "pos": "F",
     "injury": "Out"
    },
    {
-    "pid": "4433618",
-    "name": "Harrison Ingram",
-    "team": "UTAH",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "4277961",
-    "name": "Jaren Jackson Jr.",
-    "team": "UTAH",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "4066336",
-    "name": "Lauri Markkanen",
-    "team": "UTAH",
-    "pos": "F",
-    "injury": "Day-To-Day"
-   },
-   {
-    "pid": "3133602",
-    "name": "Svi Mykhailiuk",
-    "team": "UTAH",
+    "pid": "4709131",
+    "name": "Sean Pedulla",
+    "team": "SAC",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "3102530",
-    "name": "Jusuf Nurkic",
-    "team": "UTAH",
+    "pid": "4279318",
+    "name": "Daeqwon Plowden",
+    "team": "SAC",
+    "pos": "G",
+    "injury": null
+   },
+   {
+    "pid": "4898371",
+    "name": "Maxime Raynaud",
+    "team": "SAC",
     "pos": "C",
     "injury": "Out"
    },
    {
-    "pid": "4065663",
-    "name": "Josh Okogie",
-    "team": "UTAH",
+    "pid": "3155942",
+    "name": "Domantas Sabonis",
+    "team": "SAC",
+    "pos": "F",
+    "injury": null
+   },
+   {
+    "pid": "5106058",
+    "name": "Emanuel Sharp",
+    "team": "SAC",
     "pos": "G",
     "injury": null
    },
    {
-    "pid": "5041955",
-    "name": "Darryn Peterson",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5105839",
-    "name": "Brice Sensabaugh",
-    "team": "UTAH",
-    "pos": "F",
-    "injury": null
-   }
-  ],
-  "WSH": [
-   {
-    "pid": "4278129",
-    "name": "Deandre Ayton",
-    "team": "WSH",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4432187",
-    "name": "Reece Beekman",
-    "team": "WSH",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4845374",
-    "name": "Bub Carrington",
-    "team": "WSH",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4432907",
-    "name": "Justin Champagnie",
-    "team": "WSH",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "5104155",
-    "name": "Bilal Coulibaly",
-    "team": "WSH",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "6583",
-    "name": "Anthony Davis",
-    "team": "WSH",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5142718",
-    "name": "AJ Dybantsa",
-    "team": "WSH",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "5174563",
-    "name": "Kyshawn George",
-    "team": "WSH",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "2581184",
-    "name": "Anthony Gill",
-    "team": "WSH",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5238230",
-    "name": "Tre Johnson",
-    "team": "WSH",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "4432819",
-    "name": "Tre Mann",
-    "team": "WSH",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "6609",
-    "name": "Khris Middleton",
-    "team": "WSH",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5105841",
-    "name": "Felix Okpara",
-    "team": "WSH",
-    "pos": "F",
-    "injury": null
-   },
-   {
-    "pid": "5144126",
-    "name": "Will Riley",
-    "team": "WSH",
-    "pos": "G",
-    "injury": null
-   },
-   {
-    "pid": "5160992",
-    "name": "Alex Sarr",
-    "team": "WSH",
-    "pos": "C",
-    "injury": null
-   },
-   {
-    "pid": "4997537",
-    "name": "Tristan Vukcevic",
-    "team": "WSH",
-    "pos": "F",
-    "injury": "Out"
-   },
-   {
-    "pid": "4606840",
-    "name": "Jamir Watkins",
-    "team": "WSH",
+    "pid": "3907387",
+    "name": "Ben Simmons",
+    "team": "SAC",
     "pos": "G",
     "injury": "Out"
-   },
-   {
-    "pid": "4277905",
-    "name": "Trae Young",
-    "team": "WSH",
-    "pos": "G",
-    "injury": null
    }
   ]
  }
