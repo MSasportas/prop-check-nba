@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T01:30:01-04:00",
+ "at": "2026-10-29T12:00:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -533,19 +533,19 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
+  "6450": {
+   "status": "out",
+   "name": "Kawhi Leonard",
+   "team": "TOR",
+   "date": "2026-10-29T15:39Z",
+   "note": "Leonard (knee) is expected to be sidelined for at least three to four weeks, Chris Haynes of NBA TV reports."
+  },
   "4432586": {
    "status": "out",
    "name": "Nate Bittle",
    "team": "TOR",
    "date": "2026-10-27T19:31Z",
    "note": "Bittle (foot) has been ruled out for Wednesday's game against the Magic, Cody Taylor of USA Today reports."
-  },
-  "6450": {
-   "status": "out",
-   "name": "Kawhi Leonard",
-   "team": "TOR",
-   "date": "2026-10-27T15:31Z",
-   "note": "Leonard (knee) is expected to miss multiple weeks due to swelling in his left knee, Shams Charania of ESPN reports."
   },
   "4066336": {
    "status": "day-to-day",
