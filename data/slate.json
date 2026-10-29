@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2587,
+   "pool_left": 2579,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-29T19:40:00-04:00",
-  "last_read_at": "2026-10-29T19:20:00-04:00",
+  "next_read_at": "2026-10-29T20:30:00-04:00",
+  "last_read_at": "2026-10-29T19:40:01-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-29T19:30:01-04:00"
+   "at": "2026-10-29T19:40:01-04:00"
   }
  },
  "games": [
@@ -35,9 +35,9 @@
    "detail": "10/29 - 8:00 PM EDT",
    "lineups": {
     "away": "confirmed",
-    "home": "expected"
+    "home": "confirmed"
    },
-   "read_at": "2026-10-29T19:20:00-04:00",
+   "read_at": "2026-10-29T19:40:01-04:00",
    "picks": 1
   },
   {
@@ -48,10 +48,10 @@
    "state": "pre",
    "detail": "10/29 - 8:00 PM EDT",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-10-29T19:20:00-04:00",
+   "read_at": "2026-10-29T19:40:01-04:00",
    "picks": 0
   },
   {
@@ -107,9 +107,9 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0249,
    "id": "2026-10-29:401909893:4431680:threes:1.5:over",
-   "state": "clear",
-   "state_label": "Injury report clear",
-   "price_final": false,
+   "state": "starters",
+   "state_label": "Starters confirmed",
+   "price_final": true,
    "pulled": null,
    "result": null,
    "rank": 1
@@ -127,6 +127,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-29T19:30:01-04:00",
- "status_at": "2026-10-29T19:30:01-04:00"
+ "generated_at": "2026-10-29T19:40:01-04:00",
+ "status_at": "2026-10-29T19:40:01-04:00"
 }
