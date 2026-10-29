@@ -65,3 +65,18 @@
 {"at":"2026-10-28T19:50:01-04:00","id":"2026-10-28:401909886:3062679:points:11.5:under","state":"starters","t":"state"}
 {"at":"2026-10-28T19:50:01-04:00","id":"2026-10-28:401909889:3907497:points:17.5:under","state":"starters","t":"state"}
 {"at":"2026-10-28T19:50:01-04:00","id":"2026-10-28:401909886:3147657:rebounds:3.5:under","state":"starters","t":"state"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909891:4683778:threes:2.5:under","kind":"single","pick":{"bet":"Under 2.5 threes","breakeven":0.4444,"breakeven_pct":44,"ev_vs_pin":0.0117,"final_ev":0.0326,"game_id":"401909891","gap_vs_pin":0.0363,"home":false,"line":2.5,"link":"https://app.hardrock.bet/?deep_link_value=betslip/2094509055296012695","market":"threes","n_books":5,"n_others":5,"opp":"DAL","others_move":0.0046,"p":0.4496,"p_pct":45,"pid":"4683778","pin_after":0.4496,"pin_before":0.417,"pin_price_after":108,"pin_price_before":124,"player":"Jared McCain","price":125,"price_at":"2026-10-28T20:00:00-04:00","read":"B","reason":"Pinnacle moved the under from +124 to +108 (42% to 45%); 5 other books held. Hard Rock price: +125, 3.6 pts better than Pinnacle's.","rule":"pin_solo","side":"under","start":"2026-10-28T21:30:00-04:00","state":"early","team":"OKC","window":"11 AM \u2192 90 min"},"slate":"2026-10-28","t":"shown"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909886:4871145:rebounds:6.5:over","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909886:3062679:points:11.5:under","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909887:4684740:rebounds:8.5:under","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909888:3032976:points:10.5:over","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909888:4397002:rebounds:4.5:under","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909889:3907497:points:17.5:under","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909887:4591725:assists:4.5:under","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909888:6589:rebounds:5.5:under","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909888:4432816:points:22.5:under","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909887:3133628:rebounds:5.5:under","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909886:3147657:rebounds:3.5:under","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909888:6589:threes:1.5:under","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909887:4432639:points:15.5:over","state":"locked","t":"locked"}
+{"at":"2026-10-28T20:00:00-04:00","id":"2026-10-28:401909887:4432848:points:14.5:under","state":"locked","t":"locked"}

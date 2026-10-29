@@ -1,5 +1,5 @@
 {
- "at": "2026-10-28T19:50:01-04:00",
+ "at": "2026-10-28T20:00:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -358,6 +358,13 @@
    "date": "2026-10-28T18:19Z",
    "note": "Alvarado (ankle) is out for Wednesday's game against the Bulls."
   },
+  "4593803": {
+   "status": "out",
+   "name": "Jalen Williams",
+   "team": "OKC",
+   "date": "2026-10-28T23:41Z",
+   "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
+  },
   "2991350": {
    "status": "out",
    "name": "Alex Caruso",
@@ -392,13 +399,6 @@
    "team": "OKC",
    "date": "2026-10-27T21:35Z",
    "note": "Mitchell (ankle) is questionable for Wednesday's game against Dallas."
-  },
-  "4593803": {
-   "status": "out",
-   "name": "Jalen Williams",
-   "team": "OKC",
-   "date": "2026-10-26T22:07Z",
-   "note": "Williams has been diagnosed with a dislocated left ankle and fractured fibula, which will require surgery, Shams Charania of ESPN reports."
   },
   "4683692": {
    "status": "out",

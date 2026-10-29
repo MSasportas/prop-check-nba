@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T19:50:01-04:00",
+ "generated_at": "2026-10-28T20:00:00-04:00",
  "summary": {
   "headline": {
    "w": 0,
@@ -720,6 +720,30 @@
       {
        "price": -110,
        "at": "2026-10-28T19:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
+    },
+    {
+     "id": "2026-10-28:401909891:4683778:threes:2.5:under",
+     "kind": "single",
+     "player": "Jared McCain",
+     "bet": "Under 2.5 threes",
+     "market": "threes",
+     "team": "OKC",
+     "game": "OKC at DAL",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
+       "at": "2026-10-28T20:00:00-04:00"
       }
      ],
      "result": null,

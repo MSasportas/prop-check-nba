@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2647,
+   "pool_left": 2643,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-28T20:00:00-04:00",
-  "last_read_at": "2026-10-28T19:40:00-04:00",
+  "next_read_at": "2026-10-28T20:15:00-04:00",
+  "last_read_at": "2026-10-28T20:00:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-28T19:50:01-04:00"
+   "at": "2026-10-28T20:00:00-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "MIA",
    "home": "ATL",
    "state": "in",
-   "detail": "7:03 - 2nd",
+   "detail": "2:21 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -46,7 +46,7 @@
    "away": "WAS",
    "home": "CLE",
    "state": "in",
-   "detail": "9:13 - 2nd",
+   "detail": "3:29 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "CHA",
    "home": "DET",
    "state": "in",
-   "detail": "9:53 - 2nd",
+   "detail": "5:44 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "PHI",
    "home": "IND",
    "state": "in",
-   "detail": "0.0 - 2nd",
+   "detail": "8:43 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "ORL",
    "home": "TOR",
    "state": "in",
-   "detail": "8:25 - 1st",
+   "detail": "4:17 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -177,8 +177,8 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-28T11:00:01-04:00",
-   "picks": 0
+   "read_at": "2026-10-28T20:00:00-04:00",
+   "picks": 1
   },
   {
    "id": "401909892",
@@ -221,7 +221,7 @@
    "final_ev": 0.0667,
    "model_p": null,
    "reason": "Pinnacle moved the under from -127 to -171 (52% to 59%); 8 other books held. Hard Rock price: -140, 4.8 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/2642983457101316517",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.5232,
    "pin_after": 0.5899,
@@ -233,12 +233,12 @@
    "window": "90 \u2192 45 min",
    "gap_vs_pin": 0.0477,
    "id": "2026-10-28:401909888:6589:rebounds:5.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 1
+   "rank": null
   },
   {
    "player": "LaMelo Ball",
@@ -265,7 +265,7 @@
    "final_ev": 0.0615,
    "model_p": null,
    "reason": "Pinnacle moved the under from -110 to -143 (49% to 55%); 7 other books held. Hard Rock price: -120, 4.3 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/273197995913249167",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.4889,
    "pin_after": 0.5504,
@@ -277,12 +277,12 @@
    "window": "90 \u2192 45 min",
    "gap_vs_pin": 0.043,
    "id": "2026-10-28:401909888:4432816:points:22.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 2
+   "rank": null
   },
   {
    "player": "Josh Giddey",
@@ -309,7 +309,7 @@
    "final_ev": 0.052,
    "model_p": null,
    "reason": "Pinnacle moved the over from +120 to -104 (42% to 48%); 7 other books held. Hard Rock price: +115, 4.5 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4427096182690546068",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.4248,
    "pin_after": 0.4768,
@@ -321,12 +321,12 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0447,
    "id": "2026-10-28:401909886:4871145:rebounds:6.5:over",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 3
+   "rank": null
   },
   {
    "player": "Trae Young",
@@ -529,7 +529,7 @@
    "final_ev": 0.0441,
    "model_p": null,
    "reason": "Pinnacle moved the under from -140 to -171 (55% to 59%); 8 other books held. Hard Rock price: -140, 4.8 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/1123266725673042321",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.5458,
    "pin_after": 0.5899,
@@ -541,12 +541,12 @@
    "window": "90 \u2192 45 min",
    "gap_vs_pin": 0.0477,
    "id": "2026-10-28:401909887:3133628:rebounds:5.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 4
+   "rank": null
   },
   {
    "player": "Bam Adebayo",
@@ -617,7 +617,7 @@
    "final_ev": 0.0374,
    "model_p": null,
    "reason": "Pinnacle moved the under from -102 to -120 (47% to 51%); 6 other books moved 1 pt. Hard Rock price: -110, 2.2 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/6397201667095396750",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.4727,
    "pin_after": 0.5101,
@@ -629,12 +629,12 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0216,
    "id": "2026-10-28:401909886:3062679:points:11.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 5
+   "rank": null
   },
   {
    "player": "Amen Thompson",
@@ -661,7 +661,7 @@
    "final_ev": 0.0373,
    "model_p": null,
    "reason": "Pinnacle moved the under from -136 to -160 (54% to 58%); 7 other books moved 1 pt. Hard Rock price: -135, 4.1 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/6176318293700379020",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.5379,
    "pin_after": 0.5752,
@@ -673,12 +673,12 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0409,
    "id": "2026-10-28:401909887:4684740:rebounds:8.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 6
+   "rank": null
   },
   {
    "player": "Anthony Davis",
@@ -793,7 +793,7 @@
    "final_ev": 0.0342,
    "model_p": null,
    "reason": "Pinnacle moved the over from -104 to -120 (48% to 51%); 5 other books held. Hard Rock price: -110, 2.2 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7203006369413333391",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.4759,
    "pin_after": 0.5101,
@@ -805,12 +805,56 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0216,
    "id": "2026-10-28:401909888:3032976:points:10.5:over",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 7
+   "rank": null
+  },
+  {
+   "player": "Jared McCain",
+   "pid": "4683778",
+   "team": "OKC",
+   "opp": "DAL",
+   "home": false,
+   "game_id": "401909891",
+   "start": "2026-10-28T21:30:00-04:00",
+   "bet": "Under 2.5 threes",
+   "market": "threes",
+   "side": "under",
+   "line": 2.5,
+   "price": 125,
+   "price_at": "2026-10-28T20:00:00-04:00",
+   "read": "B",
+   "p": 0.4496,
+   "p_pct": 45,
+   "breakeven": 0.4444,
+   "breakeven_pct": 44,
+   "market_fair": null,
+   "n_books": 5,
+   "gap_ev": null,
+   "final_ev": 0.0326,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from +124 to +108 (42% to 45%); 5 other books held. Hard Rock price: +125, 3.6 pts better than Pinnacle's.",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/2094509055296012695",
+   "rule": "pin_solo",
+   "pin_before": 0.417,
+   "pin_after": 0.4496,
+   "pin_price_before": 124,
+   "pin_price_after": 108,
+   "others_move": 0.0046,
+   "n_others": 5,
+   "ev_vs_pin": 0.0117,
+   "window": "11 AM \u2192 90 min",
+   "gap_vs_pin": 0.0363,
+   "id": "2026-10-28:401909891:4683778:threes:2.5:under",
+   "state": "early",
+   "state_label": "Early",
+   "price_final": false,
+   "pulled": null,
+   "result": null,
+   "rank": 1
   },
   {
    "player": "Anthony Black",
@@ -898,7 +942,7 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 8
+   "rank": 2
   },
   {
    "player": "Mikal Bridges",
@@ -925,7 +969,7 @@
    "final_ev": 0.0312,
    "model_p": null,
    "reason": "Pinnacle moved the under from -125 to -143 (52% to 55%); 8 other books held. Hard Rock price: -130, 2.3 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4237170315089805715",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.5192,
    "pin_after": 0.5504,
@@ -937,12 +981,12 @@
    "window": "90 \u2192 45 min",
    "gap_vs_pin": 0.0233,
    "id": "2026-10-28:401909886:3147657:rebounds:3.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 9
+   "rank": null
   },
   {
    "player": "Ayo Dosunmu",
@@ -969,7 +1013,7 @@
    "final_ev": 0.0298,
    "model_p": null,
    "reason": "Pinnacle moved the under from -146 to -167 (55% to 58%); 8 other books held. Hard Rock price: -145, 3.4 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/3011007197040738710",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.5548,
    "pin_after": 0.5846,
@@ -981,12 +1025,12 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0336,
    "id": "2026-10-28:401909888:4397002:rebounds:4.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 10
+   "rank": null
   },
   {
    "player": "Draymond Green",
@@ -1013,7 +1057,7 @@
    "final_ev": 0.0281,
    "model_p": null,
    "reason": "Pinnacle moved the under from -191 to -219 (61% to 64%); 7 other books moved 1 pt. Hard Rock price: -195, 2.5 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/6921859881465151875",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.6137,
    "pin_after": 0.6418,
@@ -1025,12 +1069,12 @@
    "window": "90 \u2192 45 min",
    "gap_vs_pin": 0.0255,
    "id": "2026-10-28:401909888:6589:threes:1.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 11
+   "rank": null
   },
   {
    "player": "Tyrese Maxey",
@@ -1101,7 +1145,7 @@
    "final_ev": 0.0279,
    "model_p": null,
    "reason": "Pinnacle moved the under from -127 to -144 (52% to 55%); 7 other books held. Hard Rock price: -120, 4.5 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/3343114035670417811",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.5232,
    "pin_after": 0.5511,
@@ -1113,12 +1157,12 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0447,
    "id": "2026-10-28:401909889:3907497:points:17.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 12
+   "rank": null
   },
   {
    "player": "C.J. McCollum",
@@ -1189,7 +1233,7 @@
    "final_ev": 0.0244,
    "model_p": null,
    "reason": "Pinnacle moved the over from -142 to -158 (55% to 57%); 8 other books held. Hard Rock price: -130, 4.7 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/6178699144396407191",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.5485,
    "pin_after": 0.5729,
@@ -1201,12 +1245,12 @@
    "window": "90 \u2192 45 min",
    "gap_vs_pin": 0.0472,
    "id": "2026-10-28:401909887:4432639:points:15.5:over",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 13
+   "rank": null
   },
   {
    "player": "Ryan Rollins",
@@ -1233,7 +1277,7 @@
    "final_ev": 0.0241,
    "model_p": null,
    "reason": "Pinnacle moved the under from -144 to -160 (55% to 58%); 7 other books held. Hard Rock price: -145, 2.4 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/6324763207168819623",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.5511,
    "pin_after": 0.5752,
@@ -1245,12 +1289,12 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0235,
    "id": "2026-10-28:401909887:4591725:assists:4.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 14
+   "rank": null
   },
   {
    "player": "Donovan Mitchell",
@@ -1325,7 +1369,7 @@
    "final_ev": 0.0207,
    "model_p": null,
    "reason": "Pinnacle moved the under from -132 to -145 (53% to 55%); 5 other books held. Hard Rock price: -125, 3.6 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/3816948167933559191",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.5323,
    "pin_after": 0.553,
@@ -1337,18 +1381,18 @@
    "window": "90 \u2192 45 min",
    "gap_vs_pin": 0.0363,
    "id": "2026-10-28:401909887:4432848:points:14.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 15
+   "rank": null
   }
  ],
  "empty": null,
  "counts": {
-  "lines_read": 1020,
-  "passing": 26,
+  "lines_read": 1032,
+  "passing": 27,
   "games": 12
  },
  "safety_paused": false,
@@ -1357,6 +1401,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-28T19:50:01-04:00",
- "status_at": "2026-10-28T19:50:01-04:00"
+ "generated_at": "2026-10-28T20:00:00-04:00",
+ "status_at": "2026-10-28T20:00:00-04:00"
 }
