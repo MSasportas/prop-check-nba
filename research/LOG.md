@@ -10,9 +10,11 @@ Code: research/code/run7_reduce.py; the 74 scored bets: research/run7_population
   13 of 45 (9-4). So a quiet night leaves 1-2 picks and a busy one ~13. The edge threshold is not a smooth gradient (>= -1%: +30.9%,
   >= 0%: +44.5%, >= +1%: +35.6% on 10 bets), and the picks it cuts still made money, so on units alone cutting costs ~3.7u of
   discovery profit; the case for it is per-pick quality and theory, not units.
-- S2 (Pinnacle's new fair minus Hard Rock's break-even minus 1.5 pts of noise > 0): keeps NOTHING. In plain words: almost every
-  live pick is priced worse than the sharp number says is fair. They win only if Pinnacle's move keeps running (the book is still
-  catching up to news), not because the price is a bargain. The 16 in S1 are the exceptions.
+- S2 (Pinnacle's new fair minus Hard Rock's break-even minus 1.5 pts of noise > 0): keeps NOTHING. In plain words: Pinnacle's POSTED
+  price carries its own margin, so beating it by 2 pts (the v2.2 gate) lands near its FAIR number, not past it. Of the 40 live-rule
+  bets, 16 are at or better than fair (S1) and 24 are 0-3 pts under it (all 40 within 3 pts). Those 24 win only if Pinnacle's move keeps
+  running (the book catching up to news), not because the price is a bargain. S2 keeps none because it asks for 1.5 pts of cushion
+  past fair. (First version of this line said 'almost every live pick'; that fit the 74-bet population, not the 40 live-rule bets.)
 - No selection power: S3 (move vs others) cut groups did as well or better; S4/S4b (cell track record) and S7 (composite) came out
   INVERSE (the picks they drop did better): noise at this n; S5 overlap discount cut nothing in the live subset (no pile-ups big
   enough); S6 model (cut model 5+ pts below Pinnacle) kept 23 bets 16-7 +31.5% vs cut 17 bets 11-6 +20.9% (placebo p 0.35): a lead
