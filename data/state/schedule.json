@@ -481,10 +481,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:46 - 4th",
+    "detail": "6:25 - 4th",
     "score": {
-     "LAL": "90",
-     "LAC": "71"
+     "LAL": "94",
+     "LAC": "76"
     }
    }
   ]

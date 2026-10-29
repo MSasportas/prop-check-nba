@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T00:40:00-04:00",
+ "at": "2026-10-29T00:50:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -317,10 +317,10 @@
    "note": "Doncic (back) is out for Wednesday's game against the Clippers."
   },
   "3899664": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Simone Fontecchio",
    "team": "MIA",
-   "date": "2026-10-28T15:04Z",
+   "date": "2026-10-29T04:32Z",
    "note": "Fontecchio (illness) is out for Wednesday's game against the Hawks."
   },
   "4594268": {
