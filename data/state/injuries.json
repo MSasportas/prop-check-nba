@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T15:20:01-04:00",
+ "at": "2026-10-29T16:40:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -211,19 +211,26 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
-  "4871144": {
-   "status": "day-to-day",
-   "name": "Alperen Sengun",
+  "4711272": {
+   "status": "out",
+   "name": "Reed Sheppard",
    "team": "HOU",
-   "date": "2026-10-29T04:38Z",
-   "note": "Sengun (back) has been ruled out for Wednesday's game against the Bucks."
+   "date": "2026-10-29T20:36Z",
+   "note": "Sheppard (back) is out for Friday's game against the Mavericks."
   },
   "2990992": {
    "status": "out",
    "name": "Marcus Smart",
    "team": "HOU",
-   "date": "2026-10-28T17:34Z",
-   "note": "Smart (forearm) is out for Wednesday's game against the Bucks."
+   "date": "2026-10-29T20:35Z",
+   "note": "Smart (forearm) is questionable for Friday's game against the Mavericks."
+  },
+  "4871144": {
+   "status": "day-to-day",
+   "name": "Alperen Sengun",
+   "team": "HOU",
+   "date": "2026-10-29T20:34Z",
+   "note": "Sengun (back) is questionable for Friday's game against the Mavericks."
   },
   "2991235": {
    "status": "out",
