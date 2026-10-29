@@ -448,13 +448,13 @@
     "start": "2026-10-28T21:00:00-04:00",
     "away": "SA",
     "home": "UTAH",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:48 - OT",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final/OT",
     "score": {
-     "SA": "107",
-     "UTAH": "108"
+     "SA": "117",
+     "UTAH": "111"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:02 - 3rd",
+    "detail": "10:57 - 4th",
     "score": {
-     "OKC": "77",
-     "DAL": "87"
+     "OKC": "83",
+     "DAL": "96"
     }
    },
    {
@@ -481,10 +481,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:42 - 2nd",
+    "detail": "50.7 - 2nd",
     "score": {
-     "LAL": "42",
-     "LAC": "31"
+     "LAL": "54",
+     "LAC": "36"
     }
    }
   ]
