@@ -189,7 +189,6 @@
     "Karl-Anthony Towns"
    ],
    "status": {
-    "Landry Shamet": "questionable",
     "Jose Alvarado": "out"
    }
   },
@@ -294,7 +293,7 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
     "Jared McCain",
@@ -312,7 +311,7 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
     "Max Christie",
@@ -363,5 +362,5 @@
    }
   }
  },
- "at": "2026-10-28T21:10:00-04:00"
+ "at": "2026-10-28T21:20:00-04:00"
 }
