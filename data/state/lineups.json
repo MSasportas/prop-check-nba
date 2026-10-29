@@ -264,7 +264,7 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Aaron Fox",
     "Stephon Castle",
@@ -278,11 +278,11 @@
    }
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
-    "Brice Sensabaugh",
+    "Josh Green",
     "Ace Bailey",
     "Jaxson Hayes"
    ],
@@ -362,5 +362,5 @@
    }
   }
  },
- "at": "2026-10-28T20:40:00-04:00"
+ "at": "2026-10-28T20:50:00-04:00"
 }
