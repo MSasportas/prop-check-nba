@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-28T20:20:01-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-28T20:30:01-04:00"
+   "at": "2026-10-28T20:30:22-04:00"
   }
  },
  "games": [
@@ -88,7 +88,7 @@
    "away": "ORL",
    "home": "TOR",
    "state": "in",
-   "detail": "6:59 - 2nd",
+   "detail": "6:46 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -144,7 +144,7 @@
    "away": "DEN",
    "home": "NOP",
    "state": "in",
-   "detail": "2:12 - 1st",
+   "detail": "1:55 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -1401,6 +1401,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-28T20:30:01-04:00",
- "status_at": "2026-10-28T20:30:01-04:00"
+ "generated_at": "2026-10-28T20:30:22-04:00",
+ "status_at": "2026-10-28T20:30:22-04:00"
 }

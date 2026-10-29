@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:59 - 2nd",
+    "detail": "6:46 - 2nd",
     "score": {
      "ORL": "38",
-     "TOR": "43"
+     "TOR": "45"
     }
    },
    {
@@ -436,7 +436,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:12 - 1st",
+    "detail": "1:55 - 1st",
     "score": {
      "DEN": "31",
      "NO": "16"
