@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-28T21:50:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-28T21:50:00-04:00"
+   "at": "2026-10-28T22:00:00-04:00"
   }
  },
  "games": [
@@ -73,8 +73,8 @@
    "start": "2026-10-28T19:00:00-04:00",
    "away": "PHI",
    "home": "IND",
-   "state": "in",
-   "detail": "30.8 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "ORL",
    "home": "TOR",
    "state": "in",
-   "detail": "4:53 - 4th",
+   "detail": "20.3 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "NYK",
    "home": "CHI",
    "state": "in",
-   "detail": "2:49 - 3rd",
+   "detail": "End of 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,7 +116,7 @@
    "away": "HOU",
    "home": "MIL",
    "state": "in",
-   "detail": "1:58 - 3rd",
+   "detail": "11:30 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -130,7 +130,7 @@
    "away": "GSW",
    "home": "MIN",
    "state": "in",
-   "detail": "5:02 - 3rd",
+   "detail": "19.0 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -144,7 +144,7 @@
    "away": "DEN",
    "home": "NOP",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "7:44 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -158,7 +158,7 @@
    "away": "SAS",
    "home": "UTA",
    "state": "in",
-   "detail": "7:56 - 2nd",
+   "detail": "3:54 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -172,7 +172,7 @@
    "away": "OKC",
    "home": "DAL",
    "state": "in",
-   "detail": "10:27 - 1st",
+   "detail": "5:30 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -789,7 +789,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "L",
+    "actual": "5 rebounds",
+    "units": -1.0
+   },
    "rank": null
   },
   {
@@ -1141,7 +1145,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "3 threes",
+    "units": 1.15
+   },
    "rank": null
   },
   {
@@ -1437,6 +1445,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-28T21:50:00-04:00",
- "status_at": "2026-10-28T21:50:00-04:00"
+ "generated_at": "2026-10-28T22:00:00-04:00",
+ "status_at": "2026-10-28T22:00:00-04:00"
 }

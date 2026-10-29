@@ -1,28 +1,28 @@
 {
- "generated_at": "2026-10-28T21:40:00-04:00",
+ "generated_at": "2026-10-28T22:00:00-04:00",
  "summary": {
   "headline": {
-   "w": 4,
-   "l": 3,
+   "w": 5,
+   "l": 4,
    "push": 0,
    "void": 0,
-   "units": 0.27,
-   "hit_rate": 0.5714,
-   "needed": 0.5552,
-   "n": 7
+   "units": 0.42,
+   "hit_rate": 0.5556,
+   "needed": 0.5417,
+   "n": 9
   },
   "rows": [
    {
     "key": "rebounds",
     "label": "Rebounds",
     "w": 1,
-    "l": 1,
+    "l": 2,
     "push": 0,
     "void": 0,
-    "units": -0.05,
-    "hit_rate": 0.5,
-    "needed": 0.5288,
-    "n": 2
+    "units": -1.05,
+    "hit_rate": 0.3333,
+    "needed": 0.5272,
+    "n": 3
    },
    {
     "key": "points",
@@ -49,40 +49,52 @@
     "n": 3
    },
    {
+    "key": "threes",
+    "label": "3-pointers made",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 1.15,
+    "hit_rate": 1.0,
+    "needed": 0.4651,
+    "n": 1
+   },
+   {
     "key": "window:11 AM \u2192 90 min",
     "label": "Window 11 AM \u2192 90 min",
-    "w": 3,
+    "w": 4,
     "l": 3,
     "push": 0,
     "void": 0,
-    "units": -0.56,
-    "hit_rate": 0.5,
-    "needed": 0.5568,
-    "n": 6
+    "units": 0.59,
+    "hit_rate": 0.5714,
+    "needed": 0.5437,
+    "n": 7
    },
    {
     "key": "window:45 \u2192 20 min",
     "label": "Window 45 \u2192 20 min",
     "w": 1,
-    "l": 0,
+    "l": 1,
     "push": 0,
     "void": 0,
-    "units": 0.83,
-    "hit_rate": 1.0,
-    "needed": 0.5455,
-    "n": 1
+    "units": -0.17,
+    "hit_rate": 0.5,
+    "needed": 0.5346,
+    "n": 2
    },
    {
     "key": "pulled",
     "label": "Pulled (not counted above)",
     "w": 1,
-    "l": 0,
+    "l": 2,
     "push": 0,
     "void": 0,
-    "units": 0.65,
-    "hit_rate": 1.0,
-    "needed": 0.6078,
-    "n": 1
+    "units": -1.35,
+    "hit_rate": 0.3333,
+    "needed": 0.5627,
+    "n": 3
    }
   ]
  },
@@ -90,9 +102,9 @@
   {
    "date": "2026-10-28",
    "graded": false,
-   "w": 4,
-   "l": 3,
-   "units": 0.27,
+   "w": 5,
+   "l": 4,
+   "units": 0.42,
    "entries": [
     {
      "id": "2026-10-28:401909881:2490149:assists:3.5:under",
@@ -282,9 +294,9 @@
        "at": "2026-10-28T17:30:00-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "20 points",
+     "units": -1.0,
      "pulled": {
       "at": "2026-10-28T18:30:00-04:00",
       "reason": "Rule change: Hard Rock was not 2+ pts better than Pinnacle's price"
@@ -309,9 +321,9 @@
        "at": "2026-10-28T17:30:00-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "27 points",
+     "units": -1.0,
      "pulled": {
       "at": "2026-10-28T18:30:00-04:00",
       "reason": "Rule change: Hard Rock was not 2+ pts better than Pinnacle's price"
@@ -336,9 +348,9 @@
        "at": "2026-10-28T17:30:00-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "3 threes",
+     "units": 1.15,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min"
@@ -579,9 +591,9 @@
        "at": "2026-10-28T18:40:01-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "5 rebounds",
+     "units": -1.0,
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min"
