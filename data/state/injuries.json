@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T15:00:00-04:00",
+ "at": "2026-10-29T15:10:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -64,19 +64,26 @@
    "date": "2026-10-20T20:55Z",
    "note": "Boswell (knee) is out for Wednesday's season opener against the Nets."
   },
-  "5105555": {
-   "status": "day-to-day",
-   "name": "Tobe Awaka",
-   "team": "CHI",
-   "date": "2026-10-29T04:36Z",
-   "note": "Awaka (ankle) is out for Wednesday's game against the Knicks, Joel Lorenzi of The Athletic reports."
-  },
   "4431687": {
    "status": "out",
    "name": "Patrick Williams",
    "team": "CHI",
-   "date": "2026-10-28T22:20Z",
-   "note": "Williams (adductor) won't play in Wednesday's game against the Knicks, Joel Lorenzi of The Athletic reports."
+   "date": "2026-10-29T18:55Z",
+   "note": "Williams (adductor) is questionable for Friday's game in Boston."
+  },
+  "4397189": {
+   "status": "day-to-day",
+   "name": "Jalen Smith",
+   "team": "CHI",
+   "date": "2026-10-29T18:55Z",
+   "note": "Smith is questionable for Friday's game against Boston with a left finger sprain."
+  },
+  "5105555": {
+   "status": "day-to-day",
+   "name": "Tobe Awaka",
+   "team": "CHI",
+   "date": "2026-10-29T18:53Z",
+   "note": "Awaka (ankle) is questionable for Friday's game in Boston."
   },
   "4278067": {
    "status": "out",
