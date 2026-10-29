@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T00:10:01-04:00",
+ "generated_at": "2026-10-29T18:30:00-04:00",
  "summary": {
   "headline": {
    "w": 17,
@@ -111,6 +111,39 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-10-29",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-10-29:401909893:4431680:threes:1.5:over",
+     "kind": "single",
+     "player": "Onyeka Okongwu",
+     "bet": "Over 1.5 threes",
+     "market": "threes",
+     "team": "ATL",
+     "game": "CLE at ATL",
+     "price": 135,
+     "first_price": 135,
+     "last_price": 135,
+     "prices": [
+      {
+       "price": 135,
+       "at": "2026-10-29T18:30:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min"
+    }
+   ]
+  },
   {
    "date": "2026-10-28",
    "graded": true,
