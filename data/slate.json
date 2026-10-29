@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-28T21:10:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-28T21:30:00-04:00"
+   "at": "2026-10-28T21:40:00-04:00"
   }
  },
  "games": [
@@ -59,8 +59,8 @@
    "start": "2026-10-28T19:00:00-04:00",
    "away": "CHA",
    "home": "DET",
-   "state": "in",
-   "detail": "1:23 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "PHI",
    "home": "IND",
    "state": "in",
-   "detail": "5:52 - 4th",
+   "detail": "3:41 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "ORL",
    "home": "TOR",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "8:49 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "NYK",
    "home": "CHI",
    "state": "in",
-   "detail": "11:37 - 3rd",
+   "detail": "7:03 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,7 +116,7 @@
    "away": "HOU",
    "home": "MIL",
    "state": "in",
-   "detail": "8:37 - 3rd",
+   "detail": "5:34 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -130,7 +130,7 @@
    "away": "GSW",
    "home": "MIN",
    "state": "in",
-   "detail": "11:44 - 3rd",
+   "detail": "8:01 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -144,7 +144,7 @@
    "away": "DEN",
    "home": "NOP",
    "state": "in",
-   "detail": "9:13 - 3rd",
+   "detail": "4:08 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -158,7 +158,7 @@
    "away": "SAS",
    "home": "UTA",
    "state": "in",
-   "detail": "3:26 - 1st",
+   "detail": "11:58 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -465,7 +465,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "L",
+    "actual": "9 points",
+    "units": -1.0
+   },
    "rank": null
   },
   {
@@ -1433,6 +1437,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-28T21:30:00-04:00",
- "status_at": "2026-10-28T21:30:00-04:00"
+ "generated_at": "2026-10-28T21:40:00-04:00",
+ "status_at": "2026-10-28T21:40:00-04:00"
 }

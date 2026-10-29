@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-10-28T21:30:00-04:00",
+ "generated_at": "2026-10-28T21:40:00-04:00",
  "summary": {
   "headline": {
    "w": 4,
-   "l": 2,
+   "l": 3,
    "push": 0,
    "void": 0,
-   "units": 1.27,
-   "hit_rate": 0.6667,
-   "needed": 0.5586,
-   "n": 6
+   "units": 0.27,
+   "hit_rate": 0.5714,
+   "needed": 0.5552,
+   "n": 7
   },
   "rows": [
    {
@@ -28,13 +28,13 @@
     "key": "points",
     "label": "Points",
     "w": 1,
-    "l": 0,
+    "l": 1,
     "push": 0,
     "void": 0,
-    "units": 0.83,
-    "hit_rate": 1.0,
-    "needed": 0.5455,
-    "n": 1
+    "units": -0.17,
+    "hit_rate": 0.5,
+    "needed": 0.5402,
+    "n": 2
    },
    {
     "key": "assists",
@@ -52,13 +52,13 @@
     "key": "window:11 AM \u2192 90 min",
     "label": "Window 11 AM \u2192 90 min",
     "w": 3,
-    "l": 2,
+    "l": 3,
     "push": 0,
     "void": 0,
-    "units": 0.44,
-    "hit_rate": 0.6,
-    "needed": 0.5612,
-    "n": 5
+    "units": -0.56,
+    "hit_rate": 0.5,
+    "needed": 0.5568,
+    "n": 6
    },
    {
     "key": "window:45 \u2192 20 min",
@@ -91,8 +91,8 @@
    "date": "2026-10-28",
    "graded": false,
    "w": 4,
-   "l": 2,
-   "units": 1.27,
+   "l": 3,
+   "units": 0.27,
    "entries": [
     {
      "id": "2026-10-28:401909881:2490149:assists:3.5:under",
@@ -258,9 +258,9 @@
        "at": "2026-10-28T17:30:00-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "9 points",
+     "units": -1.0,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min"
