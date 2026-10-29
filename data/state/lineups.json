@@ -329,12 +329,12 @@
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Austin Reaves",
     "Quentin Grimes",
     "Matisse Thybulle",
-    "Sandro Mamukelashvili",
+    "Jake LaRavia",
     "Walker Kessler"
    ],
    "status": {
@@ -345,7 +345,7 @@
    }
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Kris Dunn",
@@ -363,5 +363,5 @@
    }
   }
  },
- "at": "2026-10-28T22:00:00-04:00"
+ "at": "2026-10-28T22:10:00-04:00"
 }
