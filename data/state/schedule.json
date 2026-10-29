@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:02 - 4th",
+    "detail": "6:25 - 4th",
     "score": {
-     "SA": "89",
-     "UTAH": "87"
+     "SA": "97",
+     "UTAH": "96"
     }
    },
    {
@@ -465,11 +465,11 @@
     "home": "DAL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:18 - 3rd",
     "score": {
-     "OKC": "59",
-     "DAL": "65"
+     "OKC": "61",
+     "DAL": "72"
     }
    },
    {
@@ -481,10 +481,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:26 - 1st",
+    "detail": "11:19 - 2nd",
     "score": {
-     "LAL": "14",
-     "LAC": "19"
+     "LAL": "25",
+     "LAC": "22"
     }
    }
   ]
