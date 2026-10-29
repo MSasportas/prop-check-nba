@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:57 - 4th",
+    "detail": "7:00 - 4th",
     "score": {
-     "OKC": "83",
-     "DAL": "96"
+     "OKC": "91",
+     "DAL": "108"
     }
    },
    {
@@ -480,11 +480,11 @@
     "home": "LAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "50.7 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "LAL": "54",
-     "LAC": "36"
+     "LAL": "56",
+     "LAC": "38"
     }
    }
   ]
