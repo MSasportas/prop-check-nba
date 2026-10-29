@@ -463,13 +463,13 @@
     "start": "2026-10-28T21:30:00-04:00",
     "away": "OKC",
     "home": "DAL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:40 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "OKC": "93",
-     "DAL": "117"
+     "OKC": "96",
+     "DAL": "120"
     }
    },
    {
@@ -481,10 +481,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:25 - 3rd",
+    "detail": "7:24 - 3rd",
     "score": {
-     "LAL": "56",
-     "LAC": "41"
+     "LAL": "60",
+     "LAC": "51"
     }
    }
   ]

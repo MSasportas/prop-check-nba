@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-28T22:10:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-29T00:00:00-04:00"
+   "at": "2026-10-29T00:10:01-04:00"
   }
  },
  "games": [
@@ -171,8 +171,8 @@
    "start": "2026-10-28T21:30:00-04:00",
    "away": "OKC",
    "home": "DAL",
-   "state": "in",
-   "detail": "2:40 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -186,7 +186,7 @@
    "away": "LAL",
    "home": "LAC",
    "state": "in",
-   "detail": "11:25 - 3rd",
+   "detail": "7:24 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -909,7 +909,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "0 threes",
+    "units": 1.25
+   },
    "rank": null
   },
   {
@@ -1509,6 +1513,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-29T00:00:00-04:00",
- "status_at": "2026-10-29T00:00:00-04:00"
+ "generated_at": "2026-10-29T00:10:01-04:00",
+ "status_at": "2026-10-29T00:10:01-04:00"
 }
