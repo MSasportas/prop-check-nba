@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T17:10:01-04:00",
+ "at": "2026-10-29T17:20:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -239,12 +239,26 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
-  "4017837": {
+  "4395712": {
    "status": "day-to-day",
+   "name": "Andrew Nembhard",
+   "team": "IND",
+   "date": "2026-10-29T21:08Z",
+   "note": "Nembhard (neck) is listed as probable for Friday's game against Miami."
+  },
+  "4396909": {
+   "status": "day-to-day",
+   "name": "Aaron Nesmith",
+   "team": "IND",
+   "date": "2026-10-29T21:07Z",
+   "note": "Nesmith (hamstring) is probable for Friday's game against the Heat."
+  },
+  "4017837": {
+   "status": "out",
    "name": "Ivica Zubac",
    "team": "IND",
-   "date": "2026-10-29T04:33Z",
-   "note": "Zubac (ankle) is out for Wednesday's game against the 76ers."
+   "date": "2026-10-29T21:04Z",
+   "note": "Zubac (ankle) is out for Friday's game against the Heat."
   },
   "2530530": {
    "status": "out",
@@ -614,8 +628,8 @@
    "status": "day-to-day",
    "name": "Tre Johnson",
    "team": "WSH",
-   "date": "2026-10-29T04:33Z",
-   "note": "Johnson has been ruled out for Wednesday's game against the Cavaliers due to right Achilles soreness."
+   "date": "2026-10-29T21:10Z",
+   "note": "Johnson (Achilles) is listed as questionable for Friday's game against Charlotte."
   },
   "4432907": {
    "status": "out",
