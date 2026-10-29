@@ -84,3 +84,11 @@
 {"at":"2026-10-28T20:50:00-04:00","id":"2026-10-28:401909890:4066259:points:15.5:under","state":"starters","t":"state"}
 {"at":"2026-10-28T21:00:00-04:00","id":"2026-10-28:401909890:4066259:points:15.5:under","state":"locked","t":"locked"}
 {"at":"2026-10-28T21:20:00-04:00","id":"2026-10-28:401909891:4683778:threes:2.5:under","state":"starters","t":"state"}
+{"at":"2026-10-28T21:30:00-04:00","id":"2026-10-28:401909891:4683778:threes:2.5:under","state":"locked","t":"locked"}
+{"actual":null,"actual_text":"5 rebounds","at":"2026-10-28T21:30:00-04:00","id":"2026-10-28:401909882:4277905:rebounds:2.5:under","price":-120,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"2 rebounds","at":"2026-10-28T21:30:00-04:00","id":"2026-10-28:401909882:3992:rebounds:4.5:under","price":-105,"result":"W","t":"graded","units":0.9524}
+{"actual":null,"actual_text":"3 assists","at":"2026-10-28T21:30:00-04:00","id":"2026-10-28:401909881:4066261:assists:3.5:under","price":-130,"result":"W","t":"graded","units":0.7692}
+{"actual":null,"actual_text":"3 assists","at":"2026-10-28T21:30:00-04:00","id":"2026-10-28:401909882:6583:assists:2.5:under","price":-150,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"1 assist","at":"2026-10-28T21:30:00-04:00","id":"2026-10-28:401909881:2490149:assists:3.5:under","price":-140,"result":"W","t":"graded","units":0.7143}
+{"actual":null,"actual_text":"7 assists","at":"2026-10-28T21:30:00-04:00","id":"2026-10-28:401909882:3908809:assists:4.5:over","price":-155,"result":"W","t":"graded","units":0.6452}
+{"actual":null,"actual_text":"22 points","at":"2026-10-28T21:30:00-04:00","id":"2026-10-28:401909882:4576087:points:13.5:over","price":-120,"result":"W","t":"graded","units":0.8333}

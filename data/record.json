@@ -1,25 +1,98 @@
 {
- "generated_at": "2026-10-28T21:20:00-04:00",
+ "generated_at": "2026-10-28T21:30:00-04:00",
  "summary": {
   "headline": {
-   "w": 0,
-   "l": 0,
+   "w": 4,
+   "l": 2,
    "push": 0,
    "void": 0,
-   "units": 0,
-   "hit_rate": null,
-   "needed": null,
-   "n": 0
+   "units": 1.27,
+   "hit_rate": 0.6667,
+   "needed": 0.5586,
+   "n": 6
   },
-  "rows": []
+  "rows": [
+   {
+    "key": "rebounds",
+    "label": "Rebounds",
+    "w": 1,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -0.05,
+    "hit_rate": 0.5,
+    "needed": 0.5288,
+    "n": 2
+   },
+   {
+    "key": "points",
+    "label": "Points",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0.83,
+    "hit_rate": 1.0,
+    "needed": 0.5455,
+    "n": 1
+   },
+   {
+    "key": "assists",
+    "label": "Assists",
+    "w": 2,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": 0.48,
+    "hit_rate": 0.6667,
+    "needed": 0.5829,
+    "n": 3
+   },
+   {
+    "key": "window:11 AM \u2192 90 min",
+    "label": "Window 11 AM \u2192 90 min",
+    "w": 3,
+    "l": 2,
+    "push": 0,
+    "void": 0,
+    "units": 0.44,
+    "hit_rate": 0.6,
+    "needed": 0.5612,
+    "n": 5
+   },
+   {
+    "key": "window:45 \u2192 20 min",
+    "label": "Window 45 \u2192 20 min",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0.83,
+    "hit_rate": 1.0,
+    "needed": 0.5455,
+    "n": 1
+   },
+   {
+    "key": "pulled",
+    "label": "Pulled (not counted above)",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0.65,
+    "hit_rate": 1.0,
+    "needed": 0.6078,
+    "n": 1
+   }
+  ]
  },
  "nights": [
   {
    "date": "2026-10-28",
    "graded": false,
-   "w": 0,
-   "l": 0,
-   "units": 0,
+   "w": 4,
+   "l": 2,
+   "units": 1.27,
    "entries": [
     {
      "id": "2026-10-28:401909881:2490149:assists:3.5:under",
@@ -38,9 +111,9 @@
        "at": "2026-10-28T17:30:00-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "1 assist",
+     "units": 0.7143,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min"
@@ -62,9 +135,9 @@
        "at": "2026-10-28T17:30:00-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "3 assists",
+     "units": 0.7692,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min"
@@ -86,9 +159,9 @@
        "at": "2026-10-28T17:30:00-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "7 assists",
+     "units": 0.6452,
      "pulled": {
       "at": "2026-10-28T18:20:01-04:00",
       "reason": "Hard Rock took the line down"
@@ -113,9 +186,9 @@
        "at": "2026-10-28T17:30:00-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "2 rebounds",
+     "units": 0.9524,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min"
@@ -137,9 +210,9 @@
        "at": "2026-10-28T17:30:00-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "5 rebounds",
+     "units": -1.0,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min"
@@ -161,9 +234,9 @@
        "at": "2026-10-28T17:30:00-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "3 assists",
+     "units": -1.0,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min"
@@ -482,9 +555,9 @@
        "at": "2026-10-28T18:40:01-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "22 points",
+     "units": 0.8333,
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min"

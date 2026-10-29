@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-28T21:10:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-28T21:20:17-04:00"
+   "at": "2026-10-28T21:30:00-04:00"
   }
  },
  "games": [
@@ -31,8 +31,8 @@
    "start": "2026-10-28T19:00:00-04:00",
    "away": "MIA",
    "home": "ATL",
-   "state": "in",
-   "detail": "39.1 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -45,8 +45,8 @@
    "start": "2026-10-28T19:00:00-04:00",
    "away": "WAS",
    "home": "CLE",
-   "state": "in",
-   "detail": "2:06 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "CHA",
    "home": "DET",
    "state": "in",
-   "detail": "5:09 - 4th",
+   "detail": "1:23 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "PHI",
    "home": "IND",
    "state": "in",
-   "detail": "9:04 - 4th",
+   "detail": "5:52 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "ORL",
    "home": "TOR",
    "state": "in",
-   "detail": "4:22 - 3rd",
+   "detail": "End of 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "NYK",
    "home": "CHI",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "11:37 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,7 +116,7 @@
    "away": "HOU",
    "home": "MIL",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "8:37 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -130,7 +130,7 @@
    "away": "GSW",
    "home": "MIN",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "11:44 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -144,7 +144,7 @@
    "away": "DEN",
    "home": "NOP",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "9:13 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -158,7 +158,7 @@
    "away": "SAS",
    "home": "UTA",
    "state": "in",
-   "detail": "6:57 - 1st",
+   "detail": "3:26 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -369,7 +369,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "L",
+    "actual": "5 rebounds",
+    "units": -1.0
+   },
    "rank": null
   },
   {
@@ -413,7 +417,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "22 points",
+    "units": 0.8333
+   },
    "rank": null
   },
   {
@@ -501,7 +509,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "2 rebounds",
+    "units": 0.9524
+   },
    "rank": null
   },
   {
@@ -589,7 +601,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "3 assists",
+    "units": 0.7692
+   },
    "rank": null
   },
   {
@@ -721,7 +737,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "L",
+    "actual": "3 assists",
+    "units": -1.0
+   },
    "rank": null
   },
   {
@@ -837,7 +857,7 @@
    "final_ev": 0.0326,
    "model_p": null,
    "reason": "Pinnacle moved the under from +124 to +108 (42% to 45%); 5 other books held. Hard Rock price: +125, 3.6 pts better than Pinnacle's.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/2094509055296012695",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.417,
    "pin_after": 0.4496,
@@ -849,12 +869,12 @@
    "window": "11 AM \u2192 90 min",
    "gap_vs_pin": 0.0363,
    "id": "2026-10-28:401909891:4683778:threes:2.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 1
+   "rank": null
   },
   {
    "player": "Anthony Black",
@@ -1205,7 +1225,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "1 assist",
+    "units": 0.7143
+   },
    "rank": null
   },
   {
@@ -1341,7 +1365,11 @@
     "reason": "Hard Rock took the line down",
     "if_bet": "Got -155? Your bet still stands."
    },
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "7 assists",
+    "units": 0.6452
+   },
    "rank": null
   },
   {
@@ -1389,7 +1417,11 @@
    "rank": null
   }
  ],
- "empty": null,
+ "empty": {
+  "text": "No picks yet today",
+  "why": "1058 lines read. Pinnacle moved alone on 88, none of them bettable yet.",
+  "next": "2026-10-28T21:45:00-04:00"
+ },
  "counts": {
   "lines_read": 1058,
   "passing": 27,
@@ -1401,6 +1433,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-28T21:20:17-04:00",
- "status_at": "2026-10-28T21:20:17-04:00"
+ "generated_at": "2026-10-28T21:30:00-04:00",
+ "status_at": "2026-10-28T21:30:00-04:00"
 }
