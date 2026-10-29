@@ -388,12 +388,12 @@
     "start": "2026-10-28T20:00:00-04:00",
     "away": "NY",
     "home": "CHI",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8.7 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "NY": "130",
+     "NY": "133",
      "CHI": "127"
     }
    },
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:41 - 4th",
+    "detail": "6.1 - 4th",
     "score": {
-     "GS": "109",
-     "MIN": "99"
+     "GS": "116",
+     "MIN": "112"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:00 - 3rd",
+    "detail": "5:12 - 3rd",
     "score": {
-     "SA": "59",
-     "UTAH": "61"
+     "SA": "69",
+     "UTAH": "74"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:00 - 2nd",
+    "detail": "1:34 - 2nd",
     "score": {
-     "OKC": "42",
-     "DAL": "54"
+     "OKC": "53",
+     "DAL": "60"
     }
    },
    {
