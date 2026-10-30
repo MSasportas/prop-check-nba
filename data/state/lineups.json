@@ -59,7 +59,7 @@
    }
   },
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cade Cunningham",
     "Duncan Robinson",
@@ -73,9 +73,9 @@
    }
   },
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Mikel Brown",
+    "Chaney Johnson",
     "Nolan Traore",
     "Michael Porter",
     "Julius Randle",
@@ -86,7 +86,7 @@
    }
   },
   "NY": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Brunson",
     "Mikal Bridges",
@@ -156,7 +156,6 @@
     "Jabari Smith"
    ],
    "status": {
-    "Marcus Smart": "probable",
     "Steven Adams": "out",
     "Alperen Sengun": "out",
     "Reed Sheppard": "out"
@@ -299,5 +298,5 @@
    }
   }
  },
- "at": "2026-10-30T19:10:00-04:00"
+ "at": "2026-10-30T19:20:00-04:00"
 }

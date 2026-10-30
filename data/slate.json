@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2455,
+   "pool_left": 2443,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-30T19:15:00-04:00",
-  "last_read_at": "2026-10-30T19:10:00-04:00",
+  "next_read_at": "2026-10-30T19:40:00-04:00",
+  "last_read_at": "2026-10-30T19:20:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-30T19:10:00-04:00"
+   "at": "2026-10-30T19:20:00-04:00"
   }
  },
  "games": [
@@ -31,8 +31,8 @@
    "start": "2026-10-30T19:00:00-04:00",
    "away": "CHA",
    "home": "WAS",
-   "state": "pre",
-   "detail": "10/30 - 7:00 PM EDT",
+   "state": "in",
+   "detail": "6:37 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -62,8 +62,8 @@
    "state": "pre",
    "detail": "10/30 - 7:30 PM EDT",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
    "read_at": "2026-10-30T19:10:00-04:00",
    "picks": 0
@@ -76,7 +76,7 @@
    "state": "pre",
    "detail": "10/30 - 7:30 PM EDT",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "confirmed"
    },
    "read_at": "2026-10-30T19:10:00-04:00",
@@ -107,7 +107,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-30T18:30:01-04:00",
+   "read_at": "2026-10-30T19:20:00-04:00",
    "picks": 0
   },
   {
@@ -121,7 +121,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-30T18:30:01-04:00",
+   "read_at": "2026-10-30T19:20:00-04:00",
    "picks": 0
   },
   {
@@ -135,7 +135,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-30T18:30:01-04:00",
+   "read_at": "2026-10-30T19:20:00-04:00",
    "picks": 1
   },
   {
@@ -249,8 +249,8 @@
    "window": "45 \u2192 20 min",
    "gap_vs_pin": 0.0482,
    "id": "2026-10-30:401909280:3136195:assists:3.5:under",
-   "state": "clear",
-   "state_label": "Injury report clear",
+   "state": "starters",
+   "state_label": "Starters confirmed",
    "price_final": true,
    "pulled": null,
    "result": null,
@@ -313,6 +313,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-30T19:10:00-04:00",
- "status_at": "2026-10-30T19:10:00-04:00"
+ "generated_at": "2026-10-30T19:20:00-04:00",
+ "status_at": "2026-10-30T19:20:00-04:00"
 }

@@ -298,13 +298,13 @@
     "start": "2026-10-30T19:00:00-04:00",
     "away": "CHA",
     "home": "WSH",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/30 - 7:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:37 - 1st",
     "score": {
-     "CHA": "0",
-     "WSH": "0"
+     "CHA": "11",
+     "WSH": "4"
     }
    },
    {
