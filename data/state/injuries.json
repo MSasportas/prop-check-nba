@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T15:20:00-04:00",
+ "at": "2026-10-30T15:30:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -215,8 +215,8 @@
    "status": "out",
    "name": "Reed Sheppard",
    "team": "HOU",
-   "date": "2026-10-29T20:36Z",
-   "note": "Sheppard (back) is out for Friday's game against the Mavericks."
+   "date": "2026-10-30T19:19Z",
+   "note": "Houston picked up Sheppard's (back) fourth-year team option Friday, per Lachard Binkley of SI.com."
   },
   "2990992": {
    "status": "out",
@@ -238,6 +238,13 @@
    "team": "HOU",
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
+  },
+  "2530530": {
+   "status": "out",
+   "name": "T.J. McConnell",
+   "team": "IND",
+   "date": "2026-10-30T19:09Z",
+   "note": "McConnell (hamstring) is practicing in the G League at Noblesville Boom training camp, per Alex Golden of SI.com."
   },
   "5157066": {
    "status": "out",
@@ -266,13 +273,6 @@
    "team": "IND",
    "date": "2026-10-29T21:04Z",
    "note": "Zubac (ankle) is out for Friday's game against the Heat."
-  },
-  "2530530": {
-   "status": "out",
-   "name": "T.J. McConnell",
-   "team": "IND",
-   "date": "2026-10-28T21:43Z",
-   "note": "Pacers head coach Rick Carlisle stated McConnell (hamstring) is \"doing better\" and \"getting closer\" to a return, Alex Golden of SI.com reports."
   },
   "4433076": {
    "status": "out",
