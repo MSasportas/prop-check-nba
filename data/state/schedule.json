@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:30 - 2nd",
+    "detail": "8:11 - 2nd",
     "score": {
-     "CLE": "31",
-     "ATL": "16"
+     "CLE": "33",
+     "ATL": "21"
     }
    },
    {
@@ -405,11 +405,11 @@
     "home": "NO",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:11 - 2nd",
     "score": {
-     "SAC": "30",
-     "NO": "24"
+     "SAC": "32",
+     "NO": "34"
     }
    },
    {
