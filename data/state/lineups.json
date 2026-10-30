@@ -11,7 +11,7 @@
     "Moussa Diabate"
    ],
    "status": {
-    "Dennis Schroder": "questionable",
+    "Dennis Schroder": "probable",
     "Kon Knueppel": "out",
     "Coby White": "out",
     "Grant Williams": "out"
@@ -45,7 +45,6 @@
    "status": {
     "Jalen Smith": "questionable",
     "Tobe Awaka": "questionable",
-    "Patrick Williams": "questionable",
     "Nic Claxton": "out"
    }
   },
@@ -86,6 +85,7 @@
     "Day'Ron Sharpe"
    ],
    "status": {
+    "Noah Clowney": "questionable",
     "Egor Demin": "out"
    }
   },
@@ -258,7 +258,6 @@
    ],
    "status": {
     "Ziaire Williams": "questionable",
-    "Cameron Carr": "out",
     "Adou Thiero": "out"
    }
   },
@@ -288,7 +287,7 @@
     "Nikola Jokic"
    ],
    "status": {
-    "Cameron Johnson": "questionable",
+    "Cameron Johnson": "probable",
     "Alpha Diallo": "questionable",
     "Spencer Jones": "out",
     "Julian Strawther": "out"
@@ -309,5 +308,5 @@
    }
   }
  },
- "at": "2026-10-30T05:00:01-04:00"
+ "at": "2026-10-30T16:00:01-04:00"
 }
