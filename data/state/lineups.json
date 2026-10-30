@@ -45,6 +45,7 @@
    "status": {
     "Jalen Smith": "questionable",
     "Tobe Awaka": "questionable",
+    "Dailyn Swain": "questionable",
     "Nic Claxton": "out"
    }
   },
@@ -71,8 +72,8 @@
     "Paul Reed"
    ],
    "status": {
-    "Isaiah Joe": "questionable",
-    "Jalen Duren": "out"
+    "Jalen Duren": "out",
+    "Isaiah Joe": "out"
    }
   },
   "BKN": {
@@ -99,6 +100,7 @@
     "Karl-Anthony Towns"
    ],
    "status": {
+    "Karl-Anthony Towns": "probable",
     "Jose Alvarado": "out"
    }
   },
@@ -272,7 +274,7 @@
     "Draymond Green"
    ],
    "status": {
-    "Gui Santos": "doubtful",
+    "Gui Santos": "questionable",
     "Jimmy Butler": "out",
     "Moses Moody": "out",
     "Kristaps Porzingis": "out"
@@ -309,5 +311,5 @@
    }
   }
  },
- "at": "2026-10-30T16:30:01-04:00"
+ "at": "2026-10-30T16:40:00-04:00"
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T16:20:00-04:00",
+ "at": "2026-10-30T16:40:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -106,6 +106,13 @@
    "date": "2026-10-30T02:39Z",
    "note": "Thomas (foot) has been ruled out for Thursday's game against the Hawks, Serena Winters of FanDuel Sports Network Ohio reports."
   },
+  "4278594": {
+   "status": "day-to-day",
+   "name": "Naji Marshall",
+   "team": "DAL",
+   "date": "2026-10-30T20:24Z",
+   "note": "Marshall (illness) is probable for Friday's game against the Rockets."
+  },
   "5148538": {
    "status": "out",
    "name": "Tarik Biberovic",
@@ -127,13 +134,6 @@
    "date": "2026-10-29T22:06Z",
    "note": "De Larrea (knee) is out for Friday's game against the Rockets."
   },
-  "4278594": {
-   "status": "day-to-day",
-   "name": "Naji Marshall",
-   "team": "DAL",
-   "date": "2026-10-29T22:03Z",
-   "note": "Marshall is questionable for Friday's game against the Rockets with an illness."
-  },
   "4683688": {
    "status": "out",
    "name": "Dereck Lively II",
@@ -141,19 +141,19 @@
    "date": "2026-10-22T20:10Z",
    "note": "Lively (foot) has been ruled out for Friday's game against the Pacers."
   },
+  "4065813": {
+   "status": "out",
+   "name": "Alpha Diallo",
+   "team": "DEN",
+   "date": "2026-10-30T20:30Z",
+   "note": "Diallo (personal) is doubtful for Friday's game against the Suns."
+  },
   "3138196": {
    "status": "out",
    "name": "Cameron Johnson",
    "team": "DEN",
    "date": "2026-10-30T18:41Z",
    "note": "Johnson (ankle) is expected to play in Friday's game against the Suns, per John Gambadoro of Arizona Sports 98.7 FM."
-  },
-  "4065813": {
-   "status": "out",
-   "name": "Alpha Diallo",
-   "team": "DEN",
-   "date": "2026-10-29T23:50Z",
-   "note": "Diallo (personal) is listed as questionable for Friday's game against the Suns."
   },
   "4592427": {
    "status": "out",
@@ -238,6 +238,13 @@
    "team": "HOU",
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
+  },
+  "4278355": {
+   "status": "day-to-day",
+   "name": "Obi Toppin",
+   "team": "IND",
+   "date": "2026-10-30T20:27Z",
+   "note": "Toppin (back) is questionable for Friday's game against the Heat."
   },
   "2530530": {
    "status": "out",
@@ -355,8 +362,8 @@
    "status": "day-to-day",
    "name": "Simone Fontecchio",
    "team": "MIA",
-   "date": "2026-10-29T20:48Z",
-   "note": "Fontecchio (illness) is listed as questionable for Friday's game against Indiana."
+   "date": "2026-10-30T20:28Z",
+   "note": "Fontecchio (illness) is probable for Friday's against the Pacers."
   },
   "4594268": {
    "status": "out",
@@ -477,19 +484,19 @@
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
+  "3917376": {
+   "status": "day-to-day",
+   "name": "Jaylen Brown",
+   "team": "PHI",
+   "date": "2026-10-30T20:23Z",
+   "note": "Brown (knee) is doubtful for Friday's game against the Knicks."
+  },
   "4432446": {
    "status": "out",
    "name": "Jabari Walker",
    "team": "PHI",
    "date": "2026-10-29T21:34Z",
    "note": "Walker (knee) has been ruled out for Friday's game versus New York."
-  },
-  "3917376": {
-   "status": "day-to-day",
-   "name": "Jaylen Brown",
-   "team": "PHI",
-   "date": "2026-10-29T21:34Z",
-   "note": "Brown (knee) is questionable for Friday's game against the Knicks."
   },
   "3904625": {
    "status": "out",
