@@ -198,7 +198,15 @@ def _entry(it, items):
             "first_price": first_price(it), "last_price": last_price(it),
             "prices": [{"price": p["price"], "at": p["at"]} for p in it["prices"]],
             "result": (g or {}).get("result"), "actual": (g or {}).get("actual_text"),
-            "units": (g or {}).get("units"), "pulled": _pulled(it), "legs": [], "window": window_of(sh)}
+            "units": (g or {}).get("units"), "pulled": _pulled(it), "legs": [], "window": window_of(sh),
+            "under_fair": under_fair(sh)}
+
+
+def under_fair(sh):
+    """v2.3 (Matt, 2026-10-29): a Pinnacle-rule pick shown while Hard Rock's price was worse than Pinnacle's FAIR price
+    (ev_vs_pin < 0) is still on the Record and in the log exactly as shown, but is not counted in the scoreboard."""
+    ev = sh.get("ev_vs_pin")
+    return sh.get("rule") == "pin_solo" and isinstance(ev, (int, float)) and ev < 0
 
 
 _WIN = ["11 AM → 90 min", "90 → 45 min", "45 → 20 min"]
@@ -240,14 +248,14 @@ def build_views(events, cfg):
     for d in sorted(by_night, reverse=True):
         its = sorted(by_night[d], key=lambda x: (x["kind"] != "single", x["shown"].get("rank") or 999, x["shown_at"], x["id"]))
         entries = [_entry(x, items) for x in its]
-        counted = [e for e in entries if e["kind"] == "single" and not e["pulled"]]
+        counted = [e for e in entries if e["kind"] == "single" and not e["pulled"] and not e.get("under_fair")]
         nights.append({"date": d, "graded": all(e["result"] is not None for e in entries),
                        "w": sum(1 for e in counted if e["result"] == "W"),
                        "l": sum(1 for e in counted if e["result"] == "L"),
                        "units": round(sum(e["units"] or 0 for e in counted), 2), "entries": entries})
     every = [e for n in nights for e in n["entries"]]
     need = lambda e: odds.break_even(e["price"])
-    singles = [e for e in every if e["kind"] == "single" and not e["pulled"]]
+    singles = [e for e in every if e["kind"] == "single" and not e["pulled"] and not e.get("under_fair")]
     rows = []
     for key in cfg["markets"]:
         sub = [e for e in singles if e.get("market") == key]
@@ -264,6 +272,9 @@ def build_views(events, cfg):
     pulled = [e for e in every if e["pulled"]]
     if any(e["result"] for e in pulled):
         rows.append(_row("pulled", "Pulled (not counted above)", pulled, need))
+    unfair = [e for e in every if e["kind"] == "single" and not e["pulled"] and e.get("under_fair")]
+    if any(e["result"] for e in unfair):
+        rows.append(_row("under_fair", "Under Pinnacle's fair price (not counted)", unfair, need))
     head = _row("headline", "Singles", singles, need)
     head.pop("key"); head.pop("label")
     keep = cfg["ui"]["record_nights"]
