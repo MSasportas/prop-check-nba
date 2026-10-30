@@ -388,13 +388,13 @@
     "start": "2026-10-29T20:00:00-04:00",
     "away": "CLE",
     "home": "ATL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "56.4 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "CLE": "106",
-     "ATL": "110"
+     "CLE": "111",
+     "ATL": "114"
     }
    },
    {
@@ -403,13 +403,13 @@
     "start": "2026-10-29T20:00:00-04:00",
     "away": "SAC",
     "home": "NO",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:27 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "SAC": "117",
-     "NO": "129"
+     "SAC": "120",
+     "NO": "132"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:07 - 1st",
+    "detail": "4:00 - 1st",
     "score": {
-     "MEM": "7",
-     "POR": "13"
+     "MEM": "20",
+     "POR": "22"
     }
    }
   ]
