@@ -420,11 +420,11 @@
     "home": "POR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:35 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "MEM": "46",
-     "POR": "49"
+     "MEM": "58",
+     "POR": "58"
     }
    }
   ]
