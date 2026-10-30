@@ -420,8 +420,8 @@
     "home": "POR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:58 - 2nd",
     "score": {
      "MEM": "25",
      "POR": "25"
