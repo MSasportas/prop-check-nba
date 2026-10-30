@@ -69,7 +69,9 @@
     "Cameron Boozer",
     "Zach Edey"
    ],
-   "status": {}
+   "status": {
+    "Ty Jerome": "questionable"
+   }
   },
   "POR": {
    "state": "expected",
@@ -86,5 +88,5 @@
    }
   }
  },
- "at": "2026-10-29T21:10:00-04:00"
+ "at": "2026-10-29T21:20:01-04:00"
 }
