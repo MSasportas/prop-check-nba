@@ -1,6 +1,6 @@
 {
- "slate": "2026-10-29",
- "valid_until": "2026-10-30T05:00:00-04:00",
+ "slate": "2026-10-30",
+ "valid_until": "2026-10-31T05:00:00-04:00",
  "banners": [],
  "status": {
   "odds": {
@@ -9,8 +9,8 @@
    "low": false,
    "refused": false,
    "no_keys": false,
-   "days_left": 3,
-   "allowance": 130.75,
+   "days_left": 2,
+   "allowance": 151.0,
    "reads": [
     "A",
     "B",
@@ -18,116 +18,165 @@
     "D"
    ]
   },
-  "next_read_at": null,
-  "last_read_at": "2026-10-29T21:40:01-04:00",
+  "next_read_at": "2026-10-30T11:00:00-04:00",
+  "last_read_at": null,
   "last_run": {
    "ok": true,
-   "at": "2026-10-30T04:30:00-04:00"
+   "at": "2026-10-30T05:00:01-04:00"
   }
  },
  "games": [
   {
-   "id": "401909893",
-   "start": "2026-10-29T20:00:00-04:00",
-   "away": "CLE",
-   "home": "ATL",
-   "state": "post",
-   "detail": "Final",
+   "id": "401909277",
+   "start": "2026-10-30T19:00:00-04:00",
+   "away": "CHA",
+   "home": "WAS",
+   "state": "pre",
+   "detail": "10/30 - 7:00 PM EDT",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": "2026-10-29T19:40:01-04:00",
-   "picks": 1
-  },
-  {
-   "id": "401909894",
-   "start": "2026-10-29T20:00:00-04:00",
-   "away": "SAC",
-   "home": "NOP",
-   "state": "post",
-   "detail": "Final",
-   "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
-   },
-   "read_at": "2026-10-29T19:40:01-04:00",
+   "read_at": null,
    "picks": 0
   },
   {
-   "id": "401909895",
-   "start": "2026-10-29T22:00:00-04:00",
-   "away": "MEM",
-   "home": "POR",
-   "state": "post",
-   "detail": "Final",
+   "id": "401909278",
+   "start": "2026-10-30T19:30:00-04:00",
+   "away": "CHI",
+   "home": "BOS",
+   "state": "pre",
+   "detail": "10/30 - 7:30 PM EDT",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": "2026-10-29T21:40:01-04:00",
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909279",
+   "start": "2026-10-30T19:30:00-04:00",
+   "away": "DET",
+   "home": "BKN",
+   "state": "pre",
+   "detail": "10/30 - 7:30 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909280",
+   "start": "2026-10-30T19:30:00-04:00",
+   "away": "NYK",
+   "home": "PHI",
+   "state": "pre",
+   "detail": "10/30 - 7:30 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909281",
+   "start": "2026-10-30T19:30:00-04:00",
+   "away": "ORL",
+   "home": "TOR",
+   "state": "pre",
+   "detail": "10/30 - 7:30 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909282",
+   "start": "2026-10-30T20:00:00-04:00",
+   "away": "IND",
+   "home": "MIA",
+   "state": "pre",
+   "detail": "10/30 - 8:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909283",
+   "start": "2026-10-30T20:00:00-04:00",
+   "away": "HOU",
+   "home": "DAL",
+   "state": "pre",
+   "detail": "10/30 - 8:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909284",
+   "start": "2026-10-30T20:00:00-04:00",
+   "away": "LAC",
+   "home": "MIN",
+   "state": "pre",
+   "detail": "10/30 - 8:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909285",
+   "start": "2026-10-30T22:00:00-04:00",
+   "away": "LAL",
+   "home": "GSW",
+   "state": "pre",
+   "detail": "10/30 - 10:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909286",
+   "start": "2026-10-30T22:00:00-04:00",
+   "away": "DEN",
+   "home": "PHX",
+   "state": "pre",
+   "detail": "10/30 - 10:00 PM EDT",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
    "picks": 0
   }
  ],
- "picks": [
-  {
-   "player": "Onyeka Okongwu",
-   "pid": "4431680",
-   "team": "ATL",
-   "opp": "CLE",
-   "home": true,
-   "game_id": "401909893",
-   "start": "2026-10-29T20:00:00-04:00",
-   "bet": "Over 1.5 threes",
-   "market": "threes",
-   "side": "over",
-   "line": 1.5,
-   "price": 135,
-   "price_at": "2026-10-29T18:30:00-04:00",
-   "read": "B",
-   "p": 0.4269,
-   "p_pct": 43,
-   "breakeven": 0.4255,
-   "breakeven_pct": 43,
-   "market_fair": null,
-   "n_books": 8,
-   "gap_ev": null,
-   "final_ev": 0.034,
-   "model_p": null,
-   "reason": "Pinnacle moved the over from +138 to +122 (39% to 43%); 8 other books held. Hard Rock price: +135, 0.3% better than Pinnacle's fair price.",
-   "link": null,
-   "rule": "pin_solo",
-   "pin_before": 0.3929,
-   "pin_after": 0.4269,
-   "pin_price_before": 138,
-   "pin_price_after": 122,
-   "others_move": 0.0035,
-   "n_others": 8,
-   "ev_vs_pin": 0.0032,
-   "window": "11 AM \u2192 90 min",
-   "gap_vs_pin": 0.0249,
-   "id": "2026-10-29:401909893:4431680:threes:1.5:over",
-   "state": "locked",
-   "state_label": "Locked",
-   "price_final": false,
-   "pulled": null,
-   "result": {
-    "result": "W",
-    "actual": "4 threes",
-    "units": 1.35
-   },
-   "rank": null
-  }
- ],
+ "picks": [],
  "empty": {
-  "text": "No open picks right now",
-  "why": "Every game has started.",
-  "next": null
+  "text": "No picks yet today",
+  "why": "No prices read yet. The first close look is 90 minutes before each tip.",
+  "next": "2026-10-30T11:00:00-04:00"
  },
  "counts": {
-  "lines_read": 292,
-  "passing": 1,
-  "games": 3
+  "lines_read": 0,
+  "passing": 0,
+  "games": 10
  },
  "safety_paused": false,
  "ui": {
@@ -135,6 +184,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-30T00:20:00-04:00",
- "status_at": "2026-10-30T04:30:00-04:00"
+ "generated_at": "2026-10-30T05:00:01-04:00",
+ "status_at": "2026-10-30T05:00:01-04:00"
 }
