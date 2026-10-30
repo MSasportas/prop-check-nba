@@ -105,7 +105,7 @@ class TestPinSolo(unittest.TestCase):
         pulled = [e for e in self.w.events() if e["t"] == "pulled"]
         self.assertEqual([e["code"] for e in pulled], ["rule_change"])
         self.assertEqual(self.w.read("slate.json")["picks"], [])
-        self.assertTrue(any(e["pulled"] for n in self.w.read("record.json")["nights"] for e in n["entries"]))
+        self.assertFalse(any(n["entries"] for n in self.w.read("record.json")["nights"]))   # pulled: log only, not on the page Record
 
     def test_too_few_other_books_no_pick(self):
         write(self.w, "2026-10-25T19:30:00Z", (-110, -120), (-102, -118), (-105, -115), n_others=3)

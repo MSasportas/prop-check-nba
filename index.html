@@ -821,7 +821,7 @@ function renderRecord() {
   }
   var sum = isObj(S.record.summary) ? S.record.summary : {}, hd = isObj(sum.headline) ? sum.headline : {};
   var w = num(hd.w) || 0, l = num(hd.l) || 0, n = num(hd.n) != null ? hd.n : w + l;
-  var rp = S.replay;
+  var rp = null;   /* replay bets are now inside the Record itself (tagged REPLAY) */
   if (rp) {
     try { app.appendChild(comboStrip(rp, hd, sum)); } catch (err) { rp = null; if (window.console) console.warn('replay strip failed', err); }
     if (rp) app.appendChild(h('div', { class: 'sec-h', style: 'margin:18px 0 0' }, h('h2', { text: 'Live Record' }),
@@ -861,13 +861,12 @@ function renderRecord() {
     };
     if (mrows.length) app.appendChild(rowTable(mrows, 'Record by market', h('span', { text: '' }), function (r) {
       return r.key === 'pulled' ? h('span', { class: 'lbl' }, 'Pulled', h('small', { text: '(not counted above)' }))
-        : r.key === 'under_fair' ? h('span', { class: 'lbl' }, 'Under fair price', h('small', { text: '(shown before v2.3, not counted above)' }))
         : h('span', { class: 'lbl', text: r.label || str(r.key) || 'Other' });
     }));
     if (wrows.length) app.appendChild(rowTable(wrows, 'Record by price-check window', h('span', { class: 'gh', text: 'By window' }), function (r) {
       return h('span', { class: 'lbl', text: str(r.key).slice(7) || r.label || 'Other' });
     }));
-    app.appendChild(h('p', { class: 'note', text: 'Push and void are 0 units and left out of hit rate. Since v2.3 (Oct 29) only picks at or better than Pinnacle's fair price count; earlier picks under it stay listed, marked NOT COUNTED. Nothing on the Record is ever edited or removed.' }));
+    app.appendChild(h('p', { class: 'note', text: 'Push and void are 0 units and left out of hit rate. This Record tracks the strategy: only picks at or better than the Pinnacle fair price, live or replayed (REPLAY = the same rule run on price checks saved before it went live, Oct 25-27).' }));
   }
 
   var seen = {}, nights = [];
@@ -1025,7 +1024,7 @@ function entryRow(e) {
   if (wn) e2.appendChild(h('span', null, ' · ', h('span', { class: 'nw', text: 'Trigger: ' + wn })));
   var rest = l2.slice(e.game ? 2 : 1); if (rest.length) e2.appendChild(node(' · ' + rest.join(' · ')));
   return h('div', { class: 'ent' }, tag,
-    h('div', { class: 'bd' }, h('div', { class: 'e1' }, e.pulled ? h('span', { class: 'ptag', text: 'PULLED' }) : (e.under_fair ? h('span', { class: 'ptag', text: 'NOT COUNTED' }) : null),
+    h('div', { class: 'bd' }, h('div', { class: 'e1' }, e.replay ? h('span', { class: 'rtag', text: 'REPLAY' }) : (e.pulled ? h('span', { class: 'ptag', text: 'PULLED' }) : null),
       h('span', { class: 'pn', text: e.player || 'Player not named' }), ' ' + str(e.bet)), e2),
     u ? h('span', { class: 'u ' + signCls(e.units), text: u }) : null);
 }

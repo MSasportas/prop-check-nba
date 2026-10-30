@@ -237,6 +237,39 @@ def _row(key, label, entries, needed_of):
             "needed": round(sum(need) / len(need), 4) if need else None, "n": w + l}
 
 
+def _replay_entries(cfg):
+    """Replay bets (the same rule run on price checks saved before it went live) as Record entries, tagged replay (Matt, 2026-10-30:
+    the Record tracks the whole strategy, live or not). Read from data/replay/pin_solo.json (scripts/replay.py)."""
+    doc = common.read_json(common.dpath("replay", "pin_solo.json")) or {}
+    out = {}
+    for n in doc.get("nights") or []:
+        for i, b in enumerate(n.get("bets") or []):
+            away, home = (b["opp"], b["team"]) if b.get("home") else (b["team"], b["opp"])
+            noun = (cfg["markets"].get(b["market"]) or {}).get("noun", "")
+            out.setdefault(n["date"], []).append({
+                "id": "replay:%s:%s:%s:%s:%s" % (n["date"], b["player"], b["market"], b["line"], b["side"]), "kind": "single",
+                "player": b["player"], "bet": b["bet"], "market": b["market"], "team": b["team"],
+                "game": "%s at %s" % (away, home), "price": b["price"], "first_price": b["price"], "last_price": b["price"],
+                "prices": [], "result": b.get("result"), "actual": b.get("actual"), "units": b.get("units"), "pulled": None,
+                "legs": [], "window": b.get("window"), "replay": True, "under_fair": False, "_at": b.get("at") or ""})
+    return out
+
+
+def _merge_replay(nights, cfg):
+    by = {n["date"]: n for n in nights}
+    for d, es in _replay_entries(cfg).items():
+        n = by.get(d)
+        if n is None:
+            n = by[d] = {"date": d, "graded": True, "w": 0, "l": 0, "units": 0.0, "entries": []}
+        n["entries"] = sorted(n["entries"] + [{k: v for k, v in e.items() if k != "_at"} for e in es], key=lambda e: 0)
+        counted = [e for e in n["entries"] if e["kind"] == "single"]
+        n["graded"] = all(e["result"] is not None for e in n["entries"])
+        n["w"] = sum(1 for e in counted if e["result"] == "W")
+        n["l"] = sum(1 for e in counted if e["result"] == "L")
+        n["units"] = round(sum(e["units"] or 0 for e in counted), 2)
+    return [by[d] for d in sorted(by, reverse=True)]
+
+
 def build_views(events, cfg):
     """-> (record.json dict, {"2026-10": month dict, ...})."""
     items = fold(events)
@@ -247,12 +280,17 @@ def build_views(events, cfg):
     nights = []
     for d in sorted(by_night, reverse=True):
         its = sorted(by_night[d], key=lambda x: (x["kind"] != "single", x["shown"].get("rank") or 999, x["shown_at"], x["id"]))
-        entries = [_entry(x, items) for x in its]
+        # v2.3 (Matt, 2026-10-30): the page's Record is the STRATEGY's record: picks at or better than Pinnacle's fair price.
+        # Pulled picks and picks under fair price are not shown here (they stay in data/record/events.jsonl, untouched)
+        entries = [e for e in (_entry(x, items) for x in its) if not e["pulled"] and not e.get("under_fair")]
+        if not entries:
+            continue
         counted = [e for e in entries if e["kind"] == "single" and not e["pulled"] and not e.get("under_fair")]
         nights.append({"date": d, "graded": all(e["result"] is not None for e in entries),
                        "w": sum(1 for e in counted if e["result"] == "W"),
                        "l": sum(1 for e in counted if e["result"] == "L"),
                        "units": round(sum(e["units"] or 0 for e in counted), 2), "entries": entries})
+    nights = _merge_replay(nights, cfg)
     every = [e for n in nights for e in n["entries"]]
     need = lambda e: odds.break_even(e["price"])
     singles = [e for e in every if e["kind"] == "single" and not e["pulled"] and not e.get("under_fair")]
@@ -272,9 +310,6 @@ def build_views(events, cfg):
     pulled = [e for e in every if e["pulled"]]
     if any(e["result"] for e in pulled):
         rows.append(_row("pulled", "Pulled (not counted above)", pulled, need))
-    unfair = [e for e in every if e["kind"] == "single" and not e["pulled"] and e.get("under_fair")]
-    if any(e["result"] for e in unfair):
-        rows.append(_row("under_fair", "Under Pinnacle's fair price (not counted)", unfair, need))
     head = _row("headline", "Singles", singles, need)
     head.pop("key"); head.pop("label")
     keep = cfg["ui"]["record_nights"]
