@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T19:50:01-04:00",
+ "at": "2026-10-29T20:10:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -141,12 +141,19 @@
    "date": "2026-10-22T20:10Z",
    "note": "Lively (foot) has been ruled out for Friday's game against the Pacers."
   },
+  "4065813": {
+   "status": "out",
+   "name": "Alpha Diallo",
+   "team": "DEN",
+   "date": "2026-10-29T23:50Z",
+   "note": "Diallo (personal) is listed as questionable for Friday's game against the Suns."
+  },
   "3138196": {
    "status": "out",
    "name": "Cameron Johnson",
    "team": "DEN",
-   "date": "2026-10-28T23:08Z",
-   "note": "Johnson (ankle) is listed as out for Wednesday's game against the Pelicans."
+   "date": "2026-10-29T23:49Z",
+   "note": "Johnson (ankle) is questionable for Friday's game against Phoenix."
   },
   "4592427": {
    "status": "out",
@@ -154,13 +161,6 @@
    "team": "DEN",
    "date": "2026-10-27T22:35Z",
    "note": "Jones (hamstring) has been ruled out for Wednesday's game against New Orleans."
-  },
-  "4065813": {
-   "status": "out",
-   "name": "Alpha Diallo",
-   "team": "DEN",
-   "date": "2026-10-27T22:34Z",
-   "note": "Diallo is out for Wednesday's game against the Pelicans due to personal reasons."
   },
   "4432181": {
    "status": "out",
