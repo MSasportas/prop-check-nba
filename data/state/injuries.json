@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T15:30:01-04:00",
+ "at": "2026-10-30T16:20:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -330,19 +330,19 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
+  "4433137": {
+   "status": "out",
+   "name": "Ziaire Williams",
+   "team": "LAL",
+   "date": "2026-10-30T20:05Z",
+   "note": "Williams has been ruled out for Friday's game against the Warriors due to left foot injury management, Mark Medina of TheSportingTribune.com reports."
+  },
   "5060631": {
    "status": "out",
    "name": "Adou Thiero",
    "team": "LAL",
    "date": "2026-10-30T00:05Z",
    "note": "Thiero (knee) has been ruled out for Friday's game against the Warriors."
-  },
-  "4433137": {
-   "status": "day-to-day",
-   "name": "Ziaire Williams",
-   "team": "LAL",
-   "date": "2026-10-30T00:02Z",
-   "note": "Williams (foot) is questionable for Friday's game against Golden State."
   },
   "4593016": {
    "status": "day-to-day",
