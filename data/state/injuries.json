@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T10:40:01-04:00",
+ "at": "2026-10-30T11:30:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -43,19 +43,19 @@
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
   },
+  "5061575": {
+   "status": "out",
+   "name": "Kon Knueppel",
+   "team": "CHA",
+   "date": "2026-10-30T15:12Z",
+   "note": "Knueppel (hamstring) was recalled from the G League's Greensboro Swarm on Friday. He remains out for Friday's contest against the Wizards."
+  },
   "3032979": {
    "status": "day-to-day",
    "name": "Dennis Schroder",
    "team": "CHA",
    "date": "2026-10-29T21:37Z",
    "note": "Schroder (foot) is questionable for Friday's game against the Wizards."
-  },
-  "5061575": {
-   "status": "out",
-   "name": "Kon Knueppel",
-   "team": "CHA",
-   "date": "2026-10-29T18:26Z",
-   "note": "Knueppel (hamstring) will practice with the G League's Greensboro Swarm on Thursday, the Hornets announced."
   },
   "4395651": {
    "status": "out",
