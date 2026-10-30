@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T18:40:00-04:00",
+ "at": "2026-10-30T18:50:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -92,6 +92,13 @@
    "date": "2026-10-30T20:51Z",
    "note": "Thomas (foot) is questionable for Saturday's game against the Bucks."
   },
+  "5279129": {
+   "status": "out",
+   "name": "Sergio de Larrea",
+   "team": "DAL",
+   "date": "2026-10-30T22:34Z",
+   "note": "Head coach Dusty May said Friday that de Larrea (knee) will be re-evaluated next week, Noah Weber of TheSmokingCuban.com reports."
+  },
   "4593125": {
    "status": "out",
    "name": "Santi Aldama",
@@ -105,13 +112,6 @@
    "team": "DAL",
    "date": "2026-10-30T22:13Z",
    "note": "Biberovic (heel) is out for Friday's game against the Rockets."
-  },
-  "5279129": {
-   "status": "out",
-   "name": "Sergio de Larrea",
-   "team": "DAL",
-   "date": "2026-10-29T22:06Z",
-   "note": "De Larrea (knee) is out for Friday's game against the Rockets."
   },
   "4683688": {
    "status": "out",
@@ -190,26 +190,26 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "4871144": {
+   "status": "out",
+   "name": "Alperen Sengun",
+   "team": "HOU",
+   "date": "2026-10-30T22:39Z",
+   "note": "Sengun (back) has been ruled out for Friday's game against the Mavericks, Mike Curtis of The Dallas Morning News reports."
+  },
+  "2990992": {
+   "status": "out",
+   "name": "Marcus Smart",
+   "team": "HOU",
+   "date": "2026-10-30T22:38Z",
+   "note": "Smart (forearm) is expected to play in Friday's game against the Mavericks, Mike Curtis of The Dallas Morning News reports."
+  },
   "4711272": {
    "status": "out",
    "name": "Reed Sheppard",
    "team": "HOU",
    "date": "2026-10-30T19:19Z",
    "note": "Houston picked up Sheppard's (back) fourth-year team option Friday, per Lachard Binkley of SI.com."
-  },
-  "2990992": {
-   "status": "out",
-   "name": "Marcus Smart",
-   "team": "HOU",
-   "date": "2026-10-29T20:35Z",
-   "note": "Smart (forearm) is questionable for Friday's game against the Mavericks."
-  },
-  "4871144": {
-   "status": "day-to-day",
-   "name": "Alperen Sengun",
-   "team": "HOU",
-   "date": "2026-10-29T20:34Z",
-   "note": "Sengun (back) is questionable for Friday's game against the Mavericks."
   },
   "2991235": {
    "status": "out",
@@ -274,13 +274,6 @@
    "date": "2026-10-28T21:30Z",
    "note": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports."
   },
-  "4066648": {
-   "status": "day-to-day",
-   "name": "Rui Hachimura",
-   "team": "LAC",
-   "date": "2026-10-30T18:00Z",
-   "note": "Hachimura (quadriceps) is probable for Friday's game against Minnesota, per Ohm Youngmisuk of ESPN.com."
-  },
   "5108024": {
    "status": "out",
    "name": "Yanic Konan Niederhauser",
@@ -334,15 +327,15 @@
    "status": "day-to-day",
    "name": "Scotty Pippen Jr.",
    "team": "MEM",
-   "date": "2026-10-30T22:29Z",
-   "note": "Pippen recorded two points (1-1 FG) across 14 minutes during Thursday's 124-103 win over the Trail Blazers."
+   "date": "2026-10-30T22:35Z",
+   "note": "Pippen (back) is listed as questionable for Saturday's game against the Kings."
   },
   "4065733": {
    "status": "day-to-day",
    "name": "Ty Jerome",
    "team": "MEM",
-   "date": "2026-10-30T22:28Z",
-   "note": "Jerome (back) is available for Thursday's game at Portland."
+   "date": "2026-10-30T22:29Z",
+   "note": "Jerome (back) is listed as questionable for Saturday's game against the Kings."
   },
   "4593016": {
    "status": "day-to-day",
