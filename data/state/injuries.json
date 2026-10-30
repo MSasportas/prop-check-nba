@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T16:40:00-04:00",
+ "at": "2026-10-30T16:50:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -77,6 +77,13 @@
    "team": "CHA",
    "date": "2026-10-20T20:55Z",
    "note": "Boswell (knee) is out for Wednesday's season opener against the Nets."
+  },
+  "4848625": {
+   "status": "day-to-day",
+   "name": "Dailyn Swain",
+   "team": "CHI",
+   "date": "2026-10-30T20:38Z",
+   "note": "Swain is listed as questionable for Friday's game at Boston due to lower-back soreness."
   },
   "4397189": {
    "status": "day-to-day",
@@ -170,11 +177,11 @@
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
   "4395702": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Isaiah Joe",
    "team": "DET",
-   "date": "2026-10-29T20:34Z",
-   "note": "Joe (hip) is listed as questionable for Friday's game against Brooklyn."
+   "date": "2026-10-30T20:35Z",
+   "note": "Joe (hip) has been ruled out for Friday's game against the Nets."
   },
   "4433621": {
    "status": "out",
@@ -187,8 +194,8 @@
    "status": "day-to-day",
    "name": "Gui Santos",
    "team": "GS",
-   "date": "2026-10-30T00:06Z",
-   "note": "Santos (knee) is listed as doubtful for Friday's game against the Warriors."
+   "date": "2026-10-30T20:37Z",
+   "note": "Santos (knee) is questionable for Friday's game against the Lakers."
   },
   "3102531": {
    "status": "out",
@@ -399,6 +406,13 @@
    "team": "NO",
    "date": "2026-10-24T22:17Z",
    "note": "Missi has been diagnosed with a left knee bone bruise and he will miss an extended period of time, Brett Siegel of ClutchPoints.com reports."
+  },
+  "3136195": {
+   "status": "day-to-day",
+   "name": "Karl-Anthony Towns",
+   "team": "NY",
+   "date": "2026-10-30T20:33Z",
+   "note": "Towns (wrist) is listed as probable for Friday's game against Philadelphia."
   },
   "4277869": {
    "status": "out",
