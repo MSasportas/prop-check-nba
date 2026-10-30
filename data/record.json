@@ -2,14 +2,14 @@
  "generated_at": "2026-10-29T22:30:01-04:00",
  "summary": {
   "headline": {
-   "w": 10,
+   "w": 13,
    "l": 4,
    "push": 0,
    "void": 0,
-   "units": 5.86,
-   "hit_rate": 0.7143,
-   "needed": 0.5232,
-   "n": 14
+   "units": 8.47,
+   "hit_rate": 0.7647,
+   "needed": 0.5252,
+   "n": 17
   },
   "rows": [
    {
@@ -27,14 +27,14 @@
    {
     "key": "points",
     "label": "Points",
-    "w": 3,
+    "w": 6,
     "l": 2,
     "push": 0,
     "void": 0,
-    "units": 0.5,
-    "hit_rate": 0.6,
-    "needed": 0.5473,
-    "n": 5
+    "units": 3.11,
+    "hit_rate": 0.75,
+    "needed": 0.5426,
+    "n": 8
    },
    {
     "key": "assists",
@@ -63,62 +63,38 @@
    {
     "key": "window:11 AM \u2192 90 min",
     "label": "Window 11 AM \u2192 90 min",
-    "w": 6,
+    "w": 7,
     "l": 2,
     "push": 0,
     "void": 0,
-    "units": 4.28,
-    "hit_rate": 0.75,
-    "needed": 0.5059,
-    "n": 8
+    "units": 5.15,
+    "hit_rate": 0.7778,
+    "needed": 0.5092,
+    "n": 9
    },
    {
     "key": "window:90 \u2192 45 min",
     "label": "Window 90 \u2192 45 min",
-    "w": 3,
+    "w": 4,
     "l": 2,
     "push": 0,
     "void": 0,
-    "units": 0.75,
-    "hit_rate": 0.6,
-    "needed": 0.5464,
-    "n": 5
+    "units": 1.66,
+    "hit_rate": 0.6667,
+    "needed": 0.5426,
+    "n": 6
    },
    {
     "key": "window:45 \u2192 20 min",
     "label": "Window 45 \u2192 20 min",
-    "w": 1,
+    "w": 2,
     "l": 0,
     "push": 0,
     "void": 0,
-    "units": 0.83,
+    "units": 1.67,
     "hit_rate": 1.0,
     "needed": 0.5455,
-    "n": 1
-   },
-   {
-    "key": "pulled",
-    "label": "Pulled (not counted above)",
-    "w": 1,
-    "l": 3,
-    "push": 0,
-    "void": 0,
-    "units": -2.35,
-    "hit_rate": 0.25,
-    "needed": 0.5679,
-    "n": 4
-   },
-   {
-    "key": "under_fair",
-    "label": "Under Pinnacle's fair price (not counted)",
-    "w": 8,
-    "l": 5,
-    "push": 0,
-    "void": 0,
-    "units": 1.42,
-    "hit_rate": 0.6154,
-    "needed": 0.5596,
-    "n": 13
+    "n": 2
    }
   ]
  },
@@ -164,84 +140,6 @@
    "l": 4,
    "units": 4.51,
    "entries": [
-    {
-     "id": "2026-10-28:401909881:2490149:assists:3.5:under",
-     "kind": "single",
-     "player": "C.J. McCollum",
-     "bet": "Under 3.5 assists",
-     "market": "assists",
-     "team": "ATL",
-     "game": "MIA at ATL",
-     "price": -140,
-     "first_price": -140,
-     "last_price": -140,
-     "prices": [
-      {
-       "price": -140,
-       "at": "2026-10-28T17:30:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "1 assist",
-     "units": 0.7143,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
-    },
-    {
-     "id": "2026-10-28:401909881:4066261:assists:3.5:under",
-     "kind": "single",
-     "player": "Bam Adebayo",
-     "bet": "Under 3.5 assists",
-     "market": "assists",
-     "team": "MIA",
-     "game": "MIA at ATL",
-     "price": -130,
-     "first_price": -130,
-     "last_price": -130,
-     "prices": [
-      {
-       "price": -130,
-       "at": "2026-10-28T17:30:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "3 assists",
-     "units": 0.7692,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
-    },
-    {
-     "id": "2026-10-28:401909882:3908809:assists:4.5:over",
-     "kind": "single",
-     "player": "Donovan Mitchell",
-     "bet": "Over 4.5 assists",
-     "market": "assists",
-     "team": "CLE",
-     "game": "WAS at CLE",
-     "price": -155,
-     "first_price": -155,
-     "last_price": -155,
-     "prices": [
-      {
-       "price": -155,
-       "at": "2026-10-28T17:30:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "7 assists",
-     "units": 0.6452,
-     "pulled": {
-      "at": "2026-10-28T18:20:01-04:00",
-      "reason": "Hard Rock took the line down"
-     },
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
-    },
     {
      "id": "2026-10-28:401909882:3992:rebounds:4.5:under",
      "kind": "single",
@@ -293,31 +191,6 @@
      "under_fair": false
     },
     {
-     "id": "2026-10-28:401909882:6583:assists:2.5:under",
-     "kind": "single",
-     "player": "Anthony Davis",
-     "bet": "Under 2.5 assists",
-     "market": "assists",
-     "team": "WAS",
-     "game": "WAS at CLE",
-     "price": -150,
-     "first_price": -150,
-     "last_price": -150,
-     "prices": [
-      {
-       "price": -150,
-       "at": "2026-10-28T17:30:00-04:00"
-      }
-     ],
-     "result": "L",
-     "actual": "3 assists",
-     "units": -1.0,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
-    },
-    {
      "id": "2026-10-28:401909883:4433249:points:8.5:under",
      "kind": "single",
      "player": "Moussa Diabate",
@@ -341,140 +214,6 @@
      "legs": [],
      "window": "11 AM \u2192 90 min",
      "under_fair": false
-    },
-    {
-     "id": "2026-10-28:401909884:3917376:points:21.5:over",
-     "kind": "single",
-     "player": "Jaylen Brown",
-     "bet": "Over 21.5 points",
-     "market": "points",
-     "team": "PHI",
-     "game": "PHI at IND",
-     "price": -120,
-     "first_price": -120,
-     "last_price": -120,
-     "prices": [
-      {
-       "price": -120,
-       "at": "2026-10-28T17:30:00-04:00"
-      }
-     ],
-     "result": "L",
-     "actual": "20 points",
-     "units": -1.0,
-     "pulled": {
-      "at": "2026-10-28T18:30:00-04:00",
-      "reason": "Rule change: Hard Rock was not 2+ pts better than Pinnacle's price"
-     },
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
-    },
-    {
-     "id": "2026-10-28:401909884:4431678:points:24.5:under",
-     "kind": "single",
-     "player": "Tyrese Maxey",
-     "bet": "Under 24.5 points",
-     "market": "points",
-     "team": "PHI",
-     "game": "PHI at IND",
-     "price": -115,
-     "first_price": -115,
-     "last_price": -115,
-     "prices": [
-      {
-       "price": -115,
-       "at": "2026-10-28T17:30:00-04:00"
-      }
-     ],
-     "result": "L",
-     "actual": "27 points",
-     "units": -1.0,
-     "pulled": {
-      "at": "2026-10-28T18:30:00-04:00",
-      "reason": "Rule change: Hard Rock was not 2+ pts better than Pinnacle's price"
-     },
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
-    },
-    {
-     "id": "2026-10-28:401909884:4431678:threes:2.5:over",
-     "kind": "single",
-     "player": "Tyrese Maxey",
-     "bet": "Over 2.5 threes",
-     "market": "threes",
-     "team": "PHI",
-     "game": "PHI at IND",
-     "price": 115,
-     "first_price": 115,
-     "last_price": 115,
-     "prices": [
-      {
-       "price": 115,
-       "at": "2026-10-28T17:30:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "3 threes",
-     "units": 1.15,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
-    },
-    {
-     "id": "2026-10-28:401909885:4066320:threes:2.5:over",
-     "kind": "single",
-     "player": "Desmond Bane",
-     "bet": "Over 2.5 threes",
-     "market": "threes",
-     "team": "ORL",
-     "game": "ORL at TOR",
-     "price": -140,
-     "first_price": -140,
-     "last_price": -140,
-     "prices": [
-      {
-       "price": -140,
-       "at": "2026-10-28T18:00:00-04:00"
-      }
-     ],
-     "result": "L",
-     "actual": "2 threes",
-     "units": -1.0,
-     "pulled": {
-      "at": "2026-10-28T18:30:00-04:00",
-      "reason": "Rule change: Hard Rock was not 2+ pts better than Pinnacle's price"
-     },
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
-    },
-    {
-     "id": "2026-10-28:401909886:3062679:points:11.5:under",
-     "kind": "single",
-     "player": "Josh Hart",
-     "bet": "Under 11.5 points",
-     "market": "points",
-     "team": "NYK",
-     "game": "NYK at CHI",
-     "price": -110,
-     "first_price": -110,
-     "last_price": -110,
-     "prices": [
-      {
-       "price": -110,
-       "at": "2026-10-28T18:30:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "2 points",
-     "units": 0.9091,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
     },
     {
      "id": "2026-10-28:401909886:4871145:rebounds:6.5:over",
@@ -502,31 +241,6 @@
      "under_fair": false
     },
     {
-     "id": "2026-10-28:401909887:4591725:assists:4.5:under",
-     "kind": "single",
-     "player": "Ryan Rollins",
-     "bet": "Under 4.5 assists",
-     "market": "assists",
-     "team": "MIL",
-     "game": "HOU at MIL",
-     "price": -145,
-     "first_price": -145,
-     "last_price": -145,
-     "prices": [
-      {
-       "price": -145,
-       "at": "2026-10-28T18:30:00-04:00"
-      }
-     ],
-     "result": "L",
-     "actual": "5 assists",
-     "units": -1.0,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
-    },
-    {
      "id": "2026-10-28:401909887:4684740:rebounds:8.5:under",
      "kind": "single",
      "player": "Amen Thompson",
@@ -550,56 +264,6 @@
      "legs": [],
      "window": "11 AM \u2192 90 min",
      "under_fair": false
-    },
-    {
-     "id": "2026-10-28:401909888:3032976:points:10.5:over",
-     "kind": "single",
-     "player": "Rudy Gobert",
-     "bet": "Over 10.5 points",
-     "market": "points",
-     "team": "MIN",
-     "game": "GSW at MIN",
-     "price": -110,
-     "first_price": -110,
-     "last_price": -110,
-     "prices": [
-      {
-       "price": -110,
-       "at": "2026-10-28T18:30:00-04:00"
-      }
-     ],
-     "result": "L",
-     "actual": "1 point",
-     "units": -1.0,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
-    },
-    {
-     "id": "2026-10-28:401909888:4397002:rebounds:4.5:under",
-     "kind": "single",
-     "player": "Ayo Dosunmu",
-     "bet": "Under 4.5 rebounds",
-     "market": "rebounds",
-     "team": "MIN",
-     "game": "GSW at MIN",
-     "price": -145,
-     "first_price": -145,
-     "last_price": -145,
-     "prices": [
-      {
-       "price": -145,
-       "at": "2026-10-28T18:30:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "3 rebounds",
-     "units": 0.6897,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
     },
     {
      "id": "2026-10-28:401909889:3907497:points:17.5:under",
@@ -652,31 +316,6 @@
      "under_fair": false
     },
     {
-     "id": "2026-10-28:401909884:1966:rebounds:6.5:over",
-     "kind": "single",
-     "player": "LeBron James",
-     "bet": "Over 6.5 rebounds",
-     "market": "rebounds",
-     "team": "PHI",
-     "game": "PHI at IND",
-     "price": -110,
-     "first_price": -110,
-     "last_price": -110,
-     "prices": [
-      {
-       "price": -110,
-       "at": "2026-10-28T18:40:01-04:00"
-      }
-     ],
-     "result": "L",
-     "actual": "5 rebounds",
-     "units": -1.0,
-     "pulled": null,
-     "legs": [],
-     "window": "45 \u2192 20 min",
-     "under_fair": true
-    },
-    {
      "id": "2026-10-28:401909885:4712849:assists:3.5:under",
      "kind": "single",
      "player": "Anthony Black",
@@ -700,31 +339,6 @@
      "legs": [],
      "window": "90 \u2192 45 min",
      "under_fair": false
-    },
-    {
-     "id": "2026-10-28:401909886:3147657:rebounds:3.5:under",
-     "kind": "single",
-     "player": "Mikal Bridges",
-     "bet": "Under 3.5 rebounds",
-     "market": "rebounds",
-     "team": "NYK",
-     "game": "NYK at CHI",
-     "price": -130,
-     "first_price": -130,
-     "last_price": -130,
-     "prices": [
-      {
-       "price": -130,
-       "at": "2026-10-28T19:20:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "0 rebounds",
-     "units": 0.7692,
-     "pulled": null,
-     "legs": [],
-     "window": "90 \u2192 45 min",
-     "under_fair": true
     },
     {
      "id": "2026-10-28:401909887:3133628:rebounds:5.5:under",
@@ -777,31 +391,6 @@
      "under_fair": false
     },
     {
-     "id": "2026-10-28:401909887:4432848:points:14.5:under",
-     "kind": "single",
-     "player": "Jaime Jaquez Jr",
-     "bet": "Under 14.5 points",
-     "market": "points",
-     "team": "MIL",
-     "game": "HOU at MIL",
-     "price": -125,
-     "first_price": -125,
-     "last_price": -125,
-     "prices": [
-      {
-       "price": -125,
-       "at": "2026-10-28T19:20:00-04:00"
-      }
-     ],
-     "result": "L",
-     "actual": "19 points",
-     "units": -1.0,
-     "pulled": null,
-     "legs": [],
-     "window": "90 \u2192 45 min",
-     "under_fair": true
-    },
-    {
      "id": "2026-10-28:401909888:4432816:points:22.5:under",
      "kind": "single",
      "player": "LaMelo Ball",
@@ -852,56 +441,6 @@
      "under_fair": false
     },
     {
-     "id": "2026-10-28:401909888:6589:threes:1.5:under",
-     "kind": "single",
-     "player": "Draymond Green",
-     "bet": "Under 1.5 threes",
-     "market": "threes",
-     "team": "GSW",
-     "game": "GSW at MIN",
-     "price": -195,
-     "first_price": -195,
-     "last_price": -195,
-     "prices": [
-      {
-       "price": -195,
-       "at": "2026-10-28T19:20:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "0 threes",
-     "units": 0.5128,
-     "pulled": null,
-     "legs": [],
-     "window": "90 \u2192 45 min",
-     "under_fair": true
-    },
-    {
-     "id": "2026-10-28:401909890:4066259:points:15.5:under",
-     "kind": "single",
-     "player": "De'Aaron Fox",
-     "bet": "Under 15.5 points",
-     "market": "points",
-     "team": "SAS",
-     "game": "SAS at UTA",
-     "price": -110,
-     "first_price": -110,
-     "last_price": -110,
-     "prices": [
-      {
-       "price": -110,
-       "at": "2026-10-28T19:30:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "14 points",
-     "units": 0.9091,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "under_fair": true
-    },
-    {
      "id": "2026-10-28:401909891:4683778:threes:2.5:under",
      "kind": "single",
      "player": "Jared McCain",
@@ -924,6 +463,87 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "under_fair": false
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "graded": true,
+   "w": 1,
+   "l": 0,
+   "units": 0.83,
+   "entries": [
+    {
+     "id": "replay:2026-10-27:John Collins:points:15.5:under",
+     "kind": "single",
+     "player": "John Collins",
+     "bet": "Under 15.5 points",
+     "market": "points",
+     "team": "DET",
+     "game": "DET at NYK",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [],
+     "result": "W",
+     "actual": "2 points",
+     "units": 0.8333,
+     "pulled": null,
+     "legs": [],
+     "window": "45 \u2192 20 min",
+     "replay": true,
+     "under_fair": false
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "graded": true,
+   "w": 2,
+   "l": 0,
+   "units": 1.78,
+   "entries": [
+    {
+     "id": "replay:2026-10-26:Justin Champagnie:points:7.5:under",
+     "kind": "single",
+     "player": "Justin Champagnie",
+     "bet": "Under 7.5 points",
+     "market": "points",
+     "team": "WAS",
+     "game": "WAS at CHA",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [],
+     "result": "W",
+     "actual": "2 points",
+     "units": 0.9091,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min",
+     "replay": true,
+     "under_fair": false
+    },
+    {
+     "id": "replay:2026-10-26:Nikola Jokic:points:26.5:under",
+     "kind": "single",
+     "player": "Nikola Jokic",
+     "bet": "Under 26.5 points",
+     "market": "points",
+     "team": "DEN",
+     "game": "GSW at DEN",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [],
+     "result": "W",
+     "actual": "19 points",
+     "units": 0.8696,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min",
+     "replay": true,
      "under_fair": false
     }
    ]
