@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T18:50:00-04:00",
+ "at": "2026-10-30T19:10:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -219,11 +219,11 @@
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
   "4278355": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Obi Toppin",
    "team": "IND",
-   "date": "2026-10-30T20:27Z",
-   "note": "Toppin (back) is questionable for Friday's game against the Heat."
+   "date": "2026-10-30T22:51Z",
+   "note": "Toppin (back) has been ruled out for Friday's game against Miami."
   },
   "2530530": {
    "status": "out",
@@ -238,20 +238,6 @@
    "team": "IND",
    "date": "2026-10-30T19:06Z",
    "note": "Furphy (knee) is practicing with the G League's Noblesville Boom, per Alex Golden of SI.com."
-  },
-  "4395712": {
-   "status": "day-to-day",
-   "name": "Andrew Nembhard",
-   "team": "IND",
-   "date": "2026-10-29T21:08Z",
-   "note": "Nembhard (neck) is listed as probable for Friday's game against Miami."
-  },
-  "4396909": {
-   "status": "day-to-day",
-   "name": "Aaron Nesmith",
-   "team": "IND",
-   "date": "2026-10-29T21:07Z",
-   "note": "Nesmith (hamstring) is probable for Friday's game against the Heat."
   },
   "4017837": {
    "status": "out",

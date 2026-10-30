@@ -32,7 +32,7 @@
    }
   },
   "CHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Josh Giddey",
     "Norman Powell",
@@ -46,7 +46,7 @@
    }
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Derrick White",
     "Paul George",
@@ -99,7 +99,7 @@
    }
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
@@ -116,7 +116,7 @@
    }
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jase Richardson",
     "Anthony Black",
@@ -133,7 +133,7 @@
    }
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Immanuel Quickley",
     "RJ Barrett",
@@ -299,5 +299,5 @@
    }
   }
  },
- "at": "2026-10-30T19:00:01-04:00"
+ "at": "2026-10-30T19:10:00-04:00"
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T18:30:01-04:00",
+ "generated_at": "2026-10-30T19:10:00-04:00",
  "summary": {
   "headline": {
    "w": 13,
@@ -129,6 +129,56 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-30:401909280:3136195:assists:3.5:under",
+     "kind": "single",
+     "player": "Karl-Anthony Towns",
+     "bet": "Under 3.5 assists",
+     "market": "assists",
+     "team": "NYK",
+     "game": "NYK at PHI",
+     "price": -135,
+     "first_price": -135,
+     "last_price": -135,
+     "prices": [
+      {
+       "price": -135,
+       "at": "2026-10-30T19:10:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "45 \u2192 20 min",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-30:401909281:3134908:rebounds:5.5:under",
+     "kind": "single",
+     "player": "Jakob Poeltl",
+     "bet": "Under 5.5 rebounds",
+     "market": "rebounds",
+     "team": "TOR",
+     "game": "ORL at TOR",
+     "price": -105,
+     "first_price": -105,
+     "last_price": -105,
+     "prices": [
+      {
+       "price": -105,
+       "at": "2026-10-30T19:10:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "45 \u2192 20 min",
      "under_fair": false
     }
    ]
