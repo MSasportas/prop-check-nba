@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:08 - 3rd",
+    "detail": "43.2 - 3rd",
     "score": {
-     "CLE": "69",
-     "ATL": "76"
+     "CLE": "82",
+     "ATL": "85"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:36 - 3rd",
+    "detail": "1:59 - 3rd",
     "score": {
-     "SAC": "69",
-     "NO": "86"
+     "SAC": "82",
+     "NO": "98"
     }
    },
    {
