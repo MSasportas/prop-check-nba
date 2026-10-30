@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T20:10:15-04:00",
+ "at": "2026-10-29T20:30:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -187,8 +187,8 @@
    "status": "day-to-day",
    "name": "Gui Santos",
    "team": "GS",
-   "date": "2026-10-29T04:38Z",
-   "note": "Santos has been ruled out for Wednesday's game against the Timberwolves due to left knee tendinitis."
+   "date": "2026-10-30T00:06Z",
+   "note": "Santos (knee) is listed as doubtful for Friday's game against the Warriors."
   },
   "3102531": {
    "status": "out",
@@ -330,26 +330,26 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
+  "5113969": {
+   "status": "out",
+   "name": "Cameron Carr",
+   "team": "LAL",
+   "date": "2026-10-30T00:07Z",
+   "note": "Carr (oblique) has been ruled out for Friday's game against Golden State."
+  },
+  "5060631": {
+   "status": "out",
+   "name": "Adou Thiero",
+   "team": "LAL",
+   "date": "2026-10-30T00:05Z",
+   "note": "Thiero (knee) has been ruled out for Friday's game against the Warriors."
+  },
   "4433137": {
    "status": "day-to-day",
    "name": "Ziaire Williams",
    "team": "LAL",
    "date": "2026-10-30T00:02Z",
    "note": "Williams (foot) is questionable for Friday's game against Golden State."
-  },
-  "5113969": {
-   "status": "out",
-   "name": "Cameron Carr",
-   "team": "LAL",
-   "date": "2026-10-28T20:12Z",
-   "note": "Carr (oblique) is out for Wednesday's game against the Clippers."
-  },
-  "5060631": {
-   "status": "out",
-   "name": "Adou Thiero",
-   "team": "LAL",
-   "date": "2026-10-28T20:10Z",
-   "note": "Thiero (knee) is out for Wednesday's game against the Clippers."
   },
   "3899664": {
    "status": "day-to-day",
