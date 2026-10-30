@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-30T19:20:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-30T19:20:00-04:00"
+   "at": "2026-10-30T19:30:01-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "CHA",
    "home": "WAS",
    "state": "in",
-   "detail": "6:37 - 1st",
+   "detail": "3:10 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -193,7 +193,7 @@
    "final_ev": 0.0597,
    "model_p": null,
    "reason": "Pinnacle moved the under from +105 to -123 (46% to 52%); 7 other books moved 1 pt. Hard Rock price: -105, 0.6% better than Pinnacle's fair price.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/8268891823867560365",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.4554,
    "pin_after": 0.5151,
@@ -205,12 +205,12 @@
    "window": "45 \u2192 20 min",
    "gap_vs_pin": 0.0394,
    "id": "2026-10-30:401909281:3134908:rebounds:5.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 1
+   "rank": null
   },
   {
    "player": "Karl-Anthony Towns",
@@ -237,7 +237,7 @@
    "final_ev": 0.0309,
    "model_p": null,
    "reason": "Pinnacle moved the under from -143 to -165 (55% to 58%); 8 other books held. Hard Rock price: -135, 1.2% better than Pinnacle's fair price.",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7773702508618318247",
+   "link": null,
    "rule": "pin_solo",
    "pin_before": 0.5504,
    "pin_after": 0.5813,
@@ -249,12 +249,12 @@
    "window": "45 \u2192 20 min",
    "gap_vs_pin": 0.0482,
    "id": "2026-10-30:401909280:3136195:assists:3.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 2
+   "rank": null
   },
   {
    "player": "Ayo Dosunmu",
@@ -298,7 +298,7 @@
    "price_final": false,
    "pulled": null,
    "result": null,
-   "rank": 3
+   "rank": 1
   }
  ],
  "empty": null,
@@ -313,6 +313,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-30T19:20:00-04:00",
- "status_at": "2026-10-30T19:20:00-04:00"
+ "generated_at": "2026-10-30T19:30:01-04:00",
+ "status_at": "2026-10-30T19:30:01-04:00"
 }
