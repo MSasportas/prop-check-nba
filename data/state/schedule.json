@@ -300,11 +300,11 @@
     "home": "WSH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:10 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "CHA": "22",
-     "WSH": "14"
+     "CHA": "26",
+     "WSH": "22"
     }
    },
    {

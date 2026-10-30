@@ -147,13 +147,13 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
     "Kevin Durant",
-    "Tari Eason",
-    "Jabari Smith"
+    "Jabari Smith",
+    "Clint Capela"
    ],
    "status": {
     "Steven Adams": "out",
@@ -162,7 +162,7 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
     "Max Christie",
@@ -178,7 +178,7 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Andrew Nembhard",
     "Kelly Oubre",
@@ -196,7 +196,7 @@
    }
   },
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
@@ -207,7 +207,7 @@
    "status": {}
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Kris Dunn",
@@ -224,7 +224,7 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -298,5 +298,5 @@
    }
   }
  },
- "at": "2026-10-30T19:30:01-04:00"
+ "at": "2026-10-30T19:40:01-04:00"
 }
