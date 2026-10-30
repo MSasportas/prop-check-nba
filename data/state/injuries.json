@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T17:50:00-04:00",
+ "at": "2026-10-30T18:10:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -22,13 +22,6 @@
    "date": "2026-10-18T14:49Z",
    "note": "Carter has been diagnosed with mononucleosis and is without a timetable for a return, Gary Washburn of The Boston Globe reports."
   },
-  "4712896": {
-   "status": "day-to-day",
-   "name": "Noah Clowney",
-   "team": "BKN",
-   "date": "2026-10-30T14:16Z",
-   "note": "Clowney (illness) was downgraded to questionable for Friday's game versus Detroit, Erik Slater of ClutchPoints.com reports."
-  },
   "5175643": {
    "status": "out",
    "name": "Egor Demin",
@@ -42,13 +35,6 @@
    "team": "BKN",
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
-  },
-  "3032979": {
-   "status": "day-to-day",
-   "name": "Dennis Schroder",
-   "team": "CHA",
-   "date": "2026-10-30T15:34Z",
-   "note": "Schroder (foot) is probable for Friday against the Wizards."
   },
   "5061575": {
    "status": "out",
@@ -79,25 +65,11 @@
    "note": "Boswell (knee) is out for Wednesday's season opener against the Nets."
   },
   "4848625": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Dailyn Swain",
    "team": "CHI",
-   "date": "2026-10-30T20:38Z",
-   "note": "Swain is listed as questionable for Friday's game at Boston due to lower-back soreness."
-  },
-  "4397189": {
-   "status": "day-to-day",
-   "name": "Jalen Smith",
-   "team": "CHI",
-   "date": "2026-10-29T18:55Z",
-   "note": "Smith is questionable for Friday's game against Boston with a left finger sprain."
-  },
-  "5105555": {
-   "status": "day-to-day",
-   "name": "Tobe Awaka",
-   "team": "CHI",
-   "date": "2026-10-29T18:53Z",
-   "note": "Awaka (ankle) is questionable for Friday's game in Boston."
+   "date": "2026-10-30T21:50Z",
+   "note": "Swain (back) has been ruled out for Friday's game against Boston."
   },
   "4278067": {
    "status": "out",
@@ -499,11 +471,11 @@
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
   "3917376": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jaylen Brown",
    "team": "PHI",
-   "date": "2026-10-30T20:23Z",
-   "note": "Brown (knee) is doubtful for Friday's game against the Knicks."
+   "date": "2026-10-30T21:50Z",
+   "note": "Brown (knee) is out for Friday's game against the Knicks."
   },
   "4432446": {
    "status": "out",
@@ -607,8 +579,8 @@
    "status": "out",
    "name": "Tobias Harris",
    "team": "SA",
-   "date": "2026-10-28T18:24Z",
-   "note": "Harris (calf) is out for Wednesday's game against Utah, Paul Garcia of ProjectSpurs.com reports."
+   "date": "2026-10-30T21:44Z",
+   "note": "Harris (calf) is listed as out for Saturday's game against Minnesota."
   },
   "5101845": {
    "status": "out",
