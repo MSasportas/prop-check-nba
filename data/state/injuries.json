@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T23:50:00-04:00",
+ "at": "2026-10-30T00:20:15-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -532,6 +532,13 @@
    "team": "PHX",
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
+  },
+  "4279888": {
+   "status": "day-to-day",
+   "name": "Ja Morant",
+   "team": "POR",
+   "date": "2026-10-30T04:14Z",
+   "note": "Morant accumulated 23 points (9-13 FG, 1-1 3Pt, 4-4 FT) and four assists over 31 minutes during Tuesday's 136-129 win over the Lakers."
   },
   "4066211": {
    "status": "out",
