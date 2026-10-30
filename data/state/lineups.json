@@ -173,9 +173,8 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Naji Marshall": "probable",
-    "Santi Aldama": "doubtful",
-    "Tarik Biberovic": "doubtful",
+    "Santi Aldama": "out",
+    "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Dereck Lively": "out"
    }
@@ -209,9 +208,7 @@
     "Giannis Antetokounmpo",
     "Bam Adebayo"
    ],
-   "status": {
-    "Simone Fontecchio": "probable"
-   }
+   "status": {}
   },
   "LAC": {
    "state": "expected",
@@ -306,5 +303,5 @@
    }
   }
  },
- "at": "2026-10-30T18:10:00-04:00"
+ "at": "2026-10-30T18:20:01-04:00"
 }

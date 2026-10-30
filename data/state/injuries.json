@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T18:10:00-04:00",
+ "at": "2026-10-30T18:20:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -92,19 +92,12 @@
    "date": "2026-10-30T20:51Z",
    "note": "Thomas (foot) is questionable for Saturday's game against the Bucks."
   },
-  "4278594": {
-   "status": "day-to-day",
-   "name": "Naji Marshall",
-   "team": "DAL",
-   "date": "2026-10-30T20:24Z",
-   "note": "Marshall (illness) is probable for Friday's game against the Rockets."
-  },
   "5148538": {
    "status": "out",
    "name": "Tarik Biberovic",
    "team": "DAL",
-   "date": "2026-10-29T22:09Z",
-   "note": "Biberovic (heel) is listed as doubtful for Friday's game versus the Rockets."
+   "date": "2026-10-30T22:13Z",
+   "note": "Biberovic (heel) is out for Friday's game against the Rockets."
   },
   "4593125": {
    "status": "out",
@@ -630,13 +623,6 @@
    "team": "UTAH",
    "date": "2026-10-07T23:07Z",
    "note": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports."
-  },
-  "5238230": {
-   "status": "day-to-day",
-   "name": "Tre Johnson",
-   "team": "WSH",
-   "date": "2026-10-29T21:10Z",
-   "note": "Johnson (Achilles) is listed as questionable for Friday's game against Charlotte."
   },
   "4432907": {
    "status": "out",
