@@ -45,8 +45,8 @@
    "status": {
     "Jalen Smith": "questionable",
     "Tobe Awaka": "questionable",
-    "Dailyn Swain": "questionable",
-    "Nic Claxton": "out"
+    "Nic Claxton": "out",
+    "Dailyn Swain": "out"
    }
   },
   "BOS": {
@@ -115,8 +115,8 @@
    ],
    "status": {
     "Ariel Hukporti": "out",
-    "Jaylen Brown": "doubtful",
     "Dominick Barlow": "out",
+    "Jaylen Brown": "out",
     "Tacko Fall": "out",
     "Jabari Walker": "out"
    }
@@ -311,5 +311,5 @@
    }
   }
  },
- "at": "2026-10-30T17:40:16-04:00"
+ "at": "2026-10-30T17:50:00-04:00"
 }
