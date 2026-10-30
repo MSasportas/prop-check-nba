@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T22:50:00-04:00",
+ "at": "2026-10-29T23:50:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -350,6 +350,13 @@
    "team": "LAL",
    "date": "2026-10-30T00:02Z",
    "note": "Williams (foot) is questionable for Friday's game against Golden State."
+  },
+  "4593016": {
+   "status": "day-to-day",
+   "name": "Quinten Post",
+   "team": "MEM",
+   "date": "2026-10-30T03:27Z",
+   "note": "Post is being considered doubtful to return to Thursday's game against the Trail Blazers due to a right ankle injury."
   },
   "3899664": {
    "status": "day-to-day",
