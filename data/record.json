@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T22:30:01-04:00",
+ "generated_at": "2026-10-30T18:30:01-04:00",
  "summary": {
   "headline": {
    "w": 13,
@@ -99,6 +99,40 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-10-30",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-10-30:401909284:4397002:assists:4.5:under",
+     "kind": "single",
+     "player": "Ayo Dosunmu",
+     "bet": "Under 4.5 assists",
+     "market": "assists",
+     "team": "MIN",
+     "game": "LAC at MIN",
+     "price": -140,
+     "first_price": -140,
+     "last_price": -140,
+     "prices": [
+      {
+       "price": -140,
+       "at": "2026-10-30T18:30:01-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min",
+     "under_fair": false
+    }
+   ]
+  },
   {
    "date": "2026-10-29",
    "graded": true,

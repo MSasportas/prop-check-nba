@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2503,
+   "pool_left": 2491,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-30T18:30:00-04:00",
-  "last_read_at": "2026-10-30T18:20:01-04:00",
+  "next_read_at": "2026-10-30T18:40:00-04:00",
+  "last_read_at": "2026-10-30T18:30:01-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-30T18:20:01-04:00"
+   "at": "2026-10-30T18:30:01-04:00"
   }
  },
  "games": [
@@ -107,7 +107,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-30T11:00:01-04:00",
+   "read_at": "2026-10-30T18:30:01-04:00",
    "picks": 0
   },
   {
@@ -121,7 +121,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-30T11:00:01-04:00",
+   "read_at": "2026-10-30T18:30:01-04:00",
    "picks": 0
   },
   {
@@ -135,8 +135,8 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-30T11:00:01-04:00",
-   "picks": 0
+   "read_at": "2026-10-30T18:30:01-04:00",
+   "picks": 1
   },
   {
    "id": "401909285",
@@ -167,15 +167,56 @@
    "picks": 0
   }
  ],
- "picks": [],
- "empty": {
-  "text": "No picks yet today",
-  "why": "944 lines read. Pinnacle moved alone on 27, none of them bettable yet.",
-  "next": "2026-10-30T18:30:00-04:00"
- },
+ "picks": [
+  {
+   "player": "Ayo Dosunmu",
+   "pid": "4397002",
+   "team": "MIN",
+   "opp": "LAC",
+   "home": true,
+   "game_id": "401909284",
+   "start": "2026-10-30T20:00:00-04:00",
+   "bet": "Under 4.5 assists",
+   "market": "assists",
+   "side": "under",
+   "line": 4.5,
+   "price": -140,
+   "price_at": "2026-10-30T18:30:01-04:00",
+   "read": "B",
+   "p": 0.5846,
+   "p_pct": 58,
+   "breakeven": 0.5833,
+   "breakeven_pct": 58,
+   "market_fair": null,
+   "n_books": 7,
+   "gap_ev": null,
+   "final_ev": 0.0236,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from -150 to -167 (56% to 58%); 7 other books held. Hard Rock price: -140, 0.2% better than Pinnacle's fair price.",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/8878617791515722160",
+   "rule": "pin_solo",
+   "pin_before": 0.561,
+   "pin_after": 0.5846,
+   "pin_price_before": -150,
+   "pin_price_after": -167,
+   "others_move": -0.0,
+   "n_others": 7,
+   "ev_vs_pin": 0.0022,
+   "window": "11 AM \u2192 90 min",
+   "gap_vs_pin": 0.0421,
+   "id": "2026-10-30:401909284:4397002:assists:4.5:under",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "result": null,
+   "rank": 1
+  }
+ ],
+ "empty": null,
  "counts": {
-  "lines_read": 944,
-  "passing": 0,
+  "lines_read": 948,
+  "passing": 1,
   "games": 10
  },
  "safety_paused": false,
@@ -184,6 +225,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-30T18:20:01-04:00",
- "status_at": "2026-10-30T18:20:01-04:00"
+ "generated_at": "2026-10-30T18:30:01-04:00",
+ "status_at": "2026-10-30T18:30:01-04:00"
 }
