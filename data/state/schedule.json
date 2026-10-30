@@ -300,11 +300,11 @@
     "home": "WSH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:45 - 2nd",
     "score": {
-     "CHA": "26",
-     "WSH": "22"
+     "CHA": "36",
+     "WSH": "35"
     }
    },
    {
@@ -313,13 +313,13 @@
     "start": "2026-10-30T19:30:00-04:00",
     "away": "CHI",
     "home": "BOS",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/30 - 7:30 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:11 - 1st",
     "score": {
-     "CHI": "0",
-     "BOS": "0"
+     "CHI": "9",
+     "BOS": "14"
     }
    },
    {
@@ -328,13 +328,13 @@
     "start": "2026-10-30T19:30:00-04:00",
     "away": "DET",
     "home": "BKN",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/30 - 7:30 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:54 - 1st",
     "score": {
-     "DET": "0",
-     "BKN": "0"
+     "DET": "11",
+     "BKN": "13"
     }
    },
    {
@@ -343,13 +343,13 @@
     "start": "2026-10-30T19:30:00-04:00",
     "away": "NY",
     "home": "PHI",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/30 - 7:30 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:20 - 1st",
     "score": {
-     "NY": "0",
-     "PHI": "0"
+     "NY": "11",
+     "PHI": "14"
     }
    },
    {
@@ -358,13 +358,13 @@
     "start": "2026-10-30T19:30:00-04:00",
     "away": "ORL",
     "home": "TOR",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/30 - 7:30 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:44 - 1st",
     "score": {
-     "ORL": "0",
-     "TOR": "0"
+     "ORL": "14",
+     "TOR": "6"
     }
    },
    {
