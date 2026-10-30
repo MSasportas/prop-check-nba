@@ -388,13 +388,13 @@
     "start": "2026-10-29T20:00:00-04:00",
     "away": "CLE",
     "home": "ATL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/29 - 8:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:55 - 1st",
     "score": {
-     "CLE": "0",
-     "ATL": "0"
+     "CLE": "10",
+     "ATL": "7"
     }
    },
    {
@@ -403,13 +403,13 @@
     "start": "2026-10-29T20:00:00-04:00",
     "away": "SAC",
     "home": "NO",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/29 - 8:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:43 - 1st",
     "score": {
-     "SAC": "0",
-     "NO": "0"
+     "SAC": "11",
+     "NO": "14"
     }
    },
    {
