@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T00:20:15-04:00",
+ "at": "2026-10-30T00:40:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -355,8 +355,8 @@
    "status": "day-to-day",
    "name": "Quinten Post",
    "team": "MEM",
-   "date": "2026-10-30T03:27Z",
-   "note": "Post is being considered doubtful to return to Thursday's game against the Trail Blazers due to a right ankle injury."
+   "date": "2026-10-30T04:28Z",
+   "note": "Post (ankle) didn't return to Thursday's game against Portland. He recorded 10 points (3-5 FG, 2-3 3Pt, 2-2 FT) and four rebounds in seven minutes before exiting."
   },
   "3899664": {
    "status": "day-to-day",
@@ -533,19 +533,19 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
+  "4066211": {
+   "status": "day-to-day",
+   "name": "Robert Williams III",
+   "team": "POR",
+   "date": "2026-10-30T04:23Z",
+   "note": "Williams (knee) has been ruled out for Thursday's game against Memphis, Casey Holdahl of the Trail Blazers' official site reports."
+  },
   "4279888": {
    "status": "day-to-day",
    "name": "Ja Morant",
    "team": "POR",
-   "date": "2026-10-30T04:14Z",
-   "note": "Morant accumulated 23 points (9-13 FG, 1-1 3Pt, 4-4 FT) and four assists over 31 minutes during Tuesday's 136-129 win over the Lakers."
-  },
-  "4066211": {
-   "status": "out",
-   "name": "Robert Williams III",
-   "team": "POR",
-   "date": "2026-10-30T00:32Z",
-   "note": "Williams (knee) has been ruled out for Thursday's game against Memphis, Casey Holdahl of the Trail Blazers' official site reports."
+   "date": "2026-10-30T04:17Z",
+   "note": "Morant won't return to Thursday's game against the Grizzlies due to a left hamstring injury. He'll end with 14 points (6-14 FG, 2-5 3Pt), two rebounds and three assists in 23 minutes."
   },
   "4706557": {
    "status": "out",
