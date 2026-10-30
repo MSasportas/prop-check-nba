@@ -391,7 +391,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:42 - 2nd",
+    "detail": "2:31 - 2nd",
     "score": {
      "CLE": "37",
      "ATL": "39"
