@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T18:30:01-04:00",
+ "at": "2026-10-30T18:40:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -92,19 +92,19 @@
    "date": "2026-10-30T20:51Z",
    "note": "Thomas (foot) is questionable for Saturday's game against the Bucks."
   },
+  "4593125": {
+   "status": "out",
+   "name": "Santi Aldama",
+   "team": "DAL",
+   "date": "2026-10-30T22:16Z",
+   "note": "Aldama (knee) is listed as out for Friday's game against the Rockets."
+  },
   "5148538": {
    "status": "out",
    "name": "Tarik Biberovic",
    "team": "DAL",
    "date": "2026-10-30T22:13Z",
    "note": "Biberovic (heel) is out for Friday's game against the Rockets."
-  },
-  "4593125": {
-   "status": "out",
-   "name": "Santi Aldama",
-   "team": "DAL",
-   "date": "2026-10-29T22:07Z",
-   "note": "Aldama (knee) is listed as doubtful for Friday's game against Houston."
   },
   "5279129": {
    "status": "out",
@@ -330,12 +330,26 @@
    "date": "2026-10-30T00:05Z",
    "note": "Thiero (knee) has been ruled out for Friday's game against the Warriors."
   },
+  "4431785": {
+   "status": "day-to-day",
+   "name": "Scotty Pippen Jr.",
+   "team": "MEM",
+   "date": "2026-10-30T22:29Z",
+   "note": "Pippen recorded two points (1-1 FG) across 14 minutes during Thursday's 124-103 win over the Trail Blazers."
+  },
+  "4065733": {
+   "status": "day-to-day",
+   "name": "Ty Jerome",
+   "team": "MEM",
+   "date": "2026-10-30T22:28Z",
+   "note": "Jerome (back) is available for Thursday's game at Portland."
+  },
   "4593016": {
    "status": "day-to-day",
    "name": "Quinten Post",
    "team": "MEM",
-   "date": "2026-10-30T04:28Z",
-   "note": "Post (ankle) didn't return to Thursday's game against Portland. He recorded 10 points (3-5 FG, 2-3 3Pt, 2-2 FT) and four rebounds in seven minutes before exiting."
+   "date": "2026-10-30T22:23Z",
+   "note": "Post (ankle) is doubtful for Friday's game against the Kings."
   },
   "4594268": {
    "status": "out",
@@ -365,13 +379,6 @@
    "date": "2026-10-30T21:25Z",
    "note": "Poole (ankle) has been ruled out for Saturday's game against the Hawks."
   },
-  "3136195": {
-   "status": "day-to-day",
-   "name": "Karl-Anthony Towns",
-   "team": "NY",
-   "date": "2026-10-30T20:33Z",
-   "note": "Towns (wrist) is listed as probable for Friday's game against Philadelphia."
-  },
   "4277869": {
    "status": "out",
    "name": "Jose Alvarado",
@@ -380,11 +387,11 @@
    "note": "Alvarado (ankle) has been ruled out for Friday's game against Philadelphia."
   },
   "4433255": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Chet Holmgren",
    "team": "OKC",
-   "date": "2026-10-29T04:41Z",
-   "note": "Holmgren (knee) has been ruled out for Wednesday's game against the Mavericks."
+   "date": "2026-10-30T22:25Z",
+   "note": "Holmgren (knee) remains out for Saturday's road game against Houston, Justin Martinez of The Oklahoman reports."
   },
   "4593803": {
    "status": "out",

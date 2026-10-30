@@ -2,7 +2,7 @@
  "slate": "2026-10-30",
  "teams": {
   "CHA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Dennis Schroder",
     "Sion James",
@@ -17,7 +17,7 @@
    }
   },
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
@@ -152,13 +152,13 @@
     "Fred VanVleet",
     "Amen Thompson",
     "Kevin Durant",
-    "Jabari Smith",
-    "Alperen Sengun"
+    "Tari Eason",
+    "Jabari Smith"
    ],
    "status": {
-    "Alperen Sengun": "questionable",
-    "Marcus Smart": "questionable",
+    "Marcus Smart": "probable",
     "Steven Adams": "out",
+    "Alperen Sengun": "out",
     "Reed Sheppard": "out"
    }
   },
@@ -219,7 +219,6 @@
     "Isaiah Jackson"
    ],
    "status": {
-    "Rui Hachimura": "questionable",
     "Bradley Beal": "out",
     "Brandon Ingram": "out",
     "Jordan Miller": "out",
@@ -302,5 +301,5 @@
    }
   }
  },
- "at": "2026-10-30T18:30:18-04:00"
+ "at": "2026-10-30T18:40:00-04:00"
 }

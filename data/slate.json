@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2491,
+   "pool_left": 2487,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-30T18:40:00-04:00",
-  "last_read_at": "2026-10-30T18:30:01-04:00",
+  "next_read_at": "2026-10-30T18:45:00-04:00",
+  "last_read_at": "2026-10-30T18:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-30T18:30:01-04:00"
+   "at": "2026-10-30T18:40:00-04:00"
   }
  },
  "games": [
@@ -34,10 +34,10 @@
    "state": "pre",
    "detail": "10/30 - 7:00 PM EDT",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-10-30T18:20:01-04:00",
+   "read_at": "2026-10-30T18:40:00-04:00",
    "picks": 0
   },
   {
@@ -225,6 +225,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-30T18:30:01-04:00",
- "status_at": "2026-10-30T18:30:01-04:00"
+ "generated_at": "2026-10-30T18:40:00-04:00",
+ "status_at": "2026-10-30T18:40:00-04:00"
 }
