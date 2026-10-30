@@ -252,13 +252,13 @@
    "starters": [
     "Luka Doncic",
     "Austin Reaves",
-    "Ziaire Williams",
+    "Quentin Grimes",
     "Matisse Thybulle",
     "Walker Kessler"
    ],
    "status": {
-    "Ziaire Williams": "questionable",
-    "Adou Thiero": "out"
+    "Adou Thiero": "out",
+    "Ziaire Williams": "out"
    }
   },
   "GS": {
@@ -308,5 +308,5 @@
    }
   }
  },
- "at": "2026-10-30T16:00:15-04:00"
+ "at": "2026-10-30T16:10:01-04:00"
 }
