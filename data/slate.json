@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-29T21:40:01-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-29T21:50:00-04:00"
+   "at": "2026-10-29T22:00:01-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "CLE",
    "home": "ATL",
    "state": "in",
-   "detail": "43.2 - 3rd",
+   "detail": "9:18 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -46,7 +46,7 @@
    "away": "SAC",
    "home": "NOP",
    "state": "in",
-   "detail": "1:59 - 3rd",
+   "detail": "8:55 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,8 +116,8 @@
   }
  ],
  "empty": {
-  "text": "No picks yet today",
-  "why": "292 lines read. Pinnacle moved alone on 26, none of them bettable yet.",
+  "text": "No open picks right now",
+  "why": "Every game has started.",
   "next": null
  },
  "counts": {
@@ -131,6 +131,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-29T21:50:00-04:00",
- "status_at": "2026-10-29T21:50:00-04:00"
+ "generated_at": "2026-10-29T22:00:01-04:00",
+ "status_at": "2026-10-29T22:00:01-04:00"
 }
