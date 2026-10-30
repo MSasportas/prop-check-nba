@@ -107,13 +107,13 @@
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
-    "Jaylen Brown",
+    "Kentavious Caldwell-Pope",
     "LeBron James",
     "Joel Embiid"
    ],
    "status": {
-    "Jaylen Brown": "questionable",
     "Ariel Hukporti": "out",
+    "Jaylen Brown": "doubtful",
     "Dominick Barlow": "out",
     "Tacko Fall": "out",
     "Jabari Walker": "out"
@@ -176,7 +176,7 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Naji Marshall": "questionable",
+    "Naji Marshall": "probable",
     "Santi Aldama": "doubtful",
     "Tarik Biberovic": "doubtful",
     "Sergio de Larrea": "out",
@@ -195,6 +195,7 @@
    "status": {
     "Andrew Nembhard": "probable",
     "Aaron Nesmith": "probable",
+    "Obi Toppin": "questionable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "T.J. McConnell": "out",
@@ -212,7 +213,7 @@
     "Bam Adebayo"
    ],
    "status": {
-    "Simone Fontecchio": "questionable"
+    "Simone Fontecchio": "probable"
    }
   },
   "LAC": {
@@ -288,7 +289,7 @@
    ],
    "status": {
     "Cameron Johnson": "probable",
-    "Alpha Diallo": "questionable",
+    "Alpha Diallo": "doubtful",
     "Spencer Jones": "out",
     "Julian Strawther": "out"
    }
@@ -308,5 +309,5 @@
    }
   }
  },
- "at": "2026-10-30T16:20:00-04:00"
+ "at": "2026-10-30T16:30:01-04:00"
 }
