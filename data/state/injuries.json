@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T14:20:01-04:00",
+ "at": "2026-10-30T14:50:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -526,19 +526,19 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
+  "4279888": {
+   "status": "out",
+   "name": "Ja Morant",
+   "team": "POR",
+   "date": "2026-10-30T18:45Z",
+   "note": "Morant has been diagnosed with a Grade 2 left hamstring strain and is expected to miss four weeks, Portland announced Friday."
+  },
   "4066211": {
    "status": "day-to-day",
    "name": "Robert Williams III",
    "team": "POR",
    "date": "2026-10-30T04:23Z",
    "note": "Williams (knee) has been ruled out for Thursday's game against Memphis, Casey Holdahl of the Trail Blazers' official site reports."
-  },
-  "4279888": {
-   "status": "day-to-day",
-   "name": "Ja Morant",
-   "team": "POR",
-   "date": "2026-10-30T04:17Z",
-   "note": "Morant won't return to Thursday's game against the Grizzlies due to a left hamstring injury. He'll end with 14 points (6-14 FG, 2-5 3Pt), two rebounds and three assists in 23 minutes."
   },
   "4706557": {
    "status": "out",
