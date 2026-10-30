@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T15:00:01-04:00",
+ "at": "2026-10-30T15:20:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -239,6 +239,13 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
+  "5157066": {
+   "status": "out",
+   "name": "Johnny Furphy",
+   "team": "IND",
+   "date": "2026-10-30T19:06Z",
+   "note": "Furphy (knee) is practicing with the G League's Noblesville Boom, per Alex Golden of SI.com."
+  },
   "4395712": {
    "status": "day-to-day",
    "name": "Andrew Nembhard",
@@ -280,13 +287,6 @@
    "team": "IND",
    "date": "2026-10-28T21:30Z",
    "note": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports."
-  },
-  "5157066": {
-   "status": "out",
-   "name": "Johnny Furphy",
-   "team": "IND",
-   "date": "2026-02-09T21:43Z",
-   "note": "Furphy was diagnosed with a torn right ACL on Monday and will miss the remainder of the season, Michael Scotto of USA Today reports."
   },
   "4066648": {
    "status": "day-to-day",
