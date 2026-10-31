@@ -44,11 +44,11 @@
    "status": {
     "Jaylen Brown": "questionable",
     "LeBron James": "questionable",
+    "Tacko Fall": "questionable",
     "Ariel Hukporti": "out",
     "Jabari Walker": "questionable",
     "Joel Embiid": "doubtful",
-    "Dominick Barlow": "out",
-    "Tacko Fall": "out"
+    "Dominick Barlow": "out"
    }
   },
   "CHA": {
@@ -214,5 +214,5 @@
    }
   }
  },
- "at": "2026-10-31T13:00:01-04:00"
+ "at": "2026-10-31T13:10:01-04:00"
 }
