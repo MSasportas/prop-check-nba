@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-30T21:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-30T21:40:00-04:00"
+   "at": "2026-10-30T21:50:00-04:00"
   }
  },
  "games": [
@@ -46,7 +46,7 @@
    "away": "CHI",
    "home": "BOS",
    "state": "in",
-   "detail": "7:24 - 4th",
+   "detail": "5:40 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "DET",
    "home": "BKN",
    "state": "in",
-   "detail": "7:56 - 4th",
+   "detail": "2:52 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "NYK",
    "home": "PHI",
    "state": "in",
-   "detail": "6:35 - 4th",
+   "detail": "2:42 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "ORL",
    "home": "TOR",
    "state": "in",
-   "detail": "9:30 - 4th",
+   "detail": "6:19 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "IND",
    "home": "MIA",
    "state": "in",
-   "detail": "9:04 - 3rd",
+   "detail": "4:53 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,7 +116,7 @@
    "away": "HOU",
    "home": "DAL",
    "state": "in",
-   "detail": "6:18 - 3rd",
+   "detail": "1:44 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -130,7 +130,7 @@
    "away": "LAC",
    "home": "MIN",
    "state": "in",
-   "detail": "4:41 - 3rd",
+   "detail": "End of 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -160,7 +160,7 @@
    "state": "pre",
    "detail": "10/30 - 10:00 PM EDT",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "confirmed"
    },
    "read_at": "2026-10-30T21:40:00-04:00",
@@ -317,6 +317,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-30T21:40:00-04:00",
- "status_at": "2026-10-30T21:40:00-04:00"
+ "generated_at": "2026-10-30T21:50:00-04:00",
+ "status_at": "2026-10-30T21:50:00-04:00"
 }

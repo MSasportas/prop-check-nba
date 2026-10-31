@@ -1,11 +1,11 @@
 {
- "finished_at": "2026-10-30T21:40:00-04:00",
+ "finished_at": "2026-10-30T21:50:00-04:00",
  "slate": "2026-10-30",
  "ok": true,
  "steps": {
   "schedule": {
    "ok": true,
-   "sec": 0.1
+   "sec": 0.2
   },
   "rosters": {
    "ok": true,
@@ -13,7 +13,7 @@
   },
   "injuries": {
    "ok": true,
-   "sec": 0.2
+   "sec": 0.1
   },
   "lineups": {
    "ok": true,
@@ -21,7 +21,7 @@
   },
   "odds": {
    "ok": true,
-   "sec": 0.8
+   "sec": 0.2
   },
   "engine": {
    "ok": true,
@@ -29,7 +29,7 @@
   },
   "grade": {
    "ok": true,
-   "sec": 0.4
+   "sec": 0.3
   }
  },
  "keys": [
@@ -82,13 +82,13 @@
   "cost_per_read": 4
  },
  "spent_today": 160,
- "odds_note": "2 game(s) priced",
+ "odds_note": "no read due",
  "odds_errors": [],
  "unknown_teams": [],
  "graded_now": 0,
  "sources": {
   "espn": {
-   "ok": 6,
+   "ok": 5,
    "failed": 0
   },
   "rotowire": {
@@ -96,7 +96,7 @@
    "failed": 0
   },
   "odds": {
-   "ok": 2,
+   "ok": 0,
    "failed": 0
   }
  },
@@ -105,7 +105,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41153126556",
-  "iteration": 5,
+  "iteration": 6,
   "chain_link": 18,
   "chain_started_at": "2026-10-30T07:00:11-04:00",
   "run_started_at": "2026-10-30T21:00:15-04:00"

@@ -267,7 +267,7 @@
    }
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -295,5 +295,5 @@
    }
   }
  },
- "at": "2026-10-30T21:40:00-04:00"
+ "at": "2026-10-30T21:50:00-04:00"
 }
