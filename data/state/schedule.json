@@ -420,10 +420,10 @@
     "home": "GS",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:11 - 3rd",
     "score": {
-     "LAL": "53",
+     "LAL": "55",
      "GS": "53"
     }
    },
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:05 - 3rd",
+    "detail": "4:43 - 3rd",
     "score": {
-     "DEN": "84",
-     "PHX": "76"
+     "DEN": "91",
+     "PHX": "84"
     }
    }
   ]
