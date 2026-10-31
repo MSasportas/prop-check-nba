@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-30T20:30:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-30T21:00:16-04:00"
+   "at": "2026-10-30T21:10:00-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "CHA",
    "home": "WAS",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "8:08 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -46,7 +46,7 @@
    "away": "CHI",
    "home": "BOS",
    "state": "in",
-   "detail": "11:44 - 3rd",
+   "detail": "7:56 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "DET",
    "home": "BKN",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "6:50 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "NYK",
    "home": "PHI",
    "state": "in",
-   "detail": "10:19 - 3rd",
+   "detail": "7:20 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "ORL",
    "home": "TOR",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "9:50 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "IND",
    "home": "MIA",
    "state": "in",
-   "detail": "5:10 - 2nd",
+   "detail": "1:27 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,7 +116,7 @@
    "away": "HOU",
    "home": "DAL",
    "state": "in",
-   "detail": "3:31 - 2nd",
+   "detail": "29.4 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -130,7 +130,7 @@
    "away": "LAC",
    "home": "MIN",
    "state": "in",
-   "detail": "1:53 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -317,6 +317,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-30T21:00:16-04:00",
- "status_at": "2026-10-30T21:00:16-04:00"
+ "generated_at": "2026-10-30T21:10:00-04:00",
+ "status_at": "2026-10-30T21:10:00-04:00"
 }
