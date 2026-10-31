@@ -418,13 +418,13 @@
     "start": "2026-10-31T19:00:00-04:00",
     "away": "ATL",
     "home": "NO",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/31 - 7:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:55 - 1st",
     "score": {
-     "ATL": "0",
-     "NO": "0"
+     "ATL": "6",
+     "NO": "12"
     }
    },
    {
