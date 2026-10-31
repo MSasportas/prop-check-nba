@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T17:10:00-04:00",
+ "at": "2026-10-31T17:30:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -232,12 +232,26 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
+  "4017837": {
+   "status": "out",
+   "name": "Ivica Zubac",
+   "team": "IND",
+   "date": "2026-10-31T21:14Z",
+   "note": "Zubac (ankle) will remain on the inactive list for Sunday's game against the Nets."
+  },
+  "4396909": {
+   "status": "day-to-day",
+   "name": "Aaron Nesmith",
+   "team": "IND",
+   "date": "2026-10-31T21:13Z",
+   "note": "Nesmith (hamstring) is listed as probable for Sunday's game against Brooklyn."
+  },
   "4278355": {
    "status": "day-to-day",
    "name": "Obi Toppin",
    "team": "IND",
-   "date": "2026-10-31T05:01Z",
-   "note": "Toppin (back) has been ruled out for Friday's game against Miami."
+   "date": "2026-10-31T21:10Z",
+   "note": "Toppin (back) is questionable for Sunday's game against the Nets."
   },
   "2530530": {
    "status": "out",
@@ -252,13 +266,6 @@
    "team": "IND",
    "date": "2026-10-30T19:06Z",
    "note": "Furphy (knee) is practicing with the G League's Noblesville Boom, per Alex Golden of SI.com."
-  },
-  "4017837": {
-   "status": "out",
-   "name": "Ivica Zubac",
-   "team": "IND",
-   "date": "2026-10-29T21:04Z",
-   "note": "Zubac (ankle) is out for Friday's game against the Heat."
   },
   "4433076": {
    "status": "out",

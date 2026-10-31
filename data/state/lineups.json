@@ -39,10 +39,7 @@
     "Adem Bona"
    ],
    "status": {
-    "Jaylen Brown": "questionable",
     "Ariel Hukporti": "out",
-    "Tacko Fall": "questionable",
-    "Jabari Walker": "questionable",
     "Dominick Barlow": "out",
     "Joel Embiid": "out",
     "LeBron James": "out"
@@ -81,14 +78,15 @@
   "NO": {
    "state": "expected",
    "starters": [
-    "Dejounte Murray",
     "Jeremiah Fears",
     "Trey Murphy",
+    "Herbert Jones",
     "Zion Williamson",
     "Karlo Matkovic"
    ],
    "status": {
     "Yves Missi": "out",
+    "Dejounte Murray": "out",
     "Jordan Poole": "out"
    }
   },
@@ -213,5 +211,5 @@
    }
   }
  },
- "at": "2026-10-31T17:20:00-04:00"
+ "at": "2026-10-31T17:30:00-04:00"
 }
