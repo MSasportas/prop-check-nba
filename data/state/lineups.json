@@ -196,7 +196,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Marcus Smart",
     "Amen Thompson",
@@ -211,5 +211,5 @@
    }
   }
  },
- "at": "2026-10-31T18:50:01-04:00"
+ "at": "2026-10-31T19:00:01-04:00"
 }
