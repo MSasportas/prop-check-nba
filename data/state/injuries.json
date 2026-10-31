@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T19:30:01-04:00",
+ "at": "2026-10-30T21:00:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -124,8 +124,8 @@
    "status": "out",
    "name": "Alpha Diallo",
    "team": "DEN",
-   "date": "2026-10-30T20:30Z",
-   "note": "Diallo (personal) is doubtful for Friday's game against the Suns."
+   "date": "2026-10-31T00:42Z",
+   "note": "Diallo (personal/wrist) has been ruled out for Friday's game against Phoenix, Vic Lombardi of Altitude Sports reports."
   },
   "3138196": {
    "status": "out",
@@ -161,13 +161,6 @@
    "team": "DET",
    "date": "2026-10-25T14:56Z",
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
-  },
-  "4997536": {
-   "status": "day-to-day",
-   "name": "Gui Santos",
-   "team": "GS",
-   "date": "2026-10-30T20:37Z",
-   "note": "Santos (knee) is questionable for Friday's game against the Lakers."
   },
   "3102531": {
    "status": "out",
