@@ -30,7 +30,7 @@
    }
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
@@ -46,7 +46,7 @@
    }
   },
   "CHA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Dennis Schroder",
     "Sion James",
@@ -211,5 +211,5 @@
    }
   }
  },
- "at": "2026-10-31T17:30:00-04:00"
+ "at": "2026-10-31T17:40:01-04:00"
 }
