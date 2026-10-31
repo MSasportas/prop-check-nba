@@ -405,11 +405,11 @@
     "home": "CHA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:30 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "PHI": "46",
-     "CHA": "44"
+     "PHI": "57",
+     "CHA": "54"
     }
    },
    {
