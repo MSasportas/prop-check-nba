@@ -39,12 +39,14 @@
     "VJ Edgecombe",
     "Jaylen Brown",
     "LeBron James",
-    "Joel Embiid"
+    "Dean Wade"
    ],
    "status": {
     "Jaylen Brown": "questionable",
+    "LeBron James": "questionable",
     "Ariel Hukporti": "out",
     "Jabari Walker": "questionable",
+    "Joel Embiid": "doubtful",
     "Dominick Barlow": "out",
     "Tacko Fall": "out"
    }
@@ -59,8 +61,9 @@
     "Moussa Diabate"
    ],
    "status": {
-    "Kon Knueppel": "questionable",
-    "Coby White": "questionable",
+    "Kylan Boswell": "out",
+    "Kon Knueppel": "out",
+    "Coby White": "out",
     "Grant Williams": "out"
    }
   },
@@ -211,5 +214,5 @@
    }
   }
  },
- "at": "2026-10-31T05:00:01-04:00"
+ "at": "2026-10-31T12:00:00-04:00"
 }
