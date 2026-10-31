@@ -91,7 +91,7 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
@@ -100,13 +100,12 @@
     "Jarrett Allen"
    ],
    "status": {
-    "Meleek Thomas": "probable",
     "Nae'Qwan Tomlin": "out",
     "Jaylon Tyson": "out"
    }
   },
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ryan Rollins",
     "Tyler Herro",
@@ -117,7 +116,7 @@
    "status": {}
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -132,7 +131,7 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Aaron Fox",
     "Stephon Castle",
@@ -146,7 +145,7 @@
    }
   },
   "SAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Acuff",
     "Zach LaVine",
@@ -162,7 +161,7 @@
    }
   },
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cam Spencer",
     "Cedric Coward",
@@ -210,5 +209,5 @@
    }
   }
  },
- "at": "2026-10-31T19:30:01-04:00"
+ "at": "2026-10-31T19:40:00-04:00"
 }
