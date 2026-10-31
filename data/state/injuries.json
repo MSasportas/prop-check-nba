@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T13:20:00-04:00",
+ "at": "2026-10-31T13:30:15-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -175,6 +175,13 @@
    "team": "GS",
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
+  },
+  "2991230": {
+   "status": "out",
+   "name": "Fred VanVleet",
+   "team": "HOU",
+   "date": "2026-10-31T17:18Z",
+   "note": "VanVleet notched 24 points (7-14 FG, 4-9 3Pt, 6-6 FT), six rebounds, five assists and two steals across 29 minutes in Wednesday's 132-100 win over the Bucks."
   },
   "4711272": {
    "status": "day-to-day",
@@ -418,8 +425,15 @@
    "status": "out",
    "name": "LeBron James",
    "team": "PHI",
-   "date": "2026-10-31T17:17Z",
-   "note": "James (rest) closed with 20 points (8-15 FG, 2-6 3Pt, 2-3 FT), nine rebounds, eight assists, one block and one steal across 34 minutes during Friday's 98-93 win over the Knicks."
+   "date": "2026-10-31T17:16Z",
+   "note": "James (back) has been ruled out for Saturday's meeting in Charlotte."
+  },
+  "3904625": {
+   "status": "out",
+   "name": "Tacko Fall",
+   "team": "PHI",
+   "date": "2026-10-31T17:14Z",
+   "note": "Fall (quad) is questionable to face the Hornets on Saturday."
   },
   "3059318": {
    "status": "out",
@@ -441,13 +455,6 @@
    "team": "PHI",
    "date": "2026-10-29T21:34Z",
    "note": "Walker (knee) has been ruled out for Friday's game versus New York."
-  },
-  "3904625": {
-   "status": "out",
-   "name": "Tacko Fall",
-   "team": "PHI",
-   "date": "2026-10-27T21:10Z",
-   "note": "Fall (quadriceps) is out for Wednesday's game in Indiana."
   },
   "4870562": {
    "status": "out",
