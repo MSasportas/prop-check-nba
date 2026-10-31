@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:47 - 3rd",
+    "detail": "3:51 - 3rd",
     "score": {
-     "LAL": "68",
-     "GS": "60"
+     "LAL": "74",
+     "GS": "68"
     }
    },
    {
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:22 - 3rd",
+    "detail": "9:32 - 4th",
     "score": {
-     "DEN": "100",
-     "PHX": "90"
+     "DEN": "103",
+     "PHX": "98"
     }
    }
   ]
