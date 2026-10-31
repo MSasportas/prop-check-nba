@@ -1,67 +1,5 @@
 {
  "days": {
-  "2026-10-27": [
-   {
-    "id": "401909877",
-    "date": "2026-10-27",
-    "start": "2026-10-27T19:30:00-04:00",
-    "away": "BKN",
-    "home": "BOS",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final/OT",
-    "score": {
-     "BKN": "124",
-     "BOS": "125"
-    }
-   },
-   {
-    "id": "401909878",
-    "date": "2026-10-27",
-    "start": "2026-10-27T20:00:00-04:00",
-    "away": "DET",
-    "home": "NY",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "DET": "97",
-     "NY": "111"
-    }
-   },
-   {
-    "id": "401909879",
-    "date": "2026-10-27",
-    "start": "2026-10-27T20:00:00-04:00",
-    "away": "SAC",
-    "home": "SA",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "SAC": "103",
-     "SA": "130"
-    }
-   },
-   {
-    "id": "401909880",
-    "date": "2026-10-27",
-    "start": "2026-10-27T23:00:00-04:00",
-    "away": "POR",
-    "home": "LAL",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "POR": "136",
-     "LAL": "129"
-    }
-   }
-  ],
   "2026-10-28": [
    {
     "id": "401909881",
@@ -442,12 +380,118 @@
      "PHX": "120"
     }
    }
+  ],
+  "2026-10-31": [
+   {
+    "id": "401909896",
+    "date": "2026-10-31",
+    "start": "2026-10-31T15:00:00-04:00",
+    "away": "POR",
+    "home": "UTAH",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/31 - 3:00 PM EDT",
+    "score": {
+     "POR": "0",
+     "UTAH": "0"
+    }
+   },
+   {
+    "id": "401909897",
+    "date": "2026-10-31",
+    "start": "2026-10-31T18:00:00-04:00",
+    "away": "PHI",
+    "home": "CHA",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/31 - 6:00 PM EDT",
+    "score": {
+     "PHI": "0",
+     "CHA": "0"
+    }
+   },
+   {
+    "id": "401909898",
+    "date": "2026-10-31",
+    "start": "2026-10-31T19:00:00-04:00",
+    "away": "ATL",
+    "home": "NO",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/31 - 7:00 PM EDT",
+    "score": {
+     "ATL": "0",
+     "NO": "0"
+    }
+   },
+   {
+    "id": "401909899",
+    "date": "2026-10-31",
+    "start": "2026-10-31T20:00:00-04:00",
+    "away": "SAC",
+    "home": "MEM",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/31 - 8:00 PM EDT",
+    "score": {
+     "SAC": "0",
+     "MEM": "0"
+    }
+   },
+   {
+    "id": "401909900",
+    "date": "2026-10-31",
+    "start": "2026-10-31T20:00:00-04:00",
+    "away": "CLE",
+    "home": "MIL",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/31 - 8:00 PM EDT",
+    "score": {
+     "CLE": "0",
+     "MIL": "0"
+    }
+   },
+   {
+    "id": "401909901",
+    "date": "2026-10-31",
+    "start": "2026-10-31T20:00:00-04:00",
+    "away": "MIN",
+    "home": "SA",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/31 - 8:00 PM EDT",
+    "score": {
+     "MIN": "0",
+     "SA": "0"
+    }
+   },
+   {
+    "id": "401909902",
+    "date": "2026-10-31",
+    "start": "2026-10-31T20:30:00-04:00",
+    "away": "OKC",
+    "home": "HOU",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "10/31 - 8:30 PM EDT",
+    "score": {
+     "OKC": "0",
+     "HOU": "0"
+    }
+   }
   ]
  },
  "month": {
-  "made_for": "2026-10-30",
+  "made_for": "2026-10-31",
   "counts": {
-   "2026-10-30": 10,
    "2026-10-31": 7
   }
  }

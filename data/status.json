@@ -1,15 +1,15 @@
 {
- "finished_at": "2026-10-31T04:30:00-04:00",
- "slate": "2026-10-30",
+ "finished_at": "2026-10-31T05:00:01-04:00",
+ "slate": "2026-10-31",
  "ok": true,
  "steps": {
   "schedule": {
    "ok": true,
-   "sec": 0.2
+   "sec": 0.0
   },
   "rosters": {
    "ok": true,
-   "sec": 0.0
+   "sec": 1.0
   },
   "injuries": {
    "ok": true,
@@ -17,15 +17,15 @@
   },
   "lineups": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.1
   },
   "odds": {
    "ok": true,
-   "sec": 0.2
+   "sec": 1.1
   },
   "engine": {
    "ok": true,
-   "sec": 1.8
+   "sec": 0.0
   },
   "grade": {
    "ok": true,
@@ -66,48 +66,50 @@
  ],
  "pool_left": 2407,
  "plan": {
-  "allowance": 151.0,
+  "allowance": 343.857,
   "reads": [
    "A",
    "B",
    "C",
    "D"
   ],
-  "budget_today": 1510,
-  "pool_at_plan": 2567,
-  "games_left": 17,
-  "games_today": 10,
+  "budget_today": 2407,
+  "pool_at_plan": 2407,
+  "games_left": 7,
+  "games_today": 7,
   "key_count": 6,
-  "made_at": "2026-10-30T05:00:01-04:00",
+  "made_at": "2026-10-31T05:00:01-04:00",
   "cost_per_read": 4
  },
- "spent_today": 160,
+ "spent_today": 0,
  "odds_note": "no read due",
  "odds_errors": [],
  "unknown_teams": [],
  "graded_now": 0,
  "sources": {
   "espn": {
-   "ok": 2,
+   "ok": 16,
    "failed": 0
   },
   "rotowire": {
-   "ok": 0,
+   "ok": 1,
    "failed": 0
   },
   "odds": {
-   "ok": 0,
+   "ok": 6,
    "failed": 0
   }
  },
- "unmatched_rotowire": [],
+ "unmatched_rotowire": [
+  "Nae'Qwan Tomlin"
+ ],
  "unmatched": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "41182785135",
+  "run_id": "41184850862",
   "iteration": 2,
-  "chain_link": 28,
+  "chain_link": 29,
   "chain_started_at": "2026-10-30T07:00:11-04:00",
-  "run_started_at": "2026-10-31T04:00:14-04:00"
+  "run_started_at": "2026-10-31T04:30:17-04:00"
  }
 }
