@@ -388,13 +388,13 @@
     "start": "2026-10-31T15:00:00-04:00",
     "away": "POR",
     "home": "UTAH",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/31 - 3:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:42 - 1st",
     "score": {
-     "POR": "0",
-     "UTAH": "0"
+     "POR": "8",
+     "UTAH": "7"
     }
    },
    {
