@@ -257,11 +257,10 @@
     "Stephen Curry",
     "Brandin Podziemski",
     "Yaxel Lendeborg",
-    "Georges Niang",
+    "Gui Santos",
     "Draymond Green"
    ],
    "status": {
-    "Gui Santos": "questionable",
     "Jimmy Butler": "out",
     "Moses Moody": "out",
     "Kristaps Porzingis": "out"
@@ -278,7 +277,7 @@
    ],
    "status": {
     "Cameron Johnson": "probable",
-    "Alpha Diallo": "doubtful",
+    "Alpha Diallo": "out",
     "Spencer Jones": "out",
     "Julian Strawther": "out"
    }
@@ -298,5 +297,5 @@
    }
   }
  },
- "at": "2026-10-30T20:40:00-04:00"
+ "at": "2026-10-30T20:50:01-04:00"
 }
