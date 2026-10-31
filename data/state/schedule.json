@@ -313,13 +313,13 @@
     "start": "2026-10-30T19:30:00-04:00",
     "away": "CHI",
     "home": "BOS",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:43 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "CHI": "99",
-     "BOS": "119"
+     "CHI": "111",
+     "BOS": "125"
     }
    },
    {
@@ -343,13 +343,13 @@
     "start": "2026-10-30T19:30:00-04:00",
     "away": "NY",
     "home": "PHI",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "30.8 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "NY": "90",
-     "PHI": "94"
+     "NY": "93",
+     "PHI": "98"
     }
    },
    {
@@ -358,13 +358,13 @@
     "start": "2026-10-30T19:30:00-04:00",
     "away": "ORL",
     "home": "TOR",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:21 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "ORL": "117",
-     "TOR": "112"
+     "ORL": "121",
+     "TOR": "114"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "44.2 - 3rd",
+    "detail": "9:09 - 4th",
     "score": {
-     "IND": "87",
-     "MIA": "103"
+     "IND": "95",
+     "MIA": "118"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:23 - 4th",
+    "detail": "5:55 - 4th",
     "score": {
-     "HOU": "84",
-     "DAL": "80"
+     "HOU": "90",
+     "DAL": "95"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:59 - 4th",
+    "detail": "5:11 - 4th",
     "score": {
-     "LAC": "88",
-     "MIN": "98"
+     "LAC": "92",
+     "MIN": "114"
     }
    },
    {

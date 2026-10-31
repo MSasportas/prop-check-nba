@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-30T21:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-30T22:00:00-04:00"
+   "at": "2026-10-30T22:10:01-04:00"
   }
  },
  "games": [
@@ -45,8 +45,8 @@
    "start": "2026-10-30T19:30:00-04:00",
    "away": "CHI",
    "home": "BOS",
-   "state": "in",
-   "detail": "2:43 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -73,8 +73,8 @@
    "start": "2026-10-30T19:30:00-04:00",
    "away": "NYK",
    "home": "PHI",
-   "state": "in",
-   "detail": "30.8 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -87,8 +87,8 @@
    "start": "2026-10-30T19:30:00-04:00",
    "away": "ORL",
    "home": "TOR",
-   "state": "in",
-   "detail": "1:21 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "IND",
    "home": "MIA",
    "state": "in",
-   "detail": "44.2 - 3rd",
+   "detail": "9:09 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,7 +116,7 @@
    "away": "HOU",
    "home": "DAL",
    "state": "in",
-   "detail": "9:23 - 4th",
+   "detail": "5:55 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -130,7 +130,7 @@
    "away": "LAC",
    "home": "MIN",
    "state": "in",
-   "detail": "8:59 - 4th",
+   "detail": "5:11 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -209,7 +209,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "L",
+    "actual": "11 rebounds",
+    "units": -1.0
+   },
    "rank": null
   },
   {
@@ -253,7 +257,11 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "3 assists",
+    "units": 0.7407
+   },
    "rank": null
   },
   {
@@ -317,6 +325,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-30T22:00:00-04:00",
- "status_at": "2026-10-30T22:00:00-04:00"
+ "generated_at": "2026-10-30T22:10:01-04:00",
+ "status_at": "2026-10-30T22:10:01-04:00"
 }
