@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:05 - 3rd",
+    "detail": "11:45 - 4th",
     "score": {
-     "POR": "77",
-     "UTAH": "52"
+     "POR": "88",
+     "UTAH": "64"
     }
    },
    {
