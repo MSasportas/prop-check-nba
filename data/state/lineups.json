@@ -123,12 +123,12 @@
     "Ayo Dosunmu",
     "Jonathan Kuminga",
     "Jaden McDaniels",
-    "Rudy Gobert"
+    "Joan Beringer"
    ],
    "status": {
-    "Rudy Gobert": "questionable",
     "Donte DiVincenzo": "out",
-    "Anthony Edwards": "out"
+    "Anthony Edwards": "out",
+    "Rudy Gobert": "out"
    }
   },
   "SA": {
@@ -211,5 +211,5 @@
    }
   }
  },
- "at": "2026-10-31T18:10:01-04:00"
+ "at": "2026-10-31T18:20:01-04:00"
 }
