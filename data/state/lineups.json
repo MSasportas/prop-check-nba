@@ -62,7 +62,7 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "CJ McCollum",
     "Nickeil Alexander-Walker",
@@ -76,7 +76,7 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jeremiah Fears",
     "Trey Murphy",
@@ -211,5 +211,5 @@
    }
   }
  },
- "at": "2026-10-31T18:30:17-04:00"
+ "at": "2026-10-31T18:40:00-04:00"
 }

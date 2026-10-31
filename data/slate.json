@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2335,
+   "pool_left": 2331,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-31T18:40:00-04:00",
-  "last_read_at": "2026-10-31T18:30:01-04:00",
+  "next_read_at": "2026-10-31T19:00:00-04:00",
+  "last_read_at": "2026-10-31T18:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-31T18:30:17-04:00"
+   "at": "2026-10-31T18:40:00-04:00"
   }
  },
  "games": [
@@ -46,7 +46,7 @@
    "away": "PHI",
    "home": "CHA",
    "state": "in",
-   "detail": "3:18 - 1st",
+   "detail": "11:22 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -62,11 +62,11 @@
    "state": "pre",
    "detail": "10/31 - 7:00 PM EDT",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-10-31T18:20:01-04:00",
-   "picks": 0
+   "read_at": "2026-10-31T18:40:00-04:00",
+   "picks": 1
   },
   {
    "id": "401909899",
@@ -127,6 +127,50 @@
  ],
  "picks": [
   {
+   "player": "Jeremiah Fears",
+   "pid": "5144091",
+   "team": "NOP",
+   "opp": "ATL",
+   "home": true,
+   "game_id": "401909898",
+   "start": "2026-10-31T19:00:00-04:00",
+   "bet": "Under 1.5 threes",
+   "market": "threes",
+   "side": "under",
+   "line": 1.5,
+   "price": -150,
+   "price_at": "2026-10-31T18:40:00-04:00",
+   "read": "D",
+   "p": 0.6002,
+   "p_pct": 60,
+   "breakeven": 0.6,
+   "breakeven_pct": 60,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0537,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from -141 to -179 (55% to 60%); 8 other books held. Hard Rock price: -150, 0.0% better than Pinnacle's fair price.",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/2326058121446949271",
+   "rule": "pin_solo",
+   "pin_before": 0.5465,
+   "pin_after": 0.6002,
+   "pin_price_before": -141,
+   "pin_price_after": -179,
+   "others_move": -0.0,
+   "n_others": 8,
+   "ev_vs_pin": 0.0003,
+   "window": "45 \u2192 20 min",
+   "gap_vs_pin": 0.0416,
+   "id": "2026-10-31:401909898:5144091:threes:1.5:under",
+   "state": "starters",
+   "state_label": "Starters confirmed",
+   "price_final": true,
+   "pulled": null,
+   "result": null,
+   "rank": 1
+  },
+  {
    "player": "Donovan Clingan",
    "pid": "5105565",
    "team": "POR",
@@ -175,14 +219,10 @@
    "rank": null
   }
  ],
- "empty": {
-  "text": "No picks yet today",
-  "why": "636 lines read. Pinnacle moved alone on 29, none of them bettable yet.",
-  "next": "2026-10-31T18:40:00-04:00"
- },
+ "empty": null,
  "counts": {
-  "lines_read": 636,
-  "passing": 1,
+  "lines_read": 638,
+  "passing": 2,
   "games": 7
  },
  "safety_paused": false,
@@ -191,6 +231,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-31T18:30:17-04:00",
- "status_at": "2026-10-31T18:30:17-04:00"
+ "generated_at": "2026-10-31T18:40:00-04:00",
+ "status_at": "2026-10-31T18:40:00-04:00"
 }
