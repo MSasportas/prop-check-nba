@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T16:00:00-04:00",
+ "at": "2026-10-31T16:10:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -154,6 +154,20 @@
    "team": "DET",
    "date": "2026-10-25T14:56Z",
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
+  },
+  "4997536": {
+   "status": "day-to-day",
+   "name": "Gui Santos",
+   "team": "GS",
+   "date": "2026-10-31T19:54Z",
+   "note": "Santos (knee) is probable for Sunday's game against the Clippers."
+  },
+  "6589": {
+   "status": "out",
+   "name": "Draymond Green",
+   "team": "GS",
+   "date": "2026-10-31T19:51Z",
+   "note": "Green (back) is out for Sunday's game against the Clippers."
   },
   "3975": {
    "status": "out",
