@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T21:30:01-04:00",
+ "at": "2026-10-31T01:10:00-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -65,10 +65,10 @@
    "note": "Boswell (knee) is out for Wednesday's season opener against the Nets."
   },
   "4848625": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Dailyn Swain",
    "team": "CHI",
-   "date": "2026-10-30T21:50Z",
+   "date": "2026-10-31T04:59Z",
    "note": "Swain (back) has been ruled out for Friday's game against Boston."
   },
   "4278067": {
@@ -176,19 +176,19 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
-  "4871144": {
-   "status": "out",
-   "name": "Alperen Sengun",
-   "team": "HOU",
-   "date": "2026-10-30T22:39Z",
-   "note": "Sengun (back) has been ruled out for Friday's game against the Mavericks, Mike Curtis of The Dallas Morning News reports."
-  },
   "4711272": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Reed Sheppard",
    "team": "HOU",
-   "date": "2026-10-30T19:19Z",
+   "date": "2026-10-31T05:00Z",
    "note": "Houston picked up Sheppard's (back) fourth-year team option Friday, per Lachard Binkley of SI.com."
+  },
+  "4871144": {
+   "status": "day-to-day",
+   "name": "Alperen Sengun",
+   "team": "HOU",
+   "date": "2026-10-31T05:00Z",
+   "note": "Sengun (back) has been ruled out for Friday's game against the Mavericks, Mike Curtis of The Dallas Morning News reports."
   },
   "2991235": {
    "status": "out",
@@ -198,10 +198,10 @@
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
   "4278355": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Obi Toppin",
    "team": "IND",
-   "date": "2026-10-30T22:51Z",
+   "date": "2026-10-31T05:01Z",
    "note": "Toppin (back) has been ruled out for Friday's game against Miami."
   },
   "2530530": {
@@ -275,10 +275,10 @@
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
   "4433137": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Ziaire Williams",
    "team": "LAL",
-   "date": "2026-10-30T20:05Z",
+   "date": "2026-10-31T04:52Z",
    "note": "Williams has been ruled out for Friday's game against the Warriors due to left foot injury management, Mark Medina of TheSportingTribune.com reports."
   },
   "5060631": {
@@ -422,10 +422,10 @@
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
   "3917376": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jaylen Brown",
    "team": "PHI",
-   "date": "2026-10-30T21:50Z",
+   "date": "2026-10-31T04:58Z",
    "note": "Brown (knee) is out for Friday's game against the Knicks."
   },
   "4432446": {
