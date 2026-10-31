@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-30T21:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-30T21:50:16-04:00"
+   "at": "2026-10-30T22:00:00-04:00"
   }
  },
  "games": [
@@ -46,7 +46,7 @@
    "away": "CHI",
    "home": "BOS",
    "state": "in",
-   "detail": "5:40 - 4th",
+   "detail": "2:43 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -59,8 +59,8 @@
    "start": "2026-10-30T19:30:00-04:00",
    "away": "DET",
    "home": "BKN",
-   "state": "in",
-   "detail": "2:52 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "NYK",
    "home": "PHI",
    "state": "in",
-   "detail": "2:42 - 4th",
+   "detail": "30.8 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "ORL",
    "home": "TOR",
    "state": "in",
-   "detail": "6:19 - 4th",
+   "detail": "1:21 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "IND",
    "home": "MIA",
    "state": "in",
-   "detail": "4:31 - 3rd",
+   "detail": "44.2 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,7 +116,7 @@
    "away": "HOU",
    "home": "DAL",
    "state": "in",
-   "detail": "1:44 - 3rd",
+   "detail": "9:23 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -130,7 +130,7 @@
    "away": "LAC",
    "home": "MIN",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "8:59 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -302,8 +302,8 @@
   }
  ],
  "empty": {
-  "text": "No picks yet today",
-  "why": "990 lines read. Pinnacle moved alone on 80, none of them bettable yet.",
+  "text": "No open picks right now",
+  "why": "Every game has started.",
   "next": null
  },
  "counts": {
@@ -317,6 +317,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-30T21:50:16-04:00",
- "status_at": "2026-10-30T21:50:16-04:00"
+ "generated_at": "2026-10-30T22:00:00-04:00",
+ "status_at": "2026-10-30T22:00:00-04:00"
 }

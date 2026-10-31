@@ -1,5 +1,5 @@
 {
- "finished_at": "2026-10-30T21:50:16-04:00",
+ "finished_at": "2026-10-30T22:00:00-04:00",
  "slate": "2026-10-30",
  "ok": true,
  "steps": {
@@ -13,7 +13,7 @@
   },
   "injuries": {
    "ok": true,
-   "sec": 0.3
+   "sec": 0.1
   },
   "lineups": {
    "ok": true,
@@ -29,7 +29,7 @@
   },
   "grade": {
    "ok": true,
-   "sec": 0.3
+   "sec": 0.6
   }
  },
  "keys": [
@@ -88,7 +88,7 @@
  "graded_now": 0,
  "sources": {
   "espn": {
-   "ok": 5,
+   "ok": 6,
    "failed": 0
   },
   "rotowire": {
@@ -105,7 +105,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "41157212613",
-  "iteration": 1,
+  "iteration": 2,
   "chain_link": 19,
   "chain_started_at": "2026-10-30T07:00:11-04:00",
   "run_started_at": "2026-10-30T21:50:15-04:00"
