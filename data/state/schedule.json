@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:37 - 2nd",
+    "detail": "6:32 - 2nd",
     "score": {
-     "LAL": "42",
-     "GS": "31"
+     "LAL": "44",
+     "GS": "33"
     }
    },
    {
@@ -435,11 +435,11 @@
     "home": "PHX",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:44 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "DEN": "64",
-     "PHX": "63"
+     "DEN": "71",
+     "PHX": "67"
     }
    }
   ]
