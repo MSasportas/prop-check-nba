@@ -1,5 +1,5 @@
 {
- "at": "2026-10-31T13:40:01-04:00",
+ "at": "2026-10-31T14:10:01-04:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -309,6 +309,13 @@
    "date": "2026-10-30T22:23Z",
    "note": "Post (ankle) is doubtful for Friday's game against the Kings."
   },
+  "3032976": {
+   "status": "day-to-day",
+   "name": "Rudy Gobert",
+   "team": "MIN",
+   "date": "2026-10-31T18:03Z",
+   "note": "Gobert (back) is listed as questionable for Saturday's game at San Antonio."
+  },
   "4594268": {
    "status": "out",
    "name": "Anthony Edwards",
@@ -476,20 +483,6 @@
    "team": "PHX",
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
-  },
-  "4066211": {
-   "status": "day-to-day",
-   "name": "Robert Williams III",
-   "team": "POR",
-   "date": "2026-10-30T23:11Z",
-   "note": "Williams (knee) is questionable for Saturday's game against the Jazz."
-  },
-  "4706557": {
-   "status": "out",
-   "name": "Chris Youngblood",
-   "team": "POR",
-   "date": "2026-10-30T23:09Z",
-   "note": "Youngblood (ankle) is questionable for Saturday's game against Utah."
   },
   "4279888": {
    "status": "out",

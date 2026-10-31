@@ -11,8 +11,6 @@
     "Donovan Clingan"
    ],
    "status": {
-    "Robert Williams": "questionable",
-    "Chris Youngblood": "questionable",
     "Ja Morant": "out",
     "Shaedon Sharpe": "out"
    }
@@ -27,7 +25,6 @@
     "Jaxson Hayes"
    ],
    "status": {
-    "Lauri Markkanen": "questionable",
     "Jaren Jackson": "out",
     "Jusuf Nurkic": "out"
    }
@@ -131,6 +128,7 @@
     "Rudy Gobert"
    ],
    "status": {
+    "Rudy Gobert": "questionable",
     "Donte DiVincenzo": "out",
     "Anthony Edwards": "out"
    }
@@ -214,5 +212,5 @@
    }
   }
  },
- "at": "2026-10-31T14:00:01-04:00"
+ "at": "2026-10-31T14:10:01-04:00"
 }
