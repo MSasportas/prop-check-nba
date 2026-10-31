@@ -164,16 +164,16 @@
   "MEM": {
    "state": "expected",
    "starters": [
-    "Ty Jerome",
+    "Cam Spencer",
     "Cedric Coward",
     "Jaylen Wells",
     "Cameron Boozer",
     "Zach Edey"
    ],
    "status": {
-    "Ty Jerome": "questionable",
-    "Scotty Pippen": "questionable",
-    "Quinten Post": "doubtful"
+    "Ty Jerome": "out",
+    "Scotty Pippen": "out",
+    "Quinten Post": "out"
    }
   },
   "OKC": {
@@ -210,5 +210,5 @@
    }
   }
  },
- "at": "2026-10-31T19:20:17-04:00"
+ "at": "2026-10-31T19:30:01-04:00"
 }
