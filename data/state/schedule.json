@@ -406,9 +406,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:43 - 1st",
+    "detail": "3:18 - 1st",
     "score": {
-     "PHI": "15",
+     "PHI": "18",
      "CHA": "23"
     }
    },
