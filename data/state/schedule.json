@@ -390,11 +390,11 @@
     "home": "UTAH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:48 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "POR": "23",
-     "UTAH": "7"
+     "POR": "27",
+     "UTAH": "18"
     }
    },
    {
