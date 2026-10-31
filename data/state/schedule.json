@@ -391,7 +391,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:06 - 3rd",
+    "detail": "3:05 - 3rd",
     "score": {
      "POR": "77",
      "UTAH": "52"
