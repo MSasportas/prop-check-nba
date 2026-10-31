@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T22:30:00-04:00",
+ "generated_at": "2026-10-31T14:40:00-04:00",
  "summary": {
   "headline": {
    "w": 15,
@@ -99,6 +99,40 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-10-31",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-10-31:401909896:5105565:threes:0.5:under",
+     "kind": "single",
+     "player": "Donovan Clingan",
+     "bet": "Under 0.5 threes",
+     "market": "threes",
+     "team": "POR",
+     "game": "POR at UTA",
+     "price": 150,
+     "first_price": 150,
+     "last_price": 150,
+     "prices": [
+      {
+       "price": 150,
+       "at": "2026-10-31T14:40:00-04:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "45 \u2192 20 min",
+     "under_fair": false
+    }
+   ]
+  },
   {
    "date": "2026-10-30",
    "graded": true,

@@ -2,7 +2,7 @@
  "slate": "2026-10-31",
  "teams": {
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Damian Lillard",
     "Scoot Henderson",
@@ -16,7 +16,7 @@
    }
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
@@ -212,5 +212,5 @@
    }
   }
  },
- "at": "2026-10-31T14:30:01-04:00"
+ "at": "2026-10-31T14:40:00-04:00"
 }

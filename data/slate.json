@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2371,
+   "pool_left": 2367,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-31T14:40:00-04:00",
-  "last_read_at": "2026-10-31T14:20:01-04:00",
+  "next_read_at": "2026-10-31T16:30:00-04:00",
+  "last_read_at": "2026-10-31T14:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-31T14:20:01-04:00"
+   "at": "2026-10-31T14:40:00-04:00"
   }
  },
  "games": [
@@ -34,11 +34,11 @@
    "state": "pre",
    "detail": "10/31 - 3:00 PM EDT",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-10-31T14:20:01-04:00",
-   "picks": 0
+   "read_at": "2026-10-31T14:40:00-04:00",
+   "picks": 1
   },
   {
    "id": "401909897",
@@ -125,15 +125,56 @@
    "picks": 0
   }
  ],
- "picks": [],
- "empty": {
-  "text": "No picks yet today",
-  "why": "626 lines read. Pinnacle moved alone on 8, none of them bettable yet.",
-  "next": "2026-10-31T14:40:00-04:00"
- },
+ "picks": [
+  {
+   "player": "Donovan Clingan",
+   "pid": "5105565",
+   "team": "POR",
+   "opp": "UTA",
+   "home": false,
+   "game_id": "401909896",
+   "start": "2026-10-31T15:00:00-04:00",
+   "bet": "Under 0.5 threes",
+   "market": "threes",
+   "side": "under",
+   "line": 0.5,
+   "price": 150,
+   "price_at": "2026-10-31T14:40:00-04:00",
+   "read": "D",
+   "p": 0.408,
+   "p_pct": 41,
+   "breakeven": 0.4,
+   "breakeven_pct": 40,
+   "market_fair": null,
+   "n_books": 5,
+   "gap_ev": null,
+   "final_ev": 0.0371,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from +152 to +129 (37% to 41%); 5 other books held. Hard Rock price: +150, 2.0% better than Pinnacle's fair price.",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/5248273188684693891",
+   "rule": "pin_solo",
+   "pin_before": 0.3709,
+   "pin_after": 0.408,
+   "pin_price_before": 152,
+   "pin_price_after": 129,
+   "others_move": -0.0,
+   "n_others": 5,
+   "ev_vs_pin": 0.0199,
+   "window": "45 \u2192 20 min",
+   "gap_vs_pin": 0.0367,
+   "id": "2026-10-31:401909896:5105565:threes:0.5:under",
+   "state": "starters",
+   "state_label": "Starters confirmed",
+   "price_final": true,
+   "pulled": null,
+   "result": null,
+   "rank": 1
+  }
+ ],
+ "empty": null,
  "counts": {
   "lines_read": 626,
-  "passing": 0,
+  "passing": 1,
   "games": 7
  },
  "safety_paused": false,
@@ -142,6 +183,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-31T14:20:01-04:00",
- "status_at": "2026-10-31T14:20:01-04:00"
+ "generated_at": "2026-10-31T14:40:00-04:00",
+ "status_at": "2026-10-31T14:40:00-04:00"
 }
