@@ -301,7 +301,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "21.3 - 2nd",
+    "detail": "2.9 - 2nd",
     "score": {
      "CHA": "44",
      "WSH": "51"
@@ -316,7 +316,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "43.0 - 1st",
+    "detail": "31.5 - 1st",
     "score": {
      "CHI": "25",
      "BOS": "44"
@@ -330,8 +330,8 @@
     "home": "BKN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "12:00 - 2nd",
     "score": {
      "DET": "21",
      "BKN": "28"
@@ -361,7 +361,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:13 - 1st",
+    "detail": "1:08 - 1st",
     "score": {
      "ORL": "25",
      "TOR": "24"
