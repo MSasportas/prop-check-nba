@@ -43,12 +43,12 @@
    ],
    "status": {
     "Jaylen Brown": "questionable",
-    "LeBron James": "questionable",
+    "LeBron James": "out",
     "Tacko Fall": "questionable",
     "Ariel Hukporti": "out",
     "Jabari Walker": "questionable",
-    "Joel Embiid": "doubtful",
-    "Dominick Barlow": "out"
+    "Dominick Barlow": "out",
+    "Joel Embiid": "out"
    }
   },
   "CHA": {
@@ -208,11 +208,11 @@
     "Alperen Sengun"
    ],
    "status": {
-    "Alperen Sengun": "questionable",
+    "Fred VanVleet": "out",
     "Reed Sheppard": "questionable",
     "Steven Adams": "out"
    }
   }
  },
- "at": "2026-10-31T13:10:01-04:00"
+ "at": "2026-10-31T13:20:00-04:00"
 }
