@@ -22,7 +22,7 @@
   "last_read_at": "2026-10-30T21:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-31T00:30:00-04:00"
+   "at": "2026-10-31T00:40:01-04:00"
   }
  },
  "games": [
@@ -144,7 +144,7 @@
    "away": "LAL",
    "home": "GSW",
    "state": "in",
-   "detail": "6:16 - 4th",
+   "detail": "3:34 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -157,8 +157,8 @@
    "start": "2026-10-30T22:00:00-04:00",
    "away": "DEN",
    "home": "PHX",
-   "state": "in",
-   "detail": "13.4 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -329,6 +329,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-31T00:30:00-04:00",
- "status_at": "2026-10-31T00:30:00-04:00"
+ "generated_at": "2026-10-31T00:40:01-04:00",
+ "status_at": "2026-10-31T00:40:01-04:00"
 }

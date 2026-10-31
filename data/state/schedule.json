@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:16 - 4th",
+    "detail": "3:34 - 4th",
     "score": {
-     "LAL": "86",
-     "GS": "101"
+     "LAL": "91",
+     "GS": "104"
     }
    },
    {
@@ -433,13 +433,13 @@
     "start": "2026-10-30T22:00:00-04:00",
     "away": "DEN",
     "home": "PHX",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "13.4 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "DEN": "125",
-     "PHX": "117"
+     "DEN": "127",
+     "PHX": "120"
     }
    }
   ]
