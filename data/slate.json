@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2415,
+   "pool_left": 2407,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-30T21:40:00-04:00",
-  "last_read_at": "2026-10-30T21:20:01-04:00",
+  "next_read_at": null,
+  "last_read_at": "2026-10-30T21:40:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-30T21:30:01-04:00"
+   "at": "2026-10-30T21:40:00-04:00"
   }
  },
  "games": [
@@ -31,8 +31,8 @@
    "start": "2026-10-30T19:00:00-04:00",
    "away": "CHA",
    "home": "WAS",
-   "state": "in",
-   "detail": "1:26 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -46,7 +46,7 @@
    "away": "CHI",
    "home": "BOS",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "7:24 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -60,7 +60,7 @@
    "away": "DET",
    "home": "BKN",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "7:56 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -74,7 +74,7 @@
    "away": "NYK",
    "home": "PHI",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "6:35 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -88,7 +88,7 @@
    "away": "ORL",
    "home": "TOR",
    "state": "in",
-   "detail": "1:35 - 3rd",
+   "detail": "9:30 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -102,7 +102,7 @@
    "away": "IND",
    "home": "MIA",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "9:04 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -116,7 +116,7 @@
    "away": "HOU",
    "home": "DAL",
    "state": "in",
-   "detail": "9:44 - 3rd",
+   "detail": "6:18 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -130,7 +130,7 @@
    "away": "LAC",
    "home": "MIN",
    "state": "in",
-   "detail": "7:44 - 3rd",
+   "detail": "4:41 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -146,10 +146,10 @@
    "state": "pre",
    "detail": "10/30 - 10:00 PM EDT",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-10-30T21:20:01-04:00",
+   "read_at": "2026-10-30T21:40:00-04:00",
    "picks": 0
   },
   {
@@ -161,9 +161,9 @@
    "detail": "10/30 - 10:00 PM EDT",
    "lineups": {
     "away": "expected",
-    "home": "expected"
+    "home": "confirmed"
    },
-   "read_at": "2026-10-30T21:20:01-04:00",
+   "read_at": "2026-10-30T21:40:00-04:00",
    "picks": 0
   }
  ],
@@ -303,8 +303,8 @@
  ],
  "empty": {
   "text": "No picks yet today",
-  "why": "990 lines read. Pinnacle moved alone on 79, none of them bettable yet.",
-  "next": "2026-10-30T21:40:00-04:00"
+  "why": "990 lines read. Pinnacle moved alone on 80, none of them bettable yet.",
+  "next": null
  },
  "counts": {
   "lines_read": 990,
@@ -317,6 +317,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-30T21:30:01-04:00",
- "status_at": "2026-10-30T21:30:01-04:00"
+ "generated_at": "2026-10-30T21:40:00-04:00",
+ "status_at": "2026-10-30T21:40:00-04:00"
 }

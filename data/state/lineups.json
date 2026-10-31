@@ -238,12 +238,12 @@
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Austin Reaves",
-    "Quentin Grimes",
     "Matisse Thybulle",
+    "Jake LaRavia",
     "Walker Kessler"
    ],
    "status": {
@@ -252,7 +252,7 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Stephen Curry",
     "Brandin Podziemski",
@@ -282,7 +282,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -295,5 +295,5 @@
    }
   }
  },
- "at": "2026-10-30T21:30:01-04:00"
+ "at": "2026-10-30T21:40:00-04:00"
 }
