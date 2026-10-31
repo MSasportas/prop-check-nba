@@ -301,10 +301,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:22 - 3rd",
+    "detail": "6:27 - 3rd",
     "score": {
-     "CHA": "46",
-     "WSH": "59"
+     "CHA": "51",
+     "WSH": "65"
     }
    },
    {
@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:14 - 2nd",
+    "detail": "1:29 - 2nd",
     "score": {
-     "CHI": "38",
-     "BOS": "65"
+     "CHI": "46",
+     "BOS": "76"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:12 - 2nd",
+    "detail": "2:22 - 2nd",
     "score": {
-     "DET": "40",
-     "BKN": "42"
+     "DET": "49",
+     "BKN": "46"
     }
    },
    {
@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:18 - 2nd",
+    "detail": "18.2 - 2nd",
     "score": {
-     "NY": "36",
-     "PHI": "44"
+     "NY": "44",
+     "PHI": "53"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:16 - 2nd",
+    "detail": "4:05 - 2nd",
     "score": {
-     "ORL": "38",
-     "TOR": "33"
+     "ORL": "52",
+     "TOR": "47"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:19 - 1st",
+    "detail": "8.8 - 1st",
     "score": {
-     "IND": "28",
-     "MIA": "27"
+     "IND": "41",
+     "MIA": "36"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:21 - 1st",
+    "detail": "11:18 - 2nd",
     "score": {
-     "HOU": "20",
-     "DAL": "21"
+     "HOU": "24",
+     "DAL": "27"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:59 - 1st",
+    "detail": "11:08 - 2nd",
     "score": {
-     "LAC": "18",
-     "MIN": "26"
+     "LAC": "26",
+     "MIN": "34"
     }
    },
    {
