@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2367,
+   "pool_left": 2363,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-10-31T16:30:00-04:00",
-  "last_read_at": "2026-10-31T14:40:00-04:00",
+  "next_read_at": "2026-10-31T17:15:00-04:00",
+  "last_read_at": "2026-10-31T16:30:00-04:00",
   "last_run": {
    "ok": true,
-   "at": "2026-10-31T16:20:01-04:00"
+   "at": "2026-10-31T16:30:00-04:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "POR",
    "home": "UTA",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "11:57 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -51,7 +51,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-10-31T11:00:00-04:00",
+   "read_at": "2026-10-31T16:30:00-04:00",
    "picks": 0
   },
   {
@@ -173,11 +173,11 @@
  ],
  "empty": {
   "text": "No picks yet today",
-  "why": "626 lines read. Pinnacle moved alone on 11, none of them bettable yet.",
-  "next": "2026-10-31T16:30:00-04:00"
+  "why": "648 lines read. Pinnacle moved alone on 13, none of them bettable yet.",
+  "next": "2026-10-31T17:15:00-04:00"
  },
  "counts": {
-  "lines_read": 626,
+  "lines_read": 648,
   "passing": 1,
   "games": 7
  },
@@ -187,6 +187,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-10-31T16:20:01-04:00",
- "status_at": "2026-10-31T16:20:01-04:00"
+ "generated_at": "2026-10-31T16:30:00-04:00",
+ "status_at": "2026-10-31T16:30:00-04:00"
 }
