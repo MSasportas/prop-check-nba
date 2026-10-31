@@ -38,17 +38,17 @@
     "Tyrese Maxey",
     "VJ Edgecombe",
     "Jaylen Brown",
-    "LeBron James",
-    "Dean Wade"
+    "Dean Wade",
+    "Adem Bona"
    ],
    "status": {
     "Jaylen Brown": "questionable",
-    "LeBron James": "out",
-    "Tacko Fall": "questionable",
     "Ariel Hukporti": "out",
+    "Tacko Fall": "questionable",
     "Jabari Walker": "questionable",
     "Dominick Barlow": "out",
-    "Joel Embiid": "out"
+    "Joel Embiid": "out",
+    "LeBron James": "out"
    }
   },
   "CHA": {
@@ -201,18 +201,18 @@
   "HOU": {
    "state": "expected",
    "starters": [
-    "Fred VanVleet",
+    "Marcus Smart",
     "Amen Thompson",
     "Kevin Durant",
     "Jabari Smith",
     "Alperen Sengun"
    ],
    "status": {
-    "Fred VanVleet": "out",
     "Reed Sheppard": "questionable",
-    "Steven Adams": "out"
+    "Steven Adams": "out",
+    "Fred VanVleet": "out"
    }
   }
  },
- "at": "2026-10-31T13:20:00-04:00"
+ "at": "2026-10-31T13:30:01-04:00"
 }
