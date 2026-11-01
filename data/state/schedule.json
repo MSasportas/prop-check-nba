@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:34 - 3rd",
+    "detail": "2:37 - 3rd",
     "score": {
-     "BOS": "69",
-     "ORL": "56"
+     "BOS": "72",
+     "ORL": "66"
     }
    },
    {
@@ -328,13 +328,13 @@
     "start": "2026-11-01T17:00:00-05:00",
     "away": "BKN",
     "home": "IND",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/1 - 5:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:56 - 1st",
     "score": {
-     "BKN": "0",
-     "IND": "0"
+     "BKN": "9",
+     "IND": "7"
     }
    },
    {
