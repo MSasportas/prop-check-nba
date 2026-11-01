@@ -1,12 +1,12 @@
 {
- "at": "2026-11-01T17:10:01-05:00",
+ "at": "2026-11-01T17:30:00-05:00",
  "list": {
   "3146557": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jock Landale",
    "team": "ATL",
-   "date": "2026-11-01T04:52Z",
-   "note": "Landale (hip) won't return to Saturday's game against the Pelicans."
+   "date": "2026-11-01T22:22Z",
+   "note": "Landale (hip) has been ruled out for Monday's game against Indiana."
   },
   "4701230": {
    "status": "day-to-day",
@@ -64,33 +64,19 @@
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
   },
-  "5061575": {
-   "status": "out",
-   "name": "Kon Knueppel",
-   "team": "CHA",
-   "date": "2026-11-01T21:10Z",
-   "note": "The Hornets exercised Knueppel's (hamstring) third-year team option on Sunday."
-  },
-  "4395651": {
-   "status": "out",
-   "name": "Coby White",
-   "team": "CHA",
-   "date": "2026-10-26T22:41Z",
-   "note": "Head coach Charles Lee said Monday that White (calf) remains without a timeline for a return, though Lee added that he'll have a better idea of where things stand following the Hornets' two-game road "
-  },
   "4066218": {
    "status": "out",
    "name": "Grant Williams",
    "team": "CHA",
-   "date": "2026-10-26T22:34Z",
-   "note": "Williams (hamstring) will be re-evaluated following Charlotte's upcoming two-game road trip, Rod Boone reports."
+   "date": "2026-11-01T22:17Z",
+   "note": "Williams (hamstring) is listed as out for Monday's game against the Pistons."
   },
-  "4684269": {
+  "5061575": {
    "status": "out",
-   "name": "Kylan Boswell",
+   "name": "Kon Knueppel",
    "team": "CHA",
-   "date": "2026-10-20T20:55Z",
-   "note": "Boswell (knee) is out for Wednesday's season opener against the Nets."
+   "date": "2026-11-01T22:08Z",
+   "note": "Knueppel (hamstring) is listed as out for Monday's game versus the Pistons."
   },
   "4397189": {
    "status": "day-to-day",
@@ -187,8 +173,8 @@
    "status": "out",
    "name": "Isaiah Joe",
    "team": "DET",
-   "date": "2026-10-30T20:35Z",
-   "note": "Joe (hip) has been ruled out for Friday's game against the Nets."
+   "date": "2026-11-01T22:17Z",
+   "note": "Joe (hip) is questionable for Friday's game against the Hornets."
   },
   "4433621": {
    "status": "out",
@@ -418,8 +404,8 @@
    "status": "out",
    "name": "Jose Alvarado",
    "team": "NY",
-   "date": "2026-10-29T22:50Z",
-   "note": "Alvarado (ankle) has been ruled out for Friday's game against Philadelphia."
+   "date": "2026-11-01T22:16Z",
+   "note": "Alvarado (ankle) is questionable for Monday's game against the Nets."
   },
   "4683692": {
    "status": "out",
@@ -502,15 +488,8 @@
    "status": "day-to-day",
    "name": "Joel Embiid",
    "team": "PHI",
-   "date": "2026-11-01T04:52Z",
-   "note": "Embiid (foot) is out for Saturday's game in Charlotte."
-  },
-  "1966": {
-   "status": "day-to-day",
-   "name": "LeBron James",
-   "team": "PHI",
-   "date": "2026-11-01T04:51Z",
-   "note": "James (back) has been ruled out for Saturday's meeting in Charlotte."
+   "date": "2026-11-01T22:12Z",
+   "note": "Embiid (foot) is questionable to suit up for Monday's game against the Bulls."
   },
   "4870562": {
    "status": "out",

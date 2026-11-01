@@ -315,11 +315,11 @@
     "home": "ORL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:37 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "BOS": "72",
-     "ORL": "66"
+     "BOS": "77",
+     "ORL": "74"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:56 - 1st",
+    "detail": "2:58 - 1st",
     "score": {
-     "BKN": "9",
-     "IND": "7"
+     "BKN": "17",
+     "IND": "12"
     }
    },
    {
