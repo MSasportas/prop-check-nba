@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:45 - 4th",
+    "detail": "4:22 - 4th",
     "score": {
-     "BOS": "85",
-     "ORL": "79"
+     "BOS": "97",
+     "ORL": "91"
     }
    },
    {
@@ -330,11 +330,11 @@
     "home": "IND",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:39 - 2nd",
     "score": {
-     "BKN": "20",
-     "IND": "19"
+     "BKN": "24",
+     "IND": "21"
     }
    },
    {
