@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2976,
+   "pool_left": 2972,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -17,11 +17,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-01T16:40:00-05:00",
-  "last_read_at": "2026-11-01T16:20:00-05:00",
+  "next_read_at": "2026-11-01T19:00:00-05:00",
+  "last_read_at": "2026-11-01T16:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-01T16:30:00-05:00"
+   "at": "2026-11-01T16:40:00-05:00"
   }
  },
  "games": [
@@ -31,7 +31,7 @@
    "away": "BOS",
    "home": "ORL",
    "state": "in",
-   "detail": "3:20 - 2nd",
+   "detail": "12.2 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -50,7 +50,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-01T16:20:00-05:00",
+   "read_at": "2026-11-01T16:40:00-05:00",
    "picks": 0
   },
   {
@@ -85,8 +85,8 @@
  "picks": [],
  "empty": {
   "text": "No picks yet today",
-  "why": "182 lines read. Pinnacle moved alone on 10, none of them bettable yet.",
-  "next": "2026-11-01T16:40:00-05:00"
+  "why": "182 lines read. Pinnacle moved alone on 11, none of them bettable yet.",
+  "next": "2026-11-01T19:00:00-05:00"
  },
  "counts": {
   "lines_read": 182,
@@ -99,6 +99,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-01T16:30:00-05:00",
- "status_at": "2026-11-01T16:30:00-05:00"
+ "generated_at": "2026-11-01T16:40:00-05:00",
+ "status_at": "2026-11-01T16:40:00-05:00"
 }
