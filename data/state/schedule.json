@@ -315,11 +315,11 @@
     "home": "ORL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:44 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "BOS": "19",
-     "ORL": "20"
+     "BOS": "24",
+     "ORL": "23"
     }
    },
    {
