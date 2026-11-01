@@ -313,12 +313,12 @@
     "start": "2026-11-01T15:30:00-05:00",
     "away": "BOS",
     "home": "ORL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "52.7 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "BOS": "106",
+     "BOS": "108",
      "ORL": "97"
     }
    },
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:23 - 2nd",
+    "detail": "4:24 - 2nd",
     "score": {
-     "BKN": "26",
-     "IND": "22"
+     "BKN": "34",
+     "IND": "29"
     }
    },
    {
