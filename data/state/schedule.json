@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:36 - 3rd",
+    "detail": "10:34 - 4th",
     "score": {
-     "PHI": "71",
-     "CHA": "76"
+     "PHI": "77",
+     "CHA": "85"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:05 - 2nd",
+    "detail": "4:04 - 2nd",
     "score": {
-     "ATL": "28",
-     "NO": "41"
+     "ATL": "38",
+     "NO": "52"
     }
    },
    {
