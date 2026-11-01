@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T16:20:00-05:00",
+ "at": "2026-11-01T16:30:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -98,6 +98,13 @@
    "team": "CHA",
    "date": "2026-10-20T20:55Z",
    "note": "Boswell (knee) is out for Wednesday's season opener against the Nets."
+  },
+  "5105555": {
+   "status": "day-to-day",
+   "name": "Tobe Awaka",
+   "team": "CHI",
+   "date": "2026-11-01T21:17Z",
+   "note": "Awaka (ankle) is probable for Monday's game against Philadelphia."
   },
   "4278067": {
    "status": "out",
