@@ -403,13 +403,13 @@
     "start": "2026-10-31T18:00:00-04:00",
     "away": "PHI",
     "home": "CHA",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "35.4 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "PHI": "105",
-     "CHA": "101"
+     "PHI": "109",
+     "CHA": "104"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:47 - 3rd",
+    "detail": "5:59 - 3rd",
     "score": {
-     "ATL": "53",
-     "NO": "67"
+     "ATL": "60",
+     "NO": "78"
     }
    },
    {
@@ -435,11 +435,11 @@
     "home": "MEM",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:39 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "SAC": "11",
-     "MEM": "21"
+     "SAC": "21",
+     "MEM": "27"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:27 - 1st",
+    "detail": "11:45 - 2nd",
     "score": {
-     "CLE": "23",
-     "MIL": "20"
+     "CLE": "24",
+     "MIL": "25"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:15 - 1st",
+    "detail": "0.0 - 2nd",
     "score": {
-     "MIN": "18",
-     "SA": "20"
+     "MIN": "28",
+     "SA": "34"
     }
    },
    {
