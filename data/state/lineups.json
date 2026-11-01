@@ -16,7 +16,7 @@
    }
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jase Richardson",
     "Anthony Black",
@@ -129,5 +129,5 @@
    }
   }
  },
- "at": "2026-11-01T15:00:01-05:00"
+ "at": "2026-11-01T15:10:00-05:00"
 }
