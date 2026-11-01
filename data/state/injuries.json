@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T17:50:01-05:00",
+ "at": "2026-11-01T18:00:00-05:00",
  "list": {
   "4701230": {
    "status": "day-to-day",
@@ -120,19 +120,26 @@
    "date": "2026-11-01T21:50Z",
    "note": "Tyson (ankle) has been ruled out for Monday's game against Oklahoma City."
   },
+  "4593125": {
+   "status": "out",
+   "name": "Santi Aldama",
+   "team": "DAL",
+   "date": "2026-11-01T22:51Z",
+   "note": "Aldama (knee) is listed as doubtful for Monday's game against the Kings."
+  },
+  "6442": {
+   "status": "day-to-day",
+   "name": "Kyrie Irving",
+   "team": "DAL",
+   "date": "2026-11-01T22:49Z",
+   "note": "Irving closed Friday's 116-111 win over Houston with 35 points (12-19 FG, 5-8 3Pt, 6-6 FT), four rebounds and nine assists across 35 minutes."
+  },
   "5279129": {
    "status": "out",
    "name": "Sergio de Larrea",
    "team": "DAL",
    "date": "2026-10-30T22:34Z",
    "note": "Head coach Dusty May said Friday that de Larrea (knee) will be re-evaluated next week, Noah Weber of TheSmokingCuban.com reports."
-  },
-  "4593125": {
-   "status": "out",
-   "name": "Santi Aldama",
-   "team": "DAL",
-   "date": "2026-10-30T22:16Z",
-   "note": "Aldama (knee) is listed as out for Friday's game against the Rockets."
   },
   "5148538": {
    "status": "out",
