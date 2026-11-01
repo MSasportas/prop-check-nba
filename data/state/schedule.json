@@ -315,8 +315,8 @@
     "home": "ORL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "12.2 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
      "BOS": "55",
      "ORL": "50"

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T16:40:00-05:00",
+ "at": "2026-11-01T16:50:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -91,6 +91,13 @@
    "team": "CHA",
    "date": "2026-10-20T20:55Z",
    "note": "Boswell (knee) is out for Wednesday's season opener against the Nets."
+  },
+  "4397189": {
+   "status": "day-to-day",
+   "name": "Jalen Smith",
+   "team": "CHI",
+   "date": "2026-11-01T21:40Z",
+   "note": "Smith ended Friday's 125-111 loss to the Celtics with five points (2-8 FG, 0-5 3Pt, 1-2 FT), 12 rebounds, one assist and two blocks over 27 minutes."
   },
   "5105555": {
    "status": "day-to-day",
@@ -306,8 +313,8 @@
    "status": "out",
    "name": "Max Strus",
    "team": "LAC",
-   "date": "2026-10-29T01:03Z",
-   "note": "Strus (foot) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports."
+   "date": "2026-11-01T15:42Z",
+   "note": "Los Angeles assigned Strus (foot) to the G League's San Diego Clippers on Friday."
   },
   "6580": {
    "status": "out",
@@ -609,6 +616,20 @@
    "team": "UTAH",
    "date": "2026-10-07T23:07Z",
    "note": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports."
+  },
+  "5160992": {
+   "status": "day-to-day",
+   "name": "Alex Sarr",
+   "team": "WSH",
+   "date": "2026-11-01T21:42Z",
+   "note": "The Wizards exercised the fourth-year team option on Sarr on Tuesday, Brett Siegel of ClutchPoints.com reports."
+  },
+  "2581184": {
+   "status": "day-to-day",
+   "name": "Anthony Gill",
+   "team": "WSH",
+   "date": "2026-11-01T21:40Z",
+   "note": "Gill (back) is questionable to suit up in Monday's contest against Orlando."
   },
   "4432907": {
    "status": "out",

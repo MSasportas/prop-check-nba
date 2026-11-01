@@ -33,7 +33,7 @@
    }
   },
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Chaney Johnson",
     "Nolan Traore",
@@ -47,7 +47,7 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Andrew Nembhard",
     "Kelly Oubre",
@@ -128,5 +128,5 @@
    }
   }
  },
- "at": "2026-11-01T16:40:00-05:00"
+ "at": "2026-11-01T16:50:00-05:00"
 }
