@@ -1,19 +1,19 @@
 {
- "at": "2026-11-01T01:00:01-04:00",
+ "at": "2026-11-01T01:10:01-04:00",
  "list": {
+  "3146557": {
+   "status": "day-to-day",
+   "name": "Jock Landale",
+   "team": "ATL",
+   "date": "2026-11-01T04:52Z",
+   "note": "Landale (hip) won't return to Saturday's game against the Pelicans."
+  },
   "4701230": {
    "status": "day-to-day",
    "name": "Jalen Johnson",
    "team": "ATL",
    "date": "2026-11-01T01:43Z",
    "note": "Johnson (ankle) did not return to Saturday's 121-99 loss to the Pelicans. He finished with 13 points (5-11 FG, 1-3 3Pt, 2-2 FT), seven rebounds, four assists and one block over 28 minutes."
-  },
-  "3146557": {
-   "status": "out",
-   "name": "Jock Landale",
-   "team": "ATL",
-   "date": "2026-11-01T00:05Z",
-   "note": "Landale (hip) won't return to Saturday's game against the Pelicans."
   },
   "4712863": {
    "status": "out",
@@ -107,10 +107,10 @@
    "note": "Claxton (hamstring) participated in individual drills Monday morning and hopes to join the team for practice next week, Joe Cowley of the Chicago Sun-Times reports."
   },
   "4683747": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jaylon Tyson",
    "team": "CLE",
-   "date": "2026-10-30T20:52Z",
+   "date": "2026-11-01T04:53Z",
    "note": "Tyson (ankle) has been ruled out for Saturday's game against the Bucks."
   },
   "5279129": {
@@ -218,19 +218,19 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
-  "4711272": {
-   "status": "out",
-   "name": "Reed Sheppard",
-   "team": "HOU",
-   "date": "2026-10-31T17:33Z",
-   "note": "Sheppard (back) is out for Saturday's game against the Thunder."
-  },
   "2991230": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Fred VanVleet",
    "team": "HOU",
-   "date": "2026-10-31T17:31Z",
+   "date": "2026-11-01T04:56Z",
    "note": "VanVleet (knee) won't play Saturday against the Thunder."
+  },
+  "4711272": {
+   "status": "day-to-day",
+   "name": "Reed Sheppard",
+   "team": "HOU",
+   "date": "2026-11-01T04:56Z",
+   "note": "Sheppard (back) is out for Saturday's game against the Thunder."
   },
   "2991235": {
    "status": "out",
@@ -337,32 +337,32 @@
    "date": "2026-10-30T00:05Z",
    "note": "Thiero (knee) has been ruled out for Friday's game against the Warriors."
   },
-  "4065733": {
-   "status": "out",
-   "name": "Ty Jerome",
-   "team": "MEM",
-   "date": "2026-10-31T23:23Z",
-   "note": "Jerome (back) won't play in Saturday's game versus Sacramento, Chris Herrington of The Daily Memphian."
-  },
-  "4431785": {
-   "status": "out",
-   "name": "Scotty Pippen Jr.",
-   "team": "MEM",
-   "date": "2026-10-31T23:22Z",
-   "note": "Pippen (back) has been ruled out for Saturday's game against the Kings, Chris Herrington of The Daily Memphian reports."
-  },
   "4593016": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Quinten Post",
    "team": "MEM",
-   "date": "2026-10-31T23:21Z",
+   "date": "2026-11-01T04:54Z",
    "note": "Post (ankle) has been ruled out for Saturday's game versus Sacramento, Chris Herrington of The Daily Memphian reports."
   },
+  "4431785": {
+   "status": "day-to-day",
+   "name": "Scotty Pippen Jr.",
+   "team": "MEM",
+   "date": "2026-11-01T04:54Z",
+   "note": "Pippen (back) has been ruled out for Saturday's game against the Kings, Chris Herrington of The Daily Memphian reports."
+  },
+  "4065733": {
+   "status": "day-to-day",
+   "name": "Ty Jerome",
+   "team": "MEM",
+   "date": "2026-11-01T04:54Z",
+   "note": "Jerome (back) won't play in Saturday's game versus Sacramento, Chris Herrington of The Daily Memphian."
+  },
   "3032976": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Rudy Gobert",
    "team": "MIN",
-   "date": "2026-10-31T22:18Z",
+   "date": "2026-11-01T04:53Z",
    "note": "Gobert (back) is out for Saturday's game against the Spurs, Dane Moore of 'The Dane Moore NBA Podcast' reports."
   },
   "4594268": {
@@ -379,11 +379,18 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4277956": {
+   "status": "day-to-day",
+   "name": "Jordan Poole",
+   "team": "NO",
+   "date": "2026-11-01T04:53Z",
+   "note": "Poole (ankle) has been ruled out for Saturday's game against the Hawks."
+  },
   "3907497": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Dejounte Murray",
    "team": "NO",
-   "date": "2026-10-31T21:24Z",
+   "date": "2026-11-01T04:52Z",
    "note": "Murray (personal) won't play in Saturday's game against the Hawks, Jim Eichenhofer of the Pelicans' official site reports."
   },
   "5061589": {
@@ -392,13 +399,6 @@
    "team": "NO",
    "date": "2026-10-30T21:32Z",
    "note": "Missi (knee) won't play in Saturday's game against Atlanta."
-  },
-  "4277956": {
-   "status": "out",
-   "name": "Jordan Poole",
-   "team": "NO",
-   "date": "2026-10-30T21:25Z",
-   "note": "Poole (ankle) has been ruled out for Saturday's game against the Hawks."
   },
   "4277869": {
    "status": "out",
@@ -484,19 +484,19 @@
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
+  "3059318": {
+   "status": "day-to-day",
+   "name": "Joel Embiid",
+   "team": "PHI",
+   "date": "2026-11-01T04:52Z",
+   "note": "Embiid (foot) is out for Saturday's game in Charlotte."
+  },
   "1966": {
    "status": "day-to-day",
    "name": "LeBron James",
    "team": "PHI",
    "date": "2026-11-01T04:51Z",
    "note": "James (back) has been ruled out for Saturday's meeting in Charlotte."
-  },
-  "3059318": {
-   "status": "out",
-   "name": "Joel Embiid",
-   "team": "PHI",
-   "date": "2026-10-31T17:12Z",
-   "note": "Embiid (foot) is out for Saturday's game in Charlotte."
   },
   "4870562": {
    "status": "out",
