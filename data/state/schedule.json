@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:59 - 3rd",
+    "detail": "2:45 - 3rd",
     "score": {
-     "ATL": "60",
-     "NO": "78"
+     "ATL": "73",
+     "NO": "87"
     }
    },
    {
@@ -435,11 +435,11 @@
     "home": "MEM",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:58 - 2nd",
     "score": {
-     "SAC": "21",
-     "MEM": "27"
+     "SAC": "29",
+     "MEM": "38"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:45 - 2nd",
+    "detail": "7:53 - 2nd",
     "score": {
-     "CLE": "24",
-     "MIL": "25"
+     "CLE": "42",
+     "MIL": "36"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "0.0 - 2nd",
+    "detail": "7:40 - 2nd",
     "score": {
-     "MIN": "28",
-     "SA": "34"
+     "MIN": "38",
+     "SA": "46"
     }
    },
    {
@@ -478,13 +478,13 @@
     "start": "2026-10-31T20:30:00-04:00",
     "away": "OKC",
     "home": "HOU",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/31 - 8:30 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:42 - 1st",
     "score": {
-     "OKC": "0",
-     "HOU": "0"
+     "OKC": "6",
+     "HOU": "7"
     }
    }
   ]
