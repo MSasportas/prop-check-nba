@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T11:20:01-05:00",
+ "at": "2026-11-01T11:50:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -239,6 +239,13 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
+  "2530530": {
+   "status": "out",
+   "name": "T.J. McConnell",
+   "team": "IND",
+   "date": "2026-11-01T16:26Z",
+   "note": "Indiana recalled McConnell (hamstring) from the G League's Noblesville Boom on Saturday."
+  },
   "4017837": {
    "status": "out",
    "name": "Ivica Zubac",
@@ -259,13 +266,6 @@
    "team": "IND",
    "date": "2026-10-31T21:10Z",
    "note": "Toppin (back) is questionable for Sunday's game against the Nets."
-  },
-  "2530530": {
-   "status": "out",
-   "name": "T.J. McConnell",
-   "team": "IND",
-   "date": "2026-10-30T19:09Z",
-   "note": "McConnell (hamstring) is practicing in the G League at Noblesville Boom training camp, per Alex Golden of SI.com."
   },
   "5157066": {
    "status": "out",
