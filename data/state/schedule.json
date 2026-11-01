@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:29 - 4th",
+    "detail": "4:15 - 4th",
     "score": {
-     "PHI": "88",
-     "CHA": "95"
+     "PHI": "92",
+     "CHA": "98"
     }
    },
    {
@@ -420,11 +420,11 @@
     "home": "NO",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "36.4 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "ATL": "46",
-     "NO": "61"
+     "ATL": "48",
+     "NO": "63"
     }
    },
    {
@@ -433,13 +433,13 @@
     "start": "2026-10-31T20:00:00-04:00",
     "away": "SAC",
     "home": "MEM",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/31 - 8:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:29 - 1st",
     "score": {
-     "SAC": "0",
-     "MEM": "0"
+     "SAC": "11",
+     "MEM": "11"
     }
    },
    {
@@ -448,13 +448,13 @@
     "start": "2026-10-31T20:00:00-04:00",
     "away": "CLE",
     "home": "MIL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/31 - 8:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:03 - 1st",
     "score": {
-     "CLE": "0",
-     "MIL": "0"
+     "CLE": "10",
+     "MIL": "10"
     }
    },
    {
@@ -463,13 +463,13 @@
     "start": "2026-10-31T20:00:00-04:00",
     "away": "MIN",
     "home": "SA",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "10/31 - 8:00 PM EDT",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:24 - 1st",
     "score": {
-     "MIN": "0",
-     "SA": "0"
+     "MIN": "4",
+     "SA": "11"
     }
    },
    {
