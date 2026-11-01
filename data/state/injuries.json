@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T18:30:14-05:00",
+ "at": "2026-11-01T18:40:00-05:00",
  "list": {
   "4701230": {
    "status": "day-to-day",
@@ -519,19 +519,19 @@
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
-  "3064440": {
-   "status": "day-to-day",
-   "name": "Zach LaVine",
-   "team": "SAC",
-   "date": "2026-11-01T23:03Z",
-   "note": "LaVine chipped in 11 points (4-9 FG, 0-3 3Pt, 3-3 FT) and one assist over 21 minutes during Saturday's 136-105 loss to Memphis."
-  },
   "4433174": {
    "status": "out",
    "name": "Dylan Cardwell",
    "team": "SAC",
-   "date": "2026-10-26T22:09Z",
-   "note": "Cardwell (calf) will be re-evaluated in one week, Brenden Nunes of KHTK Sactown Sports 1140 reports."
+   "date": "2026-11-01T23:24Z",
+   "note": "Cardwell (calf) is questionable to suit up for Monday's game against the Mavericks."
+  },
+  "3064440": {
+   "status": "day-to-day",
+   "name": "Zach LaVine",
+   "team": "SAC",
+   "date": "2026-11-01T23:20Z",
+   "note": "LaVine (elbow) is questionable to play in Monday's game against Dallas."
   },
   "4898371": {
    "status": "out",
