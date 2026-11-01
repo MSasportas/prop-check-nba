@@ -436,7 +436,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:23 - 3rd",
+    "detail": "4:07 - 3rd",
     "score": {
      "SAC": "70",
      "MEM": "92"
@@ -466,7 +466,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:37 - 3rd",
+    "detail": "3:25 - 3rd",
     "score": {
      "MIN": "76",
      "SA": "82"
