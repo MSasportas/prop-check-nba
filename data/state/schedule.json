@@ -313,13 +313,13 @@
     "start": "2026-11-01T15:30:00-05:00",
     "away": "BOS",
     "home": "ORL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/1 - 3:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:14 - 1st",
     "score": {
-     "BOS": "0",
-     "ORL": "0"
+     "BOS": "11",
+     "ORL": "13"
     }
    },
    {

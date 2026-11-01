@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T15:30:00-05:00",
+ "at": "2026-11-01T15:50:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -218,13 +218,6 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
-  "2991230": {
-   "status": "day-to-day",
-   "name": "Fred VanVleet",
-   "team": "HOU",
-   "date": "2026-11-01T04:56Z",
-   "note": "VanVleet (knee) won't play Saturday against the Thunder."
-  },
   "4711272": {
    "status": "day-to-day",
    "name": "Reed Sheppard",
@@ -243,8 +236,8 @@
    "status": "out",
    "name": "Obi Toppin",
    "team": "IND",
-   "date": "2026-11-01T20:27Z",
-   "note": "Toppin (back) is questionable for Sunday's game against the Nets."
+   "date": "2026-11-01T20:29Z",
+   "note": "Toppin (back) is out for Sunday's game against the Nets, Alex Golden of SI.com reports."
   },
   "2530530": {
    "status": "out",
@@ -259,13 +252,6 @@
    "team": "IND",
    "date": "2026-10-31T21:14Z",
    "note": "Zubac (ankle) will remain on the inactive list for Sunday's game against the Nets."
-  },
-  "4396909": {
-   "status": "day-to-day",
-   "name": "Aaron Nesmith",
-   "team": "IND",
-   "date": "2026-10-31T21:13Z",
-   "note": "Nesmith (hamstring) is listed as probable for Sunday's game against Brooklyn."
   },
   "5157066": {
    "status": "out",
