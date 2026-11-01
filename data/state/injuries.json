@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T01:10:01-04:00",
+ "at": "2026-11-01T10:20:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -30,11 +30,11 @@
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
   "4351852": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Mitchell Robinson",
    "team": "BOS",
-   "date": "2026-10-31T20:32Z",
-   "note": "Robinson (rest) is questionable for Sunday's game in Orlando, Jay King of The Athletic reports."
+   "date": "2026-11-01T15:05Z",
+   "note": "Robinson (rest) has been ruled out for Sunday's game against the Magic."
   },
   "4433188": {
    "status": "out",
@@ -323,19 +323,19 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
+  "5060631": {
+   "status": "out",
+   "name": "Adou Thiero",
+   "team": "LAL",
+   "date": "2026-11-01T15:04Z",
+   "note": "Thiero (knee) has been ruled out for Sunday's game against the Raptors."
+  },
   "4433137": {
    "status": "day-to-day",
    "name": "Ziaire Williams",
    "team": "LAL",
    "date": "2026-11-01T00:04Z",
    "note": "Williams (foot) is questionable for Sunday's game against the Raptors, Law Murray of The Athletic reports."
-  },
-  "5060631": {
-   "status": "out",
-   "name": "Adou Thiero",
-   "team": "LAL",
-   "date": "2026-10-30T00:05Z",
-   "note": "Thiero (knee) has been ruled out for Friday's game against the Warriors."
   },
   "4593016": {
    "status": "day-to-day",
