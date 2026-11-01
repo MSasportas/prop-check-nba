@@ -5,9 +5,9 @@
    "state": "confirmed",
    "starters": [
     "Derrick White",
+    "Hugo Gonzalez",
     "Paul George",
     "Jayson Tatum",
-    "Jordan Walsh",
     "Neemias Queta"
    ],
    "status": {
@@ -57,11 +57,11 @@
    ],
    "status": {
     "Aaron Nesmith": "probable",
-    "Obi Toppin": "questionable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "T.J. McConnell": "out",
     "Ben Sheppard": "out",
+    "Obi Toppin": "out",
     "Ivica Zubac": "out"
    }
   },
@@ -129,5 +129,5 @@
    }
   }
  },
- "at": "2026-11-01T15:20:01-05:00"
+ "at": "2026-11-01T15:30:00-05:00"
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T15:20:01-05:00",
+ "at": "2026-11-01T15:30:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -239,6 +239,13 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
+  "4278355": {
+   "status": "out",
+   "name": "Obi Toppin",
+   "team": "IND",
+   "date": "2026-11-01T20:27Z",
+   "note": "Toppin (back) is questionable for Sunday's game against the Nets."
+  },
   "2530530": {
    "status": "out",
    "name": "T.J. McConnell",
@@ -260,13 +267,6 @@
    "date": "2026-10-31T21:13Z",
    "note": "Nesmith (hamstring) is listed as probable for Sunday's game against Brooklyn."
   },
-  "4278355": {
-   "status": "day-to-day",
-   "name": "Obi Toppin",
-   "team": "IND",
-   "date": "2026-10-31T21:10Z",
-   "note": "Toppin (back) is questionable for Sunday's game against the Nets."
-  },
   "5157066": {
    "status": "out",
    "name": "Johnny Furphy",
@@ -287,6 +287,20 @@
    "team": "IND",
    "date": "2026-10-28T21:30Z",
    "note": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports."
+  },
+  "5108024": {
+   "status": "out",
+   "name": "Yanic Konan Niederhauser",
+   "team": "LAC",
+   "date": "2026-11-01T20:17Z",
+   "note": "Niederhauser (foot) had his third-year team option picked up Thursday by the Clippers, Ohm Youngmisuk of ESPN.com reports."
+  },
+  "3913176": {
+   "status": "out",
+   "name": "Brandon Ingram",
+   "team": "LAC",
+   "date": "2026-11-01T20:17Z",
+   "note": "Ingram (Achilles) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports."
   },
   "4065778": {
    "status": "out",
@@ -365,12 +379,19 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4397688": {
+   "status": "day-to-day",
+   "name": "Trey Murphy III",
+   "team": "NO",
+   "date": "2026-11-01T20:19Z",
+   "note": "Murphy (knee) is listed as probable for Monday's game against the Grizzlies."
+  },
   "4277956": {
    "status": "out",
    "name": "Jordan Poole",
    "team": "NO",
-   "date": "2026-11-01T20:08Z",
-   "note": "Poole (ankle) has been ruled out for Saturday's game against the Hawks."
+   "date": "2026-11-01T20:11Z",
+   "note": "Poole (ankle) has been ruled out for Monday's game against the Grizzlies."
   },
   "3907497": {
    "status": "day-to-day",
