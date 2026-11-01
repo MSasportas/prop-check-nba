@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-10-31T19:00:01-04:00",
+ "generated_at": "2026-10-31T21:40:00-04:00",
  "summary": {
   "headline": {
-   "w": 16,
+   "w": 17,
    "l": 5,
    "push": 0,
    "void": 0,
-   "units": 10.42,
-   "hit_rate": 0.7619,
-   "needed": 0.5238,
-   "n": 21
+   "units": 11.09,
+   "hit_rate": 0.7727,
+   "needed": 0.5272,
+   "n": 22
   },
   "rows": [
    {
@@ -51,14 +51,14 @@
    {
     "key": "threes",
     "label": "3-pointers made",
-    "w": 3,
+    "w": 4,
     "l": 0,
     "push": 0,
     "void": 0,
-    "units": 4.1,
+    "units": 4.77,
     "hit_rate": 1.0,
-    "needed": 0.4233,
-    "n": 3
+    "needed": 0.4675,
+    "n": 4
    },
    {
     "key": "window:11 AM \u2192 90 min",
@@ -87,24 +87,24 @@
    {
     "key": "window:45 \u2192 20 min",
     "label": "Window 45 \u2192 20 min",
-    "w": 4,
+    "w": 5,
     "l": 1,
     "push": 0,
     "void": 0,
-    "units": 2.91,
-    "hit_rate": 0.8,
-    "needed": 0.5155,
-    "n": 5
+    "units": 3.57,
+    "hit_rate": 0.8333,
+    "needed": 0.5296,
+    "n": 6
    }
   ]
  },
  "nights": [
   {
    "date": "2026-10-31",
-   "graded": false,
-   "w": 1,
+   "graded": true,
+   "w": 2,
    "l": 0,
-   "units": 1.5,
+   "units": 2.17,
    "entries": [
     {
      "id": "2026-10-31:401909896:5105565:threes:0.5:under",
@@ -148,9 +148,9 @@
        "at": "2026-10-31T18:40:00-04:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "1 three",
+     "units": 0.6667,
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min",
