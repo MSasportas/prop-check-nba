@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T18:00:00-05:00",
+ "at": "2026-11-01T18:20:01-05:00",
  "list": {
   "4701230": {
    "status": "day-to-day",
@@ -120,19 +120,26 @@
    "date": "2026-11-01T21:50Z",
    "note": "Tyson (ankle) has been ruled out for Monday's game against Oklahoma City."
   },
+  "4683688": {
+   "status": "out",
+   "name": "Dereck Lively II",
+   "team": "DAL",
+   "date": "2026-11-01T22:57Z",
+   "note": "Lively (foot) is listed as out for Monday's game against the Kings."
+  },
+  "6442": {
+   "status": "day-to-day",
+   "name": "Kyrie Irving",
+   "team": "DAL",
+   "date": "2026-11-01T22:57Z",
+   "note": "Irving (knee) is questionable to play Monday against the Kings."
+  },
   "4593125": {
    "status": "out",
    "name": "Santi Aldama",
    "team": "DAL",
    "date": "2026-11-01T22:51Z",
    "note": "Aldama (knee) is listed as doubtful for Monday's game against the Kings."
-  },
-  "6442": {
-   "status": "day-to-day",
-   "name": "Kyrie Irving",
-   "team": "DAL",
-   "date": "2026-11-01T22:49Z",
-   "note": "Irving closed Friday's 116-111 win over Houston with 35 points (12-19 FG, 5-8 3Pt, 6-6 FT), four rebounds and nine assists across 35 minutes."
   },
   "5279129": {
    "status": "out",
@@ -147,13 +154,6 @@
    "team": "DAL",
    "date": "2026-10-30T22:13Z",
    "note": "Biberovic (heel) is out for Friday's game against the Rockets."
-  },
-  "4683688": {
-   "status": "out",
-   "name": "Dereck Lively II",
-   "team": "DAL",
-   "date": "2026-10-22T20:10Z",
-   "note": "Lively (foot) has been ruled out for Friday's game against the Pacers."
   },
   "4065813": {
    "status": "out",
@@ -358,20 +358,6 @@
    "date": "2026-11-01T04:54Z",
    "note": "Pippen (back) has been ruled out for Saturday's game against the Kings, Chris Herrington of The Daily Memphian reports."
   },
-  "4065733": {
-   "status": "day-to-day",
-   "name": "Ty Jerome",
-   "team": "MEM",
-   "date": "2026-11-01T04:54Z",
-   "note": "Jerome (back) won't play in Saturday's game versus Sacramento, Chris Herrington of The Daily Memphian."
-  },
-  "3032976": {
-   "status": "day-to-day",
-   "name": "Rudy Gobert",
-   "team": "MIN",
-   "date": "2026-11-01T04:53Z",
-   "note": "Gobert (back) is out for Saturday's game against the Spurs, Dane Moore of 'The Dane Moore NBA Podcast' reports."
-  },
   "4594268": {
    "status": "out",
    "name": "Anthony Edwards",
@@ -532,6 +518,13 @@
    "team": "POR",
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
+  },
+  "3064440": {
+   "status": "day-to-day",
+   "name": "Zach LaVine",
+   "team": "SAC",
+   "date": "2026-11-01T23:03Z",
+   "note": "LaVine chipped in 11 points (4-9 FG, 0-3 3Pt, 3-3 FT) and one assist over 21 minutes during Saturday's 136-105 loss to Memphis."
   },
   "4433174": {
    "status": "out",
