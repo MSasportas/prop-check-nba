@@ -8,11 +8,11 @@
     "Paul George",
     "Jayson Tatum",
     "Jordan Walsh",
-    "Mitchell Robinson"
+    "Neemias Queta"
    ],
    "status": {
-    "Mitchell Robinson": "questionable",
-    "Devin Carter": "out"
+    "Devin Carter": "out",
+    "Mitchell Robinson": "out"
    }
   },
   "ORL": {
@@ -125,9 +125,9 @@
    ],
    "status": {
     "Ziaire Williams": "questionable",
-    "Adou Thiero": "questionable"
+    "Adou Thiero": "out"
    }
   }
  },
- "at": "2026-11-01T05:00:01-05:00"
+ "at": "2026-11-01T12:30:01-05:00"
 }
