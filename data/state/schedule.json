@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:48 - 3rd",
+    "detail": "4:23 - 3rd",
     "score": {
-     "SAC": "60",
-     "MEM": "81"
+     "SAC": "70",
+     "MEM": "92"
     }
    },
    {
@@ -450,11 +450,11 @@
     "home": "MIL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:13 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "CLE": "97",
-     "MIL": "72"
+     "CLE": "109",
+     "MIL": "76"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:36 - 3rd",
+    "detail": "3:37 - 3rd",
     "score": {
-     "MIN": "69",
-     "SA": "73"
+     "MIN": "76",
+     "SA": "82"
     }
    },
    {
