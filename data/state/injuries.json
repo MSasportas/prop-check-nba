@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T16:50:15-05:00",
+ "at": "2026-11-01T17:00:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -97,7 +97,7 @@
    "name": "Jalen Smith",
    "team": "CHI",
    "date": "2026-11-01T21:40Z",
-   "note": "Smith ended Friday's 125-111 loss to the Celtics with five points (2-8 FG, 0-5 3Pt, 1-2 FT), 12 rebounds, one assist and two blocks over 27 minutes."
+   "note": "Smith (finger) is listed as probable for Monday's game against Philadelphia."
   },
   "5105555": {
    "status": "day-to-day",
@@ -120,11 +120,18 @@
    "date": "2026-10-31T04:59Z",
    "note": "Swain (back) has been ruled out for Friday's game against Boston."
   },
-  "4683747": {
+  "4576087": {
    "status": "day-to-day",
+   "name": "Peyton Watson",
+   "team": "CLE",
+   "date": "2026-11-01T21:47Z",
+   "note": "Watson recorded 22 points (9-17 FG, 1-4 3Pt, 3-3 FT), six rebounds, two assists and one block in 28 minutes during Wednesday's 121-111 victory over the Wizards."
+  },
+  "4683747": {
+   "status": "out",
    "name": "Jaylon Tyson",
    "team": "CLE",
-   "date": "2026-11-01T04:53Z",
+   "date": "2026-11-01T21:47Z",
    "note": "Tyson (ankle) has been ruled out for Saturday's game against the Bucks."
   },
   "5279129": {
@@ -616,6 +623,20 @@
    "team": "UTAH",
    "date": "2026-10-07T23:07Z",
    "note": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports."
+  },
+  "5160992": {
+   "status": "day-to-day",
+   "name": "Alex Sarr",
+   "team": "WSH",
+   "date": "2026-11-01T21:45Z",
+   "note": "Sarr (knee) is questionable to play in Monday's game against the Magic."
+  },
+  "2581184": {
+   "status": "day-to-day",
+   "name": "Anthony Gill",
+   "team": "WSH",
+   "date": "2026-11-01T21:40Z",
+   "note": "Gill (back) is questionable to suit up in Monday's contest against Orlando."
   },
   "4432907": {
    "status": "out",

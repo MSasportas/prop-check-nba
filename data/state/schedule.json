@@ -315,10 +315,10 @@
     "home": "ORL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:04 - 3rd",
     "score": {
-     "BOS": "55",
+     "BOS": "60",
      "ORL": "50"
     }
    },
