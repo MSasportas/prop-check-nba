@@ -71,9 +71,9 @@
     "Onyeka Okongwu"
    ],
    "status": {
-    "Jock Landale": "questionable",
     "Henri Veesaar": "out",
-    "Mouhamed Gueye": "out"
+    "Mouhamed Gueye": "out",
+    "Jock Landale": "out"
    }
   },
   "NO": {
@@ -177,7 +177,7 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
     "Jared McCain",
@@ -210,5 +210,5 @@
    }
   }
  },
- "at": "2026-10-31T20:00:00-04:00"
+ "at": "2026-10-31T20:10:00-04:00"
 }
