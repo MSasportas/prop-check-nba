@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:40 - 4th",
+    "detail": "6:37 - 4th",
     "score": {
-     "SAC": "80",
-     "MEM": "112"
+     "SAC": "90",
+     "MEM": "116"
     }
    },
    {
@@ -448,13 +448,13 @@
     "start": "2026-10-31T20:00:00-04:00",
     "away": "CLE",
     "home": "MIL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:36 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "CLE": "126",
-     "MIL": "102"
+     "CLE": "136",
+     "MIL": "111"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:49 - 4th",
+    "detail": "4:46 - 4th",
     "score": {
-     "MIN": "101",
-     "SA": "105"
+     "MIN": "103",
+     "SA": "109"
     }
    },
    {
@@ -480,11 +480,11 @@
     "home": "HOU",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:29 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "OKC": "64",
-     "HOU": "81"
+     "OKC": "75",
+     "HOU": "92"
     }
    }
   ]
