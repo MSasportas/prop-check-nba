@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T17:00:00-05:00",
+ "at": "2026-11-01T17:10:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -124,15 +124,15 @@
    "status": "day-to-day",
    "name": "Peyton Watson",
    "team": "CLE",
-   "date": "2026-11-01T21:47Z",
-   "note": "Watson recorded 22 points (9-17 FG, 1-4 3Pt, 3-3 FT), six rebounds, two assists and one block in 28 minutes during Wednesday's 121-111 victory over the Wizards."
+   "date": "2026-11-01T21:57Z",
+   "note": "Watson (hamstring) is questionable to play in Monday's game against Oklahoma City."
   },
   "4683747": {
    "status": "out",
    "name": "Jaylon Tyson",
    "team": "CLE",
-   "date": "2026-11-01T21:47Z",
-   "note": "Tyson (ankle) has been ruled out for Saturday's game against the Bucks."
+   "date": "2026-11-01T21:50Z",
+   "note": "Tyson (ankle) has been ruled out for Monday's game against Oklahoma City."
   },
   "5279129": {
    "status": "out",
@@ -624,6 +624,13 @@
    "date": "2026-10-07T23:07Z",
    "note": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports."
   },
+  "4997537": {
+   "status": "out",
+   "name": "Tristan Vukcevic",
+   "team": "WSH",
+   "date": "2026-11-01T21:51Z",
+   "note": "Vukcevic (hip) is listed as out for Monday's game against Orlando."
+  },
   "5160992": {
    "status": "day-to-day",
    "name": "Alex Sarr",
@@ -644,13 +651,6 @@
    "team": "WSH",
    "date": "2026-10-28T18:38Z",
    "note": "Champagnie (foot) is expected to miss several months, per Josh Robbins of The Athletic."
-  },
-  "4997537": {
-   "status": "out",
-   "name": "Tristan Vukcevic",
-   "team": "WSH",
-   "date": "2026-10-01T19:11Z",
-   "note": "The Wizards announced Thursday that Vukcevic (hip) will be re-evaluated in four weeks."
   },
   "4606840": {
    "status": "out",

@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:04 - 3rd",
+    "detail": "6:34 - 3rd",
     "score": {
-     "BOS": "60",
-     "ORL": "50"
+     "BOS": "69",
+     "ORL": "56"
     }
    },
    {
