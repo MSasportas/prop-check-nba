@@ -21,7 +21,7 @@
   "last_read_at": "2026-11-01T16:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-01T17:30:00-05:00"
+   "at": "2026-11-01T17:40:01-05:00"
   }
  },
  "games": [
@@ -31,7 +31,7 @@
    "away": "BOS",
    "home": "ORL",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "8:45 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -45,7 +45,7 @@
    "away": "BKN",
    "home": "IND",
    "state": "in",
-   "detail": "2:58 - 1st",
+   "detail": "End of 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -99,6 +99,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-01T17:30:00-05:00",
- "status_at": "2026-11-01T17:30:00-05:00"
+ "generated_at": "2026-11-01T17:40:01-05:00",
+ "status_at": "2026-11-01T17:40:01-05:00"
 }
