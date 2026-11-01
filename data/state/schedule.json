@@ -478,13 +478,13 @@
     "start": "2026-10-31T20:30:00-04:00",
     "away": "OKC",
     "home": "HOU",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:48 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "OKC": "90",
-     "HOU": "112"
+     "OKC": "98",
+     "HOU": "119"
     }
    }
   ]
