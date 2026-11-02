@@ -61,11 +61,11 @@
     "Jay Huff"
    ],
    "status": {
-    "Obi Toppin": "questionable",
-    "Larry Nance": "doubtful",
+    "Obi Toppin": "out",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "T.J. McConnell": "out",
+    "Larry Nance": "out",
     "Andrew Nembhard": "out",
     "Aaron Nesmith": "out",
     "Ben Sheppard": "out",
@@ -217,9 +217,9 @@
    ],
    "status": {
     "Santi Aldama": "doubtful",
-    "Kyrie Irving": "doubtful",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
+    "Kyrie Irving": "out",
     "Dereck Lively": "out"
    }
   },
@@ -455,5 +455,5 @@
    }
   }
  },
- "at": "2026-11-02T18:01:53-05:00"
+ "at": "2026-11-02T18:10:01-05:00"
 }

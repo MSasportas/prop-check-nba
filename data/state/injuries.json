@@ -1,19 +1,19 @@
 {
- "at": "2026-11-02T18:00:00-05:00",
+ "at": "2026-11-02T18:10:01-05:00",
  "list": {
+  "4701230": {
+   "status": "out",
+   "name": "Jalen Johnson",
+   "team": "ATL",
+   "date": "2026-11-02T22:58Z",
+   "note": "Johnson (ankle) has been ruled out for Monday's game versus Indiana."
+  },
   "5149077": {
    "status": "suspension",
    "name": "Kingston Flemings",
    "team": "ATL",
    "date": "2026-11-02T02:02Z",
    "note": "Flemings (suspension) won't play in Monday's game against Indiana, Andrew Schlecht of The Athletic reports."
-  },
-  "4701230": {
-   "status": "day-to-day",
-   "name": "Jalen Johnson",
-   "team": "ATL",
-   "date": "2026-11-01T22:28Z",
-   "note": "Johnson (ankle) is questionable to play Monday against the Pacers."
   },
   "3146557": {
    "status": "out",
@@ -78,19 +78,12 @@
    "date": "2026-11-01T22:08Z",
    "note": "Knueppel (hamstring) is listed as out for Monday's game versus the Pistons."
   },
-  "4397189": {
-   "status": "day-to-day",
-   "name": "Jalen Smith",
-   "team": "CHI",
-   "date": "2026-11-01T21:40Z",
-   "note": "Smith (finger) is listed as probable for Monday's game against Philadelphia."
-  },
   "4278067": {
    "status": "out",
    "name": "Nic Claxton",
    "team": "CHI",
-   "date": "2026-11-01T21:08Z",
-   "note": "Claxton (hamstring) is listed as doubtful for Monday's game against Philadelphia."
+   "date": "2026-11-02T22:47Z",
+   "note": "Claxton (hamstring) is out for Monday's game against the 76ers."
   },
   "4576087": {
    "status": "day-to-day",
@@ -420,13 +413,6 @@
    "team": "NO",
    "date": "2026-10-30T21:32Z",
    "note": "Missi (knee) won't play in Saturday's game against Atlanta."
-  },
-  "4277869": {
-   "status": "out",
-   "name": "Jose Alvarado",
-   "team": "NY",
-   "date": "2026-11-01T22:16Z",
-   "note": "Alvarado (ankle) is questionable for Monday's game against the Nets."
   },
   "5061603": {
    "status": "out",
