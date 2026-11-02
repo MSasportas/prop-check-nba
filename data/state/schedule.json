@@ -343,13 +343,13 @@
     "start": "2026-11-01T20:30:00-05:00",
     "away": "LAC",
     "home": "GS",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/1 - 8:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:30 - 1st",
     "score": {
-     "LAC": "0",
-     "GS": "0"
+     "LAC": "14",
+     "GS": "9"
     }
    },
    {

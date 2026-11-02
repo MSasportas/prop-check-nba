@@ -105,11 +105,12 @@
     "RJ Barrett",
     "Ja'Kobe Walter",
     "Scottie Barnes",
-    "Jakob Poeltl"
+    "Trayce Jackson-Davis"
    ],
    "status": {
     "Nate Bittle": "out",
-    "Kawhi Leonard": "out"
+    "Kawhi Leonard": "out",
+    "Jakob Poeltl": "out"
    }
   },
   "LAL": {
@@ -127,5 +128,5 @@
    }
   }
  },
- "at": "2026-11-01T20:40:01-05:00"
+ "at": "2026-11-01T20:50:01-05:00"
 }
