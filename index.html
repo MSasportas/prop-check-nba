@@ -172,7 +172,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .hl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:8px}
 .hl>div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 10px;min-width:0}
 .hl .k{font-size:11px;line-height:15px;color:var(--muted)}
-.hl .v{font:600 30px/34px var(--display);white-space:nowrap}
+.hl .v{font:600 clamp(22px,7vw,30px)/34px var(--display);white-space:nowrap}
 .hl .s{font-size:11px;line-height:15px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .subline{font-size:12px;line-height:17px;color:var(--muted);margin-top:6px}
 .tbl{margin-top:14px;font-size:13px;line-height:18px}
@@ -1061,7 +1061,7 @@ function backstageBody() {
   j = isObj(j) ? j : {};
   var me = num(j.min_ev), pctTxt = me != null ? (Math.round(me * 1000) / 10) + '%+' : '2%+';
   app.appendChild(h('div', { class: 'track' }, h('div', { class: 'tn', text: str(j.label) || 'Pinnacle as the price judge' }),
-    h('div', { class: 'td', text: 'Hard Rock ' + pctTxt + " better than Pinnacle's price on the same line." })));
+    h('div', { class: 'td', text: 'Hard Rock ' + pctTxt + " better than Pinnacle's fair price on the same line." })));
 
   var nights = arr(j.nights).filter(function (n) { return isObj(n) && arr(n.bets).filter(isObj).length; });
   if (!nights.length) {

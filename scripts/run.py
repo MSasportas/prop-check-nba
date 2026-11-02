@@ -409,9 +409,9 @@ def rules_doc(cfg):
         "Pinnacle's fair price (Pinnacle's new chance with its own margin taken out). We bet the side Pinnacle moved toward, at "
         "Hard Rock's price."
         % (round(100 * ps["min_move"]), round(100 * ps["others_max"])),
-        "Prices are checked about %d, %d and %d minutes before each tip (plus a morning look). A pick can come from the 90, 45 or "
+        "Prices are checked about %d, %d and %d minutes before each tip (plus an 11 AM look when the month's odds credits allow it). A pick can come from the 90, 45 or "
         "20 minute check. The price shown is frozen and is the one graded." % (r["b_min"], r["c_min"], r["d_min"]),
-        "This is a signal, not a price gap: Hard Rock's price is not always better than Pinnacle's new number. It is being proven "
+        "Hard Rock's price must be at least as good as Pinnacle's fair price after the move. It is being proven "
         "on the Record (started 2026-10-28; judged at about 150 bets).",
         "A player listed Out or Doubtful is never picked. Questionable or game-time decision waits until he is cleared or "
         "confirmed starting. Needs %d+ games of history." % el["min_history"],
@@ -420,7 +420,7 @@ def rules_doc(cfg):
         "A pick is pulled if he is ruled out or doubtful, or Hard Rock takes the line down. Pulled picks stay on the Record.",
         "One pick per player per market a night. No cap per game or per night. No parlays.",
         "Graded after the game at the shown price, 1 unit flat. Overtime counts. Did not play = void.",
-        "Behind the scenes (Backstage tab, not the Record or Discord): %s, Hard Rock %d%%+ better than Pinnacle's price on the same line."
+        "Behind the scenes (Backstage tab, not the Record or Discord): %s, Hard Rock %d%%+ better than Pinnacle's fair price on the same line."
         % (w["label"], round(100 * w["min_ev"])),
         "New picks stop by themselves if the Record falls to %d units." % cfg["safety_pause"]["units"],
     ]}
