@@ -328,12 +328,12 @@
     "start": "2026-11-01T17:00:00-05:00",
     "away": "BKN",
     "home": "IND",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "52.4 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "BKN": "97",
+     "BKN": "98",
      "IND": "90"
     }
    },
