@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:06 - 4th",
+    "detail": "2:14 - 4th",
     "score": {
-     "LAC": "92",
-     "GS": "108"
+     "LAC": "110",
+     "GS": "118"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:58 - 3rd",
+    "detail": "37.6 - 3rd",
     "score": {
-     "TOR": "72",
-     "LAL": "93"
+     "TOR": "81",
+     "LAL": "102"
     }
    }
   ]
