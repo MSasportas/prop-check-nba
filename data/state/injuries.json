@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T20:00:01-05:00",
+ "at": "2026-11-01T20:10:00-05:00",
  "list": {
   "4701230": {
    "status": "day-to-day",
@@ -400,6 +400,13 @@
    "date": "2026-11-01T22:16Z",
    "note": "Alvarado (ankle) is questionable for Monday's game against the Nets."
   },
+  "5061603": {
+   "status": "out",
+   "name": "Thomas Sorber",
+   "team": "OKC",
+   "date": "2026-11-02T00:54Z",
+   "note": "Oklahoma City exercised the third-year team option on Sorber (knee) on Sunday, Clemente Almanza of USA Today reports."
+  },
   "4683692": {
    "status": "out",
    "name": "Cason Wallace",
@@ -427,13 +434,6 @@
    "team": "OKC",
    "date": "2026-10-28T18:06Z",
    "note": "Caruso (ankle) is expected to miss time due to an ankle sprain, Clemente Almanza of USA Today reports."
-  },
-  "5061603": {
-   "status": "out",
-   "name": "Thomas Sorber",
-   "team": "OKC",
-   "date": "2026-10-27T21:43Z",
-   "note": "Sorber (knee) has been ruled out for Wednesday's game against the Mavericks."
   },
   "5159925": {
    "status": "out",

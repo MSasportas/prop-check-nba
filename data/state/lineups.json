@@ -65,7 +65,7 @@
    }
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Kris Dunn",
@@ -127,5 +127,5 @@
    }
   }
  },
- "at": "2026-11-01T20:00:01-05:00"
+ "at": "2026-11-01T20:10:00-05:00"
 }
