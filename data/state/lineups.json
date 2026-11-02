@@ -20,11 +20,11 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
-    "Mario Hezonja",
+    "Meleek Thomas",
     "Evan Mobley",
     "Jarrett Allen"
    ],
@@ -245,9 +245,9 @@
    ],
    "status": {
     "LaMelo Ball": "questionable",
-    "Terrence Shannon": "questionable",
     "Donte DiVincenzo": "out",
-    "Anthony Edwards": "out"
+    "Anthony Edwards": "out",
+    "Terrence Shannon": "out"
    }
   },
   "NO": {
@@ -455,5 +455,5 @@
    }
   }
  },
- "at": "2026-11-02T18:20:00-05:00"
+ "at": "2026-11-02T18:30:00-05:00"
 }
