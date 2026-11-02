@@ -392,9 +392,9 @@
     "Draymond Green"
    ],
    "status": {
-    "Stephen Curry": "probable",
-    "Draymond Green": "probable",
+    "Brandon Williams": "questionable",
     "Jimmy Butler": "out",
+    "Al Horford": "out",
     "Moses Moody": "out",
     "Kristaps Porzingis": "out",
     "Gui Santos": "out"
@@ -420,8 +420,8 @@
    "starters": [
     "Darius Garland",
     "Kris Dunn",
+    "Kobe Sanders",
     "Rui Hachimura",
-    "Derrick Jones",
     "Isaiah Jackson"
    ],
    "status": {
@@ -454,10 +454,9 @@
     "Walker Kessler"
    ],
    "status": {
-    "Ziaire Williams": "questionable",
     "Adou Thiero": "out"
    }
   }
  },
- "at": "2026-11-02T16:00:01-05:00"
+ "at": "2026-11-02T16:10:00-05:00"
 }
