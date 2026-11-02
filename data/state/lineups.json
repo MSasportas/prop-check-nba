@@ -54,18 +54,22 @@
   "IND": {
    "state": "expected",
    "starters": [
-    "Andrew Nembhard",
+    "Quenton Jackson",
     "Kelly Oubre",
-    "Aaron Nesmith",
-    "Pascal Siakam",
+    "Jarace Walker",
+    "Obi Toppin",
     "Jay Huff"
    ],
    "status": {
     "Obi Toppin": "questionable",
-    "T.J. McConnell": "questionable",
+    "Larry Nance": "doubtful",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
+    "T.J. McConnell": "out",
+    "Andrew Nembhard": "out",
+    "Aaron Nesmith": "out",
     "Ben Sheppard": "out",
+    "Pascal Siakam": "out",
     "Ivica Zubac": "out"
    }
   },
@@ -79,7 +83,6 @@
     "Day'Ron Sharpe"
    ],
    "status": {
-    "Mikel Brown": "questionable",
     "Egor Demin": "out"
    }
   },
@@ -103,12 +106,13 @@
     "Kyshawn George",
     "AJ Dybantsa",
     "Anthony Davis",
-    "Alex Sarr"
+    "Deandre Ayton"
    ],
    "status": {
-    "Alex Sarr": "questionable",
-    "Anthony Gill": "questionable",
+    "Reece Beekman": "out",
     "Justin Champagnie": "out",
+    "Anthony Gill": "out",
+    "Alex Sarr": "out",
     "Tristan Vukcevic": "out",
     "Jamir Watkins": "out"
    }
@@ -117,13 +121,14 @@
    "state": "expected",
    "starters": [
     "Jase Richardson",
-    "Anthony Black",
+    "Jamal Cain",
     "Desmond Bane",
     "Franz Wagner",
     "Wendell Carter"
    ],
    "status": {
     "Paolo Banchero": "out",
+    "Anthony Black": "out",
     "Jonathan Isaac": "out",
     "Izaiyah Nelson": "out",
     "Noah Penda": "out",
@@ -141,7 +146,6 @@
    ],
    "status": {
     "Jalen Smith": "probable",
-    "Dailyn Swain": "questionable",
     "Tobe Awaka": "probable",
     "Nic Claxton": "doubtful"
    }
@@ -171,8 +175,8 @@
     "Paul Reed"
    ],
    "status": {
-    "Isaiah Joe": "questionable",
-    "Jalen Duren": "out"
+    "Jalen Duren": "out",
+    "Isaiah Joe": "out"
    }
   },
   "CHA": {
@@ -209,15 +213,15 @@
   "DAL": {
    "state": "expected",
    "starters": [
-    "Kyrie Irving",
+    "Marcus Sasser",
     "Max Christie",
     "Cooper Flagg",
     "P.J. Washington",
     "Daniel Gafford"
    ],
    "status": {
-    "Kyrie Irving": "questionable",
     "Santi Aldama": "doubtful",
+    "Kyrie Irving": "doubtful",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Dereck Lively": "out"
@@ -244,6 +248,8 @@
     "Rudy Gobert"
    ],
    "status": {
+    "LaMelo Ball": "questionable",
+    "Terrence Shannon": "questionable",
     "Donte DiVincenzo": "out",
     "Anthony Edwards": "out"
    }
@@ -258,7 +264,7 @@
     "Karlo Matkovic"
    ],
    "status": {
-    "Trey Murphy": "probable",
+    "Dejounte Murray": "questionable",
     "Yves Missi": "out",
     "Jordan Poole": "out"
    }
@@ -281,14 +287,14 @@
    "state": "expected",
    "starters": [
     "Derrick White",
-    "Paul George",
+    "Hugo Gonzalez",
     "Jayson Tatum",
     "Jordan Walsh",
     "Mitchell Robinson"
    ],
    "status": {
-    "Mitchell Robinson": "out",
-    "Devin Carter": "out"
+    "Devin Carter": "out",
+    "Paul George": "out"
    }
   },
   "HOU": {
@@ -301,9 +307,9 @@
     "Alperen Sengun"
    ],
    "status": {
-    "Clint Capela": "questionable",
     "Reed Sheppard": "questionable",
-    "Steven Adams": "out"
+    "Steven Adams": "out",
+    "Clint Capela": "out"
    }
   },
   "UTAH": {
@@ -386,12 +392,12 @@
     "Draymond Green"
    ],
    "status": {
-    "Stephen Curry": "out",
-    "Draymond Green": "out",
-    "Gui Santos": "questionable",
+    "Stephen Curry": "probable",
+    "Draymond Green": "probable",
     "Jimmy Butler": "out",
     "Moses Moody": "out",
-    "Kristaps Porzingis": "out"
+    "Kristaps Porzingis": "out",
+    "Gui Santos": "out"
    }
   },
   "TOR": {
@@ -436,9 +442,7 @@
     "Giannis Antetokounmpo",
     "Bam Adebayo"
    ],
-   "status": {
-    "Tim Hardaway": "questionable"
-   }
+   "status": {}
   },
   "LAL": {
    "state": "expected",
@@ -450,10 +454,10 @@
     "Walker Kessler"
    ],
    "status": {
-    "Ziaire Williams": "out",
+    "Ziaire Williams": "questionable",
     "Adou Thiero": "out"
    }
   }
  },
- "at": "2026-11-02T05:00:01-05:00"
+ "at": "2026-11-02T16:00:01-05:00"
 }
