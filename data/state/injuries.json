@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T11:10:01-05:00",
+ "at": "2026-11-02T11:20:00-05:00",
  "list": {
   "5149077": {
    "status": "suspension",
@@ -295,6 +295,20 @@
    "date": "2026-10-28T21:30Z",
    "note": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports."
   },
+  "5108024": {
+   "status": "out",
+   "name": "Yanic Konan Niederhauser",
+   "team": "LAC",
+   "date": "2026-11-02T16:12Z",
+   "note": "The Clippers recalled Niederhauser (foot) from the G League's San Diego Clippers on Sunday."
+  },
+  "3913176": {
+   "status": "out",
+   "name": "Brandon Ingram",
+   "team": "LAC",
+   "date": "2026-11-02T16:01Z",
+   "note": "The Clippers recalled Ingram (Achilles) from the G League's San Diego Clippers on Sunday."
+  },
   "4065778": {
    "status": "out",
    "name": "Max Strus",
@@ -308,20 +322,6 @@
    "team": "LAC",
    "date": "2026-11-02T03:47Z",
    "note": "Jones (right knee) has been ruled out for the rest of Sunday's game against the Clippers, Ohm Youngmisuk of ESPN.com reports."
-  },
-  "5108024": {
-   "status": "out",
-   "name": "Yanic Konan Niederhauser",
-   "team": "LAC",
-   "date": "2026-11-01T20:17Z",
-   "note": "Niederhauser (foot) had his third-year team option picked up Thursday by the Clippers, Ohm Youngmisuk of ESPN.com reports."
-  },
-  "3913176": {
-   "status": "out",
-   "name": "Brandon Ingram",
-   "team": "LAC",
-   "date": "2026-11-01T16:04Z",
-   "note": "Los Angeles assigned Ingram (Achilles) to the G League's San Diego Clippers on Saturday."
   },
   "6580": {
    "status": "out",
