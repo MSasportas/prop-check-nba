@@ -141,6 +141,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .list .li .r{flex:none;white-space:nowrap;color:var(--muted);text-align:right}
 .list .li .r b{font:600 16px/20px var(--display);color:var(--fg)}
 .list .st{display:block;font-size:12px;line-height:17px;color:var(--muted);margin-top:2px}
+.list .st.chk{font-size:11px;line-height:15px;opacity:.85}
 .list .st .ok{color:var(--good)}
 .live{display:inline-block;font:600 12px/16px var(--display);letter-spacing:.06em;padding:0 5px;border-radius:3px;background:var(--bad);color:#2a0d08}
 .fin{font:600 13px/16px var(--display);letter-spacing:.05em;color:var(--muted)}
@@ -788,7 +789,7 @@ function gameRow(g) {
   var n = num(g.picks), right;
   if (g.state === 'in') right = h('span', { class: 'r' }, h('span', { class: 'live', text: 'LIVE' }), g.detail ? h('span', { style: 'display:block;font-size:12px', text: str(g.detail) }) : null);
   else if (g.state === 'post') right = h('span', { class: 'r' }, h('span', { class: 'fin', text: 'FINAL' }));
-  else right = h('span', { class: 'r' }, n ? h('b', { text: n }) : null, n ? (n === 1 ? ' pick' : ' picks') : 'no picks');
+  else right = h('span', { class: 'r' }, n ? h('b', { text: n }) : null, n ? (n === 1 ? ' pick' : ' picks') : (g.final === false ? 'none yet' : 'no picks'));
   if ((g.state === 'in' || g.state === 'post') && n) right.appendChild(h('span', { style: 'display:block;font-size:12px', text: n + (n === 1 ? ' pick' : ' picks') }));
   var lx = isObj(g.lineups) ? g.lineups : {}, sub = null;
   if (g.state !== 'in' && g.state !== 'post') {
@@ -799,7 +800,21 @@ function gameRow(g) {
   }
   return h('div', { class: 'li' }, h('span', { class: 'grow' },
     h('span', { class: 'nm' }, str(g.away) + ' @ ' + str(g.home), h('span', { class: 'mu', text: ' · ' + (fTime(g.start) || str(g.detail) || 'time not posted') })),
-    sub), right);
+    sub, checkLine(g, n)), right);
+}
+/* Matt 2026-11-02: when the game was checked, and whether it is settled (no later check can add a pick) */
+function checkLine(g, n) {
+  var times = arr(g.checks).map(function (c) { return isObj(c) ? fTime(c.at) : null; }).filter(function (t) { return t; });
+  if (g.final === true) {
+    var txt = times.length ? 'Checked ' + times.join(', ') : 'No price checks ran';
+    return h('span', { class: 'st chk' }, h('span', { class: 'ok', text: '✓ ' }), txt + (n ? ' · done' : ' · done, no picks'));
+  }
+  if (g.final === false) {
+    var nx = fTime(g.next_check_at);
+    if (!times.length && !nx) return null;
+    return h('span', { class: 'st chk' }, (times.length ? 'Checked ' + times.join(', ') : 'Not checked yet') + (nx ? ' · next ' + nx : ''));
+  }
+  return null;
 }
 function footer() {
   var v = S.rules ? S.rules.version : null;

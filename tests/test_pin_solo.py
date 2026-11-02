@@ -107,6 +107,19 @@ class TestPinSolo(unittest.TestCase):
         self.assertEqual(self.w.read("slate.json")["picks"], [])
         self.assertFalse(any(n["entries"] for n in self.w.read("record.json")["nights"]))   # pulled: log only, not on the page Record
 
+    def test_game_checks_and_final(self):
+        # Matt 2026-11-02: each game says when it was checked and when no more checks can make a pick
+        write(self.w, "2026-10-25T19:30:00Z", (-110, -120), (-102, -118), (-105, -115))
+        self.w.run("2026-10-25T15:31:00-04:00")
+        g = [x for x in self.w.read("slate.json")["games"] if x["id"] == "401909861"][0]
+        self.assertEqual(([c["read"] for c in g["checks"]], g["final"]), (["B"], False))
+        self.assertIsNotNone(g["next_check_at"])
+        write(self.w, "2026-10-25T20:40:00Z", (-110, -120), (-102, -118), (-105, -115))
+        self.w.run("2026-10-25T16:41:00-04:00")                         # the 20-minute (last) check
+        g = [x for x in self.w.read("slate.json")["games"] if x["id"] == "401909861"][0]
+        self.assertEqual((g["final"], g["picks"], g["next_check_at"]), (True, 0, None))
+        self.assertEqual(g["last_check_at"], "2026-10-25T16:41:00-04:00")
+
     def test_too_few_other_books_no_pick(self):
         write(self.w, "2026-10-25T19:30:00Z", (-110, -120), (-102, -118), (-105, -115), n_others=3)
         self.w.run("2026-10-25T15:31:00-04:00")

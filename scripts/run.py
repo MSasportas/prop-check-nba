@@ -297,6 +297,7 @@ class Run:
                           "lineups": {k: (lu.get(g[k]) or {}).get("state") or "none" for k in ("away", "home")},
                           "read_at": last_read.get(g["id"]),
                           "picks": sum(1 for p in picks if p["game_id"] == g["id"] and not p["pulled"])})
+            glist[-1].update(self.game_checks(g, plan))
         banners = []
         keys_n = len(o.get("keys") or [])
         refused = bool(o.get("refused"))
@@ -376,6 +377,31 @@ class Run:
         if not fs or any(f.get("markets") for f in fs):
             return None
         return max(common.parse_iso(f["at"]) for f in fs)
+
+    def game_checks(self, g, plan):
+        """Matt 2026-11-02: when was this game checked, and is it settled (no more checks can make a pick)?
+        checks: the flag reads that came back with Hard Rock prices [{read, at}]; final: the game started, or the last planned
+        flag read came back, or it is inside latest_min of tip (no read can run any more); next_check_at: the next planned
+        check while not final."""
+        cfg, now = self.cfg, self.now
+        flag = [k for k in ("B", "C", "D") if k in (cfg.get("pin_solo") or {}).get("flag_reads", [])]
+        planned = [k for k in flag if k in ((plan or {}).get("reads") or flag)]
+        fs = [f for f in (getattr(self, "odds_doc", None) or {}).get("fetches", []) if f["game_id"] == g["id"]]
+        checks = sorted(({"read": f["read"], "at": f["at"]} for f in fs if f["read"] in flag and f.get("markets")),
+                        key=lambda c: c["at"])
+        tip = common.parse_iso(g["start"])
+        due = odds.due_times(g, self.games, cfg) if self.games else {}
+        last = planned[-1] if planned else None
+        done_last = bool(last) and any(f["read"] == last and f.get("markets") and common.parse_iso(f["at"]) >= due[last]
+                                       for f in fs)
+        too_late = (tip - now).total_seconds() / 60.0 < cfg["reads"]["latest_min"]
+        final = engine.started(g, now) or done_last or too_late
+        nxt = None
+        if not final:
+            upcoming = [due[k] for k in planned if due[k] > now and tip - due[k] >= timedelta(minutes=cfg["reads"]["latest_min"])]
+            nxt = common.iso(min(upcoming)) if upcoming else None
+        return {"checks": checks, "last_check_at": checks[-1]["at"] if checks else None, "final": bool(final),
+                "next_check_at": nxt}
 
     def summ_paused(self):
         return bool(getattr(self, "summ", {}) and self.summ.get("paused"))
