@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "12:00 - 2nd",
+    "detail": "7:03 - 2nd",
     "score": {
-     "LAC": "37",
-     "GS": "29"
+     "LAC": "39",
+     "GS": "40"
     }
    },
    {
@@ -358,13 +358,13 @@
     "start": "2026-11-01T21:00:00-05:00",
     "away": "TOR",
     "home": "LAL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/1 - 9:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:19 - 1st",
     "score": {
-     "TOR": "0",
-     "LAL": "0"
+     "TOR": "6",
+     "LAL": "9"
     }
    }
   ]
