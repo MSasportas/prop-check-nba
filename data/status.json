@@ -1,11 +1,11 @@
 {
- "finished_at": "2026-11-02T17:00:01-05:00",
+ "finished_at": "2026-11-02T17:30:00-05:00",
  "slate": "2026-11-02",
  "ok": true,
  "steps": {
   "schedule": {
    "ok": true,
-   "sec": 0.1
+   "sec": 0.3
   },
   "rosters": {
    "ok": true,
@@ -13,7 +13,7 @@
   },
   "injuries": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.2
   },
   "lineups": {
    "ok": true,
@@ -21,7 +21,7 @@
   },
   "odds": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.6
   },
   "engine": {
    "ok": true,
@@ -35,7 +35,7 @@
  "keys": [
   {
    "n": 1,
-   "left": 452,
+   "left": 448,
    "status": "ok"
   },
   {
@@ -64,7 +64,7 @@
    "status": "ok"
   }
  ],
- "pool_left": 2948,
+ "pool_left": 2944,
  "plan": {
   "allowance": 13.972,
   "reads": [
@@ -80,8 +80,8 @@
   "made_at": "2026-11-02T05:00:01-05:00",
   "cost_per_read": 4
  },
- "spent_today": 0,
- "odds_note": "no read due",
+ "spent_today": 4,
+ "odds_note": "1 game(s) priced",
  "odds_errors": [],
  "unknown_teams": [],
  "graded_now": 0,
@@ -95,7 +95,7 @@
    "failed": 0
   },
   "odds": {
-   "ok": 0,
+   "ok": 1,
    "failed": 0
   }
  },
@@ -105,10 +105,10 @@
  "unmatched": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "41527394984",
-  "iteration": 5,
-  "chain_link": 116,
+  "run_id": "41534886671",
+  "iteration": 3,
+  "chain_link": 117,
   "chain_started_at": "2026-10-30T07:00:11-04:00",
-  "run_started_at": "2026-11-02T16:20:23-05:00"
+  "run_started_at": "2026-11-02T17:10:16-05:00"
  }
 }
