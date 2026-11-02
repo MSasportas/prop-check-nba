@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:26 - 3rd",
+    "detail": "7.5 - 3rd",
     "score": {
-     "LAC": "70",
-     "GS": "84"
+     "LAC": "83",
+     "GS": "91"
     }
    },
    {
