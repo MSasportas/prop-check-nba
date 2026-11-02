@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T14:10:01-05:00",
+ "at": "2026-11-02T14:20:00-05:00",
  "list": {
   "5149077": {
    "status": "suspension",
@@ -35,6 +35,13 @@
    "team": "ATL",
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
+  },
+  "4251": {
+   "status": "out",
+   "name": "Paul George",
+   "team": "BOS",
+   "date": "2026-11-02T19:06Z",
+   "note": "George will be rested Monday against Houston."
   },
   "4351852": {
    "status": "day-to-day",
@@ -226,11 +233,11 @@
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
   "3102529": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Clint Capela",
    "team": "HOU",
-   "date": "2026-11-01T20:46Z",
-   "note": "Capela (ankle) is questionable to play in Monday's game against the Celtics."
+   "date": "2026-11-02T19:13Z",
+   "note": "Capela (ankle) has been ruled out for Monday's game against the Celtics."
   },
   "4711272": {
    "status": "day-to-day",
@@ -392,6 +399,20 @@
    "team": "MIA",
    "date": "2026-11-02T00:24Z",
    "note": "Hardaway (personal) is listed as questionable for Monday's game against the Lakers."
+  },
+  "4432847": {
+   "status": "day-to-day",
+   "name": "Terrence Shannon Jr.",
+   "team": "MIN",
+   "date": "2026-11-02T19:12Z",
+   "note": "Shannon has a left hip contusion and is questionable to face the Bucks on Monday."
+  },
+  "4432816": {
+   "status": "day-to-day",
+   "name": "LaMelo Ball",
+   "team": "MIN",
+   "date": "2026-11-02T19:10Z",
+   "note": "Ball is questionable for Monday's game against Milwaukee due to a right wrist contusion."
   },
   "4594268": {
    "status": "out",
@@ -565,8 +586,8 @@
    "status": "out",
    "name": "Dylan Cardwell",
    "team": "SAC",
-   "date": "2026-11-01T23:24Z",
-   "note": "Cardwell (calf) is questionable to suit up for Monday's game against the Mavericks."
+   "date": "2026-11-02T19:13Z",
+   "note": "Cardwell is probable for Monday's game against Dallas due to a left calf strain."
   },
   "3064440": {
    "status": "day-to-day",
