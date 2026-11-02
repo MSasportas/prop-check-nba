@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T13:30:00-05:00",
+ "at": "2026-11-02T13:40:07-05:00",
  "list": {
   "5149077": {
    "status": "suspension",
@@ -246,19 +246,40 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
+  "2530530": {
+   "status": "out",
+   "name": "T.J. McConnell",
+   "team": "IND",
+   "date": "2026-11-02T18:19Z",
+   "note": "McConnell (hamstring) is out for Monday's game against the Hawks and remains week-to-week."
+  },
+  "4017837": {
+   "status": "out",
+   "name": "Ivica Zubac",
+   "team": "IND",
+   "date": "2026-11-02T18:19Z",
+   "note": "Zubac (ankle) has been ruled out for Monday's game against the Hawks."
+  },
+  "2580365": {
+   "status": "day-to-day",
+   "name": "Larry Nance Jr.",
+   "team": "IND",
+   "date": "2026-11-02T18:16Z",
+   "note": "Nance (illness) is doubtful for Monday against the Hawks."
+  },
+  "4278355": {
+   "status": "day-to-day",
+   "name": "Obi Toppin",
+   "team": "IND",
+   "date": "2026-11-02T18:15Z",
+   "note": "Toppin (back) is questionable for Monday's game against Atlanta."
+  },
   "4396909": {
    "status": "out",
    "name": "Aaron Nesmith",
    "team": "IND",
    "date": "2026-11-02T18:13Z",
    "note": "Nesmith (rest) is sitting out Monday against Atlanta."
-  },
-  "2580365": {
-   "status": "day-to-day",
-   "name": "Larry Nance Jr.",
-   "team": "IND",
-   "date": "2026-11-02T18:11Z",
-   "note": "Nance produced six points (2-4 FG, 2-2 3Pt), two rebounds, one assist, one block and four steals in 18 minutes off the bench during Friday's 145-125 loss to Miami."
   },
   "4395712": {
    "status": "out",
@@ -273,27 +294,6 @@
    "team": "IND",
    "date": "2026-11-02T18:06Z",
    "note": "Siakam will be rested against the Hawks on Monday."
-  },
-  "4278355": {
-   "status": "day-to-day",
-   "name": "Obi Toppin",
-   "team": "IND",
-   "date": "2026-11-02T01:51Z",
-   "note": "Toppin (back) is out for Sunday's game against the Nets, Alex Golden of SI.com reports."
-  },
-  "2530530": {
-   "status": "out",
-   "name": "T.J. McConnell",
-   "team": "IND",
-   "date": "2026-11-01T16:26Z",
-   "note": "Indiana recalled McConnell (hamstring) from the G League's Noblesville Boom on Saturday."
-  },
-  "4017837": {
-   "status": "out",
-   "name": "Ivica Zubac",
-   "team": "IND",
-   "date": "2026-10-31T21:14Z",
-   "note": "Zubac (ankle) will remain on the inactive list for Sunday's game against the Nets."
   },
   "5157066": {
    "status": "out",
@@ -656,15 +656,15 @@
    "status": "out",
    "name": "Reece Beekman",
    "team": "WSH",
-   "date": "2026-11-02T18:09Z",
-   "note": "Beekman had his Exhibit 10 contract converted to a two-way deal by the Wizards on Saturday, Keith Smith of Spotrac.com reports."
+   "date": "2026-11-02T18:22Z",
+   "note": "The Wizards announced Monday that Beekman sustained a right acromioclavicular joint injury and will be re-evaluated in approximately three weeks."
   },
   "2581184": {
    "status": "out",
    "name": "Anthony Gill",
    "team": "WSH",
-   "date": "2026-11-02T18:08Z",
-   "note": "Gill (back) is questionable to suit up in Monday's contest against Orlando."
+   "date": "2026-11-02T18:18Z",
+   "note": "Gill (back) is out for Monday's game against the Magic."
   },
   "5160992": {
    "status": "out",
