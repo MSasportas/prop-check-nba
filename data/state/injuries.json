@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T13:20:08-05:00",
+ "at": "2026-11-02T13:30:00-05:00",
  "list": {
   "5149077": {
    "status": "suspension",
@@ -652,6 +652,20 @@
    "date": "2026-10-07T23:07Z",
    "note": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports."
   },
+  "4432187": {
+   "status": "out",
+   "name": "Reece Beekman",
+   "team": "WSH",
+   "date": "2026-11-02T18:09Z",
+   "note": "Beekman had his Exhibit 10 contract converted to a two-way deal by the Wizards on Saturday, Keith Smith of Spotrac.com reports."
+  },
+  "2581184": {
+   "status": "out",
+   "name": "Anthony Gill",
+   "team": "WSH",
+   "date": "2026-11-02T18:08Z",
+   "note": "Gill (back) is questionable to suit up in Monday's contest against Orlando."
+  },
   "5160992": {
    "status": "out",
    "name": "Alex Sarr",
@@ -665,13 +679,6 @@
    "team": "WSH",
    "date": "2026-11-01T21:51Z",
    "note": "Vukcevic (hip) is listed as out for Monday's game against Orlando."
-  },
-  "2581184": {
-   "status": "day-to-day",
-   "name": "Anthony Gill",
-   "team": "WSH",
-   "date": "2026-11-01T21:40Z",
-   "note": "Gill (back) is questionable to suit up in Monday's contest against Orlando."
   },
   "4432907": {
    "status": "out",
