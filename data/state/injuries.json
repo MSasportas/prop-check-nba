@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T20:10:00-05:00",
+ "at": "2026-11-01T21:00:01-05:00",
  "list": {
   "4701230": {
    "status": "day-to-day",
@@ -567,6 +567,13 @@
    "team": "SA",
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
+  },
+  "3134908": {
+   "status": "out",
+   "name": "Jakob Poeltl",
+   "team": "TOR",
+   "date": "2026-11-02T01:44Z",
+   "note": "Poeltl (shoulder) won't play in Sunday's game against the Lakers, Vivek Jacob of the Raptors' official site reports."
   },
   "6450": {
    "status": "out",
