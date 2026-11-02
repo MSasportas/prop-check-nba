@@ -40,14 +40,14 @@
     "CJ McCollum",
     "Nickeil Alexander-Walker",
     "Dyson Daniels",
-    "Jalen Johnson",
+    "Aaron Wiggins",
     "Onyeka Okongwu"
    ],
    "status": {
-    "Jalen Johnson": "questionable",
     "Henri Veesaar": "out",
     "Kingston Flemings": "out",
     "Mouhamed Gueye": "out",
+    "Jalen Johnson": "out",
     "Jock Landale": "out"
    }
   },
@@ -95,9 +95,7 @@
     "OG Anunoby",
     "Karl-Anthony Towns"
    ],
-   "status": {
-    "Jose Alvarado": "questionable"
-   }
+   "status": {}
   },
   "WSH": {
    "state": "expected",
@@ -145,7 +143,6 @@
     "Jalen Smith"
    ],
    "status": {
-    "Jalen Smith": "probable",
     "Nic Claxton": "out"
    }
   },
@@ -204,7 +201,7 @@
    "status": {
     "Zach LaVine": "questionable",
     "Ben Simmons": "out",
-    "Dylan Cardwell": "questionable",
+    "Dylan Cardwell": "doubtful",
     "Keegan Murray": "out",
     "Maxime Raynaud": "out"
    }
@@ -458,5 +455,5 @@
    }
   }
  },
- "at": "2026-11-02T17:50:01-05:00"
+ "at": "2026-11-02T18:00:00-05:00"
 }
