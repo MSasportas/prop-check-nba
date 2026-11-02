@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:35 - 4th",
+    "detail": "17.6 - 4th",
     "score": {
-     "TOR": "107",
-     "LAL": "121"
+     "TOR": "120",
+     "LAL": "129"
     }
    }
   ]

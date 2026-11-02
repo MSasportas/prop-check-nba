@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T23:00:00-05:00",
+ "at": "2026-11-01T23:30:00-05:00",
  "list": {
   "5149077": {
    "status": "suspension",
@@ -197,6 +197,13 @@
    "date": "2026-10-25T14:56Z",
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
   },
+  "4997536": {
+   "status": "out",
+   "name": "Gui Santos",
+   "team": "GS",
+   "date": "2026-11-02T04:19Z",
+   "note": "Santos did not play in the second half of Sunday's 124-112 win over the Clippers due to a knee injury and will not play against the Suns on Monday, Danny Emerman of SFStandard.com reports."
+  },
   "6589": {
    "status": "out",
    "name": "Draymond Green",
@@ -320,8 +327,8 @@
    "status": "out",
    "name": "Brandon Ingram",
    "team": "LAC",
-   "date": "2026-11-01T20:17Z",
-   "note": "Ingram (Achilles) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports."
+   "date": "2026-11-01T16:04Z",
+   "note": "Los Angeles assigned Ingram (Achilles) to the G League's San Diego Clippers on Saturday."
   },
   "6580": {
    "status": "out",
