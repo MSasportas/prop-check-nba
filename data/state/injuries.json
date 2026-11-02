@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T12:50:00-05:00",
+ "at": "2026-11-02T13:10:01-05:00",
  "list": {
   "5149077": {
    "status": "suspension",
@@ -49,13 +49,6 @@
    "team": "BOS",
    "date": "2026-10-18T14:49Z",
    "note": "Carter has been diagnosed with mononucleosis and is without a timetable for a return, Gary Washburn of The Boston Globe reports."
-  },
-  "5101761": {
-   "status": "day-to-day",
-   "name": "Mikel Brown Jr.",
-   "team": "BKN",
-   "date": "2026-11-02T01:51Z",
-   "note": "Brown (rest) is out for Sunday's game in Indiana."
   },
   "5175643": {
    "status": "out",
@@ -631,19 +624,19 @@
    "date": "2026-10-07T23:07Z",
    "note": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports."
   },
+  "5160992": {
+   "status": "out",
+   "name": "Alex Sarr",
+   "team": "WSH",
+   "date": "2026-11-02T18:03Z",
+   "note": "Sarr (knee) is out for Monday's game against Orlando."
+  },
   "4997537": {
    "status": "out",
    "name": "Tristan Vukcevic",
    "team": "WSH",
    "date": "2026-11-01T21:51Z",
    "note": "Vukcevic (hip) is listed as out for Monday's game against Orlando."
-  },
-  "5160992": {
-   "status": "day-to-day",
-   "name": "Alex Sarr",
-   "team": "WSH",
-   "date": "2026-11-01T21:45Z",
-   "note": "Sarr (knee) is questionable to play in Monday's game against the Magic."
   },
   "2581184": {
    "status": "day-to-day",
