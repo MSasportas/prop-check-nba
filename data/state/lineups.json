@@ -82,13 +82,13 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Anthony Melton",
     "Brandin Podziemski",
     "Yaxel Lendeborg",
-    "Gui Santos",
-    "Graham Ike"
+    "Georges Niang",
+    "Charles Bassey"
    ],
    "status": {
     "Jimmy Butler": "out",
@@ -127,5 +127,5 @@
    }
   }
  },
- "at": "2026-11-01T20:10:15-05:00"
+ "at": "2026-11-01T20:20:00-05:00"
 }
