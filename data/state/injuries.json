@@ -1,6 +1,13 @@
 {
- "at": "2026-11-01T21:00:01-05:00",
+ "at": "2026-11-01T21:00:16-05:00",
  "list": {
+  "5149077": {
+   "status": "suspension",
+   "name": "Kingston Flemings",
+   "team": "ATL",
+   "date": "2026-11-02T01:54Z",
+   "note": "Flemings logged 23 points (9-12 FG, 3-5 3Pt, 2-3 FT), five rebounds, five assists, one block and one steal across 28 minutes during Wednesday's 129-117 loss to the Heat."
+  },
   "4701230": {
    "status": "day-to-day",
    "name": "Jalen Johnson",
@@ -247,10 +254,10 @@
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
   "4278355": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Obi Toppin",
    "team": "IND",
-   "date": "2026-11-01T20:29Z",
+   "date": "2026-11-02T01:51Z",
    "note": "Toppin (back) is out for Sunday's game against the Nets, Alex Golden of SI.com reports."
   },
   "2530530": {

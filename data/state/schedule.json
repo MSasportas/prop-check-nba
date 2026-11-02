@@ -346,7 +346,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:21 - 1st",
+    "detail": "2:20 - 1st",
     "score": {
      "LAC": "30",
      "GS": "26"
