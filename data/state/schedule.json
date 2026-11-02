@@ -330,11 +330,11 @@
     "home": "IND",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:47 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "BKN": "68",
-     "IND": "60"
+     "BKN": "71",
+     "IND": "62"
     }
    },
    {
