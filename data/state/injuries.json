@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T13:40:07-05:00",
+ "at": "2026-11-02T14:10:01-05:00",
  "list": {
   "5149077": {
    "status": "suspension",
@@ -113,6 +113,13 @@
    "date": "2026-11-01T21:50Z",
    "note": "Tyson (ankle) has been ruled out for Monday's game against Oklahoma City."
   },
+  "6442": {
+   "status": "day-to-day",
+   "name": "Kyrie Irving",
+   "team": "DAL",
+   "date": "2026-11-02T18:51Z",
+   "note": "Irving (knee) is now doubtful for Monday against the Kings."
+  },
   "5148538": {
    "status": "out",
    "name": "Tarik Biberovic",
@@ -126,13 +133,6 @@
    "team": "DAL",
    "date": "2026-11-01T22:57Z",
    "note": "Lively (foot) is listed as out for Monday's game against the Kings."
-  },
-  "6442": {
-   "status": "day-to-day",
-   "name": "Kyrie Irving",
-   "team": "DAL",
-   "date": "2026-11-01T22:57Z",
-   "note": "Irving (knee) is questionable to play Monday against the Kings."
   },
   "4593125": {
    "status": "out",
@@ -407,12 +407,12 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
-  "4397688": {
+  "3907497": {
    "status": "day-to-day",
-   "name": "Trey Murphy III",
+   "name": "Dejounte Murray",
    "team": "NO",
-   "date": "2026-11-01T20:19Z",
-   "note": "Murphy (knee) is listed as probable for Monday's game against the Grizzlies."
+   "date": "2026-11-02T18:55Z",
+   "note": "Murray (personal) is now questionable for Monday against Memphis."
   },
   "4277956": {
    "status": "out",
