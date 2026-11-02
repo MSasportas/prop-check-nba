@@ -345,11 +345,11 @@
     "home": "GS",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:04 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "LAC": "45",
-     "GS": "50"
+     "LAC": "57",
+     "GS": "63"
     }
    },
    {
@@ -360,11 +360,11 @@
     "home": "LAL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:54 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "TOR": "11",
-     "LAL": "23"
+     "TOR": "23",
+     "LAL": "36"
     }
    }
   ]
