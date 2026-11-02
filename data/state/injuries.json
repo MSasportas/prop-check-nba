@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T13:10:01-05:00",
+ "at": "2026-11-02T13:20:08-05:00",
  "list": {
   "5149077": {
    "status": "suspension",
@@ -245,6 +245,34 @@
    "team": "HOU",
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
+  },
+  "4396909": {
+   "status": "out",
+   "name": "Aaron Nesmith",
+   "team": "IND",
+   "date": "2026-11-02T18:13Z",
+   "note": "Nesmith (rest) is sitting out Monday against Atlanta."
+  },
+  "2580365": {
+   "status": "day-to-day",
+   "name": "Larry Nance Jr.",
+   "team": "IND",
+   "date": "2026-11-02T18:11Z",
+   "note": "Nance produced six points (2-4 FG, 2-2 3Pt), two rebounds, one assist, one block and four steals in 18 minutes off the bench during Friday's 145-125 loss to Miami."
+  },
+  "4395712": {
+   "status": "out",
+   "name": "Andrew Nembhard",
+   "team": "IND",
+   "date": "2026-11-02T18:09Z",
+   "note": "Nembhard (cervical strain) is out for Monday's game against Atlanta."
+  },
+  "3149673": {
+   "status": "out",
+   "name": "Pascal Siakam",
+   "team": "IND",
+   "date": "2026-11-02T18:06Z",
+   "note": "Siakam will be rested against the Hawks on Monday."
   },
   "4278355": {
    "status": "day-to-day",
