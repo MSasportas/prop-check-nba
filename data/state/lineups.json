@@ -257,15 +257,15 @@
   "NO": {
    "state": "expected",
    "starters": [
-    "Dejounte Murray",
     "Jeremiah Fears",
     "Trey Murphy",
+    "Herbert Jones",
     "Zion Williamson",
     "Karlo Matkovic"
    ],
    "status": {
-    "Dejounte Murray": "questionable",
     "Yves Missi": "out",
+    "Dejounte Murray": "out",
     "Jordan Poole": "out"
    }
   },
@@ -459,5 +459,5 @@
    }
   }
  },
- "at": "2026-11-02T17:30:00-05:00"
+ "at": "2026-11-02T17:40:01-05:00"
 }
