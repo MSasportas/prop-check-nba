@@ -360,11 +360,11 @@
     "home": "LAL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:07 - 2nd",
     "score": {
-     "TOR": "23",
-     "LAL": "36"
+     "TOR": "36",
+     "LAL": "44"
     }
    }
   ]
