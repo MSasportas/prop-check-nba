@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T21:20:00-05:00",
+ "at": "2026-11-01T23:00:00-05:00",
  "list": {
   "5149077": {
    "status": "suspension",
@@ -294,6 +294,13 @@
    "team": "IND",
    "date": "2026-10-28T21:30Z",
    "note": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports."
+  },
+  "3936099": {
+   "status": "day-to-day",
+   "name": "Derrick Jones Jr.",
+   "team": "LAC",
+   "date": "2026-11-02T03:47Z",
+   "note": "Jones (right knee) has been ruled out for the rest of Sunday's game against the Clippers, Ohm Youngmisuk of ESPN.com reports."
   },
   "4065778": {
    "status": "out",
