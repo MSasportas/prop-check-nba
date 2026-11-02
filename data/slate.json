@@ -1,6 +1,6 @@
 {
- "slate": "2026-11-01",
- "valid_until": "2026-11-02T05:00:00-05:00",
+ "slate": "2026-11-02",
+ "valid_until": "2026-11-03T05:00:00-05:00",
  "banners": [],
  "status": {
   "odds": {
@@ -9,89 +9,243 @@
    "low": false,
    "refused": false,
    "no_keys": false,
-   "days_left": 30,
-   "allowance": 13.935,
+   "days_left": 29,
+   "allowance": 13.972,
    "reads": [
     "B",
     "C",
     "D"
    ]
   },
-  "next_read_at": null,
-  "last_read_at": "2026-11-01T20:40:01-05:00",
+  "next_read_at": "2026-11-02T17:30:00-05:00",
+  "last_read_at": null,
   "last_run": {
    "ok": true,
-   "at": "2026-11-02T04:30:00-05:00"
+   "at": "2026-11-02T05:00:01-05:00"
   }
  },
  "games": [
   {
-   "id": "401909903",
-   "start": "2026-11-01T15:30:00-05:00",
-   "away": "BOS",
-   "home": "ORL",
-   "state": "post",
-   "detail": "Final",
+   "id": "401909907",
+   "start": "2026-11-02T19:00:00-05:00",
+   "away": "OKC",
+   "home": "CLE",
+   "state": "pre",
+   "detail": "11/2 - 7:00 PM EST",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": "2026-11-01T15:10:00-05:00",
+   "read_at": null,
    "picks": 0
   },
   {
-   "id": "401909904",
-   "start": "2026-11-01T17:00:00-05:00",
-   "away": "BKN",
+   "id": "401909908",
+   "start": "2026-11-02T19:30:00-05:00",
+   "away": "DET",
+   "home": "CHA",
+   "state": "pre",
+   "detail": "11/2 - 7:30 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909909",
+   "start": "2026-11-02T19:30:00-05:00",
+   "away": "ATL",
    "home": "IND",
-   "state": "post",
-   "detail": "Final",
+   "state": "pre",
+   "detail": "11/2 - 7:30 PM EST",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": "2026-11-01T16:40:00-05:00",
+   "read_at": null,
    "picks": 0
   },
   {
-   "id": "401909905",
-   "start": "2026-11-01T20:30:00-05:00",
-   "away": "LAC",
+   "id": "401909910",
+   "start": "2026-11-02T19:30:00-05:00",
+   "away": "BKN",
+   "home": "NYK",
+   "state": "pre",
+   "detail": "11/2 - 7:30 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909911",
+   "start": "2026-11-02T19:30:00-05:00",
+   "away": "WAS",
+   "home": "ORL",
+   "state": "pre",
+   "detail": "11/2 - 7:30 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909912",
+   "start": "2026-11-02T19:30:00-05:00",
+   "away": "CHI",
+   "home": "PHI",
+   "state": "pre",
+   "detail": "11/2 - 7:30 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909913",
+   "start": "2026-11-02T20:00:00-05:00",
+   "away": "SAC",
+   "home": "DAL",
+   "state": "pre",
+   "detail": "11/2 - 8:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909914",
+   "start": "2026-11-02T20:00:00-05:00",
+   "away": "NOP",
+   "home": "MEM",
+   "state": "pre",
+   "detail": "11/2 - 8:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909915",
+   "start": "2026-11-02T20:00:00-05:00",
+   "away": "MIL",
+   "home": "MIN",
+   "state": "pre",
+   "detail": "11/2 - 8:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909916",
+   "start": "2026-11-02T20:30:00-05:00",
+   "away": "BOS",
+   "home": "HOU",
+   "state": "pre",
+   "detail": "11/2 - 8:30 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909917",
+   "start": "2026-11-02T20:30:00-05:00",
+   "away": "UTA",
+   "home": "SAS",
+   "state": "pre",
+   "detail": "11/2 - 8:30 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909918",
+   "start": "2026-11-02T21:00:00-05:00",
+   "away": "POR",
+   "home": "DEN",
+   "state": "pre",
+   "detail": "11/2 - 9:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909919",
+   "start": "2026-11-02T22:00:00-05:00",
+   "away": "PHX",
    "home": "GSW",
-   "state": "post",
-   "detail": "Final",
+   "state": "pre",
+   "detail": "11/2 - 10:00 PM EST",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": "2026-11-01T20:10:00-05:00",
+   "read_at": null,
    "picks": 0
   },
   {
-   "id": "401909906",
-   "start": "2026-11-01T21:00:00-05:00",
+   "id": "401909920",
+   "start": "2026-11-02T22:00:00-05:00",
    "away": "TOR",
-   "home": "LAL",
-   "state": "post",
-   "detail": "Final",
+   "home": "LAC",
+   "state": "pre",
+   "detail": "11/2 - 10:00 PM EST",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": "2026-11-01T20:40:01-05:00",
+   "read_at": null,
+   "picks": 0
+  },
+  {
+   "id": "401909921",
+   "start": "2026-11-02T22:00:00-05:00",
+   "away": "MIA",
+   "home": "LAL",
+   "state": "pre",
+   "detail": "11/2 - 10:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
    "picks": 0
   }
  ],
  "picks": [],
  "empty": {
-  "text": "No open picks right now",
-  "why": "Every game has started.",
-  "next": null
+  "text": "No picks yet today",
+  "why": "No prices read yet. The first close look is 90 minutes before each tip.",
+  "next": "2026-11-02T17:30:00-05:00"
  },
  "counts": {
-  "lines_read": 364,
+  "lines_read": 0,
   "passing": 0,
-  "games": 4
+  "games": 15
  },
  "safety_paused": false,
  "ui": {
@@ -99,6 +253,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-01T23:40:01-05:00",
- "status_at": "2026-11-02T04:30:00-05:00"
+ "generated_at": "2026-11-02T05:00:01-05:00",
+ "status_at": "2026-11-02T05:00:01-05:00"
 }

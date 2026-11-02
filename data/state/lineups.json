@@ -1,22 +1,120 @@
 {
- "slate": "2026-11-01",
+ "slate": "2026-11-02",
  "teams": {
-  "BOS": {
-   "state": "confirmed",
+  "OKC": {
+   "state": "expected",
    "starters": [
-    "Derrick White",
-    "Hugo Gonzalez",
-    "Paul George",
-    "Jayson Tatum",
-    "Neemias Queta"
+    "Shai Gilgeous-Alexander",
+    "Jared McCain",
+    "Ajay Mitchell",
+    "Kenrich Williams",
+    "Isaiah Hartenstein"
    ],
    "status": {
-    "Devin Carter": "out",
-    "Mitchell Robinson": "out"
+    "Alex Caruso": "out",
+    "Chet Holmgren": "out",
+    "Thomas Sorber": "out",
+    "Nikola Topic": "out",
+    "Cason Wallace": "out",
+    "Jalen Williams": "out"
+   }
+  },
+  "CLE": {
+   "state": "expected",
+   "starters": [
+    "James Harden",
+    "Donovan Mitchell",
+    "Peyton Watson",
+    "Evan Mobley",
+    "Jarrett Allen"
+   ],
+   "status": {
+    "Peyton Watson": "questionable",
+    "Nae'Qwan Tomlin": "out",
+    "Jaylon Tyson": "out"
+   }
+  },
+  "ATL": {
+   "state": "expected",
+   "starters": [
+    "CJ McCollum",
+    "Nickeil Alexander-Walker",
+    "Dyson Daniels",
+    "Jalen Johnson",
+    "Onyeka Okongwu"
+   ],
+   "status": {
+    "Jalen Johnson": "questionable",
+    "Henri Veesaar": "out",
+    "Kingston Flemings": "out",
+    "Mouhamed Gueye": "out",
+    "Jock Landale": "out"
+   }
+  },
+  "IND": {
+   "state": "expected",
+   "starters": [
+    "Andrew Nembhard",
+    "Kelly Oubre",
+    "Aaron Nesmith",
+    "Pascal Siakam",
+    "Jay Huff"
+   ],
+   "status": {
+    "Obi Toppin": "questionable",
+    "T.J. McConnell": "questionable",
+    "Johnny Furphy": "out",
+    "Tyrese Haliburton": "out",
+    "Ben Sheppard": "out",
+    "Ivica Zubac": "out"
+   }
+  },
+  "BKN": {
+   "state": "expected",
+   "starters": [
+    "Mikel Brown",
+    "Nolan Traore",
+    "Michael Porter",
+    "Julius Randle",
+    "Day'Ron Sharpe"
+   ],
+   "status": {
+    "Mikel Brown": "questionable",
+    "Egor Demin": "out"
+   }
+  },
+  "NY": {
+   "state": "expected",
+   "starters": [
+    "Jalen Brunson",
+    "Mikal Bridges",
+    "Josh Hart",
+    "OG Anunoby",
+    "Karl-Anthony Towns"
+   ],
+   "status": {
+    "Jose Alvarado": "questionable"
+   }
+  },
+  "WSH": {
+   "state": "expected",
+   "starters": [
+    "Trae Young",
+    "Kyshawn George",
+    "AJ Dybantsa",
+    "Anthony Davis",
+    "Alex Sarr"
+   ],
+   "status": {
+    "Alex Sarr": "questionable",
+    "Anthony Gill": "questionable",
+    "Justin Champagnie": "out",
+    "Tristan Vukcevic": "out",
+    "Jamir Watkins": "out"
    }
   },
   "ORL": {
-   "state": "confirmed",
+   "state": "expected",
    "starters": [
     "Jase Richardson",
     "Anthony Black",
@@ -32,40 +130,287 @@
     "Jalen Suggs": "out"
    }
   },
-  "BKN": {
-   "state": "confirmed",
+  "CHI": {
+   "state": "expected",
    "starters": [
-    "Chaney Johnson",
-    "Nolan Traore",
-    "Michael Porter",
-    "Julius Randle",
-    "Day'Ron Sharpe"
+    "Josh Giddey",
+    "Norman Powell",
+    "Matas Buzelis",
+    "Caleb Wilson",
+    "Jalen Smith"
    ],
    "status": {
-    "Mikel Brown": "out",
-    "Egor Demin": "out"
+    "Jalen Smith": "probable",
+    "Dailyn Swain": "questionable",
+    "Tobe Awaka": "probable",
+    "Nic Claxton": "doubtful"
    }
   },
-  "IND": {
-   "state": "confirmed",
+  "PHI": {
+   "state": "expected",
    "starters": [
-    "Andrew Nembhard",
-    "Kelly Oubre",
-    "Aaron Nesmith",
-    "Pascal Siakam",
-    "Jay Huff"
+    "Tyrese Maxey",
+    "VJ Edgecombe",
+    "Jaylen Brown",
+    "LeBron James",
+    "Joel Embiid"
    ],
    "status": {
-    "Johnny Furphy": "out",
-    "Tyrese Haliburton": "out",
-    "T.J. McConnell": "out",
-    "Ben Sheppard": "out",
-    "Obi Toppin": "out",
-    "Ivica Zubac": "out"
+    "Joel Embiid": "questionable",
+    "Ariel Hukporti": "out",
+    "Dominick Barlow": "out"
+   }
+  },
+  "DET": {
+   "state": "expected",
+   "starters": [
+    "Cade Cunningham",
+    "Duncan Robinson",
+    "Ausar Thompson",
+    "John Collins",
+    "Paul Reed"
+   ],
+   "status": {
+    "Isaiah Joe": "questionable",
+    "Jalen Duren": "out"
+   }
+  },
+  "CHA": {
+   "state": "expected",
+   "starters": [
+    "Dennis Schroder",
+    "Coby White",
+    "Brandon Miller",
+    "Naz Reid",
+    "Moussa Diabate"
+   ],
+   "status": {
+    "Kon Knueppel": "out",
+    "Grant Williams": "out"
+   }
+  },
+  "SAC": {
+   "state": "expected",
+   "starters": [
+    "Darius Acuff",
+    "Zach LaVine",
+    "De'Andre Hunter",
+    "Precious Achiuwa",
+    "Domantas Sabonis"
+   ],
+   "status": {
+    "Zach LaVine": "questionable",
+    "Ben Simmons": "out",
+    "Dylan Cardwell": "questionable",
+    "Keegan Murray": "out",
+    "Maxime Raynaud": "out"
+   }
+  },
+  "DAL": {
+   "state": "expected",
+   "starters": [
+    "Kyrie Irving",
+    "Max Christie",
+    "Cooper Flagg",
+    "P.J. Washington",
+    "Daniel Gafford"
+   ],
+   "status": {
+    "Kyrie Irving": "questionable",
+    "Santi Aldama": "doubtful",
+    "Tarik Biberovic": "out",
+    "Sergio de Larrea": "out",
+    "Dereck Lively": "out"
+   }
+  },
+  "MIL": {
+   "state": "expected",
+   "starters": [
+    "Ryan Rollins",
+    "Tyler Herro",
+    "Jaime Jaquez",
+    "Kyle Kuzma",
+    "Myles Turner"
+   ],
+   "status": {}
+  },
+  "MIN": {
+   "state": "expected",
+   "starters": [
+    "LaMelo Ball",
+    "Ayo Dosunmu",
+    "Jonathan Kuminga",
+    "Jaden McDaniels",
+    "Rudy Gobert"
+   ],
+   "status": {
+    "Donte DiVincenzo": "out",
+    "Anthony Edwards": "out"
+   }
+  },
+  "NO": {
+   "state": "expected",
+   "starters": [
+    "Dejounte Murray",
+    "Jeremiah Fears",
+    "Trey Murphy",
+    "Zion Williamson",
+    "Karlo Matkovic"
+   ],
+   "status": {
+    "Trey Murphy": "probable",
+    "Yves Missi": "out",
+    "Jordan Poole": "out"
+   }
+  },
+  "MEM": {
+   "state": "expected",
+   "starters": [
+    "Ty Jerome",
+    "Cedric Coward",
+    "Jaylen Wells",
+    "Cameron Boozer",
+    "Zach Edey"
+   ],
+   "status": {
+    "Quinten Post": "questionable",
+    "Scotty Pippen": "doubtful"
+   }
+  },
+  "BOS": {
+   "state": "expected",
+   "starters": [
+    "Derrick White",
+    "Paul George",
+    "Jayson Tatum",
+    "Jordan Walsh",
+    "Mitchell Robinson"
+   ],
+   "status": {
+    "Mitchell Robinson": "out",
+    "Devin Carter": "out"
+   }
+  },
+  "HOU": {
+   "state": "expected",
+   "starters": [
+    "Fred VanVleet",
+    "Amen Thompson",
+    "Kevin Durant",
+    "Jabari Smith",
+    "Alperen Sengun"
+   ],
+   "status": {
+    "Clint Capela": "questionable",
+    "Reed Sheppard": "questionable",
+    "Steven Adams": "out"
+   }
+  },
+  "UTAH": {
+   "state": "expected",
+   "starters": [
+    "Keyonte George",
+    "Darryn Peterson",
+    "Ace Bailey",
+    "Lauri Markkanen",
+    "Jaxson Hayes"
+   ],
+   "status": {
+    "Jaren Jackson": "out",
+    "Jusuf Nurkic": "out"
+   }
+  },
+  "SA": {
+   "state": "expected",
+   "starters": [
+    "De'Aaron Fox",
+    "Stephon Castle",
+    "Dylan Harper",
+    "Devin Vassell",
+    "Victor Wembanyama"
+   ],
+   "status": {
+    "Tobias Harris": "out",
+    "Jayden Quaintance": "out"
+   }
+  },
+  "POR": {
+   "state": "expected",
+   "starters": [
+    "Damian Lillard",
+    "Scoot Henderson",
+    "Toumani Camara",
+    "Deni Avdija",
+    "Donovan Clingan"
+   ],
+   "status": {
+    "Ja Morant": "out",
+    "Shaedon Sharpe": "out"
+   }
+  },
+  "DEN": {
+   "state": "expected",
+   "starters": [
+    "Jamal Murray",
+    "Christian Braun",
+    "Cameron Johnson",
+    "Aaron Gordon",
+    "Nikola Jokic"
+   ],
+   "status": {
+    "Alpha Diallo": "questionable",
+    "Spencer Jones": "out",
+    "Julian Strawther": "out"
+   }
+  },
+  "PHX": {
+   "state": "expected",
+   "starters": [
+    "Devin Booker",
+    "Jalen Green",
+    "Dillon Brooks",
+    "Miles Bridges",
+    "Khaman Maluach"
+   ],
+   "status": {
+    "Mark Williams": "out"
+   }
+  },
+  "GS": {
+   "state": "expected",
+   "starters": [
+    "Stephen Curry",
+    "Brandin Podziemski",
+    "Yaxel Lendeborg",
+    "Georges Niang",
+    "Draymond Green"
+   ],
+   "status": {
+    "Stephen Curry": "out",
+    "Draymond Green": "out",
+    "Gui Santos": "questionable",
+    "Jimmy Butler": "out",
+    "Moses Moody": "out",
+    "Kristaps Porzingis": "out"
+   }
+  },
+  "TOR": {
+   "state": "expected",
+   "starters": [
+    "Immanuel Quickley",
+    "RJ Barrett",
+    "Ja'Kobe Walter",
+    "Scottie Barnes",
+    "Jakob Poeltl"
+   ],
+   "status": {
+    "Jakob Poeltl": "questionable",
+    "Nate Bittle": "out",
+    "Kawhi Leonard": "out"
    }
   },
   "LAC": {
-   "state": "confirmed",
+   "state": "expected",
    "starters": [
     "Darius Garland",
     "Kris Dunn",
@@ -74,6 +419,7 @@
     "Isaiah Jackson"
    ],
    "status": {
+    "Derrick Jones": "questionable",
     "Bradley Beal": "out",
     "Brandon Ingram": "out",
     "Jordan Miller": "out",
@@ -81,52 +427,33 @@
     "Max Strus": "out"
    }
   },
-  "GS": {
-   "state": "confirmed",
+  "MIA": {
+   "state": "expected",
    "starters": [
-    "De'Anthony Melton",
-    "Brandin Podziemski",
-    "Yaxel Lendeborg",
-    "Georges Niang",
-    "Charles Bassey"
+    "Davion Mitchell",
+    "Klay Thompson",
+    "Andrew Wiggins",
+    "Giannis Antetokounmpo",
+    "Bam Adebayo"
    ],
    "status": {
-    "Jimmy Butler": "out",
-    "Stephen Curry": "out",
-    "Draymond Green": "out",
-    "Moses Moody": "out",
-    "Kristaps Porzingis": "out"
-   }
-  },
-  "TOR": {
-   "state": "confirmed",
-   "starters": [
-    "Immanuel Quickley",
-    "RJ Barrett",
-    "Ja'Kobe Walter",
-    "Scottie Barnes",
-    "Trayce Jackson-Davis"
-   ],
-   "status": {
-    "Nate Bittle": "out",
-    "Kawhi Leonard": "out",
-    "Jakob Poeltl": "out"
+    "Tim Hardaway": "questionable"
    }
   },
   "LAL": {
-   "state": "confirmed",
+   "state": "expected",
    "starters": [
     "Luka Doncic",
     "Austin Reaves",
-    "Jake LaRavia",
     "Matisse Thybulle",
+    "Ziaire Williams",
     "Walker Kessler"
    ],
    "status": {
-    "Adou Thiero": "out",
-    "Ziaire Williams": "out"
+    "Ziaire Williams": "out",
+    "Adou Thiero": "out"
    }
   }
  },
- "at": "2026-11-01T20:50:01-05:00"
+ "at": "2026-11-02T05:00:01-05:00"
 }

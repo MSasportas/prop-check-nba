@@ -1,52 +1,5 @@
 {
  "days": {
-  "2026-10-29": [
-   {
-    "id": "401909893",
-    "date": "2026-10-29",
-    "start": "2026-10-29T20:00:00-04:00",
-    "away": "CLE",
-    "home": "ATL",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "CLE": "111",
-     "ATL": "114"
-    }
-   },
-   {
-    "id": "401909894",
-    "date": "2026-10-29",
-    "start": "2026-10-29T20:00:00-04:00",
-    "away": "SAC",
-    "home": "NO",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "SAC": "120",
-     "NO": "132"
-    }
-   },
-   {
-    "id": "401909895",
-    "date": "2026-10-29",
-    "start": "2026-10-29T22:00:00-04:00",
-    "away": "MEM",
-    "home": "POR",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "MEM": "124",
-     "POR": "103"
-    }
-   }
-  ],
   "2026-10-30": [
    {
     "id": "401909277",
@@ -367,12 +320,238 @@
      "LAL": "131"
     }
    }
+  ],
+  "2026-11-02": [
+   {
+    "id": "401909907",
+    "date": "2026-11-02",
+    "start": "2026-11-02T19:00:00-05:00",
+    "away": "OKC",
+    "home": "CLE",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 7:00 PM EST",
+    "score": {
+     "OKC": "0",
+     "CLE": "0"
+    }
+   },
+   {
+    "id": "401909908",
+    "date": "2026-11-02",
+    "start": "2026-11-02T19:30:00-05:00",
+    "away": "DET",
+    "home": "CHA",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 7:30 PM EST",
+    "score": {
+     "DET": "0",
+     "CHA": "0"
+    }
+   },
+   {
+    "id": "401909909",
+    "date": "2026-11-02",
+    "start": "2026-11-02T19:30:00-05:00",
+    "away": "ATL",
+    "home": "IND",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 7:30 PM EST",
+    "score": {
+     "ATL": "0",
+     "IND": "0"
+    }
+   },
+   {
+    "id": "401909910",
+    "date": "2026-11-02",
+    "start": "2026-11-02T19:30:00-05:00",
+    "away": "BKN",
+    "home": "NY",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 7:30 PM EST",
+    "score": {
+     "BKN": "0",
+     "NY": "0"
+    }
+   },
+   {
+    "id": "401909911",
+    "date": "2026-11-02",
+    "start": "2026-11-02T19:30:00-05:00",
+    "away": "WSH",
+    "home": "ORL",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 7:30 PM EST",
+    "score": {
+     "WSH": "0",
+     "ORL": "0"
+    }
+   },
+   {
+    "id": "401909912",
+    "date": "2026-11-02",
+    "start": "2026-11-02T19:30:00-05:00",
+    "away": "CHI",
+    "home": "PHI",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 7:30 PM EST",
+    "score": {
+     "CHI": "0",
+     "PHI": "0"
+    }
+   },
+   {
+    "id": "401909913",
+    "date": "2026-11-02",
+    "start": "2026-11-02T20:00:00-05:00",
+    "away": "SAC",
+    "home": "DAL",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 8:00 PM EST",
+    "score": {
+     "SAC": "0",
+     "DAL": "0"
+    }
+   },
+   {
+    "id": "401909914",
+    "date": "2026-11-02",
+    "start": "2026-11-02T20:00:00-05:00",
+    "away": "NO",
+    "home": "MEM",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 8:00 PM EST",
+    "score": {
+     "NO": "0",
+     "MEM": "0"
+    }
+   },
+   {
+    "id": "401909915",
+    "date": "2026-11-02",
+    "start": "2026-11-02T20:00:00-05:00",
+    "away": "MIL",
+    "home": "MIN",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 8:00 PM EST",
+    "score": {
+     "MIL": "0",
+     "MIN": "0"
+    }
+   },
+   {
+    "id": "401909916",
+    "date": "2026-11-02",
+    "start": "2026-11-02T20:30:00-05:00",
+    "away": "BOS",
+    "home": "HOU",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 8:30 PM EST",
+    "score": {
+     "BOS": "0",
+     "HOU": "0"
+    }
+   },
+   {
+    "id": "401909917",
+    "date": "2026-11-02",
+    "start": "2026-11-02T20:30:00-05:00",
+    "away": "UTAH",
+    "home": "SA",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 8:30 PM EST",
+    "score": {
+     "UTAH": "0",
+     "SA": "0"
+    }
+   },
+   {
+    "id": "401909918",
+    "date": "2026-11-02",
+    "start": "2026-11-02T21:00:00-05:00",
+    "away": "POR",
+    "home": "DEN",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 9:00 PM EST",
+    "score": {
+     "POR": "0",
+     "DEN": "0"
+    }
+   },
+   {
+    "id": "401909919",
+    "date": "2026-11-02",
+    "start": "2026-11-02T22:00:00-05:00",
+    "away": "PHX",
+    "home": "GS",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 10:00 PM EST",
+    "score": {
+     "PHX": "0",
+     "GS": "0"
+    }
+   },
+   {
+    "id": "401909920",
+    "date": "2026-11-02",
+    "start": "2026-11-02T22:00:00-05:00",
+    "away": "TOR",
+    "home": "LAC",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 10:00 PM EST",
+    "score": {
+     "TOR": "0",
+     "LAC": "0"
+    }
+   },
+   {
+    "id": "401909921",
+    "date": "2026-11-02",
+    "start": "2026-11-02T22:00:00-05:00",
+    "away": "MIA",
+    "home": "LAL",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/2 - 10:00 PM EST",
+    "score": {
+     "MIA": "0",
+     "LAL": "0"
+    }
+   }
   ]
  },
  "month": {
-  "made_for": "2026-11-01",
+  "made_for": "2026-11-02",
   "counts": {
-   "2026-11-01": 4,
    "2026-11-02": 15,
    "2026-11-03": 0,
    "2026-11-04": 14,
