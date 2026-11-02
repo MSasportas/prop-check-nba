@@ -99,7 +99,7 @@
    }
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Immanuel Quickley",
     "RJ Barrett",
@@ -113,7 +113,7 @@
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Austin Reaves",
@@ -127,5 +127,5 @@
    }
   }
  },
- "at": "2026-11-01T20:30:01-05:00"
+ "at": "2026-11-01T20:40:01-05:00"
 }
