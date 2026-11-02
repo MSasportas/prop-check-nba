@@ -24,14 +24,14 @@
    "starters": [
     "James Harden",
     "Donovan Mitchell",
-    "Peyton Watson",
+    "Mario Hezonja",
     "Evan Mobley",
     "Jarrett Allen"
    ],
    "status": {
-    "Peyton Watson": "questionable",
     "Nae'Qwan Tomlin": "out",
-    "Jaylon Tyson": "out"
+    "Jaylon Tyson": "out",
+    "Peyton Watson": "out"
    }
   },
   "ATL": {
@@ -54,14 +54,13 @@
   "IND": {
    "state": "expected",
    "starters": [
-    "Quenton Jackson",
+    "Braden Smith",
     "Kelly Oubre",
     "Jarace Walker",
-    "Obi Toppin",
+    "Kobe Brown",
     "Jay Huff"
    ],
    "status": {
-    "Obi Toppin": "out",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "T.J. McConnell": "out",
@@ -70,6 +69,7 @@
     "Aaron Nesmith": "out",
     "Ben Sheppard": "out",
     "Pascal Siakam": "out",
+    "Obi Toppin": "out",
     "Ivica Zubac": "out"
    }
   },
@@ -216,7 +216,7 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Santi Aldama": "doubtful",
+    "Santi Aldama": "out",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Kyrie Irving": "out",
@@ -455,5 +455,5 @@
    }
   }
  },
- "at": "2026-11-02T18:10:01-05:00"
+ "at": "2026-11-02T18:20:00-05:00"
 }

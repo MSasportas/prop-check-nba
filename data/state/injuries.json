@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T18:10:01-05:00",
+ "at": "2026-11-02T18:20:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -100,11 +100,18 @@
    "note": "Tyson (ankle) has been ruled out for Monday's game against Oklahoma City."
   },
   "6442": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Kyrie Irving",
    "team": "DAL",
-   "date": "2026-11-02T18:51Z",
-   "note": "Irving (knee) is now doubtful for Monday against the Kings."
+   "date": "2026-11-02T23:13Z",
+   "note": "Irving (knee) has been ruled out for Monday's game against the Kings."
+  },
+  "4593125": {
+   "status": "out",
+   "name": "Santi Aldama",
+   "team": "DAL",
+   "date": "2026-11-02T23:12Z",
+   "note": "Aldama (knee) has been ruled out for Monday's matchup with Sacramento."
   },
   "5148538": {
    "status": "out",
@@ -119,13 +126,6 @@
    "team": "DAL",
    "date": "2026-11-01T22:57Z",
    "note": "Lively (foot) is listed as out for Monday's game against the Kings."
-  },
-  "4593125": {
-   "status": "out",
-   "name": "Santi Aldama",
-   "team": "DAL",
-   "date": "2026-11-01T22:51Z",
-   "note": "Aldama (knee) is listed as doubtful for Monday's game against the Kings."
   },
   "5279129": {
    "status": "out",
@@ -232,6 +232,20 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
+  "2580365": {
+   "status": "out",
+   "name": "Larry Nance Jr.",
+   "team": "IND",
+   "date": "2026-11-02T23:10Z",
+   "note": "Nance (illness) has been ruled out for Monday's game against the Hawks."
+  },
+  "4278355": {
+   "status": "out",
+   "name": "Obi Toppin",
+   "team": "IND",
+   "date": "2026-11-02T23:07Z",
+   "note": "Toppin (back) will dress for Monday's game against  Hawks but will only play in an emergency, Tony East of Forbes.com reports."
+  },
   "2530530": {
    "status": "out",
    "name": "T.J. McConnell",
@@ -245,20 +259,6 @@
    "team": "IND",
    "date": "2026-11-02T18:19Z",
    "note": "Zubac (ankle) has been ruled out for Monday's game against the Hawks."
-  },
-  "2580365": {
-   "status": "day-to-day",
-   "name": "Larry Nance Jr.",
-   "team": "IND",
-   "date": "2026-11-02T18:16Z",
-   "note": "Nance (illness) is doubtful for Monday against the Hawks."
-  },
-  "4278355": {
-   "status": "day-to-day",
-   "name": "Obi Toppin",
-   "team": "IND",
-   "date": "2026-11-02T18:15Z",
-   "note": "Toppin (back) is questionable for Monday's game against Atlanta."
   },
   "4396909": {
    "status": "out",
@@ -498,19 +498,19 @@
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
+  "4870562": {
+   "status": "out",
+   "name": "Dominick Barlow",
+   "team": "PHI",
+   "date": "2026-11-02T23:05Z",
+   "note": "Barlow (back) has been on the court \"a little bit\" and will be re-evaluated Tuesday, Austin Krell of OnPattison.com reports."
+  },
   "3059318": {
    "status": "day-to-day",
    "name": "Joel Embiid",
    "team": "PHI",
    "date": "2026-11-01T22:12Z",
    "note": "Embiid (foot) is questionable to suit up for Monday's game against the Bulls."
-  },
-  "4870562": {
-   "status": "out",
-   "name": "Dominick Barlow",
-   "team": "PHI",
-   "date": "2026-10-19T21:07Z",
-   "note": "Barlow will miss at least the next two weeks of action due to a lumbar spine bone stress response, Adam Aaronson of PhillyVoice.com reports."
   },
   "4871141": {
    "status": "out",
