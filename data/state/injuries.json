@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T16:00:01-05:00",
+ "at": "2026-11-02T16:20:01-05:00",
  "list": {
   "5149077": {
    "status": "suspension",
@@ -183,26 +183,26 @@
    "date": "2026-10-25T14:56Z",
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
   },
+  "4397040": {
+   "status": "day-to-day",
+   "name": "Brandon Williams",
+   "team": "GS",
+   "date": "2026-11-02T21:09Z",
+   "note": "Williams (quadriceps) is listed as questionable for Monday's game against the Suns."
+  },
+  "3213": {
+   "status": "out",
+   "name": "Al Horford",
+   "team": "GS",
+   "date": "2026-11-02T21:07Z",
+   "note": "Horford will be rested Monday against the Suns."
+  },
   "4997536": {
    "status": "out",
    "name": "Gui Santos",
    "team": "GS",
    "date": "2026-11-02T14:20Z",
    "note": "Santos did not play in the second half of Sunday's 124-112 win over the Clippers due to a knee injury and will not play against the Suns on Monday, Danny Emerman of SFStandard.com reports."
-  },
-  "6589": {
-   "status": "day-to-day",
-   "name": "Draymond Green",
-   "team": "GS",
-   "date": "2026-11-02T14:20Z",
-   "note": "Green (back) is out for Sunday's game against the Clippers."
-  },
-  "3975": {
-   "status": "day-to-day",
-   "name": "Stephen Curry",
-   "team": "GS",
-   "date": "2026-11-02T14:20Z",
-   "note": "Curry (rest) won't play Sunday against the Clippers, Brett Siegel of ClutchPoints.com reports."
   },
   "3102531": {
    "status": "out",
@@ -316,6 +316,20 @@
    "date": "2026-10-28T21:30Z",
    "note": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports."
   },
+  "4066648": {
+   "status": "out",
+   "name": "Rui Hachimura",
+   "team": "LAC",
+   "date": "2026-11-02T21:16Z",
+   "note": "Hachimura amassed a team-high 24 points (10-16 FG, 4-7 3Pt) and seven rebounds over 30 minutes during Sunday's 124-112 loss to the Warriors."
+  },
+  "3936099": {
+   "status": "out",
+   "name": "Derrick Jones Jr.",
+   "team": "LAC",
+   "date": "2026-11-02T21:12Z",
+   "note": "Jones (knee) has been ruled out for Monday's game against the Raptors."
+  },
   "5108024": {
    "status": "out",
    "name": "Yanic Konan Niederhauser",
@@ -330,20 +344,6 @@
    "date": "2026-11-02T16:01Z",
    "note": "The Clippers recalled Ingram (Achilles) from the G League's San Diego Clippers on Sunday."
   },
-  "4065778": {
-   "status": "out",
-   "name": "Max Strus",
-   "team": "LAC",
-   "date": "2026-11-02T15:47Z",
-   "note": "The Clippers recalled Strus (foot) from the G League's San Diego Clippers on Sunday."
-  },
-  "3936099": {
-   "status": "day-to-day",
-   "name": "Derrick Jones Jr.",
-   "team": "LAC",
-   "date": "2026-11-02T03:47Z",
-   "note": "Jones (right knee) has been ruled out for the rest of Sunday's game against the Clippers, Ohm Youngmisuk of ESPN.com reports."
-  },
   "6580": {
    "status": "out",
    "name": "Bradley Beal",
@@ -357,13 +357,6 @@
    "team": "LAC",
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
-  },
-  "4433137": {
-   "status": "out",
-   "name": "Ziaire Williams",
-   "team": "LAL",
-   "date": "2026-11-01T21:04Z",
-   "note": "Williams (foot) is out for Sunday's game against the Raptors."
   },
   "5060631": {
    "status": "out",
