@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T14:30:01-05:00",
+ "at": "2026-11-02T15:40:01-05:00",
  "list": {
   "5149077": {
    "status": "suspension",
@@ -621,8 +621,15 @@
    "status": "day-to-day",
    "name": "Jakob Poeltl",
    "team": "TOR",
-   "date": "2026-11-02T04:47Z",
-   "note": "Poeltl (shoulder) won't play in Sunday's game against the Lakers, Vivek Jacob of the Raptors' official site reports."
+   "date": "2026-11-02T20:21Z",
+   "note": "Poeltl (shoulder) is listed as questionable for Monday's game against the Clippers."
+  },
+  "4432586": {
+   "status": "out",
+   "name": "Nate Bittle",
+   "team": "TOR",
+   "date": "2026-11-02T20:20Z",
+   "note": "Bittle (foot) is out for Monday's game against the Clippers and remains without a timetable to return."
   },
   "6450": {
    "status": "out",
@@ -630,13 +637,6 @@
    "team": "TOR",
    "date": "2026-10-29T15:39Z",
    "note": "Leonard (knee) is expected to be sidelined for at least three to four weeks, Chris Haynes of NBA TV reports."
-  },
-  "4432586": {
-   "status": "out",
-   "name": "Nate Bittle",
-   "team": "TOR",
-   "date": "2026-10-27T19:31Z",
-   "note": "Bittle (foot) has been ruled out for Wednesday's game against the Magic, Cody Taylor of USA Today reports."
   },
   "4277961": {
    "status": "out",
