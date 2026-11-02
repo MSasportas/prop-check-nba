@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T19:10:00-05:00",
+ "at": "2026-11-01T19:30:01-05:00",
  "list": {
   "4701230": {
    "status": "day-to-day",
@@ -357,6 +357,13 @@
    "team": "MEM",
    "date": "2026-11-01T23:13Z",
    "note": "Post (ankle) is questionable to suit up for Monday's game against New Orleans."
+  },
+  "2528210": {
+   "status": "day-to-day",
+   "name": "Tim Hardaway Jr.",
+   "team": "MIA",
+   "date": "2026-11-02T00:22Z",
+   "note": "Hardaway provided 14 points (6-10 FG, 2-3 3Pt), two rebounds, one assist and two blocks across 22 minutes during Wednesday's 129-117 victory over the Hawks."
   },
   "4594268": {
    "status": "out",
