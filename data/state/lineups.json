@@ -2,12 +2,12 @@
  "slate": "2026-11-02",
  "teams": {
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
-    "Jared McCain",
     "Ajay Mitchell",
     "Kenrich Williams",
+    "Jaylin Williams",
     "Isaiah Hartenstein"
    ],
    "status": {
@@ -303,7 +303,6 @@
     "Alperen Sengun"
    ],
    "status": {
-    "Reed Sheppard": "questionable",
     "Steven Adams": "out",
     "Clint Capela": "out"
    }
@@ -455,5 +454,5 @@
    }
   }
  },
- "at": "2026-11-02T18:40:01-05:00"
+ "at": "2026-11-02T18:50:01-05:00"
 }
