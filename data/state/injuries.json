@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T10:10:00-05:00",
+ "at": "2026-11-03T16:10:04-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -70,6 +70,13 @@
    "team": "CHA",
    "date": "2026-11-01T22:08Z",
    "note": "Knueppel (hamstring) is listed as out for Monday's game versus the Pistons."
+  },
+  "4397189": {
+   "status": "day-to-day",
+   "name": "Jalen Smith",
+   "team": "CHI",
+   "date": "2026-11-03T21:03Z",
+   "note": "Smith is probable for Wednesday's game against the Knicks with a left finger sprain."
   },
   "4278067": {
    "status": "out",
