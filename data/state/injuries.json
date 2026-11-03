@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T23:40:01-05:00",
+ "at": "2026-11-03T00:40:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -86,17 +86,17 @@
    "note": "Claxton (hamstring) is out for Monday's game against the 76ers."
   },
   "4576087": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Peyton Watson",
    "team": "CLE",
-   "date": "2026-11-02T23:17Z",
+   "date": "2026-11-03T05:29Z",
    "note": "Watson (hamstring) is out for Monday's game against the Thunder, Chris Fedor of The Cleveland Plain Dealer reports."
   },
   "4683747": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jaylon Tyson",
    "team": "CLE",
-   "date": "2026-11-01T21:50Z",
+   "date": "2026-11-03T05:29Z",
    "note": "Tyson (ankle) has been ruled out for Monday's game against Oklahoma City."
   },
   "4432582": {
@@ -617,26 +617,26 @@
    "date": "2026-10-07T23:07Z",
    "note": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports."
   },
+  "5160992": {
+   "status": "day-to-day",
+   "name": "Alex Sarr",
+   "team": "WSH",
+   "date": "2026-11-03T05:34Z",
+   "note": "Sarr (knee) is out for Monday's game against Orlando."
+  },
+  "2581184": {
+   "status": "day-to-day",
+   "name": "Anthony Gill",
+   "team": "WSH",
+   "date": "2026-11-03T05:34Z",
+   "note": "Gill (back) is out for Monday's game against the Magic."
+  },
   "4432187": {
    "status": "out",
    "name": "Reece Beekman",
    "team": "WSH",
    "date": "2026-11-02T18:22Z",
    "note": "The Wizards announced Monday that Beekman sustained a right acromioclavicular joint injury and will be re-evaluated in approximately three weeks."
-  },
-  "2581184": {
-   "status": "out",
-   "name": "Anthony Gill",
-   "team": "WSH",
-   "date": "2026-11-02T18:18Z",
-   "note": "Gill (back) is out for Monday's game against the Magic."
-  },
-  "5160992": {
-   "status": "out",
-   "name": "Alex Sarr",
-   "team": "WSH",
-   "date": "2026-11-02T18:03Z",
-   "note": "Sarr (knee) is out for Monday's game against Orlando."
   },
   "4997537": {
    "status": "out",
