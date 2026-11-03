@@ -1,26 +1,19 @@
 {
- "at": "2026-11-03T00:50:01-05:00",
+ "at": "2026-11-03T01:00:01-05:00",
  "list": {
-  "4701230": {
-   "status": "out",
-   "name": "Jalen Johnson",
-   "team": "ATL",
-   "date": "2026-11-02T22:58Z",
-   "note": "Johnson (ankle) has been ruled out for Monday's game versus Indiana."
-  },
-  "5149077": {
-   "status": "suspension",
-   "name": "Kingston Flemings",
-   "team": "ATL",
-   "date": "2026-11-02T02:02Z",
-   "note": "Flemings (suspension) won't play in Monday's game against Indiana, Andrew Schlecht of The Athletic reports."
-  },
   "3146557": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jock Landale",
    "team": "ATL",
-   "date": "2026-11-01T22:22Z",
+   "date": "2026-11-03T05:48Z",
    "note": "Landale (hip) has been ruled out for Monday's game against Indiana."
+  },
+  "4701230": {
+   "status": "day-to-day",
+   "name": "Jalen Johnson",
+   "team": "ATL",
+   "date": "2026-11-03T05:48Z",
+   "note": "Johnson (ankle) has been ruled out for Monday's game versus Indiana."
   },
   "4712863": {
    "status": "out",
@@ -225,18 +218,39 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
+  "3149673": {
+   "status": "day-to-day",
+   "name": "Pascal Siakam",
+   "team": "IND",
+   "date": "2026-11-03T05:50Z",
+   "note": "Siakam will be rested against the Hawks on Monday."
+  },
+  "4396909": {
+   "status": "day-to-day",
+   "name": "Aaron Nesmith",
+   "team": "IND",
+   "date": "2026-11-03T05:50Z",
+   "note": "Nesmith (rest) is sitting out Monday against Atlanta."
+  },
+  "4395712": {
+   "status": "day-to-day",
+   "name": "Andrew Nembhard",
+   "team": "IND",
+   "date": "2026-11-03T05:50Z",
+   "note": "Nembhard (cervical strain) is out for Monday's game against Atlanta."
+  },
   "3133603": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Kelly Oubre Jr.",
    "team": "IND",
-   "date": "2026-11-03T00:33Z",
+   "date": "2026-11-03T05:49Z",
    "note": "Oubre (knee) has been ruled out for Monday's game against the Hawks."
   },
   "2580365": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Larry Nance Jr.",
    "team": "IND",
-   "date": "2026-11-02T23:10Z",
+   "date": "2026-11-03T05:49Z",
    "note": "Nance (illness) has been ruled out for Monday's game against the Hawks."
   },
   "4278355": {
@@ -259,27 +273,6 @@
    "team": "IND",
    "date": "2026-11-02T18:19Z",
    "note": "Zubac (ankle) has been ruled out for Monday's game against the Hawks."
-  },
-  "4396909": {
-   "status": "out",
-   "name": "Aaron Nesmith",
-   "team": "IND",
-   "date": "2026-11-02T18:13Z",
-   "note": "Nesmith (rest) is sitting out Monday against Atlanta."
-  },
-  "4395712": {
-   "status": "out",
-   "name": "Andrew Nembhard",
-   "team": "IND",
-   "date": "2026-11-02T18:09Z",
-   "note": "Nembhard (cervical strain) is out for Monday's game against Atlanta."
-  },
-  "3149673": {
-   "status": "out",
-   "name": "Pascal Siakam",
-   "team": "IND",
-   "date": "2026-11-02T18:06Z",
-   "note": "Siakam will be rested against the Hawks on Monday."
   },
   "5157066": {
    "status": "out",

@@ -508,13 +508,13 @@
     "start": "2026-11-02T22:00:00-05:00",
     "away": "PHX",
     "home": "GS",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6.0 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "PHX": "112",
-     "GS": "115"
+     "PHX": "113",
+     "GS": "116"
     }
    },
    {
@@ -523,13 +523,13 @@
     "start": "2026-11-02T22:00:00-05:00",
     "away": "TOR",
     "home": "LAC",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "37.4 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "TOR": "118",
-     "LAC": "115"
+     "TOR": "125",
+     "LAC": "118"
     }
    },
    {
