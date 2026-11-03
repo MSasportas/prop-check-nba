@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "33.2 - 1st",
+    "detail": "9:12 - 2nd",
     "score": {
-     "DET": "25",
-     "CHA": "22"
+     "DET": "31",
+     "CHA": "32"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:06 - 2nd",
+    "detail": "5:26 - 2nd",
     "score": {
-     "ATL": "43",
-     "IND": "32"
+     "ATL": "54",
+     "IND": "45"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:06 - 2nd",
+    "detail": "7:50 - 2nd",
     "score": {
-     "BKN": "23",
-     "NY": "27"
+     "BKN": "30",
+     "NY": "31"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:30 - 2nd",
+    "detail": "7:40 - 2nd",
     "score": {
-     "WSH": "28",
-     "ORL": "35"
+     "WSH": "41",
+     "ORL": "44"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:57 - 2nd",
+    "detail": "6:31 - 2nd",
     "score": {
-     "CHI": "26",
-     "PHI": "33"
+     "CHI": "41",
+     "PHI": "40"
     }
    },
    {
@@ -418,13 +418,13 @@
     "start": "2026-11-02T20:00:00-05:00",
     "away": "SAC",
     "home": "DAL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/2 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:40 - 1st",
     "score": {
-     "SAC": "0",
-     "DAL": "0"
+     "SAC": "6",
+     "DAL": "8"
     }
    },
    {
@@ -433,13 +433,13 @@
     "start": "2026-11-02T20:00:00-05:00",
     "away": "NO",
     "home": "MEM",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/2 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:04 - 1st",
     "score": {
-     "NO": "0",
-     "MEM": "0"
+     "NO": "7",
+     "MEM": "10"
     }
    },
    {
@@ -448,13 +448,13 @@
     "start": "2026-11-02T20:00:00-05:00",
     "away": "MIL",
     "home": "MIN",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/2 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:56 - 1st",
     "score": {
-     "MIL": "0",
-     "MIN": "0"
+     "MIL": "4",
+     "MIN": "15"
     }
    },
    {
