@@ -433,13 +433,13 @@
     "start": "2026-11-02T20:00:00-05:00",
     "away": "NO",
     "home": "MEM",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:50 - OT",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final/OT",
     "score": {
-     "NO": "131",
-     "MEM": "129"
+     "NO": "135",
+     "MEM": "134"
     }
    },
    {
@@ -465,11 +465,11 @@
     "home": "HOU",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:04 - 4th",
     "score": {
-     "BOS": "73",
-     "HOU": "82"
+     "BOS": "76",
+     "HOU": "84"
     }
    },
    {
@@ -481,10 +481,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:59 - 4th",
+    "detail": "9:08 - 4th",
     "score": {
-     "UTAH": "71",
-     "SA": "94"
+     "UTAH": "73",
+     "SA": "97"
     }
    },
    {
@@ -496,10 +496,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:46 - 3rd",
+    "detail": "8:07 - 3rd",
     "score": {
-     "POR": "58",
-     "DEN": "68"
+     "POR": "66",
+     "DEN": "72"
     }
    },
    {
@@ -510,11 +510,11 @@
     "home": "GS",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:25 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "PHX": "20",
-     "GS": "15"
+     "PHX": "31",
+     "GS": "19"
     }
    },
    {
@@ -525,11 +525,11 @@
     "home": "LAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:06 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "TOR": "16",
-     "LAC": "19"
+     "TOR": "22",
+     "LAC": "33"
     }
    },
    {
@@ -541,10 +541,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:52 - 1st",
+    "detail": "7.1 - 1st",
     "score": {
-     "MIA": "17",
-     "LAL": "23"
+     "MIA": "28",
+     "LAL": "35"
     }
    }
   ]
