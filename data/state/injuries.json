@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T17:30:01-05:00",
+ "at": "2026-11-03T17:40:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -114,18 +114,18 @@
    "note": "Watson (hamstring) is out for Wednesday's game in Oklahoma City."
   },
   "4432582": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Max Christie",
    "team": "DAL",
-   "date": "2026-11-03T02:30Z",
-   "note": "Christie has been ruled out for the rest of Monday's game against the Kings due to a right hip injury, Mike Curtis of The Dallas Morning News reports. He'll end the night with no points (0-5 FG, 0-5 3"
+   "date": "2026-11-03T22:25Z",
+   "note": "Christie (hip) is out for Wednesday's game against the Spurs."
   },
   "4593125": {
    "status": "out",
    "name": "Santi Aldama",
    "team": "DAL",
-   "date": "2026-11-02T23:12Z",
-   "note": "Aldama (knee) has been ruled out for Monday's matchup with Sacramento."
+   "date": "2026-11-03T22:20Z",
+   "note": "Aldama (knee) is questionable for Wednesday's game against the Spurs."
   },
   "5148538": {
    "status": "out",
@@ -222,8 +222,8 @@
    "status": "day-to-day",
    "name": "Clint Capela",
    "team": "HOU",
-   "date": "2026-11-03T15:02Z",
-   "note": "Capela (ankle) has been ruled out for Monday's game against the Celtics."
+   "date": "2026-11-03T22:19Z",
+   "note": "Capela (ankle) is listed as questionable for Wednesday's game against the Timberwolves."
   },
   "2991235": {
    "status": "out",
