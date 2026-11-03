@@ -278,13 +278,13 @@
    }
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Derrick White",
     "Hugo Gonzalez",
+    "Baylor Scheierman",
     "Jayson Tatum",
-    "Jordan Walsh",
-    "Mitchell Robinson"
+    "Neemias Queta"
    ],
    "status": {
     "Devin Carter": "out",
@@ -292,7 +292,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
@@ -306,7 +306,7 @@
    }
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
@@ -357,7 +357,6 @@
     "Nikola Jokic"
    ],
    "status": {
-    "Alpha Diallo": "questionable",
     "Spencer Jones": "out",
     "Julian Strawther": "out"
    }
@@ -452,5 +451,5 @@
    }
   }
  },
- "at": "2026-11-02T20:00:00-05:00"
+ "at": "2026-11-02T20:10:01-05:00"
 }
