@@ -156,6 +156,10 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:10px;
   border:1px solid var(--accent);color:var(--accent);font-weight:500;font-size:14px}
 .btn.wide{width:100%}
+.betrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.betrow .btn{flex:1 1 140px;min-width:0;text-decoration:none}
+.betrow .btn.hr{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.betrow .btn.alt{border-color:var(--line);color:var(--fg)}
 
 /* footer */
 .foot{margin-top:28px;padding-top:6px;border-top:1px solid var(--line);font-size:12px;line-height:18px;color:var(--muted)}
@@ -621,6 +625,8 @@ function pickCard(p, d, opts) {
   if (!started) card.appendChild(h('div', { class: 'betat' }, 'Bet at ', h('b', { text: odds(p.price) + ' or better' }),
     ' · worse? skip it', pa ? ' · ' + (stale() ? 'old price, read ' : 'read ') + pa : ''));
 
+  if (!started) { var br = betRow(p); if (br) card.appendChild(br); }
+
   var pin = str(p.rule) === 'pin_solo';
   if (pin && (!started || isOpen)) card.appendChild(pinRow(p));
   else if (!started || isOpen) {
@@ -646,6 +652,24 @@ function pickCard(p, d, opts) {
     card.appendChild(more);
   }
   return card;
+}
+/* tap-to-bet (Matt, 2026-11-02): "Hard Rock +115" fills the Hard Rock slip, "DraftKings -110" opens DK's bet at DK's price.
+   Open picks only (not pulled, started, graded or stale). No link from the feed = no button. Never shows a URL. */
+var HR_SLIP = 'https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/', DK_HOST = 'https://sportsbook.draftkings.com/';
+function slipUrl(u, prefix) { u = str(u); return (u.indexOf(prefix) === 0 && u.length < 600 && !/[\s<>"'\\]/.test(u)) ? u : null; }
+function betRow(p) {
+  if (p.pulled || isObj(p.result) || !/^(early|clear|starters)$/.test(str(p.state)) || stale()) return null;
+  var lk = isObj(p.links) ? p.links : {}, hr = slipUrl(isObj(lk.hardrock) && lk.hardrock.url, HR_SLIP),
+      dk = isObj(lk.draftkings) ? lk.draftkings : {}, du = slipUrl(dk.url, DK_HOST);
+  if (!hr && !du) return null;
+  var stop = function (e) { e.stopPropagation(); };
+  var a = function (url, cls, text) {
+    var x = h('a', { class: 'btn ' + cls, href: url, target: '_blank', rel: 'noopener noreferrer', text: text });
+    x.addEventListener('click', stop); x.addEventListener('keydown', stop); return x;
+  };
+  return h('div', { class: 'betrow' },
+    hr ? a(hr, 'hr', 'Hard Rock' + (num(p.price) != null ? ' ' + odds(p.price) : '')) : null,
+    du ? a(du, 'alt', 'DraftKings' + (num(dk.price) != null ? ' ' + odds(dk.price) : '')) : null);
 }
 /* rule pin_solo: "Pinnacle: -118 → -149 (52% → 56%) · 6 books held" / "Hard Rock -120 needs 55%" */
 function pinRow(p) {

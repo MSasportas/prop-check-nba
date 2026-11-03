@@ -272,8 +272,15 @@ class Run:
             p["pulled"] = {"at": it["pulled"]["at"], "reason": it["pulled"]["reason"], "if_bet": it["pulled"].get("if_bet")} \
                 if it["pulled"] else None
             p["result"] = {"result": gr["result"], "actual": gr.get("actual_text"), "units": gr["units"]} if gr else None
-            if p["link"] and (it["pulled"] or it["locked_at"] or not odds.safe_link(p["link"])):
-                p["link"] = None
+            p.pop("link", None)                            # raw feed link: never published (it only opens the app)
+            p["links"] = None                              # tap-to-bet buttons (Matt, 2026-11-02): newest read, open picks only
+            if not it["pulled"] and not it["locked_at"] and not gr and common.parse_iso(sh["start"]) > self.now:
+                try:
+                    lk = odds.bet_links(getattr(self, "odds_doc", None), sh["game_id"], sh["market"], sh["pid"],
+                                        sh["line"], sh["side"])
+                    p["links"] = lk if (lk["hardrock"] or lk["draftkings"]) else None
+                except Exception as e:                     # a button is a nicety: never fails the page
+                    common.log("bet links failed: %s" % common.short_err(e))
             picks.append(p)
         rank = 0
         for p in picks:

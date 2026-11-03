@@ -12,6 +12,12 @@ Every NBA game day: every rebounds, points, assists and 3-pointers-made leg that
 the price, our chance vs the price's break-even and a one-line plain reason. The page updates through the day; each pick shows how
 settled it is (Early / Injury report clear / Starters confirmed, then Locked) and pulled picks stay visible with the reason and what it
 means if Matt already bet. Dark, phone first (~380px). The Record is the scoreboard. Parlays are not offered (Matt, setup).
+**Tap-to-bet (Matt, 2026-11-02 8:43 PM):** every OPEN pick (not pulled, started, graded or stale) has a "Hard Rock +115" button that
+fills the Hard Rock slip and a "DraftKings -110" button (DK's own price), on the page and in Discord as masked links. Links come from
+the NEWEST odds read (`includeLinks=true` on B/C/D reads, same credits; links kept for Hard Rock and DraftKings only). Hard Rock: the
+feed's `app.hardrock.bet/?deep_link_value=betslip/<id>` only opens the app, so we build `share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/<id>`
+(NHL, tested on Matt's phone). No link from the feed = no button; a full URL is never shown. Code: `odds.bet_links`, `run.publish`
+(`links`), `notify.bet_buttons`, `index.html` `betRow`. DraftKings is untested on a phone: Matt taps the first one.
 
 **Customer facts (fixed; locked in the setup interview 2026-10-25, Matt):**
 | Fact | Locked value |
@@ -175,6 +181,11 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-11-02 ~9:00 PM (CEO, Matt: tap-to-bet buttons for Hard Rock and DraftKings): ported NHL's `hardrock_slip`/`bet_links`/`betRow`.
+  `normalize` keeps DraftKings outcome links on non-A reads; publish adds `links` to open picks from the newest read (raw `link` no
+  longer published); Discord pick blocks end with `[Hard Rock +115](<url>) · [DraftKings -110](<url>)`. Fake world uses real link
+  shapes; new tests/test_bet_links.py (6). 70 tests pass. Rendered at 380px dark: two buttons, one-button and no-button cards OK, no
+  horizontal scroll, no console errors. Asked Matt to tap the first DraftKings button.
 - 2026-11-02 ~7:05 PM (CEO, Matt: show when a game was checked and when it is settled with 0 picks): slate games now carry
   `checks` (flag reads that came back), `last_check_at`, `final` (started, last planned check done, or inside latest_min) and
   `next_check_at`; the Games list shows a small muted line ("✓ Checked 6:30, 7:15, 7:40 PM · done, no picks" / "Checked 6:30 PM ·

@@ -6,6 +6,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import zlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROBE = os.path.join(ROOT, "probe")
@@ -30,9 +31,11 @@ def book(key, rows, at, link=False, feed_key="player_rebounds", extra=None):
     outs = []
     for nm, line, o, u in rows:
         a, b = outcome(nm, "over", line, o), outcome(nm, "under", line, u)
-        if link:
-            a["link"] = "https://app.hardrock.bet/slip?o=%s-over" % nm.split()[-1].lower()
-            b["link"] = "https://app.hardrock.bet/slip?o=%s-under" % nm.split()[-1].lower()
+        if link:                                   # real feed shapes (includeLinks=true): Hard Rock app link, DK outcome link
+            for x, sd in ((a, 1), (b, 2)):
+                oid = "51016545%06d%05d" % (zlib.crc32(("%s|%s" % (nm, line)).encode()) % 10 ** 6, sd)
+                x["link"] = ("https://app.hardrock.bet/?deep_link_value=betslip/%s" % oid) if key == "hardrockbet" else \
+                    ("https://sportsbook.draftkings.com/event/ev?outcomes=0QA%s" % oid)
         outs += [a, b]
     return {"key": key, "title": key, "last_update": at,
             "markets": [{"key": feed_key, "last_update": at, "outcomes": outs}] +
@@ -79,7 +82,7 @@ class World:
     def lal_utah(self, at, hr, others, extra_books=None, hr_extra=None, others_extra=None):
         """hr / others: [(player, line, over, under)] rebounds for Hard Rock and for every other book; *_extra: {feed_key: rows}."""
         bms = [book("hardrockbet", hr, at, link=True, extra=hr_extra)] + \
-              [book(b, others, at, extra=others_extra) for b in (extra_books or BOOKS)]
+              [book(b, others, at, link=(b == "draftkings"), extra=others_extra) for b in (extra_books or BOOKS)]
         self.write_odds("odds_lal_utah.json", {"id": "ev401909861", "bookmakers": bms})
 
     def run(self, now, *args, env=None):

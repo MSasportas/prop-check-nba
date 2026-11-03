@@ -178,7 +178,27 @@ def pick_line(p):
     else:
         nums = "%s, we say %s%%, price needs %s%%" % (gap_txt, p["p_pct"], p["breakeven_pct"])
     lines = ["**%s %s  %s**" % (p["player"], _bet(p), common.fmt_price(p["price"])), when, nums]
+    bet = bet_buttons(p)
+    if bet:
+        lines.append(bet)
     return "\n".join(lines)
+
+
+def bet_buttons(p):
+    """Tap-to-bet (Matt, 2026-11-02): masked links, never a bare URL. "[Hard Rock +115](<url>) · [DraftKings -110](<url>)".
+    Only links the feed gave us; none -> nothing."""
+    lk = p.get("links") if isinstance(p.get("links"), dict) else {}
+    out = []
+    hr = lk.get("hardrock") if isinstance(lk.get("hardrock"), dict) else {}
+    u = odds.safe_link(hr.get("url"))
+    if u and u.startswith(odds.HR_SHARE):
+        out.append("[Hard Rock %s](<%s>)" % (common.fmt_price(p["price"]), u))
+    dk = lk.get("draftkings") if isinstance(lk.get("draftkings"), dict) else {}
+    u = odds._dk_link(dk.get("url"))
+    if u:
+        pr = dk.get("price")
+        out.append("[DraftKings%s](<%s>)" % (" " + common.fmt_price(pr) if isinstance(pr, (int, float)) else "", u))
+    return " · ".join(out)
 
 
 def _open(x, now):

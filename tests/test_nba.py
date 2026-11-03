@@ -135,7 +135,10 @@ class TestEndToEnd(unittest.TestCase):
         self.assertEqual([p["id"] for p in s["picks"]], [PICK_ID])
         p = s["picks"][0]
         self.assertEqual((p["price"], p["rank"], p["read"]), (105, 1, "B"))
-        self.assertTrue(p["link"].startswith("https://"))
+        self.assertNotIn("link", p)                # the raw feed link only opens the app: never published
+        self.assertTrue(p["links"]["hardrock"]["url"].startswith(
+            "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/51016545"))
+        self.assertTrue(p["links"]["draftkings"]["url"].startswith("https://sportsbook.draftkings.com/"))
         # a second run with the same prices changes nothing in the Record
         n = len(self.w.events())
         self.w.run("2026-10-25T15:41:00-04:00")
@@ -149,7 +152,7 @@ class TestEndToEnd(unittest.TestCase):
         s = self.w.read("slate.json")
         self.assertEqual(s["picks"][0]["price"], 105)
         self.assertIsNone(s["picks"][0]["rank"])
-        self.assertIsNone(s["picks"][0]["link"])
+        self.assertIsNone(s["picks"][0]["links"])     # pulled: no buttons
         rec = self.w.read("record.json")
         self.assertEqual(rec["nights"], [])        # v2.3 (Matt, 2026-10-30): pulled picks are not on the page's Record; the log keeps them
 
