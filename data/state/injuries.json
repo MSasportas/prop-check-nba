@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T17:40:00-05:00",
+ "at": "2026-11-03T17:50:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -421,6 +421,13 @@
    "date": "2026-11-03T21:49Z",
    "note": "Hart is questionable for Wednesday's game against the Bulls due to right ankle soreness."
   },
+  "4432823": {
+   "status": "day-to-day",
+   "name": "Jaylin Williams",
+   "team": "OKC",
+   "date": "2026-11-03T22:33Z",
+   "note": "Williams will start in Monday's game against Cleveland, Justin Martinez of The Oklahoman reports."
+  },
   "5061603": {
    "status": "out",
    "name": "Thomas Sorber",
@@ -448,13 +455,6 @@
    "team": "OKC",
    "date": "2026-10-28T23:41Z",
    "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
-  },
-  "2991350": {
-   "status": "out",
-   "name": "Alex Caruso",
-   "team": "OKC",
-   "date": "2026-10-28T18:06Z",
-   "note": "Caruso (ankle) is expected to miss time due to an ankle sprain, Clemente Almanza of USA Today reports."
   },
   "5159925": {
    "status": "out",
