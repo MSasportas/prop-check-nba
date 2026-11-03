@@ -328,13 +328,13 @@
     "start": "2026-11-02T19:00:00-05:00",
     "away": "OKC",
     "home": "CLE",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/2 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:46 - 1st",
     "score": {
-     "OKC": "0",
-     "CLE": "0"
+     "OKC": "9",
+     "CLE": "11"
     }
    },
    {

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T19:10:00-05:00",
+ "at": "2026-11-02T19:20:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -345,18 +345,18 @@
    "note": "Thiero (knee) has been ruled out for Sunday's game against the Raptors."
   },
   "4431785": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Scotty Pippen Jr.",
    "team": "MEM",
-   "date": "2026-11-01T23:15Z",
+   "date": "2026-11-03T00:13Z",
    "note": "Pippen (back) is listed as doubtful for Monday's game against the Pelicans."
   },
   "4593016": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Quinten Post",
    "team": "MEM",
-   "date": "2026-11-01T23:13Z",
-   "note": "Post (ankle) is questionable to suit up for Monday's game against New Orleans."
+   "date": "2026-11-03T00:12Z",
+   "note": "Post (ankle) has been downgraded to out for Monday's game against the Pelicans."
   },
   "4432847": {
    "status": "out",
@@ -532,13 +532,6 @@
    "team": "SAC",
    "date": "2026-11-02T23:34Z",
    "note": "Cardwell (calf) has been ruled out for Monday's game against the Mavericks."
-  },
-  "3064440": {
-   "status": "day-to-day",
-   "name": "Zach LaVine",
-   "team": "SAC",
-   "date": "2026-11-01T23:20Z",
-   "note": "LaVine (elbow) is questionable to play in Monday's game against Dallas."
   },
   "4898371": {
    "status": "out",
