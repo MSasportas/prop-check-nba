@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T16:30:07-05:00",
+ "at": "2026-11-03T17:00:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -413,6 +413,13 @@
    "team": "NO",
    "date": "2026-10-30T21:32Z",
    "note": "Missi (knee) won't play in Saturday's game against Atlanta."
+  },
+  "3062679": {
+   "status": "day-to-day",
+   "name": "Josh Hart",
+   "team": "NY",
+   "date": "2026-11-03T21:49Z",
+   "note": "Hart is questionable for Wednesday's game against the Bulls due to right ankle soreness."
   },
   "5061603": {
    "status": "out",
