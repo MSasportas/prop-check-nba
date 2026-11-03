@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T16:10:04-05:00",
+ "at": "2026-11-03T16:20:06-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -29,12 +29,19 @@
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
-  "4251": {
+  "4066354": {
    "status": "day-to-day",
-   "name": "Paul George",
+   "name": "Payton Pritchard",
    "team": "BOS",
-   "date": "2026-11-03T06:08Z",
-   "note": "George will be rested Monday against Houston."
+   "date": "2026-11-03T21:12Z",
+   "note": "Pritchard is listed as questionable for Wednesday's game against Milwaukee due to a right shoulder contusion, Taylor Snow of the Celtics' official site reports."
+  },
+  "4065648": {
+   "status": "day-to-day",
+   "name": "Jayson Tatum",
+   "team": "BOS",
+   "date": "2026-11-03T21:10Z",
+   "note": "Tatum (rest) is questionable for Wednesday against the Bucks, Taylor Snow of the Celtics' official site reports."
   },
   "4433188": {
    "status": "out",
