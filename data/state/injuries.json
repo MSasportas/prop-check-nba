@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T17:10:00-05:00",
+ "at": "2026-11-03T17:20:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -64,19 +64,26 @@
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
   },
+  "5061575": {
+   "status": "out",
+   "name": "Kon Knueppel",
+   "team": "CHA",
+   "date": "2026-11-03T22:13Z",
+   "note": "Knueppel (hamstring) is listed as probable for Wednesday's game against the Nets."
+  },
+  "4395651": {
+   "status": "day-to-day",
+   "name": "Coby White",
+   "team": "CHA",
+   "date": "2026-11-03T22:06Z",
+   "note": "White (calf) is probable for Wednesday's game in Brooklyn."
+  },
   "4066218": {
    "status": "out",
    "name": "Grant Williams",
    "team": "CHA",
    "date": "2026-11-01T22:17Z",
    "note": "Williams (hamstring) is listed as out for Monday's game against the Pistons."
-  },
-  "5061575": {
-   "status": "out",
-   "name": "Kon Knueppel",
-   "team": "CHA",
-   "date": "2026-11-01T22:08Z",
-   "note": "Knueppel (hamstring) is listed as out for Monday's game versus the Pistons."
   },
   "4278067": {
    "status": "out",
@@ -92,19 +99,19 @@
    "date": "2026-11-03T21:03Z",
    "note": "Smith is probable for Wednesday's game against the Knicks with a left finger sprain."
   },
-  "4576087": {
-   "status": "day-to-day",
-   "name": "Peyton Watson",
-   "team": "CLE",
-   "date": "2026-11-03T05:29Z",
-   "note": "Watson (hamstring) is out for Monday's game against the Thunder, Chris Fedor of The Cleveland Plain Dealer reports."
-  },
   "4683747": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jaylon Tyson",
    "team": "CLE",
-   "date": "2026-11-03T05:29Z",
-   "note": "Tyson (ankle) has been ruled out for Monday's game against Oklahoma City."
+   "date": "2026-11-03T22:11Z",
+   "note": "Tyson is out for Wednesday's game against the Thunder due to a right ankle sprain."
+  },
+  "4576087": {
+   "status": "out",
+   "name": "Peyton Watson",
+   "team": "CLE",
+   "date": "2026-11-03T22:09Z",
+   "note": "Watson (hamstring) is out for Wednesday's game in Oklahoma City."
   },
   "6442": {
    "status": "day-to-day",
