@@ -320,7 +320,7 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Aaron Fox",
     "Stephon Castle",
@@ -413,9 +413,9 @@
    "starters": [
     "Darius Garland",
     "Kris Dunn",
-    "Max Strus",
+    "Gradey Dick",
     "Kobe Sanders",
-    "Isaiah Jackson"
+    "Brook Lopez"
    ],
    "status": {
     "Bradley Beal": "out",
@@ -451,5 +451,5 @@
    }
   }
  },
- "at": "2026-11-02T20:20:01-05:00"
+ "at": "2026-11-02T20:30:01-05:00"
 }
