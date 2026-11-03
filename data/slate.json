@@ -21,7 +21,7 @@
   "last_read_at": "2026-11-02T21:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-02T21:50:00-05:00"
+   "at": "2026-11-02T22:00:00-05:00"
   }
  },
  "games": [
@@ -62,7 +62,7 @@
    "away": "DET",
    "home": "CHA",
    "state": "in",
-   "detail": "6:19 - 4th",
+   "detail": "1:23 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -92,8 +92,8 @@
    "start": "2026-11-02T19:30:00-05:00",
    "away": "ATL",
    "home": "IND",
-   "state": "in",
-   "detail": "2:10 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -124,7 +124,7 @@
    "away": "BKN",
    "home": "NYK",
    "state": "in",
-   "detail": "6:31 - 4th",
+   "detail": "2:23 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -154,8 +154,8 @@
    "start": "2026-11-02T19:30:00-05:00",
    "away": "WAS",
    "home": "ORL",
-   "state": "in",
-   "detail": "48.8 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -186,7 +186,7 @@
    "away": "CHI",
    "home": "PHI",
    "state": "in",
-   "detail": "3:36 - 4th",
+   "detail": "5.2 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -217,7 +217,7 @@
    "away": "SAC",
    "home": "DAL",
    "state": "in",
-   "detail": "1:53 - 3rd",
+   "detail": "10:58 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -248,7 +248,7 @@
    "away": "NOP",
    "home": "MEM",
    "state": "in",
-   "detail": "25.9 - 3rd",
+   "detail": "7:58 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -279,7 +279,7 @@
    "away": "MIL",
    "home": "MIN",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "8:02 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -310,7 +310,7 @@
    "away": "BOS",
    "home": "HOU",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "8:24 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -341,7 +341,7 @@
    "away": "UTA",
    "home": "SAS",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "11:01 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -372,7 +372,7 @@
    "away": "POR",
    "home": "DEN",
    "state": "in",
-   "detail": "8:44 - 2nd",
+   "detail": "3:56 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -532,14 +532,18 @@
    "state_label": "Locked",
    "price_final": false,
    "pulled": null,
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "9 threes",
+    "units": 1.25
+   },
    "links": null,
    "rank": null
   }
  ],
  "empty": {
-  "text": "No picks yet today",
-  "why": "1388 lines read. Pinnacle moved alone on 23, none of them bettable yet.",
+  "text": "No open picks right now",
+  "why": "Every game has started.",
   "next": null
  },
  "counts": {
@@ -553,6 +557,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-02T21:50:00-05:00",
- "status_at": "2026-11-02T21:50:00-05:00"
+ "generated_at": "2026-11-02T22:00:00-05:00",
+ "status_at": "2026-11-02T22:00:00-05:00"
 }

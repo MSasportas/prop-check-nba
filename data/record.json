@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-02T19:30:00-05:00",
+ "generated_at": "2026-11-02T22:00:00-05:00",
  "summary": {
   "headline": {
-   "w": 17,
+   "w": 18,
    "l": 5,
    "push": 0,
    "void": 0,
-   "units": 11.09,
-   "hit_rate": 0.7727,
-   "needed": 0.5272,
-   "n": 22
+   "units": 12.34,
+   "hit_rate": 0.7826,
+   "needed": 0.5236,
+   "n": 23
   },
   "rows": [
    {
@@ -51,14 +51,14 @@
    {
     "key": "threes",
     "label": "3-pointers made",
-    "w": 4,
+    "w": 5,
     "l": 0,
     "push": 0,
     "void": 0,
-    "units": 4.77,
+    "units": 6.02,
     "hit_rate": 1.0,
-    "needed": 0.4675,
-    "n": 4
+    "needed": 0.4629,
+    "n": 5
    },
    {
     "key": "window:11 AM \u2192 90 min",
@@ -75,14 +75,14 @@
    {
     "key": "window:90 \u2192 45 min",
     "label": "Window 90 \u2192 45 min",
-    "w": 4,
+    "w": 5,
     "l": 2,
     "push": 0,
     "void": 0,
-    "units": 1.66,
-    "hit_rate": 0.6667,
-    "needed": 0.5426,
-    "n": 6
+    "units": 2.91,
+    "hit_rate": 0.7143,
+    "needed": 0.5286,
+    "n": 7
    },
    {
     "key": "window:45 \u2192 20 min",
@@ -101,10 +101,10 @@
  "nights": [
   {
    "date": "2026-11-02",
-   "graded": false,
-   "w": 0,
+   "graded": true,
+   "w": 1,
    "l": 0,
-   "units": 0,
+   "units": 1.25,
    "entries": [
     {
      "id": "2026-11-02:401909909:4278039:threes:3.5:over",
@@ -123,9 +123,9 @@
        "at": "2026-11-02T18:50:01-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "9 threes",
+     "units": 1.25,
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
