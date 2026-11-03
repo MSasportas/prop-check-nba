@@ -3,16 +3,20 @@
  "plan": {
   "allowance": 13.972,
   "reads": [
+   "A",
    "B",
    "C",
    "D"
+  ],
+  "spare": [
+   "A"
   ],
   "budget_today": 209,
   "pool_at_plan": 2948,
   "games_left": 211,
   "games_today": 15,
   "key_count": 6,
-  "made_at": "2026-11-02T05:00:01-05:00",
+  "made_at": "2026-11-02T23:50:01-05:00",
   "cost_per_read": 4
  },
  "events": {
