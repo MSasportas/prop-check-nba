@@ -262,7 +262,7 @@ class Run:
                                         "price", "price_at", "read", "p", "p_pct", "breakeven", "breakeven_pct",
                                         "market_fair", "n_books", "gap_ev", "final_ev", "model_p", "reason", "link", "rule",
                                         "pin_before", "pin_after", "pin_price_before", "pin_price_after", "others_move",
-                                        "n_others", "ev_vs_pin", "window", "gap_vs_pin")}
+                                        "n_others", "ev_vs_pin", "window", "gap_vs_pin", "book", "books")}
             p["id"] = it["id"]
             p["window"] = record.window_of(sh)
             p["team"], p["opp"] = teams.show(sh["team"]), teams.show(sh["opp"])
@@ -278,6 +278,14 @@ class Run:
                 try:
                     lk = odds.bet_links(getattr(self, "odds_doc", None), sh["game_id"], sh["market"], sh["pid"],
                                         sh["line"], sh["side"])
+                    # v2.5 (Matt, 2026-11-03): a button only for a book whose price passed the rule; it shows that book's
+                    # frozen price (the one to bet at or better). Picks before v2.5 were Hard Rock picks.
+                    bks = sh.get("books") or {"hardrock": {"price": sh["price"]}}
+                    for bk in ("hardrock", "draftkings"):
+                        if bk not in bks or not lk.get(bk):
+                            lk[bk] = None
+                        else:
+                            lk[bk]["price"] = bks[bk]["price"]
                     p["links"] = lk if (lk["hardrock"] or lk["draftkings"]) else None
                 except Exception as e:                     # a button is a nicety: never fails the page
                     common.log("bet links failed: %s" % common.short_err(e))
@@ -438,22 +446,21 @@ class Run:
 def rules_doc(cfg):
     ps, r, c, el, w = cfg["pin_solo"], cfg["reads"], cfg["customer"], cfg["eligibility"], cfg["watch"]["pin_judge"]
     return {"version": cfg["version"], "updated": cfg["updated"], "ui": cfg["ui"], "lines": [
-        "Hard Rock (Florida) prices only: player rebounds, points, assists and 3-pointers made, the main line, over or under. "
-        "No leg worse than %d." % c["worst_price"],
+        "Hard Rock or DraftKings (Florida) prices: player rebounds, points, assists and 3-pointers made, the main line, over or "
+        "under. No leg worse than %d." % c["worst_price"],
         "The rule: Pinnacle (the sharpest book) moves its odds on a line by %d+ points of chance between two of our price checks, "
-        "while the other books on that same line move less than %d points that way, AND Hard Rock's price is at or better than "
-        "Pinnacle's fair price (Pinnacle's new chance with its own margin taken out). We bet the side Pinnacle moved toward, at "
-        "Hard Rock's price."
-        % (round(100 * ps["min_move"]), round(100 * ps["others_max"])),
+        "and Hard Rock or DraftKings quotes that same line with a price at or better than Pinnacle's fair price (Pinnacle's new "
+        "chance with its own margin taken out). We bet the side Pinnacle moved toward. The other books don't matter. The pick "
+        "shows every book that passes; the best price is the one graded." % round(100 * ps["min_move"]),
         "Prices are checked at 11 AM and about %d, %d and %d minutes before each tip (the 11 AM check runs while spare odds credits last). A pick can come from the 90, 45 or "
         "20 minute check. The price shown is frozen and is the one graded." % (r["b_min"], r["c_min"], r["d_min"]),
-        "Hard Rock's price must be at least as good as Pinnacle's fair price after the move. It is being proven "
+        "The book's price must be at least as good as Pinnacle's fair price after the move. It is being proven "
         "on the Record (started 2026-10-28; judged at about 150 bets).",
         "A player listed Out or Doubtful is never picked. Questionable or game-time decision waits until he is cleared or "
         "confirmed starting. Needs %d+ games of history." % el["min_history"],
         "Early = injury news still open. Injury report clear = he and his team's main rotation are cleared. "
         "Starters confirmed = both teams' starting fives are posted.",
-        "A pick is pulled if he is ruled out or doubtful, or Hard Rock takes the line down. Pulled picks stay on the Record.",
+        "A pick is pulled if he is ruled out or doubtful, or every book it was shown at takes the line down. Pulled picks stay on the Record.",
         "One pick per player per market a night. No cap per game or per night. No parlays.",
         "Graded after the game at the shown price, 1 unit flat. Overtime counts. Did not play = void.",
         "Behind the scenes (Backstage tab, not the Record or Discord): %s, Hard Rock %d%%+ better than Pinnacle's fair price on the same line."

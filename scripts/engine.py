@@ -332,31 +332,53 @@ def _fair_over(q, hold_max):
     return odds.fair_two_sided(q["over"], q["under"]) if 0 <= h <= hold_max else None
 
 
+BOOK_LABEL = {"hardrock": "Hard Rock", "draftkings": "DraftKings"}
+
+
+def solo_books(cfg):
+    """The books a pick can be bet at, in order (customer.books; v2.5 Matt 2026-11-03: Hard Rock or DraftKings)."""
+    return [b for b in (cfg["customer"].get("books") or ["hardrock"]) if b in BOOK_LABEL]
+
+
+def book_market(f, book, market):
+    """One book's market dict on a read: Hard Rock lives in f["markets"], other books in f["others"][book]."""
+    if book == "hardrock":
+        return (f.get("markets") or {}).get(market) or {}
+    return (((f.get("others") or {}).get(book)) or {}).get(market) or {}
+
+
 def solo_moves(a, b, ctx):
-    """Pinnacle-solo-move sides between two consecutive reads a -> b of one game (config pin_solo, TEAM.md section 4).
-    For each Hard Rock main line: Pinnacle quotes that same line on both reads and its de-vigged chance moves >= min_move toward
-    a side, while the median move of the other books (same line, both reads, >= others_min of them) toward that side is under
-    others_max. The pick is that side at Hard Rock's price on read b. Every row is returned with `why` (None = qualifies)."""
+    """Pinnacle-move sides between two consecutive reads a -> b of one game (config pin_solo, TEAM.md section 4).
+    v2.5 (Matt, 2026-11-03): for each main line of a pick book (Hard Rock, DraftKings) that the same book quotes on both reads,
+    Pinnacle quotes that same line on both reads and its de-vigged chance moves >= min_move toward a side. The other books no longer
+    matter (others_max null; their move is still recorded). The side qualifies at every pick book whose price on read b is at or
+    better than Pinnacle's fair price (and within the price limits); the pick shows the best of those (ties: Hard Rock).
+    Every row is returned with `why` (None = qualifies)."""
     cfg = ctx.cfg
     ps = cfg["pin_solo"]
     g = ctx.games.get(b["game_id"])
     if not g:
         return []
+    at_b = common.parse_iso(b["at"])
     rows = []
     for market in cfg["markets"]:
-        hb = (b.get("markets") or {}).get(market)
-        if not hb:
-            continue
-
         def book(f, name):
             return odds.pairs(((((f.get("others") or {}).get(name)) or {}).get(market) or {}).get("outcomes"))
         pa, pb = book(a, "pinnacle"), book(b, "pinnacle")
-        ha = odds.pairs(((a.get("markets") or {}).get(market) or {}).get("outcomes"))    # Hard Rock's line on the earlier read
-        hr_stale = odds.is_stale(hb.get("last_update"), common.parse_iso(b["at"]), cfg["reads"]["stale_min"])
-        for pid, (line, p) in main_lines(odds.pairs(hb.get("outcomes"))).items():
-            k = (pid, line)
-            if k not in ha:
-                continue                                   # Hard Rock must quote this same line on both reads (QA 2026-10-28)
+        if not pb:
+            continue
+        lines = {}                                         # (pid, line) -> {book: (quote on b, stale)}
+        for bk in solo_books(cfg):
+            mb = book_market(b, bk, market)
+            if not mb:
+                continue
+            xa = odds.pairs(book_market(a, bk, market).get("outcomes"))
+            stale = odds.is_stale(mb.get("last_update"), at_b, cfg["reads"]["stale_min"])
+            for pid, (line, q) in main_lines(odds.pairs(mb.get("outcomes"))).items():
+                if (pid, line) in xa:                      # the book quotes this same line on both reads (QA 2026-10-28)
+                    lines.setdefault((pid, line), {})[bk] = (q, stale)
+        for k, quotes in lines.items():
+            pid, line = k
             fa, fb = _fair_over(pa.get(k), ps["hold_max"]), _fair_over(pb.get(k), ps["hold_max"])
             if fa is None or fb is None or abs(fb - fa) < ps["min_move"] - EPS:
                 continue
@@ -369,38 +391,53 @@ def solo_moves(a, b, ctx):
                 x, y = _fair_over(book(a, name).get(k), ps["hold_max"]), _fair_over(book(b, name).get(k), ps["hold_max"])
                 if x is not None and y is not None:
                     mv.append(sgn * (y - x))
-            team = p.get("team") or (ctx.people.get(pid) or {}).get("team")
-            price = p[side]
             pin_a = fa if side == "over" else 1 - fa
             pin_b = fb if side == "over" else 1 - fb
-            r = {"rule": "pin_solo", "pid": pid, "name": p["name"], "team": team, "opp": g["home"] if team == g["away"] else g["away"],
+            books = {}
+            for bk, (q, stale) in quotes.items():
+                price = q.get(side)
+                if price is None:
+                    continue
+                ev = round(odds.ev(pin_b, price), 4)
+                if stale:
+                    why = "%s price is stale" % BOOK_LABEL[bk]
+                elif ps.get("min_ev_vs_pin") is not None and ev < ps["min_ev_vs_pin"] - EPS:
+                    # v2.3 (Matt, 2026-10-29): the price must be at or better than Pinnacle's FAIR price (its new chance with
+                    # Pinnacle's own margin taken out); v2.5: checked at each pick book
+                    why = "%s price is worse than Pinnacle's fair price (%+.1f%%)" % (BOOK_LABEL[bk], 100 * ev)
+                elif price < cfg["customer"]["worst_price"]:
+                    why = "%s price worse than %d" % (BOOK_LABEL[bk], cfg["customer"]["worst_price"])
+                elif price > ps["max_price"]:
+                    why = "%s price above +%d" % (BOOK_LABEL[bk], ps["max_price"])
+                else:
+                    why = None
+                books[bk] = {"price": price, "ev_vs_pin": ev, "why": why, "link": q.get("link_" + side)}
+            if not books:
+                continue
+            ok = [bk for bk in books if books[bk]["why"] is None]
+            pool = ok or list(books)
+            best = max(pool, key=lambda bk: (books[bk]["ev_vs_pin"], -solo_books(cfg).index(bk)))
+            q0 = quotes[best][0]
+            team = q0.get("team") or (ctx.people.get(pid) or {}).get("team")
+            price = books[best]["price"]
+            r = {"rule": "pin_solo", "pid": pid, "name": q0["name"], "team": team, "opp": g["home"] if team == g["away"] else g["away"],
                  "home": team == g["home"], "game_id": g["id"], "market": market, "line": line, "side": side, "price": price,
+                 "book": best, "books": {bk: {"price": v["price"], "ev_vs_pin": v["ev_vs_pin"]} for bk, v in books.items() if bk in ok},
+                 "book_why": {bk: v["why"] for bk, v in books.items()},
                  "read": b["read"], "at": b["at"], "prev_at": a["at"], "prev_read": a["read"],
-                 "window": window_label(a["read"], b["read"]), "link": p.get("link_" + side),
+                 "window": window_label(a["read"], b["read"]), "link": books[best]["link"],
                  "pin_before": round(pin_a, 4), "pin_after": round(pin_b, 4),
                  "pin_price_before": (pa.get(k) or {}).get(side), "pin_price_after": (pb.get(k) or {}).get(side),
                  "others_move": round(statistics.median(mv), 4) if mv else None, "n_others": len(mv),
-                 "ev_vs_pin": round(odds.ev(pin_b, price), 4)}
+                 "ev_vs_pin": books[best]["ev_vs_pin"]}
             pp = (pb.get(k) or {}).get(side)
             r["gap_vs_pin"] = round(odds.break_even(pp) - odds.break_even(price), 4) if pp is not None else None
-            if hr_stale:
-                r["why"] = "Hard Rock price is stale"
-            elif len(mv) < ps["others_min"]:
+            if not ok:
+                r["why"] = "; ".join(v["why"] for v in books.values())
+            elif ps.get("others_max") is not None and len(mv) < ps.get("others_min", 0):
                 r["why"] = "only %d other books on this line" % len(mv)
-            elif statistics.median(mv) >= ps["others_max"] - EPS:
+            elif ps.get("others_max") is not None and statistics.median(mv) >= ps["others_max"] - EPS:
                 r["why"] = "the other books moved too (%+.1f pts)" % (100 * statistics.median(mv))
-            elif ps.get("min_ev_vs_pin") is not None and r["ev_vs_pin"] < ps["min_ev_vs_pin"] - EPS:
-                # v2.3 (Matt, 2026-10-29): Hard Rock's price must be at or better than Pinnacle's FAIR price (its new chance with
-                # Pinnacle's own margin taken out), not just better than Pinnacle's posted price
-                r["why"] = "Hard Rock price is worse than Pinnacle's fair price (%+.1f%%, needs %+.1f%%)" % (
-                    100 * r["ev_vs_pin"], 100 * ps["min_ev_vs_pin"])
-            elif ps.get("min_gap_vs_pin") is not None and (r["gap_vs_pin"] is None or r["gap_vs_pin"] < ps["min_gap_vs_pin"] - EPS):
-                r["why"] = "Hard Rock not %g+ pts better than Pinnacle's price (%s)" % (
-                    100 * ps.get("min_gap_vs_pin", 0), "no Pinnacle price" if r["gap_vs_pin"] is None else "%+.1f" % (100 * r["gap_vs_pin"]))
-            elif price < cfg["customer"]["worst_price"]:
-                r["why"] = "price worse than %d" % cfg["customer"]["worst_price"]
-            elif price > ps["max_price"]:
-                r["why"] = "price above +%d" % ps["max_price"]
             else:
                 r["why"] = ctx.eligible(pid, team, g)
             rows.append(r)
@@ -421,20 +458,19 @@ def window_label(prev_read, read):
 
 def solo_reason(r):
     pb, pa = r.get("pin_price_before"), r.get("pin_price_after")
-    held = "held" if (r.get("others_move") or 0) < 0.01 else "moved %.0f pt" % (100 * r["others_move"])
-    s = "Pinnacle moved the %s from %s to %s (%.0f%% to %.0f%%); %d other books %s." % (
+    s = "Pinnacle moved the %s from %s to %s (%.0f%% to %.0f%%)." % (
         r["side"], common.fmt_price(pb) if pb is not None else "?", common.fmt_price(pa) if pa is not None else "?",
-        100 * r["pin_before"], 100 * r["pin_after"], r["n_others"], held)
-    s += " Hard Rock price: %s" % common.fmt_price(r["price"])
-    if r.get("ev_vs_pin") is not None:
-        s += (", %.1f%% better than Pinnacle's fair price." if r["ev_vs_pin"] >= 0 else ", %.1f%% worse than Pinnacle's fair price.") \
-            % abs(100 * r["ev_vs_pin"])
-    elif r.get("gap_vs_pin") is not None:
-        s += ", %.1f pts better than Pinnacle's." % (100 * r["gap_vs_pin"]) if r["gap_vs_pin"] >= 0 else \
-            ", %.1f pts worse than Pinnacle's." % (-100 * r["gap_vs_pin"])
-    else:
-        s += "."
-    return s
+        100 * r["pin_before"], 100 * r["pin_after"])
+    books = r.get("books") or {r.get("book", "hardrock"): {"price": r["price"], "ev_vs_pin": r.get("ev_vs_pin")}}
+    bits = []
+    for bk in sorted(books, key=lambda x: list(BOOK_LABEL).index(x) if x in BOOK_LABEL else 9):
+        v = books[bk]
+        t = "%s %s" % (BOOK_LABEL.get(bk, bk), common.fmt_price(v["price"]))
+        if v.get("ev_vs_pin") is not None:
+            t += (" is %.1f%% better than Pinnacle's fair price" if v["ev_vs_pin"] >= 0 else " is %.1f%% worse than Pinnacle's fair price") \
+                % abs(100 * v["ev_vs_pin"])
+        bits.append(t)
+    return s + " " + "; ".join(bits) + "."
 
 
 def solo_pairs(fs):
@@ -445,10 +481,10 @@ def solo_pairs(fs):
 
 # ---------------------------------------------------------------- the step
 def latest_fetches(odds_doc):
-    """{game_id: [fetches with any Hard Rock market, oldest first]}"""
+    """{game_id: [fetches with any Hard Rock or DraftKings market, oldest first]}"""
     out = {}
     for f in (odds_doc or {}).get("fetches", []):
-        if f.get("markets"):
+        if f.get("markets") or ((f.get("others") or {}).get("draftkings")):
             out.setdefault(f["game_id"], []).append(f)
     return out
 
@@ -516,7 +552,7 @@ def step(ctx, odds_doc):
                     "ev_vs_pin": r["ev_vs_pin"], "gap_vs_pin": r["gap_vs_pin"],
                     "final_ev": round(abs(r["pin_after"] - r["pin_before"]), 4),
                     "reason": solo_reason(r), "state": ctx.settled(r["pid"], r["team"], g), "link": r.get("link"),
-                    "window": r["window"]}
+                    "window": r["window"], "book": r["book"], "books": r["books"]}
             pid_ = pick_id(slate, r["game_id"], r["pid"], r["line"], r["side"], r["market"])
             if pid_ in items:
                 continue
@@ -587,16 +623,29 @@ def step(ctx, odds_doc):
                         "reason": "Now listed %s" % st, "if_bet": OUT_IF_BET})
             continue
         mk = sh.get("market", "rebounds")
+        if sh.get("rule") == "pin_solo":
+            # a Pinnacle pick is a signal, not a price gap: it is pulled only if every book it was shown at takes the line down
+            bks = list(sh.get("books") or {}) or ["hardrock"]
+            fs = [f for f in by_game.get(sh["game_id"], []) if f["at"] > sh["price_at"]
+                  and any(book_market(f, bk, mk) for bk in bks)]          # a read without this market says nothing
+            if fs:
+                f = fs[-1]
+                gone = []
+                for bk in bks:
+                    q = odds.pairs(book_market(f, bk, mk).get("outcomes")).get((sh["pid"], sh["line"]))
+                    if not q or q.get(sh["side"]) is None:
+                        gone.append(bk)
+                if len(gone) == len(bks):
+                    what, if_bet = advice("line_gone", None, sh["price"], cfg)
+                    if bks != ["hardrock"]:
+                        what = "%s took the line down" % " and ".join(BOOK_LABEL[x] for x in bks)
+                    new.append({"t": "pulled", "id": i, "at": common.iso(now), "code": "line_gone", "reason": what,
+                                "if_bet": if_bet})
+                    continue
         later = [(f, rows) for f, rows in evals.get(sh["game_id"], [])
                  if f["at"] > sh["price_at"] and mk in (f.get("markets") or {})]   # a read without this market says nothing
-        if later and sh.get("rule") == "pin_solo":
-            # a Pinnacle-solo pick is a signal, not a price gap: it is pulled only if Hard Rock takes the line down
-            hp = odds.pairs(later[-1][0]["markets"][mk].get("outcomes"))
-            q = hp.get((sh["pid"], sh["line"]))
-            if not q or q.get(sh["side"]) is None:
-                what, if_bet = advice("line_gone", None, sh["price"], cfg)
-                new.append({"t": "pulled", "id": i, "at": common.iso(now), "code": "line_gone", "reason": what, "if_bet": if_bet})
-                continue
+        if sh.get("rule") == "pin_solo":
+            pass
         elif later:
             code, row = pull_check(sh, later[-1][1], cfg)
             if code:

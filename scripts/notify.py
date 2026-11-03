@@ -41,7 +41,8 @@ TIMEOUT = 5
 BUDGET_SEC = 14             # all posts of one run together
 HELLO = ("Prop Check NBA notifications are on. You'll get a message only when there is a bet to place, "
          "when one is pulled, or when odds keys need attention.")
-CHECK = "Bet only at this price or better. If Hard Rock shows worse, skip it."
+LABEL = {"hardrock": "Hard Rock", "draftkings": "DraftKings"}
+CHECK = "Bet only at the price shown for that book or better. If the book shows worse, skip it."
 KEEP_DAYS = 2
 
 
@@ -167,17 +168,24 @@ def pick_line(p):
     gap = 100 * p["gap_ev"] if isinstance(p.get("gap_ev"), (int, float)) else None
     gap_txt = ("Gap %+.1f%% vs market" % gap) if isinstance(gap, (int, float)) else "Gap vs market"
     if p.get("rule") == "pin_solo":
-        nums = "Pinnacle moved: %s → %s (%d%% → %d%%)\nHard Rock %s needs %s%%" % (
+        nums = "Pinnacle moved: %s → %s (%d%% → %d%%)" % (
             common.fmt_price(p["pin_price_before"]) if p.get("pin_price_before") is not None else "?",
             common.fmt_price(p["pin_price_after"]) if p.get("pin_price_after") is not None else "?",
-            round(100 * p["pin_before"]), round(100 * p["pin_after"]), common.fmt_price(p["price"]), p["breakeven_pct"])
-        if isinstance(p.get("ev_vs_pin"), (int, float)):
-            nums += ", %+.1f%% vs Pinnacle's fair price" % (100 * p["ev_vs_pin"])
-        elif isinstance(p.get("gap_vs_pin"), (int, float)):
-            nums += ", %.1f pts better than Pinnacle" % (100 * p["gap_vs_pin"])
+            round(100 * p["pin_before"]), round(100 * p["pin_after"]))
+        books = p.get("books") or {"hardrock": {"price": p["price"], "ev_vs_pin": p.get("ev_vs_pin")}}
+        bits = []
+        for bk in ("hardrock", "draftkings"):
+            if bk in books:
+                v = books[bk]
+                t = "%s %s" % (LABEL[bk], common.fmt_price(v["price"]))
+                if isinstance(v.get("ev_vs_pin"), (int, float)):
+                    t += " (%+.1f%% vs Pinnacle's fair)" % (100 * v["ev_vs_pin"])
+                bits.append(t)
+        nums += "\n" + " · ".join(bits)
     else:
         nums = "%s, we say %s%%, price needs %s%%" % (gap_txt, p["p_pct"], p["breakeven_pct"])
-    lines = ["**%s %s  %s**" % (p["player"], _bet(p), common.fmt_price(p["price"])), when, nums]
+    lines = ["**%s %s  %s**" % (p["player"], _bet(p), common.fmt_price(p["price"])) +
+             (" (%s)" % LABEL[p["book"]] if p.get("book") in LABEL and len(p.get("books") or {}) == 1 else ""), when, nums]
     bet = bet_buttons(p)
     if bet:
         lines.append(bet)
@@ -186,13 +194,14 @@ def pick_line(p):
 
 def bet_buttons(p):
     """Tap-to-bet (Matt, 2026-11-02): masked links, never a bare URL. "[Hard Rock +115](<url>) · [DraftKings -110](<url>)".
-    Only links the feed gave us; none -> nothing."""
+    v2.5: only books whose price passed the rule (publish leaves the others None), each at its own shown price. No link -> nothing."""
     lk = p.get("links") if isinstance(p.get("links"), dict) else {}
     out = []
     hr = lk.get("hardrock") if isinstance(lk.get("hardrock"), dict) else {}
     u = odds.safe_link(hr.get("url"))
     if u and u.startswith(odds.HR_SHARE):
-        out.append("[Hard Rock %s](<%s>)" % (common.fmt_price(p["price"]), u))
+        pr = hr.get("price", p.get("price"))
+        out.append("[Hard Rock%s](<%s>)" % (" " + common.fmt_price(pr) if isinstance(pr, (int, float)) else "", u))
     dk = lk.get("draftkings") if isinstance(lk.get("draftkings"), dict) else {}
     u = odds._dk_link(dk.get("url"))
     if u:

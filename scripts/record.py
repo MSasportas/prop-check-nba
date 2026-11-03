@@ -199,6 +199,7 @@ def _entry(it, items):
             "prices": [{"price": p["price"], "at": p["at"]} for p in it["prices"]],
             "result": (g or {}).get("result"), "actual": (g or {}).get("actual_text"),
             "units": (g or {}).get("units"), "pulled": _pulled(it), "legs": [], "window": window_of(sh),
+            "book": sh.get("book") or "hardrock",
             "under_fair": under_fair(sh)}
 
 
@@ -304,6 +305,12 @@ def build_views(events, cfg):
         sub = [e for e in singles if e.get("window") == w]
         if any(e["result"] for e in sub):
             rows.append(_row("window:" + w, "Window " + w, sub, need))
+    # v2.5 (Matt, 2026-11-03): picks can be at Hard Rock or DraftKings; one row per book once a DraftKings pick is graded
+    if any(e.get("book") == "draftkings" and e["result"] for e in singles):
+        for bk, lab in (("hardrock", "Hard Rock"), ("draftkings", "DraftKings")):
+            sub = [e for e in singles if (e.get("book") or "hardrock") == bk]
+            if any(e["result"] for e in sub):
+                rows.append(_row("book:" + bk, "Book " + lab, sub, need))
     par = [e for e in every if e["kind"] == "parlay" and not e["pulled"]]
     if any(e["result"] for e in par):
         rows.append(_row("parlays", "Parlays", par, need))

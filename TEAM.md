@@ -22,7 +22,7 @@ feed's `app.hardrock.bet/?deep_link_value=betslip/<id>` only opens the app, so w
 **Customer facts (fixed; locked in the setup interview 2026-10-25, Matt):**
 | Fact | Locked value |
 |---|---|
-| Book | Hard Rock Florida only. A pick needs a real Hard Rock number |
+| Book | **Hard Rock or DraftKings** (Florida) (Matt, 2026-11-03 6:49 AM; was Hard Rock only). A pick needs a real number at one of them |
 | Markets | **Player rebounds, points, assists and 3-pointers made (points + assists added 2026-10-25 8:22 PM; threes 2026-10-26 11:21 PM, Matt). Main line only (no alt ladders). Over and under.** Everything else is out |
 | Price | No single leg worse than -200. Plus money is fine |
 | Parlays | **Off** |
@@ -47,8 +47,17 @@ QA (tests every change before it goes live, real browser at 380px, hasn't seen t
 Rule changes: the Data Scientist names the sample first; the Sharp decides; log it in section 8. Customer facts (section 1) never change
 without Matt.
 
-## 4. Current rules (v2.4, 2026-11-02). Source of truth: `config/rules.json` (`pin_solo`, `watch.pin_judge`)
-**Live rule: Pinnacle moves, the other books move less than 2 pts, and Hard Rock is at or better than Pinnacle's FAIR price** (Matt, 2026-10-28; widened from "alone" < 1 pt at 11:52 AM, after research runs 1-6: Hard Rock's NBA main lines sit ~6% under the market
+## 4. Current rules (v2.5, 2026-11-03). Source of truth: `config/rules.json` (`pin_solo`, `watch.pin_judge`)
+**v2.5 (Matt, 2026-11-03 6:49 AM): the other books no longer matter, and a pick can be at Hard Rock OR DraftKings.** For each main
+line of a pick book (Hard Rock, DraftKings; that book quotes the same line on both reads), Pinnacle quotes that same line on both reads
+and moves >= 2 pts toward a side; the side qualifies at each pick book whose price is at or better than Pinnacle's FAIR price (and
+-200..+200, not stale). The pick lists every passing book (`books`), with a tap-to-bet button only for those; headline and GRADED price =
+the best passing price (ties: Hard Rock), `book` = that book. Pulled only if EVERY book it was shown at removes the line (or injury). The
+Record adds a row per book once a DraftKings pick is graded. The text below is v2.4 history (others gate now `others_max` null).
+Replay Oct 26-Nov 2 (consecutive reads, one pick per player/market): v2.4 23 picks 18-5 +12.34u 78%; HR only without the others gate
+29 23-6 +15.74u 79%; **v2.5 (HR or DK, no others gate) 84 picks 52-32 +16.16u 62%, +19% a bet**; DK alone 76 45-31 +9.80u 59%.
+CEO flagged to Matt (11-03): dropping the others gate is free; adding DraftKings triples volume but costs hit rate (78% -> 62%).
+**Previous live rule (v2.4): Pinnacle moves, the other books move less than 2 pts, and Hard Rock is at or better than Pinnacle's FAIR price** (Matt, 2026-10-28; widened from "alone" < 1 pt at 11:52 AM, after research runs 1-6: Hard Rock's NBA main lines sit ~6% under the market
 and Gap + Guard found 0 bets in 3,318 sides). `engine.solo_moves`: between two consecutive reads of a game, on Hard Rock's main line
 (Hard Rock quotes that same line on BOTH reads), Pinnacle quotes the same line on both reads and its de-vigged chance moves >= 2 pts
 (`min_move` 0.02) toward a side, while the median move toward that side of the other books (same line, both reads, >= 4 books,
@@ -175,6 +184,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
 |---|---|---|---|
+| 2026-11-03 7:30 AM (CEO, Matt's order; Builder, QA) | **v2.5: other books dropped from the rule; DraftKings added as a pick book** (customer fact: Hard Rock or DraftKings). Same line at the pick book and Pinnacle on both reads, Pinnacle 2+ pts, book price at or better than Pinnacle's fair; buttons only for passing books; graded at the best passing price; per-book Record rows. First picks Wed 11-04 (no games 11-03) | Matt: "As long as hard rock and pinnacle are showing the same lines I don't care about the other books... add draftkings... If hard rock's price is better than fair provide hard rock link, if draftkings provide draftkings, if both both" | Replay Oct 26-Nov 2: v2.4 23 18-5 +12.34u 78%; HR no others gate 29 23-6 +15.74u 79%; v2.5 84 52-32 +16.16u 62% (10.5 a night); DK-only picks ~59%. Flagged the hit-rate cost to Matt |
 | 2026-11-02 11:45 PM (CEO, Matt's order; Builder) | **v2.4: the 11 AM read is back** from 11-04 (no games 11-03), paid from spare credits (`reads.spare` ["A"]); it never takes credits the B/C/D reads need this month, pauses with a page banner when spare runs out. Rules text updated. No pick-rule change | Matt: volume too low since the A read dropped on 11-01; "let's add the 11am back", he adds keys before they run out | Replay Oct 26-31 (2+, fair price): with 11 AM 3.7 picks a night 17-5 +11.09u 77% vs without 2.2 a night 9-4 +4.23u 69% |
 | 2026-10-29 8:00 AM (CEO, Matt's order; Builder) | **v2.3: fair-price gate REPLACES the v2.2 gap gate** (`pin_solo.min_ev_vs_pin` 0.0; `min_gap_vs_pin` removed). Hard Rock's price must be at or better than Pinnacle's fair price on the side (EV vs Pinnacle >= 0%). Reason text, Discord and rules text now say "better than Pinnacle's fair price". Nothing was open to pull (no picks yet today); Oct 28's picks stay on the Record as shown | Matt: Run 7 showed v2.2 only reaches about fair; "integrate the fair price instead, I like the volume" (about 13 picks a busy night, 1-2 a quiet one) | Research Run 7 discovery Oct 25-28: at-or-better-than-fair 16 bets 12-4 +7.12u vs the rest 28 bets 16-12 +1.33u (Oct 28 alone 13 bets 9-4 +4.51u vs 17 bets 9-8 -0.93u). One lead, ~22 looks at 4 nights: judged forward on the live Record |
 | 2026-10-28 6:15 PM (CEO, Matt's order) | **v2.2: Hard Rock must be 2+ pts better than Pinnacle's new price** (`pin_solo.min_gap_vs_pin` 0.02). Reason text shows the gap. Picks already shown tonight stay | Matt: Bane O2.5 threes was sent at HR -140 while Pinnacle was -134 (Pinnacle was catching up to the other books, not leading); "Hard Rock needs to still be better than Pinnacle" with a required gap | Replay Oct 25-27 by gap: 0+ 26 bets 19-7; 1+ 21 15-6; 2+ 13 10-3; engine replay v2.2 14 bets 10-4 +4.87u. Tonight 7 of 11 picks would pass |
@@ -185,6 +195,10 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-11-03 ~7:30 AM (CEO, Matt: drop the other books, add DraftKings): built v2.5 (`engine.solo_moves` per pick book, `customer.books`,
+  `pin_solo.others_max/min` null, `latest_fetches` counts DK-only reads, line_gone only when every shown book drops it, publish/Discord
+  buttons only for passing books at their frozen price, page "Bet at DraftKings -105 / Hard Rock -110 or better", per-book Record rows).
+  Replay data/replay/pin_solo.json NOT regenerated (still the v2.3/2.4 rule on Oct 25-27). 75 tests pass; 380px render checked.
 - 2026-11-02 ~10 PM-11:45 PM (CEO, Matt's volume questions; research only unless noted): replays (Oct 26-Nov 2, no injury replay)
   of the Pinnacle-alone signal by move size (1+..7+) x Hard Rock check (fair / posted / none): 2+ fair 23 18-5 +12.34u; 2+ posted
   160 90-57 +19.68u 61%; 2+ none 179 98-65 +18.66u; 4+ posted 35 21-9 +9.02u 70%. Rebounds held up without the fair check at 2-3 pt

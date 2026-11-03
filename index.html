@@ -280,7 +280,7 @@ var BASE = FIX ? 'fixtures/' + FIX + '/' : 'data/';
 var NOW_Q = ms(String(Q.get('now') || '').replace(' ', '+'));
 var TZ = 'America/New_York';
 var STALE_MIN = 30, REFRESH_DEF = 120;
-var MARKET_LINE = 'Prices: Hard Rock only · No leg worse than -200 · Rebounds, points, assists, 3-pointers · Main line only';
+var MARKET_LINE = 'Prices: Hard Rock or DraftKings · No leg worse than -200 · Rebounds, points, assists, 3-pointers · Main line only';
 
 var S = {
   slate: null, record: null, rules: null, recordErr: null, replay: null,
@@ -622,8 +622,12 @@ function pickCard(p, d, opts) {
   card.appendChild(h('div', { class: 'r2' }, h('div', { class: 'bet', text: shortBet(p) }), h('div', { class: 'price', text: odds(p.price) })));
 
   var pa = fStamp(p.price_at);
-  if (!started) card.appendChild(h('div', { class: 'betat' }, 'Bet at ', h('b', { text: odds(p.price) + ' or better' }),
-    ' · worse? skip it', pa ? ' · ' + (stale() ? 'old price, read ' : 'read ') + pa : ''));
+  if (!started) {
+    var bp = bookPrices(p), bat = [];
+    bp.forEach(function (x, i) { if (i) bat.push(' / '); bat.push(x.label + ' ', h('b', { text: odds(x.price) })); });
+    card.appendChild(h('div', { class: 'betat' }, 'Bet at ', bat, h('b', { text: ' or better' }),
+      ' · worse? skip it', pa ? ' · ' + (stale() ? 'old price, read ' : 'read ') + pa : ''));
+  }
 
   if (!started) { var br = betRow(p); if (br) card.appendChild(br); }
 
@@ -668,20 +672,31 @@ function betRow(p) {
     x.addEventListener('click', stop); x.addEventListener('keydown', stop); return x;
   };
   return h('div', { class: 'betrow' },
-    hr ? a(hr, 'hr', 'Hard Rock' + (num(p.price) != null ? ' ' + odds(p.price) : '')) : null,
-    du ? a(du, 'alt', 'DraftKings' + (num(dk.price) != null ? ' ' + odds(dk.price) : '')) : null);
+    hr ? a(hr, 'hr', 'Hard Rock' + (num(lk.hardrock.price) != null ? ' ' + odds(lk.hardrock.price) : (num(p.price) != null ? ' ' + odds(p.price) : ''))) : null,
+    du ? a(du, hr ? 'alt' : 'hr', 'DraftKings' + (num(dk.price) != null ? ' ' + odds(dk.price) : '')) : null);
+}
+/* v2.5 (Matt, 2026-11-03): a pick can be at Hard Rock or DraftKings; p.books = the books whose price passed, best first */
+var BOOK_NAME = { hardrock: 'Hard Rock', draftkings: 'DraftKings' };
+function bookPrices(p) {
+  var b = isObj(p.books) ? p.books : null, out = [];
+  if (b) ['hardrock', 'draftkings'].forEach(function (k) { if (isObj(b[k]) && num(b[k].price) != null) out.push({ key: k, label: BOOK_NAME[k], price: b[k].price, ev: b[k].ev_vs_pin }); });
+  if (!out.length) out.push({ key: 'hardrock', label: 'Hard Rock', price: p.price, ev: p.ev_vs_pin });
+  out.sort(function (x, y) { return (num(y.ev) || 0) - (num(x.ev) || 0); });
+  return out;
 }
 /* rule pin_solo: "Pinnacle: -118 → -149 (52% → 56%) · 6 books held" / "Hard Rock -120 needs 55%" */
 function pinRow(p) {
-  var pb = num(p.pin_price_before), pa2 = num(p.pin_price_after), cb = pctNear(p.pin_before), ca = pctNear(p.pin_after), no = num(p.n_others);
+  var pb = num(p.pin_price_before), pa2 = num(p.pin_price_after), cb = pctNear(p.pin_before), ca = pctNear(p.pin_after);
   var hasP = pb != null || pa2 != null, l1 = [h('b', { text: 'Pinnacle' }), ' '];
   if (hasP) l1.push(h('span', { class: 'nw' }, odds(pb), h('span', { class: 'arr', text: ' → ' }), odds(pa2)));
   if (cb || ca) l1.push(' ', h('span', { class: 'nw', text: (hasP ? '(' : '') + (cb || '—') + ' → ' + (ca || '—') + (hasP ? ')' : '') }));
-  if (l1.length === 2) l1.push('moved alone');
-  var be = pctB(p);
-  return h('div', { class: 'pin' }, h('div', { class: 'p1' }, l1),
-    no != null ? h('div', { class: 'p2', text: no + (no === 1 ? ' other book held' : ' other books held') }) : null,
-    h('div', { class: 'p2' }, 'Hard Rock ', h('b', { text: odds(p.price) }), be ? ' needs ' + be : ''));
+  if (l1.length === 2) l1.push('moved');
+  var rows = bookPrices(p).map(function (x) {
+    var ev = num(x.ev);
+    return h('div', { class: 'p2' }, x.label + ' ', h('b', { text: odds(x.price) }),
+      ev != null ? ' · ' + (ev >= 0 ? '+' : '') + (Math.round(ev * 1000) / 10) + "% vs Pinnacle's fair" : '');
+  });
+  return h('div', { class: 'pin' }, h('div', { class: 'p1' }, l1), rows);
 }
 function pulledCard(p, d) {
   var pl = isObj(p.pulled) ? p.pulled : {}, at = fTime(pl.at);
@@ -879,7 +894,7 @@ function renderRecord() {
       h('div', { role: 'row' }, h('div', { class: 'k', text: 'Hit rate' }), h('div', { class: 'v' + (num(hd.hit_rate) != null && num(hd.needed) != null ? (hd.hit_rate >= hd.needed ? ' pos' : ' neg') : ''), text: hr || '—' }),
         h('div', { class: 's', text: nd ? 'needed ' + nd : 'needed —' }))));
     var bar = chanceBar(hd.hit_rate, hd.needed); if (bar) { bar.style.marginTop = '10px'; app.appendChild(bar); }
-    app.appendChild(h('div', { class: 'subline', text: n + ' graded picks, at the posted Hard Rock price. Pulled picks are not counted here.' }));
+    app.appendChild(h('div', { class: 'subline', text: n + ' graded picks, at the posted price. Pulled picks are not counted here.' }));
 
     var rows = arr(sum.rows).filter(function (r) { return isObj(r) && ((num(r.w) || 0) + (num(r.l) || 0) + (num(r.push) || 0) + (num(r.void) || 0)) > 0; });
     /* market rows first; "window:<label>" rows go in their own small table under "By window" */
