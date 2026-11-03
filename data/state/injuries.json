@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T00:40:00-05:00",
+ "at": "2026-11-03T00:50:01-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -450,10 +450,10 @@
    "note": "Topic (back) will remain on the inactive list for Wednesday's game in Dallas."
   },
   "4712849": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Anthony Black",
    "team": "ORL",
-   "date": "2026-11-02T17:05Z",
+   "date": "2026-11-03T05:35Z",
    "note": "Black will be rested Monday against the Wizards."
   },
   "4065654": {

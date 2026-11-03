@@ -511,10 +511,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:47 - 4th",
+    "detail": "6.0 - 4th",
     "score": {
-     "PHX": "108",
-     "GS": "111"
+     "PHX": "112",
+     "GS": "115"
     }
    },
    {
@@ -526,10 +526,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:40 - 4th",
+    "detail": "37.4 - 4th",
     "score": {
-     "TOR": "113",
-     "LAC": "109"
+     "TOR": "118",
+     "LAC": "115"
     }
    },
    {
