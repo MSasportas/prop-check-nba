@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T16:20:06-05:00",
+ "at": "2026-11-03T16:30:07-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -78,19 +78,19 @@
    "date": "2026-11-01T22:08Z",
    "note": "Knueppel (hamstring) is listed as out for Monday's game versus the Pistons."
   },
+  "4278067": {
+   "status": "out",
+   "name": "Nic Claxton",
+   "team": "CHI",
+   "date": "2026-11-03T21:04Z",
+   "note": "Claxton (hamstring) is questionable for Wednesday against the Knicks."
+  },
   "4397189": {
    "status": "day-to-day",
    "name": "Jalen Smith",
    "team": "CHI",
    "date": "2026-11-03T21:03Z",
    "note": "Smith is probable for Wednesday's game against the Knicks with a left finger sprain."
-  },
-  "4278067": {
-   "status": "out",
-   "name": "Nic Claxton",
-   "team": "CHI",
-   "date": "2026-11-02T22:47Z",
-   "note": "Claxton (hamstring) is out for Monday's game against the 76ers."
   },
   "4576087": {
    "status": "day-to-day",
@@ -166,8 +166,8 @@
    "status": "out",
    "name": "Isaiah Joe",
    "team": "DET",
-   "date": "2026-11-02T17:35Z",
-   "note": "Joe (hip) is out for Monday against the Hornets."
+   "date": "2026-11-03T21:18Z",
+   "note": "Joe (hip) has been ruled out for Wednesday's game against Philadelphia."
   },
   "4433621": {
    "status": "out",
