@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T21:20:01-05:00",
+ "at": "2026-11-02T21:40:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -105,6 +105,13 @@
    "team": "CLE",
    "date": "2026-11-01T21:50Z",
    "note": "Tyson (ankle) has been ruled out for Monday's game against Oklahoma City."
+  },
+  "4432582": {
+   "status": "day-to-day",
+   "name": "Max Christie",
+   "team": "DAL",
+   "date": "2026-11-03T02:28Z",
+   "note": "Christie (shin) is available for Saturday's game against the Spurs."
   },
   "6442": {
    "status": "out",
@@ -568,19 +575,12 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
-  "4433134": {
-   "status": "day-to-day",
-   "name": "Scottie Barnes",
-   "team": "TOR",
-   "date": "2026-11-02T21:23Z",
-   "note": "Barnes (hip) is listed as questionable for Monday's game against the Clippers."
-  },
   "3134908": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jakob Poeltl",
    "team": "TOR",
-   "date": "2026-11-02T20:21Z",
-   "note": "Poeltl (shoulder) is listed as questionable for Monday's game against the Clippers."
+   "date": "2026-11-03T02:27Z",
+   "note": "Poeltl (shoulder) has been ruled out for Monday's game against the Clippers, Zulfi Sheikh reports."
   },
   "4432586": {
    "status": "out",

@@ -363,7 +363,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -376,12 +376,12 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Stephen Curry",
     "Brandin Podziemski",
+    "Will Richard",
     "Yaxel Lendeborg",
-    "Georges Niang",
     "Draymond Green"
    ],
    "status": {
@@ -394,13 +394,13 @@
    }
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Immanuel Quickley",
     "RJ Barrett",
     "Ja'Kobe Walter",
     "Scottie Barnes",
-    "Trayce Jackson-Davis"
+    "Collin Murray-Boyles"
    ],
    "status": {
     "Nate Bittle": "out",
@@ -409,7 +409,7 @@
    }
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Kris Dunn",
@@ -427,7 +427,7 @@
    }
   },
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
@@ -438,12 +438,12 @@
    "status": {}
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Austin Reaves",
     "Matisse Thybulle",
-    "Ziaire Williams",
+    "Jake LaRavia",
     "Walker Kessler"
    ],
    "status": {
@@ -451,5 +451,5 @@
    }
   }
  },
- "at": "2026-11-02T21:30:01-05:00"
+ "at": "2026-11-02T21:40:00-05:00"
 }
