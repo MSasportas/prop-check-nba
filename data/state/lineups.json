@@ -334,7 +334,7 @@
    }
   },
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Damian Lillard",
     "Scoot Henderson",
@@ -348,7 +348,7 @@
    }
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -384,12 +384,12 @@
     "Draymond Green"
    ],
    "status": {
-    "Brandon Williams": "questionable",
     "Jimmy Butler": "out",
     "Al Horford": "out",
     "Moses Moody": "out",
     "Kristaps Porzingis": "out",
-    "Gui Santos": "out"
+    "Gui Santos": "out",
+    "Brandon Williams": "out"
    }
   },
   "TOR": {
@@ -451,5 +451,5 @@
    }
   }
  },
- "at": "2026-11-02T20:30:34-05:00"
+ "at": "2026-11-02T20:40:00-05:00"
 }
