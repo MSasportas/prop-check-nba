@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T17:20:24-05:00",
+ "at": "2026-11-03T17:30:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -112,13 +112,6 @@
    "team": "CLE",
    "date": "2026-11-03T22:09Z",
    "note": "Watson (hamstring) is out for Wednesday's game in Oklahoma City."
-  },
-  "6442": {
-   "status": "day-to-day",
-   "name": "Kyrie Irving",
-   "team": "DAL",
-   "date": "2026-11-03T06:03Z",
-   "note": "Irving (knee) has been ruled out for Monday's game against the Kings."
   },
   "4432582": {
    "status": "day-to-day",
@@ -516,8 +509,8 @@
    "status": "out",
    "name": "Dominick Barlow",
    "team": "PHI",
-   "date": "2026-11-02T23:05Z",
-   "note": "Barlow (back) has been on the court \"a little bit\" and will be re-evaluated Tuesday, Austin Krell of OnPattison.com reports."
+   "date": "2026-11-03T22:04Z",
+   "note": "Barlow (back) won't play in Wednesday's game against the Pistons, Austin Krell of OnPattison.com reports."
   },
   "4871141": {
    "status": "out",
