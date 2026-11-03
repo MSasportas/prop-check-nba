@@ -48,7 +48,7 @@ def build(cfg, first, last, store):
                 if b["read"] in cfg["pin_solo"]["flag_reads"]:
                     rows += [r for r in engine.solo_moves(a, b, ctx) if r["why"] is None]
         for r in sorted(rows, key=lambda r: (r["at"], -abs(r["pin_after"] - r["pin_before"]), r["pid"], r["market"])):
-            key = (r["pid"], r["market"])
+            key = (r["pid"], r["market"], r.get("book", "hardrock"))   # v2.5b: each book on its own
             if key in taken:
                 continue
             taken.add(key)
@@ -64,7 +64,7 @@ def build(cfg, first, last, store):
                          "read": r["read"], "at": r["at"], "pin_before": r["pin_before"], "pin_after": r["pin_after"],
                          "pin_price_before": r["pin_price_before"], "pin_price_after": r["pin_price_after"],
                          "others_move": r["others_move"], "n_others": r["n_others"], "window": r["window"],
-                         "gap_vs_pin": r["gap_vs_pin"],
+                         "gap_vs_pin": r["gap_vs_pin"], "book": r.get("book", "hardrock"),
                          "result": res, "actual": actual,
                          "units": units})
     return bets

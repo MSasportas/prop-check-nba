@@ -53,7 +53,13 @@ line of a pick book (Hard Rock, DraftKings; that book quotes the same line on bo
 and moves >= 2 pts toward a side; the side qualifies at each pick book whose price is at or better than Pinnacle's FAIR price (and
 -200..+200, not stale). The pick lists every passing book (`books`), with a tap-to-bet button only for those; headline and GRADED price =
 the best passing price (ties: Hard Rock), `book` = that book. Pulled only if EVERY book it was shown at removes the line (or injury). The
-Record adds a row per book once a DraftKings pick is graded. The text below is v2.4 history (others gate now `others_max` null).
+Record adds a row per book once a DraftKings pick is graded. **v2.5b (Matt, 2026-11-03 7:40 AM): the two books run INDEPENDENTLY
+under the same rule** (supersedes "best passing price"): each book is checked on its own (its main line the same on both back-to-back
+checks, Pinnacle the same line, its own price at or better than Pinnacle's fair), and each passing book is ITS OWN pick: own card,
+own Discord line, own button, own Record entry graded at its own price; one pick per player per market per BOOK a night; a DraftKings
+pick id ends in ":draftkings". If both qualify on the same bet, there are two picks (the Record counts both; per-book rows split them).
+Replay Oct 26-Nov 2: Hard Rock 29 23-6 +15.74u 79%; DraftKings 76 45-31 +9.80u 59%; together 105 (13 a night) 68-37 +25.54u 65%. Same bet
+at both books 20 bets x 2 = 32-8; DraftKings picks Hard Rock did not also make: 56 29-27 -0.99u (flat). The text below is v2.4 history (others gate now `others_max` null).
 Replay Oct 26-Nov 2 (consecutive reads, one pick per player/market): v2.4 23 picks 18-5 +12.34u 78%; HR only without the others gate
 29 23-6 +15.74u 79%; **v2.5 (HR or DK, no others gate) 84 picks 52-32 +16.16u 62%, +19% a bet**; DK alone 76 45-31 +9.80u 59%.
 CEO flagged to Matt (11-03): dropping the others gate is free; adding DraftKings triples volume but costs hit rate (78% -> 62%).
@@ -195,6 +201,8 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-11-03 ~7:55 AM (CEO, Matt: Hard Rock and DraftKings operate independently): v2.5b built (`solo_moves` one row per book,
+  `pick_id` book suffix, per-book one-per-player/market, replay keyed per book). 75 tests pass. Told Matt the DK-only stream is flat.
 - 2026-11-03 ~7:30 AM (CEO, Matt: drop the other books, add DraftKings): built v2.5 (`engine.solo_moves` per pick book, `customer.books`,
   `pin_solo.others_max/min` null, `latest_fetches` counts DK-only reads, line_gone only when every shown book drops it, publish/Discord
   buttons only for passing books at their frozen price, page "Bet at DraftKings -105 / Hard Rock -110 or better", per-book Record rows).

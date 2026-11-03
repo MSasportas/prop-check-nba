@@ -24,8 +24,10 @@ def fmt_line(x):
     return "%g" % x
 
 
-def pick_id(slate, game_id, pid, line, side, market="rebounds"):
-    return "%s:%s:%s:%s:%s:%s" % (slate, game_id, pid, market, fmt_line(line), side)
+def pick_id(slate, game_id, pid, line, side, market="rebounds", book="hardrock"):
+    """Hard Rock ids keep their pre-v2.5 form; a DraftKings pick (v2.5, its own pick) ends in ':draftkings'."""
+    base = "%s:%s:%s:%s:%s:%s" % (slate, game_id, pid, market, fmt_line(line), side)
+    return base if book == "hardrock" else base + ":" + book
 
 
 def pct_floor(x):
@@ -351,9 +353,9 @@ def solo_moves(a, b, ctx):
     """Pinnacle-move sides between two consecutive reads a -> b of one game (config pin_solo, TEAM.md section 4).
     v2.5 (Matt, 2026-11-03): for each main line of a pick book (Hard Rock, DraftKings) that the same book quotes on both reads,
     Pinnacle quotes that same line on both reads and its de-vigged chance moves >= min_move toward a side. The other books no longer
-    matter (others_max null; their move is still recorded). The side qualifies at every pick book whose price on read b is at or
-    better than Pinnacle's fair price (and within the price limits); the pick shows the best of those (ties: Hard Rock).
-    Every row is returned with `why` (None = qualifies)."""
+    matter (others_max null; their move is still recorded). v2.5b (Matt, 2026-11-03 7:40 AM): the books run INDEPENDENTLY under the
+    same rule: one row per book, each judged on its own line (same on both reads) and its own price vs Pinnacle's fair price, and
+    each passing row is its own pick (own price, button, Record entry). Every row is returned with `why` (None = qualifies)."""
     cfg = ctx.cfg
     ps = cfg["pin_solo"]
     g = ctx.games.get(b["game_id"])
@@ -412,35 +414,31 @@ def solo_moves(a, b, ctx):
                 else:
                     why = None
                 books[bk] = {"price": price, "ev_vs_pin": ev, "why": why, "link": q.get("link_" + side)}
-            if not books:
-                continue
-            ok = [bk for bk in books if books[bk]["why"] is None]
-            pool = ok or list(books)
-            best = max(pool, key=lambda bk: (books[bk]["ev_vs_pin"], -solo_books(cfg).index(bk)))
-            q0 = quotes[best][0]
-            team = q0.get("team") or (ctx.people.get(pid) or {}).get("team")
-            price = books[best]["price"]
-            r = {"rule": "pin_solo", "pid": pid, "name": q0["name"], "team": team, "opp": g["home"] if team == g["away"] else g["away"],
-                 "home": team == g["home"], "game_id": g["id"], "market": market, "line": line, "side": side, "price": price,
-                 "book": best, "books": {bk: {"price": v["price"], "ev_vs_pin": v["ev_vs_pin"]} for bk, v in books.items() if bk in ok},
-                 "book_why": {bk: v["why"] for bk, v in books.items()},
-                 "read": b["read"], "at": b["at"], "prev_at": a["at"], "prev_read": a["read"],
-                 "window": window_label(a["read"], b["read"]), "link": books[best]["link"],
-                 "pin_before": round(pin_a, 4), "pin_after": round(pin_b, 4),
-                 "pin_price_before": (pa.get(k) or {}).get(side), "pin_price_after": (pb.get(k) or {}).get(side),
-                 "others_move": round(statistics.median(mv), 4) if mv else None, "n_others": len(mv),
-                 "ev_vs_pin": books[best]["ev_vs_pin"]}
-            pp = (pb.get(k) or {}).get(side)
-            r["gap_vs_pin"] = round(odds.break_even(pp) - odds.break_even(price), 4) if pp is not None else None
-            if not ok:
-                r["why"] = "; ".join(v["why"] for v in books.values())
-            elif ps.get("others_max") is not None and len(mv) < ps.get("others_min", 0):
-                r["why"] = "only %d other books on this line" % len(mv)
-            elif ps.get("others_max") is not None and statistics.median(mv) >= ps["others_max"] - EPS:
-                r["why"] = "the other books moved too (%+.1f pts)" % (100 * statistics.median(mv))
-            else:
-                r["why"] = ctx.eligible(pid, team, g)
-            rows.append(r)
+            for bk, v in books.items():
+                q0 = quotes[bk][0]
+                team = q0.get("team") or (ctx.people.get(pid) or {}).get("team")
+                price = v["price"]
+                r = {"rule": "pin_solo", "pid": pid, "name": q0["name"], "team": team,
+                     "opp": g["home"] if team == g["away"] else g["away"], "home": team == g["home"], "game_id": g["id"],
+                     "market": market, "line": line, "side": side, "price": price,
+                     "book": bk, "books": {bk: {"price": price, "ev_vs_pin": v["ev_vs_pin"]}},
+                     "read": b["read"], "at": b["at"], "prev_at": a["at"], "prev_read": a["read"],
+                     "window": window_label(a["read"], b["read"]), "link": v["link"],
+                     "pin_before": round(pin_a, 4), "pin_after": round(pin_b, 4),
+                     "pin_price_before": (pa.get(k) or {}).get(side), "pin_price_after": (pb.get(k) or {}).get(side),
+                     "others_move": round(statistics.median(mv), 4) if mv else None, "n_others": len(mv),
+                     "ev_vs_pin": v["ev_vs_pin"]}
+                pp = (pb.get(k) or {}).get(side)
+                r["gap_vs_pin"] = round(odds.break_even(pp) - odds.break_even(price), 4) if pp is not None else None
+                if v["why"]:
+                    r["why"] = v["why"]
+                elif ps.get("others_max") is not None and len(mv) < ps.get("others_min", 0):
+                    r["why"] = "only %d other books on this line" % len(mv)
+                elif ps.get("others_max") is not None and statistics.median(mv) >= ps["others_max"] - EPS:
+                    r["why"] = "the other books moved too (%+.1f pts)" % (100 * statistics.median(mv))
+                else:
+                    r["why"] = ctx.eligible(pid, team, g)
+                rows.append(r)
     return rows
 
 
@@ -534,12 +532,14 @@ def step(ctx, odds_doc):
             if b["read"] not in ps["flag_reads"] or (now - common.parse_iso(b["at"])).total_seconds() > ps["max_age_min"] * 60:
                 continue                                   # never a new pick from an old read
             cands += [r for r in solo_rows.get(gid, []) if r["at"] == b["at"] and r["why"] is None]
-        cands.sort(key=lambda r: (-abs(r["pin_after"] - r["pin_before"]), r["pid"], r["market"]))
-        taken = {(it["shown"]["pid"], it["shown"].get("market", "rebounds")) for it in mine.values()}
+        cands.sort(key=lambda r: (-abs(r["pin_after"] - r["pin_before"]), r["pid"], r["market"], r.get("book", "hardrock")))
+        taken = {(it["shown"]["pid"], it["shown"].get("market", "rebounds"), it["shown"].get("book") or "hardrock")
+                 for it in mine.values()}
         for r in cands:
-            if (r["pid"], r["market"]) in taken:
-                continue                                   # one pick per player per market a night
-            taken.add((r["pid"], r["market"]))
+            key = (r["pid"], r["market"], r.get("book", "hardrock"))
+            if key in taken:
+                continue                                   # one pick per player per market per BOOK a night (v2.5b)
+            taken.add(key)
             g = ctx.games[r["game_id"]]
             be = odds.break_even(r["price"])
             body = {"rule": "pin_solo", "player": r["name"], "pid": r["pid"], "team": r["team"], "opp": r["opp"], "home": r["home"],
@@ -553,7 +553,7 @@ def step(ctx, odds_doc):
                     "final_ev": round(abs(r["pin_after"] - r["pin_before"]), 4),
                     "reason": solo_reason(r), "state": ctx.settled(r["pid"], r["team"], g), "link": r.get("link"),
                     "window": r["window"], "book": r["book"], "books": r["books"]}
-            pid_ = pick_id(slate, r["game_id"], r["pid"], r["line"], r["side"], r["market"])
+            pid_ = pick_id(slate, r["game_id"], r["pid"], r["line"], r["side"], r["market"], r.get("book", "hardrock"))
             if pid_ in items:
                 continue
             new.append({"t": "shown", "id": pid_, "at": common.iso(now), "slate": slate, "kind": "single", "pick": body})
