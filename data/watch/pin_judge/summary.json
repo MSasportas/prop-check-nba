@@ -4,22 +4,22 @@
  "about": "Behind the scenes (Matt, 2026-10-28): Hard Rock's main-line price is min_ev or better against Pinnacle's de-vigged chance on the same line. Research only: Backstage tab, never the Record or Discord. Discovery Oct 25-27 at +2%: 6 bets 5-1 +3.18u.",
  "from_slate": "2026-10-28",
  "min_ev": 0.02,
- "updated_at": "2026-11-02T22:10:03-05:00",
+ "updated_at": "2026-11-02T22:30:03-05:00",
  "total": {
-  "w": 10,
+  "w": 13,
   "l": 13,
   "push": 0,
   "void": 0,
-  "units": -2.99,
-  "pending": 6,
-  "hit_rate": 0.4348
+  "units": 0.06,
+  "pending": 3,
+  "hit_rate": 0.5
  },
  "nights": [
   {
    "date": "2026-11-02",
-   "w": 2,
+   "w": 5,
    "l": 2,
-   "units": 0.2,
+   "units": 3.25,
    "bets": [
     {
      "at": "2026-11-02T18:00:00-05:00",
@@ -137,9 +137,9 @@
      "slate": "2026-11-02",
      "start": "2026-11-02T20:00:00-05:00",
      "team": "MIN",
-     "result": null,
-     "actual": null,
-     "units": null
+     "result": "W",
+     "actual": "7 rebounds",
+     "units": 0.9524
     },
     {
      "at": "2026-11-02T18:30:00-05:00",
@@ -161,9 +161,9 @@
      "slate": "2026-11-02",
      "start": "2026-11-02T20:00:00-05:00",
      "team": "MIL",
-     "result": null,
-     "actual": null,
-     "units": null
+     "result": "W",
+     "actual": "3 threes",
+     "units": 1.1
     },
     {
      "at": "2026-11-02T18:30:00-05:00",
@@ -209,9 +209,9 @@
      "slate": "2026-11-02",
      "start": "2026-11-02T20:00:00-05:00",
      "team": "DAL",
-     "result": null,
-     "actual": null,
-     "units": null
+     "result": "W",
+     "actual": "6 assists",
+     "units": 1.0
     },
     {
      "at": "2026-11-02T21:40:00-05:00",
