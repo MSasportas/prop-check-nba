@@ -129,6 +129,7 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
+     "book": "hardrock",
      "under_fair": false
     }
    ]
@@ -163,6 +164,7 @@
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -188,6 +190,7 @@
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min",
+     "book": "hardrock",
      "under_fair": false
     }
    ]
@@ -222,6 +225,7 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -247,6 +251,7 @@
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -272,6 +277,7 @@
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min",
+     "book": "hardrock",
      "under_fair": false
     }
    ]
@@ -306,6 +312,7 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
      "under_fair": false
     }
    ]
@@ -340,6 +347,7 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -365,6 +373,7 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -390,6 +399,7 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -415,6 +425,7 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -440,6 +451,7 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -465,6 +477,7 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -490,6 +503,7 @@
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -515,6 +529,7 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -540,6 +555,7 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -565,6 +581,7 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -590,6 +607,7 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -615,6 +633,7 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
+     "book": "hardrock",
      "under_fair": false
     },
     {
@@ -640,6 +659,7 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
      "under_fair": false
     }
    ]
