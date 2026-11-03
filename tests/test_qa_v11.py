@@ -155,10 +155,8 @@ class TestQAV11Plan(unittest.TestCase):
         p6 = odds.make_plan(3000, 225, 7, CFG)
         self.assertEqual(paid(p6), ["B", "C", "D"])                     # v1.2: 4 markets, the morning A read isn't paid for
         self.assertEqual(p6["spare"], ["A"])                            # v2.4: it runs from spare credits
-        self.assertGreaterEqual(p6["budget_today"], 7 * 3 * 4)
         p3 = odds.make_plan(1500, 225, 7, CFG)
         self.assertEqual(paid(p3), ["C"])
-        self.assertGreaterEqual(p3["budget_today"], 7 * 1 * 4)
 
     def test_grade_one_uses_market_stat(self):
         row = [{"pid": "9", "dnp": False, "min": 30, "reb": 3, "pts": 30, "ast": 12}]

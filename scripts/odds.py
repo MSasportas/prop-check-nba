@@ -3,7 +3,8 @@
 keys    env ODDS_API_KEYS (then ODDS_API_KEYS_2) only. Never printed, never written. Used-up or refused keys are skipped.
 ledger  data/state/credits.json: credits left per key NUMBER (never the key) and every credit spent.
 plan    allowance = pool credits left / games left before the keys refill on the 1st. It decides how many of the four reads
-        (priority C, B, D, A: config reads.priority) each game gets.
+        (priority C, B, D, A: config reads.priority) each game gets. No daily budget (Matt, 2026-11-03): every planned read runs
+        while credits last; spare reads (reads.spare: A) only spend what the rest of the month's planned reads don't need.
 reads   A morning baseline, B 90 min, C 45 min, D 20 min before tip. A read made at time t satisfies every read due at or before t.
 cost    1 credit per market returned per region; Hard Rock + up to 9 other books bill as one region, so 1 credit a read.
         The events list is free. With PC_ODDS_FIXTURE_DIR set nothing here touches the network.
@@ -309,7 +310,6 @@ def make_plan(pool_left, games_left, games_today, cfg):
     # i.e. only while the pool still covers the planned reads for every game left this month (checked per read in run_reads)
     spare = [r for r in cfg["reads"].get("spare", []) if r in READS and r not in reads]
     return {"allowance": round(allowance, 3), "reads": sorted(reads | set(spare)), "spare": spare,
-            "budget_today": int(math.floor(allowance * games_today + 1e-9)) if games_left else 0,
             "pool_at_plan": pool_left, "games_left": games_left, "games_today": games_today}
 
 
@@ -586,14 +586,15 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
         g = d["game"]
         if dry_run:
             continue
-        # C (the 45-minute read) may use tomorrow's share if today's is spent: it is the read that protects live picks
+        # No daily budget (Matt, 2026-11-03 5:09 PM): the month's plan decides which reads each game gets, and every planned read
+        # runs while credits last. Spare reads (11 AM) still only spend what the planned reads of the rest of the month don't need.
         cost = cfg["ops"].get("cost_per_read", 1)
         if d["read"] in (plan.get("spare") or []):
             if not spare_ok(pool.total_left(), games_left_month, plan, cost):
                 day["spare_paused"] = common.iso(now)
                 no_budget.append(g["id"])
                 continue
-        elif (pool.spent_on(slate) + cost > plan["budget_today"] and d["read"] not in ("C", "D")) or pool.total_left() < cost:
+        elif pool.total_left() < cost:
             no_budget.append(g["id"])
             continue
         ev = day["events"].get(str(g["id"]))

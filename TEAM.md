@@ -107,7 +107,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | Caps | **None per game or per night (Matt, 2026-10-25: "no limit per game or anything")**: every qualifying leg is shown, ranked by final EV. Only 1 side per player per market (both sides of one line can't both be bets); one player can have a rebounds, a points, an assists and a threes pick |
 | Parlays | Off (customer fact) |
 | Grading | When ESPN marks the game final. Overtime counts. Did not play = void. Graded at the frozen price, flat 1 unit |
-| Odds reads | A 11 AM (or 3h before the first tip), B 90 min, C 45 min, D 20 min before each game. 4 markets = 4 credits a read (`ops.cost_per_read`). Reads a game = allowance / 4, at most 4; priority when credits are short: C, B, D, A. **v2.4: the A read runs from spare credits** (`reads.spare`) when the allowance only pays for B/C/D, and only while the pool still covers B/C/D for every game left in the month; then it pauses and the page says so |
+| Odds reads | A 11 AM (or 3h before the first tip), B 90 min, C 45 min, D 20 min before each game. 4 markets = 4 credits a read (`ops.cost_per_read`). Reads a game = allowance / 4, at most 4; priority when credits are short: C, B, D, A. **No daily cap (Matt, 2026-11-03)**: every planned read runs while credits last. **v2.4: the A read runs from spare credits** (`reads.spare`) when the allowance only pays for B/C/D, and only while the pool still covers B/C/D for every game left in the month; then it pauses and the page says so |
 | Safety | New picks stop by themselves if the Record reaches **-10 units** (`safety_pause`), with the reason on the page. Never silent |
 
 ## 5. How it runs
@@ -212,6 +212,11 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-11-03 ~5:15 PM (CEO, Matt: "There should not be a daily budget"): removed the per-day credit cap (`budget_today`) from the
+  plan and the read loop. Found while checking v2.4: on a big slate the spare 11 AM reads counted against the day's cap and could
+  block the 90-min read of the latest games (C/D were exempt, B was not). Now every planned read runs while credits last; spare reads
+  keep their month reserve check. Game lines (spreads/totals, ~2 credits a check for all games) quoted to Matt, not built: awaiting
+  his pick (every check vs 11 AM + 45 min). 74 tests pass.
 - 2026-11-03 2:10 PM (CEO, daily check): alive (chain link 148, status 2:00 PM, all steps ok, Actions green, pool 2,768). No games today (Election Day), so no reads and no A read by design; v2.4 A read resumes 11-04. 11-02: 15 games, all 45 B/C/D reads ran; 1 shown pick graded (W +1.25u); all 37 shown picks on the Record graded. Rotowire showed confirmed starters last night (30 confirmed states). No unmatched names (odds or Rotowire), no unknown teams. 74 tests pass. No code changes.
 - 2026-11-03 ~9:55 AM (CEO, Matt: drop DraftKings as a pick book, keep its button when both agree): v2.6 (`customer.books`
   ["hardrock"], `pin_solo.link_books` ["draftkings"], `engine.pick_books`, DK row merged into the HR pick's `books`, line_gone on Hard
