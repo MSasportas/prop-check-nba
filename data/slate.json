@@ -21,7 +21,7 @@
   "last_read_at": "2026-11-02T21:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-02T21:40:21-05:00"
+   "at": "2026-11-02T21:50:00-05:00"
   }
  },
  "games": [
@@ -62,7 +62,7 @@
    "away": "DET",
    "home": "CHA",
    "state": "in",
-   "detail": "8:50 - 4th",
+   "detail": "6:19 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -93,7 +93,7 @@
    "away": "ATL",
    "home": "IND",
    "state": "in",
-   "detail": "4:53 - 4th",
+   "detail": "2:10 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -124,7 +124,7 @@
    "away": "BKN",
    "home": "NYK",
    "state": "in",
-   "detail": "9:55 - 4th",
+   "detail": "6:31 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -155,7 +155,7 @@
    "away": "WAS",
    "home": "ORL",
    "state": "in",
-   "detail": "4:41 - 4th",
+   "detail": "48.8 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -186,7 +186,7 @@
    "away": "CHI",
    "home": "PHI",
    "state": "in",
-   "detail": "6:50 - 4th",
+   "detail": "3:36 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -217,7 +217,7 @@
    "away": "SAC",
    "home": "DAL",
    "state": "in",
-   "detail": "5:37 - 3rd",
+   "detail": "1:53 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -248,7 +248,7 @@
    "away": "NOP",
    "home": "MEM",
    "state": "in",
-   "detail": "5:25 - 3rd",
+   "detail": "25.9 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -279,7 +279,7 @@
    "away": "MIL",
    "home": "MIN",
    "state": "in",
-   "detail": "2:51 - 3rd",
+   "detail": "End of 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -341,7 +341,7 @@
    "away": "UTA",
    "home": "SAS",
    "state": "in",
-   "detail": "2:29 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -372,7 +372,7 @@
    "away": "POR",
    "home": "DEN",
    "state": "in",
-   "detail": "11:18 - 2nd",
+   "detail": "8:44 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -553,6 +553,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-02T21:40:21-05:00",
- "status_at": "2026-11-02T21:40:21-05:00"
+ "generated_at": "2026-11-02T21:50:00-05:00",
+ "status_at": "2026-11-02T21:50:00-05:00"
 }
