@@ -215,6 +215,7 @@
     "Daniel Gafford"
    ],
    "status": {
+    "Max Christie": "questionable",
     "Santi Aldama": "out",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
@@ -287,7 +288,6 @@
     "Neemias Queta"
    ],
    "status": {
-    "Mitchell Robinson": "questionable",
     "Devin Carter": "out",
     "Paul George": "out"
    }
@@ -403,10 +403,9 @@
     "Trayce Jackson-Davis"
    ],
    "status": {
-    "Scottie Barnes": "probable",
-    "Jakob Poeltl": "doubtful",
     "Nate Bittle": "out",
-    "Kawhi Leonard": "out"
+    "Kawhi Leonard": "out",
+    "Jakob Poeltl": "out"
    }
   },
   "LAC": {
@@ -452,5 +451,5 @@
    }
   }
  },
- "at": "2026-11-02T21:20:01-05:00"
+ "at": "2026-11-02T21:30:01-05:00"
 }
