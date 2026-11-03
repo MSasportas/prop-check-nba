@@ -35,12 +35,12 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "CJ McCollum",
     "Nickeil Alexander-Walker",
     "Dyson Daniels",
-    "Aaron Wiggins",
+    "Luguentz Dort",
     "Onyeka Okongwu"
    ],
    "status": {
@@ -52,12 +52,12 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Braden Smith",
-    "Kelly Oubre",
+    "Quenton Jackson",
     "Jarace Walker",
-    "Kobe Brown",
+    "Jalen Slawson",
     "Jay Huff"
    ],
    "status": {
@@ -74,11 +74,11 @@
    }
   },
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Mikel Brown",
     "Nolan Traore",
     "Michael Porter",
+    "Chaney Johnson",
     "Julius Randle",
     "Day'Ron Sharpe"
    ],
@@ -98,7 +98,7 @@
    "status": {}
   },
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
@@ -116,7 +116,7 @@
    }
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jase Richardson",
     "Jamal Cain",
@@ -134,7 +134,7 @@
    }
   },
   "CHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Josh Giddey",
     "Norman Powell",
@@ -147,7 +147,7 @@
    }
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
@@ -156,7 +156,6 @@
     "Joel Embiid"
    ],
    "status": {
-    "Joel Embiid": "questionable",
     "Ariel Hukporti": "out",
     "Dominick Barlow": "out"
    }
@@ -274,8 +273,8 @@
     "Zach Edey"
    ],
    "status": {
-    "Quinten Post": "questionable",
-    "Scotty Pippen": "doubtful"
+    "Scotty Pippen": "doubtful",
+    "Quinten Post": "questionable"
    }
   },
   "BOS": {
@@ -453,5 +452,5 @@
    }
   }
  },
- "at": "2026-11-02T19:00:00-05:00"
+ "at": "2026-11-02T19:10:00-05:00"
 }
