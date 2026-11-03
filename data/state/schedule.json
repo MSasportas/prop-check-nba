@@ -526,9 +526,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:16 - 3rd",
+    "detail": "3:57 - 3rd",
     "score": {
-     "TOR": "68",
+     "TOR": "71",
      "LAC": "80"
     }
    },
