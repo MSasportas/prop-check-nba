@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:20:00-05:00",
+ "at": "2026-11-03T01:30:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -163,25 +163,25 @@
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
   },
   "4397040": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Brandon Williams",
    "team": "GS",
-   "date": "2026-11-03T01:33Z",
+   "date": "2026-11-03T06:12Z",
    "note": "Williams (quadriceps) has been ruled out for Monday's game against the Suns."
   },
-  "3213": {
-   "status": "out",
-   "name": "Al Horford",
-   "team": "GS",
-   "date": "2026-11-02T21:07Z",
-   "note": "Horford will be rested Monday against the Suns."
-  },
   "4997536": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Gui Santos",
    "team": "GS",
-   "date": "2026-11-02T14:20Z",
+   "date": "2026-11-03T06:12Z",
    "note": "Santos did not play in the second half of Sunday's 124-112 win over the Clippers due to a knee injury and will not play against the Suns on Monday, Danny Emerman of SFStandard.com reports."
+  },
+  "3213": {
+   "status": "day-to-day",
+   "name": "Al Horford",
+   "team": "GS",
+   "date": "2026-11-03T06:11Z",
+   "note": "Horford will be rested Monday against the Suns."
   },
   "3102531": {
    "status": "out",
@@ -295,19 +295,19 @@
    "date": "2026-10-28T21:30Z",
    "note": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports."
   },
-  "4066648": {
-   "status": "out",
-   "name": "Rui Hachimura",
-   "team": "LAC",
-   "date": "2026-11-02T21:19Z",
-   "note": "Hachimura (quadriceps) has been ruled out for Monday's game against the Raptors."
-  },
   "3936099": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Derrick Jones Jr.",
    "team": "LAC",
-   "date": "2026-11-02T21:12Z",
+   "date": "2026-11-03T06:11Z",
    "note": "Jones (knee) has been ruled out for Monday's game against the Raptors."
+  },
+  "4066648": {
+   "status": "day-to-day",
+   "name": "Rui Hachimura",
+   "team": "LAC",
+   "date": "2026-11-03T06:11Z",
+   "note": "Hachimura (quadriceps) has been ruled out for Monday's game against the Raptors."
   },
   "5108024": {
    "status": "out",
@@ -569,10 +569,10 @@
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
   "3134908": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jakob Poeltl",
    "team": "TOR",
-   "date": "2026-11-03T02:27Z",
+   "date": "2026-11-03T06:10Z",
    "note": "Poeltl (shoulder) has been ruled out for Monday's game against the Clippers, Zulfi Sheikh reports."
   },
   "4432586": {
