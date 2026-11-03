@@ -67,6 +67,7 @@
     "Larry Nance": "out",
     "Andrew Nembhard": "out",
     "Aaron Nesmith": "out",
+    "Kelly Oubre": "out",
     "Ben Sheppard": "out",
     "Pascal Siakam": "out",
     "Obi Toppin": "out",
@@ -205,11 +206,11 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Marcus Sasser",
-    "Max Christie",
     "Cooper Flagg",
+    "Max Christie",
+    "Caleb Martin",
     "P.J. Washington",
     "Daniel Gafford"
    ],
@@ -222,9 +223,9 @@
    }
   },
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Ryan Rollins",
+    "Brayden Burries",
     "Tyler Herro",
     "Jaime Jaquez",
     "Kyle Kuzma",
@@ -233,7 +234,7 @@
    "status": {}
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -242,14 +243,13 @@
     "Rudy Gobert"
    ],
    "status": {
-    "LaMelo Ball": "questionable",
     "Donte DiVincenzo": "out",
     "Anthony Edwards": "out",
     "Terrence Shannon": "out"
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jeremiah Fears",
     "Trey Murphy",
@@ -264,7 +264,7 @@
    }
   },
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ty Jerome",
     "Cedric Coward",
@@ -452,5 +452,5 @@
    }
   }
  },
- "at": "2026-11-02T19:30:00-05:00"
+ "at": "2026-11-02T19:40:01-05:00"
 }

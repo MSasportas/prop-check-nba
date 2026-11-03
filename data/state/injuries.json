@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T19:20:00-05:00",
+ "at": "2026-11-02T19:40:01-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -225,6 +225,13 @@
    "date": "2026-10-26T22:52Z",
    "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
+  "3133603": {
+   "status": "out",
+   "name": "Kelly Oubre Jr.",
+   "team": "IND",
+   "date": "2026-11-03T00:33Z",
+   "note": "Oubre (knee) has been ruled out for Monday's game against the Hawks."
+  },
   "2580365": {
    "status": "out",
    "name": "Larry Nance Jr.",
@@ -348,8 +355,8 @@
    "status": "out",
    "name": "Scotty Pippen Jr.",
    "team": "MEM",
-   "date": "2026-11-03T00:13Z",
-   "note": "Pippen (back) is listed as doubtful for Monday's game against the Pelicans."
+   "date": "2026-11-03T00:14Z",
+   "note": "Pippen (back) has been ruled out for Monday's game against the Pelicans."
   },
   "4593016": {
    "status": "out",
@@ -364,13 +371,6 @@
    "team": "MIN",
    "date": "2026-11-02T23:22Z",
    "note": "Shannon (hip) has been ruled out for Monday's game against the Bucks, Jon Krawczynski of The Athletic reports."
-  },
-  "4432816": {
-   "status": "day-to-day",
-   "name": "LaMelo Ball",
-   "team": "MIN",
-   "date": "2026-11-02T19:10Z",
-   "note": "Ball is questionable for Monday's game against Milwaukee due to a right wrist contusion."
   },
   "4594268": {
    "status": "out",

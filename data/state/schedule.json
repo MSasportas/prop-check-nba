@@ -330,11 +330,11 @@
     "home": "CLE",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:45 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "OKC": "19",
-     "CLE": "17"
+     "OKC": "26",
+     "CLE": "30"
     }
    },
    {
