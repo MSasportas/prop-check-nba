@@ -330,11 +330,11 @@
     "home": "CLE",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:28 - 2nd",
     "score": {
-     "OKC": "26",
-     "CLE": "30"
+     "OKC": "37",
+     "CLE": "34"
     }
    },
    {
@@ -343,13 +343,13 @@
     "start": "2026-11-02T19:30:00-05:00",
     "away": "DET",
     "home": "CHA",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/2 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:40 - 1st",
     "score": {
-     "DET": "0",
-     "CHA": "0"
+     "DET": "10",
+     "CHA": "9"
     }
    },
    {
@@ -358,13 +358,13 @@
     "start": "2026-11-02T19:30:00-05:00",
     "away": "ATL",
     "home": "IND",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/2 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:20 - 1st",
     "score": {
-     "ATL": "0",
-     "IND": "0"
+     "ATL": "14",
+     "IND": "15"
     }
    },
    {
@@ -373,13 +373,13 @@
     "start": "2026-11-02T19:30:00-05:00",
     "away": "BKN",
     "home": "NY",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/2 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:56 - 1st",
     "score": {
-     "BKN": "0",
-     "NY": "0"
+     "BKN": "7",
+     "NY": "10"
     }
    },
    {
@@ -388,13 +388,13 @@
     "start": "2026-11-02T19:30:00-05:00",
     "away": "WSH",
     "home": "ORL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/2 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "5:22 - 1st",
     "score": {
-     "WSH": "0",
-     "ORL": "0"
+     "WSH": "18",
+     "ORL": "18"
     }
    },
    {
@@ -403,13 +403,13 @@
     "start": "2026-11-02T19:30:00-05:00",
     "away": "CHI",
     "home": "PHI",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/2 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:49 - 1st",
     "score": {
-     "CHI": "0",
-     "PHI": "0"
+     "CHI": "7",
+     "PHI": "10"
     }
    },
    {

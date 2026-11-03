@@ -190,7 +190,7 @@
    }
   },
   "SAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Acuff",
     "Zach LaVine",
@@ -452,5 +452,5 @@
    }
   }
  },
- "at": "2026-11-02T19:40:27-05:00"
+ "at": "2026-11-02T19:50:00-05:00"
 }
