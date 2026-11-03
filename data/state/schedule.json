@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:46 - 1st",
+    "detail": "3:45 - 1st",
     "score": {
-     "OKC": "9",
-     "CLE": "11"
+     "OKC": "19",
+     "CLE": "17"
     }
    },
    {
