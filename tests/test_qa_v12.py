@@ -129,8 +129,9 @@ class TestThreesEndToEnd(unittest.TestCase):
 class TestPlan4Credits(unittest.TestCase):
     def test_plans(self):
         self.assertEqual(CFG["ops"]["cost_per_read"], 4)
-        self.assertEqual(odds.make_plan(3000, 225, 7, CFG)["reads"], ["B", "C", "D"])
-        self.assertEqual(odds.make_plan(1500, 225, 7, CFG)["reads"], ["C"])
+        paid = lambda p: [r for r in p["reads"] if r not in p["spare"]]
+        self.assertEqual(paid(odds.make_plan(3000, 225, 7, CFG)), ["B", "C", "D"])
+        self.assertEqual(paid(odds.make_plan(1500, 225, 7, CFG)), ["C"])
         rest = odds.make_plan(2800, 36, 7, CFG)                        # rest of October
         self.assertEqual(rest["reads"], ["A", "B", "C", "D"])
         self.assertGreaterEqual(rest["budget_today"], 7 * 4 * 4)

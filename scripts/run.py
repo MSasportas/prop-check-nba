@@ -317,6 +317,9 @@ class Run:
         elif plan and plan.get("allowance") is not None and plan["allowance"] < cfg["ops"]["pool_low_allowance"] * cfg["ops"].get("cost_per_read", 1):
             banners.append({"level": "warn", "text": "Odds keys are running low: fewer price checks per game until they refill "
                                                      "on the 1st. More keys would fix it."})
+        if o.get("spare_paused") and not o.get("all_used_up") and not any("running low" in b["text"] for b in banners):
+            banners.append({"level": "warn", "text": "The 11 AM price check is paused to save credits for the 90, 45 and 20 minute "
+                                                     "checks. More odds keys bring it back."})
         if self.summ_paused():
             banners.append({"level": "stop", "text": cfg["safety_pause"]["text"] + " " + cfg["safety_pause"]["sub"]})
         if not self.steps.get("schedule", {}).get("ok", True):
@@ -442,7 +445,7 @@ def rules_doc(cfg):
         "Pinnacle's fair price (Pinnacle's new chance with its own margin taken out). We bet the side Pinnacle moved toward, at "
         "Hard Rock's price."
         % (round(100 * ps["min_move"]), round(100 * ps["others_max"])),
-        "Prices are checked about %d, %d and %d minutes before each tip (plus an 11 AM look when the month's odds credits allow it). A pick can come from the 90, 45 or "
+        "Prices are checked at 11 AM and about %d, %d and %d minutes before each tip (the 11 AM check runs while spare odds credits last). A pick can come from the 90, 45 or "
         "20 minute check. The price shown is frozen and is the one graded." % (r["b_min"], r["c_min"], r["d_min"]),
         "Hard Rock's price must be at least as good as Pinnacle's fair price after the move. It is being proven "
         "on the Record (started 2026-10-28; judged at about 150 bets).",

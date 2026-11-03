@@ -304,9 +304,20 @@ def active_reads(allowance, cfg):
 
 def make_plan(pool_left, games_left, games_today, cfg):
     allowance = (pool_left / float(games_left)) if games_left else 0.0
-    return {"allowance": round(allowance, 3), "reads": sorted(active_reads(allowance, cfg)),
+    reads = active_reads(allowance, cfg)
+    # reads.spare (Matt, 2026-11-02: "add the 11am back"): reads the allowance can't fully pay for still run from SPARE credits,
+    # i.e. only while the pool still covers the planned reads for every game left this month (checked per read in run_reads)
+    spare = [r for r in cfg["reads"].get("spare", []) if r in READS and r not in reads]
+    return {"allowance": round(allowance, 3), "reads": sorted(reads | set(spare)), "spare": spare,
             "budget_today": int(math.floor(allowance * games_today + 1e-9)) if games_left else 0,
             "pool_at_plan": pool_left, "games_left": games_left, "games_today": games_today}
+
+
+def spare_ok(pool_left, games_left_month, plan, cost):
+    """A spare read may spend `cost` only if what's left still pays the planned (non-spare) reads of every game left this month,
+    today's included (spare reads run before them: A is the morning read)."""
+    base = len([r for r in plan["reads"] if r not in (plan.get("spare") or [])])
+    return pool_left - cost >= base * cost * games_left_month
 
 
 def due_times(game, games, cfg):
@@ -555,6 +566,7 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
     old = day.get("plan")
     if pool.known() and (old is None or old.get("key_count") != pool.count() or
                          old.get("cost_per_read", 1) != cfg["ops"].get("cost_per_read", 1) or
+                         "spare" not in old and cfg["reads"].get("spare") or
                          (old.get("pool_at_plan", 0) == 0 and pool.total_left() > 0)):
         plan = make_plan(pool.total_left() + pool.spent_on(slate), games_left_month, len(games), cfg)
         plan.update(key_count=pool.count(), made_at=common.iso(now), cost_per_read=cfg["ops"].get("cost_per_read", 1))
@@ -576,7 +588,12 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
             continue
         # C (the 45-minute read) may use tomorrow's share if today's is spent: it is the read that protects live picks
         cost = cfg["ops"].get("cost_per_read", 1)
-        if (pool.spent_on(slate) + cost > plan["budget_today"] and d["read"] not in ("C", "D")) or pool.total_left() < cost:
+        if d["read"] in (plan.get("spare") or []):
+            if not spare_ok(pool.total_left(), games_left_month, plan, cost):
+                day["spare_paused"] = common.iso(now)
+                no_budget.append(g["id"])
+                continue
+        elif (pool.spent_on(slate) + cost > plan["budget_today"] and d["read"] not in ("C", "D")) or pool.total_left() < cost:
             no_budget.append(g["id"])
             continue
         ev = day["events"].get(str(g["id"]))
@@ -619,6 +636,7 @@ def _finish(day, pool, res, dry_run):
     res["all_used_up"] = pool.all_used_up()
     res["spent_today"] = pool.spent_on(day["date"])
     res["unknown_teams"] = day.get("unknown_teams", [])
+    res["spare_paused"] = bool(day.get("spare_paused"))    # a spare read (11 AM) was skipped today to save credits
     if not dry_run:
         pool.save()
         common.write_json(day_path(), day)

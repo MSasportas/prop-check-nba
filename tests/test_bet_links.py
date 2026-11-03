@@ -79,3 +79,41 @@ class BetLinks(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SpareRead(unittest.TestCase):
+    """reads.spare (Matt, 2026-11-02): the 11 AM read comes back from spare credits, never at the cost of B / C / D."""
+    def cfg(self):
+        import json
+        return json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config", "rules.json")))
+
+    def test_plan_adds_a_from_spare(self):
+        cfg = self.cfg()
+        p = odds.make_plan(2768, 196, 14, cfg)            # 14.1 credits a game: B, C, D paid, A from spare
+        self.assertEqual(p["reads"], ["A", "B", "C", "D"])
+        self.assertEqual(p["spare"], ["A"])
+        p = odds.make_plan(4000, 196, 14, cfg)            # 20 a game: A is paid for, not spare
+        self.assertEqual(p["spare"], [])
+
+    def test_spare_ok_keeps_bcd_reserve(self):
+        cfg = self.cfg()
+        p = odds.make_plan(2768, 196, 14, cfg)
+        self.assertTrue(odds.spare_ok(2768, 196, p, 4))   # 2764 >= 12 * 196 = 2352
+        self.assertFalse(odds.spare_ok(2355, 196, p, 4))  # 2351 < 2352: A pauses, B / C / D keep their credits
+        self.assertTrue(odds.spare_ok(2356, 196, p, 4))
+
+    def test_world_runs_and_pauses_the_11am_read(self):
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from world import World
+        for keys, want_a, banner in (([230, 230, 230], True, False), ([196, 196, 196], False, True)):
+            w = World(rule="pin_solo")
+            try:
+                w.lal_utah("2026-10-25T15:00:00Z", [("Luka Doncic", 7.5, -110, -110)], [("Luka Doncic", 7.5, -110, -110)])
+                w.write_odds("pool.json", {"keys": keys})       # 49 games left: B / C / D need 588
+                self.assertEqual(w.run("2026-10-25T11:01:00-04:00").returncode, 0)
+                got = os.path.exists(os.path.join(w.data, "odds", "2026-10-25.json"))
+                self.assertEqual(got, want_a)
+                texts = [b["text"] for b in w.read("slate.json").get("banners", [])]
+                self.assertEqual(any("11 AM price check is paused" in t for t in texts), banner)
+            finally:
+                w.close()

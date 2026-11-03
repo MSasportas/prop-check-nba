@@ -1,6 +1,6 @@
 {
- "version": "2.3",
- "updated": "2026-10-29",
+ "version": "2.4",
+ "updated": "2026-11-02",
  "_about": "EVERY rule value lives here (TEAM.md section 4). The engine reads this file; data/rules.json (what the page reads) is generated from it. Live rule since v2.0: pin_solo (Pinnacle moves alone). gap_guard is off (kept for its research rows). Probabilities 0-1, prices American integers, times Eastern.",
  "customer": {
   "_about": "Customer facts locked by Matt (setup interview 2026-10-25; points and assists added 2026-10-25 8:22 PM; 3-pointers made added 2026-10-26 11:21 PM). The team never changes these.",
@@ -80,6 +80,10 @@
    "D",
    "A"
   ],
+  "spare": [
+   "A"
+  ],
+  "_spare_about": "Matt, 2026-11-02 11:41 PM: bring the 11 AM read back from 2026-11-04 (no games 11-03). A read the month's allowance can't pay for still runs while the pool covers the planned reads (C, B, D) for every game left this month; then it pauses and the page says so until keys are added. Oct 26-31 replay (2+, fair price): with 11 AM 3.7 picks a night 17-5 +11.09u vs 2.2 a night 9-4 +4.23u without.",
   "stale_min": 60,
   "hold_min": 0.02,
   "hold_max": 0.12

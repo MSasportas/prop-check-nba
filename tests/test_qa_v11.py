@@ -137,7 +137,7 @@ class TestQAV11(unittest.TestCase):
         self.w.run("2026-10-25T15:31:00-04:00")
         plan = self.w.read("state", "odds_day.json")["plan"]
         self.assertEqual((plan["key_count"], plan["cost_per_read"]), (3, 4))
-        self.assertEqual(plan["reads"], sorted(odds.active_reads(plan["allowance"], CFG)))
+        self.assertEqual(paid(plan), sorted(odds.active_reads(plan["allowance"], CFG)))
         self.w.write_odds("pool.json", {"keys": [60] * 6})              # 3 more keys mid-day
         self.w.run("2026-10-25T15:41:00-04:00")
         plan2 = self.w.read("state", "odds_day.json")["plan"]
@@ -145,13 +145,19 @@ class TestQAV11(unittest.TestCase):
         self.assertGreater(plan2["allowance"], plan["allowance"])
 
 
+def paid(plan):
+    """reads the month's allowance pays for (v2.4: spare reads such as the 11 AM one run on top, from spare credits)"""
+    return [r for r in plan["reads"] if r not in (plan.get("spare") or [])]
+
+
 class TestQAV11Plan(unittest.TestCase):
     def test_month_plans(self):
         p6 = odds.make_plan(3000, 225, 7, CFG)
-        self.assertEqual(p6["reads"], ["B", "C", "D"])                  # v1.2: 4 markets, the morning A read drops
+        self.assertEqual(paid(p6), ["B", "C", "D"])                     # v1.2: 4 markets, the morning A read isn't paid for
+        self.assertEqual(p6["spare"], ["A"])                            # v2.4: it runs from spare credits
         self.assertGreaterEqual(p6["budget_today"], 7 * 3 * 4)
         p3 = odds.make_plan(1500, 225, 7, CFG)
-        self.assertEqual(p3["reads"], ["C"])
+        self.assertEqual(paid(p3), ["C"])
         self.assertGreaterEqual(p3["budget_today"], 7 * 1 * 4)
 
     def test_grade_one_uses_market_stat(self):

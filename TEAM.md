@@ -47,7 +47,7 @@ QA (tests every change before it goes live, real browser at 380px, hasn't seen t
 Rule changes: the Data Scientist names the sample first; the Sharp decides; log it in section 8. Customer facts (section 1) never change
 without Matt.
 
-## 4. Current rules (v2.3, 2026-10-29). Source of truth: `config/rules.json` (`pin_solo`, `watch.pin_judge`)
+## 4. Current rules (v2.4, 2026-11-02). Source of truth: `config/rules.json` (`pin_solo`, `watch.pin_judge`)
 **Live rule: Pinnacle moves, the other books move less than 2 pts, and Hard Rock is at or better than Pinnacle's FAIR price** (Matt, 2026-10-28; widened from "alone" < 1 pt at 11:52 AM, after research runs 1-6: Hard Rock's NBA main lines sit ~6% under the market
 and Gap + Guard found 0 bets in 3,318 sides). `engine.solo_moves`: between two consecutive reads of a game, on Hard Rock's main line
 (Hard Rock quotes that same line on BOTH reads), Pinnacle quotes the same line on both reads and its de-vigged chance moves >= 2 pts
@@ -84,7 +84,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | Caps | **None per game or per night (Matt, 2026-10-25: "no limit per game or anything")**: every qualifying leg is shown, ranked by final EV. Only 1 side per player per market (both sides of one line can't both be bets); one player can have a rebounds, a points, an assists and a threes pick |
 | Parlays | Off (customer fact) |
 | Grading | When ESPN marks the game final. Overtime counts. Did not play = void. Graded at the frozen price, flat 1 unit |
-| Odds reads | A 11 AM (or 3h before the first tip), B 90 min, C 45 min, D 20 min before each game. 4 markets = 4 credits a read (`ops.cost_per_read`). Reads a game = allowance / 4, at most 4; priority when credits are short: C, B, D, A |
+| Odds reads | A 11 AM (or 3h before the first tip), B 90 min, C 45 min, D 20 min before each game. 4 markets = 4 credits a read (`ops.cost_per_read`). Reads a game = allowance / 4, at most 4; priority when credits are short: C, B, D, A. **v2.4: the A read runs from spare credits** (`reads.spare`) when the allowance only pays for B/C/D, and only while the pool still covers B/C/D for every game left in the month; then it pauses and the page says so |
 | Safety | New picks stop by themselves if the Record reaches **-10 units** (`safety_pause`), with the reason on the page. Never silent |
 
 ## 5. How it runs
@@ -161,7 +161,10 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
    status.json and skipped, never guessed.
 5. The ESPN tip time is used for lock (games often tip ~10 min later): conservative.
 6. Keys refill on the 1st (assumed, as NHL). With 4 markets, 6 keys (3,000) over ~225 games = 13.3 credits a game = 3 reads (B, C, D);
-   the 11 AM A read (never picks) drops in a full month. All 4 reads would need ~3,600 a month (8 keys).
+   the 11 AM A read is not paid for in a full month. v2.4 (Matt, 2026-11-02): it runs from spare credits until the pool only covers
+   B/C/D for the rest of the month. November forecast (pool 2,768 on 11-02, 196 games left): A runs 11-04 to ~11-17, then pauses
+   unless keys are added (1 more key covers the rest of November; a full month at 4 reads needs ~3,600 = 8 keys). Matt adds keys
+   before they run out.
 7. Official NBA injury report PDF not parsed (Rotowire mirrors it). Build only if Rotowire proves unreliable.
 8. **Verified live 2026-10-25 7:50 PM (first keyed read, MEM@SAC B):** Hard Rock posts rebounds (8 players, ~+105/-135, hold ~8%);
    1 credit per read; **all 9 other books returned rebounds** (DK, FD, MGM, ESPN Bet, BetRivers, BetOnline 18 outcomes each; novig and
@@ -172,6 +175,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
 |---|---|---|---|
+| 2026-11-02 11:45 PM (CEO, Matt's order; Builder) | **v2.4: the 11 AM read is back** from 11-04 (no games 11-03), paid from spare credits (`reads.spare` ["A"]); it never takes credits the B/C/D reads need this month, pauses with a page banner when spare runs out. Rules text updated. No pick-rule change | Matt: volume too low since the A read dropped on 11-01; "let's add the 11am back", he adds keys before they run out | Replay Oct 26-31 (2+, fair price): with 11 AM 3.7 picks a night 17-5 +11.09u 77% vs without 2.2 a night 9-4 +4.23u 69% |
 | 2026-10-29 8:00 AM (CEO, Matt's order; Builder) | **v2.3: fair-price gate REPLACES the v2.2 gap gate** (`pin_solo.min_ev_vs_pin` 0.0; `min_gap_vs_pin` removed). Hard Rock's price must be at or better than Pinnacle's fair price on the side (EV vs Pinnacle >= 0%). Reason text, Discord and rules text now say "better than Pinnacle's fair price". Nothing was open to pull (no picks yet today); Oct 28's picks stay on the Record as shown | Matt: Run 7 showed v2.2 only reaches about fair; "integrate the fair price instead, I like the volume" (about 13 picks a busy night, 1-2 a quiet one) | Research Run 7 discovery Oct 25-28: at-or-better-than-fair 16 bets 12-4 +7.12u vs the rest 28 bets 16-12 +1.33u (Oct 28 alone 13 bets 9-4 +4.51u vs 17 bets 9-8 -0.93u). One lead, ~22 looks at 4 nights: judged forward on the live Record |
 | 2026-10-28 6:15 PM (CEO, Matt's order) | **v2.2: Hard Rock must be 2+ pts better than Pinnacle's new price** (`pin_solo.min_gap_vs_pin` 0.02). Reason text shows the gap. Picks already shown tonight stay | Matt: Bane O2.5 threes was sent at HR -140 while Pinnacle was -134 (Pinnacle was catching up to the other books, not leading); "Hard Rock needs to still be better than Pinnacle" with a required gap | Replay Oct 25-27 by gap: 0+ 26 bets 19-7; 1+ 21 15-6; 2+ 13 10-3; engine replay v2.2 14 bets 10-4 +4.87u. Tonight 7 of 11 picks would pass |
 | 2026-10-28 11:55 AM (CEO, Matt's order) | **v2.1: `pin_solo.others_max` 0.01 -> 0.02** (other books may move up to 2 pts the same way). Reason text says how far they moved | Matt: "pinnacle moves 2+ points and the other books move 2 or less" | Discovery: 31 bets 22-9 +9.74u (engine replay 29, 22-7 +11.75u); 26 of 29 on Oct 26 |
@@ -181,6 +185,16 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-11-02 ~10 PM-11:45 PM (CEO, Matt's volume questions; research only unless noted): replays (Oct 26-Nov 2, no injury replay)
+  of the Pinnacle-alone signal by move size (1+..7+) x Hard Rock check (fair / posted / none): 2+ fair 23 18-5 +12.34u; 2+ posted
+  160 90-57 +19.68u 61%; 2+ none 179 98-65 +18.66u; 4+ posted 35 21-9 +9.02u 70%. Rebounds held up without the fair check at 2-3 pt
+  moves (25-13) but not at 3+. DraftKings at/better than Pinnacle posted on 87% of Hard Rock's posted-pass bets; same bets DK +13.17u
+  vs HR +12.16u. Non-consecutive windows (Oct 26-31): all pairs at 2+ fair 26 19-6 +12.14u vs consecutive 22 17-5; 11 AM is the
+  volume lever. CEO + team recommendation (not live): step 1 bring back 11 AM (DONE, v2.4); step 2 a "big move" lane (4+ pts, Hard
+  Rock at or better than Pinnacle's posted price, own Record bucket): Oct 26-31 6.0 picks a night 26-10 +13.56u 72%, to be tested on
+  past seasons with Matt's one-time historical key first (never stored; 5M plan ~$119 covers 3 seasons, ~445-590K credits). Matt
+  also asked whether 11 AM is the best first time: untestable on live data; test 9 AM-1 PM and 3h-before with the historical key.
+  Built v2.4 (`reads.spare`, `odds.spare_ok`, pause banner, rules text); 73 tests pass.
 - 2026-11-02 ~9:00 PM (CEO, Matt: tap-to-bet buttons for Hard Rock and DraftKings): ported NHL's `hardrock_slip`/`bet_links`/`betRow`.
   `normalize` keeps DraftKings outcome links on non-A reads; publish adds `links` to open picks from the newest read (raw `link` no
   longer published); Discord pick blocks end with `[Hard Rock +115](<url>) · [DraftKings -110](<url>)`. Fake world uses real link
