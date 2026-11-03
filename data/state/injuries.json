@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T01:00:01-05:00",
+ "at": "2026-11-03T01:10:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -92,19 +92,19 @@
    "date": "2026-11-03T05:29Z",
    "note": "Tyson (ankle) has been ruled out for Monday's game against Oklahoma City."
   },
+  "6442": {
+   "status": "day-to-day",
+   "name": "Kyrie Irving",
+   "team": "DAL",
+   "date": "2026-11-03T06:03Z",
+   "note": "Irving (knee) has been ruled out for Monday's game against the Kings."
+  },
   "4432582": {
    "status": "day-to-day",
    "name": "Max Christie",
    "team": "DAL",
    "date": "2026-11-03T02:30Z",
    "note": "Christie has been ruled out for the rest of Monday's game against the Kings due to a right hip injury, Mike Curtis of The Dallas Morning News reports. He'll end the night with no points (0-5 FG, 0-5 3"
-  },
-  "6442": {
-   "status": "out",
-   "name": "Kyrie Irving",
-   "team": "DAL",
-   "date": "2026-11-02T23:13Z",
-   "note": "Irving (knee) has been ruled out for Monday's game against the Kings."
   },
   "4593125": {
    "status": "out",
@@ -344,25 +344,25 @@
    "date": "2026-11-03T01:30Z",
    "note": "Head coach JJ Redick said Monday that Thiero (knee) has participated in live action, and the hope is that he'll be available by the end of the week, Khobi Price of The California Post reports."
   },
-  "4431785": {
-   "status": "out",
-   "name": "Scotty Pippen Jr.",
-   "team": "MEM",
-   "date": "2026-11-03T00:14Z",
-   "note": "Pippen (back) has been ruled out for Monday's game against the Pelicans."
-  },
   "4593016": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Quinten Post",
    "team": "MEM",
-   "date": "2026-11-03T00:12Z",
+   "date": "2026-11-03T06:02Z",
    "note": "Post (ankle) has been downgraded to out for Monday's game against the Pelicans."
   },
+  "4431785": {
+   "status": "day-to-day",
+   "name": "Scotty Pippen Jr.",
+   "team": "MEM",
+   "date": "2026-11-03T06:02Z",
+   "note": "Pippen (back) has been ruled out for Monday's game against the Pelicans."
+  },
   "4432847": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Terrence Shannon Jr.",
    "team": "MIN",
-   "date": "2026-11-02T23:22Z",
+   "date": "2026-11-03T05:52Z",
    "note": "Shannon (hip) has been ruled out for Monday's game against the Bucks, Jon Krawczynski of The Athletic reports."
   },
   "4594268": {
