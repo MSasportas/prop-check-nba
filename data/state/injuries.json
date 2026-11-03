@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T18:00:00-05:00",
+ "at": "2026-11-03T18:20:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -393,19 +393,19 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4277956": {
+   "status": "out",
+   "name": "Jordan Poole",
+   "team": "NO",
+   "date": "2026-11-03T22:56Z",
+   "note": "Poole (ankle) is listed as probable for Wednesday's game against Utah."
+  },
   "4397688": {
    "status": "day-to-day",
    "name": "Trey Murphy III",
    "team": "NO",
    "date": "2026-11-03T22:52Z",
    "note": "Murphy (knee) is probable for Wednesday's game versus the Jazz."
-  },
-  "4277956": {
-   "status": "out",
-   "name": "Jordan Poole",
-   "team": "NO",
-   "date": "2026-11-01T20:11Z",
-   "note": "Poole (ankle) has been ruled out for Monday's game against the Grizzlies."
   },
   "5061589": {
    "status": "out",
@@ -610,6 +610,20 @@
    "date": "2026-10-29T15:39Z",
    "note": "Leonard (knee) is expected to be sidelined for at least three to four weeks, Chris Haynes of NBA TV reports."
   },
+  "3102530": {
+   "status": "out",
+   "name": "Jusuf Nurkic",
+   "team": "UTAH",
+   "date": "2026-11-03T23:07Z",
+   "note": "Nurkic (foot) is out for Wednesday's game against the Pelicans."
+  },
+  "4277919": {
+   "status": "day-to-day",
+   "name": "Mo Bamba",
+   "team": "UTAH",
+   "date": "2026-11-03T23:04Z",
+   "note": "Bamba is questionable for Wednesday's game in New Orleans due to a sprained right ankle."
+  },
   "4277961": {
    "status": "out",
    "name": "Jaren Jackson Jr.",
@@ -623,13 +637,6 @@
    "team": "UTAH",
    "date": "2026-10-24T23:18Z",
    "note": "Alexander won't play Wednesday against the Grizzlies due to a left knee bone bruise."
-  },
-  "3102530": {
-   "status": "out",
-   "name": "Jusuf Nurkic",
-   "team": "UTAH",
-   "date": "2026-10-07T23:07Z",
-   "note": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports."
   },
   "2581184": {
    "status": "day-to-day",
