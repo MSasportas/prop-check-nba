@@ -330,8 +330,8 @@
     "home": "CLE",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "13.2 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
      "OKC": "90",
      "CLE": "84"
@@ -361,7 +361,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:46 - 3rd",
+    "detail": "9:34 - 3rd",
     "score": {
      "ATL": "73",
      "IND": "58"
@@ -421,7 +421,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:25 - 2nd",
+    "detail": "7:24 - 2nd",
     "score": {
      "SAC": "32",
      "DAL": "31"
@@ -469,7 +469,7 @@
     "detail": "8:21 - 1st",
     "score": {
      "BOS": "4",
-     "HOU": "7"
+     "HOU": "9"
     }
    },
    {
@@ -481,7 +481,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:49 - 1st",
+    "detail": "7:41 - 1st",
     "score": {
      "UTAH": "4",
      "SA": "12"
