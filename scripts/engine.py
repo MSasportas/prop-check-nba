@@ -337,9 +337,16 @@ def _fair_over(q, hold_max):
 BOOK_LABEL = {"hardrock": "Hard Rock", "draftkings": "DraftKings"}
 
 
-def solo_books(cfg):
-    """The books a pick can be bet at, in order (customer.books; v2.5 Matt 2026-11-03: Hard Rock or DraftKings)."""
+def pick_books(cfg):
+    """The books a pick can be made at (customer.books: Hard Rock)."""
     return [b for b in (cfg["customer"].get("books") or ["hardrock"]) if b in BOOK_LABEL]
+
+
+def solo_books(cfg):
+    """Every book judged by the rule: the pick books, then the books that only add a button when they agree (pin_solo.link_books;
+    v2.6 Matt 2026-11-03: DraftKings)."""
+    out = pick_books(cfg)
+    return out + [b for b in (cfg["pin_solo"].get("link_books") or []) if b in BOOK_LABEL and b not in out]
 
 
 def book_market(f, book, market):
@@ -531,7 +538,16 @@ def step(ctx, odds_doc):
             b = sorted(fs, key=lambda f: f["at"])[-1]
             if b["read"] not in ps["flag_reads"] or (now - common.parse_iso(b["at"])).total_seconds() > ps["max_age_min"] * 60:
                 continue                                   # never a new pick from an old read
-            cands += [r for r in solo_rows.get(gid, []) if r["at"] == b["at"] and r["why"] is None]
+            now_rows = [r for r in solo_rows.get(gid, []) if r["at"] == b["at"] and r["why"] is None]
+            for r in now_rows:
+                if r.get("book", "hardrock") not in pick_books(cfg):
+                    continue
+                # v2.6: a link book (DraftKings) that passed the same check on the same bet adds its button and price
+                for x in now_rows:
+                    if x.get("book") != r.get("book") and (x["pid"], x["market"], x["line"], x["side"]) == \
+                            (r["pid"], r["market"], r["line"], r["side"]):
+                        r = dict(r, books=dict(r["books"], **x["books"]))
+                cands.append(r)
         cands.sort(key=lambda r: (-abs(r["pin_after"] - r["pin_before"]), r["pid"], r["market"], r.get("book", "hardrock")))
         taken = {(it["shown"]["pid"], it["shown"].get("market", "rebounds"), it["shown"].get("book") or "hardrock")
                  for it in mine.values()}
@@ -625,7 +641,7 @@ def step(ctx, odds_doc):
         mk = sh.get("market", "rebounds")
         if sh.get("rule") == "pin_solo":
             # a Pinnacle pick is a signal, not a price gap: it is pulled only if every book it was shown at takes the line down
-            bks = list(sh.get("books") or {}) or ["hardrock"]
+            bks = [sh.get("book") or "hardrock"]           # v2.6: the pick book decides (a DraftKings button is only an extra)
             fs = [f for f in by_game.get(sh["game_id"], []) if f["at"] > sh["price_at"]
                   and any(book_market(f, bk, mk) for bk in bks)]          # a read without this market says nothing
             if fs:

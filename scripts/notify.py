@@ -185,7 +185,7 @@ def pick_line(p):
     else:
         nums = "%s, we say %s%%, price needs %s%%" % (gap_txt, p["p_pct"], p["breakeven_pct"])
     lines = ["**%s %s  %s**" % (p["player"], _bet(p), common.fmt_price(p["price"])) +
-             (" (%s)" % LABEL[p["book"]] if p.get("book") in LABEL and len(p.get("books") or {}) == 1 else ""), when, nums]
+             (" (%s)" % LABEL[p["book"]] if p.get("book") in LABEL and p["book"] != "hardrock" else ""), when, nums]
     bet = bet_buttons(p)
     if bet:
         lines.append(bet)

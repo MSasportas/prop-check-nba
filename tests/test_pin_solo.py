@@ -39,26 +39,22 @@ class TestPinSolo(unittest.TestCase):
         write(self.w, "2026-10-25T20:15:00Z", (-110, -120), (112, -149), (-105, -115))
         self.w.run("2026-10-25T16:16:00-04:00")                         # C read: Pinnacle moved the under alone
         sh = self.shown()
-        # v2.5b (Matt): Hard Rock -120 and DraftKings -115 each beat Pinnacle's fair price: two independent picks, each at its own price
-        self.assertEqual(sorted((e["pick"]["book"], e["pick"]["price"]) for e in sh), [("draftkings", -115), ("hardrock", -120)])
-        self.assertEqual(sorted(e["id"].endswith(":draftkings") for e in sh), [False, True])
-        p = [e["pick"] for e in sh if e["pick"]["book"] == "hardrock"][0]
-        self.assertEqual((p["rule"], p["side"], p["price"], p["read"]), ("pin_solo", "under", -120, "C"))
+        # v2.6 (Matt): one Hard Rock pick (graded at -120); DraftKings -115 passed the same check, so it adds a DraftKings button
+        self.assertEqual(len(sh), 1)
+        p = sh[0]["pick"]
+        self.assertEqual((p["rule"], p["side"], p["price"], p["read"], p["book"]), ("pin_solo", "under", -120, "C", "hardrock"))
+        self.assertEqual({k: v["price"] for k, v in p["books"].items()}, {"hardrock": -120, "draftkings": -115})
         self.assertGreater(p["pin_after"], p["pin_before"] + 0.02)
         self.assertIn("Pinnacle moved the under", p["reason"])
         self.assertEqual(p["window"], "90 → 45 min")                    # B read -> C read
         self.assertGreaterEqual(p["ev_vs_pin"], 0.0)                      # HR -120 vs Pinnacle's fair price (Pinnacle -149)
         s = self.w.read("slate.json")
-        self.assertEqual(len(s["picks"]), 2)
-        by = {x["book"]: x for x in s["picks"]}
-        txt = notify.pick_line(by["hardrock"])
+        sp = s["picks"][0]
+        txt = notify.pick_line(sp)
         self.assertIn("Pinnacle moved", txt)
-        self.assertIn("(Hard Rock)", txt)
-        self.assertNotIn("DraftKings", txt)
-        self.assertEqual(by["hardrock"]["links"]["hardrock"]["price"], -120)
-        self.assertIsNone(by["hardrock"]["links"]["draftkings"])
-        self.assertIsNone(by["draftkings"]["links"]["hardrock"])
-        self.assertEqual(by["draftkings"]["links"]["draftkings"]["price"], -115)
+        self.assertIn("Hard Rock -120", txt)
+        self.assertIn("DraftKings -115", txt)
+        self.assertEqual((sp["links"]["hardrock"]["price"], sp["links"]["draftkings"]["price"]), (-120, -115))
         # a later read with Pinnacle back where it was does not pull it (a pick is a signal, frozen)
         write(self.w, "2026-10-25T20:40:00Z", (-110, -120), (-102, -118), (-105, -115))
         self.w.run("2026-10-25T16:41:00-04:00")
@@ -79,33 +75,13 @@ class TestPinSolo(unittest.TestCase):
         self.assertIsNotNone(lk["hardrock"])
         self.assertIsNone(lk["draftkings"])
 
-    def test_draftkings_only(self):
-        # v2.5: Hard Rock -150 is worse than fair, DraftKings -110 is better: a DraftKings pick with only a DraftKings button
+    def test_draftkings_alone_makes_no_pick(self):
+        # v2.6 (Matt): Hard Rock -150 is worse than fair; DraftKings -110 passing alone is not a pick (DraftKings only adds a button)
         write(self.w, "2026-10-25T19:30:00Z", (115, -150), (-102, -118), (-105, -115), dk=(-110, -110))
         self.w.run("2026-10-25T15:31:00-04:00")
         write(self.w, "2026-10-25T20:15:00Z", (115, -150), (112, -149), (-105, -115), dk=(-110, -110))
         self.w.run("2026-10-25T16:16:00-04:00")
-        sh = self.shown()
-        self.assertEqual(len(sh), 1)
-        p = sh[0]["pick"]
-        self.assertEqual((p["price"], p["book"], list(p["books"])), (-110, "draftkings", ["draftkings"]))
-        sp = self.w.read("slate.json")["picks"][0]
-        self.assertIsNone(sp["links"]["hardrock"])
-        self.assertEqual(sp["links"]["draftkings"]["price"], -110)
-        txt = notify.pick_line(sp)
-        self.assertIn("(DraftKings)", txt)
-        self.assertNotIn("Hard Rock", txt)
-
-    def test_others_moved_a_little_still_a_pick(self):
-        # v2.1 (Matt): the other books may move up to 2 pts the same way; here ~1.2 pts
-        write(self.w, "2026-10-25T19:30:00Z", (-110, -120), (-102, -118), (-105, -115))
-        self.w.run("2026-10-25T15:31:00-04:00")
-        write(self.w, "2026-10-25T20:15:00Z", (-110, -120), (112, -149), (-102, -120))
-        self.w.run("2026-10-25T16:16:00-04:00")
-        sh = self.shown()
-        self.assertEqual(len(sh), 2)                                    # v2.5b: Hard Rock and DraftKings, each its own pick
-        self.assertGreater(sh[0]["pick"]["others_move"], 0.005)
-        self.assertLess(sh[0]["pick"]["others_move"], 0.02)
+        self.assertEqual(self.shown(), [])
 
     def test_better_than_pinnacle_posted_but_under_fair_no_pick(self):
         # v2.3 (Matt): HR -135 beats Pinnacle's posted -149 by 2+ pts, but Pinnacle's FAIR price on the under is about -127
@@ -134,12 +110,12 @@ class TestPinSolo(unittest.TestCase):
         self.w.run("2026-10-25T15:31:00-04:00")
         write(self.w, "2026-10-25T20:15:00Z", (115, -150), (112, -149), (-105, -115), dk=(115, -150))
         self.w.run("2026-10-25T16:16:00-04:00")
-        self.assertEqual(len(self.shown()), 2)                           # Hard Rock and DraftKings, each its own pick
+        self.assertEqual(len(self.shown()), 1)
         cfg["pin_solo"]["min_gap_vs_pin"] = 0.02
         json.dump(cfg, open(self.w.config, "w"))
         self.w.run("2026-10-25T16:20:00-04:00")
         pulled = [e for e in self.w.events() if e["t"] == "pulled"]
-        self.assertEqual([e["code"] for e in pulled], ["rule_change", "rule_change"])
+        self.assertEqual([e["code"] for e in pulled], ["rule_change"])
         self.assertEqual(self.w.read("slate.json")["picks"], [])
         self.assertFalse(any(n["entries"] for n in self.w.read("record.json")["nights"]))   # pulled: log only, not on the page Record
 
@@ -162,7 +138,7 @@ class TestPinSolo(unittest.TestCase):
         self.w.run("2026-10-25T15:31:00-04:00")
         write(self.w, "2026-10-25T20:15:00Z", (-110, -120), (112, -149), (-105, -115), n_others=1)
         self.w.run("2026-10-25T16:16:00-04:00")
-        self.assertEqual(sorted(e["pick"]["book"] for e in self.shown()), ["draftkings", "hardrock"])
+        self.assertEqual([e["pick"]["book"] for e in self.shown()], ["hardrock"])
 
     def test_small_move_no_pick(self):
         write(self.w, "2026-10-25T19:30:00Z", (-110, -120), (-102, -118), (-105, -115))
@@ -183,20 +159,19 @@ class TestPinSolo(unittest.TestCase):
         pulled = [e for e in self.w.events() if e["t"] == "pulled"]
         self.assertEqual([e["code"] for e in pulled], ["line_gone"])
 
-    def test_one_book_removing_the_line_pulls_only_its_pick(self):
-        # v2.5b: Hard Rock and DraftKings picks are independent; Hard Rock takes the line down -> only the Hard Rock pick is pulled
+    def test_draftkings_keeping_the_line_does_not_save_a_hard_rock_pick(self):
+        # v2.6: the pick is a Hard Rock pick; Hard Rock takes the line down -> pulled, even if DraftKings still has it
         write(self.w, "2026-10-25T19:30:00Z", (-110, -120), (-102, -118), (-105, -115))
         self.w.run("2026-10-25T15:31:00-04:00")
         write(self.w, "2026-10-25T20:15:00Z", (-110, -120), (112, -149), (-105, -115))
         self.w.run("2026-10-25T16:16:00-04:00")
-        self.assertEqual(len(self.shown()), 2)
+        self.assertEqual(len(self.shown()), 1)
         at = "2026-10-25T20:40:00Z"
         bms = [book("hardrockbet", [("Lauri Markkanen", 6.5, -110, -110)], at), book("pinnacle", [(LUKA, 7.5, 112, -149)], at),
                book("draftkings", [(LUKA, 7.5, -105, -115)], at)]
         self.w.write_odds("odds_lal_utah.json", {"id": "ev401909861", "bookmakers": bms})
         self.w.run("2026-10-25T16:41:00-04:00")
-        pulled = [e for e in self.w.events() if e["t"] == "pulled"]
-        self.assertEqual([(e["code"], e["id"].endswith(":draftkings")) for e in pulled], [("line_gone", False)])
+        self.assertEqual([e["code"] for e in self.w.events() if e["t"] == "pulled"], ["line_gone"])
 
     def test_price_judge_is_behind_the_scenes_only(self):
         # Hard Rock under +105 vs Pinnacle fair under ~55%: +13% vs Pinnacle; no move between reads -> no live pick

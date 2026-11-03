@@ -46,7 +46,8 @@ def build(cfg, first, last, store):
         for gid, fs in byg.items():
             for a, b in engine.solo_pairs(fs):
                 if b["read"] in cfg["pin_solo"]["flag_reads"]:
-                    rows += [r for r in engine.solo_moves(a, b, ctx) if r["why"] is None]
+                    rows += [r for r in engine.solo_moves(a, b, ctx) if r["why"] is None
+                             and r.get("book", "hardrock") in engine.pick_books(cfg)]
         for r in sorted(rows, key=lambda r: (r["at"], -abs(r["pin_after"] - r["pin_before"]), r["pid"], r["market"])):
             key = (r["pid"], r["market"], r.get("book", "hardrock"))   # v2.5b: each book on its own
             if key in taken:
