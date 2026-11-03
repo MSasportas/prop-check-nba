@@ -1,11 +1,11 @@
 {
- "at": "2026-11-03T17:00:01-05:00",
+ "at": "2026-11-03T17:10:00-05:00",
  "list": {
   "3146557": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jock Landale",
    "team": "ATL",
-   "date": "2026-11-03T05:48Z",
+   "date": "2026-11-03T22:06Z",
    "note": "Landale (hip) has been ruled out for Monday's game against Indiana."
   },
   "4701230": {
@@ -631,19 +631,19 @@
    "date": "2026-10-07T23:07Z",
    "note": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports."
   },
-  "5160992": {
-   "status": "day-to-day",
-   "name": "Alex Sarr",
-   "team": "WSH",
-   "date": "2026-11-03T05:34Z",
-   "note": "Sarr (knee) is out for Monday's game against Orlando."
-  },
   "2581184": {
    "status": "day-to-day",
    "name": "Anthony Gill",
    "team": "WSH",
-   "date": "2026-11-03T05:34Z",
-   "note": "Gill (back) is out for Monday's game against the Magic."
+   "date": "2026-11-03T21:49Z",
+   "note": "Gill (back) is questionable for Wednesday against the Hawks."
+  },
+  "5160992": {
+   "status": "day-to-day",
+   "name": "Alex Sarr",
+   "team": "WSH",
+   "date": "2026-11-03T21:47Z",
+   "note": "Sarr (knee) is listed as questionable for Wednesday's game against Atlanta."
   },
   "4432187": {
    "status": "out",
