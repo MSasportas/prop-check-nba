@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T18:20:00-05:00",
+ "at": "2026-11-04T18:30:01-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -393,6 +393,13 @@
    "date": "2026-11-04T18:08Z",
    "note": "Hart is out for Wednesday's game against the Bulls due to right ankle soreness."
   },
+  "4432823": {
+   "status": "out",
+   "name": "Jaylin Williams",
+   "team": "OKC",
+   "date": "2026-11-04T23:18Z",
+   "note": "Williams (back) is listed as out for Wednesday's game versus Cleveland, Clemente Almanza of USA Today reports."
+  },
   "5159925": {
    "status": "out",
    "name": "Nikola Topic",
@@ -406,13 +413,6 @@
    "team": "OKC",
    "date": "2026-11-03T22:45Z",
    "note": "Sorber (knee) is out for Wednesday's game against the Cavaliers."
-  },
-  "4432823": {
-   "status": "day-to-day",
-   "name": "Jaylin Williams",
-   "team": "OKC",
-   "date": "2026-11-03T22:41Z",
-   "note": "Williams (back) is listed as questionable for Wednesday's game against the Cavaliers."
   },
   "4683692": {
    "status": "out",
