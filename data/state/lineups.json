@@ -190,18 +190,18 @@
    "state": "expected",
    "starters": [
     "Shai Gilgeous-Alexander",
+    "Jared McCain",
     "Ajay Mitchell",
     "Kenrich Williams",
-    "Jaylin Williams",
     "Isaiah Hartenstein"
    ],
    "status": {
-    "Jaylin Williams": "questionable",
     "Chet Holmgren": "out",
     "Thomas Sorber": "out",
     "Nikola Topic": "out",
     "Cason Wallace": "out",
-    "Jalen Williams": "out"
+    "Jalen Williams": "out",
+    "Jaylin Williams": "out"
    }
   },
   "IND": {
@@ -417,5 +417,5 @@
    }
   }
  },
- "at": "2026-11-04T18:10:01-05:00"
+ "at": "2026-11-04T18:20:00-05:00"
 }

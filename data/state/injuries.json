@@ -1,12 +1,12 @@
 {
- "at": "2026-11-04T18:10:01-05:00",
+ "at": "2026-11-04T18:20:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
    "name": "Jalen Johnson",
    "team": "ATL",
-   "date": "2026-11-04T23:02Z",
-   "note": "Johnson (ankle) is listed as questionable for Wednesday's game in Washington, Kevin Chouinard of the Hawks' official site reports."
+   "date": "2026-11-04T23:05Z",
+   "note": "Johnson (ankle) is listed as out for Wednesday's game in Washington."
   },
   "3146557": {
    "status": "out",
@@ -35,13 +35,6 @@
    "team": "BOS",
    "date": "2026-11-04T17:48Z",
    "note": "Tatum will be rested Wednesday against the Bucks, Jack Simone of BostonSportsJournal.com reports."
-  },
-  "4066354": {
-   "status": "day-to-day",
-   "name": "Payton Pritchard",
-   "team": "BOS",
-   "date": "2026-11-03T21:12Z",
-   "note": "Pritchard is listed as questionable for Wednesday's game against Milwaukee due to a right shoulder contusion, Taylor Snow of the Celtics' official site reports."
   },
   "4433188": {
    "status": "out",
@@ -373,11 +366,11 @@
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
   "4397688": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Trey Murphy III",
    "team": "NO",
-   "date": "2026-11-04T18:34Z",
-   "note": "Murphy (knees) is now questionable for Wednesday against the Jazz."
+   "date": "2026-11-04T23:10Z",
+   "note": "Murphy (knees) is listed as out for Wednesday's game against Utah."
   },
   "4277956": {
    "status": "out",
@@ -616,20 +609,6 @@
    "team": "UTAH",
    "date": "2026-10-24T23:18Z",
    "note": "Alexander won't play Wednesday against the Grizzlies due to a left knee bone bruise."
-  },
-  "5104155": {
-   "status": "day-to-day",
-   "name": "Bilal Coulibaly",
-   "team": "WSH",
-   "date": "2026-11-04T17:38Z",
-   "note": "Coulibaly (illness) is questionable for Wednesday against the Hawks."
-  },
-  "5160992": {
-   "status": "day-to-day",
-   "name": "Alex Sarr",
-   "team": "WSH",
-   "date": "2026-11-03T21:47Z",
-   "note": "Sarr (knee) is listed as questionable for Wednesday's game against Atlanta."
   },
   "4432187": {
    "status": "out",
