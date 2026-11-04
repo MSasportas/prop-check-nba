@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2768,
+   "pool_left": 2712,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-04T11:00:00-05:00",
-  "last_read_at": null,
+  "next_read_at": "2026-11-04T17:30:00-05:00",
+  "last_read_at": "2026-11-04T11:00:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-04T10:40:01-05:00"
+   "at": "2026-11-04T11:00:01-05:00"
   }
  },
  "games": [
@@ -37,7 +37,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -55,7 +55,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -73,7 +73,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -91,7 +91,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -109,7 +109,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -127,7 +127,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -145,7 +145,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -163,7 +163,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -181,7 +181,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -199,7 +199,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -217,7 +217,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -235,7 +235,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -253,7 +253,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -271,7 +271,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-04T11:00:01-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -282,11 +282,11 @@
  "picks": [],
  "empty": {
   "text": "No picks yet today",
-  "why": "No prices read yet. The first close look is 90 minutes before each tip.",
-  "next": "2026-11-04T11:00:00-05:00"
+  "why": "1260 lines read. Pinnacle hasn't moved alone on any of them yet.",
+  "next": "2026-11-04T17:30:00-05:00"
  },
  "counts": {
-  "lines_read": 0,
+  "lines_read": 1260,
   "passing": 0,
   "games": 14
  },
@@ -296,6 +296,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-04T05:31:33-05:00",
- "status_at": "2026-11-04T10:40:01-05:00"
+ "generated_at": "2026-11-04T11:00:01-05:00",
+ "status_at": "2026-11-04T11:00:01-05:00"
 }
