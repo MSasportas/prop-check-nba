@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T20:00:00-05:00",
+ "at": "2026-11-03T20:10:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -343,6 +343,13 @@
    "team": "MEM",
    "date": "2026-11-03T23:19Z",
    "note": "Pippen (back) won't play Wednesday against the Pacers."
+  },
+  "3032977": {
+   "status": "day-to-day",
+   "name": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "date": "2026-11-04T01:06Z",
+   "note": "Antetokounmpo collected 30 points (10-17 FG, 0-3 3Pt, 10-15 FT), 12 rebounds, seven assists, one steal and two blocks in 34 minutes during Monday's 138-117 loss to the Lakers."
   },
   "4432847": {
    "status": "day-to-day",
