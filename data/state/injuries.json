@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T20:30:00-05:00",
+ "at": "2026-11-04T12:20:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -113,19 +113,19 @@
    "date": "2026-11-03T22:09Z",
    "note": "Watson (hamstring) is out for Wednesday's game in Oklahoma City."
   },
+  "4593125": {
+   "status": "out",
+   "name": "Santi Aldama",
+   "team": "DAL",
+   "date": "2026-11-04T17:03Z",
+   "note": "Aldama (knee) was spotted at Wednesday's morning shootaround, Brad Townsend of The Dallas Morning News reports."
+  },
   "4432582": {
    "status": "out",
    "name": "Max Christie",
    "team": "DAL",
    "date": "2026-11-03T22:25Z",
    "note": "Christie (hip) is out for Wednesday's game against the Spurs."
-  },
-  "4593125": {
-   "status": "out",
-   "name": "Santi Aldama",
-   "team": "DAL",
-   "date": "2026-11-03T22:20Z",
-   "note": "Aldama (knee) is questionable for Wednesday's game against the Spurs."
   },
   "5148538": {
    "status": "out",
@@ -190,6 +190,13 @@
    "date": "2026-10-25T14:56Z",
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
   },
+  "3102531": {
+   "status": "out",
+   "name": "Kristaps Porzingis",
+   "team": "GS",
+   "date": "2026-11-04T17:00Z",
+   "note": "The Warriors have stopped issuing salary payments to Porzingis, who remains away from the team and is considering retirement, Anthony Slater and Shams Charania of ESPN reported Wednesday."
+  },
   "4397040": {
    "status": "day-to-day",
    "name": "Brandon Williams",
@@ -210,13 +217,6 @@
    "team": "GS",
    "date": "2026-11-03T06:11Z",
    "note": "Horford will be rested Monday against the Suns."
-  },
-  "3102531": {
-   "status": "out",
-   "name": "Kristaps Porzingis",
-   "team": "GS",
-   "date": "2026-10-28T14:25Z",
-   "note": "The Warriors are exploring potential trades involving Porzingis (personal), who remains away from the team indefinitely while dealing with ongoing health concerns, Anthony Slater of ESPN.com reports."
   },
   "4432171": {
    "status": "out",
