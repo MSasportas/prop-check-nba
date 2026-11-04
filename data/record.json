@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T22:00:00-05:00",
+ "generated_at": "2026-11-04T17:30:00-05:00",
  "summary": {
   "headline": {
    "w": 18,
@@ -99,6 +99,41 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-04",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-04:401909922:3059318:threes:0.5:under",
+     "kind": "single",
+     "player": "Joel Embiid",
+     "bet": "Under 0.5 threes",
+     "market": "threes",
+     "team": "PHI",
+     "game": "PHI at DET",
+     "price": 160,
+     "first_price": 160,
+     "last_price": 160,
+     "prices": [
+      {
+       "price": 160,
+       "at": "2026-11-04T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
   {
    "date": "2026-11-02",
    "graded": true,
@@ -693,58 +728,9 @@
      "under_fair": false
     }
    ]
-  },
-  {
-   "date": "2026-10-26",
-   "graded": true,
-   "w": 2,
-   "l": 0,
-   "units": 1.78,
-   "entries": [
-    {
-     "id": "replay:2026-10-26:Justin Champagnie:points:7.5:under",
-     "kind": "single",
-     "player": "Justin Champagnie",
-     "bet": "Under 7.5 points",
-     "market": "points",
-     "team": "WAS",
-     "game": "WAS at CHA",
-     "price": -110,
-     "first_price": -110,
-     "last_price": -110,
-     "prices": [],
-     "result": "W",
-     "actual": "2 points",
-     "units": 0.9091,
-     "pulled": null,
-     "legs": [],
-     "window": "90 \u2192 45 min",
-     "replay": true,
-     "under_fair": false
-    },
-    {
-     "id": "replay:2026-10-26:Nikola Jokic:points:26.5:under",
-     "kind": "single",
-     "player": "Nikola Jokic",
-     "bet": "Under 26.5 points",
-     "market": "points",
-     "team": "DEN",
-     "game": "GSW at DEN",
-     "price": -115,
-     "first_price": -115,
-     "last_price": -115,
-     "prices": [],
-     "result": "W",
-     "actual": "19 points",
-     "units": 0.8696,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "replay": true,
-     "under_fair": false
-    }
-   ]
   }
  ],
- "older": []
+ "older": [
+  "record/2026-10.json"
+ ]
 }

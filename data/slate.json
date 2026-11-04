@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2712,
+   "pool_left": 2704,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-04T17:30:00-05:00",
-  "last_read_at": "2026-11-04T11:00:01-05:00",
+  "next_read_at": "2026-11-04T18:00:00-05:00",
+  "last_read_at": "2026-11-04T17:30:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-04T17:00:01-05:00"
+   "at": "2026-11-04T17:30:00-05:00"
   }
  },
  "games": [
@@ -37,12 +37,17 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-04T11:00:01-05:00",
-   "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "read_at": "2026-11-04T17:30:00-05:00",
+   "picks": 1,
+   "checks": [
+    {
+     "read": "B",
+     "at": "2026-11-04T17:30:00-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-04T17:30:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-04T17:30:00-05:00"
+   "next_check_at": "2026-11-04T18:15:00-05:00"
   },
   {
    "id": "401909923",
@@ -55,12 +60,17 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-04T11:00:01-05:00",
+   "read_at": "2026-11-04T17:30:00-05:00",
    "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "checks": [
+    {
+     "read": "B",
+     "at": "2026-11-04T17:30:00-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-04T17:30:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-04T17:30:00-05:00"
+   "next_check_at": "2026-11-04T18:15:00-05:00"
   },
   {
    "id": "401909924",
@@ -279,15 +289,77 @@
    "next_check_at": "2026-11-04T21:00:00-05:00"
   }
  ],
- "picks": [],
- "empty": {
-  "text": "No picks yet today",
-  "why": "1260 lines read. Pinnacle hasn't moved alone on any of them yet.",
-  "next": "2026-11-04T17:30:00-05:00"
- },
+ "picks": [
+  {
+   "player": "Joel Embiid",
+   "pid": "3059318",
+   "team": "PHI",
+   "opp": "DET",
+   "home": false,
+   "game_id": "401909922",
+   "start": "2026-11-04T19:00:00-05:00",
+   "bet": "Under 0.5 threes",
+   "market": "threes",
+   "side": "under",
+   "line": 0.5,
+   "price": 160,
+   "price_at": "2026-11-04T17:30:00-05:00",
+   "read": "B",
+   "p": 0.4138,
+   "p_pct": 41,
+   "breakeven": 0.3846,
+   "breakeven_pct": 38,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0637,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from +167 to +126 (35% to 41%). Hard Rock +160 is 7.6% better than Pinnacle's fair price; DraftKings +174 is 13.4% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.3501,
+   "pin_after": 0.4138,
+   "pin_price_before": 167,
+   "pin_price_after": 126,
+   "others_move": 0.0207,
+   "n_others": 8,
+   "ev_vs_pin": 0.0758,
+   "window": "11 AM \u2192 90 min",
+   "gap_vs_pin": 0.0579,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.1338,
+     "price": 174
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.0758,
+     "price": 160
+    }
+   },
+   "id": "2026-11-04:401909922:3059318:threes:0.5:under",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "9206743924666925451",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/9206743924666925451",
+     "price": 160
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA385514331%232348793819_13L42648Q1-503844112Q20",
+     "price": 174
+    }
+   },
+   "rank": 1
+  }
+ ],
+ "empty": null,
  "counts": {
-  "lines_read": 1260,
-  "passing": 0,
+  "lines_read": 1262,
+  "passing": 3,
   "games": 14
  },
  "safety_paused": false,
@@ -296,6 +368,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-04T11:00:01-05:00",
- "status_at": "2026-11-04T17:00:01-05:00"
+ "generated_at": "2026-11-04T17:30:00-05:00",
+ "status_at": "2026-11-04T17:30:00-05:00"
 }

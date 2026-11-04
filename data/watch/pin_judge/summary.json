@@ -4,17 +4,49 @@
  "about": "Behind the scenes (Matt, 2026-10-28): Hard Rock's main-line price is min_ev or better against Pinnacle's de-vigged chance on the same line. Research only: Backstage tab, never the Record or Discord. Discovery Oct 25-27 at +2%: 6 bets 5-1 +3.18u.",
  "from_slate": "2026-10-28",
  "min_ev": 0.02,
- "updated_at": "2026-11-03T01:00:03-05:00",
+ "updated_at": "2026-11-04T17:30:03-05:00",
  "total": {
   "w": 13,
   "l": 16,
   "push": 0,
   "void": 0,
   "units": -2.94,
-  "pending": 0,
+  "pending": 1,
   "hit_rate": 0.4483
  },
  "nights": [
+  {
+   "date": "2026-11-04",
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "bets": [
+    {
+     "at": "2026-11-04T17:30:00-05:00",
+     "bet": "Under 0.5 threes",
+     "game_id": "401909922",
+     "gap_ev": -0.025,
+     "home": false,
+     "line": 0.5,
+     "market": "threes",
+     "market_fair": 0.375,
+     "opp": "DET",
+     "pid": "3059318",
+     "pin_ev": 0.0758,
+     "pin_fair": 0.4138,
+     "player": "Joel Embiid",
+     "price": 160,
+     "read": "B",
+     "side": "under",
+     "slate": "2026-11-04",
+     "start": "2026-11-04T19:00:00-05:00",
+     "team": "PHI",
+     "result": null,
+     "actual": null,
+     "units": null
+    }
+   ]
+  },
   {
    "date": "2026-11-02",
    "w": 5,
