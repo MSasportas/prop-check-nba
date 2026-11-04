@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T18:30:01-05:00",
+ "generated_at": "2026-11-04T18:50:00-05:00",
  "summary": {
   "headline": {
    "w": 18,
@@ -233,6 +233,32 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-04:401909925:3032979:assists:3.5:under",
+     "kind": "single",
+     "player": "Dennis Schroder",
+     "bet": "Under 3.5 assists",
+     "market": "assists",
+     "team": "CHA",
+     "game": "CHA at BKN",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-04T18:50:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min",
      "book": "hardrock",
      "under_fair": false
     }

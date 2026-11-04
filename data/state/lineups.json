@@ -16,7 +16,7 @@
    }
   },
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cade Cunningham",
     "Duncan Robinson",
@@ -30,9 +30,9 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "CJ McCollum",
+    "Kingston Flemings",
     "Nickeil Alexander-Walker",
     "Dyson Daniels",
     "Luguentz Dort",
@@ -416,5 +416,5 @@
    }
   }
  },
- "at": "2026-11-04T18:40:00-05:00"
+ "at": "2026-11-04T18:50:00-05:00"
 }

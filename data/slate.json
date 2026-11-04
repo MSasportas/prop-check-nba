@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2664,
+   "pool_left": 2652,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-04T18:45:00-05:00",
-  "last_read_at": "2026-11-04T18:40:00-05:00",
+  "next_read_at": "2026-11-04T19:00:00-05:00",
+  "last_read_at": "2026-11-04T18:50:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-04T18:40:00-05:00"
+   "at": "2026-11-04T18:50:00-05:00"
   }
  },
  "games": [
@@ -35,7 +35,7 @@
    "detail": "11/4 - 7:00 PM EST",
    "lineups": {
     "away": "confirmed",
-    "home": "expected"
+    "home": "confirmed"
    },
    "read_at": "2026-11-04T18:40:00-05:00",
    "picks": 1,
@@ -65,7 +65,7 @@
    "state": "pre",
    "detail": "11/4 - 7:00 PM EST",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "confirmed"
    },
    "read_at": "2026-11-04T18:40:00-05:00",
@@ -99,17 +99,21 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-04T18:00:00-05:00",
+   "read_at": "2026-11-04T18:50:00-05:00",
    "picks": 1,
    "checks": [
     {
      "read": "B",
      "at": "2026-11-04T18:00:00-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-04T18:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-04T18:00:00-05:00",
+   "last_check_at": "2026-11-04T18:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-04T18:45:00-05:00"
+   "next_check_at": "2026-11-04T19:10:00-05:00"
   },
   {
    "id": "401909925",
@@ -122,17 +126,21 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-04T18:00:00-05:00",
-   "picks": 2,
+   "read_at": "2026-11-04T18:50:00-05:00",
+   "picks": 3,
    "checks": [
     {
      "read": "B",
      "at": "2026-11-04T18:00:00-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-04T18:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-04T18:00:00-05:00",
+   "last_check_at": "2026-11-04T18:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-04T18:45:00-05:00"
+   "next_check_at": "2026-11-04T19:10:00-05:00"
   },
   {
    "id": "401909926",
@@ -145,17 +153,21 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-04T18:00:00-05:00",
+   "read_at": "2026-11-04T18:50:00-05:00",
    "picks": 0,
    "checks": [
     {
      "read": "B",
      "at": "2026-11-04T18:00:00-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-04T18:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-04T18:00:00-05:00",
+   "last_check_at": "2026-11-04T18:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-04T18:45:00-05:00"
+   "next_check_at": "2026-11-04T19:10:00-05:00"
   },
   {
    "id": "401909927",
@@ -441,8 +453,8 @@
     }
    },
    "id": "2026-11-04:401909922:3059318:threes:0.5:under",
-   "state": "clear",
-   "state_label": "Injury report clear",
+   "state": "starters",
+   "state_label": "Starters confirmed",
    "price_final": true,
    "pulled": null,
    "result": null,
@@ -525,6 +537,71 @@
    "rank": 3
   },
   {
+   "player": "Dennis Schroder",
+   "pid": "3032979",
+   "team": "CHA",
+   "opp": "BKN",
+   "home": false,
+   "game_id": "401909925",
+   "start": "2026-11-04T19:30:00-05:00",
+   "bet": "Under 3.5 assists",
+   "market": "assists",
+   "side": "under",
+   "line": 3.5,
+   "price": 115,
+   "price_at": "2026-11-04T18:50:00-05:00",
+   "read": "C",
+   "p": 0.4739,
+   "p_pct": 47,
+   "breakeven": 0.4651,
+   "breakeven_pct": 47,
+   "market_fair": null,
+   "n_books": 7,
+   "gap_ev": null,
+   "final_ev": 0.0468,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from +119 to -103 (43% to 47%). Hard Rock +115 is 1.9% better than Pinnacle's fair price; DraftKings +116 is 2.4% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.4271,
+   "pin_after": 0.4739,
+   "pin_price_before": 119,
+   "pin_price_after": -103,
+   "others_move": 0.0037,
+   "n_others": 7,
+   "ev_vs_pin": 0.0188,
+   "window": "90 \u2192 45 min",
+   "gap_vs_pin": 0.0423,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.0236,
+     "price": 116
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.0188,
+     "price": 115
+    }
+   },
+   "id": "2026-11-04:401909925:3032979:assists:3.5:under",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "1096236674943418778",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/1096236674943418778",
+     "price": 115
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA385718502%232349543671_13L42648Q11701984101Q20",
+     "price": 116
+    }
+   },
+   "rank": 4
+  },
+  {
    "player": "Myles Turner",
    "pid": "3133628",
    "team": "MIL",
@@ -580,7 +657,7 @@
     },
     "draftkings": null
    },
-   "rank": 4
+   "rank": 5
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -638,13 +715,13 @@
     },
     "draftkings": null
    },
-   "rank": 5
+   "rank": 6
   }
  ],
  "empty": null,
  "counts": {
-  "lines_read": 1282,
-  "passing": 16,
+  "lines_read": 1292,
+  "passing": 18,
   "games": 14
  },
  "safety_paused": false,
@@ -653,6 +730,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-04T18:40:00-05:00",
- "status_at": "2026-11-04T18:40:00-05:00"
+ "generated_at": "2026-11-04T18:50:00-05:00",
+ "status_at": "2026-11-04T18:50:00-05:00"
 }
