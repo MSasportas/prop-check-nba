@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T12:50:01-05:00",
+ "at": "2026-11-04T13:00:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -29,19 +29,19 @@
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
+  "4065648": {
+   "status": "out",
+   "name": "Jayson Tatum",
+   "team": "BOS",
+   "date": "2026-11-04T17:48Z",
+   "note": "Tatum will be rested Wednesday against the Bucks, Jack Simone of BostonSportsJournal.com reports."
+  },
   "4066354": {
    "status": "day-to-day",
    "name": "Payton Pritchard",
    "team": "BOS",
    "date": "2026-11-03T21:12Z",
    "note": "Pritchard is listed as questionable for Wednesday's game against Milwaukee due to a right shoulder contusion, Taylor Snow of the Celtics' official site reports."
-  },
-  "4065648": {
-   "status": "day-to-day",
-   "name": "Jayson Tatum",
-   "team": "BOS",
-   "date": "2026-11-03T21:10Z",
-   "note": "Tatum (rest) is questionable for Wednesday against the Bucks, Taylor Snow of the Celtics' official site reports."
   },
   "4433188": {
    "status": "out",
@@ -357,6 +357,13 @@
    "team": "MIA",
    "date": "2026-11-04T01:05Z",
    "note": "Antetokounmpo is probable to play Wednesday against the Clippers due to a sprained right wrist."
+  },
+  "4697268": {
+   "status": "day-to-day",
+   "name": "Kam Jones",
+   "team": "MIL",
+   "date": "2026-11-04T17:43Z",
+   "note": "Jones (ankle) is questionable for Wednesday against the Celtics."
   },
   "4432847": {
    "status": "day-to-day",
