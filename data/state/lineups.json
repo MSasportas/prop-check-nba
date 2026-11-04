@@ -2,7 +2,7 @@
  "slate": "2026-11-04",
  "teams": {
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
@@ -46,7 +46,7 @@
    }
   },
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
@@ -98,7 +98,6 @@
     "Moussa Diabate"
    ],
    "status": {
-    "Coby White": "probable",
     "Grant Williams": "out"
    }
   },
@@ -336,7 +335,7 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Santi Aldama": "doubtful",
+    "Santi Aldama": "out",
     "Tarik Biberovic": "out",
     "Max Christie": "out",
     "Sergio de Larrea": "out",
@@ -417,5 +416,5 @@
    }
   }
  },
- "at": "2026-11-04T18:30:19-05:00"
+ "at": "2026-11-04T18:40:00-05:00"
 }
