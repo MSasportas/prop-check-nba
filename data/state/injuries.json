@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T13:30:01-05:00",
+ "at": "2026-11-04T13:50:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -226,11 +226,11 @@
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
   "3102529": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Clint Capela",
    "team": "HOU",
-   "date": "2026-11-03T22:19Z",
-   "note": "Capela (ankle) is listed as questionable for Wednesday's game against the Timberwolves."
+   "date": "2026-11-04T18:36Z",
+   "note": "Capela (ankle) is out for Wednesday's game against the Timberwolves."
   },
   "2991235": {
    "status": "out",
@@ -379,19 +379,19 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4397688": {
+   "status": "day-to-day",
+   "name": "Trey Murphy III",
+   "team": "NO",
+   "date": "2026-11-04T18:34Z",
+   "note": "Murphy (knees) is now questionable for Wednesday against the Jazz."
+  },
   "4277956": {
    "status": "out",
    "name": "Jordan Poole",
    "team": "NO",
    "date": "2026-11-03T22:56Z",
    "note": "Poole (ankle) is listed as probable for Wednesday's game against Utah."
-  },
-  "4397688": {
-   "status": "day-to-day",
-   "name": "Trey Murphy III",
-   "team": "NO",
-   "date": "2026-11-03T22:52Z",
-   "note": "Murphy (knee) is probable for Wednesday's game versus the Jazz."
   },
   "5061589": {
    "status": "out",
