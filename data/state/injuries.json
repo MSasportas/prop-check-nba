@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T14:30:01-05:00",
+ "at": "2026-11-04T15:20:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -287,6 +287,13 @@
    "team": "IND",
    "date": "2026-10-28T21:30Z",
    "note": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports."
+  },
+  "4432170": {
+   "status": "day-to-day",
+   "name": "Isaiah Jackson",
+   "team": "LAC",
+   "date": "2026-11-04T20:11Z",
+   "note": "Jackson chipped in 19 points (9-11 FG, 1-1 3Pt), eight rebounds and two assists in 26 minutes during Monday's 125-118 loss to the Raptors."
   },
   "5108024": {
    "status": "out",
