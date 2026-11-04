@@ -150,6 +150,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   2026-11-01: no A read (keys refilled, full-month plan = B, C, D; section 7 item 6). First B read 2 PM (BOS@ORL): Hard Rock all 4 markets, all 9 other books all 4 markets.
   2026-11-01 all 12 reads (4 games x B/C/D): Hard Rock all 4 markets, all 9 other books all 4 markets on every read (BetMGM complete).
   2026-11-02 all 45 reads (15 games x B/C/D): Hard Rock all 4 markets, all 9 other books all 4 markets on every read.
+  2026-11-04 A read (first under v2.4 spare credits, 14 games x 4 = 56 credits): Hard Rock all 4 markets on 14/14; all 9 other books all 4 markets except BetMGM (absent MIL@BOS).
 - **Discord:** `scripts/notify.py`, secret `DISCORD_WEBHOOK`. Sends NEW PICKS (batched), PULLED (only picks already sent, before tip, with
   the if-bet line), PRICE FINAL, ACTION NEEDED (keys refused / pool low, once a day each), a one-time hello. Never no-pick nights,
   heartbeats, grading or errors. Quiet 12:30-9:00 AM ET. Max 12 messages a day.
@@ -212,6 +213,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-11-04 2:10 PM (CEO, daily check): alive (chain link 182, status 2:00 PM, all steps ok, Actions green, pool 2,712, plan A/B/C/D for 14 games). v2.4 spare A read ran 11 AM (56 credits; Hard Rock all 4 markets on every game). No games 11-03, so nothing to grade and no Rotowire confirms expected; all 37 shown picks on the Record graded. Unmatched Rotowire: Diop, Tomlin (harmless); no unmatched odds names, no unknown teams. Tests pass. No code changes.
 - 2026-11-03 ~5:15 PM (CEO, Matt: "There should not be a daily budget"): removed the per-day credit cap (`budget_today`) from the
   plan and the read loop. Found while checking v2.4: on a big slate the spare 11 AM reads counted against the day's cap and could
   block the 90-min read of the latest games (C/D were exempt, B was not). Now every planned read runs while credits last; spare reads
