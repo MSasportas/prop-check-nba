@@ -1,12 +1,7 @@
 {
  "slate": "2026-11-04",
  "valid_until": "2026-11-05T05:00:00-05:00",
- "banners": [
-  {
-   "level": "stop",
-   "text": "The last update failed at 5:31 AM (push). Showing 5:00 AM data."
-  }
- ],
+ "banners": [],
  "status": {
   "odds": {
    "keys": 6,
@@ -26,9 +21,8 @@
   "next_read_at": "2026-11-04T11:00:00-05:00",
   "last_read_at": null,
   "last_run": {
-   "ok": false,
-   "at": "2026-11-04T05:31:10-05:00",
-   "failed_step": "push"
+   "ok": true,
+   "at": "2026-11-04T05:31:33-05:00"
   }
  },
  "games": [
@@ -302,6 +296,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-04T05:00:00-05:00",
- "status_at": "2026-11-04T05:31:10-05:00"
+ "generated_at": "2026-11-04T05:31:33-05:00",
+ "status_at": "2026-11-04T05:31:33-05:00"
 }

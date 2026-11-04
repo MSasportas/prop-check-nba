@@ -1,27 +1,27 @@
 {
- "finished_at": "2026-11-04T05:00:00-05:00",
+ "finished_at": "2026-11-04T05:31:33-05:00",
  "slate": "2026-11-04",
- "ok": false,
+ "ok": true,
  "steps": {
   "schedule": {
    "ok": true,
-   "sec": 5.1
+   "sec": 0.1
   },
   "rosters": {
    "ok": true,
-   "sec": 3.7
+   "sec": 0.0
   },
   "injuries": {
    "ok": true,
-   "sec": 0.1
+   "sec": 0.2
   },
   "lineups": {
    "ok": true,
-   "sec": 0.1
+   "sec": 0.0
   },
   "odds": {
    "ok": true,
-   "sec": 1.1
+   "sec": 0.0
   },
   "engine": {
    "ok": true,
@@ -90,15 +90,15 @@
  "graded_now": 0,
  "sources": {
   "espn": {
-   "ok": 56,
+   "ok": 2,
    "failed": 0
   },
   "rotowire": {
-   "ok": 1,
+   "ok": 0,
    "failed": 0
   },
   "odds": {
-   "ok": 6,
+   "ok": 0,
    "failed": 0
   }
  },
@@ -109,14 +109,10 @@
  "unmatched": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "41811290107",
-  "iteration": 2,
-  "chain_link": 169,
+  "run_id": "41814729893",
+  "iteration": 1,
+  "chain_link": 170,
   "chain_started_at": "2026-10-30T07:00:11-04:00",
-  "run_started_at": "2026-11-04T05:00:38-05:00"
- },
- "status_at": "2026-11-04T05:31:10-05:00",
- "failed_step": "push",
- "failed_at": "2026-11-04T05:31:10-05:00",
- "note": "The run stopped before finishing. Files from the last good run are still in place."
+  "run_started_at": "2026-11-04T05:31:32-05:00"
+ }
 }
