@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T19:10:00-05:00",
+ "at": "2026-11-03T19:30:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -505,6 +505,13 @@
    "date": "2026-10-06T19:17Z",
    "note": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN."
   },
+  "5105977": {
+   "status": "day-to-day",
+   "name": "Rasheer Fleming",
+   "team": "PHX",
+   "date": "2026-11-04T00:19Z",
+   "note": "Fleming logged eight points (4-10 FG, 0-4 3Pt), four rebounds and one steal over 18 minutes during the Suns' 123-103 preseason loss to the Spurs on Wednesday."
+  },
   "4278402": {
    "status": "day-to-day",
    "name": "Jordan Goodwin",
@@ -575,6 +582,13 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
+  "6450": {
+   "status": "out",
+   "name": "Kawhi Leonard",
+   "team": "TOR",
+   "date": "2026-11-04T00:14Z",
+   "note": "Leonard has completed treatment to reduce swelling in his left knee and he will be re-evaluated in one week, Brett Siegel of ClutchPoints.com reports."
+  },
   "3134908": {
    "status": "day-to-day",
    "name": "Jakob Poeltl",
@@ -588,13 +602,6 @@
    "team": "TOR",
    "date": "2026-11-02T20:20Z",
    "note": "Bittle (foot) is out for Monday's game against the Clippers and remains without a timetable to return."
-  },
-  "6450": {
-   "status": "out",
-   "name": "Kawhi Leonard",
-   "team": "TOR",
-   "date": "2026-10-29T15:39Z",
-   "note": "Leonard (knee) is expected to be sidelined for at least three to four weeks, Chris Haynes of NBA TV reports."
   },
   "3102530": {
    "status": "out",
