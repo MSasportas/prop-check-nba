@@ -56,6 +56,7 @@
    ],
    "status": {
     "Alex Sarr": "questionable",
+    "Bilal Coulibaly": "questionable",
     "Anthony Gill": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
@@ -66,27 +67,29 @@
   "MIL": {
    "state": "expected",
    "starters": [
-    "Ryan Rollins",
+    "Brayden Burries",
     "Tyler Herro",
     "Jaime Jaquez",
     "Kyle Kuzma",
     "Myles Turner"
    ],
-   "status": {}
+   "status": {
+    "Kam Jones": "questionable"
+   }
   },
   "BOS": {
    "state": "expected",
    "starters": [
     "Derrick White",
     "Hugo Gonzalez",
+    "Baylor Scheierman",
     "Paul George",
-    "Jayson Tatum",
     "Neemias Queta"
    ],
    "status": {
-    "Jayson Tatum": "questionable",
     "Payton Pritchard": "questionable",
-    "Devin Carter": "out"
+    "Devin Carter": "out",
+    "Jayson Tatum": "out"
    }
   },
   "CHA": {
@@ -100,7 +103,6 @@
    ],
    "status": {
     "Coby White": "probable",
-    "Kon Knueppel": "probable",
     "Grant Williams": "out"
    }
   },
@@ -136,12 +138,12 @@
    "starters": [
     "Jalen Brunson",
     "Mikal Bridges",
-    "Josh Hart",
+    "Landry Shamet",
     "OG Anunoby",
     "Karl-Anthony Towns"
    ],
    "status": {
-    "Josh Hart": "questionable"
+    "Josh Hart": "out"
    }
   },
   "UTAH": {
@@ -169,7 +171,7 @@
     "Karlo Matkovic"
    ],
    "status": {
-    "Trey Murphy": "probable",
+    "Trey Murphy": "questionable",
     "Jordan Poole": "probable",
     "Yves Missi": "out"
    }
@@ -184,7 +186,6 @@
     "Jarrett Allen"
    ],
    "status": {
-    "Khalifa Diop": "out",
     "Nae'Qwan Tomlin": "out",
     "Jaylon Tyson": "out",
     "Peyton Watson": "out"
@@ -251,9 +252,9 @@
     "Rudy Gobert"
    ],
    "status": {
-    "Terrence Shannon": "questionable",
     "Donte DiVincenzo": "out",
-    "Anthony Edwards": "out"
+    "Anthony Edwards": "out",
+    "Terrence Shannon": "out"
    }
   },
   "HOU": {
@@ -266,8 +267,8 @@
     "Alperen Sengun"
    ],
    "status": {
-    "Clint Capela": "questionable",
-    "Steven Adams": "out"
+    "Steven Adams": "out",
+    "Clint Capela": "out"
    }
   },
   "TOR": {
@@ -325,8 +326,8 @@
     "Khaman Maluach"
    ],
    "status": {
-    "Rasheer Fleming": "questionable",
     "Jordan Goodwin": "questionable",
+    "Rasheer Fleming": "out",
     "Mark Williams": "out"
    }
   },
@@ -340,7 +341,7 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Santi Aldama": "questionable",
+    "Santi Aldama": "doubtful",
     "Tarik Biberovic": "out",
     "Max Christie": "out",
     "Sergio de Larrea": "out",
@@ -400,8 +401,7 @@
     "Bam Adebayo"
    ],
    "status": {
-    "Giannis Antetokounmpo": "probable",
-    "Myron Gardner": "questionable"
+    "Giannis Antetokounmpo": "probable"
    }
   },
   "LAC": {
@@ -414,6 +414,7 @@
     "Isaiah Jackson"
    ],
    "status": {
+    "Isaiah Jackson": "questionable",
     "Bradley Beal": "out",
     "Brandon Ingram": "out",
     "Jordan Miller": "out",
@@ -421,5 +422,5 @@
    }
   }
  },
- "at": "2026-11-04T05:00:00-05:00"
+ "at": "2026-11-04T16:00:01-05:00"
 }
