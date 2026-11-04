@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T12:20:01-05:00",
+ "at": "2026-11-04T12:50:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -630,6 +630,13 @@
    "team": "UTAH",
    "date": "2026-10-24T23:18Z",
    "note": "Alexander won't play Wednesday against the Grizzlies due to a left knee bone bruise."
+  },
+  "5104155": {
+   "status": "day-to-day",
+   "name": "Bilal Coulibaly",
+   "team": "WSH",
+   "date": "2026-11-04T17:38Z",
+   "note": "Coulibaly (illness) is questionable for Wednesday against the Hawks."
   },
   "2581184": {
    "status": "day-to-day",
