@@ -35,13 +35,13 @@
     "CJ McCollum",
     "Nickeil Alexander-Walker",
     "Dyson Daniels",
-    "Jalen Johnson",
+    "Luguentz Dort",
     "Onyeka Okongwu"
    ],
    "status": {
-    "Jalen Johnson": "questionable",
     "Henri Veesaar": "out",
     "Mouhamed Gueye": "out",
+    "Jalen Johnson": "out",
     "Jock Landale": "out"
    }
   },
@@ -55,8 +55,6 @@
     "Alex Sarr"
    ],
    "status": {
-    "Alex Sarr": "questionable",
-    "Bilal Coulibaly": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
     "Tristan Vukcevic": "out",
@@ -86,7 +84,6 @@
     "Neemias Queta"
    ],
    "status": {
-    "Payton Pritchard": "questionable",
     "Devin Carter": "out",
     "Jayson Tatum": "out"
    }
@@ -164,14 +161,14 @@
    "starters": [
     "Dejounte Murray",
     "Jeremiah Fears",
-    "Trey Murphy",
+    "Herbert Jones",
     "Zion Williamson",
     "Karlo Matkovic"
    ],
    "status": {
-    "Trey Murphy": "questionable",
     "Jordan Poole": "probable",
-    "Yves Missi": "out"
+    "Yves Missi": "out",
+    "Trey Murphy": "out"
    }
   },
   "CLE": {
@@ -420,5 +417,5 @@
    }
   }
  },
- "at": "2026-11-04T18:00:00-05:00"
+ "at": "2026-11-04T18:10:01-05:00"
 }
