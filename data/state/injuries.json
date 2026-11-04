@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T13:00:00-05:00",
+ "at": "2026-11-04T13:10:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -64,12 +64,12 @@
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
   },
-  "5061575": {
+  "4066218": {
    "status": "out",
-   "name": "Kon Knueppel",
+   "name": "Grant Williams",
    "team": "CHA",
-   "date": "2026-11-03T22:13Z",
-   "note": "Knueppel (hamstring) is listed as probable for Wednesday's game against the Nets."
+   "date": "2026-11-04T17:59Z",
+   "note": "Charlotte assigned Williams (hamstring) to the G League's Greensboro Swarm on Wednesday."
   },
   "4395651": {
    "status": "day-to-day",
@@ -77,13 +77,6 @@
    "team": "CHA",
    "date": "2026-11-03T22:06Z",
    "note": "White (calf) is probable for Wednesday's game in Brooklyn."
-  },
-  "4066218": {
-   "status": "out",
-   "name": "Grant Williams",
-   "team": "CHA",
-   "date": "2026-11-01T22:17Z",
-   "note": "Williams (hamstring) is listed as out for Monday's game against the Pistons."
   },
   "4278067": {
    "status": "out",
