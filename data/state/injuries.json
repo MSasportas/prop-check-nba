@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T14:00:00-05:00",
+ "at": "2026-11-04T14:10:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -449,13 +449,6 @@
    "date": "2026-10-28T23:41Z",
    "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
   },
-  "4712849": {
-   "status": "day-to-day",
-   "name": "Anthony Black",
-   "team": "ORL",
-   "date": "2026-11-03T05:35Z",
-   "note": "Black will be rested Monday against the Wizards."
-  },
   "4065654": {
    "status": "out",
    "name": "Jonathan Isaac",
@@ -603,19 +596,19 @@
    "date": "2026-11-02T20:20Z",
    "note": "Bittle (foot) is out for Monday's game against the Clippers and remains without a timetable to return."
   },
+  "4277919": {
+   "status": "day-to-day",
+   "name": "Mo Bamba",
+   "team": "UTAH",
+   "date": "2026-11-04T18:41Z",
+   "note": "Bamba (ankle) participated in Wednesday's morning shootaround, per Shreyas Laddha of The Salt Lake Tribune."
+  },
   "3102530": {
    "status": "out",
    "name": "Jusuf Nurkic",
    "team": "UTAH",
    "date": "2026-11-03T23:07Z",
    "note": "Nurkic (foot) is out for Wednesday's game against the Pelicans."
-  },
-  "4277919": {
-   "status": "day-to-day",
-   "name": "Mo Bamba",
-   "team": "UTAH",
-   "date": "2026-11-03T23:04Z",
-   "note": "Bamba is questionable for Wednesday's game in New Orleans due to a sprained right ankle."
   },
   "4277961": {
    "status": "out",
