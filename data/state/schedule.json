@@ -447,13 +447,13 @@
     "start": "2026-11-04T21:00:00-05:00",
     "away": "POR",
     "home": "PHX",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:33 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "POR": "126",
-     "PHX": "112"
+     "POR": "132",
+     "PHX": "119"
     }
    },
    {
@@ -465,10 +465,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:18 - 3rd",
+    "detail": "49.0 - 3rd",
     "score": {
-     "DAL": "66",
-     "SA": "77"
+     "DAL": "78",
+     "SA": "86"
     }
    },
    {
@@ -480,10 +480,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:28 - 3rd",
+    "detail": "4:41 - 3rd",
     "score": {
-     "LAL": "67",
-     "SAC": "60"
+     "LAL": "76",
+     "SAC": "69"
     }
    },
    {

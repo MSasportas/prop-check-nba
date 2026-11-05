@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-04T23:40:01-05:00",
+ "generated_at": "2026-11-04T23:50:01-05:00",
  "summary": {
   "headline": {
    "w": 23,
-   "l": 8,
+   "l": 9,
    "push": 0,
    "void": 0,
-   "units": 14.82,
-   "hit_rate": 0.7419,
-   "needed": 0.5144,
-   "n": 31
+   "units": 13.82,
+   "hit_rate": 0.7188,
+   "needed": 0.516,
+   "n": 32
   },
   "rows": [
    {
@@ -28,13 +28,13 @@
     "key": "points",
     "label": "Points",
     "w": 8,
-    "l": 3,
+    "l": 4,
     "push": 0,
     "void": 0,
-    "units": 3.75,
-    "hit_rate": 0.7273,
-    "needed": 0.5452,
-    "n": 11
+    "units": 2.75,
+    "hit_rate": 0.6667,
+    "needed": 0.5469,
+    "n": 12
    },
    {
     "key": "assists",
@@ -64,13 +64,13 @@
     "key": "window:11 AM \u2192 90 min",
     "label": "Window 11 AM \u2192 90 min",
     "w": 11,
-    "l": 4,
+    "l": 5,
     "push": 0,
     "void": 0,
-    "units": 7.39,
-    "hit_rate": 0.7333,
-    "needed": 0.5055,
-    "n": 15
+    "units": 6.39,
+    "hit_rate": 0.6875,
+    "needed": 0.5092,
+    "n": 16
    },
    {
     "key": "window:90 \u2192 45 min",
@@ -119,13 +119,13 @@
       "key": "points",
       "label": "Points",
       "w": 8,
-      "l": 3,
+      "l": 4,
       "push": 0,
       "void": 0,
-      "units": 3.75,
-      "hit_rate": 0.7273,
-      "needed": 0.5452,
-      "n": 11
+      "units": 2.75,
+      "hit_rate": 0.6667,
+      "needed": 0.5469,
+      "n": 12
      },
      {
       "key": "assists",
@@ -162,13 +162,13 @@
       "key": "e0",
       "label": "0 to 2%",
       "w": 18,
-      "l": 7,
+      "l": 8,
       "push": 0,
       "void": 0,
-      "units": 10.18,
-      "hit_rate": 0.72,
-      "needed": 0.5211,
-      "n": 25
+      "units": 9.18,
+      "hit_rate": 0.6923,
+      "needed": 0.5228,
+      "n": 26
      },
      {
       "key": "e2",
@@ -217,13 +217,13 @@
       "key": "clear",
       "label": "Injury report clear",
       "w": 16,
-      "l": 7,
+      "l": 8,
       "push": 0,
       "void": 0,
-      "units": 8.96,
-      "hit_rate": 0.6957,
-      "needed": 0.5148,
-      "n": 23
+      "units": 7.96,
+      "hit_rate": 0.6667,
+      "needed": 0.5169,
+      "n": 24
      },
      {
       "key": "starters",
@@ -260,13 +260,13 @@
       "key": "fav",
       "label": "-100 to -150",
       "w": 14,
-      "l": 6,
+      "l": 7,
       "push": 0,
       "void": 0,
-      "units": 5.27,
-      "hit_rate": 0.7,
-      "needed": 0.5533,
-      "n": 20
+      "units": 4.27,
+      "hit_rate": 0.6667,
+      "needed": 0.5539,
+      "n": 21
      }
     ]
    }
@@ -275,11 +275,11 @@
    {
     "date": "2026-11-04",
     "w": 5,
-    "l": 3,
+    "l": 4,
     "push": 0,
     "void": 0,
-    "units": 2.48,
-    "n": 11,
+    "units": 1.48,
+    "n": 12,
     "graded": false
    },
    {
@@ -359,8 +359,8 @@
    "date": "2026-11-04",
    "graded": false,
    "w": 5,
-   "l": 3,
-   "units": 2.48,
+   "l": 4,
+   "units": 1.48,
    "entries": [
     {
      "id": "2026-11-04:401909922:3059318:threes:0.5:under",
@@ -541,6 +541,36 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-04:401909932:4066383:points:16.5:under",
+     "kind": "single",
+     "player": "Miles Bridges",
+     "bet": "Under 16.5 points",
+     "market": "points",
+     "team": "PHX",
+     "game": "POR at PHX",
+     "price": -130,
+     "first_price": -130,
+     "last_price": -130,
+     "prices": [
+      {
+       "price": -130,
+       "at": "2026-11-04T19:30:00-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "18 points",
+     "units": -1.0,
+     "pulled": {
+      "at": "2026-11-04T20:20:01-05:00",
+      "reason": "Hard Rock took the line down",
+      "code": "line_gone"
+     },
+     "legs": [],
+     "window": "11 AM \u2192 90 min",
      "book": "hardrock",
      "under_fair": false
     },
