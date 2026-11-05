@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T21:00:00-05:00",
+ "generated_at": "2026-11-04T21:10:01-05:00",
  "summary": {
   "headline": {
    "w": 18,
@@ -354,6 +354,32 @@
      "prices": [
       {
        "price": 115,
+       "at": "2026-11-04T21:00:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-04:401909935:3936099:rebounds:4.5:over",
+     "kind": "single",
+     "player": "Derrick Jones",
+     "bet": "Over 4.5 rebounds",
+     "market": "rebounds",
+     "team": "LAC",
+     "game": "MIA at LAC",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
        "at": "2026-11-04T21:00:00-05:00"
       }
      ],

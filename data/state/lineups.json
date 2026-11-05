@@ -113,6 +113,7 @@
     "Day'Ron Sharpe"
    ],
    "status": {
+    "Noah Clowney": "questionable",
     "Egor Demin": "out"
    }
   },
@@ -288,6 +289,7 @@
     "Nikola Jokic"
    ],
    "status": {
+    "DeMar DeRozan": "out",
     "Spencer Jones": "out",
     "Julian Strawther": "out"
    }
@@ -393,13 +395,13 @@
    "status": {}
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Kris Dunn",
     "Rui Hachimura",
     "Derrick Jones",
-    "Isaiah Jackson"
+    "Brook Lopez"
    ],
    "status": {
     "Bradley Beal": "out",
@@ -409,5 +411,5 @@
    }
   }
  },
- "at": "2026-11-04T21:00:00-05:00"
+ "at": "2026-11-04T21:10:01-05:00"
 }

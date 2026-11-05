@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2564,
+   "pool_left": 2560,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-04T21:10:00-05:00",
-  "last_read_at": "2026-11-04T21:00:00-05:00",
+  "next_read_at": "2026-11-04T21:15:00-05:00",
+  "last_read_at": "2026-11-04T21:10:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-04T21:00:00-05:00"
+   "at": "2026-11-04T21:10:01-05:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "PHI",
    "home": "DET",
    "state": "in",
-   "detail": "4:09 - 3rd",
+   "detail": "21.8 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -63,7 +63,7 @@
    "away": "ATL",
    "home": "WAS",
    "state": "in",
-   "detail": "9:51 - 4th",
+   "detail": "6:31 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -94,7 +94,7 @@
    "away": "MIL",
    "home": "BOS",
    "state": "in",
-   "detail": "6:48 - 3rd",
+   "detail": "2:16 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -125,7 +125,7 @@
    "away": "CHA",
    "home": "BKN",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "9:09 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -156,7 +156,7 @@
    "away": "CHI",
    "home": "NYK",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "8:48 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -187,7 +187,7 @@
    "away": "IND",
    "home": "MEM",
    "state": "in",
-   "detail": "2:02 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -218,7 +218,7 @@
    "away": "UTA",
    "home": "NOP",
    "state": "in",
-   "detail": "2:47 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -249,7 +249,7 @@
    "away": "CLE",
    "home": "OKC",
    "state": "in",
-   "detail": "3:32 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -280,7 +280,7 @@
    "away": "MIN",
    "home": "HOU",
    "state": "in",
-   "detail": "2:47 - 1st",
+   "detail": "11:33 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -378,7 +378,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-04T20:50:01-05:00",
+   "read_at": "2026-11-04T21:10:01-05:00",
    "picks": 0,
    "checks": [
     {
@@ -388,11 +388,15 @@
     {
      "read": "C",
      "at": "2026-11-04T20:50:01-05:00"
+    },
+    {
+     "read": "D",
+     "at": "2026-11-04T21:10:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-04T20:50:01-05:00",
-   "final": false,
-   "next_check_at": "2026-11-04T21:10:00-05:00"
+   "last_check_at": "2026-11-04T21:10:01-05:00",
+   "final": true,
+   "next_check_at": null
   },
   {
    "id": "401909934",
@@ -426,10 +430,10 @@
    "detail": "11/4 - 10:30 PM EST",
    "lineups": {
     "away": "expected",
-    "home": "expected"
+    "home": "confirmed"
    },
    "read_at": "2026-11-04T21:00:00-05:00",
-   "picks": 1,
+   "picks": 2,
    "checks": [
     {
      "read": "B",
@@ -939,6 +943,64 @@
    "rank": null
   },
   {
+   "player": "Derrick Jones",
+   "pid": "3936099",
+   "team": "LAC",
+   "opp": "MIA",
+   "home": true,
+   "game_id": "401909935",
+   "start": "2026-11-04T22:30:00-05:00",
+   "bet": "Over 4.5 rebounds",
+   "market": "rebounds",
+   "side": "over",
+   "line": 4.5,
+   "price": 125,
+   "price_at": "2026-11-04T21:00:00-05:00",
+   "read": "B",
+   "p": 0.4489,
+   "p_pct": 45,
+   "breakeven": 0.4444,
+   "breakeven_pct": 44,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0319,
+   "model_p": null,
+   "reason": "Pinnacle moved the over from +124 to +108 (42% to 45%). Hard Rock +125 is 1.0% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.417,
+   "pin_after": 0.4489,
+   "pin_price_before": 124,
+   "pin_price_after": 108,
+   "others_move": 0.0047,
+   "n_others": 8,
+   "ev_vs_pin": 0.0101,
+   "window": "11 AM \u2192 90 min",
+   "gap_vs_pin": 0.0363,
+   "book": "hardrock",
+   "books": {
+    "hardrock": {
+     "ev_vs_pin": 0.0101,
+     "price": 125
+    }
+   },
+   "id": "2026-11-04:401909935:3936099:rebounds:4.5:over",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "3370564176211739015",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/3370564176211739015",
+     "price": 125
+    },
+    "draftkings": null
+   },
+   "rank": 3
+  },
+  {
    "player": "Shai Gilgeous-Alexander",
    "pid": "4278073",
    "team": "OKC",
@@ -1051,8 +1113,8 @@
  ],
  "empty": null,
  "counts": {
-  "lines_read": 1350,
-  "passing": 30,
+  "lines_read": 1344,
+  "passing": 32,
   "games": 14
  },
  "safety_paused": false,
@@ -1061,6 +1123,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-04T21:00:00-05:00",
- "status_at": "2026-11-04T21:00:00-05:00"
+ "generated_at": "2026-11-04T21:10:01-05:00",
+ "status_at": "2026-11-04T21:10:01-05:00"
 }
