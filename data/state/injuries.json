@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T18:00:01-05:00",
+ "at": "2026-11-05T18:10:01-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -345,10 +345,10 @@
    "note": "The Lakers recalled Thiero (knee) from the G League's Coachella Valley Lakers on Thursday, per Ryan Ward of SI.com."
   },
   "4432810": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Isaiah Stewart",
    "team": "MEM",
-   "date": "2026-11-05T03:40Z",
+   "date": "2026-11-05T23:04Z",
    "note": "Stewart (knee) exited Wednesday's 107-103 loss to the Pacers and did not return, finishing with six points (3-4 FG) and one rebound in 10 minutes."
   },
   "4431785": {
@@ -369,8 +369,8 @@
    "status": "day-to-day",
    "name": "Terrence Shannon Jr.",
    "team": "MIN",
-   "date": "2026-11-05T15:03Z",
-   "note": "Shannon (hip) is out for Wednesday against the Rockets."
+   "date": "2026-11-05T22:58Z",
+   "note": "Shannon (hip) is questionable for Friday's game against New Orleans."
   },
   "4594268": {
    "status": "out",
