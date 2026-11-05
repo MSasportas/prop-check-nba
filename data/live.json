@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-04",
- "generated_at": "2026-11-04T22:00:00-05:00",
+ "generated_at": "2026-11-04T22:10:01-05:00",
  "games": [
   {
    "game_id": "401909922",
@@ -40,86 +40,86 @@
    "game_id": "401909925",
    "state": "in",
    "period": 4,
-   "clock": "6:54",
-   "detail": "6:54 - 4th Quarter",
+   "clock": "2:00",
+   "detail": "2:00 - 4th Quarter",
    "in_break": false,
    "away": {
     "abbrev": "CHA",
-    "score": 92
+    "score": 100
    },
    "home": {
     "abbrev": "BKN",
-    "score": 99
+    "score": 111
    },
-   "updated_at": "2026-11-04T22:00:00-05:00"
+   "updated_at": "2026-11-04T22:10:01-05:00"
   },
   {
    "game_id": "401909928",
    "state": "in",
-   "period": 3,
-   "clock": "1:14",
-   "detail": "1:14 - 3rd Quarter",
+   "period": 4,
+   "clock": "9:52",
+   "detail": "9:52 - 4th Quarter",
    "in_break": false,
    "away": {
     "abbrev": "UTA",
-    "score": 76
+    "score": 85
    },
    "home": {
     "abbrev": "NOP",
-    "score": 66
+    "score": 76
    },
-   "updated_at": "2026-11-04T22:00:00-05:00"
+   "updated_at": "2026-11-04T22:10:01-05:00"
   },
   {
    "game_id": "401909929",
    "state": "in",
    "period": 4,
-   "clock": "8:39",
-   "detail": "8:39 - 4th Quarter",
+   "clock": "4:15",
+   "detail": "4:15 - 4th Quarter",
    "in_break": false,
    "away": {
     "abbrev": "CLE",
-    "score": 82
+    "score": 93
    },
    "home": {
     "abbrev": "OKC",
-    "score": 98
+    "score": 109
    },
-   "updated_at": "2026-11-04T22:00:00-05:00"
+   "updated_at": "2026-11-04T22:10:01-05:00"
   },
   {
    "game_id": "401909931",
    "state": "in",
    "period": 2,
-   "clock": "2:19",
-   "detail": "2:19 - 2nd Quarter",
-   "in_break": false,
+   "clock": "0.0",
+   "detail": "Halftime",
+   "in_break": true,
    "away": {
     "abbrev": "TOR",
-    "score": 63
+    "score": 67
    },
    "home": {
     "abbrev": "DEN",
-    "score": 57
+    "score": 64
    },
-   "updated_at": "2026-11-04T22:00:00-05:00"
+   "updated_at": "2026-11-04T22:10:01-05:00"
   },
   {
    "game_id": "401909932",
    "state": "in",
    "period": 2,
-   "clock": "4:47",
-   "detail": "4:47 - 2nd Quarter",
+   "clock": "1:21",
+   "detail": "1:21 - 2nd Quarter",
    "in_break": false,
    "away": {
     "abbrev": "POR",
-    "score": 60
+    "score": 65
    },
    "home": {
     "abbrev": "PHX",
-    "score": 47
+    "score": 54
    },
-   "updated_at": "2026-11-04T22:00:00-05:00"
+   "updated_at": "2026-11-04T22:10:01-05:00"
   },
   {
    "game_id": "401909934",
@@ -136,7 +136,7 @@
     "abbrev": "SAC",
     "score": null
    },
-   "updated_at": "2026-11-04T22:00:00-05:00"
+   "updated_at": "2026-11-04T22:10:01-05:00"
   }
  ],
  "picks": {
@@ -161,7 +161,7 @@
   "2026-11-04:401909925:4278104:points:21.5:under": {
    "game_id": "401909925",
    "market": "points",
-   "stat": 22,
+   "stat": 23,
    "dnp": false
   },
   "2026-11-04:401909925:4433249:points:8.5:under": {
@@ -173,7 +173,7 @@
   "2026-11-04:401909928:4433627:points:20.5:over": {
    "game_id": "401909928",
    "market": "points",
-   "stat": 27,
+   "stat": 29,
    "dnp": false
   },
   "2026-11-04:401909929:4278073:assists:5.5:under": {

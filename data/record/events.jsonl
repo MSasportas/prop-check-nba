@@ -173,3 +173,5 @@
 {"at":"2026-11-04T22:00:00-05:00","id":"2026-11-04:401909934:4431679:points:9.5:under","state":"locked","t":"locked"}
 {"actual":null,"actual_text":"0 threes","at":"2026-11-04T22:00:00-05:00","id":"2026-11-04:401909922:3059318:threes:0.5:under","price":160,"result":"W","t":"graded","units":1.6}
 {"actual":null,"actual_text":"4 threes","at":"2026-11-04T22:00:00-05:00","id":"2026-11-04:401909924:3133628:threes:1.5:over","price":110,"result":"W","t":"graded","units":1.1}
+{"at":"2026-11-04T22:10:01-05:00","id":"2026-11-04:401909935:3448:threes:1.5:over","state":"starters","t":"state"}
+{"at":"2026-11-04T22:10:01-05:00","id":"2026-11-04:401909935:3936099:rebounds:4.5:over","state":"starters","t":"state"}

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T21:50:00-05:00",
+ "at": "2026-11-04T22:10:01-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -40,8 +40,8 @@
    "status": "day-to-day",
    "name": "Payton Pritchard",
    "team": "BOS",
-   "date": "2026-11-05T02:25Z",
-   "note": "Pritchard is questionable to return to Wednesday's game against the Bucks due to a right eye abrasion."
+   "date": "2026-11-05T02:56Z",
+   "note": "Pritchard exited Wednesday's 109-102 win over the Bucks and did not return due to a right eye abrasion, finishing with 10 points (4-7 FG, 2-2 FT), five assists and one rebound across 18 minutes."
   },
   "4433188": {
    "status": "out",
@@ -98,6 +98,13 @@
    "team": "CHA",
    "date": "2026-11-04T23:50Z",
    "note": "The Hornets recalled Williams (hamstring) from the G League's Greensboro Swarm on Wednesday."
+  },
+  "4066650": {
+   "status": "day-to-day",
+   "name": "Zach Collins",
+   "team": "CHI",
+   "date": "2026-11-05T02:52Z",
+   "note": "Collins (undisclosed) exited to the locker room in the fourth quarter of Wednesday's game against the Knicks, K.C. Johnson of Chicago Sports Network reports."
   },
   "4397189": {
    "status": "day-to-day",
