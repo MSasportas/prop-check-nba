@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T15:30:21-05:00",
+ "at": "2026-11-05T15:40:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -491,19 +491,19 @@
    "date": "2026-10-06T19:17Z",
    "note": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN."
   },
+  "5105977": {
+   "status": "out",
+   "name": "Rasheer Fleming",
+   "team": "PHX",
+   "date": "2026-11-05T20:22Z",
+   "note": "Fleming is out for Thursday's game against the Magic due to a sprained left ankle."
+  },
   "4278402": {
    "status": "out",
    "name": "Jordan Goodwin",
    "team": "PHX",
-   "date": "2026-11-05T20:19Z",
-   "note": "Goodwin (calf) won't play in Wednesday's game against Portland."
-  },
-  "5105977": {
-   "status": "day-to-day",
-   "name": "Rasheer Fleming",
-   "team": "PHX",
-   "date": "2026-11-05T15:04Z",
-   "note": "Fleming is out for Wednesday's game against the Trail Blazers due to a sprained left ankle."
+   "date": "2026-11-05T20:18Z",
+   "note": "Goodwin (calf) is out for Thursday's game against Orlando."
   },
   "4701232": {
    "status": "out",
