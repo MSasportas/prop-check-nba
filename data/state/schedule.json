@@ -1,67 +1,5 @@
 {
  "days": {
-  "2026-11-01": [
-   {
-    "id": "401909903",
-    "date": "2026-11-01",
-    "start": "2026-11-01T15:30:00-05:00",
-    "away": "BOS",
-    "home": "ORL",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "BOS": "108",
-     "ORL": "97"
-    }
-   },
-   {
-    "id": "401909904",
-    "date": "2026-11-01",
-    "start": "2026-11-01T17:00:00-05:00",
-    "away": "BKN",
-    "home": "IND",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "BKN": "98",
-     "IND": "90"
-    }
-   },
-   {
-    "id": "401909905",
-    "date": "2026-11-01",
-    "start": "2026-11-01T20:30:00-05:00",
-    "away": "LAC",
-    "home": "GS",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "LAC": "112",
-     "GS": "124"
-    }
-   },
-   {
-    "id": "401909906",
-    "date": "2026-11-01",
-    "start": "2026-11-01T21:00:00-05:00",
-    "away": "TOR",
-    "home": "LAL",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "TOR": "125",
-     "LAL": "131"
-    }
-   }
-  ],
   "2026-11-02": [
    {
     "id": "401909907",
@@ -501,12 +439,43 @@
      "LAC": "116"
     }
    }
+  ],
+  "2026-11-05": [
+   {
+    "id": "401909936",
+    "date": "2026-11-05",
+    "start": "2026-11-05T21:00:00-05:00",
+    "away": "ORL",
+    "home": "PHX",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/5 - 9:00 PM EST",
+    "score": {
+     "ORL": "0",
+     "PHX": "0"
+    }
+   },
+   {
+    "id": "401909937",
+    "date": "2026-11-05",
+    "start": "2026-11-05T22:00:00-05:00",
+    "away": "MIA",
+    "home": "GS",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/5 - 10:00 PM EST",
+    "score": {
+     "MIA": "0",
+     "GS": "0"
+    }
+   }
   ]
  },
  "month": {
-  "made_for": "2026-11-04",
+  "made_for": "2026-11-05",
   "counts": {
-   "2026-11-04": 14,
    "2026-11-05": 2,
    "2026-11-06": 9,
    "2026-11-07": 7,

@@ -1,320 +1,25 @@
 {
- "slate": "2026-11-04",
+ "slate": "2026-11-05",
  "teams": {
-  "PHI": {
-   "state": "confirmed",
+  "ORL": {
+   "state": "expected",
    "starters": [
-    "Tyrese Maxey",
-    "VJ Edgecombe",
-    "Jaylen Brown",
-    "LeBron James",
-    "Joel Embiid"
+    "Jase Richardson",
+    "Anthony Black",
+    "Desmond Bane",
+    "Franz Wagner",
+    "Wendell Carter"
    ],
    "status": {
-    "Adem Bona": "questionable",
-    "Ariel Hukporti": "out",
-    "Dominick Barlow": "out"
-   }
-  },
-  "DET": {
-   "state": "confirmed",
-   "starters": [
-    "Cade Cunningham",
-    "Duncan Robinson",
-    "Ausar Thompson",
-    "John Collins",
-    "Paul Reed"
-   ],
-   "status": {
-    "Jalen Duren": "out",
-    "Isaiah Joe": "out"
-   }
-  },
-  "ATL": {
-   "state": "confirmed",
-   "starters": [
-    "Kingston Flemings",
-    "Nickeil Alexander-Walker",
-    "Dyson Daniels",
-    "Luguentz Dort",
-    "Onyeka Okongwu"
-   ],
-   "status": {
-    "Asa Newell": "questionable",
-    "Henri Veesaar": "out",
-    "Mouhamed Gueye": "out",
-    "Jalen Johnson": "out",
-    "Jock Landale": "out"
-   }
-  },
-  "WSH": {
-   "state": "confirmed",
-   "starters": [
-    "Trae Young",
-    "Kyshawn George",
-    "AJ Dybantsa",
-    "Anthony Davis",
-    "Alex Sarr"
-   ],
-   "status": {
-    "Reece Beekman": "out",
-    "Justin Champagnie": "out",
-    "Tristan Vukcevic": "out",
-    "Jamir Watkins": "out"
-   }
-  },
-  "MIL": {
-   "state": "confirmed",
-   "starters": [
-    "Brayden Burries",
-    "Tyler Herro",
-    "Jaime Jaquez",
-    "Kyle Kuzma",
-    "Myles Turner"
-   ],
-   "status": {
-    "Kam Jones": "out"
-   }
-  },
-  "BOS": {
-   "state": "confirmed",
-   "starters": [
-    "Derrick White",
-    "Hugo Gonzalez",
-    "Sam Hauser",
-    "Paul George",
-    "Neemias Queta"
-   ],
-   "status": {
-    "Payton Pritchard": "questionable",
-    "Devin Carter": "out",
-    "Jayson Tatum": "out"
-   }
-  },
-  "CHA": {
-   "state": "confirmed",
-   "starters": [
-    "Coby White",
-    "Kon Knueppel",
-    "Brandon Miller",
-    "Naz Reid",
-    "Moussa Diabate"
-   ],
-   "status": {
-    "Kon Knueppel": "questionable",
-    "Grant Williams": "out"
-   }
-  },
-  "BKN": {
-   "state": "confirmed",
-   "starters": [
-    "Nolan Traore",
-    "Chaney Johnson",
-    "Michael Porter",
-    "Julius Randle",
-    "Day'Ron Sharpe"
-   ],
-   "status": {
-    "Noah Clowney": "questionable",
-    "Egor Demin": "out"
-   }
-  },
-  "CHI": {
-   "state": "confirmed",
-   "starters": [
-    "Josh Giddey",
-    "Norman Powell",
-    "Matas Buzelis",
-    "Caleb Wilson",
-    "Jalen Smith"
-   ],
-   "status": {
-    "Jalen Smith": "questionable",
-    "Zach Collins": "questionable",
-    "Nic Claxton": "out"
-   }
-  },
-  "NY": {
-   "state": "confirmed",
-   "starters": [
-    "Jalen Brunson",
-    "Mikal Bridges",
-    "Landry Shamet",
-    "OG Anunoby",
-    "Karl-Anthony Towns"
-   ],
-   "status": {
-    "Josh Hart": "out"
-   }
-  },
-  "UTAH": {
-   "state": "confirmed",
-   "starters": [
-    "Keyonte George",
-    "Darryn Peterson",
-    "Ace Bailey",
-    "Lauri Markkanen",
-    "Jaxson Hayes"
-   ],
-   "status": {
-    "Jaren Jackson": "out",
-    "Jusuf Nurkic": "out"
-   }
-  },
-  "NO": {
-   "state": "confirmed",
-   "starters": [
-    "Dejounte Murray",
-    "Jeremiah Fears",
-    "Herbert Jones",
-    "Zion Williamson",
-    "Karlo Matkovic"
-   ],
-   "status": {
-    "Yves Missi": "out",
-    "Trey Murphy": "out"
-   }
-  },
-  "CLE": {
-   "state": "confirmed",
-   "starters": [
-    "James Harden",
-    "Donovan Mitchell",
-    "Tyrese Proctor",
-    "Evan Mobley",
-    "Jarrett Allen"
-   ],
-   "status": {
-    "Tyrese Proctor": "questionable",
-    "Jarrett Allen": "doubtful",
-    "Nae'Qwan Tomlin": "out",
-    "Jaylon Tyson": "out",
-    "Peyton Watson": "out"
-   }
-  },
-  "OKC": {
-   "state": "confirmed",
-   "starters": [
-    "Shai Gilgeous-Alexander",
-    "Ajay Mitchell",
-    "Kenrich Williams",
-    "Aday Mara",
-    "Isaiah Hartenstein"
-   ],
-   "status": {
-    "Chet Holmgren": "out",
-    "Thomas Sorber": "out",
-    "Nikola Topic": "out",
-    "Cason Wallace": "out",
-    "Jalen Williams": "out",
-    "Jaylin Williams": "out"
-   }
-  },
-  "IND": {
-   "state": "confirmed",
-   "starters": [
-    "Andrew Nembhard",
-    "Braden Smith",
-    "Aaron Nesmith",
-    "Pascal Siakam",
-    "Ivica Zubac"
-   ],
-   "status": {
-    "Johnny Furphy": "out",
-    "Tyrese Haliburton": "out",
-    "T.J. McConnell": "out",
-    "Kelly Oubre": "out",
-    "Ben Sheppard": "out"
-   }
-  },
-  "MEM": {
-   "state": "confirmed",
-   "starters": [
-    "Ty Jerome",
-    "Cedric Coward",
-    "Jaylen Wells",
-    "Cameron Boozer",
-    "Zach Edey"
-   ],
-   "status": {
-    "Isaiah Stewart": "doubtful",
-    "Scotty Pippen": "out"
-   }
-  },
-  "MIN": {
-   "state": "confirmed",
-   "starters": [
-    "LaMelo Ball",
-    "Ayo Dosunmu",
-    "Jonathan Kuminga",
-    "Jaden McDaniels",
-    "Rudy Gobert"
-   ],
-   "status": {
-    "Donte DiVincenzo": "out",
-    "Anthony Edwards": "out",
-    "Terrence Shannon": "out"
-   }
-  },
-  "HOU": {
-   "state": "confirmed",
-   "starters": [
-    "Fred VanVleet",
-    "Amen Thompson",
-    "Kevin Durant",
-    "Jabari Smith",
-    "Alperen Sengun"
-   ],
-   "status": {
-    "Steven Adams": "out",
-    "Clint Capela": "out"
-   }
-  },
-  "TOR": {
-   "state": "confirmed",
-   "starters": [
-    "Immanuel Quickley",
-    "RJ Barrett",
-    "Ja'Kobe Walter",
-    "Scottie Barnes",
-    "Collin Murray-Boyles"
-   ],
-   "status": {
-    "Nate Bittle": "out",
-    "Kawhi Leonard": "out"
-   }
-  },
-  "DEN": {
-   "state": "confirmed",
-   "starters": [
-    "Jamal Murray",
-    "Christian Braun",
-    "Cameron Johnson",
-    "Aaron Gordon",
-    "Nikola Jokic"
-   ],
-   "status": {
-    "DeMar DeRozan": "out",
-    "Spencer Jones": "out",
-    "Julian Strawther": "out"
-   }
-  },
-  "POR": {
-   "state": "confirmed",
-   "starters": [
-    "Damian Lillard",
-    "Scoot Henderson",
-    "Toumani Camara",
-    "Deni Avdija",
-    "Donovan Clingan"
-   ],
-   "status": {
-    "Ja Morant": "out",
-    "Shaedon Sharpe": "out"
+    "Paolo Banchero": "out",
+    "Jonathan Isaac": "out",
+    "Izaiyah Nelson": "out",
+    "Noah Penda": "out",
+    "Jalen Suggs": "out"
    }
   },
   "PHX": {
-   "state": "confirmed",
+   "state": "expected",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -328,68 +33,8 @@
     "Mark Williams": "out"
    }
   },
-  "DAL": {
-   "state": "confirmed",
-   "starters": [
-    "Kyrie Irving",
-    "Zaccharie Risacher",
-    "Cooper Flagg",
-    "P.J. Washington",
-    "Daniel Gafford"
-   ],
-   "status": {
-    "Santi Aldama": "out",
-    "Tarik Biberovic": "out",
-    "Max Christie": "out",
-    "Sergio de Larrea": "out",
-    "Dereck Lively": "out"
-   }
-  },
-  "SA": {
-   "state": "confirmed",
-   "starters": [
-    "De'Aaron Fox",
-    "Stephon Castle",
-    "Dylan Harper",
-    "Devin Vassell",
-    "Victor Wembanyama"
-   ],
-   "status": {
-    "Tobias Harris": "out",
-    "Jayden Quaintance": "out"
-   }
-  },
-  "LAL": {
-   "state": "confirmed",
-   "starters": [
-    "Luka Doncic",
-    "Austin Reaves",
-    "Matisse Thybulle",
-    "Jake LaRavia",
-    "Walker Kessler"
-   ],
-   "status": {
-    "Adou Thiero": "out"
-   }
-  },
-  "SAC": {
-   "state": "confirmed",
-   "starters": [
-    "Darius Acuff",
-    "Zach LaVine",
-    "De'Andre Hunter",
-    "Precious Achiuwa",
-    "Domantas Sabonis"
-   ],
-   "status": {
-    "Ben Simmons": "out",
-    "Keegan Murray": "out",
-    "Daeqwon Plowden": "out",
-    "Maxime Raynaud": "out"
-   }
-  },
   "MIA": {
-   "state": "confirmed",
+   "state": "expected",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
@@ -399,22 +44,22 @@
    ],
    "status": {}
   },
-  "LAC": {
-   "state": "confirmed",
+  "GS": {
+   "state": "expected",
    "starters": [
-    "Darius Garland",
-    "Kris Dunn",
-    "Rui Hachimura",
-    "Derrick Jones",
-    "Brook Lopez"
+    "Stephen Curry",
+    "Brandin Podziemski",
+    "Will Richard",
+    "Yaxel Lendeborg",
+    "Draymond Green"
    ],
    "status": {
-    "Bradley Beal": "out",
-    "Brandon Ingram": "out",
-    "Jordan Miller": "out",
-    "Yanic Konan Niederhauser": "out"
+    "Jimmy Butler": "out",
+    "Moses Moody": "out",
+    "Kristaps Porzingis": "out",
+    "Gui Santos": "out"
    }
   }
  },
- "at": "2026-11-04T22:30:00-05:00"
+ "at": "2026-11-05T05:00:01-05:00"
 }
