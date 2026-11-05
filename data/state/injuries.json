@@ -1,26 +1,26 @@
 {
- "at": "2026-11-05T02:30:01-05:00",
+ "at": "2026-11-05T10:10:01-05:00",
  "list": {
+  "3146557": {
+   "status": "day-to-day",
+   "name": "Jock Landale",
+   "team": "ATL",
+   "date": "2026-11-05T14:58Z",
+   "note": "Landale is out for Wednesday's game against the Wizards with a left hip strain, Kevin Chouinard of the Hawks' official site reports."
+  },
+  "4701230": {
+   "status": "day-to-day",
+   "name": "Jalen Johnson",
+   "team": "ATL",
+   "date": "2026-11-05T14:58Z",
+   "note": "Johnson (ankle) is listed as out for Wednesday's game in Washington."
+  },
   "4873201": {
    "status": "day-to-day",
    "name": "Asa Newell",
    "team": "ATL",
    "date": "2026-11-05T01:19Z",
    "note": "Newell won't return to Wednesday's game against the Wizards due to a left great toe hyperextension, Brad Rowland of the Locked On Podcast Network reports. He'll finish with two points (1-1 FG), three "
-  },
-  "4701230": {
-   "status": "out",
-   "name": "Jalen Johnson",
-   "team": "ATL",
-   "date": "2026-11-04T23:05Z",
-   "note": "Johnson (ankle) is listed as out for Wednesday's game in Washington."
-  },
-  "3146557": {
-   "status": "out",
-   "name": "Jock Landale",
-   "team": "ATL",
-   "date": "2026-11-03T22:08Z",
-   "note": "Landale is out for Wednesday's game against the Wizards with a left hip strain, Kevin Chouinard of the Hawks' official site reports."
   },
   "4712863": {
    "status": "out",
@@ -120,6 +120,13 @@
    "date": "2026-11-04T22:34Z",
    "note": "Claxton (hamstring) is listed as out for Wednesday's game against New York."
   },
+  "4576087": {
+   "status": "day-to-day",
+   "name": "Peyton Watson",
+   "team": "CLE",
+   "date": "2026-11-05T15:03Z",
+   "note": "Watson (hamstring) is out for Wednesday's game in Oklahoma City."
+  },
   "4066328": {
    "status": "day-to-day",
    "name": "Jarrett Allen",
@@ -140,13 +147,6 @@
    "team": "CLE",
    "date": "2026-11-05T00:33Z",
    "note": "According to Cavaliers head coach Kenny Atkinson, Tyson (ankle) has been \"on the court lately progressing well,\" Chris Fedor of The Cleveland Plain Dealer reports."
-  },
-  "4576087": {
-   "status": "out",
-   "name": "Peyton Watson",
-   "team": "CLE",
-   "date": "2026-11-03T22:09Z",
-   "note": "Watson (hamstring) is out for Wednesday's game in Oklahoma City."
   },
   "4593125": {
    "status": "out",
@@ -184,10 +184,10 @@
    "note": "Head coach Dusty May said Friday that de Larrea (knee) will be re-evaluated next week, Noah Weber of TheSmokingCuban.com reports."
   },
   "3978": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "DeMar DeRozan",
    "team": "DEN",
-   "date": "2026-11-05T02:05Z",
+   "date": "2026-11-05T15:04Z",
    "note": "DeRozan has been ruled out for Wednesday's game against the Raptors due to lower-back spasms."
   },
   "4592427": {
@@ -261,10 +261,10 @@
    "note": "Capela (ankle) is out for Wednesday's game against the Timberwolves."
   },
   "3133603": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Kelly Oubre Jr.",
    "team": "IND",
-   "date": "2026-11-05T00:37Z",
+   "date": "2026-11-05T15:00Z",
    "note": "Oubre (calf) has been ruled out for Wednesday's game against the Grizzlies."
   },
   "2530530": {
@@ -352,10 +352,10 @@
    "note": "Jones (ankle) won't play Wednesday in Boston."
   },
   "4432847": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Terrence Shannon Jr.",
    "team": "MIN",
-   "date": "2026-11-04T18:16Z",
+   "date": "2026-11-05T15:03Z",
    "note": "Shannon (hip) is out for Wednesday against the Rockets."
   },
   "4594268": {
@@ -373,10 +373,10 @@
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
   "4397688": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Trey Murphy III",
    "team": "NO",
-   "date": "2026-11-04T23:10Z",
+   "date": "2026-11-05T15:02Z",
    "note": "Murphy (knees) is listed as out for Wednesday's game against Utah."
   },
   "5061589": {
@@ -387,17 +387,17 @@
    "note": "Missi (knee) won't play in Saturday's game against Atlanta."
   },
   "3062679": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Josh Hart",
    "team": "NY",
-   "date": "2026-11-04T18:08Z",
+   "date": "2026-11-05T15:00Z",
    "note": "Hart is out for Wednesday's game against the Bulls due to right ankle soreness."
   },
   "4432823": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jaylin Williams",
    "team": "OKC",
-   "date": "2026-11-04T23:18Z",
+   "date": "2026-11-05T15:03Z",
    "note": "Williams (back) is listed as out for Wednesday's game versus Cleveland, Clemente Almanza of USA Today reports."
   },
   "5159925": {
@@ -534,10 +534,10 @@
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
   "4279318": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Daeqwon Plowden",
    "team": "SAC",
-   "date": "2026-11-04T21:04Z",
+   "date": "2026-11-05T15:05Z",
    "note": "Plowden (illness) is out for Wednesday's game against the Lakers."
   },
   "4898371": {
