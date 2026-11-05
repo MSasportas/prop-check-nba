@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-04",
- "generated_at": "2026-11-04T22:30:00-05:00",
+ "generated_at": "2026-11-04T22:30:20-05:00",
  "games": [
   {
    "game_id": "401909922",
@@ -57,8 +57,8 @@
    "game_id": "401909928",
    "state": "in",
    "period": 4,
-   "clock": "2:43",
-   "detail": "2:43 - 4th Quarter",
+   "clock": "2:22",
+   "detail": "2:22 - 4th Quarter",
    "in_break": false,
    "away": {
     "abbrev": "UTA",
@@ -68,7 +68,7 @@
     "abbrev": "NOP",
     "score": 98
    },
-   "updated_at": "2026-11-04T22:30:00-05:00"
+   "updated_at": "2026-11-04T22:30:20-05:00"
   },
   {
    "game_id": "401909929",
@@ -91,25 +91,25 @@
    "game_id": "401909931",
    "state": "in",
    "period": 3,
-   "clock": "8:58",
-   "detail": "8:58 - 3rd Quarter",
+   "clock": "8:55",
+   "detail": "8:55 - 3rd Quarter",
    "in_break": false,
    "away": {
     "abbrev": "TOR",
-    "score": 69
+    "score": 71
    },
    "home": {
     "abbrev": "DEN",
     "score": 76
    },
-   "updated_at": "2026-11-04T22:30:00-05:00"
+   "updated_at": "2026-11-04T22:30:20-05:00"
   },
   {
    "game_id": "401909932",
    "state": "in",
    "period": 3,
-   "clock": "11:37",
-   "detail": "11:37 - 3rd Quarter",
+   "clock": "11:36",
+   "detail": "11:36 - 3rd Quarter",
    "in_break": false,
    "away": {
     "abbrev": "POR",
@@ -119,14 +119,14 @@
     "abbrev": "PHX",
     "score": 59
    },
-   "updated_at": "2026-11-04T22:30:00-05:00"
+   "updated_at": "2026-11-04T22:30:20-05:00"
   },
   {
    "game_id": "401909934",
    "state": "in",
    "period": 1,
-   "clock": "2:57",
-   "detail": "2:57 - 1st Quarter",
+   "clock": "2:42",
+   "detail": "2:42 - 1st Quarter",
    "in_break": false,
    "away": {
     "abbrev": "LAL",
@@ -134,9 +134,9 @@
    },
    "home": {
     "abbrev": "SAC",
-    "score": 21
+    "score": 23
    },
-   "updated_at": "2026-11-04T22:30:00-05:00"
+   "updated_at": "2026-11-04T22:30:20-05:00"
   },
   {
    "game_id": "401909935",
@@ -153,7 +153,7 @@
     "abbrev": "LAC",
     "score": null
    },
-   "updated_at": "2026-11-04T22:30:00-05:00"
+   "updated_at": "2026-11-04T22:30:20-05:00"
   }
  ],
  "picks": {
