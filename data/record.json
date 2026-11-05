@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-04T22:30:00-05:00",
+ "generated_at": "2026-11-04T23:10:00-05:00",
  "summary": {
   "headline": {
-   "w": 21,
+   "w": 22,
    "l": 8,
    "push": 0,
    "void": 0,
-   "units": 12.87,
-   "hit_rate": 0.7241,
-   "needed": 0.5147,
-   "n": 29
+   "units": 13.67,
+   "hit_rate": 0.7333,
+   "needed": 0.516,
+   "n": 30
   },
   "rows": [
    {
@@ -27,14 +27,14 @@
    {
     "key": "points",
     "label": "Points",
-    "w": 7,
+    "w": 8,
     "l": 3,
     "push": 0,
     "void": 0,
-    "units": 2.95,
-    "hit_rate": 0.7,
-    "needed": 0.5442,
-    "n": 10
+    "units": 3.75,
+    "hit_rate": 0.7273,
+    "needed": 0.5452,
+    "n": 11
    },
    {
     "key": "assists",
@@ -75,14 +75,14 @@
    {
     "key": "window:90 \u2192 45 min",
     "label": "Window 90 \u2192 45 min",
-    "w": 5,
+    "w": 6,
     "l": 3,
     "push": 0,
     "void": 0,
-    "units": 1.91,
-    "hit_rate": 0.625,
-    "needed": 0.5207,
-    "n": 8
+    "units": 2.71,
+    "hit_rate": 0.6667,
+    "needed": 0.5245,
+    "n": 9
    },
    {
     "key": "window:45 \u2192 20 min",
@@ -118,14 +118,14 @@
      {
       "key": "points",
       "label": "Points",
-      "w": 7,
+      "w": 8,
       "l": 3,
       "push": 0,
       "void": 0,
-      "units": 2.95,
-      "hit_rate": 0.7,
-      "needed": 0.5442,
-      "n": 10
+      "units": 3.75,
+      "hit_rate": 0.7273,
+      "needed": 0.5452,
+      "n": 11
      },
      {
       "key": "assists",
@@ -161,14 +161,14 @@
      {
       "key": "e0",
       "label": "0 to 2%",
-      "w": 17,
+      "w": 18,
       "l": 7,
       "push": 0,
       "void": 0,
-      "units": 9.38,
-      "hit_rate": 0.7083,
-      "needed": 0.5196,
-      "n": 24
+      "units": 10.18,
+      "hit_rate": 0.72,
+      "needed": 0.5211,
+      "n": 25
      },
      {
       "key": "e2",
@@ -216,14 +216,14 @@
      {
       "key": "clear",
       "label": "Injury report clear",
-      "w": 14,
+      "w": 15,
       "l": 7,
       "push": 0,
       "void": 0,
-      "units": 7.01,
-      "hit_rate": 0.6667,
-      "needed": 0.5152,
-      "n": 21
+      "units": 7.81,
+      "hit_rate": 0.6818,
+      "needed": 0.517,
+      "n": 22
      },
      {
       "key": "starters",
@@ -259,14 +259,14 @@
      {
       "key": "fav",
       "label": "-100 to -150",
-      "w": 13,
+      "w": 14,
       "l": 6,
       "push": 0,
       "void": 0,
-      "units": 4.47,
-      "hit_rate": 0.6842,
-      "needed": 0.5532,
-      "n": 19
+      "units": 5.27,
+      "hit_rate": 0.7,
+      "needed": 0.5533,
+      "n": 20
      }
     ]
    }
@@ -274,11 +274,11 @@
   "days": [
    {
     "date": "2026-11-04",
-    "w": 3,
+    "w": 4,
     "l": 3,
     "push": 0,
     "void": 0,
-    "units": 0.53,
+    "units": 1.33,
     "n": 11,
     "graded": false
    },
@@ -358,9 +358,9 @@
   {
    "date": "2026-11-04",
    "graded": false,
-   "w": 3,
+   "w": 4,
    "l": 3,
-   "units": 0.53,
+   "units": 1.33,
    "entries": [
     {
      "id": "2026-11-04:401909922:3059318:threes:0.5:under",
@@ -535,9 +535,9 @@
        "at": "2026-11-04T19:20:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "39 points",
+     "units": 0.8,
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
