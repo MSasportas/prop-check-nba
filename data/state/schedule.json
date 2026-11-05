@@ -465,10 +465,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:05 - 4th",
+    "detail": "2:34 - 4th",
     "score": {
-     "DAL": "99",
-     "SA": "100"
+     "DAL": "108",
+     "SA": "109"
     }
    },
    {
@@ -480,10 +480,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:47 - 4th",
+    "detail": "6:05 - 4th",
     "score": {
-     "LAL": "94",
-     "SAC": "82"
+     "LAL": "100",
+     "SAC": "88"
     }
    },
    {
@@ -494,11 +494,11 @@
     "home": "LAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:20 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "MIA": "73",
-     "LAC": "85"
+     "MIA": "78",
+     "LAC": "87"
     }
    }
   ]
