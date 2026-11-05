@@ -1,6 +1,13 @@
 {
- "at": "2026-11-05T17:50:00-05:00",
+ "at": "2026-11-05T18:00:01-05:00",
  "list": {
+  "4585618": {
+   "status": "out",
+   "name": "Keshon Gilbert",
+   "team": "ATL",
+   "date": "2026-11-05T22:41Z",
+   "note": "Gilbert (knee) is available for Friday's preseason finale against the Mavericks, Brad Rowland of the Locked On Podcast Network reports."
+  },
   "4873201": {
    "status": "out",
    "name": "Asa Newell",
@@ -616,6 +623,13 @@
    "team": "UTAH",
    "date": "2026-10-24T23:18Z",
    "note": "Alexander won't play Wednesday against the Grizzlies due to a left knee bone bruise."
+  },
+  "6583": {
+   "status": "day-to-day",
+   "name": "Anthony Davis",
+   "team": "WSH",
+   "date": "2026-11-05T22:50Z",
+   "note": "Davis finished with 26 points (12-19 FG, 0-1 3Pt, 2-2 FT), 10 rebounds, three assists and three blocks over 30 minutes in Wednesday's 120-105 loss to Atlanta."
   },
   "4432187": {
    "status": "out",
