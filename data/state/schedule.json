@@ -300,7 +300,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:38 - 2nd",
+    "detail": "9:23 - 2nd",
     "score": {
      "PHI": "33",
      "DET": "25"
@@ -315,10 +315,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:37 - 2nd",
+    "detail": "7:16 - 2nd",
     "score": {
      "ATL": "51",
-     "WSH": "38"
+     "WSH": "39"
     }
    },
    {
