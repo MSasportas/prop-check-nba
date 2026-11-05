@@ -495,10 +495,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:05 - 4th",
+    "detail": "1.7 - 4th",
     "score": {
-     "MIA": "103",
-     "LAC": "104"
+     "MIA": "107",
+     "LAC": "106"
     }
    }
   ]
