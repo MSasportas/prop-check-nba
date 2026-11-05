@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T19:50:01-05:00",
+ "at": "2026-11-04T20:10:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -162,33 +162,19 @@
    "date": "2026-10-25T14:56Z",
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
   },
+  "4997536": {
+   "status": "out",
+   "name": "Gui Santos",
+   "team": "GS",
+   "date": "2026-11-05T00:52Z",
+   "note": "Santos (knee) has been ruled out for Thursday's game against the Heat."
+  },
   "3102531": {
    "status": "out",
    "name": "Kristaps Porzingis",
    "team": "GS",
    "date": "2026-11-04T17:00Z",
    "note": "The Warriors have stopped issuing salary payments to Porzingis, who remains away from the team and is considering retirement, Anthony Slater and Shams Charania of ESPN reported Wednesday."
-  },
-  "4397040": {
-   "status": "day-to-day",
-   "name": "Brandon Williams",
-   "team": "GS",
-   "date": "2026-11-03T06:12Z",
-   "note": "Williams (quadriceps) has been ruled out for Monday's game against the Suns."
-  },
-  "4997536": {
-   "status": "day-to-day",
-   "name": "Gui Santos",
-   "team": "GS",
-   "date": "2026-11-03T06:12Z",
-   "note": "Santos did not play in the second half of Sunday's 124-112 win over the Clippers due to a knee injury and will not play against the Suns on Monday, Danny Emerman of SFStandard.com reports."
-  },
-  "3213": {
-   "status": "day-to-day",
-   "name": "Al Horford",
-   "team": "GS",
-   "date": "2026-11-03T06:11Z",
-   "note": "Horford will be rested Monday against the Suns."
   },
   "4432171": {
    "status": "out",

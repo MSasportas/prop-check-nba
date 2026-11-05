@@ -233,7 +233,7 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -248,7 +248,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
@@ -316,8 +316,8 @@
     "Khaman Maluach"
    ],
    "status": {
-    "Jordan Goodwin": "questionable",
     "Rasheer Fleming": "out",
+    "Jordan Goodwin": "out",
     "Mark Williams": "out"
    }
   },
@@ -412,5 +412,5 @@
    }
   }
  },
- "at": "2026-11-04T20:00:00-05:00"
+ "at": "2026-11-04T20:10:00-05:00"
 }

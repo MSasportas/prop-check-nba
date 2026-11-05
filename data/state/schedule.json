@@ -300,10 +300,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:13 - 2nd",
+    "detail": "3:36 - 2nd",
     "score": {
-     "PHI": "43",
-     "DET": "29"
+     "PHI": "48",
+     "DET": "35"
     }
    },
    {
@@ -314,11 +314,11 @@
     "home": "WSH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:40 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "ATL": "65",
-     "WSH": "52"
+     "ATL": "68",
+     "WSH": "61"
     }
    },
    {
@@ -330,10 +330,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:38 - 1st",
+    "detail": "11:39 - 2nd",
     "score": {
-     "MIL": "8",
-     "BOS": "22"
+     "MIL": "14",
+     "BOS": "28"
     }
    },
    {
@@ -345,9 +345,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:10 - 1st",
+    "detail": "2:17 - 1st",
     "score": {
-     "CHA": "13",
+     "CHA": "17",
      "BKN": "13"
     }
    },
@@ -360,10 +360,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:43 - 1st",
+    "detail": "11.7 - 1st",
     "score": {
-     "CHI": "12",
-     "NY": "22"
+     "CHI": "21",
+     "NY": "43"
     }
    },
    {
