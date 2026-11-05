@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-04",
- "generated_at": "2026-11-04T22:30:20-05:00",
+ "generated_at": "2026-11-04T22:40:01-05:00",
  "games": [
   {
    "game_id": "401909922",
@@ -57,18 +57,18 @@
    "game_id": "401909928",
    "state": "in",
    "period": 4,
-   "clock": "2:22",
-   "detail": "2:22 - 4th Quarter",
+   "clock": "6.4",
+   "detail": "6.4 - 4th Quarter",
    "in_break": false,
    "away": {
     "abbrev": "UTA",
-    "score": 96
+    "score": 104
    },
    "home": {
     "abbrev": "NOP",
-    "score": 98
+    "score": 104
    },
-   "updated_at": "2026-11-04T22:30:20-05:00"
+   "updated_at": "2026-11-04T22:40:01-05:00"
   },
   {
    "game_id": "401909929",
@@ -91,52 +91,52 @@
    "game_id": "401909931",
    "state": "in",
    "period": 3,
-   "clock": "8:55",
-   "detail": "8:55 - 3rd Quarter",
+   "clock": "5:00",
+   "detail": "5:00 - 3rd Quarter",
    "in_break": false,
    "away": {
     "abbrev": "TOR",
-    "score": 71
+    "score": 78
    },
    "home": {
     "abbrev": "DEN",
-    "score": 76
+    "score": 84
    },
-   "updated_at": "2026-11-04T22:30:20-05:00"
+   "updated_at": "2026-11-04T22:40:01-05:00"
   },
   {
    "game_id": "401909932",
    "state": "in",
    "period": 3,
-   "clock": "11:36",
-   "detail": "11:36 - 3rd Quarter",
+   "clock": "7:52",
+   "detail": "7:52 - 3rd Quarter",
    "in_break": false,
    "away": {
     "abbrev": "POR",
-    "score": 72
+    "score": 78
    },
    "home": {
     "abbrev": "PHX",
-    "score": 59
+    "score": 71
    },
-   "updated_at": "2026-11-04T22:30:20-05:00"
+   "updated_at": "2026-11-04T22:40:01-05:00"
   },
   {
    "game_id": "401909934",
    "state": "in",
-   "period": 1,
-   "clock": "2:42",
-   "detail": "2:42 - 1st Quarter",
+   "period": 2,
+   "clock": "11:58",
+   "detail": "11:58 - 2nd Quarter",
    "in_break": false,
    "away": {
     "abbrev": "LAL",
-    "score": 21
+    "score": 28
    },
    "home": {
     "abbrev": "SAC",
-    "score": 23
+    "score": 28
    },
-   "updated_at": "2026-11-04T22:30:20-05:00"
+   "updated_at": "2026-11-04T22:40:01-05:00"
   },
   {
    "game_id": "401909935",
@@ -153,7 +153,7 @@
     "abbrev": "LAC",
     "score": null
    },
-   "updated_at": "2026-11-04T22:30:20-05:00"
+   "updated_at": "2026-11-04T22:40:01-05:00"
   }
  ],
  "picks": {
@@ -202,7 +202,7 @@
   "2026-11-04:401909931:5093267:rebounds:5.5:under": {
    "game_id": "401909931",
    "market": "rebounds",
-   "stat": 2,
+   "stat": 3,
    "dnp": false
   },
   "2026-11-04:401909932:4066383:points:16.5:under": {
