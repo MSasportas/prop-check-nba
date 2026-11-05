@@ -170,6 +170,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 /* live */
 .tonight{margin-top:12px;font:400 18px/24px var(--head);letter-spacing:.01em}
 .lvnote{margin-top:6px;font-size:12.5px;line-height:17px;color:var(--warn)}
+.lvupd{margin-top:6px;font-size:12.5px;line-height:17px;color:var(--muted)}
+.lvupd.bad{color:var(--warn);font-weight:600}
 .lvlist{margin-top:8px}
 .lv{display:grid;grid-template-columns:30px minmax(0,1fr) auto;column-gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}
 .lv .hs{margin-top:2px}
@@ -363,12 +365,11 @@ var TZ = 'America/New_York';
 var TITLE = 'Prop Check NBA';
 var SEEN_KEY = FIX ? 'pc_nba_seen_fx' : 'pc_nba_seen';
 var UI_DEF = { stale_after_min: 30, refresh_sec: 120 };
-var LIVE_STALE_MIN = 25;   /* live.json older than this while a game with a pick is on: said plainly */
 var SMALL_N = 30;          /* a cut row with fewer graded picks than this says "small sample" */
 var MARKET_LINE = 'Hard Rock prices only · No leg worse than -200 · Rebounds, points, assists, 3-pointers made · Main line only, over or under';
 
 var S = {
-  slate: null, record: null, rules: null, recordErr: null, live: null, lab: null, labSum: {}, labErr: null, heads: null,
+  slate: null, record: null, rules: null, recordErr: null, lab: null, labSum: {}, labErr: null, heads: null,
   loaded: false, loadErr: false, fetchFail: false, loadedAt: null, busy: false,
   view: 'picks', expanded: {},
   older: [], olderIdx: 0, olderBusy: false, olderErr: false, months: {}, calMonth: null, selDay: null,
@@ -541,8 +542,10 @@ function isScratch(p) {
   if (isObj(pl) && pl.code) return pl.code === 'out';
   return /^now listed out$/i.test(str(isObj(pl) ? pl.reason : pl).trim());
 }
-/* The Record counts what the strategy showed: not pulled, and not under Pinnacle's fair price (v2.3) */
-function counted(p) { return !p.pulled && !(str(p.rule) === 'pin_solo' && num(p.ev_vs_pin) != null && p.ev_vs_pin < 0); }
+/* The Record counts what the strategy showed: not under Pinnacle's fair price (v2.3). Since 2026-11-04 (Matt) a pick pulled
+   after it was shown (TOO LATE on Picks) counts like any other pick and is on Live once its game starts; a scratch (Out) is
+   dropped above, and rule_change withdrawals never reach the slate. */
+function counted(p) { return !(isObj(p.pulled) && p.pulled.code === 'rule_change') && !(str(p.rule) === 'pin_solo' && num(p.ev_vs_pin) != null && p.ev_vs_pin < 0); }
 function evOf(p) { var d = payout(p.price), pn = num(p.p); return (d == null || pn == null) ? -1 : pn * (1 + d) - 1; }
 function split() { /* board (open + too late, not started) / started (Live) / scratched */
   var games = gameMap(), out = { games: games, open: [], late: [], started: [], pulled: [], scratched: [] };
@@ -602,11 +605,10 @@ function load() {
   if (S.busy) return Promise.resolve();
   S.busy = true;
   return Promise.all([settle(getJSON(BASE + 'slate.json')), settle(getJSON(BASE + 'record.json')), settle(getJSON(BASE + 'rules.json')),
-                      settle(getJSON(BASE + 'live.json')), settle(getJSON(BASE + 'headshots.json')), settle(getJSON('config/lab.json'))])
+                      settle(getJSON(BASE + 'headshots.json')), settle(getJSON('config/lab.json'))])
     .then(function (r) {
-      if (r[4].ok) S.heads = r[4].v;                                               /* player photos: optional */
-      if (r[3].ok) S.live = r[3].v; else if (r[3].kind === 'file') S.live = null;  /* live.json: optional */
-      if (r[5].ok) { S.lab = r[5].v; S.labErr = null; } else if (!S.lab) S.labErr = r[5].kind;
+      if (r[3].ok) S.heads = r[3].v;                                               /* player photos: optional */
+      if (r[4].ok) { S.lab = r[4].v; S.labErr = null; } else if (!S.lab) S.labErr = r[4].kind;
       S.busy = false; S.loaded = true;
       if (r[1].ok) { S.record = r[1].v; S.recordErr = null; } else if (!S.record) S.recordErr = r[1].kind;
       if (r[2].ok) S.rules = r[2].v;
@@ -614,6 +616,7 @@ function load() {
       else if (S.slate) S.fetchFail = r[0].kind;
       else S.loadErr = r[0].kind;
       maybeRender();
+      if (!L.next && !L.busy) liveGo(L.lastTry == null);                           /* Live open: start (first read at once) or re-plan */
       return loadLab();
     }, function () { S.busy = false; });
 }
@@ -665,9 +668,9 @@ function writeSeen() {
 function calcKey() {
   var d = S.slate ? split() : null, ls = Object.keys(S.labSum).map(function (k) { var x = S.labSum[k]; return k + (x && (x.updated_at || x._err)); }).join();
   return JSON.stringify([S.loaded, S.loadErr, S.fetchFail, S.recordErr, S.slate && S.slate.generated_at, S.slate && S.slate.status_at, S.record && S.record.generated_at,
-    S.live && S.live.generated_at, ls, S.lab && S.lab.updated, S.view, !!S.heads,
+    L.ver, L.fail, L.at == null, ls, S.lab && S.lab.updated, S.view, !!S.heads,
     S.rules && S.rules.version, S.rules && S.rules.updated, S.slate && expired(), S.slate && stale(),
-    d ? [d.open.length, d.late.length, d.started.length] : 0, Math.floor(now() / 60000), liveStale()]);
+    d ? [d.open.length, d.late.length, d.started.length] : 0, Math.floor(now() / 60000)]);
 }
 function maybeRender() { var k = calcKey(); if (k !== S.key) render(); }
 var RENDER = {};
@@ -726,7 +729,6 @@ function statusLineEl() {
   if (od.no_keys) warn.push('No odds keys');
   else if (od.refused) warn.push('Odds keys refused');
   else if (od.low) warn.push('Odds keys low');
-  if (liveStale()) warn.push('Live scores old');
   if (isObj(st.last_run) && st.last_run.ok === false) warn.push('Last update failed');
   if (!exp && fStamp(st.next_read_at)) out.push('Next check ' + fStamp(st.next_read_at));
   if (exp) out.push("Today's picks not in yet");
@@ -936,26 +938,235 @@ function smallFoot() {
 }
 
 /* ---------- Live ---------- */
-function liveDoc() { var l = S.live; return (isObj(l) && S.slate && str(l.slate_date) === slateDay()) ? l : null; }
-function liveGame(gid) {
-  var l = liveDoc(); if (!l) return null;
-  var g = arr(l.games).filter(function (x) { return isObj(x) && String(x.game_id) === String(gid); });
-  return g[0] || null;
-}
+/* Live scores come straight from the browser (2026-11-04, Matt): ESPN first, NBA.com as backup, every 10 s, only while the
+   Live tab is open and the page is visible. ESPN answers a SIMPLE GET with access-control-allow-origin: * but refuses a
+   preflight, so: no custom headers, no credentials. Player numbers are read from the same ESPN box-score columns grading reads
+   (labels PTS / REB / AST / 3PT made part), so the live number is the number the pick is graded on. Nothing is stored. */
+var LIVE_MS = 10000, LIVE_TIMEOUT = 6000;
+var FEED_Q = String(Q.get('feed') || '');
+var ESPN_API = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/';
+var NBA_API = 'https://cdn.nba.com/static/json/liveData/';
+var L = { ver: 0, at: null, src: null, fail: false, lastTry: null, busy: false, next: null, wake: null, stopped: false,
+          games: {}, stats: {}, done: {}, polls: 0 };
+var NBA_TRI = { GS: 'GSW', NO: 'NOP', NY: 'NYK', SA: 'SAS', UTAH: 'UTA', WSH: 'WAS' };
+var MKT_LABEL = { points: 'PTS', rebounds: 'REB', assists: 'AST', threes: '3PT' };
+var NBA_STAT = { points: 'points', rebounds: 'reboundsTotal', assists: 'assists', threes: 'threePointersMade' };
+function tri(c) { c = str(c).toUpperCase(); return NBA_TRI[c] || c; }
+function liveOK() { return L.at != null && !L.fail; }
+function liveGame(gid) { return liveOK() && isObj(L.games[str(gid)]) ? L.games[str(gid)] : null; }
 function isFinalGame(lg) { return !!lg && str(lg.state) === 'post'; }
 function pickFinal(p) { var g = gameMap()[p.game_id]; return isObj(p.result) || isFinalGame(liveGame(p.game_id)) || (!!g && g.state === 'post'); }
-/* live.json is older than LIVE_STALE_MIN while a game with a pick is still on */
-function liveStale() {
-  if (!S.slate || expired()) return false;
-  var d = split(), on = d.started.some(function (p) { return !pickFinal(p); });
-  if (!on) return false;
-  var l = liveDoc(); if (!l) return true;
-  var g = ms(l.generated_at); return g == null || now() - g > LIVE_STALE_MIN * 60000;
+function cnt(v) { /* a count from a feed: a whole number 0-999, as a number or a digit string; anything else = null */
+  if (typeof v === 'number') return (isFinite(v) && v >= 0 && v < 1000 && Math.floor(v) === v) ? v : null;
+  return (typeof v === 'string' && /^\d{1,3}$/.test(v.trim())) ? parseInt(v, 10) : null;
+}
+function made(v) { var m = /^\s*(\d{1,3})-(\d{1,3})\s*$/.exec(str(v)); return m ? parseInt(m[1], 10) : null; }
+function normName(s) {
+  s = str(s);
+  try { s = s.normalize('NFD').replace(/[̀-ͯ]/g, ''); } catch (e) { /* old browser: names compared as they are */ }
+  s = s.toLowerCase().replace(/[.'’`]/g, '').replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
+  return s.replace(/\s+(jr|sr|ii|iii|iv)$/, '').trim();
+}
+function feedUrl(kind, id) {
+  if (FIX) return BASE + 'feeds/' + { es: 'espn_scoreboard.json', ex: 'espn_summary_' + id + '.json', ns: 'nba_scoreboard.json', nb: 'nba_boxscore_' + id + '.json' }[kind];
+  if (kind === 'es') return ESPN_API + 'scoreboard?dates=' + slateDay().replace(/-/g, '');
+  if (kind === 'ex') return ESPN_API + 'summary?event=' + encodeURIComponent(id);
+  if (kind === 'ns') return NBA_API + 'scoreboard/todaysScoreboard_00.json';
+  return NBA_API + 'boxscore/boxscore_' + encodeURIComponent(id) + '.json';
+}
+function feedGet(url) { /* a simple GET (no headers, no credentials), 6 s, JSON object or it failed */
+  var ctl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
+  var tm = ctl ? setTimeout(function () { ctl.abort(); }, LIVE_TIMEOUT) : null;
+  var o = { cache: 'no-store' }; if (ctl) o.signal = ctl.signal;
+  return fetch(url, o).then(function (r) {
+    if (!r.ok) throw new Error('http ' + r.status);
+    return r.text();
+  }).then(function (t) {
+    if (tm) clearTimeout(tm);
+    var j = JSON.parse(t); if (!isObj(j)) throw new Error('shape'); return j;
+  }, function (e) { if (tm) clearTimeout(tm); throw e; });
+}
+/* what this poll needs: every game with a started pick that is not graded yet and whose final box we don't have */
+function livePlan() {
+  var d = split(), need = {}, any = d.started.length > 0, wake = null;
+  d.started.forEach(function (p) { if (!isObj(p.result) && p.game_id != null && !L.done[str(p.game_id)]) need[str(p.game_id)] = 1; });
+  d.open.concat(d.late).forEach(function (p) { var t = pickStart(p, d.games); if (t != null && t > now() && (wake == null || t < wake)) wake = t; });
+  return { d: d, need: Object.keys(need), any: any, wake: wake };
+}
+function statOf(row, mk) { if (!row || row.dnp) return null; var v = row[mk]; return v == null ? null : v; }
+/* ESPN: the scoreboard, then the box score of each game we need that has started */
+function pollESPN(pl) {
+  return feedGet(feedUrl('es')).then(function (js) {
+    if (!Array.isArray(js.events)) throw new Error('shape');
+    var games = {};
+    js.events.forEach(function (e) {
+      if (!isObj(e) || e.id == null) return;
+      var c = arr(e.competitions)[0], st = isObj(e.status) ? e.status : (isObj(c) && isObj(c.status) ? c.status : null);
+      var g = espnGame(st, isObj(c) ? c.competitors : null); if (g) games[str(e.id)] = g;
+    });
+    var ids = pl.need.filter(function (gid) { return games[gid] && games[gid].state !== 'pre'; });
+    return Promise.all(ids.map(function (gid) { return feedGet(feedUrl('ex', gid)); })).then(function (sums) {
+      var stats = {}, done = {};
+      sums.forEach(function (s, i) {
+        var gid = ids[i], hc = isObj(s.header) ? arr(s.header.competitions)[0] : null;
+        var hg = isObj(hc) ? espnGame(hc.status, hc.competitors) : null; if (hg) games[gid] = hg;
+        var box = espnBox(s); if (!box) throw new Error('box');
+        pl.d.started.forEach(function (p) {
+          if (str(p.game_id) !== gid) return;
+          var row = box[str(p.pid)];
+          stats[str(p.id)] = { stat: statOf(row, str(p.market)), dnp: !!(row && row.dnp) };
+        });
+        if (games[gid].state === 'post') done[gid] = 1;
+      });
+      return { src: 'espn', games: games, stats: stats, done: done };
+    });
+  });
+}
+function espnGame(st, comps) {
+  if (!isObj(st) || !isObj(st.type) || !Array.isArray(comps)) return null;
+  var state = str(st.type.state); if (state !== 'pre' && state !== 'in' && state !== 'post') return null;
+  var side = {};
+  comps.forEach(function (c) { if (isObj(c) && (c.homeAway === 'home' || c.homeAway === 'away')) side[c.homeAway] = c; });
+  if (!side.home || !side.away) return null;
+  var detail = str(st.type.detail || st.type.shortDetail), name = str(st.type.name);
+  var clk = typeof st.displayClock === 'string' && /^[\d:.]{1,8}$/.test(st.displayClock) ? st.displayClock : '';
+  return { state: state, period: cnt(st.period), clock: clk, detail: detail.slice(0, 60),
+           in_break: state === 'in' && (name === 'STATUS_HALFTIME' || name === 'STATUS_END_PERIOD' || /halftime|^end of/i.test(detail)),
+           away: { score: cnt(side.away.score) }, home: { score: cnt(side.home.score) } };
+}
+function espnBox(s) { /* grading's own read (scripts/espn.py box): zip labels with the stats strings */
+  var bs = isObj(s.boxscore) ? s.boxscore : null; if (!bs || !Array.isArray(bs.players)) return null;
+  var out = {};
+  bs.players.forEach(function (tb) {
+    var st = isObj(tb) ? arr(tb.statistics)[0] : null; if (!isObj(st)) return;
+    var lab = arr(st.labels);
+    arr(st.athletes).forEach(function (a) {
+      if (!isObj(a) || !isObj(a.athlete) || a.athlete.id == null) return;
+      var vals = arr(a.stats), d = {}, i;
+      for (i = 0; i < lab.length && i < vals.length; i++) d[str(lab[i])] = vals[i];
+      var dnp = !!a.didNotPlay || !vals.length;
+      out[str(a.athlete.id)] = { dnp: dnp, points: cnt(d.PTS), rebounds: cnt(d.REB), assists: cnt(d.AST), threes: made(d['3PT']) };
+    });
+  });
+  return out;
+}
+/* NBA.com backup: games matched by teams, players by name within the pick's team. Any surprise = the feed failed. */
+function nbaClock(v) {
+  var m = /^PT(\d{1,2})M(\d{1,2})(?:\.(\d+))?S$/.exec(str(v)); if (!m) return '';
+  var mi = parseInt(m[1], 10), se = parseInt(m[2], 10);
+  if (mi > 0) return mi + ':' + (se < 10 ? '0' : '') + se;
+  return se + '.' + (m[3] ? m[3].charAt(0) : '0');
+}
+function nbaGame(g) {
+  var gs = num(g.gameStatus); if (gs !== 1 && gs !== 2 && gs !== 3) return null;
+  if (!isObj(g.homeTeam) || !isObj(g.awayTeam)) return null;
+  var state = gs === 1 ? 'pre' : (gs === 2 ? 'in' : 'post'), text = str(g.gameStatusText).trim().slice(0, 60), clk = nbaClock(g.gameClock);
+  var brk = state === 'in' && (/half|^end/i.test(text) || (clk === '0.0' && /end|half/i.test(text)));
+  return { state: state, period: cnt(g.period), clock: brk ? '' : clk, detail: /half/i.test(text) ? 'Halftime' : text, in_break: brk,
+           away: { score: cnt(g.awayTeam.score) }, home: { score: cnt(g.homeTeam.score) },
+           _a: str(g.awayTeam.teamTricode).toUpperCase(), _h: str(g.homeTeam.teamTricode).toUpperCase(), _id: str(g.gameId) };
+}
+function pollNBA(pl) {
+  return feedGet(feedUrl('ns')).then(function (js) {
+    var sb = isObj(js.scoreboard) ? js.scoreboard : null; if (!sb || !Array.isArray(sb.games)) throw new Error('shape');
+    var byTeams = {};
+    sb.games.forEach(function (g) { var x = isObj(g) ? nbaGame(g) : null; if (x && x._id) byTeams[x._a + '@' + x._h] = x; });
+    var games = {}, gmap = pl.d.games;
+    Object.keys(gmap).forEach(function (gid) {
+      var sg = gmap[gid], x = byTeams[tri(sg.away) + '@' + tri(sg.home)]; if (x) games[str(gid)] = x;
+    });
+    var ids = pl.need.filter(function (gid) {
+      if (!games[gid]) throw new Error('game ' + gid + ' not on NBA.com');
+      return games[gid].state !== 'pre';
+    });
+    return Promise.all(ids.map(function (gid) { return feedGet(feedUrl('nb', games[gid]._id)); })).then(function (boxes) {
+      var stats = {}, done = {};
+      boxes.forEach(function (b, i) {
+        var gid = ids[i], bg = isObj(b.game) ? b.game : null; if (!bg) throw new Error('box');
+        var x = nbaGame(bg); if (x) { x._id = games[gid]._id; games[gid] = x; }
+        var teamsBox = {};
+        [bg.homeTeam, bg.awayTeam].forEach(function (t) {
+          if (!isObj(t) || !Array.isArray(t.players)) throw new Error('box');
+          var m = {};
+          t.players.forEach(function (pp) {
+            if (!isObj(pp)) return;
+            var st = isObj(pp.statistics) ? pp.statistics : {}, row = { dnp: str(pp.played) === '0' };
+            Object.keys(NBA_STAT).forEach(function (k) { row[k] = cnt(st[NBA_STAT[k]]); });
+            [pp.name, str(pp.firstName) + ' ' + str(pp.familyName)].forEach(function (n) { var k = normName(n); if (k && !m[k]) m[k] = row; });
+          });
+          teamsBox[str(t.teamTricode).toUpperCase()] = m;
+        });
+        pl.d.started.forEach(function (p) {
+          if (str(p.game_id) !== gid) return;
+          var row = (teamsBox[tri(p.team)] || {})[normName(p.player)];   /* unmatched = no number for that pick */
+          stats[str(p.id)] = { stat: statOf(row, str(p.market)), dnp: !!(row && row.dnp) };
+        });
+        if (games[gid].state === 'post') done[gid] = 1;
+      });
+      Object.keys(games).forEach(function (k) { var g = games[k]; delete g._a; delete g._h; delete g._id; });
+      return { src: 'nba', games: games, stats: stats, done: done };
+    });
+  });
+}
+function liveWanted() { return S.view === 'live' && !document.hidden && !!S.slate && !expired(); }
+function liveClear() { if (L.next) clearTimeout(L.next); if (L.wake) clearTimeout(L.wake); L.next = L.wake = null; }
+function liveStop() { liveClear(); }
+/* entry = Live opened / page came back: poll at once. Otherwise only start when a game needs it. */
+function liveGo(entry) {
+  if (!liveWanted()) { liveStop(); return; }
+  if (L.busy) return;                                         /* never more than one poll in flight */
+  if (!entry && (L.next || L.wake)) return;
+  var pl = livePlan();
+  if (pl.any && (entry || pl.need.length)) {
+    if (entry && L.lastTry != null && Date.now() - L.lastTry < 2000) { liveAfter(pl); return; }   /* focus + visibility at once */
+    livePoll();
+  } else liveAfter(pl);
+}
+function liveAfter(pl) {
+  liveClear();
+  if (!liveWanted()) return;
+  pl = pl || livePlan();
+  if (pl.need.length) { L.stopped = false; L.next = setTimeout(livePoll, LIVE_MS); return; }   /* retries a failed poll too */
+  L.stopped = true;                                           /* no game in progress: stop; wake at the next tip with a pick */
+  if (pl.wake != null) L.wake = setTimeout(function () { L.wake = null; liveGo(true); }, Math.min(2147483000, Math.max(1000, pl.wake - now() + 1000)));
+}
+function livePoll() {
+  liveClear();
+  if (!liveWanted() || L.busy) return;
+  var pl = livePlan();
+  L.busy = true; L.polls++;
+  /* QA: ?feed=espnfail / allfail (fixture mode only) still read the feed, then treat it as failed */
+  var forceE = !!FIX && (FEED_Q === 'espnfail' || FEED_Q === 'allfail'), forceN = !!FIX && FEED_Q === 'allfail';
+  var forced = function (pr, on) { return on ? pr.then(function () { throw new Error('forced'); }) : pr; };
+  forced(pollESPN(pl), forceE).then(null, function () { return forced(pollNBA(pl), forceN); }).then(function (r) {
+    L.games = r.games;
+    Object.keys(r.stats).forEach(function (k) { L.stats[k] = r.stats[k]; });
+    Object.keys(r.done).forEach(function (k) { L.done[k] = 1; });
+    L.src = r.src; L.at = Date.now(); L.fail = false;
+  }, function () { L.fail = true; }).then(function () {
+    L.lastTry = Date.now(); L.busy = false;
+    var sig = JSON.stringify([L.games, L.stats, L.src, L.fail]);
+    if (sig !== L.sig) { L.sig = sig; L.ver++; }                /* re-render only when something changed; the age ticks by itself */
+    try { maybeRender(); } catch (e) { /* the page never breaks on a feed */ }
+    liveAfter();
+  });
+}
+function agoText(t) { var s = Math.max(0, Math.floor((Date.now() - t) / 1000)); return s < 60 ? s + 's ago' : Math.floor(s / 60) + 'm ' + (s % 60) + 's ago'; }
+function liveAgo() {
+  if (L.fail && L.lastTry != null) return { text: 'Live scores unavailable. Trying again every 10 seconds.', bad: true };
+  if (L.at == null) return { text: 'Getting live scores…', bad: false };
+  return { text: 'Updated ' + agoText(L.at) + (L.src === 'nba' ? ' via NBA.com' : '') + (L.stopped ? ' · No game in progress' : ''), bad: false };
+}
+function liveTick() {
+  if (S.view !== 'live' || document.hidden) return;
+  var el = document.getElementById('lvupd'); if (!el) return;
+  var a = liveAgo(); if (el.textContent !== a.text) el.textContent = a.text;
+  el.className = 'lvupd' + (a.bad ? ' bad' : '');
 }
 function gameLine(p, d) {
   var lg = liveGame(p.game_id), g = d.games[p.game_id], score = null, st, n = lg ? num(lg.period) : null, clk = lg ? str(lg.clock) : '';
-  if (lg && isObj(lg.away) && isObj(lg.home) && num(lg.away.score) != null && num(lg.home.score) != null)
-    score = str(lg.away.abbrev) + ' ' + lg.away.score + '-' + lg.home.score + ' ' + str(lg.home.abbrev);
+  if (lg && g && num(lg.away.score) != null && num(lg.home.score) != null)
+    score = str(g.away) + ' ' + lg.away.score + '-' + lg.home.score + ' ' + str(g.home);
   var ot = n != null && n > 4 ? (n === 5 ? 'OT' : (n - 4) + 'OT') : null;
   if (isObj(p.result) || isFinalGame(lg) || (g && g.state === 'post')) st = 'Final' + (ot ? ' (' + ot + ')' : '');
   else if (!lg || !lg.state) st = 'Tipped' + (fTime(pickStart(p, d.games)) ? ' ' + fTime(pickStart(p, d.games)) : '');
@@ -966,16 +1177,18 @@ function gameLine(p, d) {
   var mu = muNodes(p, d.games, false);
   return { status: st, score: score, mu: mu };
 }
-/* the player's number so far: the Record's grade once graded, else live.json */
+/* the player's number so far: the Record's grade once graded, else this session's live read */
 function liveStat(p) {
   var r = isObj(p.result) ? p.result : null, m = r ? /^(\d+)\b/.exec(str(r.actual)) : null;
   if (m) return +m[1];
-  var l = liveDoc(), x = l && isObj(l.picks) ? l.picks[p.id] : null;
+  if (!liveOK()) return null;
+  var x = L.stats[str(p.id)];
   return x && num(x.stat) != null ? x.stat : null;
 }
+function liveDnp(p) { var x = liveOK() ? L.stats[str(p.id)] : null; return !!(x && x.dnp); }
 /* tracker: pips for small lines (under 6), else a meter "14 / 21.5". Over: HIT once stat > line; under: LOST once stat > line.
    The other outcome only at the final. Returns {el, msg, stamp} */
-function tracker(p, s, fin) {
+function tracker(p, s, fin, dnp) {
   var ln = num(p.line), side = str(p.side), noun = NOUN[str(p.market)] || '', stamp = null, msg, el, i;
   if (ln == null || (side !== 'over' && side !== 'under')) return null;
   var k = s == null ? 0 : s, over = k > ln;
@@ -998,7 +1211,7 @@ function tracker(p, s, fin) {
     fill.style.width = Math.min(100, k / max * 100) + '%'; el.appendChild(fill);
     var tick = h('u'); tick.style.left = (ln / max * 100) + '%'; el.appendChild(tick);
   }
-  if (s == null) msg = 'No stats read yet';
+  if (s == null) msg = (L.fail && L.lastTry != null) ? 'Live stats unavailable' : (L.at == null ? 'Getting live stats\u2026' : (dnp ? (fin ? 'Did not play' : 'Has not played yet') : 'No stats yet'));
   else {
     msg = k + ' / ' + ln + (noun ? ' ' + noun : '');
     if (!fin && !stamp) msg += side === 'over' ? ', needs ' + (Math.floor(ln) + 1 - k) + ' more' : ', ' + (Math.floor(ln) - k) + ' to spare';
@@ -1007,7 +1220,7 @@ function tracker(p, s, fin) {
 }
 var FINAL_STAMP = { W: ['WON', 'W'], L: ['LOST', 'L'], VOID: ['VOID', ''], PUSH: ['PUSH', ''] };
 function liveRow(p, d) {
-  var gl = gameLine(p, d), s = liveStat(p), fin = pickFinal(p), r = isObj(p.result) ? p.result : null, tk = tracker(p, s, fin), st = null;
+  var gl = gameLine(p, d), s = liveStat(p), fin = pickFinal(p), r = isObj(p.result) ? p.result : null, tk = tracker(p, s, fin, liveDnp(p)), st = null;
   if (r && FINAL_STAMP[str(r.result)]) st = FINAL_STAMP[str(r.result)];
   else if (tk && tk.stamp === 'HIT') st = ['HIT', 'W'];
   else if (tk && tk.stamp === 'LOST') st = ['LOST', 'L'];
@@ -1040,10 +1253,7 @@ function renderLive() {
   });
   u = Math.round(u * 100) / 100;
   app.appendChild(h('div', { class: 'tonight' }, (w + l) ? ['Tonight ' + w + '-' + l + ' \u00b7 ', h('span', { class: signCls(u), text: (u > 0 ? '+' : u < 0 ? '-' : '') + Math.abs(u).toFixed(2) + 'u' })] : 'Tonight: no results yet'));
-  if (liveStale()) {
-    var ld = liveDoc();
-    app.appendChild(h('div', { class: 'lvnote', text: ld && fStamp(ld.generated_at) ? 'Live scores last updated ' + fStamp(ld.generated_at) + '. They may be behind.' : 'Live scores not read yet.' }));
-  }
+  if (d.started.length) { var la = liveAgo(); app.appendChild(h('div', { id: 'lvupd', class: 'lvupd' + (la.bad ? ' bad' : ''), role: 'status', text: la.text })); }
   var on = d.started.filter(function (p) { return !pickFinal(p); }), done = d.started.filter(pickFinal);
   var byStart = function (a, b) { return (pickStart(a, d.games) || 0) - (pickStart(b, d.games) || 0) || evOf(b) - evOf(a); };
   on.sort(byStart); done.sort(byStart);
@@ -1150,7 +1360,7 @@ function renderRecord() {
   var wrows = arr(sum.rows).filter(function (r) { return isObj(r) && str(r.key).indexOf('window:') === 0 && sampleN(r) + (num(r.push) || 0) + (num(r.void) || 0) > 0; })
     .map(function (r) { return Object.assign({}, r, { label: str(r.key).slice(7) }); });
   if (!cuts.length) {
-    var mrows = arr(sum.rows).filter(function (r) { return isObj(r) && str(r.key).indexOf('window:') !== 0 && r.key !== 'pulled' && sampleN(r) > 0; });
+    var mrows = arr(sum.rows).filter(function (r) { return isObj(r) && str(r.key).indexOf('window:') !== 0 && sampleN(r) > 0; });
     if (mrows.length) cuts.push({ label: 'By market', rows: mrows });
   }
   if (wrows.length) cuts.push({ label: 'By price-check window', note: 'The two checks the Pinnacle move showed up between', rows: wrows });
@@ -1172,7 +1382,7 @@ function renderRecord() {
     app.appendChild(h('button', { class: 'btn wide', type: 'button', style: 'margin-top:18px', text: S.olderBusy ? 'Loading' : 'Show older', on: { click: loadOlder } }));
     if (S.olderErr) app.appendChild(h('p', { class: 'note', style: 'color:var(--warn)', text: "Couldn't load older results. Try again." }));
   }
-  app.appendChild(h('p', { class: 'note', text: 'Graded at the posted price. Push and void are 0 units and left out of W-L and hit rate. The Record tracks the strategy: picks at or better than Pinnacle\u2019s fair price, live or replayed (REPLAY = the same rule run on price checks saved before it went live). Pulled picks stay in the log but are not counted here.' }));
+  app.appendChild(h('p', { class: 'note', text: 'Graded at the posted price. Push and void are 0 units and left out of W-L and hit rate. The Record tracks the strategy: picks at or better than Pinnacle\u2019s fair price, live or replayed (REPLAY = the same rule run on price checks saved before it went live). A pick that went off the board after it was shown (TOO LATE) counts like any other pick.' }));
   app.appendChild(smallFoot());
 }
 function allNights() {
@@ -1348,7 +1558,7 @@ function renderInfo() {
     h('li', { text: 'Early, Injury report clear, Starters confirmed and Locked show how settled a pick is. Price final means the last price check is done; only injury news can pull it after that.' }),
     h('li', { text: 'TOO LATE: the pick came off the board before tip (injury news, or Hard Rock took the line down). If you already have it at the shown price, keep it; don\u2019t bet it now.' }),
     h('li', { text: 'A player ruled Out drops off Picks and Live. Hard Rock voids the bet.' }),
-    h('li', { text: 'Live: picks whose game has tipped, with the score and his number so far. Scores update about every 10 minutes.' }),
+    h('li', { text: 'Live: picks whose game has tipped, with the score and his number so far, read straight from ESPN (NBA.com as backup) every 10 seconds while the Live tab is open.' }),
     h('li', { text: 'Games: our checks on each game (price checks, injury report, starters) and when the next one runs.' }),
     h('li', { text: 'Record: the strategy\u2019s results. REPLAY bets are the same rule run on price checks saved before it went live (Oct 25-27).' }),
     h('li', { text: 'New picks stop by themselves if the Record falls to -10 units; the page says so at the top.' }),
@@ -1403,8 +1613,10 @@ function statusBody(body) {
     if (od.low) { ot += ' Fewer price checks per game until then. More keys would fix it.'; obad = true; }
   }
   row('Odds keys', ot, obad);
-  var ld = liveDoc();
-  if (ld || liveStale()) row('Live scores', ld && fStamp(ld.generated_at) ? (liveStale() ? 'Behind: last updated ' : 'Updated ') + fStamp(ld.generated_at) : 'Not read yet', liveStale());
+  var lt = 'From your browser every 10s while Live is open \u00b7 ESPN, NBA.com backup.';
+  if (L.lastTry != null && L.fail) lt += ' Last try ' + (fTime(L.lastTry) || '') + ': both feeds failed.';
+  else if (L.at != null) lt += ' Last read ' + (fTime(L.at) || '') + (L.src === 'nba' ? ' via NBA.com.' : ' from ESPN.');
+  row('Live scores', lt, L.fail && L.lastTry != null);
   if (sl.safety_paused) row('Safety', 'New picks are stopped: the Record is down 10 units or more. The team reviews first.', true);
   body.appendChild(h('div', { class: 'svc-h' + (nBad ? ' bad' : ''), role: 'status' }, h('span', { class: 'ic' }, icon(nBad ? 'warn' : 'check', 16)),
     nBad ? (nBad === 1 ? '1 thing needs attention' : nBad + ' things need attention') : 'No problems found'));
@@ -1424,7 +1636,7 @@ function freshLevel() {
   if (stale() || S.fetchFail) return 'bad';
   if (expired()) return 'warn';
   var st = isObj(S.slate.status) ? S.slate.status : {}, od = oddsSt(), fd = isObj(st.feeds) ? st.feeds : {};
-  if (od.no_keys || od.refused || od.low || liveStale()) return 'warn';
+  if (od.no_keys || od.refused || od.low) return 'warn';
   if (fd.schedule === false || fd.injuries === false || (isObj(fd.lineups) && fd.lineups.ok === false)) return 'warn';
   if (isObj(st.last_run) && st.last_run.ok === false) return 'warn';
   return 'ok';
@@ -1487,6 +1699,7 @@ function route() {
   var v = viewFromHash();
   if (v !== S.view) {
     S.scroll[S.view] = window.scrollY || 0; S.view = v; render(); window.scrollTo(0, S.scroll[v] || 0);
+    if (v === 'live') liveGo(true); else liveStop();
   }
 }
 
@@ -1494,8 +1707,11 @@ function route() {
 window.addEventListener('popstate', route);
 window.addEventListener('hashchange', route);
 document.addEventListener('visibilitychange', function () {
-  if (document.hidden) writeSeen(); else load().then(schedule);
+  if (document.hidden) { writeSeen(); liveStop(); } else { liveGo(true); load().then(schedule); }
 });
+window.addEventListener('pageshow', function () { liveGo(true); });
+window.addEventListener('focus', function () { liveGo(true); });
+setInterval(liveTick, 1000);   /* "Updated Xs ago" on Live */
 window.addEventListener('pagehide', writeSeen);
 setInterval(function () { if (S.loaded && !document.hidden) maybeRender(); }, 30000);   /* "to tip", stale and live checks tick on */
 

@@ -1,0 +1,54 @@
+{
+ "meta": {
+  "version": 1
+ },
+ "game": {
+  "gameId": "0022600103",
+  "gameStatus": 3,
+  "gameStatusText": "Final",
+  "period": 4,
+  "gameClock": "",
+  "awayTeam": {
+   "teamTricode": "BKN",
+   "score": 100,
+   "players": [
+    {
+     "personId": 278104,
+     "name": "Michael Porter Jr.",
+     "firstName": "Michael",
+     "familyName": "Porter Jr.",
+     "nameI": "M. Porter Jr.",
+     "played": "1",
+     "status": "ACTIVE",
+     "statistics": {
+      "points": 25,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  },
+  "homeTeam": {
+   "teamTricode": "CHA",
+   "score": 98,
+   "players": [
+    {
+     "personId": 433134,
+     "name": "Miles Bridges",
+     "firstName": "Miles",
+     "familyName": "Bridges",
+     "nameI": "M. Bridges",
+     "played": "0",
+     "status": "INACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T21:10:00-05:00",
+ "generated_at": "2026-11-04T20:00:00-05:00",
  "summary": {
   "headline": {
    "w": 26,
@@ -291,7 +291,7 @@
     "push": 0,
     "void": 1,
     "units": -0.4,
-    "n": 15,
+    "n": 20,
     "graded": false
    },
    {
@@ -529,6 +529,36 @@
      "under_fair": false
     },
     {
+     "id": "2026-11-04:401909904:3062679:rebounds:8.5:over",
+     "kind": "single",
+     "player": "Josh Hart",
+     "bet": "Over 8.5 rebounds",
+     "market": "rebounds",
+     "team": "NYK",
+     "game": "NYK at BOS",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [
+      {
+       "price": -115,
+       "at": "2026-11-04T18:00:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-11-04T19:20:00-05:00",
+      "reason": "Hard Rock took the line down",
+      "code": "line_gone"
+     },
+     "legs": [],
+     "window": "11 AM → 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
      "id": "2026-11-04:401909904:3917376:threes:2.5:over",
      "kind": "single",
      "player": "Jaylen Brown",
@@ -633,6 +663,36 @@
      "under_fair": false
     },
     {
+     "id": "2026-11-04:401909905:4566434:points:20.5:over",
+     "kind": "single",
+     "player": "Franz Wagner",
+     "bet": "Over 20.5 points",
+     "market": "points",
+     "team": "ORL",
+     "game": "ORL at MIL",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-04T18:50:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-11-04T20:00:00-05:00",
+      "reason": "Now listed out",
+      "code": "status"
+     },
+     "legs": [],
+     "window": "11 AM → 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
      "id": "2026-11-04:401909906:3112335:threes:1.5:under",
      "kind": "single",
      "player": "Nikola Jokic",
@@ -711,6 +771,36 @@
      "under_fair": false
     },
     {
+     "id": "2026-11-04:401909907:4278053:rebounds:7.5:under",
+     "kind": "single",
+     "player": "Keegan Murray",
+     "bet": "Under 7.5 rebounds",
+     "market": "rebounds",
+     "team": "SAC",
+     "game": "POR at SAC",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-04T20:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-11-04T21:10:00-05:00",
+      "reason": "Now listed out",
+      "code": "status"
+     },
+     "legs": [],
+     "window": "11 AM → 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
      "id": "2026-11-04:401909907:4683772:points:19.5:under",
      "kind": "single",
      "player": "Shaedon Sharpe",
@@ -737,6 +827,36 @@
      "under_fair": false
     },
     {
+     "id": "2026-11-04:401909908:4066457:points:18.5:over",
+     "kind": "single",
+     "player": "Austin Reaves",
+     "bet": "Over 18.5 points",
+     "market": "points",
+     "team": "LAL",
+     "game": "MEM at LAL",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [
+      {
+       "price": -115,
+       "at": "2026-11-04T20:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-11-04T21:10:00-05:00",
+      "reason": "Now listed questionable",
+      "code": "status"
+     },
+     "legs": [],
+     "window": "11 AM → 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
      "id": "2026-11-04:401909908:4277961:rebounds:6.5:under",
      "kind": "single",
      "player": "Jaren Jackson Jr",
@@ -757,6 +877,36 @@
      "actual": null,
      "units": null,
      "pulled": null,
+     "legs": [],
+     "window": "11 AM → 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-04:401909909:4433136:assists:5.5:under",
+     "kind": "single",
+     "player": "Keyonte George",
+     "bet": "Under 5.5 assists",
+     "market": "assists",
+     "team": "UTA",
+     "game": "UTA at PHX",
+     "price": -105,
+     "first_price": -105,
+     "last_price": -105,
+     "prices": [
+      {
+       "price": -105,
+       "at": "2026-11-04T20:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-11-04T21:15:00-05:00",
+      "reason": "Hard Rock took the line down",
+      "code": "line_gone"
+     },
      "legs": [],
      "window": "11 AM → 90 min",
      "book": "hardrock",

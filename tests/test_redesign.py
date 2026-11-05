@@ -1,5 +1,4 @@
-"""2026-11-04 page redesign (NHL's Ballpark page brought to NBA): display-only data. Live tab (scripts/live.py -> data/live.json),
-the espn.summary in-run memo, data/headshots.json, slate pulled.code, Record cuts/days, config/lab.json.
+"""2026-11-04 page redesign (NHL's Ballpark page brought to NBA): display-only data. The espn.summary in-run memo, data/headshots.json, slate pulled.code, Record cuts/days, config/lab.json.
 Run: python -m unittest discover -s tests"""
 import hashlib
 import json
@@ -16,7 +15,6 @@ sys.path.insert(0, HERE)
 
 import common  # noqa: E402
 import espn  # noqa: E402
-import live  # noqa: E402
 import record  # noqa: E402
 import run  # noqa: E402
 from world import World  # noqa: E402
@@ -50,20 +48,6 @@ def summary(state="in", period=2, clock="11:17", detail="11:17 - 2nd Quarter", n
                                                                                    "descriptions": NAMES, "athletes": [], "totals": []}]}]}}
 
 
-def shown(i, game, pid, market="points", line=3.5, side="over"):
-    return {"t": "shown", "kind": "single", "id": i, "at": "2026-11-04T17:31:00-05:00", "slate": SLATE,
-            "pick": {"rule": "pin_solo", "game_id": game, "player": "A. Player", "pid": pid, "team": "PHI", "opp": "DET", "home": False,
-                     "start": "2026-11-04T19:00:00-05:00", "market": market, "line": line, "side": side, "bet": "x", "price": -120,
-                     "state": "clear", "ev_vs_pin": 0.01}}
-
-
-GAMES = [{"id": G1, "away": "PHI", "home": "DET", "start": "2026-11-04T19:00:00-05:00", "state": "in", "detail": "11:17 - 2nd",
-          "score": {"PHI": "23", "DET": "19"}},
-         {"id": G2, "away": "ATL", "home": "WSH", "start": "2026-11-04T19:00:00-05:00", "state": "in", "detail": "Q1",
-          "score": {"ATL": "10", "WSH": "8"}},
-         {"id": G3, "away": "BOS", "home": "NY", "start": "2026-11-04T22:00:00-05:00", "state": "pre", "detail": "10:00 PM"}]
-
-
 class Env(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.mkdtemp(prefix="pcnba_rd_")
@@ -81,91 +65,6 @@ class Env(unittest.TestCase):
     def put(self, gid, doc):
         with open(os.path.join(self.espn_dir, "summary_%s.json" % gid), "w") as f:
             json.dump(doc, f)
-
-
-class LiveTab(Env):
-    def setUp(self):
-        super().setUp()
-        self.ev = [shown("a", G1, "1966", "points", 3.5, "over"), shown("b", G1, "1966", "threes", 1.5, "under"),
-                   shown("c", G1, "1966", "rebounds", 7.5, "over"), shown("d", G1, "1967", "assists", 2.5, "over"),
-                   shown("e", G3, "2000")]
-
-    def test_field_mapping_from_a_real_shaped_summary(self):
-        self.put(G1, summary())
-        self.assertIsNotNone(espn.summary(G1))                         # the grade step's read
-        note = live.step(self.now, SLATE, GAMES, self.ev)
-        self.assertIn("1 game", note)
-        doc = common.read_json(live.path())
-        self.assertEqual(doc["slate_date"], SLATE)
-        self.assertEqual(len(doc["games"]), 1)                         # G2 has no pick, G3 has not started
-        g = doc["games"][0]
-        self.assertEqual((g["game_id"], g["state"], g["period"], g["clock"], g["detail"], g["in_break"]),
-                         (G1, "in", 2, "11:17", "11:17 - 2nd Quarter", False))
-        self.assertEqual((g["away"], g["home"]), ({"abbrev": "PHI", "score": 23}, {"abbrev": "DET", "score": 19}))
-        self.assertEqual(g["updated_at"], common.iso(self.now))
-        p = doc["picks"]
-        # points 4 > 3.5: an over is decided (HIT) mid-game; threes 2 (made of "2-3") > 1.5: an under is LOST mid-game
-        self.assertEqual((p["a"]["stat"], p["b"]["stat"], p["c"]["stat"]), (4, 2, 6))
-        self.assertTrue(p["a"]["stat"] > 3.5 and p["b"]["stat"] > 1.5)
-        self.assertEqual((p["d"]["stat"], p["d"]["dnp"]), (None, True))
-        self.assertNotIn("e", p)
-        self.assertEqual(live.step(self.now, SLATE, GAMES, self.ev), "skipped: no change")
-
-    def test_halftime_and_end_of_quarter_are_breaks(self):
-        self.assertTrue(espn.game_state(summary(clock="0.0", detail="Halftime", name="STATUS_HALFTIME"))["in_break"])
-        self.assertTrue(espn.game_state(summary(clock="0.0", detail="End of 3rd Quarter", name="STATUS_END_PERIOD", period=3))["in_break"])
-        ot = espn.game_state(summary(period=5, clock="2:31", detail="2:31 - OT"))
-        self.assertEqual((ot["period"], ot["in_break"]), (5, False))
-
-    def test_no_call_of_its_own_and_nothing_before_tip(self):
-        calls = []
-        real = espn._get
-        espn._get = lambda *a, **k: calls.append(a)
-        self.addCleanup(setattr, espn, "_get", real)
-        early = common.parse_iso("2026-11-04T18:00:00-05:00")
-        self.assertTrue(live.step(early, SLATE, [dict(g, state="pre") for g in GAMES], self.ev).startswith("skipped"))
-        self.assertIsNone(common.read_json(live.path()))
-        live.step(self.now, SLATE, GAMES, self.ev)                     # started, no summary read this run: scoreboard line
-        self.assertEqual(calls, [])
-        g = common.read_json(live.path())["games"][0]
-        self.assertEqual((g["state"], g["updated_at"], g["away"]["score"]), ("in", None, 23))
-
-    def test_a_game_not_read_keeps_its_last_entry_and_graded_takes_the_record(self):
-        self.put(G1, summary(state="post", period=4, clock="0.0", detail="Final", name="STATUS_FINAL", score=("104", "111")))
-        espn.summary(G1)
-        live.step(self.now, SLATE, GAMES, self.ev)
-        espn.clear_cache()                                             # next run: grade no longer reads this game
-        ev = self.ev + [{"t": "graded", "id": "a", "at": "2026-11-04T22:30:00-05:00", "result": "W", "actual": None,
-                         "actual_text": "5 points", "price": -120, "units": 0.83},
-                        {"t": "graded", "id": "d", "at": "2026-11-04T22:30:00-05:00", "result": "VOID", "actual": None,
-                         "actual_text": "did not play", "price": -120, "units": 0.0}]
-        later = common.parse_iso("2026-11-04T22:40:00-05:00")
-        live.step(later, SLATE, GAMES, ev)
-        doc = common.read_json(live.path())
-        g = doc["games"][0]
-        self.assertEqual((g["state"], g["home"]["score"], g["updated_at"]), ("post", 111, common.iso(self.now)))
-        self.assertEqual((doc["picks"]["a"]["stat"], doc["picks"]["b"]["stat"], doc["picks"]["d"]["dnp"]), (5, 2, True))
-
-    def test_broken_summary_never_fails(self):
-        self.put(G1, {"header": {"competitions": [{}]}})
-        espn.summary(G1)
-        self.assertIsInstance(live.step(self.now, SLATE, GAMES, self.ev), str)
-
-    def test_soft_step_after_grade_never_fails_the_run(self):
-        src = open(os.path.join(ROOT, "scripts", "run.py")).read()
-        main = src[src.index("def main("):]
-        self.assertLess(main.index('r.step("grade"'), main.index('r.step("live", r.live_step, soft=True)'))
-        self.assertLess(main.index('r.step("live"'), main.index('r.step("publish"'))
-        r = run.Run.__new__(run.Run)
-        r.steps, r.errors = {}, []
-        real = live.step
-        live.step = lambda *a, **k: 1 / 0
-        self.addCleanup(setattr, live, "step", real)
-        r.now, r.slate, r.games = self.now, SLATE, GAMES
-        r.step("live", r.live_step, soft=True)
-        self.assertEqual((r.steps["live"]["ok"], r.steps["live"]["soft"]), (False, True))
-        hard = [k for k, v in r.steps.items() if not v.get("ok") and not v.get("soft")]
-        self.assertEqual(hard, [])
 
 
 class SummaryCache(Env):
@@ -260,13 +159,21 @@ class RecordCuts(unittest.TestCase):
         before = hashlib.sha256(raw).hexdigest()
         rec, months = record.build_views(ev, CFG)
         cur = json.load(open(os.path.join(ROOT, "data", "record.json")))
+
+        def plain(doc):   # 2026-11-04 (Matt): pulled picks now count and are listed; compare the rest with the committed views
+            doc = json.loads(json.dumps(doc))
+            for n in doc.get("nights", []):
+                n["entries"] = [e for e in n["entries"] if not e.get("pulled")]
+                n.pop("graded", None)
+            return doc
         for k in cur:
             if k != "summary":
-                self.assertEqual(rec[k], cur[k], k)
+                self.assertEqual(plain(rec)[k], plain(cur)[k], k)
         for k in cur["summary"]:
-            self.assertEqual(rec["summary"][k], cur["summary"][k], k)  # headline and rows: same values as before
+            if k != "days":
+                self.assertEqual(rec["summary"][k], cur["summary"][k], k)  # headline and rows: same values (no counted pull graded yet)
         for m, doc in months.items():
-            self.assertEqual(doc, json.load(open(os.path.join(ROOT, "data", "record", "%s.json" % m))))
+            self.assertEqual(plain(doc), plain(json.load(open(os.path.join(ROOT, "data", "record", "%s.json" % m)))))
         hd = rec["summary"]["headline"]
         days = rec["summary"]["days"]
         self.assertEqual((sum(d["w"] for d in days), sum(d["l"] for d in days)), (hd["w"], hd["l"]))

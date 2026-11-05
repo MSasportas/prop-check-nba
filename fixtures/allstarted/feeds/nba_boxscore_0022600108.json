@@ -1,0 +1,69 @@
+{
+ "meta": {
+  "version": 1
+ },
+ "game": {
+  "gameId": "0022600108",
+  "gameStatus": 2,
+  "gameStatusText": "Q0 0.0",
+  "period": 0,
+  "gameClock": "PT00M00.00S",
+  "awayTeam": {
+   "teamTricode": "MEM",
+   "score": 0,
+   "players": [
+    {
+     "personId": 277961,
+     "name": "Jaren Jackson Jr",
+     "firstName": "Jaren",
+     "familyName": "Jackson Jr",
+     "nameI": "J. Jackson Jr",
+     "played": "0",
+     "status": "INACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  },
+  "homeTeam": {
+   "teamTricode": "LAL",
+   "score": 0,
+   "players": [
+    {
+     "personId": 945274,
+     "name": "Luka Doncic",
+     "firstName": "Luka",
+     "familyName": "Doncic",
+     "nameI": "L. Doncic",
+     "played": "0",
+     "status": "INACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    },
+    {
+     "personId": 66457,
+     "name": "Austin Reaves",
+     "firstName": "Austin",
+     "familyName": "Reaves",
+     "nameI": "A. Reaves",
+     "played": "0",
+     "status": "INACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "meta": {
+  "version": 1
+ },
+ "game": {
+  "gameId": "0022600101",
+  "gameStatus": 3,
+  "gameStatusText": "Final",
+  "period": 4,
+  "gameClock": "",
+  "awayTeam": {
+   "teamTricode": "PHI",
+   "score": 100,
+   "players": [
+    {
+     "personId": 59318,
+     "name": "Joel Embiid",
+     "firstName": "Joel",
+     "familyName": "Embiid",
+     "nameI": "J. Embiid",
+     "played": "1",
+     "status": "ACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  },
+  "homeTeam": {
+   "teamTricode": "DET",
+   "score": 98,
+   "players": [
+    {
+     "personId": 432166,
+     "name": "Cade Cunningham",
+     "firstName": "Cade",
+     "familyName": "Cunningham",
+     "nameI": "C. Cunningham",
+     "played": "1",
+     "status": "ACTIVE",
+     "statistics": {
+      "points": 21,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  }
+ }
+}

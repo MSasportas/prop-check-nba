@@ -1,0 +1,69 @@
+{
+ "meta": {
+  "version": 1
+ },
+ "game": {
+  "gameId": "0022600104",
+  "gameStatus": 2,
+  "gameStatusText": "Q4 6:40",
+  "period": 4,
+  "gameClock": "PT06M40.00S",
+  "awayTeam": {
+   "teamTricode": "NYK",
+   "score": 88,
+   "players": [
+    {
+     "personId": 934672,
+     "name": "Jalen Brunson",
+     "firstName": "Jalen",
+     "familyName": "Brunson",
+     "nameI": "J. Brunson",
+     "played": "1",
+     "status": "ACTIVE",
+     "statistics": {
+      "points": 29,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    },
+    {
+     "personId": 62679,
+     "name": "Josh Hart",
+     "firstName": "Josh",
+     "familyName": "Hart",
+     "nameI": "J. Hart",
+     "played": "1",
+     "status": "ACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 10,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  },
+  "homeTeam": {
+   "teamTricode": "BOS",
+   "score": 91,
+   "players": [
+    {
+     "personId": 917376,
+     "name": "Jaylen Brown",
+     "firstName": "Jaylen",
+     "familyName": "Brown",
+     "nameI": "J. Brown",
+     "played": "1",
+     "status": "ACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 3
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "meta": {
+  "version": 1
+ },
+ "game": {
+  "gameId": "0022600109",
+  "gameStatus": 3,
+  "gameStatusText": "Final",
+  "period": 4,
+  "gameClock": "",
+  "awayTeam": {
+   "teamTricode": "UTA",
+   "score": 100,
+   "players": [
+    {
+     "personId": 433136,
+     "name": "Keyonte George",
+     "firstName": "Keyonte",
+     "familyName": "George",
+     "nameI": "K. George",
+     "played": "0",
+     "status": "INACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  },
+  "homeTeam": {
+   "teamTricode": "PHX",
+   "score": 98,
+   "players": [
+    {
+     "personId": 136193,
+     "name": "Devin Booker",
+     "firstName": "Devin",
+     "familyName": "Booker",
+     "nameI": "D. Booker",
+     "played": "0",
+     "status": "INACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  }
+ }
+}

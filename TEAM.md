@@ -151,11 +151,24 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   2026-11-01 all 12 reads (4 games x B/C/D): Hard Rock all 4 markets, all 9 other books all 4 markets on every read (BetMGM complete).
   2026-11-02 all 45 reads (15 games x B/C/D): Hard Rock all 4 markets, all 9 other books all 4 markets on every read.
   2026-11-04 A read (first under v2.4 spare credits, 14 games x 4 = 56 credits): Hard Rock all 4 markets on 14/14; all 9 other books all 4 markets except BetMGM (absent MIL@BOS).
-- **Page (2026-11-04):** `index.html` (Ballpark, fonts bundled in fonts/, no outside font calls). Extra data it reads: `data/live.json`
-  (soft step `live`, scripts/live.py, after grade: ESPN summaries grade already read this run, no extra calls; quarter/clock/score + each
-  started pick's stat), `data/headshots.json` (ESPN pid -> a.espncdn.com photo, merged on each fresh roster read), `record.json`
-  `summary.cuts`/`summary.days` (views only), `config/lab.json` (Lab entries). Slate adds `pulled.code/status` (status Out = scratch, hidden),
-  `added_at` (NEW label), `games[].injury_clear`, `next_check_read`, `status.feeds`. Fixtures: `fixtures/make_fixtures.py`, open `?fixture=<name>`.
+- **Page (2026-11-04):** `index.html` (Ballpark, fonts bundled in fonts/, no outside font calls). Extra data it reads:
+  `data/headshots.json` (ESPN pid -> a.espncdn.com photo, merged on each fresh roster read), `record.json` `summary.cuts`/`summary.days`
+  (views only), `config/lab.json` (Lab entries). Slate adds `pulled.code/status` (status Out = scratch, hidden), `added_at` (NEW label),
+  `games[].injury_clear`, `next_check_read`, `status.feeds`. Fixtures: `fixtures/make_fixtures.py`, open `?fixture=<name>`.
+- **Live tab = in-browser polling (Matt, 2026-11-04 11:12 PM; replaced the timer's `live` step / data/live.json, which fed nothing else).**
+  While Live is the open tab and the page is visible, the phone itself reads every 10 s: ESPN scoreboard
+  (`site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=YYYYMMDD`) + one `summary?event=<id>` per started game with an
+  ungraded pick. Stats are read exactly as grading reads them (PTS / REB / AST / made part of 3PT, same feed, same columns), so the live
+  number is the graded number. Backup when ESPN fails (6 s timeout, error, bad JSON): NBA.com `cdn.nba.com/static/json/liveData/
+  scoreboard/todaysScoreboard_00.json` + `boxscore/boxscore_<gameId>.json` (teams by tricode map, players by normalized name). Both fail ->
+  "Live scores unavailable", scores/clocks/stats hidden (never old scores as live). Pauses when hidden or on another tab, polls at once on
+  return, stops when no game with a pick is in progress (one wake-up at the next tip). "Updated Xs ago" on the tab. No relay needed:
+  ESPN answers browsers directly (CORS check below). Fixtures `liveon`, `liveespnfail`, `liveallfail`, `livedone`, `livepre` read
+  `fixtures/<name>/feeds/`; `?feed=espnfail|allfail` forces the backup / failure. `data/live.json` is a leftover: nothing writes or reads it.
+  **CORS check (2026-11-04, from GitHub's servers, Origin https://msasportas.github.io):** ESPN scoreboard + summary GET ->
+  `access-control-allow-origin: *`, cache max-age 7-10 s; OPTIONS preflight -> 403 (so the page sends simple GETs only, no custom
+  headers). cdn.nba.com -> 403 to GitHub's servers (browser CORS unknown). ESPN live box = grading source; NBA's official box could not
+  be reached from any of our machines to cross-check player by player.
 - **Discord:** `scripts/notify.py`, secret `DISCORD_WEBHOOK`. Sends NEW PICKS (batched), PULLED (only picks already sent, before tip, with
   the if-bet line), PRICE FINAL, ACTION NEEDED (keys refused / pool low, once a day each), a one-time hello. Never no-pick nights,
   heartbeats, grading or errors. Quiet 12:30-9:00 AM ET. Max 12 messages a day.
@@ -209,10 +222,18 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
    Discord. If the engine's reason wording changes, re-check the page.
 11. **Lab's only entry (Pinnacle judge) is 13-16 -2.94u live** (passed its Oct 25-27 discovery). Shown honestly; remove it if the
    Sharp drops the track.
+12. **The live feeds are not official APIs.** ESPN's site.api is an undocumented public feed that could change shape or add
+   restrictions (it also grades the picks, so a change would show in grading too). The NBA.com backup is untested against the real feed
+   (403 to GitHub's servers; field names from its public format, parsed defensively; a surprise = "Live scores unavailable"). If ESPN
+   stops answering browsers, the fix is a free relay; Cloudflare Workers would need Matt to create a free account.
+13. Leftovers: branch `probe-box` (one-off ESPN box dump; deleting branches is blocked from the build sandbox, harmless) and
+   `data/live.json` (unused since 2026-11-04 11 PM).
 
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
 |---|---|---|---|
+| 2026-11-04 ~11:50 PM (CEO, Matt's order; Builder) | **Too-late picks count like any other pick.** A pick Hard Rock moved or took down after it was shown is TOO LATE on Picks, then shows on Live and counts on the Record (headline, rows, cuts, calendar) at its posted price. Still out: under-fair picks (Matt, 10-30) and the Oct 28 `rule_change` withdrawals; scratches grade VOID. The -10u safety stop now reads the same set as the headline (it read 11.15u vs the headline's 12.34u before) | Matt: Miles Bridges was pulled after he had bet it; "we still treat it like any other pick... don't differentiate in the record" | Headline unchanged on the log at the time (23-8 +14.82u): the only graded line_gone pull (10-28) was under fair. Bridges U16.5 pts (line_gone 8:20 PM) counts when graded |
+| 2026-11-04 ~11:50 PM (CEO, Matt's order; Builder) | **Live tab polls from the browser every 10 s** (ESPN, NBA.com backup) instead of the timer's data/live.json; timer `live` step removed. Display only | Matt: replace the slow live updates | CORS check + live-game check, section 5 / 9 |
 | 2026-11-03 9:50 AM (CEO, Matt's order; Builder) | **v2.6: DraftKings is a button, not a pick book.** Hard Rock picks only (other books still don't matter); when DraftKings passes the same check on the same bet, the pick lists its price and gets a DraftKings button. Graded at Hard Rock's price | Matt, after seeing DraftKings-only picks were flat: "remove the draftkings check itself. However when they both agree provide the link for both books" | Replay Oct 26-Nov 2: 29 picks 23-6 +15.74u 79%; 20 with a DK button |
 | 2026-11-03 7:55 AM (CEO, Matt's order) | **v2.5b: books independent** (each its own pick). Superseded by v2.6 before any pick | Matt | Replay: HR 29 23-6; DK 76 45-31 (DK-only 56 29-27 -0.99u) |
 | 2026-11-03 7:30 AM (CEO, Matt's order; Builder, QA) | **v2.5: other books dropped from the rule; DraftKings added as a pick book** (customer fact: Hard Rock or DraftKings). Same line at the pick book and Pinnacle on both reads, Pinnacle 2+ pts, book price at or better than Pinnacle's fair; buttons only for passing books; graded at the best passing price; per-book Record rows. First picks Wed 11-04 (no games 11-03) | Matt: "As long as hard rock and pinnacle are showing the same lines I don't care about the other books... add draftkings... If hard rock's price is better than fair provide hard rock link, if draftkings provide draftkings, if both both" | Replay Oct 26-Nov 2: v2.4 23 18-5 +12.34u 78%; HR no others gate 29 23-6 +15.74u 79%; v2.5 84 52-32 +16.16u 62% (10.5 a night); DK-only picks ~59%. Flagged the hit-rate cost to Matt |
@@ -226,6 +247,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-11-04 ~11:50 PM (CEO, Matt: live polling from the page every 10 s; then too-late picks count): checks first, as NHL did: CORS from GitHub's servers (ESPN pass, cdn.nba.com 403), ESPN full box dump on 3 finished games (PTS sums match team scores; same columns grading uses); official NBA box unreachable from every machine we have. Builder: timer `live` step, scripts/live.py and probe workflows removed; Live tab polls ESPN scoreboard + summaries every 10 s while open and visible, NBA.com backup, "Live scores unavailable" when both fail, "Updated Xs ago", pauses hidden, stops when nothing is live. Too-late picks shown on Live and counted on the Record; safety stop reads the headline set. 92 tests; local sweep 18 fixture sets x 6 tabs x 4 sizes, 0 sideways scroll / page errors.
 - 2026-11-04 ~9:20 PM (CEO, Matt: bring NHL's 11/4 redesign over; Builder, QA): page rebuilt on NHL's 11/4 page. Rail tabs Picks · Live · Games · Record · Lab · Info; Ballpark light theme, bundled Graduate / IBM Plex Sans / Plex Mono; dark mode and Backstage gone. Picks = unstarted picks in 2-column tiles (photo, bet, Hard Rock price, chance vs needed; tap: reason, Early > Injury report clear > Starters confirmed > Locked stepper, Hard Rock button), NEW corner label + "Added HH:MM", TOO LATE navy stamp for status and line_gone pulls ("Got X earlier? Keep it. Don't bet it now."), Out scratches hidden from Picks and Live. Live = started picks, "Tonight W-L · ±u", in-game first, finals sink with WON/LOST/VOID, stat-vs-line tracker with HIT/LOST mid-game, quarter/clock/score, old data said plainly. Games = checks only. Record = calendar (red up, slate down) + cuts (market, edge vs Pinnacle fair, settled when shown, price band; small-sample labels) + full list. Lab = Pinnacle judge track. Info = status rows, rules, 21+ / 1-800-GAMBLER. No pick, grade, Record-counting or Discord change; events.jsonl untouched. Source probe on the runner: ESPN summary live fields verified on PHI@DET / ATL@WSH in progress; NBA official sources blocked (section 7 item 9). QA (fresh): SHIP, 336 views (all fixtures + real data x 6 tabs at 360/380/414 + iPhone 13), no sideways scroll, no JS errors; 3 lows fixed (malformed box block, skeleton gradient), 2 noted (section 7 items 10-11). 90 tests.
 - 2026-11-04 2:10 PM (CEO, daily check): alive (chain link 182, status 2:00 PM, all steps ok, Actions green, pool 2,712, plan A/B/C/D for 14 games). v2.4 spare A read ran 11 AM (56 credits; Hard Rock all 4 markets on every game). No games 11-03, so nothing to grade and no Rotowire confirms expected; all 37 shown picks on the Record graded. Unmatched Rotowire: Diop, Tomlin (harmless); no unmatched odds names, no unknown teams. Tests pass. No code changes.
 - 2026-11-03 ~5:15 PM (CEO, Matt: "There should not be a daily budget"): removed the per-day credit cap (`budget_today`) from the

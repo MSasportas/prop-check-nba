@@ -7,7 +7,6 @@
   odds       the A / B / C / D reads that are due (odds.py)
   engine     picks, pulls, settled level, lock at tip (engine.py), straight into the Record
   grade      every locked or pulled pick whose game is final; every final game's box score into the stats store
-  live       data/live.json for the page's Live tab, from the summaries grade just read (display only, soft step)
   publish    data/record.json (+ month files), data/rules.json, data/slate.json, data/status.json, data/shadow/<slate>.json
   notify     Discord (notify.py)
 Safe to run twice. Every write is atomic. Flags: --explain (print every line's verdict, write nothing),
@@ -25,7 +24,6 @@ import common  # noqa: E402
 import engine  # noqa: E402
 import espn  # noqa: E402
 import lineups as rotowire  # noqa: E402
-import live  # noqa: E402
 import names  # noqa: E402
 import notify  # noqa: E402
 import odds  # noqa: E402
@@ -275,12 +273,6 @@ class Run:
             record.append(new)
         self.graded_now = len(new)
 
-    # ------------------------------------------------------------ live (display only)
-    def live_step(self):
-        note = live.step(self.now, self.slate, self.games, record.read_events())
-        self.steps["live"] = {"ok": True, "note": note}
-        return note
-
     # ------------------------------------------------------------ publish
     def publish(self):
         cfg, now = self.cfg, self.now
@@ -457,7 +449,7 @@ class Run:
         return {"schedule": ok("schedule"), "injuries": ok("injuries"), "rosters": ok("rosters"),
                 "lineups": {"ok": ok("lineups"), "at": lu.get("at"),
                             "confirmed": sorted(c for c, t in (lu.get("teams") or {}).items() if (t or {}).get("state") == "confirmed")},
-                "grade": ok("grade"), "live": ok("live")}
+                "grade": ok("grade")}
 
     def hr_missing_at(self):
         """Latest read time today when reads came back but none carried Hard Rock (book not posted yet); else None."""
@@ -531,7 +523,8 @@ def rules_doc(cfg):
         "confirmed starting. Needs %d+ games of history." % el["min_history"],
         "Early = injury news still open. Injury report clear = he and his team's main rotation are cleared. "
         "Starters confirmed = both teams' starting fives are posted.",
-        "A pick is pulled if he is ruled out or doubtful, or Hard Rock takes the line down. Pulled picks stay on the Record.",
+        "A pick is pulled if he is ruled out or doubtful, or Hard Rock takes the line down. If Hard Rock moves the line after a "
+        "pick is shown, the page marks it TOO LATE for anyone who hasn't bet it; it still counts on the Record like any other pick.",
         "One pick per player per market a night. No cap per game or per night. No parlays.",
         "Graded after the game at the shown price, 1 unit flat. Overtime counts. Did not play = void.",
         "Tracked on paper (Lab tab, not the Record or Discord): %s, Hard Rock %d%%+ better than Pinnacle's fair price on the same line."
@@ -565,7 +558,6 @@ def main(argv):
     if r.explain:
         return 0
     r.step("grade", r.grade)
-    r.step("live", r.live_step, soft=True)                  # the page's Live tab, from the summaries grade just read
     r.step("publish", r.publish)
     if "publish" in r.steps and not r.steps["publish"]["ok"]:
         return 1

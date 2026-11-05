@@ -499,8 +499,9 @@ def started(g, now):
 
 
 def safety_paused(items, cfg):
-    units = sum((it["graded"] or {}).get("units") or 0 for it in items.values()
-                if it["kind"] == "single" and not it["pulled"] and it["graded"])
+    """The -10u stop reads the Record Matt sees: the same set as its headline (record.counts: pulled picks included,
+    under-fair and rule_change withdrawals out, replay bets in)."""
+    units = record.headline_units(items, cfg)
     return units <= cfg["safety_pause"]["units"] + EPS, round(units, 2)
 
 

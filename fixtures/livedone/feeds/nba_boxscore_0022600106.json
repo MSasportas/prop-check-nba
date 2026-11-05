@@ -1,0 +1,38 @@
+{
+ "meta": {
+  "version": 1
+ },
+ "game": {
+  "gameId": "0022600106",
+  "gameStatus": 3,
+  "gameStatusText": "Final",
+  "period": 4,
+  "gameClock": "",
+  "awayTeam": {
+   "teamTricode": "DEN",
+   "score": 100,
+   "players": [
+    {
+     "personId": 112335,
+     "name": "Nikola Jokić",
+     "firstName": "Nikola",
+     "familyName": "Jokić",
+     "nameI": "N. Jokić",
+     "played": "1",
+     "status": "ACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 1
+     }
+    }
+   ]
+  },
+  "homeTeam": {
+   "teamTricode": "HOU",
+   "score": 98,
+   "players": []
+  }
+ }
+}

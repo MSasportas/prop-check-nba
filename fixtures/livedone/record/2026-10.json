@@ -1,0 +1,620 @@
+{
+ "nights": [
+  {
+   "date": "2026-10-26",
+   "graded": true,
+   "w": 4,
+   "l": 0,
+   "units": 3.74,
+   "entries": [
+    {
+     "id": "2026-10-26:401903659:3062679:threes:1.5:over",
+     "kind": "single",
+     "player": "Josh Hart",
+     "bet": "Over 1.5 threes",
+     "market": "threes",
+     "team": "NYK",
+     "game": "NYK at BOS",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
+       "at": "2026-10-26T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "3 threes",
+     "units": 1.25,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-26:401920362:4432158:points:22.5:over",
+     "kind": "single",
+     "player": "Evan Mobley",
+     "bet": "Over 22.5 points",
+     "market": "points",
+     "team": "CLE",
+     "game": "CLE at IND",
+     "price": -140,
+     "first_price": -140,
+     "last_price": -140,
+     "prices": [
+      {
+       "price": -140,
+       "at": "2026-10-26T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "24 points",
+     "units": 0.7143,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "replay:2026-10-26:Justin Champagnie:points:7.5:under",
+     "kind": "single",
+     "player": "Justin Champagnie",
+     "bet": "Under 7.5 points",
+     "market": "points",
+     "team": "WAS",
+     "game": "WAS at CHA",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [],
+     "result": "W",
+     "actual": "2 points",
+     "units": 0.9091,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "replay": true,
+     "under_fair": false
+    },
+    {
+     "id": "replay:2026-10-26:Nikola Jokic:points:26.5:under",
+     "kind": "single",
+     "player": "Nikola Jokic",
+     "bet": "Under 26.5 points",
+     "market": "points",
+     "team": "DEN",
+     "game": "GSW at DEN",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [],
+     "result": "W",
+     "actual": "19 points",
+     "units": 0.8696,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM → 90 min",
+     "replay": true,
+     "under_fair": false
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "graded": true,
+   "w": 2,
+   "l": 2,
+   "units": -0.7,
+   "entries": [
+    {
+     "id": "2026-10-25:401901189:4431678:threes:2.5:over",
+     "kind": "single",
+     "player": "Tyrese Maxey",
+     "bet": "Over 2.5 threes",
+     "market": "threes",
+     "team": "PHI",
+     "game": "PHI at MIA",
+     "price": 100,
+     "first_price": 100,
+     "last_price": 100,
+     "prices": [
+      {
+       "price": 100,
+       "at": "2026-10-25T18:20:00-04:00"
+      }
+     ],
+     "result": "L",
+     "actual": "1 threes",
+     "units": -1.0,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-25:401903367:4431678:points:21.5:under",
+     "kind": "single",
+     "player": "Tyrese Maxey",
+     "bet": "Under 21.5 points",
+     "market": "points",
+     "team": "PHI",
+     "game": "PHI at MIA",
+     "price": -170,
+     "first_price": -170,
+     "last_price": -170,
+     "prices": [
+      {
+       "price": -170,
+       "at": "2026-10-25T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "20 points",
+     "units": 0.5882,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-25:401933663:3062679:points:20.5:over",
+     "kind": "single",
+     "player": "Josh Hart",
+     "bet": "Over 20.5 points",
+     "market": "points",
+     "team": "NYK",
+     "game": "NYK at BOS",
+     "price": -140,
+     "first_price": -140,
+     "last_price": -140,
+     "prices": [
+      {
+       "price": -140,
+       "at": "2026-10-25T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "22 points",
+     "units": 0.7143,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-25:401954177:4433621:threes:1.5:under",
+     "kind": "single",
+     "player": "Jalen Duren",
+     "bet": "Under 1.5 threes",
+     "market": "threes",
+     "team": "DET",
+     "game": "DET at ORL",
+     "price": 140,
+     "first_price": 140,
+     "last_price": 140,
+     "prices": [
+      {
+       "price": 140,
+       "at": "2026-10-25T18:20:00-04:00"
+      }
+     ],
+     "result": "L",
+     "actual": "3 threes",
+     "units": -1.0,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
+  {
+   "date": "2026-10-24",
+   "graded": true,
+   "w": 4,
+   "l": 0,
+   "units": 3.9,
+   "entries": [
+    {
+     "id": "2026-10-24:401934505:3062679:rebounds:7.5:under",
+     "kind": "single",
+     "player": "Josh Hart",
+     "bet": "Under 7.5 rebounds",
+     "market": "rebounds",
+     "team": "NYK",
+     "game": "NYK at BOS",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-10-24T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "6 rebounds",
+     "units": 0.9091,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-24:401938035:4431678:rebounds:7.5:over",
+     "kind": "single",
+     "player": "Tyrese Maxey",
+     "bet": "Over 7.5 rebounds",
+     "market": "rebounds",
+     "team": "PHI",
+     "game": "PHI at MIA",
+     "price": -170,
+     "first_price": -170,
+     "last_price": -170,
+     "prices": [
+      {
+       "price": -170,
+       "at": "2026-10-24T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "9 rebounds",
+     "units": 0.5882,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-24:401973729:4437244:rebounds:8.5:under",
+     "kind": "single",
+     "player": "Jalen Green",
+     "bet": "Under 8.5 rebounds",
+     "market": "rebounds",
+     "team": "PHX",
+     "game": "PHX at SAS",
+     "price": 140,
+     "first_price": 140,
+     "last_price": 140,
+     "prices": [
+      {
+       "price": 140,
+       "at": "2026-10-24T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "7 rebounds",
+     "units": 1.4,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-24:401979522:4433621:threes:3.5:over",
+     "kind": "single",
+     "player": "Jalen Duren",
+     "bet": "Over 3.5 threes",
+     "market": "threes",
+     "team": "DET",
+     "game": "DET at ORL",
+     "price": 100,
+     "first_price": 100,
+     "last_price": 100,
+     "prices": [
+      {
+       "price": 100,
+       "at": "2026-10-24T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "5 threes",
+     "units": 1.0,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-24:401991688:4433134:threes:3.5:over",
+     "kind": "single",
+     "player": "Scottie Barnes",
+     "bet": "Over 3.5 threes",
+     "market": "threes",
+     "team": "TOR",
+     "game": "TOR at CHI",
+     "price": 110,
+     "first_price": 110,
+     "last_price": 110,
+     "prices": [
+      {
+       "price": 110,
+       "at": "2026-10-24T18:20:00-04:00"
+      }
+     ],
+     "result": "VOID",
+     "actual": "did not play",
+     "units": 0.0,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "graded": true,
+   "w": 4,
+   "l": 1,
+   "units": 2.6,
+   "entries": [
+    {
+     "id": "2026-10-22:401910411:4871144:rebounds:7.5:under",
+     "kind": "single",
+     "player": "Alperen Sengun",
+     "bet": "Under 7.5 rebounds",
+     "market": "rebounds",
+     "team": "HOU",
+     "game": "HOU at DAL",
+     "price": -170,
+     "first_price": -170,
+     "last_price": -170,
+     "prices": [
+      {
+       "price": -170,
+       "at": "2026-10-22T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "6 rebounds",
+     "units": 0.5882,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-22:401913724:3078576:assists:6.5:under",
+     "kind": "single",
+     "player": "Derrick White",
+     "bet": "Under 6.5 assists",
+     "market": "assists",
+     "team": "BOS",
+     "game": "BOS at NYK",
+     "price": 110,
+     "first_price": 110,
+     "last_price": 110,
+     "prices": [
+      {
+       "price": 110,
+       "at": "2026-10-22T18:20:00-04:00"
+      }
+     ],
+     "result": "L",
+     "actual": "8 assists",
+     "units": -1.0,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-22:401938338:4432158:points:21.5:over",
+     "kind": "single",
+     "player": "Evan Mobley",
+     "bet": "Over 21.5 points",
+     "market": "points",
+     "team": "CLE",
+     "game": "CLE at IND",
+     "price": -150,
+     "first_price": -150,
+     "last_price": -150,
+     "prices": [
+      {
+       "price": -150,
+       "at": "2026-10-22T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "23 points",
+     "units": 0.6667,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-22:401967803:3078576:rebounds:8.5:under",
+     "kind": "single",
+     "player": "Derrick White",
+     "bet": "Under 8.5 rebounds",
+     "market": "rebounds",
+     "team": "BOS",
+     "game": "BOS at NYK",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
+       "at": "2026-10-22T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "7 rebounds",
+     "units": 1.25,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-22:401968141:4432158:threes:1.5:over",
+     "kind": "single",
+     "player": "Evan Mobley",
+     "bet": "Over 1.5 threes",
+     "market": "threes",
+     "team": "CLE",
+     "game": "CLE at IND",
+     "price": 110,
+     "first_price": 110,
+     "last_price": 110,
+     "prices": [
+      {
+       "price": 110,
+       "at": "2026-10-22T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "3 threes",
+     "units": 1.1,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
+  {
+   "date": "2026-10-21",
+   "graded": true,
+   "w": 0,
+   "l": 2,
+   "units": -2.0,
+   "entries": [
+    {
+     "id": "2026-10-21:401989455:4433621:assists:6.5:under",
+     "kind": "single",
+     "player": "Jalen Duren",
+     "bet": "Under 6.5 assists",
+     "market": "assists",
+     "team": "DET",
+     "game": "DET at ORL",
+     "price": -140,
+     "first_price": -140,
+     "last_price": -140,
+     "prices": [
+      {
+       "price": -140,
+       "at": "2026-10-21T18:20:00-04:00"
+      }
+     ],
+     "result": "L",
+     "actual": "8 assists",
+     "units": -1.0,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-21:401996897:4437244:threes:2.5:under",
+     "kind": "single",
+     "player": "Jalen Green",
+     "bet": "Under 2.5 threes",
+     "market": "threes",
+     "team": "PHX",
+     "game": "PHX at SAS",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-10-21T18:20:00-04:00"
+      }
+     ],
+     "result": "L",
+     "actual": "4 threes",
+     "units": -1.0,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "graded": true,
+   "w": 1,
+   "l": 1,
+   "units": -0.09,
+   "entries": [
+    {
+     "id": "2026-10-20:401900854:4433134:assists:5.5:over",
+     "kind": "single",
+     "player": "Scottie Barnes",
+     "bet": "Over 5.5 assists",
+     "market": "assists",
+     "team": "TOR",
+     "game": "TOR at CHI",
+     "price": -140,
+     "first_price": -140,
+     "last_price": -140,
+     "prices": [
+      {
+       "price": -140,
+       "at": "2026-10-20T18:20:00-04:00"
+      }
+     ],
+     "result": "L",
+     "actual": "4 assists",
+     "units": -1.0,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-20:401989545:4433621:threes:2.5:over",
+     "kind": "single",
+     "player": "Jalen Duren",
+     "bet": "Over 2.5 threes",
+     "market": "threes",
+     "team": "DET",
+     "game": "DET at ORL",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-10-20T18:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "4 threes",
+     "units": 0.9091,
+     "pulled": null,
+     "legs": [],
+     "window": "90 → 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  }
+ ]
+}

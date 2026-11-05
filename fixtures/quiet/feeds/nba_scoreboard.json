@@ -1,0 +1,146 @@
+{
+ "meta": {
+  "version": 1
+ },
+ "scoreboard": {
+  "gameDate": "2026-11-04",
+  "leagueId": "00",
+  "games": [
+   {
+    "gameId": "0022600101",
+    "gameStatus": 1,
+    "gameStatusText": "19:00 pm ET",
+    "period": 0,
+    "gameClock": "",
+    "awayTeam": {
+     "teamTricode": "PHI",
+     "score": 0
+    },
+    "homeTeam": {
+     "teamTricode": "DET",
+     "score": 0
+    }
+   },
+   {
+    "gameId": "0022600102",
+    "gameStatus": 1,
+    "gameStatusText": "19:00 pm ET",
+    "period": 0,
+    "gameClock": "",
+    "awayTeam": {
+     "teamTricode": "ATL",
+     "score": 0
+    },
+    "homeTeam": {
+     "teamTricode": "WAS",
+     "score": 0
+    }
+   },
+   {
+    "gameId": "0022600103",
+    "gameStatus": 1,
+    "gameStatusText": "19:00 pm ET",
+    "period": 0,
+    "gameClock": "",
+    "awayTeam": {
+     "teamTricode": "BKN",
+     "score": 0
+    },
+    "homeTeam": {
+     "teamTricode": "CHA",
+     "score": 0
+    }
+   },
+   {
+    "gameId": "0022600104",
+    "gameStatus": 1,
+    "gameStatusText": "19:30 pm ET",
+    "period": 0,
+    "gameClock": "",
+    "awayTeam": {
+     "teamTricode": "NYK",
+     "score": 0
+    },
+    "homeTeam": {
+     "teamTricode": "BOS",
+     "score": 0
+    }
+   },
+   {
+    "gameId": "0022600105",
+    "gameStatus": 1,
+    "gameStatusText": "20:10 pm ET",
+    "period": 0,
+    "gameClock": "",
+    "awayTeam": {
+     "teamTricode": "ORL",
+     "score": 0
+    },
+    "homeTeam": {
+     "teamTricode": "MIL",
+     "score": 0
+    }
+   },
+   {
+    "gameId": "0022600106",
+    "gameStatus": 1,
+    "gameStatusText": "20:00 pm ET",
+    "period": 0,
+    "gameClock": "",
+    "awayTeam": {
+     "teamTricode": "DEN",
+     "score": 0
+    },
+    "homeTeam": {
+     "teamTricode": "HOU",
+     "score": 0
+    }
+   },
+   {
+    "gameId": "0022600107",
+    "gameStatus": 1,
+    "gameStatusText": "22:00 pm ET",
+    "period": 0,
+    "gameClock": "",
+    "awayTeam": {
+     "teamTricode": "POR",
+     "score": 0
+    },
+    "homeTeam": {
+     "teamTricode": "SAC",
+     "score": 0
+    }
+   },
+   {
+    "gameId": "0022600108",
+    "gameStatus": 1,
+    "gameStatusText": "22:00 pm ET",
+    "period": 0,
+    "gameClock": "",
+    "awayTeam": {
+     "teamTricode": "MEM",
+     "score": 0
+    },
+    "homeTeam": {
+     "teamTricode": "LAL",
+     "score": 0
+    }
+   },
+   {
+    "gameId": "0022600109",
+    "gameStatus": 1,
+    "gameStatusText": "22:30 pm ET",
+    "period": 0,
+    "gameClock": "",
+    "awayTeam": {
+     "teamTricode": "UTA",
+     "score": 0
+    },
+    "homeTeam": {
+     "teamTricode": "PHX",
+     "score": 0
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,252 @@
+{
+ "header": {
+  "id": "401909907",
+  "competitions": [
+   {
+    "date": "2026-11-04T22:00:00-05:00",
+    "status": {
+     "displayClock": "0.0",
+     "period": 4,
+     "type": {
+      "state": "post",
+      "name": "STATUS_FINAL",
+      "completed": true,
+      "detail": "Final",
+      "shortDetail": "Final"
+     },
+     "displayPeriod": "4th"
+    },
+    "competitors": [
+     {
+      "homeAway": "home",
+      "score": "98",
+      "team": {
+       "abbreviation": "SAC"
+      },
+      "linescores": [
+       {},
+       {},
+       {},
+       {}
+      ]
+     },
+     {
+      "homeAway": "away",
+      "score": "100",
+      "team": {
+       "abbreviation": "POR"
+      },
+      "linescores": [
+       {},
+       {},
+       {},
+       {}
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "boxscore": {
+  "players": [
+   {
+    "team": {
+     "abbreviation": "POR"
+    },
+    "statistics": [
+     {
+      "names": [
+       "MIN",
+       "PTS",
+       "FG",
+       "3PT",
+       "FT",
+       "REB",
+       "AST",
+       "TO",
+       "STL",
+       "BLK",
+       "OREB",
+       "DREB",
+       "PF",
+       "+/-"
+      ],
+      "keys": [
+       "minutes",
+       "points",
+       "fieldGoalsMade-fieldGoalsAttempted",
+       "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
+       "freeThrowsMade-freeThrowsAttempted",
+       "rebounds",
+       "assists",
+       "turnovers",
+       "steals",
+       "blocks",
+       "offensiveRebounds",
+       "defensiveRebounds",
+       "fouls",
+       "plusMinus"
+      ],
+      "labels": [
+       "MIN",
+       "PTS",
+       "FG",
+       "3PT",
+       "FT",
+       "REB",
+       "AST",
+       "TO",
+       "STL",
+       "BLK",
+       "OREB",
+       "DREB",
+       "PF",
+       "+/-"
+      ],
+      "descriptions": [
+       "MIN",
+       "PTS",
+       "FG",
+       "3PT",
+       "FT",
+       "REB",
+       "AST",
+       "TO",
+       "STL",
+       "BLK",
+       "OREB",
+       "DREB",
+       "PF",
+       "+/-"
+      ],
+      "athletes": [
+       {
+        "active": false,
+        "athlete": {
+         "id": "4683772",
+         "displayName": "Shaedon Sharpe",
+         "headshot": {
+          "href": "https://a.espncdn.com/i/headshots/nba/players/full/4683772.png"
+         }
+        },
+        "starter": false,
+        "didNotPlay": true,
+        "reason": "INJURY",
+        "ejected": false,
+        "stats": []
+       }
+      ],
+      "totals": []
+     }
+    ]
+   },
+   {
+    "team": {
+     "abbreviation": "SAC"
+    },
+    "statistics": [
+     {
+      "names": [
+       "MIN",
+       "PTS",
+       "FG",
+       "3PT",
+       "FT",
+       "REB",
+       "AST",
+       "TO",
+       "STL",
+       "BLK",
+       "OREB",
+       "DREB",
+       "PF",
+       "+/-"
+      ],
+      "keys": [
+       "minutes",
+       "points",
+       "fieldGoalsMade-fieldGoalsAttempted",
+       "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
+       "freeThrowsMade-freeThrowsAttempted",
+       "rebounds",
+       "assists",
+       "turnovers",
+       "steals",
+       "blocks",
+       "offensiveRebounds",
+       "defensiveRebounds",
+       "fouls",
+       "plusMinus"
+      ],
+      "labels": [
+       "MIN",
+       "PTS",
+       "FG",
+       "3PT",
+       "FT",
+       "REB",
+       "AST",
+       "TO",
+       "STL",
+       "BLK",
+       "OREB",
+       "DREB",
+       "PF",
+       "+/-"
+      ],
+      "descriptions": [
+       "MIN",
+       "PTS",
+       "FG",
+       "3PT",
+       "FT",
+       "REB",
+       "AST",
+       "TO",
+       "STL",
+       "BLK",
+       "OREB",
+       "DREB",
+       "PF",
+       "+/-"
+      ],
+      "athletes": [
+       {
+        "active": false,
+        "athlete": {
+         "id": "3155942",
+         "displayName": "Domantas Sabonis",
+         "headshot": {
+          "href": "https://a.espncdn.com/i/headshots/nba/players/full/3155942.png"
+         }
+        },
+        "starter": false,
+        "didNotPlay": true,
+        "reason": "INJURY",
+        "ejected": false,
+        "stats": []
+       },
+       {
+        "active": false,
+        "athlete": {
+         "id": "4278053",
+         "displayName": "Keegan Murray",
+         "headshot": {
+          "href": "https://a.espncdn.com/i/headshots/nba/players/full/4278053.png"
+         }
+        },
+        "starter": false,
+        "didNotPlay": true,
+        "reason": "INJURY",
+        "ejected": false,
+        "stats": []
+       }
+      ],
+      "totals": []
+     }
+    ]
+   }
+  ],
+  "teams": []
+ }
+}

@@ -223,7 +223,27 @@ def window_of(sh):
 
 
 def _pulled(it):
-    return {"at": it["pulled"]["at"], "reason": it["pulled"]["reason"]} if it["pulled"] else None
+    return {"at": it["pulled"]["at"], "reason": it["pulled"]["reason"], "code": it["pulled"].get("code")} if it["pulled"] else None
+
+
+def withdrawn(e):
+    """A pick our own rule change took down (pulled, code rule_change, 2026-10-28): never shown as a bet, not on the Record view."""
+    return bool(e.get("pulled")) and (e["pulled"] or {}).get("code") == "rule_change"
+
+
+def counts(e):
+    """THE set the Record counts (headline, rows, cuts, calendar, nights; the safety stop reads the same). Since 2026-11-04
+    (Matt): a pick pulled after it was shown (TOO LATE: line moved or taken down, injury news) counts like any other pick,
+    graded at its posted price. Out: picks under Pinnacle's fair price (v2.3) and rule_change withdrawals. A scratch (Out)
+    grades VOID, and voids are 0 units outside W-L."""
+    return e["kind"] == "single" and not e.get("under_fair") and not withdrawn(e)
+
+
+def headline_units(items, cfg):
+    """Units of exactly what the Record headline counts (live picks + replay bets), for engine.safety_paused."""
+    live = [_entry(it, items) for it in items.values() if it["kind"] == "single"]
+    rep = [e for es in _replay_entries(cfg).values() for e in es]
+    return round(sum(e["units"] or 0 for e in live + rep if counts(e) and e["result"]), 2)
 
 
 def _row(key, label, entries, needed_of):
@@ -333,7 +353,7 @@ def days_view(nights):
     """One row per night (every month) for the page's calendar, counting what the headline counts."""
     out = []
     for n in nights:
-        s = [e for e in n["entries"] if e["kind"] == "single" and not e["pulled"] and not e.get("under_fair")]
+        s = [e for e in n["entries"] if counts(e)]
         out.append({"date": n["date"], "w": sum(1 for e in s if e["result"] == "W"), "l": sum(1 for e in s if e["result"] == "L"),
                     "push": sum(1 for e in s if e["result"] == "PUSH"), "void": sum(1 for e in s if e["result"] == "VOID"),
                     "units": round(sum(e["units"] or 0 for e in s if e["result"]), 2), "n": len(s),
@@ -352,11 +372,13 @@ def build_views(events, cfg):
     for d in sorted(by_night, reverse=True):
         its = sorted(by_night[d], key=lambda x: (x["kind"] != "single", x["shown"].get("rank") or 999, x["shown_at"], x["id"]))
         # v2.3 (Matt, 2026-10-30): the page's Record is the STRATEGY's record: picks at or better than Pinnacle's fair price.
-        # Pulled picks and picks under fair price are not shown here (they stay in data/record/events.jsonl, untouched)
-        entries = [e for e in (_entry(x, items) for x in its) if not e["pulled"] and not e.get("under_fair")]
+        # Picks under fair price and rule_change withdrawals are not shown here (they stay in data/record/events.jsonl, untouched).
+        # Since 2026-11-04 (Matt) a pick pulled after it was shown counts like any other pick (`pulled` kept on the entry, no
+        # separate count).
+        entries = [e for e in (_entry(x, items) for x in its) if not withdrawn(e) and not e.get("under_fair")]
         if not entries:
             continue
-        counted = [e for e in entries if e["kind"] == "single" and not e["pulled"] and not e.get("under_fair")]
+        counted = [e for e in entries if counts(e)]
         nights.append({"date": d, "graded": all(e["result"] is not None for e in entries),
                        "w": sum(1 for e in counted if e["result"] == "W"),
                        "l": sum(1 for e in counted if e["result"] == "L"),
@@ -364,7 +386,7 @@ def build_views(events, cfg):
     nights = _merge_replay(nights, cfg)
     every = [e for n in nights for e in n["entries"]]
     need = lambda e: odds.break_even(e["price"])
-    singles = [e for e in every if e["kind"] == "single" and not e["pulled"] and not e.get("under_fair")]
+    singles = [e for e in every if counts(e)]
     rows = []
     for key in cfg["markets"]:
         sub = [e for e in singles if e.get("market") == key]
@@ -381,12 +403,9 @@ def build_views(events, cfg):
             sub = [e for e in singles if (e.get("book") or "hardrock") == bk]
             if any(e["result"] for e in sub):
                 rows.append(_row("book:" + bk, "Book " + lab, sub, need))
-    par = [e for e in every if e["kind"] == "parlay" and not e["pulled"]]
+    par = [e for e in every if e["kind"] == "parlay" and not withdrawn(e)]
     if any(e["result"] for e in par):
         rows.append(_row("parlays", "Parlays", par, need))
-    pulled = [e for e in every if e["pulled"]]
-    if any(e["result"] for e in pulled):
-        rows.append(_row("pulled", "Pulled (not counted above)", pulled, need))
     head = _row("headline", "Singles", singles, need)
     head.pop("key"); head.pop("label")
     keep = cfg["ui"]["record_nights"]

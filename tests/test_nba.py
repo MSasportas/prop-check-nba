@@ -154,7 +154,11 @@ class TestEndToEnd(unittest.TestCase):
         self.assertIsNone(s["picks"][0]["rank"])
         self.assertIsNone(s["picks"][0]["links"])     # pulled: no buttons
         rec = self.w.read("record.json")
-        self.assertEqual(rec["nights"], [])        # v2.3 (Matt, 2026-10-30): pulled picks are not on the page's Record; the log keeps them
+        # 2026-11-04 (Matt): a pick pulled after it was shown stays on the page's Record and counts like any other pick
+        ent = rec["nights"][0]["entries"]
+        self.assertEqual([(e["id"], e["pulled"]["code"], e["price"]) for e in ent], [(ev[0]["id"], ev[1]["code"], 105)])
+        self.assertEqual(rec["summary"]["headline"]["n"], 0)       # counted once graded (not yet)
+        self.assertNotIn("pulled", [r["key"] for r in rec["summary"]["rows"]])
 
     def test_injury_pull_and_lock(self):
         self.w.lal_utah("2026-10-25T19:30:00Z", HR_GOOD, MKT)

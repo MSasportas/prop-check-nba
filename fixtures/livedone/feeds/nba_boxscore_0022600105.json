@@ -1,0 +1,69 @@
+{
+ "meta": {
+  "version": 1
+ },
+ "game": {
+  "gameId": "0022600105",
+  "gameStatus": 3,
+  "gameStatusText": "Final",
+  "period": 4,
+  "gameClock": "",
+  "awayTeam": {
+   "teamTricode": "ORL",
+   "score": 100,
+   "players": [
+    {
+     "personId": 66354,
+     "name": "Paolo Banchero",
+     "firstName": "Paolo",
+     "familyName": "Banchero",
+     "nameI": "P. Banchero",
+     "played": "1",
+     "status": "ACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 5,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    },
+    {
+     "personId": 566434,
+     "name": "Franz Wagner",
+     "firstName": "Franz",
+     "familyName": "Wagner",
+     "nameI": "F. Wagner",
+     "played": "0",
+     "status": "INACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  },
+  "homeTeam": {
+   "teamTricode": "MIL",
+   "score": 98,
+   "players": [
+    {
+     "personId": 32977,
+     "name": "Giannis Antetokounmpo",
+     "firstName": "Giannis",
+     "familyName": "Antetokounmpo",
+     "nameI": "G. Antetokounmpo",
+     "played": "1",
+     "status": "ACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 2,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  }
+ }
+}

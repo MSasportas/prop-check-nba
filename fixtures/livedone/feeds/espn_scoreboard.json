@@ -1,0 +1,557 @@
+{
+ "leagues": [],
+ "day": {
+  "date": "2026-11-04"
+ },
+ "events": [
+  {
+   "id": "401909901",
+   "date": "2026-11-04T19:00:00-05:00",
+   "status": {
+    "displayClock": "0.0",
+    "period": 4,
+    "type": {
+     "state": "post",
+     "name": "STATUS_FINAL",
+     "completed": true,
+     "detail": "Final",
+     "shortDetail": "Final"
+    },
+    "displayPeriod": "4th"
+   },
+   "competitions": [
+    {
+     "id": "401909901",
+     "status": {
+      "displayClock": "0.0",
+      "period": 4,
+      "type": {
+       "state": "post",
+       "name": "STATUS_FINAL",
+       "completed": true,
+       "detail": "Final",
+       "shortDetail": "Final"
+      },
+      "displayPeriod": "4th"
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "98",
+       "team": {
+        "abbreviation": "DET"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      },
+      {
+       "homeAway": "away",
+       "score": "100",
+       "team": {
+        "abbreviation": "PHI"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401909902",
+   "date": "2026-11-04T19:00:00-05:00",
+   "status": {
+    "displayClock": "0.0",
+    "period": 4,
+    "type": {
+     "state": "post",
+     "name": "STATUS_FINAL",
+     "completed": true,
+     "detail": "Final",
+     "shortDetail": "Final"
+    },
+    "displayPeriod": "4th"
+   },
+   "competitions": [
+    {
+     "id": "401909902",
+     "status": {
+      "displayClock": "0.0",
+      "period": 4,
+      "type": {
+       "state": "post",
+       "name": "STATUS_FINAL",
+       "completed": true,
+       "detail": "Final",
+       "shortDetail": "Final"
+      },
+      "displayPeriod": "4th"
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "98",
+       "team": {
+        "abbreviation": "WSH"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      },
+      {
+       "homeAway": "away",
+       "score": "100",
+       "team": {
+        "abbreviation": "ATL"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401909903",
+   "date": "2026-11-04T19:00:00-05:00",
+   "status": {
+    "displayClock": "0.0",
+    "period": 4,
+    "type": {
+     "state": "post",
+     "name": "STATUS_FINAL",
+     "completed": true,
+     "detail": "Final",
+     "shortDetail": "Final"
+    },
+    "displayPeriod": "4th"
+   },
+   "competitions": [
+    {
+     "id": "401909903",
+     "status": {
+      "displayClock": "0.0",
+      "period": 4,
+      "type": {
+       "state": "post",
+       "name": "STATUS_FINAL",
+       "completed": true,
+       "detail": "Final",
+       "shortDetail": "Final"
+      },
+      "displayPeriod": "4th"
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "98",
+       "team": {
+        "abbreviation": "CHA"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      },
+      {
+       "homeAway": "away",
+       "score": "100",
+       "team": {
+        "abbreviation": "BKN"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401909904",
+   "date": "2026-11-04T19:30:00-05:00",
+   "status": {
+    "displayClock": "0.0",
+    "period": 4,
+    "type": {
+     "state": "post",
+     "name": "STATUS_FINAL",
+     "completed": true,
+     "detail": "Final",
+     "shortDetail": "Final"
+    },
+    "displayPeriod": "4th"
+   },
+   "competitions": [
+    {
+     "id": "401909904",
+     "status": {
+      "displayClock": "0.0",
+      "period": 4,
+      "type": {
+       "state": "post",
+       "name": "STATUS_FINAL",
+       "completed": true,
+       "detail": "Final",
+       "shortDetail": "Final"
+      },
+      "displayPeriod": "4th"
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "98",
+       "team": {
+        "abbreviation": "BOS"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      },
+      {
+       "homeAway": "away",
+       "score": "100",
+       "team": {
+        "abbreviation": "NY"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401909905",
+   "date": "2026-11-04T20:10:00-05:00",
+   "status": {
+    "displayClock": "0.0",
+    "period": 4,
+    "type": {
+     "state": "post",
+     "name": "STATUS_FINAL",
+     "completed": true,
+     "detail": "Final",
+     "shortDetail": "Final"
+    },
+    "displayPeriod": "4th"
+   },
+   "competitions": [
+    {
+     "id": "401909905",
+     "status": {
+      "displayClock": "0.0",
+      "period": 4,
+      "type": {
+       "state": "post",
+       "name": "STATUS_FINAL",
+       "completed": true,
+       "detail": "Final",
+       "shortDetail": "Final"
+      },
+      "displayPeriod": "4th"
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "98",
+       "team": {
+        "abbreviation": "MIL"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      },
+      {
+       "homeAway": "away",
+       "score": "100",
+       "team": {
+        "abbreviation": "ORL"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401909906",
+   "date": "2026-11-04T20:00:00-05:00",
+   "status": {
+    "displayClock": "0.0",
+    "period": 4,
+    "type": {
+     "state": "post",
+     "name": "STATUS_FINAL",
+     "completed": true,
+     "detail": "Final",
+     "shortDetail": "Final"
+    },
+    "displayPeriod": "4th"
+   },
+   "competitions": [
+    {
+     "id": "401909906",
+     "status": {
+      "displayClock": "0.0",
+      "period": 4,
+      "type": {
+       "state": "post",
+       "name": "STATUS_FINAL",
+       "completed": true,
+       "detail": "Final",
+       "shortDetail": "Final"
+      },
+      "displayPeriod": "4th"
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "98",
+       "team": {
+        "abbreviation": "HOU"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      },
+      {
+       "homeAway": "away",
+       "score": "100",
+       "team": {
+        "abbreviation": "DEN"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401909907",
+   "date": "2026-11-04T22:00:00-05:00",
+   "status": {
+    "displayClock": "0.0",
+    "period": 4,
+    "type": {
+     "state": "post",
+     "name": "STATUS_FINAL",
+     "completed": true,
+     "detail": "Final",
+     "shortDetail": "Final"
+    },
+    "displayPeriod": "4th"
+   },
+   "competitions": [
+    {
+     "id": "401909907",
+     "status": {
+      "displayClock": "0.0",
+      "period": 4,
+      "type": {
+       "state": "post",
+       "name": "STATUS_FINAL",
+       "completed": true,
+       "detail": "Final",
+       "shortDetail": "Final"
+      },
+      "displayPeriod": "4th"
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "98",
+       "team": {
+        "abbreviation": "SAC"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      },
+      {
+       "homeAway": "away",
+       "score": "100",
+       "team": {
+        "abbreviation": "POR"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401909908",
+   "date": "2026-11-04T22:00:00-05:00",
+   "status": {
+    "displayClock": "0.0",
+    "period": 4,
+    "type": {
+     "state": "post",
+     "name": "STATUS_FINAL",
+     "completed": true,
+     "detail": "Final",
+     "shortDetail": "Final"
+    },
+    "displayPeriod": "4th"
+   },
+   "competitions": [
+    {
+     "id": "401909908",
+     "status": {
+      "displayClock": "0.0",
+      "period": 4,
+      "type": {
+       "state": "post",
+       "name": "STATUS_FINAL",
+       "completed": true,
+       "detail": "Final",
+       "shortDetail": "Final"
+      },
+      "displayPeriod": "4th"
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "98",
+       "team": {
+        "abbreviation": "LAL"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      },
+      {
+       "homeAway": "away",
+       "score": "100",
+       "team": {
+        "abbreviation": "MEM"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401909909",
+   "date": "2026-11-04T22:30:00-05:00",
+   "status": {
+    "displayClock": "0.0",
+    "period": 4,
+    "type": {
+     "state": "post",
+     "name": "STATUS_FINAL",
+     "completed": true,
+     "detail": "Final",
+     "shortDetail": "Final"
+    },
+    "displayPeriod": "4th"
+   },
+   "competitions": [
+    {
+     "id": "401909909",
+     "status": {
+      "displayClock": "0.0",
+      "period": 4,
+      "type": {
+       "state": "post",
+       "name": "STATUS_FINAL",
+       "completed": true,
+       "detail": "Final",
+       "shortDetail": "Final"
+      },
+      "displayPeriod": "4th"
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "98",
+       "team": {
+        "abbreviation": "PHX"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      },
+      {
+       "homeAway": "away",
+       "score": "100",
+       "team": {
+        "abbreviation": "UTAH"
+       },
+       "linescores": [
+        {},
+        {},
+        {},
+        {}
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

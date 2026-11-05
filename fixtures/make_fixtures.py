@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Writes the page's QA fixtures: fixtures/NAME/{slate,record,rules,live,headshots}.json (+ record/<month>.json, watch/).
+"""Writes the page's QA fixtures: fixtures/NAME/{slate,record,rules,headshots}.json (+ record/<month>.json, watch/, feeds/).
 
 Test data only: every slate carries "fixture": true and the page shows a "Test data" tag. Open with index.html?fixture=NAME.
 Each slate carries "fixture_now" so the page's clock sits at a fixed moment (override with ?now=ISO).
-The Record views come from scripts/record.py build_views and live.json from scripts/live.py build (fed ESPN summaries shaped
-exactly like the real ones), so the fixtures show what the pipeline makes. The older hand-written fixtures (empty, nokeys,
+The Record views come from scripts/record.py build_views, so the fixtures show what the pipeline makes. feeds/ holds what the
+Live tab reads straight from the internet on the real page (ESPN scoreboard + summaries, NBA.com scoreboard + box scores),
+shaped like the real ones; the page reads them instead with ?fixture=NAME (?feed=espnfail / allfail force a failure). The older hand-written fixtures (empty, nokeys,
 normal, pinsolo) are left as they are.
 Run:  python3 fixtures/make_fixtures.py
 """
@@ -23,7 +24,6 @@ sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import common  # noqa: E402
 import engine  # noqa: E402
 import espn  # noqa: E402
-import live  # noqa: E402
 import odds  # noqa: E402
 import record  # noqa: E402
 import run  # noqa: E402
@@ -123,6 +123,10 @@ PICKS = [
     ("reav", "401909908", "4066457", "Austin Reaves", "LAL", "points", "over", 18.5, -115, .50, .545, (-104, -129), "clear", "20:30", None, "PULL:status:questionable"),
     ("keon", "401909909", "4433136", "Keyonte George", "UTAH", "assists", "under", 5.5, -105, .49, .54, (-102, -124), "clear", "20:30", None, "PULL:line_gone"),
     ("murr", "401909907", "4278053", "Keegan Murray", "SAC", "rebounds", "under", 7.5, -110, .50, .545, (-106, -128), "clear", "20:30", None, "PULL:status:out"),
+    # pulled before tip, game now on: TOO LATE on Picks before tip, then on Live like any other pick (Matt, 2026-11-04 11:12 PM)
+    ("hart", "401909904", "3062679", "Josh Hart", "NY", "rebounds", "over", 8.5, -115, .50, .545, (-104, -129), "clear", "18:00", 10, "PULL:line_gone"),
+    # a scratch in a started game: never on Live
+    ("wagn", "401909905", "4566434", "Franz Wagner", "ORL", "points", "over", 20.5, -110, .50, .545, (-104, -128), "clear", "18:50", None, "PULL:status:out"),
 ]
 HEADS_SKIP = {"4433134"}                     # no photo on file (the page shows none)
 HEADS_BAD = {"3136193": "http://evil.example/x.png"}   # a link that is not ESPN's: never shown
@@ -170,11 +174,14 @@ def tonight_events():
         res = p[15]
         if isinstance(res, str) and res.startswith("PULL:"):
             bits = res.split(":")
+            g = game_of(p[1])
+            tip = int(g[3][:2]) * 60 + int(g[3][3:])
+            at = lambda m: t("%02d:%02d" % divmod(min(m, tip - 10), 60))      # always before tip
             if bits[1] == "status":
-                ev.append({"t": "pulled", "id": i, "at": t("21:10"), "code": "status", "reason": "Now listed %s" % bits[2],
+                ev.append({"t": "pulled", "id": i, "at": at(21 * 60 + 10), "code": "status", "reason": "Now listed %s" % bits[2],
                            "if_bet": engine.OUT_IF_BET})
             else:
-                ev.append({"t": "pulled", "id": i, "at": t("21:15"), "code": "line_gone", "reason": "Hard Rock took the line down",
+                ev.append({"t": "pulled", "id": i, "at": at(21 * 60 + 15), "code": "line_gone", "reason": "Hard Rock took the line down",
                            "if_bet": "Got %s? Your bet still stands." % common.fmt_price(p[8])})
             continue
         g = game_of(p[1])
@@ -243,32 +250,58 @@ def build_record(events, c):
         shutil.rmtree(tmp, ignore_errors=True)
 
 
-def build_live(events, now_iso, gen_at=None):
-    tmp = tempfile.mkdtemp(prefix="pcnba_fxl_")
-    old = os.environ.get("PC_ESPN_FIXTURE_DIR")
-    try:
-        for gid, (state, per, clk, det, name, score) in LIVE.items():
-            g = game_of(gid)
-            ps = [(p[2], p[3], p[4], (None if p[14] is None else {p[5]: p[14]})) for p in PICKS if p[1] == gid]
-            json.dump(summary(gid, g[1], g[2], state, per, clk, det, name, score, ps, t(g[3])),
-                      open(os.path.join(tmp, "summary_%s.json" % gid), "w"))
-        os.environ["PC_ESPN_FIXTURE_DIR"] = tmp
-        espn.clear_cache()
-        for gid in LIVE:
-            espn.summary(gid)                 # what the grade step reads on a run
-        doc = live.build(common.parse_iso(now_iso), D, sched_games(), events)
-        if gen_at:
-            doc["generated_at"] = gen_at
-            for g in doc["games"]:
-                g["updated_at"] = gen_at
-        return doc
-    finally:
-        espn.clear_cache()
-        if old is None:
-            os.environ.pop("PC_ESPN_FIXTURE_DIR", None)
-        else:
-            os.environ["PC_ESPN_FIXTURE_DIR"] = old
-        shutil.rmtree(tmp, ignore_errors=True)
+def nba_id(gid):
+    return "00226001%s" % gid[-2:]
+
+
+NBA_NAME = {"4278104": "Michael Porter Jr.", "3112335": "Nikola Jokić"}      # NBA.com spellings: matched by normalized name
+
+
+def build_feeds(live=None, sb_state=None):
+    """-> {"feeds/...json": doc}: what the page reads from ESPN and NBA.com, for the games in `live` (default LIVE).
+    sb_state: game id -> scoreboard state for games not in `live` (default from GAMES)."""
+    live = LIVE if live is None else live
+    files, events, nba_games = {}, [], []
+    for gid, a, hm, tip, st0, det0 in GAMES:
+        state, per, clk, det, name, score = live.get(gid, ((sb_state or {}).get(gid, st0), 0, "0.0", det0, None, (0, 0)))
+        sm = summary(gid, a, hm, state, per, clk, det, name, score,
+                     [(p[2], p[3], p[4], (None if p[14] is None else {p[5]: p[14]})) for p in PICKS if p[1] == gid], t(tip))
+        hc = sm["header"]["competitions"][0]
+        events.append({"id": gid, "date": t(tip), "status": hc["status"], "competitions": [{"id": gid, "status": hc["status"],
+                       "competitors": [dict(c, team={"abbreviation": c["team"]["abbreviation"]}) for c in hc["competitors"]]}]})
+        if state != "pre":
+            files["feeds/espn_summary_%s.json" % gid] = sm
+        gs = {"pre": 1, "in": 2, "post": 3}[state]
+        text = {"pre": "%s pm ET" % tip, "post": "Final"}.get(state) or ("Half" if name == "STATUS_HALFTIME" else
+                                                                         "End Q%d" % per if name == "STATUS_END_PERIOD" else
+                                                                         ("OT %s" % clk if per == 5 else "Q%d %s" % (per, clk)))
+        m, sec = (clk.split(":") + ["0"])[:2] if ":" in clk else ("0", clk.split(".")[0])
+        gclock = "PT%02dM%02d.00S" % (int(m), int(float(sec))) if state == "in" and name is None else ""
+        side = lambda code, sc: {"teamTricode": teams.show(code), "score": sc}
+        g = {"gameId": nba_id(gid), "gameStatus": gs, "gameStatusText": text, "period": per, "gameClock": gclock,
+             "awayTeam": side(a, score[0]), "homeTeam": side(hm, score[1])}
+        nba_games.append(g)
+        if state != "pre":
+            box = json.loads(json.dumps(g))
+            for k, code in (("awayTeam", a), ("homeTeam", hm)):
+                pl = []
+                for p in PICKS:
+                    if p[1] != gid or p[4] != code:
+                        continue
+                    nm = NBA_NAME.get(p[2], p[3])
+                    first, _, fam = nm.partition(" ")
+                    v = p[14]
+                    st = {"points": 0, "reboundsTotal": 0, "assists": 0, "threePointersMade": 0}
+                    if v is not None:
+                        st[{"points": "points", "rebounds": "reboundsTotal", "assists": "assists", "threes": "threePointersMade"}[p[5]]] = v
+                    pl.append({"personId": int(p[2]) % 1000000, "name": nm, "firstName": first, "familyName": fam,
+                               "nameI": "%s. %s" % (first[:1], fam), "played": "0" if v is None else "1",
+                               "status": "INACTIVE" if v is None else "ACTIVE", "statistics": st})
+                box[k]["players"] = pl
+            files["feeds/nba_boxscore_%s.json" % nba_id(gid)] = {"meta": {"version": 1}, "game": box}
+    files["feeds/espn_scoreboard.json"] = {"leagues": [], "day": {"date": D}, "events": events}
+    files["feeds/nba_scoreboard.json"] = {"meta": {"version": 1}, "scoreboard": {"gameDate": D, "leagueId": "00", "games": nba_games}}
+    return files
 
 
 def sched_games():
@@ -335,7 +368,7 @@ def slate_doc(events, c, now_iso, gen_at=None):
                                 "allowance": 14.1, "reads": ["A", "B", "C", "D"]},
                        "next_read_at": "2026-11-04T21:40:00-05:00", "last_read_at": "2026-11-04T21:15:00-05:00",
                        "last_run": {"ok": True, "at": gen},
-                       "feeds": {"schedule": True, "injuries": True, "rosters": True, "grade": True, "live": True,
+                       "feeds": {"schedule": True, "injuries": True, "rosters": True, "grade": True,
                                  "lineups": {"ok": True, "at": "2026-11-04T21:10:00-05:00",
                                              "confirmed": ["BKN", "BOS", "CHA", "DEN", "DET", "HOU", "LAL", "MEM", "MIL", "NY", "ORL",
                                                            "PHI", "POR", "SAC", "ATL", "WSH"]}}},
@@ -382,19 +415,17 @@ def main():
     for m, doc in months.items():
         base["record/%s.json" % m] = doc
     sl = slate_doc(events, c, NOW)
-    lv = build_live(events, NOW)
+    feeds = build_feeds()
 
-    def fx(name, slate=None, livedoc=lv, extra=None, drop=()):
+    def fx(name, slate=None, extra=None, drop=(), feed=None):
         files = dict(base, **{"slate.json": slate or sl})
-        if livedoc is not None:
-            files["live.json"] = livedoc
+        files.update(feeds if feed is None else feed)
         files.update(extra or {})
         for k in drop:
             files.pop(k, None)
         write(name, files)
 
     fx("tonight")
-    fx("livestale", livedoc=build_live(events, NOW, gen_at="2026-11-04T20:40:04-05:00"))
     st = slate_doc(events, c, NOW, gen_at="2026-11-04T20:35:04-05:00")
     fx("stale", slate=st)
     lp = copy.deepcopy(sl)
@@ -418,8 +449,8 @@ def main():
         if p["rank"]:
             p["state"], p["state_label"], p["rank"], p["links"] = "locked", "Locked", None, None
     al["empty"] = {"text": "No open picks right now", "why": "Every game has started.", "next": None}
-    fx("allstarted", slate=al, livedoc=dict(lv, generated_at="2026-11-04T23:00:04-05:00"))
-    # a quiet night: games, no picks yet, live.json absent
+    fx("allstarted", slate=al, feed=build_feeds(sb_state={"401909907": "in", "401909908": "in", "401909909": "in"}))
+    # a quiet night: games, no picks yet
     em = copy.deepcopy(sl)
     em["fixture_now"] = "2026-11-04T17:10:00-05:00"
     em["picks"] = []
@@ -430,7 +461,7 @@ def main():
     em["empty"] = {"text": "No picks yet today", "why": "1302 lines read. Pinnacle hasn't moved on any of them yet.",
                    "next": "2026-11-04T17:30:00-05:00"}
     em["generated_at"] = em["status_at"] = em["status"]["last_run"]["at"] = "2026-11-04T17:05:04-05:00"
-    fx("quiet", slate=em, livedoc=None)
+    fx("quiet", slate=em, feed=build_feeds(live={}, sb_state={g[0]: "pre" for g in GAMES}))
     # yesterday's slate still up the next morning
     ex = copy.deepcopy(sl)
     ex["fixture_now"] = "2026-11-05T09:40:00-05:00"
@@ -444,7 +475,32 @@ def main():
                      {"level": "info", "text": "The starting-lineup source didn't answer at 9:15 PM. Picks can't reach Starters confirmed until it does."},
                      {"level": "warn", "text": "The injury list didn't answer at 9:15 PM. Using the last known one."}]
     fx("feedsdown", slate=fd, drop=("headshots.json",))
-    print("wrote: tonight livestale stale lowpool nokeys2 allstarted quiet expired feedsdown")
+    # ---- Live tab (in-browser polling, 2026-11-04). liveon: in progress (OT, 4th, halftime) with an over HIT and an under LOST
+    # mid-game, a final awaiting its grade (DEN@HOU final on ESPN, not graded yet), graded finals, a too-late pick on Live
+    on = dict(LIVE, **{"401909906": ("post", 4, "0.0", "Final", None, (109, 114))})
+    fx("liveon", feed=build_feeds(live=on))
+    # ESPN answers with something unreadable (a feed parse error = that feed failed) -> the NBA.com backup is used
+    bad = {"feeds/espn_scoreboard.json": {"code": 500, "message": "unexpected"}}
+    fx("liveespnfail", feed=dict(build_feeds(live=on), **bad))
+    fx("liveallfail", feed=dict(bad, **{"feeds/nba_scoreboard.json": {"meta": {"code": 403}}}))          # both fail
+    # no game live: every game with a pick is final and graded (one scoreboard read on entry, then polling stops)
+    dn = copy.deepcopy(sl)
+    dn["fixture_now"] = "2026-11-05T01:10:00-05:00"
+    for p in dn["picks"]:
+        if p["result"] is None and not (p["pulled"] and p["pulled"]["code"] == "out"):
+            g = game_of(p["game_id"])
+            p.update({"state": "locked", "state_label": "Locked", "rank": None, "links": None,
+                      "result": {"result": "W", "actual": "%d %s" % (int(p["line"]) + 1, NOUN[p["market"]]),
+                                 "units": record.single_units("W", p["price"])}})
+    for g in dn["games"]:
+        g.update({"state": "post", "detail": "Final", "final": True, "next_check_at": None})
+    dn["empty"] = {"text": "No open picks right now", "why": "Every game has started.", "next": None}
+    fx("livedone", slate=dn, feed=build_feeds(live={g[0]: ("post", 4, "0.0", "Final", None, (100, 98)) for g in GAMES}))
+    # not tipped yet: picks only on the late games (all pre), earlier games without picks
+    pr = copy.deepcopy(sl)
+    pr["picks"] = [p for p in pr["picks"] if game_of(p["game_id"])[4] == "pre"]
+    fx("livepre", slate=pr, feed=build_feeds(live={k: v for k, v in LIVE.items()}))
+    print("wrote: tonight stale lowpool nokeys2 allstarted quiet expired feedsdown liveon liveespnfail liveallfail livedone livepre")
 
 
 if __name__ == "__main__":

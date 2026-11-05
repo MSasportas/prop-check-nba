@@ -1,0 +1,20 @@
+# Live-game QA of the in-browser polling (probe/qa_live.py). Runs on a push to these two files; prints to the log; commits nothing.
+name: qa-live
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['probe/qa_live.py', '.github/workflows/qa_live.yml']
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q playwright && python -m playwright install --with-deps chromium > /dev/null
+      - run: python probe/qa_live.py

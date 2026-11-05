@@ -1,0 +1,38 @@
+{
+ "meta": {
+  "version": 1
+ },
+ "game": {
+  "gameId": "0022600102",
+  "gameStatus": 3,
+  "gameStatusText": "Final",
+  "period": 4,
+  "gameClock": "",
+  "awayTeam": {
+   "teamTricode": "ATL",
+   "score": 100,
+   "players": [
+    {
+     "personId": 277905,
+     "name": "Trae Young",
+     "firstName": "Trae",
+     "familyName": "Young",
+     "nameI": "T. Young",
+     "played": "1",
+     "status": "ACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 12,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  },
+  "homeTeam": {
+   "teamTricode": "WAS",
+   "score": 98,
+   "players": []
+  }
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "meta": {
+  "version": 1
+ },
+ "game": {
+  "gameId": "0022600107",
+  "gameStatus": 3,
+  "gameStatusText": "Final",
+  "period": 4,
+  "gameClock": "",
+  "awayTeam": {
+   "teamTricode": "POR",
+   "score": 100,
+   "players": [
+    {
+     "personId": 683772,
+     "name": "Shaedon Sharpe",
+     "firstName": "Shaedon",
+     "familyName": "Sharpe",
+     "nameI": "S. Sharpe",
+     "played": "0",
+     "status": "INACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  },
+  "homeTeam": {
+   "teamTricode": "SAC",
+   "score": 98,
+   "players": [
+    {
+     "personId": 155942,
+     "name": "Domantas Sabonis",
+     "firstName": "Domantas",
+     "familyName": "Sabonis",
+     "nameI": "D. Sabonis",
+     "played": "0",
+     "status": "INACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    },
+    {
+     "personId": 278053,
+     "name": "Keegan Murray",
+     "firstName": "Keegan",
+     "familyName": "Murray",
+     "nameI": "K. Murray",
+     "played": "0",
+     "status": "INACTIVE",
+     "statistics": {
+      "points": 0,
+      "reboundsTotal": 0,
+      "assists": 0,
+      "threePointersMade": 0
+     }
+    }
+   ]
+  }
+ }
+}
