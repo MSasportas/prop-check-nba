@@ -1,6 +1,13 @@
 {
- "at": "2026-11-04T20:10:00-05:00",
+ "at": "2026-11-04T20:20:01-05:00",
  "list": {
+  "4873201": {
+   "status": "day-to-day",
+   "name": "Asa Newell",
+   "team": "ATL",
+   "date": "2026-11-05T01:17Z",
+   "note": "Atlanta exercised Newell's third-year option Sunday, Brad Rowland of the Locked On Podcast Network reports."
+  },
   "4701230": {
    "status": "out",
    "name": "Jalen Johnson",
@@ -56,6 +63,13 @@
    "team": "BKN",
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
+  },
+  "5061575": {
+   "status": "out",
+   "name": "Kon Knueppel",
+   "team": "CHA",
+   "date": "2026-11-05T01:00Z",
+   "note": "Knueppel (hamstring) exited to the locker room in the first quarter of Wednesday's game against the Nets, Brian Lewis of the New York Post reports."
   },
   "4066218": {
    "status": "out",
@@ -435,19 +449,19 @@
    "date": "2026-10-06T19:17Z",
    "note": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN."
   },
+  "4278402": {
+   "status": "out",
+   "name": "Jordan Goodwin",
+   "team": "PHX",
+   "date": "2026-11-05T01:04Z",
+   "note": "Goodwin (calf) won't play in Wednesday's game against Portland."
+  },
   "5105977": {
    "status": "out",
    "name": "Rasheer Fleming",
    "team": "PHX",
    "date": "2026-11-04T20:17Z",
    "note": "Fleming is out for Wednesday's game against the Trail Blazers due to a sprained left ankle."
-  },
-  "4278402": {
-   "status": "day-to-day",
-   "name": "Jordan Goodwin",
-   "team": "PHX",
-   "date": "2026-11-04T00:26Z",
-   "note": "Goodwin (calf) is questionable for Wednesday's game against Portland, Duane Rankin of The Arizona Republic reports."
   },
   "4701232": {
    "status": "out",

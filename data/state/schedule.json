@@ -300,10 +300,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:36 - 2nd",
+    "detail": "1:25 - 2nd",
     "score": {
-     "PHI": "48",
-     "DET": "35"
+     "PHI": "51",
+     "DET": "41"
     }
    },
    {
@@ -330,10 +330,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:39 - 2nd",
+    "detail": "6:46 - 2nd",
     "score": {
-     "MIL": "14",
-     "BOS": "28"
+     "MIL": "27",
+     "BOS": "41"
     }
    },
    {
@@ -345,10 +345,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:17 - 1st",
+    "detail": "11:57 - 2nd",
     "score": {
-     "CHA": "17",
-     "BKN": "13"
+     "CHA": "24",
+     "BKN": "21"
     }
    },
    {
@@ -360,10 +360,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11.7 - 1st",
+    "detail": "9:13 - 2nd",
     "score": {
-     "CHI": "21",
-     "NY": "43"
+     "CHI": "28",
+     "NY": "51"
     }
    },
    {
@@ -372,13 +372,13 @@
     "start": "2026-11-04T20:00:00-05:00",
     "away": "IND",
     "home": "MEM",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/4 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:56 - 1st",
     "score": {
-     "IND": "0",
-     "MEM": "0"
+     "IND": "9",
+     "MEM": "12"
     }
    },
    {
@@ -387,13 +387,13 @@
     "start": "2026-11-04T20:00:00-05:00",
     "away": "UTAH",
     "home": "NO",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/4 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:45 - 1st",
     "score": {
-     "UTAH": "0",
-     "NO": "0"
+     "UTAH": "4",
+     "NO": "10"
     }
    },
    {
@@ -402,13 +402,13 @@
     "start": "2026-11-04T20:00:00-05:00",
     "away": "CLE",
     "home": "OKC",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/4 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:18 - 1st",
     "score": {
-     "CLE": "0",
-     "OKC": "0"
+     "CLE": "9",
+     "OKC": "15"
     }
    },
    {

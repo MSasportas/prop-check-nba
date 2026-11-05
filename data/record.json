@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T20:00:00-05:00",
+ "generated_at": "2026-11-04T20:20:01-05:00",
  "summary": {
   "headline": {
    "w": 18,
@@ -285,32 +285,6 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
-     "book": "hardrock",
-     "under_fair": false
-    },
-    {
-     "id": "2026-11-04:401909932:4066383:points:16.5:under",
-     "kind": "single",
-     "player": "Miles Bridges",
-     "bet": "Under 16.5 points",
-     "market": "points",
-     "team": "PHX",
-     "game": "POR at PHX",
-     "price": -130,
-     "first_price": -130,
-     "last_price": -130,
-     "prices": [
-      {
-       "price": -130,
-       "at": "2026-11-04T19:30:00-05:00"
-      }
-     ],
-     "result": null,
-     "actual": null,
-     "units": null,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
      "book": "hardrock",
      "under_fair": false
     }

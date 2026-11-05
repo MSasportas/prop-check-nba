@@ -39,6 +39,7 @@
     "Onyeka Okongwu"
    ],
    "status": {
+    "Asa Newell": "questionable",
     "Henri Veesaar": "out",
     "Mouhamed Gueye": "out",
     "Jalen Johnson": "out",
@@ -125,6 +126,7 @@
     "Jalen Smith"
    ],
    "status": {
+    "Jalen Smith": "questionable",
     "Nic Claxton": "out"
    }
   },
@@ -286,8 +288,6 @@
     "Nikola Jokic"
    ],
    "status": {
-    "Cameron Johnson": "probable",
-    "Alpha Diallo": "probable",
     "Spencer Jones": "out",
     "Julian Strawther": "out"
    }
@@ -412,5 +412,5 @@
    }
   }
  },
- "at": "2026-11-04T20:10:00-05:00"
+ "at": "2026-11-04T20:20:01-05:00"
 }
