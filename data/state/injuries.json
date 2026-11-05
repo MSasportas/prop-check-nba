@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T21:20:00-05:00",
+ "at": "2026-11-04T21:30:00-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -36,6 +36,13 @@
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
+  "4066354": {
+   "status": "day-to-day",
+   "name": "Payton Pritchard",
+   "team": "BOS",
+   "date": "2026-11-05T02:25Z",
+   "note": "Pritchard (shoulder) is available for Wednesday's game against the Bucks, Taylor Snow of the Celtics' official site reports."
+  },
   "4433188": {
    "status": "out",
    "name": "Devin Carter",
@@ -54,8 +61,8 @@
    "status": "day-to-day",
    "name": "Noah Clowney",
    "team": "BKN",
-   "date": "2026-11-05T02:08Z",
-   "note": "Clowney (illness) is available for Friday's game against Detroit, Brian Lewis of the New York Post reports."
+   "date": "2026-11-05T02:13Z",
+   "note": "Clowney won't return to Wednesday's game against the Hornets due to right knee soreness. He'll finish with seven points (3-6 FG, 1-4 3Pt), one rebound and one assist across 17 minutes."
   },
   "5175643": {
    "status": "out",
