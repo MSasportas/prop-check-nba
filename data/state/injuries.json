@@ -1,26 +1,26 @@
 {
- "at": "2026-11-05T17:20:01-05:00",
+ "at": "2026-11-05T17:30:00-05:00",
  "list": {
+  "4873201": {
+   "status": "out",
+   "name": "Asa Newell",
+   "team": "ATL",
+   "date": "2026-11-05T22:19Z",
+   "note": "Newell won't return to Wednesday's game against the Wizards due to a left great toe hyperextension, Brad Rowland of the Locked On Podcast Network reports. He'll finish with two points (1-1 FG), three "
+  },
   "3146557": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jock Landale",
    "team": "ATL",
-   "date": "2026-11-05T14:58Z",
-   "note": "Landale is out for Wednesday's game against the Wizards with a left hip strain, Kevin Chouinard of the Hawks' official site reports."
+   "date": "2026-11-05T22:12Z",
+   "note": "Landale (hip) has been ruled out for Friday's game against the Wizards."
   },
   "4701230": {
    "status": "day-to-day",
    "name": "Jalen Johnson",
    "team": "ATL",
-   "date": "2026-11-05T14:58Z",
-   "note": "Johnson (ankle) is listed as out for Wednesday's game in Washington."
-  },
-  "4873201": {
-   "status": "day-to-day",
-   "name": "Asa Newell",
-   "team": "ATL",
-   "date": "2026-11-05T01:19Z",
-   "note": "Newell won't return to Wednesday's game against the Wizards due to a left great toe hyperextension, Brad Rowland of the Locked On Podcast Network reports. He'll finish with two points (1-1 FG), three "
+   "date": "2026-11-05T22:08Z",
+   "note": "Johnson is questionable to suit up for Friday's game against Washington."
   },
   "4712863": {
    "status": "out",
@@ -82,8 +82,8 @@
    "status": "day-to-day",
    "name": "Dennis Schroder",
    "team": "CHA",
-   "date": "2026-11-05T22:10Z",
-   "note": "Schroder recorded five points (2-4 FG, 0-2 3Pt, 1-2 FT), two rebounds, one assist and two steals in 23 minutes during Monday's 124-91 loss to Detroit."
+   "date": "2026-11-05T22:11Z",
+   "note": "Schroder (thigh) is questionable for Friday's game against the Celtics."
   },
   "4433249": {
    "status": "day-to-day",
@@ -127,19 +127,26 @@
    "date": "2026-11-05T01:35Z",
    "note": "Smith (hand) won't return to Wednesday's game against the Knicks."
   },
+  "4683747": {
+   "status": "out",
+   "name": "Jaylon Tyson",
+   "team": "CLE",
+   "date": "2026-11-05T22:23Z",
+   "note": "Tyson (ankle) is out for Friday's game against the 76ers."
+  },
   "4576087": {
    "status": "day-to-day",
    "name": "Peyton Watson",
    "team": "CLE",
-   "date": "2026-11-05T15:03Z",
-   "note": "Watson (hamstring) is out for Wednesday's game in Oklahoma City."
+   "date": "2026-11-05T22:15Z",
+   "note": "Watson (hamstring) is questionable for Friday's game against the 76ers."
   },
   "4066328": {
    "status": "day-to-day",
    "name": "Jarrett Allen",
    "team": "CLE",
-   "date": "2026-11-05T03:36Z",
-   "note": "Allen (knee) exited to the locker room in the first quarter of Wednesday's 124-116 loss to the Thunder and did not return, finishing with zero points (0-1 FG) and one rebound in seven minutes."
+   "date": "2026-11-05T22:13Z",
+   "note": "Allen (knee) is questionable for Friday's game against Philadelphia."
   },
   "5023693": {
    "status": "day-to-day",
@@ -147,13 +154,6 @@
    "team": "CLE",
    "date": "2026-11-05T03:32Z",
    "note": "Proctor exited Wednesday's 124-116 loss to the Thunder in the fourth quarter and did not return due to an apparent ankle injury, finishing with 11 points (4-7 FG, 2-3 3Pt, 1-1 FT), one rebound and one"
-  },
-  "4683747": {
-   "status": "out",
-   "name": "Jaylon Tyson",
-   "team": "CLE",
-   "date": "2026-11-05T00:33Z",
-   "note": "According to Cavaliers head coach Kenny Atkinson, Tyson (ankle) has been \"on the court lately progressing well,\" Chris Fedor of The Cleveland Plain Dealer reports."
   },
   "4432582": {
    "status": "day-to-day",
@@ -481,8 +481,8 @@
    "status": "day-to-day",
    "name": "Adem Bona",
    "team": "PHI",
-   "date": "2026-11-05T03:01Z",
-   "note": "Bona exited Wednesday's 112-106 win over the Pistons in the fourth quarter and did not return due to an apparent head injury, finishing with five points (2-4 FG, 1-1 FT), two rebounds, one assist and "
+   "date": "2026-11-05T22:18Z",
+   "note": "Bona (back) is doubtful to play in Friday's game against the Cavaliers, Ky Carlin of USA Today reports."
   },
   "4870562": {
    "status": "out",
