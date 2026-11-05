@@ -7,12 +7,14 @@
   odds       the A / B / C / D reads that are due (odds.py)
   engine     picks, pulls, settled level, lock at tip (engine.py), straight into the Record
   grade      every locked or pulled pick whose game is final; every final game's box score into the stats store
+  live       data/live.json for the page's Live tab, from the summaries grade just read (display only, soft step)
   publish    data/record.json (+ month files), data/rules.json, data/slate.json, data/status.json, data/shadow/<slate>.json
   notify     Discord (notify.py)
 Safe to run twice. Every write is atomic. Flags: --explain (print every line's verdict, write nothing),
 --rebuild-record (rebuild the Record views from the log and stop).
 """
 import os
+import re
 import sys
 import time
 import traceback
@@ -23,6 +25,7 @@ import common  # noqa: E402
 import engine  # noqa: E402
 import espn  # noqa: E402
 import lineups as rotowire  # noqa: E402
+import live  # noqa: E402
 import names  # noqa: E402
 import notify  # noqa: E402
 import odds  # noqa: E402
@@ -36,6 +39,41 @@ SEASON_START = "2026-10-01"
 
 def state(name):
     return common.dpath("state", name)
+
+
+def save_headshots(roster):
+    """data/headshots.json: {ESPN player id: ESPN photo link}, merged from each fresh roster read (old entries kept). Display
+    only: never touches picks or the Record. A failure here never fails a run."""
+    try:
+        path = common.dpath("headshots.json")
+        cur = common.read_json(path, {}) or {}
+        if not isinstance(cur, dict):
+            cur = {}
+        new = dict(cur)
+        for p in roster or []:
+            u = p.get("headshot")
+            if p.get("pid") and isinstance(u, str) and espn.HEADSHOT_RE.match(u):
+                new[str(p["pid"])] = u
+        if new != cur:
+            common.write_json(path, dict(sorted(new.items())), pretty=False)
+    except Exception as e:
+        common.log("headshots not saved: %s" % common.short_err(e))
+
+
+PULL_STATUS = re.compile(r"^Now listed (.+)$")
+
+
+def pulled_view(pl):
+    """The page's view of a pull: code from the Record event; a status pull for a player now listed Out is a scratch
+    (code "out": the page drops it from Picks and Live; the Record keeps it as it is)."""
+    if not pl:
+        return None
+    code = pl.get("code")
+    m = PULL_STATUS.match(str(pl.get("reason") or ""))
+    status = m.group(1).strip().lower() if (code == "status" and m) else None
+    if code == "status" and status == "out":
+        code = "out"
+    return {"at": pl["at"], "reason": pl["reason"], "if_bet": pl.get("if_bet"), "code": code, "status": status}
 
 
 class Run:
@@ -101,6 +139,7 @@ class Run:
             r = espn.roster(code)
             if r is not None:
                 cache["teams"][code] = r
+                save_headshots(r)
         common.write_json(state("rosters.json"), cache)
         people = {}
         for code, rs in cache["teams"].items():
@@ -236,6 +275,12 @@ class Run:
             record.append(new)
         self.graded_now = len(new)
 
+    # ------------------------------------------------------------ live (display only)
+    def live_step(self):
+        note = live.step(self.now, self.slate, self.games, record.read_events())
+        self.steps["live"] = {"ok": True, "note": note}
+        return note
+
     # ------------------------------------------------------------ publish
     def publish(self):
         cfg, now = self.cfg, self.now
@@ -269,8 +314,8 @@ class Run:
             st = "locked" if it["locked_at"] else it["state"]
             p["state"], p["state_label"] = st, engine.STATE_LABEL.get(st, "Early")
             p["price_final"] = bool(d_reads.get(sh["game_id"])) and not it["locked_at"]
-            p["pulled"] = {"at": it["pulled"]["at"], "reason": it["pulled"]["reason"], "if_bet": it["pulled"].get("if_bet")} \
-                if it["pulled"] else None
+            p["pulled"] = pulled_view(it["pulled"])
+            p["added_at"] = it["shown_at"]                 # when it first showed on the page (the page's NEW label)
             p["result"] = {"result": gr["result"], "actual": gr.get("actual_text"), "units": gr["units"]} if gr else None
             p.pop("link", None)                            # raw feed link: never published (it only opens the app)
             p["links"] = None                              # tap-to-bet buttons (Matt, 2026-11-02): newest read, open picks only
@@ -313,6 +358,7 @@ class Run:
                           "read_at": last_read.get(g["id"]),
                           "picks": sum(1 for p in picks if p["game_id"] == g["id"] and not p["pulled"])})
             glist[-1].update(self.game_checks(g, plan))
+            glist[-1]["injury_clear"] = self.injury_clear(g)
         banners = []
         keys_n = len(o.get("keys") or [])
         refused = bool(o.get("refused"))
@@ -373,7 +419,8 @@ class Run:
                                     "keys" in b["text"] for b in banners), "refused": refused, "no_keys": bool(o.get("no_keys")),
                                     "days_left": odds.days_to_reset(self.slate), "allowance": plan.get("allowance"), "reads": plan.get("reads")},
                            "next_read_at": nxt, "last_read_at": max(last_reads) if last_reads else None,
-                           "last_run": {"ok": all(s.get("ok") or s.get("soft") for s in self.steps.values()), "at": common.iso(now)}},
+                           "last_run": {"ok": all(s.get("ok") or s.get("soft") for s in self.steps.values()), "at": common.iso(now)},
+                           "feeds": self.feeds()},
                 "games": glist, "picks": picks, "empty": empty, "counts": {"lines_read": lines_read, "passing": passing,
                                                                            "games": len(games)},
                 "safety_paused": self.summ_paused(), "ui": cfg["ui"]}
@@ -388,6 +435,29 @@ class Run:
             common.write_json(common.dpath("slate.json"), body)
             self.write_status()
         self.slate_doc = body if (changed or stale) else old
+
+    def injury_clear(self, g):
+        """Games tab (display only): per team, True when nobody in its top 7 by recent minutes is Doubtful / Questionable /
+        GTD (the engine's own Injury report clear test), False when someone is, None when it can't be told."""
+        out = {}
+        ctx = getattr(self, "ctx", None)
+        for k in ("away", "home"):
+            try:
+                wait = set(self.cfg["eligibility"]["wait_status"]) | {"doubtful"}
+                rot = ctx.rotation(g[k]) if ctx else []
+                out[k] = (not any(ctx.status(m) in wait for m in rot)) if rot else None
+            except Exception:
+                out[k] = None
+        return out
+
+    def feeds(self):
+        """Info tab (display only): did each free source answer on this run."""
+        ok = lambda k: bool(self.steps.get(k, {}).get("ok", True))
+        lu = getattr(self, "lineup_state", None) or {}
+        return {"schedule": ok("schedule"), "injuries": ok("injuries"), "rosters": ok("rosters"),
+                "lineups": {"ok": ok("lineups"), "at": lu.get("at"),
+                            "confirmed": sorted(c for c, t in (lu.get("teams") or {}).items() if (t or {}).get("state") == "confirmed")},
+                "grade": ok("grade"), "live": ok("live")}
 
     def hr_missing_at(self):
         """Latest read time today when reads came back but none carried Hard Rock (book not posted yet); else None."""
@@ -414,12 +484,13 @@ class Run:
                                        for f in fs)
         too_late = (tip - now).total_seconds() / 60.0 < cfg["reads"]["latest_min"]
         final = engine.started(g, now) or done_last or too_late
-        nxt = None
+        nxt, nxt_read = None, None
         if not final:
-            upcoming = [due[k] for k in planned if due[k] > now and tip - due[k] >= timedelta(minutes=cfg["reads"]["latest_min"])]
-            nxt = common.iso(min(upcoming)) if upcoming else None
+            upcoming = sorted((due[k], k) for k in planned if due[k] > now and tip - due[k] >= timedelta(minutes=cfg["reads"]["latest_min"]))
+            if upcoming:
+                nxt, nxt_read = common.iso(upcoming[0][0]), upcoming[0][1]
         return {"checks": checks, "last_check_at": checks[-1]["at"] if checks else None, "final": bool(final),
-                "next_check_at": nxt}
+                "next_check_at": nxt, "next_check_read": nxt_read}
 
     def summ_paused(self):
         return bool(getattr(self, "summ", {}) and self.summ.get("paused"))
@@ -450,8 +521,7 @@ def rules_doc(cfg):
         "No leg worse than %d." % c["worst_price"],
         "The rule: Pinnacle (the sharpest book) moves its odds on a line by %d+ points of chance between two of our price checks, "
         "and Hard Rock quotes that same line on both checks with a price at or better than Pinnacle's fair price (Pinnacle's new "
-        "chance with its own margin taken out). We bet the side Pinnacle moved toward. The other books don't matter. If DraftKings "
-        "also passes the same check on the same bet, the pick gets a DraftKings button too (graded at the Hard Rock price)."
+        "chance with its own margin taken out). We bet the side Pinnacle moved toward. The other books don't matter."
         % round(100 * ps["min_move"]),
         "Prices are checked at 11 AM and about %d, %d and %d minutes before each tip (the 11 AM check runs while spare odds credits last). A pick can come from the 90, 45 or "
         "20 minute check. The price shown is frozen and is the one graded." % (r["b_min"], r["c_min"], r["d_min"]),
@@ -464,7 +534,7 @@ def rules_doc(cfg):
         "A pick is pulled if he is ruled out or doubtful, or Hard Rock takes the line down. Pulled picks stay on the Record.",
         "One pick per player per market a night. No cap per game or per night. No parlays.",
         "Graded after the game at the shown price, 1 unit flat. Overtime counts. Did not play = void.",
-        "Behind the scenes (Backstage tab, not the Record or Discord): %s, Hard Rock %d%%+ better than Pinnacle's fair price on the same line."
+        "Tracked on paper (Lab tab, not the Record or Discord): %s, Hard Rock %d%%+ better than Pinnacle's fair price on the same line."
         % (w["label"], round(100 * w["min_ev"])),
         "New picks stop by themselves if the Record falls to %d units." % cfg["safety_pause"]["units"],
     ]}
@@ -495,6 +565,7 @@ def main(argv):
     if r.explain:
         return 0
     r.step("grade", r.grade)
+    r.step("live", r.live_step, soft=True)                  # the page's Live tab, from the summaries grade just read
     r.step("publish", r.publish)
     if "publish" in r.steps and not r.steps["publish"]["ok"]:
         return 1

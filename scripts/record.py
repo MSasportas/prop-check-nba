@@ -271,6 +271,76 @@ def _merge_replay(nights, cfg):
     return [by[d] for d in sorted(by, reverse=True)]
 
 
+# ---------------------------------------------------------------- cuts and calendar (page views only, Matt 2026-11-04)
+# They count exactly what the headline counts (the same `singles`); a fact a pick lacks keeps it out of that one cut only.
+EDGE_BANDS = [("e0", "0 to 2%", lambda f: 0 <= f["edge"] < 0.02),
+              ("e2", "2 to 5%", lambda f: 0.02 <= f["edge"] < 0.05),
+              ("e5", "5% or more", lambda f: f["edge"] >= 0.05)]
+SETTLED_BANDS = [("early", "Early", lambda f: f["settled"] == "early"),
+                 ("clear", "Injury report clear", lambda f: f["settled"] == "clear"),
+                 ("starters", "Starters confirmed", lambda f: f["settled"] == "starters")]
+PRICE_BANDS = [("plus", "Plus money", lambda f: f["price"] >= 100),
+               ("fav", "-100 to -150", lambda f: -150 <= f["price"] <= -100),
+               ("fav_big", "-151 to -200", lambda f: -200 <= f["price"] < -150)]
+
+
+def _facts_live(it, e):
+    sh = it["shown"]
+    ev = sh.get("ev_vs_pin")
+    return {"market": sh.get("market", "rebounds"), "edge": ev if isinstance(ev, (int, float)) else None,
+            "settled": (it["states"][0] or {}).get("state") if it.get("states") else sh.get("state"),
+            "price": e["price"] if isinstance(e["price"], (int, float)) else None}
+
+
+def _replay_facts(cfg):
+    """Replay bets: the edge is Pinnacle's new chance x Hard Rock's payout - 1 (the engine's own ev_vs_pin); no settled level."""
+    doc = common.read_json(common.dpath("replay", "pin_solo.json")) or {}
+    out = {}
+    for n in doc.get("nights") or []:
+        for b in n.get("bets") or []:
+            i = "replay:%s:%s:%s:%s:%s" % (n["date"], b["player"], b["market"], b["line"], b["side"])
+            ev = b.get("ev_vs_pin")
+            if ev is None and isinstance(b.get("pin_after"), (int, float)) and isinstance(b.get("price"), (int, float)):
+                ev = round(odds.ev(b["pin_after"], b["price"]), 4)
+            out[i] = {"market": b.get("market"), "edge": ev, "settled": None,
+                      "price": b["price"] if isinstance(b.get("price"), (int, float)) else None}
+    return out
+
+
+def cuts(rows, need, cfg):
+    """rows: [(entry, facts)] for every counted single. -> [{key, label, note, rows}]; a band with nothing graded is left out."""
+    labels = {k: m["label"] for k, m in cfg["markets"].items()}
+    market_bands = [(k, labels[k], (lambda k: lambda f: f["market"] == k)(k)) for k in cfg["markets"]]
+    out = []
+    for key, label, note, bands, has in (
+            ("market", "By market", None, market_bands, lambda f: f["market"] is not None),
+            ("edge", "By edge", "Hard Rock's price vs Pinnacle's fair price, when shown", EDGE_BANDS,
+             lambda f: f["edge"] is not None),
+            ("settled", "By how settled when shown", "Replay bets have no settled level, so they are not in this cut",
+             SETTLED_BANDS, lambda f: f["settled"] is not None),
+            ("price", "By price", "Hard Rock price as graded", PRICE_BANDS, lambda f: f["price"] is not None)):
+        cut_rows = []
+        for bk, bl, test in bands:
+            sub = [e for e, f in rows if has(f) and test(f)]
+            if any(e["result"] in ("W", "L", "PUSH", "VOID") for e in sub):
+                cut_rows.append(_row(bk, bl, sub, need))
+        if cut_rows:
+            out.append({"key": key, "label": label, "note": note, "rows": cut_rows})
+    return out
+
+
+def days_view(nights):
+    """One row per night (every month) for the page's calendar, counting what the headline counts."""
+    out = []
+    for n in nights:
+        s = [e for e in n["entries"] if e["kind"] == "single" and not e["pulled"] and not e.get("under_fair")]
+        out.append({"date": n["date"], "w": sum(1 for e in s if e["result"] == "W"), "l": sum(1 for e in s if e["result"] == "L"),
+                    "push": sum(1 for e in s if e["result"] == "PUSH"), "void": sum(1 for e in s if e["result"] == "VOID"),
+                    "units": round(sum(e["units"] or 0 for e in s if e["result"]), 2), "n": len(s),
+                    "graded": all(e["result"] is not None for e in s)})
+    return out
+
+
 def build_views(events, cfg):
     """-> (record.json dict, {"2026-10": month dict, ...})."""
     items = fold(events)
@@ -323,8 +393,11 @@ def build_views(events, cfg):
     months = {}
     for n in nights[keep:]:
         months.setdefault(n["date"][:7], {"nights": []})["nights"].append(n)
+    rf = _replay_facts(cfg)
+    facts = [(e, _facts_live(items[e["id"]], e) if e["id"] in items else rf.get(e["id"])) for e in singles]
     rec = {"generated_at": events[-1]["at"] if events else None,
-           "summary": {"headline": head, "rows": rows},
+           "summary": {"headline": head, "rows": rows, "cuts": cuts([x for x in facts if x[1]], need, cfg),
+                       "days": days_view(nights)},
            "nights": nights[:keep],
            "older": ["record/%s.json" % m for m in sorted(months, reverse=True)]}
     return rec, months

@@ -1,0 +1,16 @@
+{
+ "note": "The page's Lab tab. Curated by the team: list ONLY ideas that passed their historical test and are now tracked on paper. Never a failed or dropped idea. Each entry's numbers come live from its summary file (path relative to data/). Remove an entry when its track stops or goes live.",
+ "updated": "2026-11-04",
+ "tests": [
+  {
+   "id": "pin_judge",
+   "title": "Pinnacle as the price judge",
+   "rule": "Hard Rock's price is 2%+ better than Pinnacle's fair price on the same line. Tracked on paper only, never the Record or Discord.",
+   "summary": "watch/pin_judge/summary.json",
+   "stats": "total",
+   "need": 150,
+   "discovery": "Discovery Oct 25-27: 6 bets 5-1 +3.18u.",
+   "gate": "Live only at 150 graded, units up, and when Matt says go."
+  }
+ ]
+}

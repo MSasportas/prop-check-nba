@@ -5,12 +5,14 @@ scoreboard_<YYYYMMDD>.json, summary_<event>.json, injuries.json, roster_<CODE>.j
 """
 import json
 import os
+import re
 
 import common
 import teams
 
 BASE = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
 SOURCE = {"ok": 0, "failed": 0}
+HEADSHOT_RE = re.compile(r"^https://a\.espncdn\.com/i/headshots/nba/players/full/\d+\.png$")
 
 
 def _fixture_dir():
@@ -75,7 +77,8 @@ def scoreboard(date):
 
 
 def roster(code):
-    """Team code -> [{"pid", "name", "team", "pos", "injury"}] or None."""
+    """Team code -> [{"pid", "name", "team", "pos", "injury", "headshot"}] or None. headshot = ESPN's own photo link
+    (a.espncdn.com, keyed by the same ESPN id as our picks) or None; display only (data/headshots.json)."""
     tid = TEAM_IDS.get(code)
     if not tid:
         return None
@@ -85,8 +88,10 @@ def roster(code):
     out = []
     for a in js.get("athletes", []) or []:
         inj = (a.get("injuries") or [{}])[0].get("status") if a.get("injuries") else None
+        hs = (a.get("headshot") or {}).get("href") if isinstance(a.get("headshot"), dict) else None
         out.append({"pid": str(a.get("id")), "name": a.get("displayName") or a.get("fullName"), "team": code,
-                    "pos": (a.get("position") or {}).get("abbreviation"), "injury": inj})
+                    "pos": (a.get("position") or {}).get("abbreviation"), "injury": inj,
+                    "headshot": hs if isinstance(hs, str) and HEADSHOT_RE.match(hs) else None})
     return out
 
 
@@ -164,8 +169,93 @@ def box(summary):
     return pr, tr
 
 
+_SUMMARY = {}                                              # in-run memo: grade's reads are reused by live (no extra calls)
+
+
 def summary(event_id):
-    return _get("summary?event=%s" % event_id, "summary_%s.json" % event_id)
+    k = str(event_id)
+    if k in _SUMMARY:
+        return _SUMMARY[k]
+    js = _get("summary?event=%s" % k, "summary_%s.json" % k)
+    if js is not None:
+        _SUMMARY[k] = js
+    return js
+
+
+def summary_cached(event_id):
+    """This run's summary read of a game, or None when it was not read this run. Never calls ESPN."""
+    return _SUMMARY.get(str(event_id))
+
+
+def clear_cache():
+    _SUMMARY.clear()
+
+
+# ---------------------------------------------------------------- live (display only: the page's Live tab)
+LIVE_KEYS = {"points": "points", "rebounds": "rebounds", "assists": "assists",
+             "threes": "threePointFieldGoalsMade-threePointFieldGoalsAttempted"}
+LIVE_LABELS = {"points": "PTS", "rebounds": "REB", "assists": "AST", "threes": "3PT"}
+
+
+def _int(x):
+    try:
+        return int(float(x))
+    except (TypeError, ValueError):
+        return None
+
+
+def game_state(summary):
+    """An in-progress (or final) summary -> {state, period, clock, detail, in_break, away {abbrev, score}, home {...}},
+    or None when the header is unreadable. Field names checked on real in-progress games (event 401909922, 2026-11-04)."""
+    try:
+        hdr = summary["header"]["competitions"][0]
+        st = hdr.get("status") or {}
+        tp = st.get("type") or {}
+        side = {c["homeAway"]: c for c in hdr["competitors"]}
+        team = lambda ha: {"abbrev": teams.show(teams.code(side[ha]["team"]["abbreviation"]) or side[ha]["team"]["abbreviation"]),
+                           "score": _int(side[ha].get("score"))}
+        detail = tp.get("detail") or tp.get("shortDetail") or ""
+        state = tp.get("state")
+        brk = state == "in" and (tp.get("name") in ("STATUS_HALFTIME", "STATUS_END_PERIOD") or
+                                 bool(re.search(r"halftime|^end of", detail, re.I)))
+        return {"state": state, "completed": bool(tp.get("completed")), "period": _int(st.get("period")),
+                "clock": st.get("displayClock") if isinstance(st.get("displayClock"), str) else None,
+                "detail": detail or None, "in_break": bool(brk), "away": team("away"), "home": team("home")}
+    except (KeyError, IndexError, TypeError, AttributeError):
+        return None
+
+
+def player_stats(summary):
+    """Any summary (in progress or final) -> {ESPN player id: {"dnp", "points", "rebounds", "assists", "threes"}}. Stats are
+    mapped by the index of each block's `keys` (labels as a fallback); threes = the made part of the 3PT key."""
+    out = {}
+    for p in (summary.get("boxscore") or {}).get("players", []) or []:
+        if not isinstance(p, dict):
+            continue                                       # one malformed team block never blanks the rest
+        st = (p.get("statistics") or [{}])[0] or {}
+        if not isinstance(st, dict):
+            continue
+        keys, labels = st.get("keys") or [], st.get("labels") or []
+        idx = {}
+        for m, k in LIVE_KEYS.items():
+            if k in keys:
+                idx[m] = keys.index(k)
+            elif LIVE_LABELS[m] in labels:
+                idx[m] = labels.index(LIVE_LABELS[m])
+        for a in st.get("athletes", []) or []:
+            if not isinstance(a, dict):
+                continue
+            pid = str((a.get("athlete") or {}).get("id"))
+            vals = a.get("stats") or []
+            dnp = bool(a.get("didNotPlay")) or not vals
+            row = {"dnp": dnp}
+            for m in LIVE_KEYS:
+                i = idx.get(m)
+                v = vals[i] if (i is not None and i < len(vals) and not dnp) else None
+                row[m] = (_made(v) if m == "threes" else _num(v)) if v is not None else None
+                row[m] = int(row[m]) if row[m] is not None else None
+            out[pid] = row
+    return out
 
 
 TEAM_IDS = {"ATL": "1", "BOS": "2", "BKN": "17", "CHA": "30", "CHI": "4", "CLE": "5", "DAL": "6", "DEN": "7", "DET": "8",

@@ -11,8 +11,8 @@ template and is READ ONLY from here. Never push to it.
 Every NBA game day: every rebounds, points, assists and 3-pointers-made leg that qualifies at a real Hard Rock (`hardrockbet`) price, ranked best first, each with
 the price, our chance vs the price's break-even and a one-line plain reason. The page updates through the day; each pick shows how
 settled it is (Early / Injury report clear / Starters confirmed, then Locked) and pulled picks stay visible with the reason and what it
-means if Matt already bet. Dark, phone first (~380px). The Record is the scoreboard. Parlays are not offered (Matt, setup).
-**Tap-to-bet (Matt, 2026-11-02 8:43 PM):** every OPEN pick (not pulled, started, graded or stale) has a "Hard Rock +115" button that
+means if Matt already bet. **Page (2026-11-04 redesign, copied from NHL): Ballpark theme, light only, phone first (~380px), six rail tabs Picks · Live · Games · Record · Lab · Info; Hard Rock only on the page (no DraftKings).** The Record is the scoreboard. Parlays are not offered (Matt, setup).
+**Tap-to-bet (Matt, 2026-11-02 8:43 PM; since 2026-11-04 the PAGE shows the Hard Rock button only, Discord still sends both):** every OPEN pick (not pulled, started, graded or stale) has a "Hard Rock +115" button that
 fills the Hard Rock slip and a "DraftKings -110" button (DK's own price), on the page and in Discord as masked links. Links come from
 the NEWEST odds read (`includeLinks=true` on B/C/D reads, same credits; links kept for Hard Rock and DraftKings only). Hard Rock: the
 feed's `app.hardrock.bet/?deep_link_value=betslip/<id>` only opens the app, so we build `share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/<id>`
@@ -84,7 +84,7 @@ Checkpoint 2026-11-25 (~150 bets). Stop rule: units <= -8, or after 75 bets ROI 
 **Health metric (Sharp, weekly review 2026-11-02):** CLV vs Pinnacle's fair at the last read before tip, on v2.3 picks. Re-judge at 25 measured v2.3 picks (D-read picks have no later read, so they can't be measured). Through 11-01: 2 measured.
 **Behind the scenes: Pinnacle as the price judge** (`watch.pin_judge`, `scripts/watch.py`): newest B/C/D read, Hard Rock EV >= +2% vs
 Pinnacle's fair on the same line, -200..+200, eligible; first flag per player/market/night; graded; `data/watch/pin_judge/` and the
-page's Backstage tab only, never the Record or Discord. Discovery: 6 bets 5-1 +3.18u. Promotion needs Matt.
+page's Lab tab only (was Backstage until 2026-11-04), never the Record or Discord. Discovery: 6 bets 5-1 +3.18u. Promotion needs Matt.
 Also logged for research (shadow `solo` rows): every Pinnacle 2+ pt move with the other books' move, so "any Pinnacle move" (46 bets
 31-15 +10.88u in discovery) can be scored forward without a product change.
 **Gap + Guard (v1.x) is OFF** (`gap_guard.active` false); its rows are still computed into the shadow log. Its rules, for history:
@@ -151,11 +151,16 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   2026-11-01 all 12 reads (4 games x B/C/D): Hard Rock all 4 markets, all 9 other books all 4 markets on every read (BetMGM complete).
   2026-11-02 all 45 reads (15 games x B/C/D): Hard Rock all 4 markets, all 9 other books all 4 markets on every read.
   2026-11-04 A read (first under v2.4 spare credits, 14 games x 4 = 56 credits): Hard Rock all 4 markets on 14/14; all 9 other books all 4 markets except BetMGM (absent MIL@BOS).
+- **Page (2026-11-04):** `index.html` (Ballpark, fonts bundled in fonts/, no outside font calls). Extra data it reads: `data/live.json`
+  (soft step `live`, scripts/live.py, after grade: ESPN summaries grade already read this run, no extra calls; quarter/clock/score + each
+  started pick's stat), `data/headshots.json` (ESPN pid -> a.espncdn.com photo, merged on each fresh roster read), `record.json`
+  `summary.cuts`/`summary.days` (views only), `config/lab.json` (Lab entries). Slate adds `pulled.code/status` (status Out = scratch, hidden),
+  `added_at` (NEW label), `games[].injury_clear`, `next_check_read`, `status.feeds`. Fixtures: `fixtures/make_fixtures.py`, open `?fixture=<name>`.
 - **Discord:** `scripts/notify.py`, secret `DISCORD_WEBHOOK`. Sends NEW PICKS (batched), PULLED (only picks already sent, before tip, with
   the if-bet line), PRICE FINAL, ACTION NEEDED (keys refused / pool low, once a day each), a one-time hello. Never no-pick nights,
   heartbeats, grading or errors. Quiet 12:30-9:00 AM ET. Max 12 messages a day.
 - **Debug:** `python scripts/run.py --explain` lists every line (all markets) on the latest reads and the first reason it did not pass.
-  Tests: `python -m unittest discover -s tests` (63; `tests/world.py` = fake day from the real probe payloads; `tests/test_qa_failures.py` = QA's regressions). Env: `PC_NOW`, `PC_DATA_DIR`, `PC_ODDS_FIXTURE_DIR`, `PC_ESPN_FIXTURE_DIR`.
+  Tests: `python -m unittest discover -s tests` (90 on 2026-11-04; `tests/world.py` = fake day from the real probe payloads; `tests/test_qa_failures.py` = QA's regressions). Env: `PC_NOW`, `PC_DATA_DIR`, `PC_ODDS_FIXTURE_DIR`, `PC_ESPN_FIXTURE_DIR`.
 
 ## 6. Reviews (scheduled tasks; each reads this file first and updates it last)
 - **Daily check, 2:07 PM ET** (scheduled task "Prop Check NBA daily check"): chain alive, A read ran, failed steps, unmatched names, grading done for last night; fix what's broken; no
@@ -197,6 +202,14 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
    (`app.hardrock.bet/?deep_link_value=betslip/<id>`). Discord hello delivered. **Pinnacle coverage is the volume limit**: 5 of 8 players
    failed "Pinnacle not on this line". Do not loosen without a sample (DS names it at the first weekly review).
 
+9. **Headshots are ESPN's, not NBA's (2026-11-04).** Runner probe (probe/live_probe.py): cdn.nba.com JSON and nba.com 403,
+   stats.nba.com times out, so no free reachable source maps ESPN ids to NBA person ids. ESPN's roster JSON carries an official
+   a.espncdn.com photo keyed by the same ESPN id we use. Live box scores use ESPN for the same reason.
+10. **DraftKings is hidden on the page by a text filter** (`noDK` in index.html): the slate still carries DraftKings links/clauses for
+   Discord. If the engine's reason wording changes, re-check the page.
+11. **Lab's only entry (Pinnacle judge) is 13-16 -2.94u live** (passed its Oct 25-27 discovery). Shown honestly; remove it if the
+   Sharp drops the track.
+
 ## 8. Rule-change log
 | Date | Change | Why | Sample |
 |---|---|---|---|
@@ -213,6 +226,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 | 2026-10-25 (CEO, setup interview with Matt) | **v1.0.** Customer facts locked (section 1). Gap + Guard copied from NHL v3.3 for rebounds main lines; D read (20 min) added because Matt bets in the last hour; Questionable/GTD rule; parlays off | Setup interview; NHL template | None yet: first slate after the keys arrive |
 
 ## 9. Session log (newest first, one line each)
+- 2026-11-04 ~9:20 PM (CEO, Matt: bring NHL's 11/4 redesign over; Builder, QA): page rebuilt on NHL's 11/4 page. Rail tabs Picks · Live · Games · Record · Lab · Info; Ballpark light theme, bundled Graduate / IBM Plex Sans / Plex Mono; dark mode and Backstage gone. Picks = unstarted picks in 2-column tiles (photo, bet, Hard Rock price, chance vs needed; tap: reason, Early > Injury report clear > Starters confirmed > Locked stepper, Hard Rock button), NEW corner label + "Added HH:MM", TOO LATE navy stamp for status and line_gone pulls ("Got X earlier? Keep it. Don't bet it now."), Out scratches hidden from Picks and Live. Live = started picks, "Tonight W-L · ±u", in-game first, finals sink with WON/LOST/VOID, stat-vs-line tracker with HIT/LOST mid-game, quarter/clock/score, old data said plainly. Games = checks only. Record = calendar (red up, slate down) + cuts (market, edge vs Pinnacle fair, settled when shown, price band; small-sample labels) + full list. Lab = Pinnacle judge track. Info = status rows, rules, 21+ / 1-800-GAMBLER. No pick, grade, Record-counting or Discord change; events.jsonl untouched. Source probe on the runner: ESPN summary live fields verified on PHI@DET / ATL@WSH in progress; NBA official sources blocked (section 7 item 9). QA (fresh): SHIP, 336 views (all fixtures + real data x 6 tabs at 360/380/414 + iPhone 13), no sideways scroll, no JS errors; 3 lows fixed (malformed box block, skeleton gradient), 2 noted (section 7 items 10-11). 90 tests.
 - 2026-11-04 2:10 PM (CEO, daily check): alive (chain link 182, status 2:00 PM, all steps ok, Actions green, pool 2,712, plan A/B/C/D for 14 games). v2.4 spare A read ran 11 AM (56 credits; Hard Rock all 4 markets on every game). No games 11-03, so nothing to grade and no Rotowire confirms expected; all 37 shown picks on the Record graded. Unmatched Rotowire: Diop, Tomlin (harmless); no unmatched odds names, no unknown teams. Tests pass. No code changes.
 - 2026-11-03 ~5:15 PM (CEO, Matt: "There should not be a daily budget"): removed the per-day credit cap (`budget_today`) from the
   plan and the read loop. Found while checking v2.4: on a big slate the spare 11 AM reads counted against the day's cap and could
