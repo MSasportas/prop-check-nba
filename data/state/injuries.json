@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T21:10:01-05:00",
+ "at": "2026-11-04T21:20:00-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -49,6 +49,13 @@
    "team": "BOS",
    "date": "2026-11-04T17:48Z",
    "note": "Tatum will be rested Wednesday against the Bucks, Jack Simone of BostonSportsJournal.com reports."
+  },
+  "4712896": {
+   "status": "day-to-day",
+   "name": "Noah Clowney",
+   "team": "BKN",
+   "date": "2026-11-05T02:08Z",
+   "note": "Clowney (illness) is available for Friday's game against Detroit, Brian Lewis of the New York Post reports."
   },
   "5175643": {
    "status": "out",
@@ -147,6 +154,13 @@
    "team": "DAL",
    "date": "2026-10-30T22:34Z",
    "note": "Head coach Dusty May said Friday that de Larrea (knee) will be re-evaluated next week, Noah Weber of TheSmokingCuban.com reports."
+  },
+  "3978": {
+   "status": "out",
+   "name": "DeMar DeRozan",
+   "team": "DEN",
+   "date": "2026-11-05T02:05Z",
+   "note": "DeRozan has been ruled out for Wednesday's game against the Raptors due to lower-back spasms."
   },
   "4592427": {
    "status": "out",

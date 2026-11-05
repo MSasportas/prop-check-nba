@@ -300,10 +300,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "21.8 - 3rd",
+    "detail": "8:56 - 4th",
     "score": {
-     "PHI": "89",
-     "DET": "75"
+     "PHI": "95",
+     "DET": "83"
     }
    },
    {
@@ -315,10 +315,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:31 - 4th",
+    "detail": "2:43 - 4th",
     "score": {
-     "ATL": "105",
-     "WSH": "94"
+     "ATL": "118",
+     "WSH": "103"
     }
    },
    {
@@ -330,10 +330,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:16 - 3rd",
+    "detail": "10:00 - 4th",
     "score": {
-     "MIL": "73",
-     "BOS": "80"
+     "MIL": "85",
+     "BOS": "87"
     }
    },
    {
@@ -345,10 +345,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:09 - 3rd",
+    "detail": "5:48 - 3rd",
     "score": {
-     "CHA": "59",
-     "BKN": "52"
+     "CHA": "62",
+     "BKN": "64"
     }
    },
    {
@@ -360,10 +360,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:48 - 3rd",
+    "detail": "4:40 - 3rd",
     "score": {
-     "CHI": "60",
-     "NY": "98"
+     "CHI": "64",
+     "NY": "107"
     }
    },
    {
@@ -420,10 +420,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:33 - 2nd",
+    "detail": "7:31 - 2nd",
     "score": {
-     "MIN": "33",
-     "HOU": "30"
+     "MIN": "43",
+     "HOU": "39"
     }
    },
    {
@@ -432,13 +432,13 @@
     "start": "2026-11-04T21:00:00-05:00",
     "away": "TOR",
     "home": "DEN",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/4 - 9:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:57 - 1st",
     "score": {
-     "TOR": "0",
-     "DEN": "0"
+     "TOR": "16",
+     "DEN": "12"
     }
    },
    {
@@ -447,13 +447,13 @@
     "start": "2026-11-04T21:00:00-05:00",
     "away": "POR",
     "home": "PHX",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/4 - 9:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:54 - 1st",
     "score": {
-     "POR": "0",
-     "PHX": "0"
+     "POR": "12",
+     "PHX": "13"
     }
    },
    {

@@ -96,6 +96,250 @@
     "needed": 0.5296,
     "n": 6
    }
+  ],
+  "cuts": [
+   {
+    "key": "market",
+    "label": "By market",
+    "note": null,
+    "rows": [
+     {
+      "key": "rebounds",
+      "label": "Rebounds",
+      "w": 4,
+      "l": 3,
+      "push": 0,
+      "void": 0,
+      "units": 0.56,
+      "hit_rate": 0.5714,
+      "needed": 0.5394,
+      "n": 7
+     },
+     {
+      "key": "points",
+      "label": "Points",
+      "w": 6,
+      "l": 2,
+      "push": 0,
+      "void": 0,
+      "units": 3.11,
+      "hit_rate": 0.75,
+      "needed": 0.5426,
+      "n": 8
+     },
+     {
+      "key": "assists",
+      "label": "Assists",
+      "w": 3,
+      "l": 0,
+      "push": 0,
+      "void": 0,
+      "units": 2.66,
+      "hit_rate": 1.0,
+      "needed": 0.5374,
+      "n": 3
+     },
+     {
+      "key": "threes",
+      "label": "3-pointers made",
+      "w": 5,
+      "l": 0,
+      "push": 0,
+      "void": 0,
+      "units": 6.02,
+      "hit_rate": 1.0,
+      "needed": 0.4629,
+      "n": 5
+     }
+    ]
+   },
+   {
+    "key": "edge",
+    "label": "By edge",
+    "note": "Hard Rock's price vs Pinnacle's fair price, when shown",
+    "rows": [
+     {
+      "key": "e0",
+      "label": "0 to 2%",
+      "w": 15,
+      "l": 4,
+      "push": 0,
+      "void": 0,
+      "units": 10.45,
+      "hit_rate": 0.7895,
+      "needed": 0.525,
+      "n": 19
+     },
+     {
+      "key": "e2",
+      "label": "2 to 5%",
+      "w": 3,
+      "l": 1,
+      "push": 0,
+      "void": 0,
+      "units": 1.89,
+      "hit_rate": 0.75,
+      "needed": 0.5173,
+      "n": 4
+     }
+    ]
+   },
+   {
+    "key": "settled",
+    "label": "By how settled when shown",
+    "note": "Replay bets have no settled level, so they are not in this cut",
+    "rows": [
+     {
+      "key": "early",
+      "label": "Early",
+      "w": 1,
+      "l": 0,
+      "push": 0,
+      "void": 0,
+      "units": 1.25,
+      "hit_rate": 1.0,
+      "needed": 0.4444,
+      "n": 1
+     },
+     {
+      "key": "clear",
+      "label": "Injury report clear",
+      "w": 11,
+      "l": 4,
+      "push": 0,
+      "void": 0,
+      "units": 6.48,
+      "hit_rate": 0.7333,
+      "needed": 0.5291,
+      "n": 15
+     },
+     {
+      "key": "starters",
+      "label": "Starters confirmed",
+      "w": 3,
+      "l": 1,
+      "push": 0,
+      "void": 0,
+      "units": 2.0,
+      "hit_rate": 0.75,
+      "needed": 0.5144,
+      "n": 4
+     }
+    ]
+   },
+   {
+    "key": "price",
+    "label": "By price",
+    "note": "Hard Rock price as graded",
+    "rows": [
+     {
+      "key": "plus",
+      "label": "Plus money",
+      "w": 6,
+      "l": 0,
+      "push": 0,
+      "void": 0,
+      "units": 7.7,
+      "hit_rate": 1.0,
+      "needed": 0.439,
+      "n": 6
+     },
+     {
+      "key": "fav",
+      "label": "-100 to -150",
+      "w": 12,
+      "l": 5,
+      "push": 0,
+      "void": 0,
+      "units": 4.64,
+      "hit_rate": 0.7059,
+      "needed": 0.5535,
+      "n": 17
+     }
+    ]
+   }
+  ],
+  "days": [
+   {
+    "date": "2026-11-04",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 11,
+    "graded": false
+   },
+   {
+    "date": "2026-11-02",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 1.25,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-10-31",
+    "w": 2,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 2.17,
+    "n": 2,
+    "graded": true
+   },
+   {
+    "date": "2026-10-30",
+    "w": 2,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": 0.46,
+    "n": 3,
+    "graded": true
+   },
+   {
+    "date": "2026-10-29",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 1.35,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-10-28",
+    "w": 9,
+    "l": 4,
+    "push": 0,
+    "void": 0,
+    "units": 4.51,
+    "n": 13,
+    "graded": true
+   },
+   {
+    "date": "2026-10-27",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0.83,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-10-26",
+    "w": 2,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 1.78,
+    "n": 2,
+    "graded": true
+   }
   ]
  },
  "nights": [

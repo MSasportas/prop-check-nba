@@ -324,10 +324,10 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
-    "Caleb Martin",
+    "Zaccharie Risacher",
     "Cooper Flagg",
     "P.J. Washington",
     "Daniel Gafford"
@@ -341,7 +341,7 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Aaron Fox",
     "Stephon Castle",
@@ -411,5 +411,5 @@
    }
   }
  },
- "at": "2026-11-04T21:10:01-05:00"
+ "at": "2026-11-04T21:20:00-05:00"
 }
