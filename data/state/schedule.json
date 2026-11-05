@@ -465,7 +465,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:18 - 4th",
+    "detail": "9:11 - 4th",
     "score": {
      "DAL": "87",
      "SA": "94"
