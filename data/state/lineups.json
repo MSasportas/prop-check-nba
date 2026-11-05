@@ -99,6 +99,7 @@
     "Moussa Diabate"
    ],
    "status": {
+    "Coby White": "questionable",
     "Kon Knueppel": "questionable",
     "Grant Williams": "out"
    }
@@ -181,6 +182,7 @@
     "Jarrett Allen"
    ],
    "status": {
+    "Jarrett Allen": "questionable",
     "Nae'Qwan Tomlin": "out",
     "Jaylon Tyson": "out",
     "Peyton Watson": "out"
@@ -278,7 +280,7 @@
    }
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -411,5 +413,5 @@
    }
   }
  },
- "at": "2026-11-04T20:30:00-05:00"
+ "at": "2026-11-04T20:40:01-05:00"
 }
