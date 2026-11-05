@@ -390,10 +390,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6.4 - 4th",
+    "detail": "2:51 - OT",
     "score": {
-     "UTAH": "104",
-     "NO": "103"
+     "UTAH": "110",
+     "NO": "108"
     }
    },
    {
@@ -420,10 +420,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:54 - 4th",
+    "detail": "6:01 - 4th",
     "score": {
-     "MIN": "91",
-     "HOU": "92"
+     "MIN": "99",
+     "HOU": "96"
     }
    },
    {
@@ -435,10 +435,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:00 - 3rd",
+    "detail": "1:02 - 3rd",
     "score": {
-     "TOR": "78",
-     "DEN": "84"
+     "TOR": "81",
+     "DEN": "99"
     }
    },
    {
@@ -450,10 +450,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:04 - 3rd",
+    "detail": "5:47 - 3rd",
     "score": {
-     "POR": "78",
-     "PHX": "71"
+     "POR": "88",
+     "PHX": "72"
     }
    },
    {
@@ -465,10 +465,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:21 - 2nd",
+    "detail": "2:52 - 2nd",
     "score": {
-     "DAL": "46",
-     "SA": "48"
+     "DAL": "48",
+     "SA": "58"
     }
    },
    {
@@ -480,10 +480,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:47 - 2nd",
+    "detail": "8:16 - 2nd",
     "score": {
-     "LAL": "28",
-     "SAC": "28"
+     "LAL": "36",
+     "SAC": "33"
     }
    },
    {
@@ -492,13 +492,13 @@
     "start": "2026-11-04T22:30:00-05:00",
     "away": "MIA",
     "home": "LAC",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/4 - 10:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:09 - 1st",
     "score": {
-     "MIA": "0",
-     "LAC": "0"
+     "MIA": "12",
+     "LAC": "7"
     }
    }
   ]
