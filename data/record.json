@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T20:50:01-05:00",
+ "generated_at": "2026-11-04T21:00:00-05:00",
  "summary": {
   "headline": {
    "w": 18,
@@ -337,6 +337,32 @@
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-04:401909935:3448:threes:1.5:over",
+     "kind": "single",
+     "player": "Brook Lopez",
+     "bet": "Over 1.5 threes",
+     "market": "threes",
+     "team": "LAC",
+     "game": "MIA at LAC",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-04T21:00:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min",
      "book": "hardrock",
      "under_fair": false
     }

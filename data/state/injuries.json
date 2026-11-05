@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T20:50:01-05:00",
+ "at": "2026-11-04T21:00:00-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -64,19 +64,12 @@
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
   },
-  "4395651": {
-   "status": "day-to-day",
-   "name": "Coby White",
-   "team": "CHA",
-   "date": "2026-11-05T01:38Z",
-   "note": "White (calf) is available for Wednesday's game in Brooklyn."
-  },
   "5061575": {
    "status": "out",
    "name": "Kon Knueppel",
    "team": "CHA",
-   "date": "2026-11-05T01:00Z",
-   "note": "Knueppel (hamstring) exited to the locker room in the first quarter of Wednesday's game against the Nets, Brian Lewis of the New York Post reports."
+   "date": "2026-11-05T01:54Z",
+   "note": "Knueppel exited Wednesday's game against the Nets after experiencing soreness in his left leg and he will not return, Brett Siegel of ClutchPoints.com reports."
   },
   "4066218": {
    "status": "out",
@@ -103,8 +96,8 @@
    "status": "day-to-day",
    "name": "Jarrett Allen",
    "team": "CLE",
-   "date": "2026-11-05T01:37Z",
-   "note": "Allen accumulated 14 points (5-10 FG, 4-6 FT), six rebounds, one assist, one block and one steal across 28 minutes during Monday's 117-112 loss to the Thunder."
+   "date": "2026-11-05T01:54Z",
+   "note": "Allen (knee) is doubtful to return to Wednesday's game against the Thunder, Brett Siegel of ClutchPoints.com reports."
   },
   "4683747": {
    "status": "out",
@@ -308,13 +301,6 @@
    "team": "MEM",
    "date": "2026-11-03T23:19Z",
    "note": "Pippen (back) won't play Wednesday against the Pacers."
-  },
-  "3032977": {
-   "status": "day-to-day",
-   "name": "Giannis Antetokounmpo",
-   "team": "MIA",
-   "date": "2026-11-04T01:05Z",
-   "note": "Antetokounmpo is probable to play Wednesday against the Clippers due to a sprained right wrist."
   },
   "4697268": {
    "status": "out",

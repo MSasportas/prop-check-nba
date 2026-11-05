@@ -99,8 +99,7 @@
     "Moussa Diabate"
    ],
    "status": {
-    "Coby White": "questionable",
-    "Kon Knueppel": "questionable",
+    "Kon Knueppel": "out",
     "Grant Williams": "out"
    }
   },
@@ -182,7 +181,7 @@
     "Jarrett Allen"
    ],
    "status": {
-    "Jarrett Allen": "questionable",
+    "Jarrett Allen": "doubtful",
     "Nae'Qwan Tomlin": "out",
     "Jaylon Tyson": "out",
     "Peyton Watson": "out"
@@ -410,5 +409,5 @@
    }
   }
  },
- "at": "2026-11-04T20:50:01-05:00"
+ "at": "2026-11-04T21:00:00-05:00"
 }
