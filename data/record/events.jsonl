@@ -178,3 +178,6 @@
 {"actual":null,"actual_text":"26 points","at":"2026-11-04T22:20:00-05:00","id":"2026-11-04:401909925:4278104:points:21.5:under","price":-125,"result":"L","t":"graded","units":-1.0}
 {"actual":null,"actual_text":"7 points","at":"2026-11-04T22:20:00-05:00","id":"2026-11-04:401909925:4433249:points:8.5:under","price":-120,"result":"W","t":"graded","units":0.8333}
 {"actual":null,"actual_text":"4 assists","at":"2026-11-04T22:20:00-05:00","id":"2026-11-04:401909925:3032979:assists:3.5:under","price":115,"result":"L","t":"graded","units":-1.0}
+{"at":"2026-11-04T22:30:00-05:00","id":"2026-11-04:401909935:3448:threes:1.5:over","state":"locked","t":"locked"}
+{"at":"2026-11-04T22:30:00-05:00","id":"2026-11-04:401909935:3936099:rebounds:4.5:over","state":"locked","t":"locked"}
+{"actual":null,"actual_text":"8 assists","at":"2026-11-04T22:30:00-05:00","id":"2026-11-04:401909929:4278073:assists:5.5:under","price":120,"result":"L","t":"graded","units":-1.0}
