@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-04",
- "generated_at": "2026-11-04T21:40:01-05:00",
+ "generated_at": "2026-11-04T21:40:22-05:00",
  "games": [
   {
    "game_id": "401909922",
@@ -17,7 +17,7 @@
     "abbrev": "DET",
     "score": 98
    },
-   "updated_at": "2026-11-04T21:40:01-05:00"
+   "updated_at": "2026-11-04T21:40:22-05:00"
   },
   {
    "game_id": "401909924",
@@ -34,14 +34,14 @@
     "abbrev": "BOS",
     "score": 97
    },
-   "updated_at": "2026-11-04T21:40:01-05:00"
+   "updated_at": "2026-11-04T21:40:22-05:00"
   },
   {
    "game_id": "401909925",
    "state": "in",
    "period": 3,
-   "clock": "30.4",
-   "detail": "30.4 - 3rd Quarter",
+   "clock": "9.4",
+   "detail": "9.4 - 3rd Quarter",
    "in_break": false,
    "away": {
     "abbrev": "CHA",
@@ -51,14 +51,14 @@
     "abbrev": "BKN",
     "score": 80
    },
-   "updated_at": "2026-11-04T21:40:01-05:00"
+   "updated_at": "2026-11-04T21:40:22-05:00"
   },
   {
    "game_id": "401909928",
    "state": "in",
    "period": 3,
-   "clock": "6:28",
-   "detail": "6:28 - 3rd Quarter",
+   "clock": "6:21",
+   "detail": "6:21 - 3rd Quarter",
    "in_break": false,
    "away": {
     "abbrev": "UTA",
@@ -66,16 +66,16 @@
    },
    "home": {
     "abbrev": "NOP",
-    "score": 54
+    "score": 56
    },
-   "updated_at": "2026-11-04T21:40:01-05:00"
+   "updated_at": "2026-11-04T21:40:22-05:00"
   },
   {
    "game_id": "401909929",
    "state": "in",
    "period": 3,
-   "clock": "2:54",
-   "detail": "2:54 - 3rd Quarter",
+   "clock": "2:52",
+   "detail": "2:52 - 3rd Quarter",
    "in_break": false,
    "away": {
     "abbrev": "CLE",
@@ -83,16 +83,16 @@
    },
    "home": {
     "abbrev": "OKC",
-    "score": 77
+    "score": 79
    },
-   "updated_at": "2026-11-04T21:40:01-05:00"
+   "updated_at": "2026-11-04T21:40:22-05:00"
   },
   {
    "game_id": "401909931",
    "state": "in",
    "period": 2,
-   "clock": "10:48",
-   "detail": "10:48 - 2nd Quarter",
+   "clock": "10:31",
+   "detail": "10:31 - 2nd Quarter",
    "in_break": false,
    "away": {
     "abbrev": "TOR",
@@ -102,7 +102,7 @@
     "abbrev": "DEN",
     "score": 35
    },
-   "updated_at": "2026-11-04T21:40:01-05:00"
+   "updated_at": "2026-11-04T21:40:22-05:00"
   },
   {
    "game_id": "401909932",
@@ -119,7 +119,7 @@
     "abbrev": "PHX",
     "score": 34
    },
-   "updated_at": "2026-11-04T21:40:01-05:00"
+   "updated_at": "2026-11-04T21:40:22-05:00"
   }
  ],
  "picks": {
