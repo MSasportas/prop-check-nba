@@ -477,10 +477,10 @@
     "start": "2026-11-04T22:00:00-05:00",
     "away": "LAL",
     "home": "SAC",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "LAL": "116",
      "SAC": "103"
@@ -495,10 +495,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:18 - 4th",
+    "detail": "2:23 - 4th",
     "score": {
-     "MIA": "91",
-     "LAC": "98"
+     "MIA": "103",
+     "LAC": "104"
     }
    }
   ]
