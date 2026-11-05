@@ -353,7 +353,9 @@ def cuts(rows, need, cfg):
         for bk, bl, test in bands:
             sub = [e for e, f in rows if has(f) and test(f)]
             if any(e["result"] in ("W", "L", "PUSH", "VOID") for e in sub):
-                cut_rows.append(_row(bk, bl, sub, need))
+                row = _row(bk, bl, sub, need)
+                row["ids"] = [e["id"] for e in sub if e.get("id")]          # the page opens a row to these picks (2026-11-05)
+                cut_rows.append(row)
         if cut_rows:
             out.append({"key": key, "label": label, "note": note, "rows": cut_rows})
     return out

@@ -270,6 +270,14 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .tr .num{font:600 15px/18px var(--num)}
 .tr .lbl small{display:block;font-size:11px;line-height:14px;color:var(--warn)}
 .tr .hv{font-size:12px;color:var(--fg2)}
+button.tr{width:100%;background:none;border:0;border-bottom:1px solid var(--line);color:inherit;font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button.tr:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
+.tr .chev{display:inline-block;width:12px;color:var(--muted);font-weight:700;transition:transform .15s}
+.tr .chev.on{transform:rotate(90deg);color:var(--selected-text)}
+.cutl{padding:2px 0 10px 12px;border-left:2px solid var(--selected-text);margin:0 0 6px;background:var(--surface)}
+.cutl .cutd{font-size:11px;line-height:15px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:10px 0 2px}
+@media (prefers-reduced-motion:reduce){.tr .chev{transition:none}}
 .cut h3,.night h3,.cal-h h3{font:400 14px/20px var(--head);letter-spacing:.01em;margin:0}
 .cut{margin-top:16px}
 .cut .cn{font-size:11.5px;line-height:15px;color:var(--muted);margin-top:1px}
@@ -365,6 +373,7 @@ var TZ = 'America/New_York';
 var TITLE = 'Prop Check NBA';
 var SEEN_KEY = FIX ? 'pc_nba_seen_fx' : 'pc_nba_seen';
 var UI_DEF = { stale_after_min: 30, refresh_sec: 120 };
+var LATEST_N = 10;
 var SMALL_N = 30;          /* a cut row with fewer graded picks than this says "small sample" */
 var MARKET_LINE = 'Hard Rock prices only · No leg worse than -200 · Rebounds, points, assists, 3-pointers made · Main line only, over or under';
 
@@ -1369,18 +1378,17 @@ function renderRecord() {
     cuts.forEach(function (c) { app.appendChild(cutTable(c, few)); });
   }
 
-  /* every pick, as shown */
-  app.appendChild(h('div', { class: 'sec-h', style: 'margin-top:24px' }, h('h2', { text: 'Every pick' })));
-  var nights = allNights(), shown = 0;
-  nights.forEach(function (nt) {
-    var ents = arr(nt.entries).filter(isObj); if (!ents.length) return;
-    shown++; app.appendChild(nightSection(nt, ents));
-  });
-  if (!shown) app.appendChild(h('p', { class: 'mu', style: 'margin-top:16px', text: 'No nights on the Record yet.' }));
-  var older = arr(S.record.older);
-  if (S.olderIdx < older.length) {
-    app.appendChild(h('button', { class: 'btn wide', type: 'button', style: 'margin-top:18px', text: S.olderBusy ? 'Loading' : 'Show older', on: { click: loadOlder } }));
-    if (S.olderErr) app.appendChild(h('p', { class: 'note', style: 'color:var(--warn)', text: "Couldn't load older results. Try again." }));
+  /* latest picks only (Matt, 2026-11-05: no endless list). Older picks: tap a day on the calendar or a row in the cuts. */
+  var latest = [];
+  allNights().forEach(function (nt) { arr(nt.entries).filter(isObj).forEach(function (e) { latest.push(e); }); });
+  app.appendChild(h('div', { class: 'sec-h', style: 'margin-top:24px' }, h('h2', { text: 'Latest picks' }),
+    h('span', { class: 'mu', text: latest.length > LATEST_N ? 'Last ' + LATEST_N : '' })));
+  if (!latest.length) app.appendChild(h('p', { class: 'mu', style: 'margin-top:16px', text: 'No picks on the Record yet.' }));
+  else {
+    var lbox = h('section', { class: 'night' });
+    latest.slice(0, LATEST_N).forEach(function (e) { lbox.appendChild(entryRow(e, true)); });
+    app.appendChild(lbox);
+    if (latest.length > LATEST_N) app.appendChild(h('p', { class: 'note', style: 'margin-top:6px', text: 'For older picks, tap a day on the calendar or a row in the tables above.' }));
   }
   app.appendChild(h('p', { class: 'note', text: 'Graded at the posted price. Push and void are 0 units and left out of W-L and hit rate. The Record tracks the strategy: picks at or better than Pinnacle\u2019s fair price, live or replayed (REPLAY = the same rule run on price checks saved before it went live). A pick that went off the board after it was shown (TOO LATE) counts like any other pick.' }));
   app.appendChild(smallFoot());
@@ -1408,12 +1416,17 @@ function cutTable(c, few) {
   tbl.appendChild(h('div', { class: 'tr th', role: 'row' }, h('span', { role: 'columnheader', text: '' }), h('span', { role: 'columnheader', text: 'W-L' }),
     h('span', { role: 'columnheader', text: 'Units' }), h('span', { role: 'columnheader', text: 'Hit vs needs' })));
   arr(c.rows).filter(isObj).forEach(function (r) {
-    var k = sampleN(r), u = num(r.units);
-    tbl.appendChild(h('div', { class: 'tr', role: 'row' },
-      h('span', { class: 'lbl', role: 'cell' }, str(r.label) || str(r.key), few(k) ? h('small', { text: 'small sample' }) : null),
+    var k = sampleN(r), u = num(r.units), ids = arr(r.ids).map(str), key = str(c.key || c.label) + '|' + str(r.key), open = S.openCut === key;
+    var cells = [
+      h('span', { class: 'lbl', role: 'cell' }, ids.length ? h('span', { class: 'chev' + (open ? ' on' : ''), 'aria-hidden': 'true', text: '\u203A' }) : null,
+        str(r.label) || str(r.key), few(k) ? h('small', { text: 'small sample' }) : null),
       h('span', { class: 'num', role: 'cell', text: (num(r.w) || 0) + '-' + (num(r.l) || 0) }),
-      h('span', { class: 'num ' + signCls(u), role: 'cell', text: u == null ? '—' : (u > 0 ? '+' : u < 0 ? '-' : '') + Math.abs(u).toFixed(2) }),
-      h('span', { class: 'hv', role: 'cell', text: k ? (pctNear(r.hit_rate) || '—') + ' vs ' + (pctNear(r.needed) || '—') : '—' })));
+      h('span', { class: 'num ' + signCls(u), role: 'cell', text: u == null ? '\u2014' : (u > 0 ? '+' : u < 0 ? '-' : '') + Math.abs(u).toFixed(2) }),
+      h('span', { class: 'hv', role: 'cell', text: k ? (pctNear(r.hit_rate) || '\u2014') + ' vs ' + (pctNear(r.needed) || '\u2014') : '\u2014' })];
+    if (!ids.length) { tbl.appendChild(h('div', { class: 'tr', role: 'row' }, cells)); return; }
+    tbl.appendChild(h('button', { class: 'tr tap' + (open ? ' open' : ''), type: 'button', role: 'row', 'aria-expanded': open ? 'true' : 'false',
+      on: { click: function () { S.openCut = open ? null : key; rerender(); } } }, cells));
+    if (open) tbl.appendChild(cutList(ids));
   });
   box.appendChild(tbl);
   return box;
@@ -1480,15 +1493,40 @@ function calendar(sum) {
     app.appendChild(box);
   } else app.appendChild(h('p', { class: 'note', style: 'margin-top:6px', text: 'Tap a day to see its picks.' }));
 }
-function loadMonth(path) {
-  S.months[path] = { busy: true };
-  getJSON(BASE + path).then(function (j) { S.months[path] = j; rerender(); }, function () { S.months[path] = { _err: true }; S.selDay = null; rerender(); });
+/* an opened cut row: its picks, newest first, from every month (older month files load on demand) */
+function cutList(ids) {
+  var want = {}, box = h('div', { class: 'cutl' });
+  ids.forEach(function (i) { want[i] = 1; });
+  var older = arr(S.record && S.record.older).map(function (x) { return str(x).replace(/^\/+/, '').replace(/\.\.\//g, ''); });
+  var busy = false, err = false;
+  older.forEach(function (p) {
+    if (!S.months[p]) loadMonth(p, true);
+    if (S.months[p] && S.months[p].busy) busy = true;
+    if (S.months[p] && S.months[p]._err) err = true;
+  });
+  var seen = {}, list = [];
+  allNights().forEach(function (nt) { arr(nt.entries).filter(isObj).forEach(function (e) {
+    var i = str(e.id); if (want[i] && !seen[i]) { seen[i] = 1; list.push([nt.date, e]); } }); });
+  var lastDate = null;
+  list.forEach(function (x) {
+    if (x[0] !== lastDate) { lastDate = x[0]; box.appendChild(h('div', { class: 'cutd', text: fDateLong(x[0]) })); }
+    box.appendChild(entryRow(x[1]));
+  });
+  if (busy) box.appendChild(h('p', { class: 'mu', text: 'Loading older picks' }));
+  else if (err) box.appendChild(h('p', { class: 'mu', text: "Couldn't load some older picks. Close and open the row to try again." }));
+  else if (!list.length) box.appendChild(h('p', { class: 'mu', text: 'No picks listed.' }));
+  return box;
 }
-function entryRow(e) {
+function loadMonth(path, keepDay) {
+  S.months[path] = { busy: true };
+  getJSON(BASE + path).then(function (j) { S.months[path] = j; rerender(); }, function () { S.months[path] = { _err: true }; if (!keepDay) S.selDay = null; rerender(); });
+}
+function entryRow(e, withDate) {
   var res = e.result == null ? null : str(e.result), known = { W: 1, L: 1, PUSH: 1, VOID: 1 };
   var tag = h('span', { class: 'tg ' + (res && known[res] ? res : 'none'), text: res || '–' });
   if (!res) tag.setAttribute('aria-label', 'Awaiting result');
   var l2 = [odds(e.price)];
+  if (withDate && e.id) { var dm = /^(\d{4}-\d{2}-\d{2})/.exec(str(e.id)); if (dm) l2.unshift(fDateShort(dm[1])); }
   if (e.game) l2.push(str(e.game));
   if (e.window) l2.push(str(e.window));
   if (!res) l2.push('Awaiting result');

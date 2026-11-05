@@ -141,6 +141,15 @@ class PulledCode(unittest.TestCase):
         self.assertTrue(p["added_at"])
 
 
+class CutIds(unittest.TestCase):
+    def test_rows_carry_their_pick_ids(self):
+        import record
+        rows = [({"id": "a", "result": "W", "units": 1, "price": 100}, {"market": "points", "side": "over", "edge": None, "settled": None, "price": 100}),
+                ({"id": "b", "result": "L", "units": -1, "price": 100}, {"market": "points", "side": "under", "edge": None, "settled": None, "price": 100})]
+        side = {c["key"]: c for c in record.cuts(rows, lambda x: 0.5, CFG)}["side"]
+        self.assertEqual({r["key"]: r["ids"] for r in side["rows"]}, {"over": ["a"], "under": ["b"]})
+
+
 class SideCut(unittest.TestCase):
     def test_side_from_bet_text(self):
         import record
@@ -180,7 +189,8 @@ class RecordCuts(unittest.TestCase):
         for k in cur["summary"]:
             if k == "cuts":   # cuts gain views over time (side added 2026-11-05); compare the ones the committed file has
                 have = {c["key"] for c in cur["summary"]["cuts"]}
-                self.assertEqual([c for c in rec["summary"]["cuts"] if c["key"] in have], cur["summary"]["cuts"], k)
+                strip = lambda cs: [dict(c, rows=[{x: v for x, v in r.items() if x != "ids"} for r in c["rows"]]) for c in cs]
+                self.assertEqual(strip([c for c in rec["summary"]["cuts"] if c["key"] in have]), strip(cur["summary"]["cuts"]), k)
             elif k != "days":
                 self.assertEqual(rec["summary"][k], cur["summary"][k], k)  # headline and rows: same values (no counted pull graded yet)
         for m, doc in months.items():
