@@ -465,10 +465,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:11 - 4th",
+    "detail": "6:05 - 4th",
     "score": {
-     "DAL": "87",
-     "SA": "94"
+     "DAL": "99",
+     "SA": "100"
     }
    },
    {
@@ -479,11 +479,11 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:47 - 4th",
     "score": {
-     "LAL": "87",
-     "SAC": "74"
+     "LAL": "94",
+     "SAC": "82"
     }
    },
    {
@@ -495,10 +495,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:10 - 3rd",
+    "detail": "3:20 - 3rd",
     "score": {
-     "MIA": "65",
-     "LAC": "73"
+     "MIA": "73",
+     "LAC": "85"
     }
    }
   ]
