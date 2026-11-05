@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T15:40:01-05:00",
+ "at": "2026-11-05T16:00:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -372,19 +372,19 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "5061589": {
+   "status": "out",
+   "name": "Yves Missi",
+   "team": "NO",
+   "date": "2026-11-05T20:47Z",
+   "note": "Missi (knee) is out for Friday's game against Minnesota."
+  },
   "4397688": {
    "status": "day-to-day",
    "name": "Trey Murphy III",
    "team": "NO",
    "date": "2026-11-05T20:19Z",
    "note": "Murphy (knee) is probable for Friday's game against Minnesota."
-  },
-  "5061589": {
-   "status": "out",
-   "name": "Yves Missi",
-   "team": "NO",
-   "date": "2026-10-30T21:32Z",
-   "note": "Missi (knee) won't play in Saturday's game against Atlanta."
   },
   "3062679": {
    "status": "day-to-day",
