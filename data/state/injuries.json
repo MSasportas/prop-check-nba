@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T10:30:00-05:00",
+ "at": "2026-11-05T12:10:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -99,6 +99,13 @@
    "date": "2026-11-04T23:50Z",
    "note": "The Hornets recalled Williams (hamstring) from the G League's Greensboro Swarm on Wednesday."
   },
+  "4278067": {
+   "status": "out",
+   "name": "Nic Claxton",
+   "team": "CHI",
+   "date": "2026-11-05T16:59Z",
+   "note": "The Bulls assigned Claxton (hamstring) to the G League's Windy City Bulls on Thursday."
+  },
   "4066650": {
    "status": "day-to-day",
    "name": "Zach Collins",
@@ -112,13 +119,6 @@
    "team": "CHI",
    "date": "2026-11-05T01:35Z",
    "note": "Smith (hand) won't return to Wednesday's game against the Knicks."
-  },
-  "4278067": {
-   "status": "out",
-   "name": "Nic Claxton",
-   "team": "CHI",
-   "date": "2026-11-04T22:34Z",
-   "note": "Claxton (hamstring) is listed as out for Wednesday's game against New York."
   },
   "4576087": {
    "status": "day-to-day",
