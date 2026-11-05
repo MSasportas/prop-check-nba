@@ -141,7 +141,7 @@
    }
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
@@ -164,7 +164,6 @@
     "Karlo Matkovic"
    ],
    "status": {
-    "Jordan Poole": "probable",
     "Yves Missi": "out",
     "Trey Murphy": "out"
    }
@@ -185,12 +184,12 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
-    "Jared McCain",
     "Ajay Mitchell",
     "Kenrich Williams",
+    "Aday Mara",
     "Isaiah Hartenstein"
    ],
    "status": {
@@ -206,22 +205,22 @@
    "state": "expected",
    "starters": [
     "Andrew Nembhard",
-    "Kelly Oubre",
+    "Jarace Walker",
     "Aaron Nesmith",
     "Pascal Siakam",
     "Ivica Zubac"
    ],
    "status": {
-    "Kelly Oubre": "questionable",
     "Obi Toppin": "questionable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "T.J. McConnell": "out",
+    "Kelly Oubre": "out",
     "Ben Sheppard": "out"
    }
   },
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ty Jerome",
     "Cedric Coward",
@@ -413,5 +412,5 @@
    }
   }
  },
- "at": "2026-11-04T19:30:00-05:00"
+ "at": "2026-11-04T19:40:01-05:00"
 }

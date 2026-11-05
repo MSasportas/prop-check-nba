@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T19:30:00-05:00",
+ "at": "2026-11-04T19:40:01-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -204,19 +204,19 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "2991235": {
+   "status": "out",
+   "name": "Steven Adams",
+   "team": "HOU",
+   "date": "2026-11-05T00:21Z",
+   "note": "Head coach Ime Udoka said Wednesday that Adams (calf) is still without a timetable to return and will be evaluated on a \"weekly basis,\" Varun Shankar of the Houston Chronicle reports."
+  },
   "3102529": {
    "status": "out",
    "name": "Clint Capela",
    "team": "HOU",
    "date": "2026-11-04T18:36Z",
    "note": "Capela (ankle) is out for Wednesday's game against the Timberwolves."
-  },
-  "2991235": {
-   "status": "out",
-   "name": "Steven Adams",
-   "team": "HOU",
-   "date": "2026-10-26T22:52Z",
-   "note": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports."
   },
   "3133603": {
    "status": "day-to-day",
@@ -560,13 +560,6 @@
    "team": "TOR",
    "date": "2026-11-02T20:20Z",
    "note": "Bittle (foot) is out for Monday's game against the Clippers and remains without a timetable to return."
-  },
-  "4277919": {
-   "status": "day-to-day",
-   "name": "Mo Bamba",
-   "team": "UTAH",
-   "date": "2026-11-04T18:41Z",
-   "note": "Bamba (ankle) participated in Wednesday's morning shootaround, per Shreyas Laddha of The Salt Lake Tribune."
   },
   "3102530": {
    "status": "out",
