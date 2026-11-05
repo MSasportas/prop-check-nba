@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T17:40:01-05:00",
+ "at": "2026-11-05T17:50:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -127,6 +127,13 @@
    "date": "2026-11-05T01:35Z",
    "note": "Smith (hand) won't return to Wednesday's game against the Knicks."
   },
+  "5023693": {
+   "status": "day-to-day",
+   "name": "Tyrese Proctor",
+   "team": "CLE",
+   "date": "2026-11-05T22:29Z",
+   "note": "Proctor (ankle) is questionable to play in Friday's game against the 76ers."
+  },
   "4683747": {
    "status": "out",
    "name": "Jaylon Tyson",
@@ -147,13 +154,6 @@
    "team": "CLE",
    "date": "2026-11-05T22:13Z",
    "note": "Allen (knee) is questionable for Friday's game against Philadelphia."
-  },
-  "5023693": {
-   "status": "day-to-day",
-   "name": "Tyrese Proctor",
-   "team": "CLE",
-   "date": "2026-11-05T03:32Z",
-   "note": "Proctor exited Wednesday's 124-116 loss to the Thunder in the fourth quarter and did not return due to an apparent ankle injury, finishing with 11 points (4-7 FG, 2-3 3Pt, 1-1 FT), one rebound and one"
   },
   "5279129": {
    "status": "out",
