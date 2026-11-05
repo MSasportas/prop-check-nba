@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-04T22:10:01-05:00",
+ "generated_at": "2026-11-04T22:20:00-05:00",
  "summary": {
   "headline": {
-   "w": 20,
-   "l": 5,
+   "w": 21,
+   "l": 7,
    "push": 0,
    "void": 0,
-   "units": 15.04,
-   "hit_rate": 0.8,
-   "needed": 0.5162,
-   "n": 25
+   "units": 13.87,
+   "hit_rate": 0.75,
+   "needed": 0.5168,
+   "n": 28
   },
   "rows": [
    {
@@ -27,26 +27,26 @@
    {
     "key": "points",
     "label": "Points",
-    "w": 6,
-    "l": 2,
+    "w": 7,
+    "l": 3,
     "push": 0,
     "void": 0,
-    "units": 3.11,
-    "hit_rate": 0.75,
-    "needed": 0.5426,
-    "n": 8
+    "units": 2.95,
+    "hit_rate": 0.7,
+    "needed": 0.5442,
+    "n": 10
    },
    {
     "key": "assists",
     "label": "Assists",
     "w": 3,
-    "l": 0,
+    "l": 1,
     "push": 0,
     "void": 0,
-    "units": 2.66,
-    "hit_rate": 1.0,
-    "needed": 0.5374,
-    "n": 3
+    "units": 1.66,
+    "hit_rate": 0.75,
+    "needed": 0.5194,
+    "n": 4
    },
    {
     "key": "threes",
@@ -63,26 +63,26 @@
    {
     "key": "window:11 AM \u2192 90 min",
     "label": "Window 11 AM \u2192 90 min",
-    "w": 10,
-    "l": 2,
+    "w": 11,
+    "l": 3,
     "push": 0,
     "void": 0,
-    "units": 8.56,
-    "hit_rate": 0.8333,
-    "needed": 0.5022,
-    "n": 12
+    "units": 8.39,
+    "hit_rate": 0.7857,
+    "needed": 0.5091,
+    "n": 14
    },
    {
     "key": "window:90 \u2192 45 min",
     "label": "Window 90 \u2192 45 min",
     "w": 5,
-    "l": 2,
+    "l": 3,
     "push": 0,
     "void": 0,
-    "units": 2.91,
-    "hit_rate": 0.7143,
-    "needed": 0.5286,
-    "n": 7
+    "units": 1.91,
+    "hit_rate": 0.625,
+    "needed": 0.5207,
+    "n": 8
    },
    {
     "key": "window:45 \u2192 20 min",
@@ -118,26 +118,26 @@
      {
       "key": "points",
       "label": "Points",
-      "w": 6,
-      "l": 2,
+      "w": 7,
+      "l": 3,
       "push": 0,
       "void": 0,
-      "units": 3.11,
-      "hit_rate": 0.75,
-      "needed": 0.5426,
-      "n": 8
+      "units": 2.95,
+      "hit_rate": 0.7,
+      "needed": 0.5442,
+      "n": 10
      },
      {
       "key": "assists",
       "label": "Assists",
       "w": 3,
-      "l": 0,
+      "l": 1,
       "push": 0,
       "void": 0,
-      "units": 2.66,
-      "hit_rate": 1.0,
-      "needed": 0.5374,
-      "n": 3
+      "units": 1.66,
+      "hit_rate": 0.75,
+      "needed": 0.5194,
+      "n": 4
      },
      {
       "key": "threes",
@@ -161,14 +161,14 @@
      {
       "key": "e0",
       "label": "0 to 2%",
-      "w": 16,
-      "l": 4,
+      "w": 17,
+      "l": 6,
       "push": 0,
       "void": 0,
-      "units": 11.55,
-      "hit_rate": 0.8,
+      "units": 10.38,
+      "hit_rate": 0.7391,
       "needed": 0.5225,
-      "n": 20
+      "n": 23
      },
      {
       "key": "e2",
@@ -216,14 +216,14 @@
      {
       "key": "clear",
       "label": "Injury report clear",
-      "w": 13,
-      "l": 4,
+      "w": 14,
+      "l": 6,
       "push": 0,
       "void": 0,
-      "units": 9.18,
-      "hit_rate": 0.7647,
-      "needed": 0.5175,
-      "n": 17
+      "units": 8.01,
+      "hit_rate": 0.7,
+      "needed": 0.5182,
+      "n": 20
      },
      {
       "key": "starters",
@@ -248,25 +248,25 @@
       "key": "plus",
       "label": "Plus money",
       "w": 8,
-      "l": 0,
+      "l": 1,
       "push": 0,
       "void": 0,
-      "units": 10.4,
-      "hit_rate": 1.0,
-      "needed": 0.4369,
-      "n": 8
+      "units": 9.4,
+      "hit_rate": 0.8889,
+      "needed": 0.44,
+      "n": 9
      },
      {
       "key": "fav",
       "label": "-100 to -150",
-      "w": 12,
-      "l": 5,
+      "w": 13,
+      "l": 6,
       "push": 0,
       "void": 0,
-      "units": 4.64,
-      "hit_rate": 0.7059,
-      "needed": 0.5535,
-      "n": 17
+      "units": 4.47,
+      "hit_rate": 0.6842,
+      "needed": 0.5532,
+      "n": 19
      }
     ]
    }
@@ -274,11 +274,11 @@
   "days": [
    {
     "date": "2026-11-04",
-    "w": 2,
-    "l": 0,
+    "w": 3,
+    "l": 2,
     "push": 0,
     "void": 0,
-    "units": 2.7,
+    "units": 1.53,
     "n": 11,
     "graded": false
    },
@@ -358,9 +358,9 @@
   {
    "date": "2026-11-04",
    "graded": false,
-   "w": 2,
-   "l": 0,
-   "units": 2.7,
+   "w": 3,
+   "l": 2,
+   "units": 1.53,
    "entries": [
     {
      "id": "2026-11-04:401909922:3059318:threes:0.5:under",
@@ -431,9 +431,9 @@
        "at": "2026-11-04T18:00:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "26 points",
+     "units": -1.0,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
@@ -457,9 +457,9 @@
        "at": "2026-11-04T18:00:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "7 points",
+     "units": 0.8333,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
@@ -509,9 +509,9 @@
        "at": "2026-11-04T18:50:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "4 assists",
+     "units": -1.0,
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
