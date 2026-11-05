@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T16:20:00-05:00",
+ "at": "2026-11-05T17:20:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -78,12 +78,26 @@
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
   },
-  "5061575": {
+  "3032979": {
    "status": "day-to-day",
+   "name": "Dennis Schroder",
+   "team": "CHA",
+   "date": "2026-11-05T22:10Z",
+   "note": "Schroder recorded five points (2-4 FG, 0-2 3Pt, 1-2 FT), two rebounds, one assist and two steals in 23 minutes during Monday's 124-91 loss to Detroit."
+  },
+  "4433249": {
+   "status": "day-to-day",
+   "name": "Moussa Diabate",
+   "team": "CHA",
+   "date": "2026-11-05T22:08Z",
+   "note": "Diabate (quadriceps) is questionable for Friday's game against the Celtics."
+  },
+  "5061575": {
+   "status": "out",
    "name": "Kon Knueppel",
    "team": "CHA",
-   "date": "2026-11-05T17:12Z",
-   "note": "Knueppel exited Wednesday's game against the Nets after experiencing soreness in his left leg and he will not return, Brett Siegel of ClutchPoints.com reports."
+   "date": "2026-11-05T22:05Z",
+   "note": "Knueppel (hamstring) is out for Friday's game against the Celtics."
   },
   "4066218": {
    "status": "out",
