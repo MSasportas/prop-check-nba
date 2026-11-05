@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T19:40:01-05:00",
+ "at": "2026-11-04T19:50:01-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -75,8 +75,8 @@
    "status": "out",
    "name": "Jaylon Tyson",
    "team": "CLE",
-   "date": "2026-11-03T22:11Z",
-   "note": "Tyson is out for Wednesday's game against the Thunder due to a right ankle sprain."
+   "date": "2026-11-05T00:33Z",
+   "note": "According to Cavaliers head coach Kenny Atkinson, Tyson (ankle) has been \"on the court lately progressing well,\" Chris Fedor of The Cleveland Plain Dealer reports."
   },
   "4576087": {
    "status": "out",
@@ -219,18 +219,11 @@
    "note": "Capela (ankle) is out for Wednesday's game against the Timberwolves."
   },
   "3133603": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Kelly Oubre Jr.",
    "team": "IND",
-   "date": "2026-11-03T23:40Z",
-   "note": "Oubre (knee) is questionable for Wednesday's game against the Grizzlies."
-  },
-  "4278355": {
-   "status": "out",
-   "name": "Obi Toppin",
-   "team": "IND",
-   "date": "2026-11-03T23:35Z",
-   "note": "Toppin (back) is questionable for Wednesday's game against the Grizzlies."
+   "date": "2026-11-05T00:37Z",
+   "note": "Oubre (calf) has been ruled out for Wednesday's game against the Grizzlies."
   },
   "2530530": {
    "status": "out",
@@ -350,13 +343,6 @@
    "team": "NO",
    "date": "2026-11-04T23:10Z",
    "note": "Murphy (knees) is listed as out for Wednesday's game against Utah."
-  },
-  "4277956": {
-   "status": "out",
-   "name": "Jordan Poole",
-   "team": "NO",
-   "date": "2026-11-03T22:56Z",
-   "note": "Poole (ankle) is listed as probable for Wednesday's game against Utah."
   },
   "5061589": {
    "status": "out",

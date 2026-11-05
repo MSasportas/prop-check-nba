@@ -155,7 +155,7 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Dejounte Murray",
     "Jeremiah Fears",
@@ -169,11 +169,11 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
-    "Meleek Thomas",
+    "Tyrese Proctor",
     "Evan Mobley",
     "Jarrett Allen"
    ],
@@ -202,16 +202,15 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Andrew Nembhard",
-    "Jarace Walker",
+    "Braden Smith",
     "Aaron Nesmith",
     "Pascal Siakam",
     "Ivica Zubac"
    ],
    "status": {
-    "Obi Toppin": "questionable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "T.J. McConnell": "out",
@@ -412,5 +411,5 @@
    }
   }
  },
- "at": "2026-11-04T19:40:01-05:00"
+ "at": "2026-11-04T19:50:01-05:00"
 }
