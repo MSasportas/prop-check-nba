@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T23:10:00-05:00",
+ "at": "2026-11-04T23:30:01-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -511,6 +511,13 @@
    "team": "PHX",
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
+  },
+  "4578893": {
+   "status": "out",
+   "name": "Vit Krejci",
+   "team": "POR",
+   "date": "2026-11-05T04:12Z",
+   "note": "Krejci won't return to Wednesday's game against the Suns due to a left ankle injury."
   },
   "4279888": {
    "status": "out",

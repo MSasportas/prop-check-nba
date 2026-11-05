@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-04",
- "generated_at": "2026-11-04T23:20:25-05:00",
+ "generated_at": "2026-11-04T23:30:01-05:00",
  "games": [
   {
    "game_id": "401909922",
@@ -91,35 +91,35 @@
    "game_id": "401909931",
    "state": "in",
    "period": 4,
-   "clock": "27.0",
-   "detail": "27.0 - 4th Quarter",
+   "clock": "0.0",
+   "detail": "0.0 - 4th Quarter",
    "in_break": false,
    "away": {
     "abbrev": "TOR",
-    "score": 107
+    "score": 109
    },
    "home": {
     "abbrev": "DEN",
-    "score": 126
+    "score": 128
    },
-   "updated_at": "2026-11-04T23:20:25-05:00"
+   "updated_at": "2026-11-04T23:30:01-05:00"
   },
   {
    "game_id": "401909932",
    "state": "in",
    "period": 4,
-   "clock": "7:51",
-   "detail": "7:51 - 4th Quarter",
+   "clock": "5:12",
+   "detail": "5:12 - 4th Quarter",
    "in_break": false,
    "away": {
     "abbrev": "POR",
-    "score": 114
+    "score": 118
    },
    "home": {
     "abbrev": "PHX",
-    "score": 97
+    "score": 103
    },
-   "updated_at": "2026-11-04T23:20:25-05:00"
+   "updated_at": "2026-11-04T23:30:01-05:00"
   },
   {
    "game_id": "401909934",
@@ -136,24 +136,24 @@
     "abbrev": "SAC",
     "score": 54
    },
-   "updated_at": "2026-11-04T23:20:25-05:00"
+   "updated_at": "2026-11-04T23:30:01-05:00"
   },
   {
    "game_id": "401909935",
    "state": "in",
    "period": 2,
-   "clock": "7:17",
-   "detail": "7:17 - 2nd Quarter",
+   "clock": "2:48",
+   "detail": "2:48 - 2nd Quarter",
    "in_break": false,
    "away": {
     "abbrev": "MIA",
-    "score": 35
+    "score": 45
    },
    "home": {
     "abbrev": "LAC",
-    "score": 45
+    "score": 63
    },
-   "updated_at": "2026-11-04T23:20:25-05:00"
+   "updated_at": "2026-11-04T23:30:01-05:00"
   }
  ],
  "picks": {
@@ -226,7 +226,7 @@
   "2026-11-04:401909935:3936099:rebounds:4.5:over": {
    "game_id": "401909935",
    "market": "rebounds",
-   "stat": 4,
+   "stat": 5,
    "dnp": false
   }
  }
