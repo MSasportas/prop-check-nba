@@ -266,13 +266,13 @@
    }
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Immanuel Quickley",
     "RJ Barrett",
     "Ja'Kobe Walter",
     "Scottie Barnes",
-    "Jakob Poeltl"
+    "Collin Murray-Boyles"
    ],
    "status": {
     "Nate Bittle": "out",
@@ -294,7 +294,7 @@
    }
   },
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Damian Lillard",
     "Scoot Henderson",
@@ -308,7 +308,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -391,9 +391,7 @@
     "Giannis Antetokounmpo",
     "Bam Adebayo"
    ],
-   "status": {
-    "Giannis Antetokounmpo": "probable"
-   }
+   "status": {}
   },
   "LAC": {
    "state": "expected",
@@ -405,7 +403,6 @@
     "Isaiah Jackson"
    ],
    "status": {
-    "Isaiah Jackson": "questionable",
     "Bradley Beal": "out",
     "Brandon Ingram": "out",
     "Jordan Miller": "out",
@@ -413,5 +410,5 @@
    }
   }
  },
- "at": "2026-11-04T20:40:28-05:00"
+ "at": "2026-11-04T20:50:01-05:00"
 }
