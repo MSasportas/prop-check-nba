@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T20:20:01-05:00",
+ "generated_at": "2026-11-04T20:30:00-05:00",
  "summary": {
   "headline": {
    "w": 18,
@@ -285,6 +285,32 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-04:401909934:4431679:points:9.5:under",
+     "kind": "single",
+     "player": "Precious Achiuwa",
+     "bet": "Under 9.5 points",
+     "market": "points",
+     "team": "SAC",
+     "game": "LAL at SAC",
+     "price": -105,
+     "first_price": -105,
+     "last_price": -105,
+     "prices": [
+      {
+       "price": -105,
+       "at": "2026-11-04T20:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min",
      "book": "hardrock",
      "under_fair": false
     }

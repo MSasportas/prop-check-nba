@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2584,
+   "pool_left": 2580,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-04T20:30:00-05:00",
-  "last_read_at": "2026-11-04T20:20:01-05:00",
+  "next_read_at": "2026-11-04T20:40:00-05:00",
+  "last_read_at": "2026-11-04T20:30:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-04T20:20:01-05:00"
+   "at": "2026-11-04T20:30:00-05:00"
   }
  },
  "games": [
@@ -32,7 +32,7 @@
    "away": "PHI",
    "home": "DET",
    "state": "in",
-   "detail": "1:25 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -63,7 +63,7 @@
    "away": "ATL",
    "home": "WAS",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "8:31 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -94,7 +94,7 @@
    "away": "MIL",
    "home": "BOS",
    "state": "in",
-   "detail": "6:46 - 2nd",
+   "detail": "2:23 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -125,7 +125,7 @@
    "away": "CHA",
    "home": "BKN",
    "state": "in",
-   "detail": "11:57 - 2nd",
+   "detail": "8:10 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -156,7 +156,7 @@
    "away": "CHI",
    "home": "NYK",
    "state": "in",
-   "detail": "9:13 - 2nd",
+   "detail": "4:56 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -187,7 +187,7 @@
    "away": "IND",
    "home": "MEM",
    "state": "in",
-   "detail": "6:56 - 1st",
+   "detail": "2:13 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -218,7 +218,7 @@
    "away": "UTA",
    "home": "NOP",
    "state": "in",
-   "detail": "6:45 - 1st",
+   "detail": "3:25 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -249,7 +249,7 @@
    "away": "CLE",
    "home": "OKC",
    "state": "in",
-   "detail": "7:18 - 1st",
+   "detail": "3:12 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -393,12 +393,17 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-04T11:00:01-05:00",
-   "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "read_at": "2026-11-04T20:30:00-05:00",
+   "picks": 1,
+   "checks": [
+    {
+     "read": "B",
+     "at": "2026-11-04T20:30:00-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-04T20:30:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-04T20:30:00-05:00"
+   "next_check_at": "2026-11-04T21:15:00-05:00"
   },
   {
    "id": "401909935",
@@ -692,6 +697,64 @@
    "rank": null
   },
   {
+   "player": "Precious Achiuwa",
+   "pid": "4431679",
+   "team": "SAC",
+   "opp": "LAL",
+   "home": true,
+   "game_id": "401909934",
+   "start": "2026-11-04T22:00:00-05:00",
+   "bet": "Under 9.5 points",
+   "market": "points",
+   "side": "under",
+   "line": 9.5,
+   "price": -105,
+   "price_at": "2026-11-04T20:30:00-05:00",
+   "read": "B",
+   "p": 0.5131,
+   "p_pct": 51,
+   "breakeven": 0.5122,
+   "breakeven_pct": 51,
+   "market_fair": null,
+   "n_books": 6,
+   "gap_ev": null,
+   "final_ev": 0.0454,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from +100 to -122 (47% to 51%). Hard Rock -105 is 0.2% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.4677,
+   "pin_after": 0.5131,
+   "pin_price_before": 100,
+   "pin_price_after": -122,
+   "others_move": -0.0004,
+   "n_others": 6,
+   "ev_vs_pin": 0.0017,
+   "window": "11 AM \u2192 90 min",
+   "gap_vs_pin": 0.0374,
+   "book": "hardrock",
+   "books": {
+    "hardrock": {
+     "ev_vs_pin": 0.0017,
+     "price": -105
+    }
+   },
+   "id": "2026-11-04:401909934:4431679:points:9.5:under",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "1257517180854075782",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/1257517180854075782",
+     "price": -105
+    },
+    "draftkings": null
+   },
+   "rank": 1
+  },
+  {
    "player": "Myles Turner",
    "pid": "3133628",
    "team": "MIL",
@@ -853,14 +916,10 @@
    "rank": null
   }
  ],
- "empty": {
-  "text": "No picks yet today",
-  "why": "1330 lines read. Pinnacle moved alone on 194, none of them bettable yet.",
-  "next": "2026-11-04T20:30:00-05:00"
- },
+ "empty": null,
  "counts": {
-  "lines_read": 1330,
-  "passing": 26,
+  "lines_read": 1334,
+  "passing": 27,
   "games": 14
  },
  "safety_paused": false,
@@ -869,6 +928,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-04T20:20:01-05:00",
- "status_at": "2026-11-04T20:20:01-05:00"
+ "generated_at": "2026-11-04T20:30:00-05:00",
+ "status_at": "2026-11-04T20:30:00-05:00"
 }
