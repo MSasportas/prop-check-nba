@@ -16,5 +16,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -q playwright && python -m playwright install --with-deps chromium > /dev/null
-      - run: python probe/qa_live.py
+      - run: pip install -q playwright && python -m playwright install --with-deps chromium webkit > /dev/null && sudo apt-get install -y -qq xvfb > /dev/null
+      - run: xvfb-run -a python probe/qa_live.py

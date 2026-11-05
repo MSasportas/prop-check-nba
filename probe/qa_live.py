@@ -13,8 +13,10 @@ JS = """async ([u, opts]) => { try { const r = await fetch(u, opts); const t = a
           return {ok: r.ok, status: r.status, acao: r.headers.get('access-control-allow-origin'), len: t.length}; }
         catch (e) { return {error: String(e)}; } }"""
 with sync_playwright() as p:
-    br = p.chromium.launch()
-    for label, ctxopts in (("iphone13", dict(p.devices["iPhone 13"])), ("desktop-chrome", {})):
+    runs = (("webkit-iphone13", p.webkit, dict(p.devices["iPhone 13"]), {}),
+            ("chrome-headful", p.chromium, {}, {"headless": False}))
+    for label, eng, ctxopts, launch in runs:
+        br = eng.launch(**launch)
         ctx = br.new_context(**ctxopts); pg = ctx.new_page(); cons = []
         pg.on("console", lambda m: cons.append(m.text[:300]) if m.type == "error" else None)
         hdrs = []
@@ -37,4 +39,4 @@ with sync_playwright() as p:
         print("PAGE TEXT", label, t[:700].replace("\n", " | "))
         print("CONSOLE", cons[:6])
         ctx.close()
-    br.close()
+        br.close()
