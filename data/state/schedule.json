@@ -479,11 +479,11 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:36 - 4th",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 4th",
     "score": {
-     "LAL": "104",
-     "SAC": "94"
+     "LAL": "116",
+     "SAC": "103"
     }
    },
    {
@@ -495,10 +495,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:11 - 4th",
+    "detail": "5:18 - 4th",
     "score": {
-     "MIA": "86",
-     "LAC": "89"
+     "MIA": "91",
+     "LAC": "98"
     }
    }
   ]
