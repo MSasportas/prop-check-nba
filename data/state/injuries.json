@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T21:30:00-05:00",
+ "at": "2026-11-04T21:40:01-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -309,6 +309,13 @@
    "date": "2026-11-04T18:48Z",
    "note": "The Lakers assigned Thiero (knee) to the G League's Coachella Valley Lakers on Wednesday, per Khobi Price of The California Post."
   },
+  "4432810": {
+   "status": "day-to-day",
+   "name": "Isaiah Stewart",
+   "team": "MEM",
+   "date": "2026-11-05T02:32Z",
+   "note": "Stewart recorded 24 points (8-9 FG, 2-3 3Pt, 6-6 FT) and four rebounds across 21 minutes during Saturday's 136-105 victory over Sacramento."
+  },
   "4431785": {
    "status": "out",
    "name": "Scotty Pippen Jr.",
@@ -441,6 +448,13 @@
    "team": "ORL",
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
+  },
+  "5105637": {
+   "status": "day-to-day",
+   "name": "Adem Bona",
+   "team": "PHI",
+   "date": "2026-11-05T02:23Z",
+   "note": "Bona exited to the locker room in the fourth quarter of Wednesday's game against Detroit due to an apparent head injury, Kris Rhim of ESPN reports."
   },
   "4870562": {
    "status": "out",

@@ -235,6 +235,7 @@
     "Zach Edey"
    ],
    "status": {
+    "Isaiah Stewart": "doubtful",
     "Scotty Pippen": "out"
    }
   },
@@ -357,12 +358,12 @@
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Austin Reaves",
-    "Ziaire Williams",
     "Matisse Thybulle",
+    "Jake LaRavia",
     "Walker Kessler"
    ],
    "status": {
@@ -370,7 +371,7 @@
    }
   },
   "SAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Acuff",
     "Zach LaVine",
@@ -413,5 +414,5 @@
    }
   }
  },
- "at": "2026-11-04T21:30:00-05:00"
+ "at": "2026-11-04T21:40:01-05:00"
 }
