@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T10:10:01-05:00",
+ "at": "2026-11-05T10:20:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -36,6 +36,13 @@
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
+  "4065648": {
+   "status": "day-to-day",
+   "name": "Jayson Tatum",
+   "team": "BOS",
+   "date": "2026-11-05T14:58Z",
+   "note": "Tatum will be rested Wednesday against the Bucks, Jack Simone of BostonSportsJournal.com reports."
+  },
   "4066354": {
    "status": "day-to-day",
    "name": "Payton Pritchard",
@@ -49,13 +56,6 @@
    "team": "BOS",
    "date": "2026-11-04T23:58Z",
    "note": "Carter (illness) practiced with the G League's Maine Celtics on Wednesday."
-  },
-  "4065648": {
-   "status": "out",
-   "name": "Jayson Tatum",
-   "team": "BOS",
-   "date": "2026-11-04T17:48Z",
-   "note": "Tatum will be rested Wednesday against the Bucks, Jack Simone of BostonSportsJournal.com reports."
   },
   "4712896": {
    "status": "day-to-day",
@@ -148,19 +148,19 @@
    "date": "2026-11-05T00:33Z",
    "note": "According to Cavaliers head coach Kenny Atkinson, Tyson (ankle) has been \"on the court lately progressing well,\" Chris Fedor of The Cleveland Plain Dealer reports."
   },
+  "4432582": {
+   "status": "day-to-day",
+   "name": "Max Christie",
+   "team": "DAL",
+   "date": "2026-11-05T15:05Z",
+   "note": "Christie (hip) is out for Wednesday's game against the Spurs."
+  },
   "4593125": {
    "status": "out",
    "name": "Santi Aldama",
    "team": "DAL",
    "date": "2026-11-04T23:38Z",
    "note": "Aldama (knee) is out for Wednesday's game against the Spurs, Grant Afseth of DallasHoopsJournal.com reports."
-  },
-  "4432582": {
-   "status": "out",
-   "name": "Max Christie",
-   "team": "DAL",
-   "date": "2026-11-03T22:25Z",
-   "note": "Christie (hip) is out for Wednesday's game against the Spurs."
   },
   "5148538": {
    "status": "out",
@@ -246,19 +246,19 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "3102529": {
+   "status": "day-to-day",
+   "name": "Clint Capela",
+   "team": "HOU",
+   "date": "2026-11-05T15:04Z",
+   "note": "Capela (ankle) is out for Wednesday's game against the Timberwolves."
+  },
   "2991235": {
    "status": "out",
    "name": "Steven Adams",
    "team": "HOU",
    "date": "2026-11-05T00:21Z",
    "note": "Head coach Ime Udoka said Wednesday that Adams (calf) is still without a timetable to return and will be evaluated on a \"weekly basis,\" Varun Shankar of the Houston Chronicle reports."
-  },
-  "3102529": {
-   "status": "out",
-   "name": "Clint Capela",
-   "team": "HOU",
-   "date": "2026-11-04T18:36Z",
-   "note": "Capela (ankle) is out for Wednesday's game against the Timberwolves."
   },
   "3133603": {
    "status": "day-to-day",
@@ -345,10 +345,10 @@
    "note": "Pippen (back) won't play Wednesday against the Pacers."
   },
   "4697268": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Kam Jones",
    "team": "MIL",
-   "date": "2026-11-05T00:21Z",
+   "date": "2026-11-05T14:58Z",
    "note": "Jones (ankle) won't play Wednesday in Boston."
   },
   "4432847": {
@@ -492,17 +492,17 @@
    "note": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN."
   },
   "4278402": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jordan Goodwin",
    "team": "PHX",
-   "date": "2026-11-05T01:04Z",
+   "date": "2026-11-05T15:04Z",
    "note": "Goodwin (calf) won't play in Wednesday's game against Portland."
   },
   "5105977": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Rasheer Fleming",
    "team": "PHX",
-   "date": "2026-11-04T20:17Z",
+   "date": "2026-11-05T15:04Z",
    "note": "Fleming is out for Wednesday's game against the Trail Blazers due to a sprained left ankle."
   },
   "4701232": {
