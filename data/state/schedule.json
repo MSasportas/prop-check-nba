@@ -435,7 +435,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "39.2 - 4th",
+    "detail": "27.0 - 4th",
     "score": {
      "TOR": "107",
      "DEN": "126"
@@ -450,7 +450,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:58 - 4th",
+    "detail": "7:40 - 4th",
     "score": {
      "POR": "114",
      "PHX": "97"

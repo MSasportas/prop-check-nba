@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-04",
- "generated_at": "2026-11-04T23:20:01-05:00",
+ "generated_at": "2026-11-04T23:20:25-05:00",
  "games": [
   {
    "game_id": "401909922",
@@ -91,8 +91,8 @@
    "game_id": "401909931",
    "state": "in",
    "period": 4,
-   "clock": "34.0",
-   "detail": "34.0 - 4th Quarter",
+   "clock": "27.0",
+   "detail": "27.0 - 4th Quarter",
    "in_break": false,
    "away": {
     "abbrev": "TOR",
@@ -102,14 +102,14 @@
     "abbrev": "DEN",
     "score": 126
    },
-   "updated_at": "2026-11-04T23:20:01-05:00"
+   "updated_at": "2026-11-04T23:20:25-05:00"
   },
   {
    "game_id": "401909932",
    "state": "in",
    "period": 4,
-   "clock": "7:58",
-   "detail": "7:58 - 4th Quarter",
+   "clock": "7:51",
+   "detail": "7:51 - 4th Quarter",
    "in_break": false,
    "away": {
     "abbrev": "POR",
@@ -119,7 +119,7 @@
     "abbrev": "PHX",
     "score": 97
    },
-   "updated_at": "2026-11-04T23:20:01-05:00"
+   "updated_at": "2026-11-04T23:20:25-05:00"
   },
   {
    "game_id": "401909934",
@@ -136,7 +136,7 @@
     "abbrev": "SAC",
     "score": 54
    },
-   "updated_at": "2026-11-04T23:20:01-05:00"
+   "updated_at": "2026-11-04T23:20:25-05:00"
   },
   {
    "game_id": "401909935",
@@ -153,7 +153,7 @@
     "abbrev": "LAC",
     "score": 45
    },
-   "updated_at": "2026-11-04T23:20:01-05:00"
+   "updated_at": "2026-11-04T23:20:25-05:00"
   }
  ],
  "picks": {
