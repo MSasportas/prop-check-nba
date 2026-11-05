@@ -1,28 +1,28 @@
 {
- "generated_at": "2026-11-05T00:50:01-05:00",
+ "generated_at": "2026-11-05T01:30:00-05:00",
  "summary": {
   "headline": {
-   "w": 24,
+   "w": 26,
    "l": 9,
    "push": 0,
    "void": 0,
-   "units": 14.78,
-   "hit_rate": 0.7273,
-   "needed": 0.5158,
-   "n": 33
+   "units": 17.18,
+   "hit_rate": 0.7429,
+   "needed": 0.5124,
+   "n": 35
   },
   "rows": [
    {
     "key": "rebounds",
     "label": "Rebounds",
-    "w": 5,
+    "w": 6,
     "l": 3,
     "push": 0,
     "void": 0,
-    "units": 1.71,
-    "hit_rate": 0.625,
-    "needed": 0.5302,
-    "n": 8
+    "units": 2.96,
+    "hit_rate": 0.6667,
+    "needed": 0.5206,
+    "n": 9
    },
    {
     "key": "points",
@@ -51,26 +51,26 @@
    {
     "key": "threes",
     "label": "3-pointers made",
-    "w": 7,
+    "w": 8,
     "l": 0,
     "push": 0,
     "void": 0,
-    "units": 8.72,
+    "units": 9.87,
     "hit_rate": 1.0,
-    "needed": 0.4536,
-    "n": 7
+    "needed": 0.455,
+    "n": 8
    },
    {
     "key": "window:11 AM \u2192 90 min",
     "label": "Window 11 AM \u2192 90 min",
-    "w": 12,
+    "w": 14,
     "l": 5,
     "push": 0,
     "void": 0,
-    "units": 7.35,
-    "hit_rate": 0.7059,
-    "needed": 0.5094,
-    "n": 17
+    "units": 9.75,
+    "hit_rate": 0.7368,
+    "needed": 0.5036,
+    "n": 19
    },
    {
     "key": "window:90 \u2192 45 min",
@@ -106,14 +106,14 @@
      {
       "key": "rebounds",
       "label": "Rebounds",
-      "w": 5,
+      "w": 6,
       "l": 3,
       "push": 0,
       "void": 0,
-      "units": 1.71,
-      "hit_rate": 0.625,
-      "needed": 0.5302,
-      "n": 8
+      "units": 2.96,
+      "hit_rate": 0.6667,
+      "needed": 0.5206,
+      "n": 9
      },
      {
       "key": "points",
@@ -142,14 +142,14 @@
      {
       "key": "threes",
       "label": "3-pointers made",
-      "w": 7,
+      "w": 8,
       "l": 0,
       "push": 0,
       "void": 0,
-      "units": 8.72,
+      "units": 9.87,
       "hit_rate": 1.0,
-      "needed": 0.4536,
-      "n": 7
+      "needed": 0.455,
+      "n": 8
      }
     ]
    },
@@ -161,26 +161,26 @@
      {
       "key": "e0",
       "label": "0 to 2%",
-      "w": 19,
+      "w": 20,
       "l": 8,
       "push": 0,
       "void": 0,
-      "units": 10.13,
-      "hit_rate": 0.7037,
-      "needed": 0.5224,
-      "n": 27
+      "units": 11.38,
+      "hit_rate": 0.7143,
+      "needed": 0.5196,
+      "n": 28
      },
      {
       "key": "e2",
       "label": "2 to 5%",
-      "w": 3,
+      "w": 4,
       "l": 1,
       "push": 0,
       "void": 0,
-      "units": 1.89,
-      "hit_rate": 0.75,
-      "needed": 0.5173,
-      "n": 4
+      "units": 3.04,
+      "hit_rate": 0.8,
+      "needed": 0.5069,
+      "n": 5
      },
      {
       "key": "e5",
@@ -216,14 +216,14 @@
      {
       "key": "clear",
       "label": "Injury report clear",
-      "w": 17,
+      "w": 19,
       "l": 8,
       "push": 0,
       "void": 0,
-      "units": 8.91,
-      "hit_rate": 0.68,
-      "needed": 0.5167,
-      "n": 25
+      "units": 11.31,
+      "hit_rate": 0.7037,
+      "needed": 0.5121,
+      "n": 27
      },
      {
       "key": "starters",
@@ -247,14 +247,14 @@
      {
       "key": "plus",
       "label": "Plus money",
-      "w": 9,
+      "w": 11,
       "l": 2,
       "push": 0,
       "void": 0,
-      "units": 9.55,
-      "hit_rate": 0.8182,
-      "needed": 0.4436,
-      "n": 11
+      "units": 11.95,
+      "hit_rate": 0.8462,
+      "needed": 0.4453,
+      "n": 13
      },
      {
       "key": "fav",
@@ -274,13 +274,13 @@
   "days": [
    {
     "date": "2026-11-04",
-    "w": 6,
+    "w": 8,
     "l": 4,
     "push": 0,
     "void": 0,
-    "units": 2.44,
+    "units": 4.84,
     "n": 12,
-    "graded": false
+    "graded": true
    },
    {
     "date": "2026-11-02",
@@ -357,10 +357,10 @@
  "nights": [
   {
    "date": "2026-11-04",
-   "graded": false,
-   "w": 6,
+   "graded": true,
+   "w": 8,
    "l": 4,
-   "units": 2.44,
+   "units": 4.84,
    "entries": [
     {
      "id": "2026-11-04:401909922:3059318:threes:0.5:under",
@@ -643,9 +643,9 @@
        "at": "2026-11-04T21:00:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "2 threes",
+     "units": 1.15,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
@@ -669,9 +669,9 @@
        "at": "2026-11-04T21:00:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "8 rebounds",
+     "units": 1.25,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
