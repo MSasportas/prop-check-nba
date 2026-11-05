@@ -83,4 +83,12 @@ if ath:
     a = json.loads(ath)
     save("espn_athlete.json", {k: a.get(k) for k in ("id", "uid", "guid", "alternateIds", "externalIds", "displayName", "headshot")})
 save("log.json", log)
-print(json.dumps(log, indent=1))
+for fn in sorted(os.listdir(OUT)):
+    print("=====", fn)
+    print(open(os.path.join(OUT, fn)).read()[:6000])
+for u in ["https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/athletes/4278104",
+          "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/4278104"]:
+    b = get(u)
+    if b:
+        print("=====", u)
+        print(b[:3000].decode("utf-8", "replace"))
