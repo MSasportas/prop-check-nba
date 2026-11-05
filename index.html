@@ -348,6 +348,7 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .plain{margin:10px 0 0;padding:0 0 0 18px;font-size:13.5px;line-height:20px;color:var(--fg2)}
 .plain li{margin:0 0 6px}
 .fixed{margin:10px 0 0;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--surface);font-size:13px;line-height:19px;font-weight:600;color:var(--fg)}
+.cutsw{display:flex;gap:6px;overflow-x:auto;margin:8px 0 10px;padding-bottom:2px;scrollbar-width:none}.cutsw::-webkit-scrollbar{display:none}.cswb{flex:0 0 auto;height:32px;padding:0 12px;border:1px solid var(--line2);border-radius:16px;background:var(--surface);color:var(--fg2);font:inherit;font-size:13px}.cswb:first-letter{text-transform:uppercase}.cut h3{display:none}.cswb.on{background:var(--selected-bg);color:var(--selected-text);border-color:var(--selected-bg)}
 </style>
 </head>
 <body>
@@ -373,7 +374,7 @@ var TZ = 'America/New_York';
 var TITLE = 'Prop Check NBA';
 var SEEN_KEY = FIX ? 'pc_nba_seen_fx' : 'pc_nba_seen';
 var UI_DEF = { stale_after_min: 30, refresh_sec: 120 };
-var LATEST_N = 10;
+var LATEST_N = 5;
 var SMALL_N = 30;          /* a cut row with fewer graded picks than this says "small sample" */
 var MARKET_LINE = 'Hard Rock prices only · No leg worse than -200 · Rebounds, points, assists, 3-pointers made · Main line only, over or under';
 
@@ -1374,8 +1375,14 @@ function renderRecord() {
   }
   if (wrows.length) cuts.push({ label: 'By price-check window', note: 'The two checks the Pinnacle move showed up between', rows: wrows });
   if (cuts.length) {
-    app.appendChild(h('div', { class: 'sec-h', style: 'margin-top:24px' }, h('h2', { text: 'Cuts' }), h('span', { class: 'mu', text: 'Same picks as the headline' })));
-    cuts.forEach(function (c) { app.appendChild(cutTable(c, few)); });
+    /* one table at a time behind a switcher (Matt, 2026-11-05: page too long) */
+    var ci = 0; cuts.forEach(function (c, i) { if (str(c.label) === S.cutSel) ci = i; });
+    app.appendChild(h('div', { class: 'sec-h', style: 'margin-top:24px' }, h('h2', { text: 'Breakdown' })));
+    app.appendChild(h('div', { class: 'cutsw', role: 'tablist' }, cuts.map(function (c, i) {
+      return h('button', { class: 'cswb' + (i === ci ? ' on' : ''), type: 'button', role: 'tab', 'aria-selected': i === ci ? 'true' : 'false',
+        text: str(c.label).replace(/^By /, ''), on: { click: function () { S.cutSel = str(c.label); S.openCut = null; rerender(); } } });
+    })));
+    app.appendChild(cutTable(cuts[ci], few));
   }
 
   /* latest picks only (Matt, 2026-11-05: no endless list). Older picks: tap a day on the calendar or a row in the cuts. */
@@ -1388,9 +1395,9 @@ function renderRecord() {
     var lbox = h('section', { class: 'night' });
     latest.slice(0, LATEST_N).forEach(function (e) { lbox.appendChild(entryRow(e, true)); });
     app.appendChild(lbox);
-    if (latest.length > LATEST_N) app.appendChild(h('p', { class: 'note', style: 'margin-top:6px', text: 'For older picks, tap a day on the calendar or a row in the tables above.' }));
+    if (latest.length > LATEST_N) app.appendChild(h('p', { class: 'note', style: 'margin-top:6px', text: 'Older: tap a day on the calendar or a table row.' }));
   }
-  app.appendChild(h('p', { class: 'note', text: 'Graded at the posted price. Push and void are 0 units and left out of W-L and hit rate. The Record tracks the strategy: picks at or better than Pinnacle\u2019s fair price, live or replayed (REPLAY = the same rule run on price checks saved before it went live). A pick that went off the board after it was shown (TOO LATE) counts like any other pick.' }));
+  app.appendChild(h('p', { class: 'note', text: 'Graded at the posted price. Push and void are 0 units. REPLAY = same rule run on saved price checks. TOO LATE picks count like any other.' }));
   app.appendChild(smallFoot());
 }
 function allNights() {

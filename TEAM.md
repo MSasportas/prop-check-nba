@@ -367,3 +367,4 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 - 2026-10-25 ~10:30 AM setup (CEO): interview done (rebounds only, main line, over+under, -200, parlays off, last hour before tip,
   regular season, new Discord channel). Old NBA build wiped (repo, secrets and Pages kept). Seed + source probe workflow pushed.
   Asked Matt for 3 new free odds keys and the Discord webhook.
+- 2026-11-05 (Matt: Record page still too long): Record tab now one breakdown table at a time behind a chip switcher (market, over/under, edge, settled, price), Latest picks cut to 5. Display only.
