@@ -62,7 +62,7 @@
    }
   },
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Brayden Burries",
     "Tyler Herro",
@@ -75,11 +75,11 @@
    }
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Derrick White",
     "Hugo Gonzalez",
-    "Baylor Scheierman",
+    "Sam Hauser",
     "Paul George",
     "Neemias Queta"
    ],
@@ -115,7 +115,7 @@
    }
   },
   "CHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Josh Giddey",
     "Norman Powell",
@@ -416,5 +416,5 @@
    }
   }
  },
- "at": "2026-11-04T19:00:01-05:00"
+ "at": "2026-11-04T19:10:00-05:00"
 }

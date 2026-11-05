@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T18:50:00-05:00",
+ "at": "2026-11-04T19:10:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -29,19 +29,19 @@
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
+  "4433188": {
+   "status": "out",
+   "name": "Devin Carter",
+   "team": "BOS",
+   "date": "2026-11-04T23:58Z",
+   "note": "Carter (illness) practiced with the G League's Maine Celtics on Wednesday."
+  },
   "4065648": {
    "status": "out",
    "name": "Jayson Tatum",
    "team": "BOS",
    "date": "2026-11-04T17:48Z",
    "note": "Tatum will be rested Wednesday against the Bucks, Jack Simone of BostonSportsJournal.com reports."
-  },
-  "4433188": {
-   "status": "out",
-   "name": "Devin Carter",
-   "team": "BOS",
-   "date": "2026-10-18T14:49Z",
-   "note": "Carter has been diagnosed with mononucleosis and is without a timetable for a return, Gary Washburn of The Boston Globe reports."
   },
   "5175643": {
    "status": "out",
@@ -61,8 +61,8 @@
    "status": "out",
    "name": "Grant Williams",
    "team": "CHA",
-   "date": "2026-11-04T17:59Z",
-   "note": "Charlotte assigned Williams (hamstring) to the G League's Greensboro Swarm on Wednesday."
+   "date": "2026-11-04T23:50Z",
+   "note": "The Hornets recalled Williams (hamstring) from the G League's Greensboro Swarm on Wednesday."
   },
   "4278067": {
    "status": "out",
