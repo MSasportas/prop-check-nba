@@ -1,12 +1,12 @@
 {
- "at": "2026-11-05T17:30:00-05:00",
+ "at": "2026-11-05T17:40:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
    "name": "Asa Newell",
    "team": "ATL",
-   "date": "2026-11-05T22:19Z",
-   "note": "Newell won't return to Wednesday's game against the Wizards due to a left great toe hyperextension, Brad Rowland of the Locked On Podcast Network reports. He'll finish with two points (1-1 FG), three "
+   "date": "2026-11-05T22:33Z",
+   "note": "Newell (toe) is out for Friday's game against Washington."
   },
   "3146557": {
    "status": "out",
@@ -155,19 +155,26 @@
    "date": "2026-11-05T03:32Z",
    "note": "Proctor exited Wednesday's 124-116 loss to the Thunder in the fourth quarter and did not return due to an apparent ankle injury, finishing with 11 points (4-7 FG, 2-3 3Pt, 1-1 FT), one rebound and one"
   },
-  "4432582": {
-   "status": "day-to-day",
-   "name": "Max Christie",
+  "5279129": {
+   "status": "out",
+   "name": "Sergio de Larrea",
    "team": "DAL",
-   "date": "2026-11-05T15:05Z",
-   "note": "Christie (hip) is out for Wednesday's game against the Spurs."
+   "date": "2026-11-05T22:24Z",
+   "note": "De Larrea (knee) is out for Friday's game against Utah."
   },
   "4593125": {
    "status": "out",
    "name": "Santi Aldama",
    "team": "DAL",
-   "date": "2026-11-04T23:38Z",
-   "note": "Aldama (knee) is out for Wednesday's game against the Spurs, Grant Afseth of DallasHoopsJournal.com reports."
+   "date": "2026-11-05T22:24Z",
+   "note": "Aldama (knee) is probable to suit up for Friday's game against the Jazz."
+  },
+  "4432582": {
+   "status": "day-to-day",
+   "name": "Max Christie",
+   "team": "DAL",
+   "date": "2026-11-05T22:20Z",
+   "note": "Christie (hip) is probable for Friday's game against the Jazz."
   },
   "5148538": {
    "status": "out",
@@ -182,13 +189,6 @@
    "team": "DAL",
    "date": "2026-11-01T22:57Z",
    "note": "Lively (foot) is listed as out for Monday's game against the Kings."
-  },
-  "5279129": {
-   "status": "out",
-   "name": "Sergio de Larrea",
-   "team": "DAL",
-   "date": "2026-10-30T22:34Z",
-   "note": "Head coach Dusty May said Friday that de Larrea (knee) will be re-evaluated next week, Noah Weber of TheSmokingCuban.com reports."
   },
   "3978": {
    "status": "day-to-day",
