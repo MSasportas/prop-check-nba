@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T19:10:00-05:00",
+ "generated_at": "2026-11-04T19:20:00-05:00",
  "summary": {
   "headline": {
    "w": 18,
@@ -251,6 +251,32 @@
       {
        "price": 115,
        "at": "2026-11-04T18:50:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-04:401909928:4433627:points:20.5:over",
+     "kind": "single",
+     "player": "Keyonte George",
+     "bet": "Over 20.5 points",
+     "market": "points",
+     "team": "UTA",
+     "game": "UTA at NOP",
+     "price": -125,
+     "first_price": -125,
+     "last_price": -125,
+     "prices": [
+      {
+       "price": -125,
+       "at": "2026-11-04T19:20:00-05:00"
       }
      ],
      "result": null,

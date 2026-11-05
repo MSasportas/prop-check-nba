@@ -297,13 +297,13 @@
     "start": "2026-11-04T19:00:00-05:00",
     "away": "PHI",
     "home": "DET",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/4 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:28 - 1st",
     "score": {
-     "PHI": "0",
-     "DET": "0"
+     "PHI": "7",
+     "DET": "8"
     }
    },
    {
@@ -312,13 +312,13 @@
     "start": "2026-11-04T19:00:00-05:00",
     "away": "ATL",
     "home": "WSH",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/4 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:50 - 1st",
     "score": {
-     "ATL": "0",
-     "WSH": "0"
+     "ATL": "9",
+     "WSH": "10"
     }
    },
    {

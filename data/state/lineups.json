@@ -89,7 +89,7 @@
    }
   },
   "CHA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Coby White",
     "Kon Knueppel",
@@ -102,7 +102,7 @@
    }
   },
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Nolan Traore",
     "Chaney Johnson",
@@ -128,7 +128,7 @@
    }
   },
   "NY": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Brunson",
     "Mikal Bridges",
@@ -232,7 +232,6 @@
     "Zach Edey"
    ],
    "status": {
-    "Quinten Post": "questionable",
     "Scotty Pippen": "out"
    }
   },
@@ -416,5 +415,5 @@
    }
   }
  },
- "at": "2026-11-04T19:10:00-05:00"
+ "at": "2026-11-04T19:20:00-05:00"
 }
