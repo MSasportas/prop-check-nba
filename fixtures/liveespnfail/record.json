@@ -154,6 +154,37 @@
     ]
    },
    {
+    "key": "side",
+    "label": "Over vs under",
+    "note": null,
+    "rows": [
+     {
+      "key": "over",
+      "label": "Over",
+      "w": 16,
+      "l": 6,
+      "push": 0,
+      "void": 3,
+      "units": 7.94,
+      "hit_rate": 0.7273,
+      "needed": 0.5488,
+      "n": 22
+     },
+     {
+      "key": "under",
+      "label": "Under",
+      "w": 10,
+      "l": 5,
+      "push": 0,
+      "void": 0,
+      "units": 4.86,
+      "hit_rate": 0.6667,
+      "needed": 0.5156,
+      "n": 15
+     }
+    ]
+   },
+   {
     "key": "edge",
     "label": "By edge",
     "note": "Hard Rock's price vs Pinnacle's fair price, when shown",

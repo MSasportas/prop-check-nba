@@ -309,7 +309,13 @@ def _facts_live(it, e):
     ev = sh.get("ev_vs_pin")
     return {"market": sh.get("market", "rebounds"), "edge": ev if isinstance(ev, (int, float)) else None,
             "settled": (it["states"][0] or {}).get("state") if it.get("states") else sh.get("state"),
-            "price": e["price"] if isinstance(e["price"], (int, float)) else None}
+            "price": e["price"] if isinstance(e["price"], (int, float)) else None,
+            "side": _side(sh.get("side") or e.get("bet"))}
+
+
+def _side(v):
+    v = str(v or "").strip().lower()
+    return "over" if v.startswith("over") else "under" if v.startswith("under") else None
 
 
 def _replay_facts(cfg):
@@ -323,7 +329,8 @@ def _replay_facts(cfg):
             if ev is None and isinstance(b.get("pin_after"), (int, float)) and isinstance(b.get("price"), (int, float)):
                 ev = round(odds.ev(b["pin_after"], b["price"]), 4)
             out[i] = {"market": b.get("market"), "edge": ev, "settled": None,
-                      "price": b["price"] if isinstance(b.get("price"), (int, float)) else None}
+                      "price": b["price"] if isinstance(b.get("price"), (int, float)) else None,
+                      "side": _side(b.get("side"))}
     return out
 
 
@@ -334,6 +341,9 @@ def cuts(rows, need, cfg):
     out = []
     for key, label, note, bands, has in (
             ("market", "By market", None, market_bands, lambda f: f["market"] is not None),
+            ("side", "Over vs under", None, [("over", "Over", lambda f: f["side"] == "over"),
+                                             ("under", "Under", lambda f: f["side"] == "under")],
+             lambda f: f.get("side") is not None),
             ("edge", "By edge", "Hard Rock's price vs Pinnacle's fair price, when shown", EDGE_BANDS,
              lambda f: f["edge"] is not None),
             ("settled", "By how settled when shown", "Replay bets have no settled level, so they are not in this cut",

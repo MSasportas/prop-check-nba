@@ -141,6 +141,14 @@ class PulledCode(unittest.TestCase):
         self.assertTrue(p["added_at"])
 
 
+class SideCut(unittest.TestCase):
+    def test_side_from_bet_text(self):
+        import record
+        self.assertEqual(record._side("Over 1.5 threes"), "over")
+        self.assertEqual(record._side("under"), "under")
+        self.assertIsNone(record._side(None))
+
+
 class RecordCuts(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.mkdtemp(prefix="pcnba_rc_")
@@ -170,7 +178,10 @@ class RecordCuts(unittest.TestCase):
             if k != "summary":
                 self.assertEqual(plain(rec)[k], plain(cur)[k], k)
         for k in cur["summary"]:
-            if k != "days":
+            if k == "cuts":   # cuts gain views over time (side added 2026-11-05); compare the ones the committed file has
+                have = {c["key"] for c in cur["summary"]["cuts"]}
+                self.assertEqual([c for c in rec["summary"]["cuts"] if c["key"] in have], cur["summary"]["cuts"], k)
+            elif k != "days":
                 self.assertEqual(rec["summary"][k], cur["summary"][k], k)  # headline and rows: same values (no counted pull graded yet)
         for m, doc in months.items():
             self.assertEqual(plain(doc), plain(json.load(open(os.path.join(ROOT, "data", "record", "%s.json" % m)))))
@@ -186,7 +197,7 @@ class RecordCuts(unittest.TestCase):
                 self.assertEqual(n, hd["n"], c["key"])
             else:
                 self.assertLessEqual(n, hd["n"])                       # replay bets have no settled level
-        self.assertEqual([c["key"] for c in rec["summary"]["cuts"]], ["market", "edge", "settled", "price"])
+        self.assertEqual([c["key"] for c in rec["summary"]["cuts"]], ["market", "side", "edge", "settled", "price"])
         self.assertEqual(hashlib.sha256(open(os.path.join(ROOT, "data", "record", "events.jsonl"), "rb").read()).hexdigest(), before)
 
     def test_bands(self):
