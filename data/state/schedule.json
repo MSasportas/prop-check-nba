@@ -462,13 +462,13 @@
     "start": "2026-11-04T21:30:00-05:00",
     "away": "DAL",
     "home": "SA",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:34 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "DAL": "108",
-     "SA": "109"
+     "DAL": "111",
+     "SA": "112"
     }
    },
    {
@@ -480,10 +480,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:05 - 4th",
+    "detail": "3:36 - 4th",
     "score": {
-     "LAL": "100",
-     "SAC": "88"
+     "LAL": "104",
+     "SAC": "94"
     }
    },
    {
@@ -494,11 +494,11 @@
     "home": "LAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:11 - 4th",
     "score": {
-     "MIA": "78",
-     "LAC": "87"
+     "MIA": "86",
+     "LAC": "89"
     }
    }
   ]
