@@ -449,11 +449,11 @@
     "home": "PHX",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:40 - 3rd",
     "score": {
-     "ORL": "51",
-     "PHX": "63"
+     "ORL": "57",
+     "PHX": "70"
     }
    },
    {
@@ -465,10 +465,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:22 - 1st",
+    "detail": "3:34 - 1st",
     "score": {
-     "MIA": "14",
-     "GS": "4"
+     "MIA": "21",
+     "GS": "15"
     }
    }
   ]
