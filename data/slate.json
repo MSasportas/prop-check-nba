@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2412,
+   "pool_left": 2404,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-06T18:00:00-05:00",
-  "last_read_at": "2026-11-06T17:30:01-05:00",
+  "next_read_at": "2026-11-06T18:15:00-05:00",
+  "last_read_at": "2026-11-06T18:00:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-06T17:40:00-05:00"
+   "at": "2026-11-06T18:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-06T17:40:00-05:00",
+    "at": "2026-11-06T18:00:00-05:00",
     "confirmed": []
    },
    "grade": true
@@ -104,13 +104,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-06T11:00:00-05:00",
+   "read_at": "2026-11-06T18:00:00-05:00",
    "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "checks": [
+    {
+     "read": "B",
+     "at": "2026-11-06T18:00:00-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-06T18:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-06T18:00:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-06T18:45:00-05:00",
+   "next_check_read": "C",
    "injury_clear": {
     "away": true,
     "home": false
@@ -258,12 +263,12 @@
  "picks": [],
  "empty": {
   "text": "No picks yet today",
-  "why": "840 lines read. Pinnacle moved alone on 30, none of them bettable yet.",
-  "next": "2026-11-06T18:00:00-05:00"
+  "why": "842 lines read. Pinnacle moved alone on 35, none of them bettable yet.",
+  "next": "2026-11-06T18:15:00-05:00"
  },
  "counts": {
-  "lines_read": 840,
-  "passing": 2,
+  "lines_read": 842,
+  "passing": 3,
   "games": 9
  },
  "safety_paused": false,
@@ -272,6 +277,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-06T17:40:00-05:00",
- "status_at": "2026-11-06T17:40:00-05:00"
+ "generated_at": "2026-11-06T18:00:00-05:00",
+ "status_at": "2026-11-06T18:00:00-05:00"
 }

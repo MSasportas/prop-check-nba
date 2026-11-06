@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T17:40:00-05:00",
+ "at": "2026-11-06T18:00:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -194,8 +194,8 @@
    "status": "day-to-day",
    "name": "DeMar DeRozan",
    "team": "DEN",
-   "date": "2026-11-05T15:04Z",
-   "note": "DeRozan has been ruled out for Wednesday's game against the Raptors due to lower-back spasms."
+   "date": "2026-11-06T22:48Z",
+   "note": "DeRozan (back) is probable for Saturday's game against the Pacers."
   },
   "4592427": {
    "status": "out",
@@ -650,7 +650,7 @@
    "name": "Anthony Davis",
    "team": "WSH",
    "date": "2026-11-06T22:37Z",
-   "note": "Davis is questionable for Friday's game against the Hawks due to a right ankle sprain, Josh Robbins of The Athletic reports."
+   "note": "Davis (ankle) is listed as out for Friday's game against the Hawks."
   },
   "4432187": {
    "status": "out",
