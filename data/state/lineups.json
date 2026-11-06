@@ -45,9 +45,7 @@
     "Jayson Tatum",
     "Neemias Queta"
    ],
-   "status": {
-    "Payton Pritchard": "questionable"
-   }
+   "status": {}
   },
   "CHA": {
    "state": "expected",
@@ -56,12 +54,12 @@
     "Sion James",
     "Brandon Miller",
     "Naz Reid",
-    "Moussa Diabate"
+    "Ryan Kalkbrenner"
    ],
    "status": {
-    "Moussa Diabate": "questionable",
-    "Dennis Schroder": "questionable",
+    "Moussa Diabate": "out",
     "Kon Knueppel": "out",
+    "Dennis Schroder": "out",
     "Grant Williams": "out"
    }
   },
@@ -107,9 +105,9 @@
     "Rudy Gobert"
    ],
    "status": {
-    "Terrence Shannon": "questionable",
     "Donte DiVincenzo": "out",
-    "Anthony Edwards": "out"
+    "Anthony Edwards": "out",
+    "Terrence Shannon": "out"
    }
   },
   "NO": {
@@ -122,7 +120,6 @@
     "Karlo Matkovic"
    ],
    "status": {
-    "Trey Murphy": "probable",
     "Yves Missi": "out"
    }
   },
@@ -150,6 +147,7 @@
     "Daniel Gafford"
    ],
    "status": {
+    "Kyrie Irving": "probable",
     "Max Christie": "probable",
     "Santi Aldama": "probable",
     "Tarik Biberovic": "out",
@@ -167,7 +165,10 @@
     "Jakob Poeltl"
    ],
    "status": {
+    "Immanuel Quickley": "questionable",
     "Scottie Barnes": "questionable",
+    "Jakob Poeltl": "probable",
+    "Kyle Anderson": "questionable",
     "Nate Bittle": "out",
     "Kawhi Leonard": "out"
    }
@@ -188,8 +189,8 @@
    "starters": [
     "Shai Gilgeous-Alexander",
     "Ajay Mitchell",
+    "Alex Caruso",
     "Kenrich Williams",
-    "Aday Mara",
     "Isaiah Hartenstein"
    ],
    "status": {
@@ -273,5 +274,5 @@
    }
   }
  },
- "at": "2026-11-06T05:00:01-05:00"
+ "at": "2026-11-06T16:00:01-05:00"
 }
