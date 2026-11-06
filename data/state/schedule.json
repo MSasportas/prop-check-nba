@@ -450,10 +450,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:20 - 4th",
+    "detail": "6:36 - 4th",
     "score": {
-     "ORL": "75",
-     "PHX": "105"
+     "ORL": "87",
+     "PHX": "109"
     }
    },
    {
@@ -465,10 +465,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:39 - 2nd",
+    "detail": "1.1 - 2nd",
     "score": {
-     "MIA": "49",
-     "GS": "45"
+     "MIA": "53",
+     "GS": "53"
     }
    }
   ]
