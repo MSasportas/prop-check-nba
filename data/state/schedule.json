@@ -450,10 +450,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:36 - 4th",
+    "detail": "2:35 - 4th",
     "score": {
-     "ORL": "87",
-     "PHX": "109"
+     "ORL": "100",
+     "PHX": "115"
     }
    },
    {
@@ -464,8 +464,8 @@
     "home": "GS",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1.1 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
      "MIA": "53",
      "GS": "53"
