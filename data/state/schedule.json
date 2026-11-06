@@ -447,13 +447,13 @@
     "start": "2026-11-05T21:00:00-05:00",
     "away": "ORL",
     "home": "PHX",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:35 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "ORL": "100",
-     "PHX": "115"
+     "ORL": "104",
+     "PHX": "117"
     }
    },
    {
@@ -464,11 +464,11 @@
     "home": "GS",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:47 - 3rd",
     "score": {
-     "MIA": "53",
-     "GS": "53"
+     "MIA": "61",
+     "GS": "58"
     }
    }
   ]
