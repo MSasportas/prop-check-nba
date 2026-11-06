@@ -240,9 +240,7 @@
     "Matisse Thybulle",
     "Walker Kessler"
    ],
-   "status": {
-    "Sandro Mamukelashvili": "questionable"
-   }
+   "status": {}
   },
   "SA": {
    "state": "expected",
@@ -268,11 +266,12 @@
     "Domantas Sabonis"
    ],
    "status": {
+    "De'Andre Hunter": "questionable",
     "Ben Simmons": "out",
     "Keegan Murray": "out",
     "Maxime Raynaud": "out"
    }
   }
  },
- "at": "2026-11-06T16:00:17-05:00"
+ "at": "2026-11-06T16:10:01-05:00"
 }
