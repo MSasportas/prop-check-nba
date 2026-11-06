@@ -462,13 +462,13 @@
     "start": "2026-11-05T22:00:00-05:00",
     "away": "MIA",
     "home": "GS",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/5 - 10:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:22 - 1st",
     "score": {
-     "MIA": "0",
-     "GS": "0"
+     "MIA": "14",
+     "GS": "4"
     }
    }
   ]
