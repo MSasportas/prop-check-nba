@@ -74,8 +74,8 @@
    ],
    "status": {
     "Ariel Hukporti": "out",
-    "Adem Bona": "doubtful",
-    "Dominick Barlow": "out"
+    "Dominick Barlow": "out",
+    "Adem Bona": "out"
    }
   },
   "CLE": {
@@ -273,5 +273,5 @@
    }
   }
  },
- "at": "2026-11-06T18:00:00-05:00"
+ "at": "2026-11-06T18:10:01-05:00"
 }
