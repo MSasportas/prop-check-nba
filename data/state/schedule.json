@@ -465,10 +465,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:47 - 3rd",
+    "detail": "6:13 - 3rd",
     "score": {
-     "MIA": "61",
-     "GS": "58"
+     "MIA": "64",
+     "GS": "72"
     }
    }
   ]
