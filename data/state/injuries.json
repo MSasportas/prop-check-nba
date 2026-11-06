@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T13:20:00-05:00",
+ "at": "2026-11-06T13:30:00-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -78,19 +78,19 @@
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
   },
-  "4433249": {
-   "status": "day-to-day",
-   "name": "Moussa Diabate",
-   "team": "CHA",
-   "date": "2026-11-06T17:57Z",
-   "note": "Diabate (quadriceps) has been ruled out for Friday's game against Boston, according to the Hornets' official injury report."
-  },
   "3032979": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Dennis Schroder",
    "team": "CHA",
-   "date": "2026-11-05T22:11Z",
-   "note": "Schroder (thigh) is questionable for Friday's game against the Celtics."
+   "date": "2026-11-06T18:09Z",
+   "note": "Schroder (thigh) is out for Friday's game versus Boston."
+  },
+  "4433249": {
+   "status": "out",
+   "name": "Moussa Diabate",
+   "team": "CHA",
+   "date": "2026-11-06T18:08Z",
+   "note": "Diabate (quadriceps) has been ruled out for Friday's game against Boston, according to the Hornets' official injury report."
   },
   "5061575": {
    "status": "out",
@@ -110,8 +110,8 @@
    "status": "out",
    "name": "Nic Claxton",
    "team": "CHI",
-   "date": "2026-11-05T23:39Z",
-   "note": "Claxton (hamstring) was recalled from the G League's Windy City Bulls on Thursday."
+   "date": "2026-11-06T18:21Z",
+   "note": "Head coach Tiago Splittler said Friday that Claxton (hamstring) is expected to make his season debut Sunday against the 76ers, per Joel Lorenzi of The Athletic."
   },
   "4066650": {
    "status": "day-to-day",
