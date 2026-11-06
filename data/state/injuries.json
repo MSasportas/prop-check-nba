@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T16:10:01-05:00",
+ "at": "2026-11-06T16:20:01-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -330,13 +330,6 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
-  "4278580": {
-   "status": "day-to-day",
-   "name": "Sandro Mamukelashvili",
-   "team": "LAL",
-   "date": "2026-11-06T01:03Z",
-   "note": "Mamukelashvili (illness) is listed as questionable for Friday's game against Portland."
-  },
   "4432810": {
    "status": "out",
    "name": "Isaiah Stewart",
@@ -532,6 +525,13 @@
    "team": "POR",
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
+  },
+  "4065732": {
+   "status": "day-to-day",
+   "name": "De'Andre Hunter",
+   "team": "SAC",
+   "date": "2026-11-06T21:07Z",
+   "note": "Hunter is questionable for Friday against the Spurs due to an illness."
   },
   "4898371": {
    "status": "out",
