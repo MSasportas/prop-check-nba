@@ -19,7 +19,7 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kingston Flemings",
     "Nickeil Alexander-Walker",
@@ -37,10 +37,10 @@
    }
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Derrick White",
-    "Hugo Gonzalez",
+    "Jordan Walsh",
     "Paul George",
     "Jayson Tatum",
     "Neemias Queta"
@@ -84,8 +84,8 @@
     "James Harden",
     "Donovan Mitchell",
     "Peyton Watson",
-    "Evan Mobley",
-    "Jarrett Allen"
+    "Mario Hezonja",
+    "Evan Mobley"
    ],
    "status": {
     "Peyton Watson": "questionable",
@@ -154,19 +154,19 @@
   "TOR": {
    "state": "expected",
    "starters": [
-    "Immanuel Quickley",
+    "Jamal Shead",
     "RJ Barrett",
     "Ja'Kobe Walter",
-    "Scottie Barnes",
+    "Collin Murray-Boyles",
     "Jakob Poeltl"
    ],
    "status": {
-    "Immanuel Quickley": "questionable",
-    "Scottie Barnes": "questionable",
     "Jakob Poeltl": "probable",
     "Kyle Anderson": "questionable",
+    "Scottie Barnes": "out",
     "Nate Bittle": "out",
-    "Kawhi Leonard": "out"
+    "Kawhi Leonard": "out",
+    "Immanuel Quickley": "out"
    }
   },
   "MIL": {
@@ -269,5 +269,5 @@
    }
   }
  },
- "at": "2026-11-06T18:40:00-05:00"
+ "at": "2026-11-06T18:50:00-05:00"
 }
