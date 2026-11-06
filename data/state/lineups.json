@@ -34,7 +34,7 @@
    }
   },
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
@@ -45,7 +45,7 @@
    "status": {}
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Stephen Curry",
     "Brandin Podziemski",
@@ -61,5 +61,5 @@
    }
   }
  },
- "at": "2026-11-05T21:30:00-05:00"
+ "at": "2026-11-05T21:40:01-05:00"
 }
