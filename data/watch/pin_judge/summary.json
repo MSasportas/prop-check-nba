@@ -4,17 +4,49 @@
  "about": "Behind the scenes (Matt, 2026-10-28): Hard Rock's main-line price is min_ev or better against Pinnacle's de-vigged chance on the same line. Research only: Backstage tab, never the Record or Discord. Discovery Oct 25-27 at +2%: 6 bets 5-1 +3.18u.",
  "from_slate": "2026-10-28",
  "min_ev": 0.02,
- "updated_at": "2026-11-05T01:30:04-05:00",
+ "updated_at": "2026-11-05T20:30:10-05:00",
  "total": {
   "w": 19,
   "l": 18,
   "push": 0,
   "void": 0,
   "units": 2.46,
-  "pending": 0,
+  "pending": 1,
   "hit_rate": 0.5135
  },
  "nights": [
+  {
+   "date": "2026-11-05",
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "bets": [
+    {
+     "at": "2026-11-05T20:30:00-05:00",
+     "bet": "Under 28.5 points",
+     "game_id": "401909937",
+     "gap_ev": -0.0219,
+     "home": false,
+     "line": 28.5,
+     "market": "points",
+     "market_fair": 0.5123,
+     "opp": "GS",
+     "pid": "3032977",
+     "pin_ev": 0.0434,
+     "pin_fair": 0.5465,
+     "player": "Giannis Antetokounmpo",
+     "price": -110,
+     "read": "B",
+     "side": "under",
+     "slate": "2026-11-05",
+     "start": "2026-11-05T22:00:00-05:00",
+     "team": "MIA",
+     "result": null,
+     "actual": null,
+     "units": null
+    }
+   ]
+  },
   {
    "date": "2026-11-04",
    "w": 6,
