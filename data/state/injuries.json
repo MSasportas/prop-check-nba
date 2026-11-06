@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T17:20:01-05:00",
+ "at": "2026-11-06T17:40:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -224,6 +224,20 @@
    "team": "DET",
    "date": "2026-10-25T14:56Z",
    "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
+  },
+  "6589": {
+   "status": "day-to-day",
+   "name": "Draymond Green",
+   "team": "GS",
+   "date": "2026-11-06T22:21Z",
+   "note": "Green (elbow) is listed as questionable ahead of Saturday's game against Orlando."
+  },
+  "3134903": {
+   "status": "day-to-day",
+   "name": "Gary Payton II",
+   "team": "GS",
+   "date": "2026-11-06T22:21Z",
+   "note": "Payton is questionable to play Saturday against the Magic due to right calf tightness."
   },
   "3102531": {
    "status": "out",
@@ -632,10 +646,10 @@
    "note": "Alexander won't play Wednesday against the Grizzlies due to a left knee bone bruise."
   },
   "6583": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Anthony Davis",
    "team": "WSH",
-   "date": "2026-11-05T22:51Z",
+   "date": "2026-11-06T22:37Z",
    "note": "Davis is questionable for Friday's game against the Hawks due to a right ankle sprain, Josh Robbins of The Athletic reports."
   },
   "4432187": {

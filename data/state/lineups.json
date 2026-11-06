@@ -7,13 +7,13 @@
     "Trae Young",
     "Kyshawn George",
     "AJ Dybantsa",
-    "Anthony Davis",
+    "Bilal Coulibaly",
     "Alex Sarr"
    ],
    "status": {
-    "Anthony Davis": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
+    "Anthony Davis": "out",
     "Tristan Vukcevic": "out",
     "Jamir Watkins": "out"
    }
@@ -273,5 +273,5 @@
    }
   }
  },
- "at": "2026-11-06T17:30:01-05:00"
+ "at": "2026-11-06T17:40:00-05:00"
 }
