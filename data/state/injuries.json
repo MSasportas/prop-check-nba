@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T13:30:16-05:00",
+ "at": "2026-11-06T14:20:00-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -154,6 +154,13 @@
    "team": "CLE",
    "date": "2026-11-05T22:13Z",
    "note": "Allen (knee) is questionable for Friday's game against Philadelphia."
+  },
+  "6442": {
+   "status": "day-to-day",
+   "name": "Kyrie Irving",
+   "team": "DAL",
+   "date": "2026-11-06T19:05Z",
+   "note": "Irving (illness) is probable for Friday's game against Utah."
   },
   "5279129": {
    "status": "out",
