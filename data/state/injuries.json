@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T19:40:01-05:00",
+ "at": "2026-11-05T19:40:15-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -362,8 +362,8 @@
    "status": "out",
    "name": "Kam Jones",
    "team": "MIL",
-   "date": "2026-11-06T00:26Z",
-   "note": "Jones (ankle/two-way player) is out for Friday's game against Toronto."
+   "date": "2026-11-05T23:02Z",
+   "note": "Jones (ankle) won't play Wednesday in Boston."
   },
   "4432847": {
    "status": "day-to-day",
@@ -546,6 +546,13 @@
    "team": "POR",
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
+  },
+  "4279318": {
+   "status": "day-to-day",
+   "name": "Daeqwon Plowden",
+   "team": "SAC",
+   "date": "2026-11-05T15:05Z",
+   "note": "Plowden (illness) is out for Wednesday's game against the Lakers."
   },
   "4898371": {
    "status": "out",
