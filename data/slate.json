@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2404,
+   "pool_left": 2396,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-06T18:15:00-05:00",
-  "last_read_at": "2026-11-06T18:00:00-05:00",
+  "next_read_at": "2026-11-06T18:30:00-05:00",
+  "last_read_at": "2026-11-06T18:20:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-06T18:00:00-05:00"
+   "at": "2026-11-06T18:20:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-06T18:00:00-05:00",
+    "at": "2026-11-06T18:20:00-05:00",
     "confirmed": []
    },
    "grade": true
@@ -48,18 +48,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-06T17:30:01-05:00",
+   "read_at": "2026-11-06T18:20:00-05:00",
    "picks": 0,
    "checks": [
     {
      "read": "B",
      "at": "2026-11-06T17:30:01-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-06T18:20:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-06T17:30:01-05:00",
+   "last_check_at": "2026-11-06T18:20:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-06T18:15:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-06T18:40:00-05:00",
+   "next_check_read": "D",
    "injury_clear": {
     "away": true,
     "home": true
@@ -76,18 +80,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-06T17:30:01-05:00",
-   "picks": 0,
+   "read_at": "2026-11-06T18:20:00-05:00",
+   "picks": 1,
    "checks": [
     {
      "read": "B",
      "at": "2026-11-06T17:30:01-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-06T18:20:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-06T17:30:01-05:00",
+   "last_check_at": "2026-11-06T18:20:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-06T18:15:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-06T18:40:00-05:00",
+   "next_check_read": "D",
    "injury_clear": {
     "away": true,
     "home": true
@@ -260,15 +268,71 @@
    }
   }
  ],
- "picks": [],
- "empty": {
-  "text": "No picks yet today",
-  "why": "842 lines read. Pinnacle moved alone on 35, none of them bettable yet.",
-  "next": "2026-11-06T18:15:00-05:00"
- },
+ "picks": [
+  {
+   "player": "Brandon Miller",
+   "pid": "4433287",
+   "team": "CHA",
+   "opp": "BOS",
+   "home": true,
+   "game_id": "401909288",
+   "start": "2026-11-06T19:00:00-05:00",
+   "bet": "Over 3.5 threes",
+   "market": "threes",
+   "side": "over",
+   "line": 3.5,
+   "price": 120,
+   "price_at": "2026-11-06T18:20:00-05:00",
+   "read": "C",
+   "p": 0.4581,
+   "p_pct": 46,
+   "breakeven": 0.4545,
+   "breakeven_pct": 45,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0258,
+   "model_p": null,
+   "reason": "Pinnacle moved the over from +116 to +104 (43% to 46%). Hard Rock +120 is 0.8% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.4323,
+   "pin_after": 0.4581,
+   "pin_price_before": 116,
+   "pin_price_after": 104,
+   "others_move": 0.0025,
+   "n_others": 8,
+   "ev_vs_pin": 0.0079,
+   "window": "90 \u2192 45 min",
+   "gap_vs_pin": 0.0357,
+   "book": "hardrock",
+   "books": {
+    "hardrock": {
+     "ev_vs_pin": 0.0079,
+     "price": 120
+    }
+   },
+   "id": "2026-11-06:401909288:4433287:threes:3.5:over",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-06T18:20:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "3973111146296246690",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/3973111146296246690",
+     "price": 120
+    },
+    "draftkings": null
+   },
+   "rank": 1
+  }
+ ],
+ "empty": null,
  "counts": {
-  "lines_read": 842,
-  "passing": 3,
+  "lines_read": 852,
+  "passing": 4,
   "games": 9
  },
  "safety_paused": false,
@@ -277,6 +341,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-06T18:00:00-05:00",
- "status_at": "2026-11-06T18:00:00-05:00"
+ "generated_at": "2026-11-06T18:20:00-05:00",
+ "status_at": "2026-11-06T18:20:00-05:00"
 }

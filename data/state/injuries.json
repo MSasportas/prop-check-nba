@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T18:00:00-05:00",
+ "at": "2026-11-06T18:20:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -148,33 +148,12 @@
    "date": "2026-11-05T22:13Z",
    "note": "Allen (knee) is questionable for Friday's game against Philadelphia."
   },
-  "6442": {
-   "status": "day-to-day",
-   "name": "Kyrie Irving",
-   "team": "DAL",
-   "date": "2026-11-06T19:05Z",
-   "note": "Irving (illness) is probable for Friday's game against Utah."
-  },
   "5279129": {
    "status": "out",
    "name": "Sergio de Larrea",
    "team": "DAL",
    "date": "2026-11-05T22:24Z",
    "note": "De Larrea (knee) is out for Friday's game against Utah."
-  },
-  "4593125": {
-   "status": "out",
-   "name": "Santi Aldama",
-   "team": "DAL",
-   "date": "2026-11-05T22:24Z",
-   "note": "Aldama (knee) is probable to suit up for Friday's game against the Jazz."
-  },
-  "4432582": {
-   "status": "day-to-day",
-   "name": "Max Christie",
-   "team": "DAL",
-   "date": "2026-11-05T22:20Z",
-   "note": "Christie (hip) is probable for Friday's game against the Jazz."
   },
   "5148538": {
    "status": "out",
@@ -281,19 +260,19 @@
    "date": "2026-11-05T00:21Z",
    "note": "Head coach Ime Udoka said Wednesday that Adams (calf) is still without a timetable to return and will be evaluated on a \"weekly basis,\" Varun Shankar of the Houston Chronicle reports."
   },
-  "3133603": {
-   "status": "day-to-day",
-   "name": "Kelly Oubre Jr.",
-   "team": "IND",
-   "date": "2026-11-05T15:00Z",
-   "note": "Oubre (calf) has been ruled out for Wednesday's game against the Grizzlies."
-  },
   "2530530": {
    "status": "out",
    "name": "T.J. McConnell",
    "team": "IND",
-   "date": "2026-11-02T18:19Z",
-   "note": "McConnell (hamstring) is out for Monday's game against the Hawks and remains week-to-week."
+   "date": "2026-11-06T23:06Z",
+   "note": "McConnell (hamstring) is questionable for Saturday's game against Denver."
+  },
+  "3133603": {
+   "status": "day-to-day",
+   "name": "Kelly Oubre Jr.",
+   "team": "IND",
+   "date": "2026-11-06T23:04Z",
+   "note": "Oubre (calf) is questionable for Saturday's game against Denver."
   },
   "5157066": {
    "status": "out",
@@ -478,11 +457,11 @@
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
   "5105637": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Adem Bona",
    "team": "PHI",
-   "date": "2026-11-05T22:18Z",
-   "note": "Bona (back) is doubtful to play in Friday's game against the Cavaliers, Ky Carlin of USA Today reports."
+   "date": "2026-11-06T23:10Z",
+   "note": "Bona (neck) is listed as out for Friday's game versus the Cavaliers."
   },
   "4870562": {
    "status": "out",

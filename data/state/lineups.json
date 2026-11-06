@@ -90,7 +90,6 @@
    "status": {
     "Peyton Watson": "questionable",
     "Jarrett Allen": "questionable",
-    "Tyrese Proctor": "questionable",
     "Nae'Qwan Tomlin": "out",
     "Jaylon Tyson": "out"
    }
@@ -147,9 +146,6 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Kyrie Irving": "probable",
-    "Max Christie": "probable",
-    "Santi Aldama": "probable",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Dereck Lively": "out"
@@ -273,5 +269,5 @@
    }
   }
  },
- "at": "2026-11-06T18:10:01-05:00"
+ "at": "2026-11-06T18:20:00-05:00"
 }
