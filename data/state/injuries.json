@@ -1,6 +1,13 @@
 {
- "at": "2026-11-06T17:10:00-05:00",
+ "at": "2026-11-06T17:20:01-05:00",
  "list": {
+  "4701230": {
+   "status": "out",
+   "name": "Jalen Johnson",
+   "team": "ATL",
+   "date": "2026-11-06T22:06Z",
+   "note": "Johnson (ankle) is out for Friday's game against the Wizards."
+  },
   "4585618": {
    "status": "out",
    "name": "Keshon Gilbert",
@@ -21,13 +28,6 @@
    "team": "ATL",
    "date": "2026-11-05T22:12Z",
    "note": "Landale (hip) has been ruled out for Friday's game against the Wizards."
-  },
-  "4701230": {
-   "status": "day-to-day",
-   "name": "Jalen Johnson",
-   "team": "ATL",
-   "date": "2026-11-05T22:08Z",
-   "note": "Johnson is questionable to suit up for Friday's game against Washington."
   },
   "4712863": {
    "status": "out",
