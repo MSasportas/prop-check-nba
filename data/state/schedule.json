@@ -450,10 +450,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:34 - 2nd",
+    "detail": "7:59 - 2nd",
     "score": {
-     "ORL": "26",
-     "PHX": "37"
+     "ORL": "33",
+     "PHX": "41"
     }
    },
    {
