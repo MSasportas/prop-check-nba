@@ -2,7 +2,7 @@
  "slate": "2026-11-05",
  "teams": {
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jase Richardson",
     "Anthony Black",
@@ -19,13 +19,13 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
     "Dillon Brooks",
     "Miles Bridges",
-    "Khaman Maluach"
+    "Oso Ighodaro"
    ],
    "status": {
     "Rasheer Fleming": "out",
@@ -61,5 +61,5 @@
    }
   }
  },
- "at": "2026-11-05T20:30:23-05:00"
+ "at": "2026-11-05T20:40:01-05:00"
 }
