@@ -360,10 +360,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:45 - 3rd",
+    "detail": "4:36 - 3rd",
     "score": {
-     "POR": "65",
-     "LAL": "59"
+     "POR": "68",
+     "LAL": "68"
     }
    },
    {
@@ -375,10 +375,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:48 - 3rd",
+    "detail": "5:03 - 3rd",
     "score": {
-     "SA": "75",
-     "SAC": "61"
+     "SA": "86",
+     "SAC": "71"
     }
    }
   ]
