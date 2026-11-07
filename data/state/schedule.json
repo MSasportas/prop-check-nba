@@ -252,13 +252,13 @@
     "start": "2026-11-06T19:00:00-05:00",
     "away": "WSH",
     "home": "ATL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:35 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "WSH": "126",
-     "ATL": "131"
+     "WSH": "132",
+     "ATL": "139"
     }
    },
    {
@@ -270,10 +270,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:24 - 4th",
+    "detail": "31.4 - 4th",
     "score": {
-     "BOS": "112",
-     "CHA": "67"
+     "BOS": "119",
+     "CHA": "80"
     }
    },
    {
@@ -285,10 +285,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:19 - 3rd",
+    "detail": "5:10 - 3rd",
     "score": {
-     "PHI": "61",
-     "CLE": "66"
+     "PHI": "68",
+     "CLE": "77"
     }
    },
    {
@@ -329,11 +329,11 @@
     "home": "MIL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:18 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "TOR": "45",
-     "MIL": "58"
+     "TOR": "51",
+     "MIL": "60"
     }
    },
    {
@@ -344,11 +344,11 @@
     "home": "NO",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:36 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "MIN": "53",
-     "NO": "45"
+     "MIN": "57",
+     "NO": "51"
     }
    },
    {
