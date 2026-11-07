@@ -285,10 +285,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:50 - 4th",
+    "detail": "6:32 - 4th",
     "score": {
-     "PHI": "80",
-     "CLE": "101"
+     "PHI": "82",
+     "CLE": "103"
     }
    },
    {
@@ -318,7 +318,7 @@
     "detail": "2:20 - 3rd",
     "score": {
      "OKC": "97",
-     "MEM": "70"
+     "MEM": "71"
     }
    },
    {
@@ -345,9 +345,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:48 - 3rd",
+    "detail": "2:46 - 3rd",
     "score": {
-     "MIN": "69",
+     "MIN": "71",
      "NO": "73"
     }
    },
