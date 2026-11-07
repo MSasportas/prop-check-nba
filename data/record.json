@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-06T22:20:00-05:00",
+ "generated_at": "2026-11-06T22:30:00-05:00",
  "summary": {
   "headline": {
-   "w": 26,
+   "w": 27,
    "l": 11,
    "push": 0,
    "void": 0,
-   "units": 15.18,
-   "hit_rate": 0.7027,
-   "needed": 0.5095,
-   "n": 37
+   "units": 16.43,
+   "hit_rate": 0.7105,
+   "needed": 0.5078,
+   "n": 38
   },
   "rows": [
    {
@@ -51,14 +51,14 @@
    {
     "key": "threes",
     "label": "3-pointers made",
-    "w": 8,
+    "w": 9,
     "l": 1,
     "push": 0,
     "void": 0,
-    "units": 8.87,
-    "hit_rate": 0.8889,
-    "needed": 0.455,
-    "n": 9
+    "units": 10.12,
+    "hit_rate": 0.9,
+    "needed": 0.4539,
+    "n": 10
    },
    {
     "key": "window:11 AM \u2192 90 min",
@@ -87,14 +87,14 @@
    {
     "key": "window:45 \u2192 20 min",
     "label": "Window 45 \u2192 20 min",
-    "w": 6,
+    "w": 7,
     "l": 2,
     "push": 0,
     "void": 0,
-    "units": 3.72,
-    "hit_rate": 0.75,
-    "needed": 0.5135,
-    "n": 8
+    "units": 4.97,
+    "hit_rate": 0.7778,
+    "needed": 0.5058,
+    "n": 9
    }
   ],
   "cuts": [
@@ -177,14 +177,14 @@
      {
       "key": "threes",
       "label": "3-pointers made",
-      "w": 8,
+      "w": 9,
       "l": 1,
       "push": 0,
       "void": 0,
-      "units": 8.87,
-      "hit_rate": 0.8889,
-      "needed": 0.455,
-      "n": 9,
+      "units": 10.12,
+      "hit_rate": 0.9,
+      "needed": 0.4539,
+      "n": 10,
       "ids": [
        "2026-11-06:401909288:4433287:threes:3.5:over",
        "2026-11-06:401909291:4683778:threes:2.5:over",
@@ -208,14 +208,14 @@
      {
       "key": "over",
       "label": "Over",
-      "w": 8,
+      "w": 9,
       "l": 2,
       "push": 0,
       "void": 0,
-      "units": 6.88,
-      "hit_rate": 0.8,
-      "needed": 0.4842,
-      "n": 10,
+      "units": 8.13,
+      "hit_rate": 0.8182,
+      "needed": 0.4806,
+      "n": 11,
       "ids": [
        "2026-11-06:401909288:4433287:threes:3.5:over",
        "2026-11-06:401909291:4683778:threes:2.5:over",
@@ -282,14 +282,14 @@
      {
       "key": "e0",
       "label": "0 to 2%",
-      "w": 20,
+      "w": 21,
       "l": 10,
       "push": 0,
       "void": 0,
-      "units": 9.38,
-      "hit_rate": 0.6667,
-      "needed": 0.5156,
-      "n": 30,
+      "units": 10.63,
+      "hit_rate": 0.6774,
+      "needed": 0.5133,
+      "n": 31,
       "ids": [
        "2026-11-06:401909288:4433287:threes:3.5:over",
        "2026-11-06:401909293:4869780:points:10.5:under",
@@ -428,14 +428,14 @@
      {
       "key": "starters",
       "label": "Starters confirmed",
-      "w": 3,
+      "w": 4,
       "l": 2,
       "push": 0,
       "void": 0,
-      "units": 1.0,
-      "hit_rate": 0.6,
-      "needed": 0.5046,
-      "n": 5,
+      "units": 2.25,
+      "hit_rate": 0.6667,
+      "needed": 0.4945,
+      "n": 6,
       "ids": [
        "2026-11-06:401909289:4576087:rebounds:3.5:under",
        "2026-11-06:401909291:4683778:threes:2.5:over",
@@ -455,14 +455,14 @@
      {
       "key": "plus",
       "label": "Plus money",
-      "w": 11,
+      "w": 12,
       "l": 4,
       "push": 0,
       "void": 0,
-      "units": 9.95,
-      "hit_rate": 0.7333,
-      "needed": 0.4473,
-      "n": 15,
+      "units": 11.2,
+      "hit_rate": 0.75,
+      "needed": 0.4471,
+      "n": 16,
       "ids": [
        "2026-11-06:401909288:4433287:threes:3.5:over",
        "2026-11-06:401909289:4576087:rebounds:3.5:under",
@@ -525,11 +525,11 @@
   "days": [
    {
     "date": "2026-11-06",
-    "w": 0,
+    "w": 1,
     "l": 2,
     "push": 0,
     "void": 0,
-    "units": -2.0,
+    "units": -0.75,
     "n": 4,
     "graded": false
    },
@@ -619,9 +619,9 @@
   {
    "date": "2026-11-06",
    "graded": false,
-   "w": 0,
+   "w": 1,
    "l": 2,
-   "units": -2.0,
+   "units": -0.75,
    "entries": [
     {
      "id": "2026-11-06:401909288:4433287:threes:3.5:over",
@@ -718,9 +718,9 @@
        "at": "2026-11-06T19:40:01-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "3 threes",
+     "units": 1.25,
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min",
