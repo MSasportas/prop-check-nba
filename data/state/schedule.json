@@ -255,10 +255,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:50 - 4th",
+    "detail": "1:35 - 4th",
     "score": {
-     "WSH": "115",
-     "ATL": "124"
+     "WSH": "126",
+     "ATL": "131"
     }
    },
    {
@@ -270,10 +270,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:26 - 4th",
+    "detail": "4:24 - 4th",
     "score": {
-     "BOS": "102",
-     "CHA": "61"
+     "BOS": "112",
+     "CHA": "67"
     }
    },
    {
@@ -284,11 +284,11 @@
     "home": "CLE",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:19 - 3rd",
     "score": {
-     "PHI": "54",
-     "CLE": "62"
+     "PHI": "61",
+     "CLE": "66"
     }
    },
    {
@@ -299,11 +299,11 @@
     "home": "DAL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:53 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "UTAH": "49",
-     "DAL": "50"
+     "UTAH": "57",
+     "DAL": "57"
     }
    },
    {
@@ -314,11 +314,11 @@
     "home": "MEM",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:54 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "OKC": "58",
-     "MEM": "46"
+     "OKC": "71",
+     "MEM": "49"
     }
    },
    {
@@ -330,10 +330,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:36 - 2nd",
+    "detail": "1:18 - 2nd",
     "score": {
-     "TOR": "40",
-     "MIL": "49"
+     "TOR": "45",
+     "MIL": "58"
     }
    },
    {
@@ -345,10 +345,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:17 - 2nd",
+    "detail": "2:36 - 2nd",
     "score": {
-     "MIN": "44",
-     "NO": "43"
+     "MIN": "53",
+     "NO": "45"
     }
    },
    {
