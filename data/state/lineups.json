@@ -64,7 +64,7 @@
    }
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
@@ -79,12 +79,12 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
     "Peyton Watson",
-    "Mario Hezonja",
+    "Sam Merrill",
     "Evan Mobley"
    ],
    "status": {
@@ -266,5 +266,5 @@
    }
   }
  },
- "at": "2026-11-06T19:00:00-05:00"
+ "at": "2026-11-06T19:10:00-05:00"
 }

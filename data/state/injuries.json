@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T19:00:00-05:00",
+ "at": "2026-11-06T19:10:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -120,26 +120,19 @@
    "date": "2026-11-05T01:35Z",
    "note": "Smith (hand) won't return to Wednesday's game against the Knicks."
   },
+  "4066328": {
+   "status": "out",
+   "name": "Jarrett Allen",
+   "team": "CLE",
+   "date": "2026-11-06T23:55Z",
+   "note": "Allen (knee) is out for Friday's game against the 76ers."
+  },
   "4683747": {
    "status": "out",
    "name": "Jaylon Tyson",
    "team": "CLE",
    "date": "2026-11-05T22:23Z",
    "note": "Tyson (ankle) is out for Friday's game against the 76ers."
-  },
-  "4576087": {
-   "status": "day-to-day",
-   "name": "Peyton Watson",
-   "team": "CLE",
-   "date": "2026-11-05T22:15Z",
-   "note": "Watson (hamstring) is questionable for Friday's game against the 76ers."
-  },
-  "4066328": {
-   "status": "day-to-day",
-   "name": "Jarrett Allen",
-   "team": "CLE",
-   "date": "2026-11-05T22:13Z",
-   "note": "Allen (knee) is questionable for Friday's game against Philadelphia."
   },
   "5279129": {
    "status": "out",

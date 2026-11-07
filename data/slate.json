@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2336,
+   "pool_left": 2324,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-06T19:10:00-05:00",
-  "last_read_at": "2026-11-06T18:50:00-05:00",
+  "next_read_at": "2026-11-06T19:15:00-05:00",
+  "last_read_at": "2026-11-06T19:10:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-06T19:00:00-05:00"
+   "at": "2026-11-06T19:10:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,11 +30,13 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-06T19:00:00-05:00",
+    "at": "2026-11-06T19:10:00-05:00",
     "confirmed": [
      "ATL",
      "BOS",
      "CHA",
+     "CLE",
+     "PHI",
      "WSH"
     ]
    },
@@ -122,11 +124,11 @@
    "state": "pre",
    "detail": "11/6 - 7:30 PM EST",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-11-06T18:50:00-05:00",
-   "picks": 0,
+   "read_at": "2026-11-06T19:10:00-05:00",
+   "picks": 1,
    "checks": [
     {
      "read": "B",
@@ -135,15 +137,19 @@
     {
      "read": "C",
      "at": "2026-11-06T18:50:00-05:00"
+    },
+    {
+     "read": "D",
+     "at": "2026-11-06T19:10:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-06T18:50:00-05:00",
-   "final": false,
-   "next_check_at": "2026-11-06T19:10:00-05:00",
-   "next_check_read": "D",
+   "last_check_at": "2026-11-06T19:10:00-05:00",
+   "final": true,
+   "next_check_at": null,
+   "next_check_read": null,
    "injury_clear": {
     "away": true,
-    "home": false
+    "home": true
    }
   },
   {
@@ -373,6 +379,72 @@
    "rank": 1
   },
   {
+   "player": "Peyton Watson",
+   "pid": "4576087",
+   "team": "CLE",
+   "opp": "PHI",
+   "home": true,
+   "game_id": "401909289",
+   "start": "2026-11-06T19:30:00-05:00",
+   "bet": "Under 3.5 rebounds",
+   "market": "rebounds",
+   "side": "under",
+   "line": 3.5,
+   "price": 115,
+   "price_at": "2026-11-06T19:10:00-05:00",
+   "read": "D",
+   "p": 0.4706,
+   "p_pct": 47,
+   "breakeven": 0.4651,
+   "breakeven_pct": 47,
+   "market_fair": null,
+   "n_books": 5,
+   "gap_ev": null,
+   "final_ev": 0.0458,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from +120 to -101 (42% to 47%). Hard Rock +115 is 1.2% better than Pinnacle's fair price; DraftKings +115 is 1.2% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.4248,
+   "pin_after": 0.4706,
+   "pin_price_before": 120,
+   "pin_price_after": -101,
+   "others_move": -0.0341,
+   "n_others": 5,
+   "ev_vs_pin": 0.0118,
+   "window": "45 \u2192 20 min",
+   "gap_vs_pin": 0.0374,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.0118,
+     "price": 115
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.0118,
+     "price": 115
+    }
+   },
+   "id": "2026-11-06:401909289:4576087:rebounds:3.5:under",
+   "state": "starters",
+   "state_label": "Starters confirmed",
+   "price_final": true,
+   "pulled": null,
+   "added_at": "2026-11-06T19:10:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "588694070073885084",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/588694070073885084",
+     "price": 115
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA362204094%232352266376_13L42648Q1647990913Q20",
+     "price": 115
+    }
+   },
+   "rank": 2
+  },
+  {
    "player": "Brandon Miller",
    "pid": "4433287",
    "team": "CHA",
@@ -427,8 +499,8 @@
  ],
  "empty": null,
  "counts": {
-  "lines_read": 886,
-  "passing": 9,
+  "lines_read": 894,
+  "passing": 12,
   "games": 9
  },
  "safety_paused": false,
@@ -437,6 +509,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-06T19:00:00-05:00",
- "status_at": "2026-11-06T19:00:00-05:00"
+ "generated_at": "2026-11-06T19:10:00-05:00",
+ "status_at": "2026-11-06T19:10:00-05:00"
 }
