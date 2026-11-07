@@ -94,7 +94,7 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -109,7 +109,7 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Dejounte Murray",
     "Jeremiah Fears",
@@ -151,7 +151,7 @@
    }
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Shead",
     "RJ Barrett",
@@ -167,7 +167,7 @@
    }
   },
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Brayden Burries",
     "Tyler Herro",
@@ -178,11 +178,11 @@
    "status": {}
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
     "Ajay Mitchell",
-    "Alex Caruso",
+    "Jared McCain",
     "Kenrich Williams",
     "Isaiah Hartenstein"
    ],
@@ -196,7 +196,7 @@
    }
   },
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ty Jerome",
     "Cedric Coward",
@@ -259,12 +259,12 @@
     "Domantas Sabonis"
    ],
    "status": {
-    "De'Andre Hunter": "questionable",
+    "De'Andre Hunter": "out",
     "Ben Simmons": "out",
     "Keegan Murray": "out",
     "Maxime Raynaud": "out"
    }
   }
  },
- "at": "2026-11-06T19:30:00-05:00"
+ "at": "2026-11-06T19:40:01-05:00"
 }
