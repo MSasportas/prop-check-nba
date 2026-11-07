@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T23:40:00-05:00",
+ "at": "2026-11-07T10:10:15-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -380,10 +380,10 @@
    "note": "Hart is out for Saturday's game against the Cavaliers due to right ankle soreness."
   },
   "4432823": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jaylin Williams",
    "team": "OKC",
-   "date": "2026-11-05T23:20Z",
+   "date": "2026-11-07T15:04Z",
    "note": "Williams (back) has been ruled out for Friday's game against the Grizzlies."
   },
   "5159925": {
@@ -520,10 +520,10 @@
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
   "4065732": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "De'Andre Hunter",
    "team": "SAC",
-   "date": "2026-11-07T00:36Z",
+   "date": "2026-11-07T15:05Z",
    "note": "Hunter (illness) is listed as out for Friday's game against San Antonio."
   },
   "4898371": {
@@ -611,10 +611,10 @@
    "note": "Alexander won't play Wednesday against the Grizzlies due to a left knee bone bruise."
   },
   "6583": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Anthony Davis",
    "team": "WSH",
-   "date": "2026-11-06T22:37Z",
+   "date": "2026-11-07T15:05Z",
    "note": "Davis (ankle) is listed as out for Friday's game against the Hawks."
   },
   "4432187": {
