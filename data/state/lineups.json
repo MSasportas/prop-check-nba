@@ -122,7 +122,7 @@
    }
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
@@ -136,10 +136,10 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
-    "Max Christie",
+    "Caleb Martin",
     "Cooper Flagg",
     "P.J. Washington",
     "Daniel Gafford"
@@ -181,8 +181,8 @@
    "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
-    "Ajay Mitchell",
     "Jared McCain",
+    "Ajay Mitchell",
     "Kenrich Williams",
     "Isaiah Hartenstein"
    ],
@@ -266,5 +266,5 @@
    }
   }
  },
- "at": "2026-11-06T19:40:01-05:00"
+ "at": "2026-11-06T19:50:00-05:00"
 }

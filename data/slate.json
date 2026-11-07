@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-06T19:40:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-06T19:40:01-05:00"
+   "at": "2026-11-06T19:50:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,12 +30,13 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-06T19:40:01-05:00",
+    "at": "2026-11-06T19:50:00-05:00",
     "confirmed": [
      "ATL",
      "BOS",
      "CHA",
      "CLE",
+     "DAL",
      "MEM",
      "MIL",
      "MIN",
@@ -43,6 +44,7 @@
      "OKC",
      "PHI",
      "TOR",
+     "UTAH",
      "WSH"
     ]
    },
@@ -56,7 +58,7 @@
    "away": "WAS",
    "home": "ATL",
    "state": "in",
-   "detail": "11:19 - 2nd",
+   "detail": "5:37 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -92,7 +94,7 @@
    "away": "BOS",
    "home": "CHA",
    "state": "in",
-   "detail": "12:00 - 2nd",
+   "detail": "7:26 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -127,8 +129,8 @@
    "start": "2026-11-06T19:30:00-05:00",
    "away": "PHI",
    "home": "CLE",
-   "state": "pre",
-   "detail": "11/6 - 7:30 PM EST",
+   "state": "in",
+   "detail": "7:55 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -166,8 +168,8 @@
    "state": "pre",
    "detail": "11/6 - 8:00 PM EST",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
    "read_at": "2026-11-06T19:40:01-05:00",
    "picks": 0,
@@ -596,6 +598,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-06T19:40:01-05:00",
- "status_at": "2026-11-06T19:40:01-05:00"
+ "generated_at": "2026-11-06T19:50:00-05:00",
+ "status_at": "2026-11-06T19:50:00-05:00"
 }
