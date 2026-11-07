@@ -345,7 +345,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "32.4 - 4th",
+    "detail": "24.3 - 4th",
     "score": {
      "MIN": "112",
      "NO": "104"
@@ -375,9 +375,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:03 - 1st",
+    "detail": "4:59 - 1st",
     "score": {
-     "SA": "18",
+     "SA": "20",
      "SAC": "20"
     }
    }
