@@ -285,10 +285,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:52 - 1st",
+    "detail": "1:26 - 1st",
     "score": {
      "PHI": "18",
-     "CLE": "29"
+     "CLE": "31"
     }
    },
    {
