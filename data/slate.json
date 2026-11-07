@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-06T21:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-06T22:10:01-05:00"
+   "at": "2026-11-06T22:20:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -133,8 +133,8 @@
    "start": "2026-11-06T19:30:00-05:00",
    "away": "PHI",
    "home": "CLE",
-   "state": "in",
-   "detail": "1:20 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -170,7 +170,7 @@
    "away": "UTA",
    "home": "DAL",
    "state": "in",
-   "detail": "4:07 - 4th",
+   "detail": "55.7 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -206,7 +206,7 @@
    "away": "OKC",
    "home": "MEM",
    "state": "in",
-   "detail": "9:23 - 4th",
+   "detail": "3:46 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -242,7 +242,7 @@
    "away": "TOR",
    "home": "MIL",
    "state": "in",
-   "detail": "10:10 - 4th",
+   "detail": "5:45 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -278,7 +278,7 @@
    "away": "MIN",
    "home": "NOP",
    "state": "in",
-   "detail": "9:46 - 4th",
+   "detail": "7:55 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -313,8 +313,8 @@
    "start": "2026-11-06T22:00:00-05:00",
    "away": "POR",
    "home": "LAL",
-   "state": "pre",
-   "detail": "11/6 - 10:00 PM EST",
+   "state": "in",
+   "detail": "7:37 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -542,7 +542,11 @@
    "price_final": false,
    "pulled": null,
    "added_at": "2026-11-06T19:10:00-05:00",
-   "result": null,
+   "result": {
+    "result": "L",
+    "actual": "9 rebounds",
+    "units": -1.0
+   },
    "links": null,
    "rank": null
   },
@@ -619,6 +623,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-06T22:10:01-05:00",
- "status_at": "2026-11-06T22:10:01-05:00"
+ "generated_at": "2026-11-06T22:20:00-05:00",
+ "status_at": "2026-11-06T22:20:00-05:00"
 }
