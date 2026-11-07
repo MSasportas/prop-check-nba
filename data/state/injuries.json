@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T21:20:00-05:00",
+ "at": "2026-11-06T21:50:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -336,6 +336,13 @@
    "team": "MIL",
    "date": "2026-11-06T15:08Z",
    "note": "Jones (ankle/two-way player) is out for Friday's game against Toronto."
+  },
+  "5279133": {
+   "status": "out",
+   "name": "Joan Beringer",
+   "team": "MIN",
+   "date": "2026-11-07T02:41Z",
+   "note": "Beringer was ruled out for the second half of Friday's game against the Pelicans due to a nasal fracture, Dane Moore of 'The Dane Moore NBA Podcast' reports."
   },
   "4432847": {
    "status": "out",
