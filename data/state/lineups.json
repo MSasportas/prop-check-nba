@@ -88,8 +88,7 @@
     "Evan Mobley"
    ],
    "status": {
-    "Peyton Watson": "questionable",
-    "Jarrett Allen": "questionable",
+    "Jarrett Allen": "out",
     "Nae'Qwan Tomlin": "out",
     "Jaylon Tyson": "out"
    }
@@ -161,8 +160,6 @@
     "Jakob Poeltl"
    ],
    "status": {
-    "Jakob Poeltl": "probable",
-    "Kyle Anderson": "questionable",
     "Scottie Barnes": "out",
     "Nate Bittle": "out",
     "Kawhi Leonard": "out",
@@ -269,5 +266,5 @@
    }
   }
  },
- "at": "2026-11-06T18:50:00-05:00"
+ "at": "2026-11-06T19:00:00-05:00"
 }

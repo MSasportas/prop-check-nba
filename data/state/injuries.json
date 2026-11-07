@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T18:30:01-05:00",
+ "at": "2026-11-06T19:00:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -554,26 +554,19 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
-  "3134908": {
-   "status": "day-to-day",
-   "name": "Jakob Poeltl",
-   "team": "TOR",
-   "date": "2026-11-06T18:03Z",
-   "note": "Poeltl (shoulder) is listed as probable for Friday's game against Milwaukee."
-  },
-  "4395724": {
-   "status": "day-to-day",
-   "name": "Immanuel Quickley",
-   "team": "TOR",
-   "date": "2026-11-06T17:59Z",
-   "note": "Quickley (hamstring) is questionable for Friday against the Bucks."
-  },
   "4433134": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Scottie Barnes",
    "team": "TOR",
-   "date": "2026-11-06T17:47Z",
-   "note": "Barnes (adductor) was not present at the morning shootaround, Michael Grange of Sportsnet.careports."
+   "date": "2026-11-06T23:44Z",
+   "note": "Barnes (adductor) is listed as out for Friday's game against Milwaukee, Michael Grange of Sportsnet.ca reports."
+  },
+  "4395724": {
+   "status": "out",
+   "name": "Immanuel Quickley",
+   "team": "TOR",
+   "date": "2026-11-06T23:41Z",
+   "note": "Quickley (hamstring) won't play Friday in Milwaukee, Michael Grange of Sportsnet.ca reports."
   },
   "2993874": {
    "status": "day-to-day",
