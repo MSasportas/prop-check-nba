@@ -1,6 +1,5 @@
 {
  "days": {
-  "2026-11-03": [],
   "2026-11-04": [
    {
     "id": "401909922",
@@ -381,12 +380,118 @@
      "SAC": "109"
     }
    }
+  ],
+  "2026-11-07": [
+   {
+    "id": "401909938",
+    "date": "2026-11-07",
+    "start": "2026-11-07T17:00:00-05:00",
+    "away": "DEN",
+    "home": "IND",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/7 - 5:00 PM EST",
+    "score": {
+     "DEN": "0",
+     "IND": "0"
+    }
+   },
+   {
+    "id": "401909939",
+    "date": "2026-11-07",
+    "start": "2026-11-07T19:30:00-05:00",
+    "away": "BKN",
+    "home": "ATL",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/7 - 7:30 PM EST",
+    "score": {
+     "BKN": "0",
+     "ATL": "0"
+    }
+   },
+   {
+    "id": "401909940",
+    "date": "2026-11-07",
+    "start": "2026-11-07T20:00:00-05:00",
+    "away": "NY",
+    "home": "CLE",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/7 - 8:00 PM EST",
+    "score": {
+     "NY": "0",
+     "CLE": "0"
+    }
+   },
+   {
+    "id": "401909941",
+    "date": "2026-11-07",
+    "start": "2026-11-07T20:00:00-05:00",
+    "away": "WSH",
+    "home": "OKC",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/7 - 8:00 PM EST",
+    "score": {
+     "WSH": "0",
+     "OKC": "0"
+    }
+   },
+   {
+    "id": "401909942",
+    "date": "2026-11-07",
+    "start": "2026-11-07T20:30:00-05:00",
+    "away": "ORL",
+    "home": "GS",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/7 - 8:30 PM EST",
+    "score": {
+     "ORL": "0",
+     "GS": "0"
+    }
+   },
+   {
+    "id": "401909943",
+    "date": "2026-11-07",
+    "start": "2026-11-07T21:00:00-05:00",
+    "away": "HOU",
+    "home": "PHX",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/7 - 9:00 PM EST",
+    "score": {
+     "HOU": "0",
+     "PHX": "0"
+    }
+   },
+   {
+    "id": "401909944",
+    "date": "2026-11-07",
+    "start": "2026-11-07T22:00:00-05:00",
+    "away": "SA",
+    "home": "POR",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/7 - 10:00 PM EST",
+    "score": {
+     "SA": "0",
+     "POR": "0"
+    }
+   }
   ]
  },
  "month": {
-  "made_for": "2026-11-06",
+  "made_for": "2026-11-07",
   "counts": {
-   "2026-11-06": 9,
    "2026-11-07": 7,
    "2026-11-08": 7,
    "2026-11-09": 8,

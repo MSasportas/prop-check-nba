@@ -1,5 +1,5 @@
 {
- "slate": "2026-11-06",
+ "slate": "2026-11-07",
  "teams": {
   "ATL": [
    {
@@ -79,7 +79,7 @@
     "name": "Jalen Johnson",
     "team": "ATL",
     "pos": "F",
-    "injury": "Day-To-Day",
+    "injury": "Out",
     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701230.png"
    },
    {
@@ -147,280 +147,150 @@
     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431714.png"
    }
   ],
-  "BOS": [
+  "BKN": [
    {
-    "pid": "4433188",
-    "name": "Devin Carter",
-    "team": "BOS",
-    "pos": "G",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433188.png"
-   },
-   {
-    "pid": "3195",
-    "name": "Mike Conley",
-    "team": "BOS",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3195.png"
-   },
-   {
-    "pid": "4277951",
-    "name": "Luka Garza",
-    "team": "BOS",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277951.png"
-   },
-   {
-    "pid": "4251",
-    "name": "Paul George",
-    "team": "BOS",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4251.png"
-   },
-   {
-    "pid": "5175647",
-    "name": "Hugo Gonzalez",
-    "team": "BOS",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175647.png"
-   },
-   {
-    "pid": "4397251",
-    "name": "Ron Harper Jr.",
-    "team": "BOS",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397251.png"
-   },
-   {
-    "pid": "4065804",
-    "name": "Sam Hauser",
-    "team": "BOS",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065804.png"
-   },
-   {
-    "pid": "5106283",
-    "name": "Dillon Mitchell",
-    "team": "BOS",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106283.png"
-   },
-   {
-    "pid": "4066354",
-    "name": "Payton Pritchard",
-    "team": "BOS",
-    "pos": "G",
-    "injury": "Day-To-Day",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066354.png"
-   },
-   {
-    "pid": "4397424",
-    "name": "Neemias Queta",
-    "team": "BOS",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397424.png"
-   },
-   {
-    "pid": "4351852",
-    "name": "Mitchell Robinson",
-    "team": "BOS",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4351852.png"
-   },
-   {
-    "pid": "4593841",
-    "name": "Baylor Scheierman",
-    "team": "BOS",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593841.png"
-   },
-   {
-    "pid": "4065648",
-    "name": "Jayson Tatum",
-    "team": "BOS",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065648.png"
-   },
-   {
-    "pid": "4683689",
-    "name": "Jordan Walsh",
-    "team": "BOS",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683689.png"
-   },
-   {
-    "pid": "3078576",
-    "name": "Derrick White",
-    "team": "BOS",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3078576.png"
-   },
-   {
-    "pid": "4702745",
-    "name": "Amari Williams",
-    "team": "BOS",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702745.png"
-   }
-  ],
-  "CHA": [
-   {
-    "pid": "5176517",
-    "name": "Michael Ajayi",
-    "team": "CHA",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5176517.png"
-   },
-   {
-    "pid": "3135045",
-    "name": "Grayson Allen",
-    "team": "CHA",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3135045.png"
-   },
-   {
-    "pid": "5060701",
-    "name": "Christian Anderson",
-    "team": "CHA",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5060701.png"
-   },
-   {
-    "pid": "4684269",
-    "name": "Kylan Boswell",
-    "team": "CHA",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684269.png"
-   },
-   {
-    "pid": "4433249",
-    "name": "Moussa Diabate",
-    "team": "CHA",
-    "pos": "F",
-    "injury": "Day-To-Day",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433249.png"
-   },
-   {
-    "pid": "4701225",
-    "name": "PJ Hall",
-    "team": "CHA",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701225.png"
-   },
-   {
-    "pid": "4602025",
-    "name": "Sion James",
-    "team": "CHA",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4602025.png"
-   },
-   {
-    "pid": "4576060",
-    "name": "Ryan Kalkbrenner",
-    "team": "CHA",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4576060.png"
-   },
-   {
-    "pid": "5061575",
-    "name": "Kon Knueppel",
-    "team": "CHA",
-    "pos": "G",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5061575.png"
-   },
-   {
-    "pid": "5239590",
-    "name": "Liam McNeeley",
-    "team": "CHA",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5239590.png"
-   },
-   {
-    "pid": "4433287",
-    "name": "Brandon Miller",
-    "team": "CHA",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433287.png"
-   },
-   {
-    "pid": "2583632",
-    "name": "Royce O'Neale",
-    "team": "CHA",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2583632.png"
-   },
-   {
-    "pid": "4396971",
-    "name": "Naz Reid",
-    "team": "CHA",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396971.png"
-   },
-   {
-    "pid": "5211176",
-    "name": "Tidjane Salaun",
-    "team": "CHA",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5211176.png"
-   },
-   {
-    "pid": "3032979",
-    "name": "Dennis Schroder",
-    "team": "CHA",
-    "pos": "G",
-    "injury": "Day-To-Day",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3032979.png"
-   },
-   {
-    "pid": "5281370",
-    "name": "Hannes Steinbach",
-    "team": "CHA",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5281370.png"
-   },
-   {
-    "pid": "4395651",
-    "name": "Coby White",
-    "team": "CHA",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395651.png"
-   },
-   {
-    "pid": "4066218",
-    "name": "Grant Williams",
-    "team": "CHA",
+    "pid": "5105626",
+    "name": "Tyler Bilodeau",
+    "team": "BKN",
     "pos": "F",
     "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066218.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105626.png"
+   },
+   {
+    "pid": "5101761",
+    "name": "Mikel Brown Jr.",
+    "team": "BKN",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5101761.png"
+   },
+   {
+    "pid": "4712896",
+    "name": "Noah Clowney",
+    "team": "BKN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4712896.png"
+   },
+   {
+    "pid": "5175643",
+    "name": "Egor Demin",
+    "team": "BKN",
+    "pos": "G",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175643.png"
+   },
+   {
+    "pid": "4702177",
+    "name": "Keon Ellis",
+    "team": "BKN",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702177.png"
+   },
+   {
+    "pid": "4870564",
+    "name": "Joshua Jefferson",
+    "team": "BKN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4870564.png"
+   },
+   {
+    "pid": "5174655",
+    "name": "Chaney Johnson",
+    "team": "BKN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5174655.png"
+   },
+   {
+    "pid": "3907823",
+    "name": "Terance Mann",
+    "team": "BKN",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907823.png"
+   },
+   {
+    "pid": "4687718",
+    "name": "Josh Minott",
+    "team": "BKN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4687718.png"
+   },
+   {
+    "pid": "4702670",
+    "name": "Grant Nelson",
+    "team": "BKN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702670.png"
+   },
+   {
+    "pid": "4278104",
+    "name": "Michael Porter Jr.",
+    "team": "BKN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278104.png"
+   },
+   {
+    "pid": "5037873",
+    "name": "Drake Powell",
+    "team": "BKN",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5037873.png"
+   },
+   {
+    "pid": "3064514",
+    "name": "Julius Randle",
+    "team": "BKN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064514.png"
+   },
+   {
+    "pid": "5242502",
+    "name": "Ben Saraf",
+    "team": "BKN",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5242502.png"
+   },
+   {
+    "pid": "4432194",
+    "name": "Day'Ron Sharpe",
+    "team": "BKN",
+    "pos": "C",
+    "injury": "Day-To-Day",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432194.png"
+   },
+   {
+    "pid": "5279130",
+    "name": "Nolan Traore",
+    "team": "BKN",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279130.png"
+   },
+   {
+    "pid": "3150844",
+    "name": "Moritz Wagner",
+    "team": "BKN",
+    "pos": "C",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3150844.png"
+   },
+   {
+    "pid": "5107173",
+    "name": "Danny Wolf",
+    "team": "BKN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107173.png"
    }
   ],
   "CLE": [
@@ -429,7 +299,7 @@
     "name": "Jarrett Allen",
     "team": "CLE",
     "pos": "C",
-    "injury": "Day-To-Day",
+    "injury": "Out",
     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066328.png"
    },
    {
@@ -469,7 +339,7 @@
     "name": "Sam Merrill",
     "team": "CLE",
     "pos": "G",
-    "injury": null,
+    "injury": "Out",
     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066757.png"
    },
    {
@@ -509,7 +379,7 @@
     "name": "Tyrese Proctor",
     "team": "CLE",
     "pos": "G",
-    "injury": "Day-To-Day",
+    "injury": null,
     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5023693.png"
    },
    {
@@ -541,876 +411,698 @@
     "name": "Peyton Watson",
     "team": "CLE",
     "pos": "G",
-    "injury": "Day-To-Day",
+    "injury": null,
     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4576087.png"
    }
   ],
-  "DAL": [
+  "DEN": [
    {
-    "pid": "4593125",
-    "name": "Santi Aldama",
-    "team": "DAL",
+    "pid": "4277848",
+    "name": "Marvin Bagley III",
+    "team": "DEN",
     "pos": "F",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593125.png"
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277848.png"
    },
    {
-    "pid": "5148538",
-    "name": "Tarik Biberovic",
-    "team": "DAL",
-    "pos": "F",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5148538.png"
+    "pid": "4431767",
+    "name": "Christian Braun",
+    "team": "DEN",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431767.png"
    },
    {
-    "pid": "4432582",
-    "name": "Max Christie",
-    "team": "DAL",
+    "pid": "4698719",
+    "name": "Trevon Brazile",
+    "team": "DEN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4698719.png"
+   },
+   {
+    "pid": "3978",
+    "name": "DeMar DeRozan",
+    "team": "DEN",
     "pos": "G",
     "injury": "Day-To-Day",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432582.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3978.png"
    },
    {
-    "pid": "4701208",
-    "name": "Moussa Cisse",
-    "team": "DAL",
+    "pid": "4065813",
+    "name": "Alpha Diallo",
+    "team": "DEN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065813.png"
+   },
+   {
+    "pid": "3064290",
+    "name": "Aaron Gordon",
+    "team": "DEN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064290.png"
+   },
+   {
+    "pid": "4433607",
+    "name": "DaRon Holmes II",
+    "team": "DEN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433607.png"
+   },
+   {
+    "pid": "4565698",
+    "name": "Bryce Hopkins",
+    "team": "DEN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4565698.png"
+   },
+   {
+    "pid": "3138196",
+    "name": "Cameron Johnson",
+    "team": "DEN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3138196.png"
+   },
+   {
+    "pid": "3112335",
+    "name": "Nikola Jokic",
+    "team": "DEN",
     "pos": "C",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701208.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3112335.png"
    },
    {
-    "pid": "4896372",
-    "name": "Walter Clayton Jr.",
-    "team": "DAL",
+    "pid": "4592427",
+    "name": "Spencer Jones",
+    "team": "DEN",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592427.png"
+   },
+   {
+    "pid": "3135046",
+    "name": "Tyus Jones",
+    "team": "DEN",
     "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4896372.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3135046.png"
    },
    {
-    "pid": "5279129",
-    "name": "Sergio de Larrea",
-    "team": "DAL",
+    "pid": "3936299",
+    "name": "Jamal Murray",
+    "team": "DEN",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3936299.png"
+   },
+   {
+    "pid": "4433629",
+    "name": "Ryan Nembhard",
+    "team": "DEN",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433629.png"
+   },
+   {
+    "pid": "4431690",
+    "name": "Zeke Nnaji",
+    "team": "DEN",
     "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431690.png"
+   },
+   {
+    "pid": "4432181",
+    "name": "Julian Strawther",
+    "team": "DEN",
+    "pos": "G",
     "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279129.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432181.png"
    },
    {
-    "pid": "5041939",
-    "name": "Cooper Flagg",
-    "team": "DAL",
+    "pid": "5105592",
+    "name": "Cam Whitmore",
+    "team": "DEN",
     "pos": "F",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5041939.png"
-   },
-   {
-    "pid": "4278049",
-    "name": "Daniel Gafford",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278049.png"
-   },
-   {
-    "pid": "5105806",
-    "name": "Jett Howard",
-    "team": "DAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105806.png"
-   },
-   {
-    "pid": "6442",
-    "name": "Kyrie Irving",
-    "team": "DAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6442.png"
-   },
-   {
-    "pid": "4873153",
-    "name": "Morez Johnson Jr.",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4873153.png"
-   },
-   {
-    "pid": "5106040",
-    "name": "Tobi Lawal",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106040.png"
-   },
-   {
-    "pid": "4683688",
-    "name": "Dereck Lively II",
-    "team": "DAL",
-    "pos": "C",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683688.png"
-   },
-   {
-    "pid": "4278594",
-    "name": "Naji Marshall",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278594.png"
-   },
-   {
-    "pid": "3138160",
-    "name": "Caleb Martin",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3138160.png"
-   },
-   {
-    "pid": "5211175",
-    "name": "Zaccharie Risacher",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5211175.png"
-   },
-   {
-    "pid": "4432107",
-    "name": "Marcus Sasser",
-    "team": "DAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432107.png"
-   },
-   {
-    "pid": "4278078",
-    "name": "P.J. Washington",
-    "team": "DAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278078.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105592.png"
    }
   ],
-  "LAL": [
+  "GS": [
    {
-    "pid": "5113969",
-    "name": "Cameron Carr",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5113969.png"
-   },
-   {
-    "pid": "3945274",
-    "name": "Luka Doncic",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3945274.png"
-   },
-   {
-    "pid": "4397014",
-    "name": "Quentin Grimes",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397014.png"
-   },
-   {
-    "pid": "4868423",
-    "name": "Jaden Hardy",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4868423.png"
-   },
-   {
-    "pid": "4683774",
-    "name": "Bronny James",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683774.png"
-   },
-   {
-    "pid": "4433599",
-    "name": "Arthur Kaluma",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433599.png"
-   },
-   {
-    "pid": "4433136",
-    "name": "Walker Kessler",
-    "team": "LAL",
+    "pid": "4397886",
+    "name": "Charles Bassey",
+    "team": "GS",
     "pos": "C",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433136.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397886.png"
    },
    {
-    "pid": "4592691",
-    "name": "Jake LaRavia",
-    "team": "LAL",
+    "pid": "6430",
+    "name": "Jimmy Butler III",
+    "team": "GS",
     "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592691.png"
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6430.png"
    },
    {
-    "pid": "3155535",
-    "name": "Kevon Looney",
-    "team": "LAL",
-    "pos": "F",
+    "pid": "4433149",
+    "name": "LJ Cryer",
+    "team": "GS",
+    "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3155535.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433149.png"
    },
    {
-    "pid": "4596528",
-    "name": "Lawson Lovering",
-    "team": "LAL",
-    "pos": "C",
+    "pid": "3975",
+    "name": "Stephen Curry",
+    "team": "GS",
+    "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4596528.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3975.png"
    },
    {
-    "pid": "4278580",
-    "name": "Sandro Mamukelashvili",
-    "team": "LAL",
+    "pid": "6589",
+    "name": "Draymond Green",
+    "team": "GS",
     "pos": "F",
     "injury": "Day-To-Day",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278580.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6589.png"
    },
    {
-    "pid": "4702972",
-    "name": "Chris Manon",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702972.png"
-   },
-   {
-    "pid": "5114350",
-    "name": "AK Okereke",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5114350.png"
-   },
-   {
-    "pid": "4066457",
-    "name": "Austin Reaves",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066457.png"
-   },
-   {
-    "pid": "4277811",
-    "name": "Collin Sexton",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277811.png"
-   },
-   {
-    "pid": "5060631",
-    "name": "Adou Thiero",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5060631.png"
-   },
-   {
-    "pid": "3907498",
-    "name": "Matisse Thybulle",
-    "team": "LAL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907498.png"
-   },
-   {
-    "pid": "4278077",
-    "name": "Jarred Vanderbilt",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278077.png"
-   },
-   {
-    "pid": "4433137",
-    "name": "Ziaire Williams",
-    "team": "LAL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433137.png"
-   }
-  ],
-  "MEM": [
-   {
-    "pid": "5041935",
-    "name": "Cameron Boozer",
-    "team": "MEM",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5041935.png"
-   },
-   {
-    "pid": "5105817",
-    "name": "Carson Cooper",
-    "team": "MEM",
+    "pid": "3213",
+    "name": "Al Horford",
+    "team": "GS",
     "pos": "C",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105817.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3213.png"
    },
    {
-    "pid": "4903027",
-    "name": "Cedric Coward",
-    "team": "MEM",
+    "pid": "4703396",
+    "name": "Graham Ike",
+    "team": "GS",
     "pos": "F",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4903027.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4703396.png"
    },
    {
-    "pid": "4600663",
-    "name": "Zach Edey",
-    "team": "MEM",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4600663.png"
-   },
-   {
-    "pid": "2991070",
-    "name": "Jerami Grant",
-    "team": "MEM",
+    "pid": "5175737",
+    "name": "Yaxel Lendeborg",
+    "team": "GS",
     "pos": "F",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991070.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175737.png"
    },
    {
-    "pid": "4684806",
-    "name": "Taylor Hendricks",
-    "team": "MEM",
+    "pid": "4897449",
+    "name": "Malevy Leons",
+    "team": "GS",
     "pos": "F",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684806.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4897449.png"
    },
    {
-    "pid": "5105550",
-    "name": "GG Jackson",
-    "team": "MEM",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105550.png"
-   },
-   {
-    "pid": "4065733",
-    "name": "Ty Jerome",
-    "team": "MEM",
+    "pid": "4066436",
+    "name": "De'Anthony Melton",
+    "team": "GS",
     "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065733.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066436.png"
    },
    {
-    "pid": "5231919",
-    "name": "Karim Lopez",
-    "team": "MEM",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5231919.png"
-   },
-   {
-    "pid": "4683934",
-    "name": "Jahmai Mashack",
-    "team": "MEM",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683934.png"
-   },
-   {
-    "pid": "4594326",
-    "name": "Kris Murray",
-    "team": "MEM",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4594326.png"
-   },
-   {
-    "pid": "4431785",
-    "name": "Scotty Pippen Jr.",
-    "team": "MEM",
+    "pid": "4432171",
+    "name": "Moses Moody",
+    "team": "GS",
     "pos": "G",
     "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431785.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432171.png"
    },
    {
-    "pid": "4593016",
-    "name": "Quinten Post",
-    "team": "MEM",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593016.png"
-   },
-   {
-    "pid": "4595400",
-    "name": "Olivier-Maxence Prosper",
-    "team": "MEM",
+    "pid": "2990969",
+    "name": "Georges Niang",
+    "team": "GS",
     "pos": "F",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4595400.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990969.png"
    },
    {
-    "pid": "4781746",
-    "name": "Javon Small",
-    "team": "MEM",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4781746.png"
-   },
-   {
-    "pid": "4433083",
-    "name": "Cam Spencer",
-    "team": "MEM",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433083.png"
-   },
-   {
-    "pid": "4432810",
-    "name": "Isaiah Stewart",
-    "team": "MEM",
-    "pos": "C",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432810.png"
-   },
-   {
-    "pid": "5112087",
-    "name": "Jaylen Wells",
-    "team": "MEM",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5112087.png"
-   }
-  ],
-  "MIL": [
-   {
-    "pid": "5164559",
-    "name": "Nate Ament",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5164559.png"
-   },
-   {
-    "pid": "5082206",
-    "name": "Brayden Burries",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5082206.png"
-   },
-   {
-    "pid": "4997526",
-    "name": "Ousmane Dieng",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997526.png"
-   },
-   {
-    "pid": "4397475",
-    "name": "AJ Green",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397475.png"
-   },
-   {
-    "pid": "4395725",
-    "name": "Tyler Herro",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395725.png"
-   },
-   {
-    "pid": "5214640",
-    "name": "Kasparas Jakucionis",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5214640.png"
-   },
-   {
-    "pid": "4432848",
-    "name": "Jaime Jaquez Jr.",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432848.png"
-   },
-   {
-    "pid": "4697268",
-    "name": "Kam Jones",
-    "team": "MIL",
-    "pos": "G",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4697268.png"
-   },
-   {
-    "pid": "3134907",
-    "name": "Kyle Kuzma",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134907.png"
-   },
-   {
-    "pid": "2991043",
-    "name": "Caris LeVert",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991043.png"
-   },
-   {
-    "pid": "5214989",
-    "name": "Bogoljub Markovic",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5214989.png"
-   },
-   {
-    "pid": "4397233",
-    "name": "Pete Nance",
-    "team": "MIL",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397233.png"
-   },
-   {
-    "pid": "4591725",
-    "name": "Ryan Rollins",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4591725.png"
-   },
-   {
-    "pid": "4397114",
-    "name": "Cormac Ryan",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397114.png"
-   },
-   {
-    "pid": "4277922",
-    "name": "Jericho Sims",
-    "team": "MIL",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277922.png"
-   },
-   {
-    "pid": "4277843",
-    "name": "Gary Trent Jr.",
-    "team": "MIL",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277843.png"
-   },
-   {
-    "pid": "3133628",
-    "name": "Myles Turner",
-    "team": "MIL",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133628.png"
-   },
-   {
-    "pid": "5105623",
-    "name": "Kel'el Ware",
-    "team": "MIL",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105623.png"
-   }
-  ],
-  "MIN": [
-   {
-    "pid": "4432816",
-    "name": "LaMelo Ball",
-    "team": "MIN",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432816.png"
-   },
-   {
-    "pid": "5279133",
-    "name": "Joan Beringer",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279133.png"
-   },
-   {
-    "pid": "4432247",
-    "name": "Jaylen Clark",
-    "team": "MIN",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432247.png"
-   },
-   {
-    "pid": "3934673",
-    "name": "Donte DiVincenzo",
-    "team": "MIN",
-    "pos": "G",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934673.png"
-   },
-   {
-    "pid": "4397002",
-    "name": "Ayo Dosunmu",
-    "team": "MIN",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397002.png"
-   },
-   {
-    "pid": "4594268",
-    "name": "Anthony Edwards",
-    "team": "MIN",
-    "pos": "G",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4594268.png"
-   },
-   {
-    "pid": "5061585",
-    "name": "Isaiah Evans",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5061585.png"
-   },
-   {
-    "pid": "3032976",
-    "name": "Rudy Gobert",
-    "team": "MIN",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3032976.png"
-   },
-   {
-    "pid": "4592492",
-    "name": "Bones Hyland",
-    "team": "MIN",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592492.png"
-   },
-   {
-    "pid": "4433247",
-    "name": "Jonathan Kuminga",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433247.png"
-   },
-   {
-    "pid": "3136196",
-    "name": "Trey Lyles",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136196.png"
-   },
-   {
-    "pid": "4431671",
-    "name": "Jaden McDaniels",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431671.png"
-   },
-   {
-    "pid": "4592979",
-    "name": "Zyon Pullin",
-    "team": "MIN",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592979.png"
-   },
-   {
-    "pid": "4432847",
-    "name": "Terrence Shannon Jr.",
-    "team": "MIN",
+    "pid": "3134903",
+    "name": "Gary Payton II",
+    "team": "GS",
     "pos": "G",
     "injury": "Day-To-Day",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432847.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134903.png"
    },
    {
-    "pid": "4895758",
-    "name": "Cody Williams",
-    "team": "MIN",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4895758.png"
-   },
-   {
-    "pid": "5157587",
-    "name": "Rocco Zikarsky",
-    "team": "MIN",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5157587.png"
-   }
-  ],
-  "NO": [
-   {
-    "pid": "4397136",
-    "name": "Saddiq Bey",
-    "team": "NO",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397136.png"
-   },
-   {
-    "pid": "4712862",
-    "name": "Malik Dia",
-    "team": "NO",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4712862.png"
-   },
-   {
-    "pid": "5144091",
-    "name": "Jeremiah Fears",
-    "team": "NO",
+    "pid": "4709138",
+    "name": "Brandin Podziemski",
+    "team": "GS",
     "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5144091.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4709138.png"
    },
    {
-    "pid": "5170947",
-    "name": "AJ Johnson",
-    "team": "NO",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5170947.png"
-   },
-   {
-    "pid": "4277813",
-    "name": "Herbert Jones",
-    "team": "NO",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277813.png"
-   },
-   {
-    "pid": "3442",
-    "name": "DeAndre Jordan",
-    "team": "NO",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3442.png"
-   },
-   {
-    "pid": "4683634",
-    "name": "Bennedict Mathurin",
-    "team": "NO",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683634.png"
-   },
-   {
-    "pid": "4997538",
-    "name": "Karlo Matkovic",
-    "team": "NO",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997538.png"
-   },
-   {
-    "pid": "4576086",
-    "name": "Bryce McGowens",
-    "team": "NO",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4576086.png"
-   },
-   {
-    "pid": "5061589",
-    "name": "Yves Missi",
-    "team": "NO",
+    "pid": "3102531",
+    "name": "Kristaps Porzingis",
+    "team": "GS",
     "pos": "C",
     "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5061589.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102531.png"
    },
    {
-    "pid": "4397688",
-    "name": "Trey Murphy III",
-    "team": "NO",
+    "pid": "4897262",
+    "name": "Will Richard",
+    "team": "GS",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4897262.png"
+   },
+   {
+    "pid": "4997536",
+    "name": "Gui Santos",
+    "team": "GS",
     "pos": "F",
     "injury": "Day-To-Day",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397688.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997536.png"
    },
    {
-    "pid": "3907497",
-    "name": "Dejounte Murray",
-    "team": "NO",
+    "pid": "4397040",
+    "name": "Brandon Williams",
+    "team": "GS",
     "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907497.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397040.png"
+   }
+  ],
+  "HOU": [
+   {
+    "pid": "2991235",
+    "name": "Steven Adams",
+    "team": "HOU",
+    "pos": "C",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991235.png"
    },
    {
-    "pid": "4703115",
-    "name": "Jaron Pierre Jr.",
-    "team": "NO",
+    "pid": "3037789",
+    "name": "Bogdan Bogdanovic",
+    "team": "HOU",
     "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4703115.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3037789.png"
    },
    {
-    "pid": "4277956",
-    "name": "Jordan Poole",
-    "team": "NO",
+    "pid": "3102529",
+    "name": "Clint Capela",
+    "team": "HOU",
+    "pos": "C",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102529.png"
+   },
+   {
+    "pid": "4683860",
+    "name": "Quadir Copeland",
+    "team": "HOU",
     "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277956.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683860.png"
    },
    {
-    "pid": "4869780",
-    "name": "Derik Queen",
-    "team": "NO",
+    "pid": "4592857",
+    "name": "Isaiah Crawford",
+    "team": "HOU",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592857.png"
+   },
+   {
+    "pid": "3202",
+    "name": "Kevin Durant",
+    "team": "HOU",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3202.png"
+   },
+   {
+    "pid": "4433192",
+    "name": "Tari Eason",
+    "team": "HOU",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433192.png"
+   },
+   {
+    "pid": "5105553",
+    "name": "Julian Phillips",
+    "team": "HOU",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105553.png"
+   },
+   {
+    "pid": "4871144",
+    "name": "Alperen Sengun",
+    "team": "HOU",
     "pos": "C",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4869780.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4871144.png"
    },
    {
-    "pid": "4683742",
-    "name": "Julian Reese",
-    "team": "NO",
-    "pos": "F",
+    "pid": "4711272",
+    "name": "Reed Sheppard",
+    "team": "HOU",
+    "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683742.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4711272.png"
    },
    {
-    "pid": "4431675",
-    "name": "Trendon Watford",
-    "team": "NO",
-    "pos": "F",
+    "pid": "2990992",
+    "name": "Marcus Smart",
+    "team": "HOU",
+    "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431675.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990992.png"
    },
    {
-    "pid": "4395628",
-    "name": "Zion Williamson",
-    "team": "NO",
+    "pid": "4432639",
+    "name": "Jabari Smith Jr.",
+    "team": "HOU",
     "pos": "F",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395628.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432639.png"
+   },
+   {
+    "pid": "3136777",
+    "name": "Jae'Sean Tate",
+    "team": "HOU",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136777.png"
+   },
+   {
+    "pid": "4684740",
+    "name": "Amen Thompson",
+    "team": "HOU",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684740.png"
+   },
+   {
+    "pid": "4432827",
+    "name": "Oscar Tshiebwe",
+    "team": "HOU",
+    "pos": "C",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432827.png"
+   },
+   {
+    "pid": "2991230",
+    "name": "Fred VanVleet",
+    "team": "HOU",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991230.png"
+   }
+  ],
+  "IND": [
+   {
+    "pid": "4431752",
+    "name": "Kobe Brown",
+    "team": "IND",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431752.png"
+   },
+   {
+    "pid": "5157066",
+    "name": "Johnny Furphy",
+    "team": "IND",
+    "pos": "G",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5157066.png"
+   },
+   {
+    "pid": "4396993",
+    "name": "Tyrese Haliburton",
+    "team": "IND",
+    "pos": "G",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396993.png"
+   },
+   {
+    "pid": "4065731",
+    "name": "Jay Huff",
+    "team": "IND",
+    "pos": "C",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065731.png"
+   },
+   {
+    "pid": "4592829",
+    "name": "Quenton Jackson",
+    "team": "IND",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592829.png"
+   },
+   {
+    "pid": "2530530",
+    "name": "T.J. McConnell",
+    "team": "IND",
+    "pos": "G",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2530530.png"
+   },
+   {
+    "pid": "2580365",
+    "name": "Larry Nance Jr.",
+    "team": "IND",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2580365.png"
+   },
+   {
+    "pid": "4395712",
+    "name": "Andrew Nembhard",
+    "team": "IND",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395712.png"
+   },
+   {
+    "pid": "4396909",
+    "name": "Aaron Nesmith",
+    "team": "IND",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396909.png"
+   },
+   {
+    "pid": "3133603",
+    "name": "Kelly Oubre Jr.",
+    "team": "IND",
+    "pos": "G",
+    "injury": "Day-To-Day",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133603.png"
+   },
+   {
+    "pid": "4433076",
+    "name": "Ben Sheppard",
+    "team": "IND",
+    "pos": "G",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433076.png"
+   },
+   {
+    "pid": "3149673",
+    "name": "Pascal Siakam",
+    "team": "IND",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3149673.png"
+   },
+   {
+    "pid": "4398207",
+    "name": "Jalen Slawson",
+    "team": "IND",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4398207.png"
+   },
+   {
+    "pid": "5105854",
+    "name": "Braden Smith",
+    "team": "IND",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105854.png"
+   },
+   {
+    "pid": "4278355",
+    "name": "Obi Toppin",
+    "team": "IND",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278355.png"
+   },
+   {
+    "pid": "5106060",
+    "name": "Jarace Walker",
+    "team": "IND",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106060.png"
+   },
+   {
+    "pid": "4017837",
+    "name": "Ivica Zubac",
+    "team": "IND",
+    "pos": "C",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4017837.png"
+   }
+  ],
+  "NY": [
+   {
+    "pid": "4683730",
+    "name": "Jaden Akins",
+    "team": "NY",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683730.png"
+   },
+   {
+    "pid": "4277869",
+    "name": "Jose Alvarado",
+    "team": "NY",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277869.png"
+   },
+   {
+    "pid": "3934719",
+    "name": "OG Anunoby",
+    "team": "NY",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934719.png"
+   },
+   {
+    "pid": "3147657",
+    "name": "Mikal Bridges",
+    "team": "NY",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3147657.png"
+   },
+   {
+    "pid": "3934672",
+    "name": "Jalen Brunson",
+    "team": "NY",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934672.png"
+   },
+   {
+    "pid": "2528426",
+    "name": "Jordan Clarkson",
+    "team": "NY",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2528426.png"
+   },
+   {
+    "pid": "5211983",
+    "name": "Pacome Dadiet",
+    "team": "NY",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5211983.png"
+   },
+   {
+    "pid": "5289900",
+    "name": "Mohamed Diawara",
+    "team": "NY",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5289900.png"
+   },
+   {
+    "pid": "6585",
+    "name": "Andre Drummond",
+    "team": "NY",
+    "pos": "C",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6585.png"
+   },
+   {
+    "pid": "3062679",
+    "name": "Josh Hart",
+    "team": "NY",
+    "pos": "G",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3062679.png"
+   },
+   {
+    "pid": "4897943",
+    "name": "Dalton Knecht",
+    "team": "NY",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4897943.png"
+   },
+   {
+    "pid": "4433225",
+    "name": "Tyler Kolek",
+    "team": "NY",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433225.png"
+   },
+   {
+    "pid": "4431823",
+    "name": "Miles McBride",
+    "team": "NY",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431823.png"
+   },
+   {
+    "pid": "4838721",
+    "name": "Tyler Nickel",
+    "team": "NY",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4838721.png"
+   },
+   {
+    "pid": "3914044",
+    "name": "Landry Shamet",
+    "team": "NY",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3914044.png"
+   },
+   {
+    "pid": "3136195",
+    "name": "Karl-Anthony Towns",
+    "team": "NY",
+    "pos": "C",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136195.png"
+   },
+   {
+    "pid": "4432808",
+    "name": "James Wiseman",
+    "team": "NY",
+    "pos": "C",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432808.png"
    }
   ],
   "OKC": [
@@ -1559,142 +1251,280 @@
     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133626.png"
    }
   ],
-  "PHI": [
+  "ORL": [
    {
-    "pid": "4870562",
-    "name": "Dominick Barlow",
-    "team": "PHI",
+    "pid": "4432573",
+    "name": "Paolo Banchero",
+    "team": "ORL",
     "pos": "F",
     "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4870562.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432573.png"
    },
    {
-    "pid": "5105637",
-    "name": "Adem Bona",
-    "team": "PHI",
+    "pid": "4066320",
+    "name": "Desmond Bane",
+    "team": "ORL",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066320.png"
+   },
+   {
+    "pid": "4348700",
+    "name": "Goga Bitadze",
+    "team": "ORL",
     "pos": "C",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4348700.png"
+   },
+   {
+    "pid": "4712849",
+    "name": "Anthony Black",
+    "team": "ORL",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4712849.png"
+   },
+   {
+    "pid": "4278572",
+    "name": "Jamal Cain",
+    "team": "ORL",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278572.png"
+   },
+   {
+    "pid": "3133635",
+    "name": "Jevon Carter",
+    "team": "ORL",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133635.png"
+   },
+   {
+    "pid": "4277847",
+    "name": "Wendell Carter Jr.",
+    "team": "ORL",
+    "pos": "C",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277847.png"
+   },
+   {
+    "pid": "4397204",
+    "name": "Colin Castleton",
+    "team": "ORL",
+    "pos": "C",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397204.png"
+   },
+   {
+    "pid": "4702382",
+    "name": "Tristan da Silva",
+    "team": "ORL",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702382.png"
+   },
+   {
+    "pid": "4065654",
+    "name": "Jonathan Isaac",
+    "team": "ORL",
+    "pos": "F",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065654.png"
+   },
+   {
+    "pid": "4593034",
+    "name": "Alex Morales",
+    "team": "ORL",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593034.png"
+   },
+   {
+    "pid": "5107251",
+    "name": "Izaiyah Nelson",
+    "team": "ORL",
+    "pos": "F",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107251.png"
+   },
+   {
+    "pid": "5214637",
+    "name": "Noah Penda",
+    "team": "ORL",
+    "pos": "F",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5214637.png"
+   },
+   {
+    "pid": "5239561",
+    "name": "Jase Richardson",
+    "team": "ORL",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5239561.png"
+   },
+   {
+    "pid": "4432165",
+    "name": "Jalen Suggs",
+    "team": "ORL",
+    "pos": "G",
+    "injury": "Out",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432165.png"
+   },
+   {
+    "pid": "6478",
+    "name": "Nikola Vucevic",
+    "team": "ORL",
+    "pos": "C",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6478.png"
+   },
+   {
+    "pid": "4566434",
+    "name": "Franz Wagner",
+    "team": "ORL",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4566434.png"
+   }
+  ],
+  "PHX": [
+   {
+    "pid": "3136193",
+    "name": "Devin Booker",
+    "team": "PHX",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136193.png"
+   },
+   {
+    "pid": "4280245",
+    "name": "Jamaree Bouyea",
+    "team": "PHX",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4280245.png"
+   },
+   {
+    "pid": "4066383",
+    "name": "Miles Bridges",
+    "team": "PHX",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066383.png"
+   },
+   {
+    "pid": "3155526",
+    "name": "Dillon Brooks",
+    "team": "PHX",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3155526.png"
+   },
+   {
+    "pid": "4888725",
+    "name": "Ryan Dunn",
+    "team": "PHX",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4888725.png"
+   },
+   {
+    "pid": "5105977",
+    "name": "Rasheer Fleming",
+    "team": "PHX",
+    "pos": "F",
     "injury": "Day-To-Day",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105637.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105977.png"
    },
    {
-    "pid": "3917376",
-    "name": "Jaylen Brown",
-    "team": "PHI",
+    "pid": "4278585",
+    "name": "Collin Gillespie",
+    "team": "PHX",
     "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3917376.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278585.png"
    },
    {
-    "pid": "2581018",
-    "name": "Kentavious Caldwell-Pope",
-    "team": "PHI",
+    "pid": "4278402",
+    "name": "Jordan Goodwin",
+    "team": "PHX",
+    "pos": "G",
+    "injury": "Day-To-Day",
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278402.png"
+   },
+   {
+    "pid": "4437244",
+    "name": "Jalen Green",
+    "team": "PHX",
     "pos": "G",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2581018.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4437244.png"
    },
    {
-    "pid": "5124612",
-    "name": "VJ Edgecombe",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5124612.png"
-   },
-   {
-    "pid": "4711297",
-    "name": "Justin Edwards",
-    "team": "PHI",
+    "pid": "4601023",
+    "name": "Oso Ighodaro",
+    "team": "PHX",
     "pos": "F",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4711297.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4601023.png"
    },
    {
-    "pid": "3059318",
-    "name": "Joel Embiid",
-    "team": "PHI",
+    "pid": "3913174",
+    "name": "Luke Kennard",
+    "team": "PHX",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3913174.png"
+   },
+   {
+    "pid": "5203685",
+    "name": "Khaman Maluach",
+    "team": "PHX",
     "pos": "C",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3059318.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5203685.png"
    },
    {
-    "pid": "3904625",
-    "name": "Tacko Fall",
-    "team": "PHI",
+    "pid": "5041953",
+    "name": "Koa Peat",
+    "team": "PHX",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5041953.png"
+   },
+   {
+    "pid": "4066268",
+    "name": "Duop Reath",
+    "team": "PHX",
     "pos": "C",
     "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3904625.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066268.png"
    },
    {
-    "pid": "4871141",
-    "name": "Ariel Hukporti",
-    "team": "PHI",
+    "pid": "4592714",
+    "name": "Pat Spencer",
+    "team": "PHX",
+    "pos": "G",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592714.png"
+   },
+   {
+    "pid": "4431695",
+    "name": "Drew Timme",
+    "team": "PHX",
+    "pos": "F",
+    "injury": null,
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431695.png"
+   },
+   {
+    "pid": "4701232",
+    "name": "Mark Williams",
+    "team": "PHX",
     "pos": "C",
     "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4871141.png"
-   },
-   {
-    "pid": "1966",
-    "name": "LeBron James",
-    "team": "PHI",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1966.png"
-   },
-   {
-    "pid": "4433144",
-    "name": "Caleb Love",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433144.png"
-   },
-   {
-    "pid": "4431678",
-    "name": "Tyrese Maxey",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431678.png"
-   },
-   {
-    "pid": "4873090",
-    "name": "Labaron Philon Jr.",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4873090.png"
-   },
-   {
-    "pid": "5099752",
-    "name": "Rayan Rupert",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5099752.png"
-   },
-   {
-    "pid": "4351851",
-    "name": "Anfernee Simons",
-    "team": "PHI",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4351851.png"
-   },
-   {
-    "pid": "3912848",
-    "name": "Dean Wade",
-    "team": "PHI",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3912848.png"
-   },
-   {
-    "pid": "4432446",
-    "name": "Jabari Walker",
-    "team": "PHI",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432446.png"
+    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701232.png"
    }
   ],
   "POR": [
@@ -1973,428 +1803,6 @@
     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5104157.png"
    }
   ],
-  "SAC": [
-   {
-    "pid": "4431679",
-    "name": "Precious Achiuwa",
-    "team": "SAC",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431679.png"
-   },
-   {
-    "pid": "5142620",
-    "name": "Darius Acuff Jr.",
-    "team": "SAC",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5142620.png"
-   },
-   {
-    "pid": "4395650",
-    "name": "Leaky Black",
-    "team": "SAC",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395650.png"
-   },
-   {
-    "pid": "4433174",
-    "name": "Dylan Cardwell",
-    "team": "SAC",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433174.png"
-   },
-   {
-    "pid": "4702384",
-    "name": "Nique Clifford",
-    "team": "SAC",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702384.png"
-   },
-   {
-    "pid": "4065732",
-    "name": "De'Andre Hunter",
-    "team": "SAC",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065732.png"
-   },
-   {
-    "pid": "4917149",
-    "name": "Alex Karaban",
-    "team": "SAC",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4917149.png"
-   },
-   {
-    "pid": "3064440",
-    "name": "Zach LaVine",
-    "team": "SAC",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064440.png"
-   },
-   {
-    "pid": "5107897",
-    "name": "Jonathan Mogbo",
-    "team": "SAC",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107897.png"
-   },
-   {
-    "pid": "4066262",
-    "name": "Malik Monk",
-    "team": "SAC",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066262.png"
-   },
-   {
-    "pid": "4594327",
-    "name": "Keegan Murray",
-    "team": "SAC",
-    "pos": "F",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4594327.png"
-   },
-   {
-    "pid": "4709131",
-    "name": "Sean Pedulla",
-    "team": "SAC",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4709131.png"
-   },
-   {
-    "pid": "4279318",
-    "name": "Daeqwon Plowden",
-    "team": "SAC",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4279318.png"
-   },
-   {
-    "pid": "4898371",
-    "name": "Maxime Raynaud",
-    "team": "SAC",
-    "pos": "C",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4898371.png"
-   },
-   {
-    "pid": "3155942",
-    "name": "Domantas Sabonis",
-    "team": "SAC",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3155942.png"
-   },
-   {
-    "pid": "5106058",
-    "name": "Emanuel Sharp",
-    "team": "SAC",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106058.png"
-   },
-   {
-    "pid": "3907387",
-    "name": "Ben Simmons",
-    "team": "SAC",
-    "pos": "G",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907387.png"
-   }
-  ],
-  "TOR": [
-   {
-    "pid": "2993874",
-    "name": "Kyle Anderson",
-    "team": "TOR",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2993874.png"
-   },
-   {
-    "pid": "4433134",
-    "name": "Scottie Barnes",
-    "team": "TOR",
-    "pos": "F",
-    "injury": "Day-To-Day",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433134.png"
-   },
-   {
-    "pid": "4395625",
-    "name": "RJ Barrett",
-    "team": "TOR",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395625.png"
-   },
-   {
-    "pid": "4431893",
-    "name": "Jamison Battle",
-    "team": "TOR",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431893.png"
-   },
-   {
-    "pid": "4432586",
-    "name": "Nate Bittle",
-    "team": "TOR",
-    "pos": "C",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432586.png"
-   },
-   {
-    "pid": "4432737",
-    "name": "Jaden Bradley",
-    "team": "TOR",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432737.png"
-   },
-   {
-    "pid": "5149115",
-    "name": "Allen Graves",
-    "team": "TOR",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5149115.png"
-   },
-   {
-    "pid": "4431684",
-    "name": "Trayce Jackson-Davis",
-    "team": "TOR",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431684.png"
-   },
-   {
-    "pid": "6450",
-    "name": "Kawhi Leonard",
-    "team": "TOR",
-    "pos": "F",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6450.png"
-   },
-   {
-    "pid": "4702656",
-    "name": "Alijah Martin",
-    "team": "TOR",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702656.png"
-   },
-   {
-    "pid": "4411057",
-    "name": "Kevin McCullar Jr.",
-    "team": "TOR",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4411057.png"
-   },
-   {
-    "pid": "5093267",
-    "name": "Collin Murray-Boyles",
-    "team": "TOR",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5093267.png"
-   },
-   {
-    "pid": "3134908",
-    "name": "Jakob Poeltl",
-    "team": "TOR",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134908.png"
-   },
-   {
-    "pid": "4395724",
-    "name": "Immanuel Quickley",
-    "team": "TOR",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395724.png"
-   },
-   {
-    "pid": "4432241",
-    "name": "Jamal Shead",
-    "team": "TOR",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432241.png"
-   },
-   {
-    "pid": "4397784",
-    "name": "Malachi Smith",
-    "team": "TOR",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397784.png"
-   },
-   {
-    "pid": "4684272",
-    "name": "Ja'Kobe Walter",
-    "team": "TOR",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684272.png"
-   }
-  ],
-  "UTAH": [
-   {
-    "pid": "4433268",
-    "name": "Trey Alexander",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433268.png"
-   },
-   {
-    "pid": "4873138",
-    "name": "Ace Bailey",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4873138.png"
-   },
-   {
-    "pid": "4277919",
-    "name": "Mo Bamba",
-    "team": "UTAH",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277919.png"
-   },
-   {
-    "pid": "4065673",
-    "name": "Tony Bradley",
-    "team": "UTAH",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065673.png"
-   },
-   {
-    "pid": "4683736",
-    "name": "Kobe Bufkin",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683736.png"
-   },
-   {
-    "pid": "4683766",
-    "name": "Isaiah Collier",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683766.png"
-   },
-   {
-    "pid": "4684793",
-    "name": "Kyle Filipowski",
-    "team": "UTAH",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684793.png"
-   },
-   {
-    "pid": "4433627",
-    "name": "Keyonte George",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433627.png"
-   },
-   {
-    "pid": "4432811",
-    "name": "Josh Green",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432811.png"
-   },
-   {
-    "pid": "4397077",
-    "name": "Jaxson Hayes",
-    "team": "UTAH",
-    "pos": "C",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397077.png"
-   },
-   {
-    "pid": "4433618",
-    "name": "Harrison Ingram",
-    "team": "UTAH",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433618.png"
-   },
-   {
-    "pid": "4277961",
-    "name": "Jaren Jackson Jr.",
-    "team": "UTAH",
-    "pos": "F",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277961.png"
-   },
-   {
-    "pid": "4066336",
-    "name": "Lauri Markkanen",
-    "team": "UTAH",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066336.png"
-   },
-   {
-    "pid": "3133602",
-    "name": "Svi Mykhailiuk",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133602.png"
-   },
-   {
-    "pid": "3102530",
-    "name": "Jusuf Nurkic",
-    "team": "UTAH",
-    "pos": "C",
-    "injury": "Out",
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102530.png"
-   },
-   {
-    "pid": "4065663",
-    "name": "Josh Okogie",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065663.png"
-   },
-   {
-    "pid": "5041955",
-    "name": "Darryn Peterson",
-    "team": "UTAH",
-    "pos": "G",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5041955.png"
-   },
-   {
-    "pid": "5105839",
-    "name": "Brice Sensabaugh",
-    "team": "UTAH",
-    "pos": "F",
-    "injury": null,
-    "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105839.png"
-   }
-  ],
   "WSH": [
    {
     "pid": "4278129",
@@ -2441,7 +1849,7 @@
     "name": "Anthony Davis",
     "team": "WSH",
     "pos": "F",
-    "injury": "Day-To-Day",
+    "injury": "Out",
     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6583.png"
    },
    {
