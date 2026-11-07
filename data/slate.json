@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-06T19:20:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-06T19:20:00-05:00"
+   "at": "2026-11-06T19:30:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-06T19:20:00-05:00",
+    "at": "2026-11-06T19:30:00-05:00",
     "confirmed": [
      "ATL",
      "BOS",
@@ -50,7 +50,7 @@
    "away": "WAS",
    "home": "ATL",
    "state": "in",
-   "detail": "6:52 - 1st",
+   "detail": "4:10 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -86,7 +86,7 @@
    "away": "BOS",
    "home": "CHA",
    "state": "in",
-   "detail": "7:54 - 1st",
+   "detail": "4:09 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -441,24 +441,14 @@
     }
    },
    "id": "2026-11-06:401909289:4576087:rebounds:3.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-06T19:10:00-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "588694070073885084",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/588694070073885084",
-     "price": 115
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA362204094%232352266376_13L42648Q1647990913Q20",
-     "price": 115
-    }
-   },
-   "rank": 2
+   "links": null,
+   "rank": null
   },
   {
    "player": "Brandon Miller",
@@ -525,6 +515,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-06T19:20:00-05:00",
- "status_at": "2026-11-06T19:20:00-05:00"
+ "generated_at": "2026-11-06T19:30:00-05:00",
+ "status_at": "2026-11-06T19:30:00-05:00"
 }
