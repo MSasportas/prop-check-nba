@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-06T19:40:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-06T19:50:00-05:00"
+   "at": "2026-11-06T20:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-06T19:50:00-05:00",
+    "at": "2026-11-06T20:00:00-05:00",
     "confirmed": [
      "ATL",
      "BOS",
@@ -58,7 +58,7 @@
    "away": "WAS",
    "home": "ATL",
    "state": "in",
-   "detail": "5:37 - 2nd",
+   "detail": "36.4 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -94,7 +94,7 @@
    "away": "BOS",
    "home": "CHA",
    "state": "in",
-   "detail": "7:26 - 2nd",
+   "detail": "3:49 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -121,7 +121,7 @@
    "next_check_read": null,
    "injury_clear": {
     "away": true,
-    "home": true
+    "home": false
    }
   },
   {
@@ -130,7 +130,7 @@
    "away": "PHI",
    "home": "CLE",
    "state": "in",
-   "detail": "7:55 - 1st",
+   "detail": "4:27 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -395,21 +395,14 @@
     }
    },
    "id": "2026-11-06:401909291:4683778:threes:2.5:over",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-06T19:40:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "6568531351801299349",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/6568531351801299349",
-     "price": 125
-    },
-    "draftkings": null
-   },
-   "rank": 1
+   "links": null,
+   "rank": null
   },
   {
    "player": "Derik Queen",
@@ -458,24 +451,14 @@
     }
    },
    "id": "2026-11-06:401909293:4869780:points:10.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-06T18:30:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "8836046094340325770",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/8836046094340325770",
-     "price": -115
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA386444680%232353130052_13L42648Q1670756388Q20",
-     "price": -106
-    }
-   },
-   "rank": 2
+   "links": null,
+   "rank": null
   },
   {
    "player": "Peyton Watson",
@@ -586,7 +569,11 @@
    "rank": null
   }
  ],
- "empty": null,
+ "empty": {
+  "text": "No picks yet today",
+  "why": "892 lines read. Pinnacle moved alone on 118, none of them bettable yet.",
+  "next": "2026-11-06T20:30:00-05:00"
+ },
  "counts": {
   "lines_read": 892,
   "passing": 13,
@@ -598,6 +585,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-06T19:50:00-05:00",
- "status_at": "2026-11-06T19:50:00-05:00"
+ "generated_at": "2026-11-06T20:00:00-05:00",
+ "status_at": "2026-11-06T20:00:00-05:00"
 }
