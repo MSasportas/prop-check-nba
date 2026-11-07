@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T19:50:00-05:00",
+ "at": "2026-11-06T20:10:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -70,6 +70,13 @@
    "team": "BKN",
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
+  },
+  "4433287": {
+   "status": "day-to-day",
+   "name": "Brandon Miller",
+   "team": "CHA",
+   "date": "2026-11-07T01:01Z",
+   "note": "Miller (undisclosed) exited Friday's game against the Celtics, Owen O'Connor of SI.com reports."
   },
   "3032979": {
    "status": "out",
