@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T10:20:00-05:00",
+ "at": "2026-11-07T10:30:01-05:00",
  "list": {
   "4585618": {
    "status": "day-to-day",
@@ -128,17 +128,17 @@
    "note": "Smith (hand) won't return to Wednesday's game against the Knicks."
   },
   "4066757": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Sam Merrill",
    "team": "CLE",
-   "date": "2026-11-07T02:10Z",
+   "date": "2026-11-07T15:08Z",
    "note": "Merrill (elbow) won't return to Friday's game against the 76ers, Dave McMenamin of ESPN.com reports."
   },
   "4066328": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jarrett Allen",
    "team": "CLE",
-   "date": "2026-11-06T23:55Z",
+   "date": "2026-11-07T15:07Z",
    "note": "Allen (knee) is out for Friday's game against the 76ers."
   },
   "4683747": {
