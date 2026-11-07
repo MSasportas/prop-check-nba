@@ -105,6 +105,7 @@
     "Rudy Gobert"
    ],
    "status": {
+    "Joan Beringer": "out",
     "Donte DiVincenzo": "out",
     "Anthony Edwards": "out",
     "Terrence Shannon": "out"
@@ -212,7 +213,7 @@
    }
   },
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Damian Lillard",
     "Scoot Henderson",
@@ -227,18 +228,18 @@
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Austin Reaves",
-    "Ziaire Williams",
     "Matisse Thybulle",
+    "Jake LaRavia",
     "Walker Kessler"
    ],
    "status": {}
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Aaron Fox",
     "Stephon Castle",
@@ -252,11 +253,11 @@
    }
   },
   "SAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Acuff",
     "Zach LaVine",
-    "Malik Monk",
+    "Leaky Black",
     "Precious Achiuwa",
     "Domantas Sabonis"
    ],
@@ -268,5 +269,5 @@
    }
   }
  },
- "at": "2026-11-06T21:30:00-05:00"
+ "at": "2026-11-06T21:40:00-05:00"
 }
